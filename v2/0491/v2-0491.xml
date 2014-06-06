@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Specimen Quality</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>E
+            <a name="E"> </a>
+          </td>
+          <td>Excellent</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>F
+            <a name="F"> </a>
+          </td>
+          <td>Fair</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>G
+            <a name="G"> </a>
+          </td>
+          <td>Good</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>P
+            <a name="P"> </a>
+          </td>
+          <td>Poor</td>
+          <td>added v2.5</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0491"/>
+  <name value="v2 Specimen Quality"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0491 ( Specimen Quality)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0491"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="E"/>
+      <display value="Excellent"/>
+    </concept>
+    <concept>
+      <code value="F"/>
+      <display value="Fair"/>
+    </concept>
+    <concept>
+      <code value="G"/>
+      <display value="Good"/>
+    </concept>
+    <concept>
+      <code value="P"/>
+      <display value="Poor"/>
+    </concept>
+  </define>
+</ValueSet>

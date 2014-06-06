@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Admission Type</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>A
+            <a name="A"> </a>
+          </td>
+          <td>Accident</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>C
+            <a name="C"> </a>
+          </td>
+          <td>Elective</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>E
+            <a name="E"> </a>
+          </td>
+          <td>Emergency</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>L
+            <a name="L"> </a>
+          </td>
+          <td>Labor and Delivery</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>N
+            <a name="N"> </a>
+          </td>
+          <td>Newborn (Birth in healthcare facility)</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>R
+            <a name="R"> </a>
+          </td>
+          <td>Routine</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>U
+            <a name="U"> </a>
+          </td>
+          <td>Urgent</td>
+          <td>added v2.4</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0007"/>
+  <name value="v2 Admission Type"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0007 ( Admission Type)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0007"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="A"/>
+      <display value="Accident"/>
+    </concept>
+    <concept>
+      <code value="C"/>
+      <display value="Elective"/>
+    </concept>
+    <concept>
+      <code value="E"/>
+      <display value="Emergency"/>
+    </concept>
+    <concept>
+      <code value="L"/>
+      <display value="Labor and Delivery"/>
+    </concept>
+    <concept>
+      <code value="N"/>
+      <display value="Newborn (Birth in healthcare facility)"/>
+    </concept>
+    <concept>
+      <code value="R"/>
+      <display value="Routine"/>
+    </concept>
+    <concept>
+      <code value="U"/>
+      <display value="Urgent"/>
+    </concept>
+  </define>
+</ValueSet>

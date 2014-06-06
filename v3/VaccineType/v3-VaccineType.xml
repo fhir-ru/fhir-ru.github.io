@@ -1,0 +1,1955 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  The kind of vaccine.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>1
+            <a name="1"> </a>
+          </td>
+          <td>DTP</td>
+          <td>
+                        diphtheria, tetanus toxoids and pertussis vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>10
+            <a name="10"> </a>
+          </td>
+          <td>IPV</td>
+          <td>
+                        poliovirus vaccine, inactivated
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>100
+            <a name="100"> </a>
+          </td>
+          <td>pneumococcal conjugate</td>
+          <td>
+                        pneumococcal conjugate vaccine, polyvalent
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>101
+            <a name="101"> </a>
+          </td>
+          <td>typhoid, ViCPs</td>
+          <td>
+                        Typhoid Vi capsular polysaccharide vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>11
+            <a name="11"> </a>
+          </td>
+          <td>pertussis</td>
+          <td>
+                        pertussis vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>12
+            <a name="12"> </a>
+          </td>
+          <td>diphtheria antitoxin</td>
+          <td>
+                        diphtheria antitoxin
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>13
+            <a name="13"> </a>
+          </td>
+          <td>TIG</td>
+          <td>
+                        tetanus immune globulin
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>14
+            <a name="14"> </a>
+          </td>
+          <td>IG, NOS</td>
+          <td>
+                        immune globulin, NOS
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>15
+            <a name="15"> </a>
+          </td>
+          <td>influenza, split (incl. purified surface antigen)</td>
+          <td>
+                        influenza virus vaccine, split virus (incl. purified surface antigen)
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>16
+            <a name="16"> </a>
+          </td>
+          <td>influenza, whole</td>
+          <td>
+                        influenza virus vaccine, whole virus
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>17
+            <a name="17"> </a>
+          </td>
+          <td>Hib, NOS</td>
+          <td>
+                        Haemophilus influenzae type b vaccine, conjugate NOS
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>18
+            <a name="18"> </a>
+          </td>
+          <td>rabies, intramuscular injection</td>
+          <td>
+                        rabies vaccine, for intramuscular injection
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>19
+            <a name="19"> </a>
+          </td>
+          <td>BCG</td>
+          <td>
+                        Bacillus Calmette-Guerin vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>2
+            <a name="2"> </a>
+          </td>
+          <td>OPV</td>
+          <td>
+                        poliovirus vaccine, live, oral
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>20
+            <a name="20"> </a>
+          </td>
+          <td>DTaP</td>
+          <td>
+                        diphtheria, tetanus toxoids and acellular pertussis vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>21
+            <a name="21"> </a>
+          </td>
+          <td>varicella</td>
+          <td>
+                        varicella virus vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>22
+            <a name="22"> </a>
+          </td>
+          <td>DTP-Hib</td>
+          <td>
+                        DTP-Haemophilus influenzae type b conjugate vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>23
+            <a name="23"> </a>
+          </td>
+          <td>plague</td>
+          <td>
+                        plague vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>24
+            <a name="24"> </a>
+          </td>
+          <td>Anthrax</td>
+          <td>
+                        anthrax vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>25
+            <a name="25"> </a>
+          </td>
+          <td>typhoid, oral</td>
+          <td>
+                        typhoid vaccine, live, oral
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>26
+            <a name="26"> </a>
+          </td>
+          <td>Cholera</td>
+          <td>
+                        cholera vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>27
+            <a name="27"> </a>
+          </td>
+          <td>botulinum antitoxin</td>
+          <td>
+                        botulinum antitoxin
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>28
+            <a name="28"> </a>
+          </td>
+          <td>DT (pediatric)</td>
+          <td>
+                        diphtheria and tetanus toxoids, adsorbed for pediatric use
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>29
+            <a name="29"> </a>
+          </td>
+          <td>CMVIG</td>
+          <td>
+                        cytomegalovirus immune globulin, intravenous
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>3
+            <a name="3"> </a>
+          </td>
+          <td>MMR</td>
+          <td>
+                        measles, mumps and rubella virus vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>30
+            <a name="30"> </a>
+          </td>
+          <td>HBIG</td>
+          <td>
+                        hepatitis B immune globulin
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>31
+            <a name="31"> </a>
+          </td>
+          <td>Hep A, pediatric, NOS</td>
+          <td>
+                        hepatitis A vaccine, pediatric dosage, NOS
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>32
+            <a name="32"> </a>
+          </td>
+          <td>meningococcal</td>
+          <td>
+                        meningococcal polysaccharide vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>33
+            <a name="33"> </a>
+          </td>
+          <td>pneumococcal</td>
+          <td>
+                        pneumococcal  polysaccharide vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>34
+            <a name="34"> </a>
+          </td>
+          <td>RIG</td>
+          <td>
+                        rabies immune globulin
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>35
+            <a name="35"> </a>
+          </td>
+          <td>tetanus toxoid</td>
+          <td>
+                        tetanus toxoid
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>36
+            <a name="36"> </a>
+          </td>
+          <td>VZIG</td>
+          <td>
+                        varicella zoster immune globulin
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>37
+            <a name="37"> </a>
+          </td>
+          <td>yellow fever</td>
+          <td>
+                        yellow fever vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>38
+            <a name="38"> </a>
+          </td>
+          <td>rubella/mumps</td>
+          <td>
+                        rubella and mumps virus vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>39
+            <a name="39"> </a>
+          </td>
+          <td>Japanese encephalitis</td>
+          <td>
+                        Japanese encephalitis vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>4
+            <a name="4"> </a>
+          </td>
+          <td>M/R</td>
+          <td>
+                        measles and rubella virus vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>40
+            <a name="40"> </a>
+          </td>
+          <td>rabies, intradermal injection</td>
+          <td>
+                        rabies vaccine, for intradermal injection
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>41
+            <a name="41"> </a>
+          </td>
+          <td>typhoid, parenteral</td>
+          <td>
+                        typhoid vaccine, parenteral, other than acetone-killed, dried
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>42
+            <a name="42"> </a>
+          </td>
+          <td>Hep B, adolescent/high risk infant</td>
+          <td>
+                        hepatitis B vaccine, adolescent/high risk infant dosage
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>43
+            <a name="43"> </a>
+          </td>
+          <td>Hep B, adult</td>
+          <td>
+                        hepatitis B vaccine, adult dosage
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>44
+            <a name="44"> </a>
+          </td>
+          <td>Hep B, dialysis</td>
+          <td>
+                        hepatitis B vaccine, dialysis patient dosage
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>45
+            <a name="45"> </a>
+          </td>
+          <td>Hep B, NOS</td>
+          <td>
+                        hepatitis B vaccine, NOS
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>46
+            <a name="46"> </a>
+          </td>
+          <td>Hib (PRP-D)</td>
+          <td>
+                        Haemophilus influenzae type b vaccine, PRP-D conjugate
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>47
+            <a name="47"> </a>
+          </td>
+          <td>Hib (HbOC)</td>
+          <td>
+                        Haemophilus influenzae type b vaccine, HbOC conjugate
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>48
+            <a name="48"> </a>
+          </td>
+          <td>Hib (PRP-T)</td>
+          <td>
+                        Haemophilus influenzae type b vaccine, PRP-T conjugate
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>49
+            <a name="49"> </a>
+          </td>
+          <td>Hib (PRP-OMP)</td>
+          <td>
+                        Haemophilus influenzae type b vaccine, PRP-OMP conjugate
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>5
+            <a name="5"> </a>
+          </td>
+          <td>measles</td>
+          <td>
+                        measles virus vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>50
+            <a name="50"> </a>
+          </td>
+          <td>DTaPHib</td>
+          <td>
+                        DTaP-Haemophilus influenzae type b conjugate vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>51
+            <a name="51"> </a>
+          </td>
+          <td>Hib-Hep B</td>
+          <td>
+                        Haemophilus influenzae type b conjugate and Hepatitis B vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>52
+            <a name="52"> </a>
+          </td>
+          <td>Hep A, adult</td>
+          <td>
+                        hepatitis A vaccine, adult dosage
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>53
+            <a name="53"> </a>
+          </td>
+          <td>typhoid, parenteral, AKD (U.S. military)</td>
+          <td>
+                        typhoid vaccine, parenteral, acetone-killed, dried (U.S. military)
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>54
+            <a name="54"> </a>
+          </td>
+          <td>adenovirus, type 4</td>
+          <td>
+                        adenovirus vaccine, type 4, live, oral
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>55
+            <a name="55"> </a>
+          </td>
+          <td>adenovirus, type 7</td>
+          <td>
+                        adenovirus vaccine, type 7, live, oral
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>56
+            <a name="56"> </a>
+          </td>
+          <td>dengue fever</td>
+          <td>
+                        dengue fever vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>57
+            <a name="57"> </a>
+          </td>
+          <td>Hantavirus</td>
+          <td>
+                        hantavirus vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>58
+            <a name="58"> </a>
+          </td>
+          <td>Hep C</td>
+          <td>
+                        hepatitis C vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>59
+            <a name="59"> </a>
+          </td>
+          <td>Hep E</td>
+          <td>
+                        hepatitis E vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>6
+            <a name="6"> </a>
+          </td>
+          <td>rubella</td>
+          <td>
+                        rubella virus vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>60
+            <a name="60"> </a>
+          </td>
+          <td>herpes simplex 2</td>
+          <td>
+                        herpes simplex virus, type 2 vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>61
+            <a name="61"> </a>
+          </td>
+          <td>HIV</td>
+          <td>
+                        human immunodeficiency virus vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>62
+            <a name="62"> </a>
+          </td>
+          <td>HPV</td>
+          <td>
+                        human papilloma virus vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>63
+            <a name="63"> </a>
+          </td>
+          <td>Junin virus</td>
+          <td>
+                        Junin virus vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>64
+            <a name="64"> </a>
+          </td>
+          <td>leishmaniasis</td>
+          <td>
+                        leishmaniasis vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>65
+            <a name="65"> </a>
+          </td>
+          <td>leprosy</td>
+          <td>
+                        leprosy vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>66
+            <a name="66"> </a>
+          </td>
+          <td>Lyme disease</td>
+          <td>
+                        Lyme disease vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>67
+            <a name="67"> </a>
+          </td>
+          <td>malaria</td>
+          <td>
+                        malaria vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>68
+            <a name="68"> </a>
+          </td>
+          <td>melanoma</td>
+          <td>
+                        melanoma vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>69
+            <a name="69"> </a>
+          </td>
+          <td>parainfluenza-3</td>
+          <td>
+                        parainfluenza-3 virus vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>7
+            <a name="7"> </a>
+          </td>
+          <td>mumps</td>
+          <td>
+                        mumps virus vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>70
+            <a name="70"> </a>
+          </td>
+          <td>Q fever</td>
+          <td>
+                        Q fever vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>71
+            <a name="71"> </a>
+          </td>
+          <td>RSV-IGIV</td>
+          <td>
+                        respiratory syncytial virus immune globulin, intravenous
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>72
+            <a name="72"> </a>
+          </td>
+          <td>rheumatic fever</td>
+          <td>
+                        rheumatic fever vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>73
+            <a name="73"> </a>
+          </td>
+          <td>Rift Valley fever</td>
+          <td>
+                        Rift Valley fever vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>74
+            <a name="74"> </a>
+          </td>
+          <td>rotavirus</td>
+          <td>
+                        rotavirus vaccine, tetravalent, live, oral
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>75
+            <a name="75"> </a>
+          </td>
+          <td>smallpox</td>
+          <td>
+                        smallpox vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>76
+            <a name="76"> </a>
+          </td>
+          <td>Staphylococcus bacterio lysate</td>
+          <td>
+                        Staphylococcus bacteriophage lysate
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>77
+            <a name="77"> </a>
+          </td>
+          <td>tick-borne encephalitis</td>
+          <td>
+                        tick-borne encephalitis vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>78
+            <a name="78"> </a>
+          </td>
+          <td>tularemia vaccine</td>
+          <td>
+                        tularemia vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>79
+            <a name="79"> </a>
+          </td>
+          <td>vaccinia immune globulin</td>
+          <td>
+                        vaccinia immune globulin
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>8
+            <a name="8"> </a>
+          </td>
+          <td>Hep B, adolescent or pediatric</td>
+          <td>
+                        hepatitis B vaccine, pediatric or pediatric/adolescent dosage
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>80
+            <a name="80"> </a>
+          </td>
+          <td>VEE, live</td>
+          <td>
+                        Venezuelan equine encephalitis, live, attenuated
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>81
+            <a name="81"> </a>
+          </td>
+          <td>VEE, inactivated</td>
+          <td>
+                        Venezuelan equine encephalitis, inactivated
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>82
+            <a name="82"> </a>
+          </td>
+          <td>adenovirus, NOS</td>
+          <td>
+                        adenovirus vaccine, NOS
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>83
+            <a name="83"> </a>
+          </td>
+          <td>Hep A, ped/adol, 2 dose</td>
+          <td>
+                        hepatitis A vaccine, pediatric/adolescent dosage, 2 dose schedule
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>84
+            <a name="84"> </a>
+          </td>
+          <td>Hep A, ped/adol, 3 dose</td>
+          <td>
+                        hepatitis A vaccine, pediatric/adolescent dosage, 3 dose schedule
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>85
+            <a name="85"> </a>
+          </td>
+          <td>Hep A, NOS</td>
+          <td>
+                        hepatitis A vaccine, NOS
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>86
+            <a name="86"> </a>
+          </td>
+          <td>IG</td>
+          <td>
+                        immune globulin, intramuscular
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>87
+            <a name="87"> </a>
+          </td>
+          <td>IGIV</td>
+          <td>
+                        immune globulin, intravenous
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>88
+            <a name="88"> </a>
+          </td>
+          <td>influenza, NOS</td>
+          <td>
+                        influenza virus vaccine, NOS
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>89
+            <a name="89"> </a>
+          </td>
+          <td>polio, NOS</td>
+          <td>
+                        poliovirus vaccine, NOS
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>9
+            <a name="9"> </a>
+          </td>
+          <td>Td (adult)</td>
+          <td>
+                        tetanus and diphtheria toxoids, adsorbed for adult use
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>90
+            <a name="90"> </a>
+          </td>
+          <td>rabies, NOS</td>
+          <td>
+                        rabies vaccine, NOS
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>91
+            <a name="91"> </a>
+          </td>
+          <td>typhoid, NOS</td>
+          <td>
+                        typhoid vaccine, NOS
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>92
+            <a name="92"> </a>
+          </td>
+          <td>VEE, NOS</td>
+          <td>
+                        Venezuelan equine encephalitis vaccine, NOS
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>93
+            <a name="93"> </a>
+          </td>
+          <td>RSV-Mab</td>
+          <td>
+                        respiratory syncytial virus monoclonal antibody (palivizumab), intramuscular
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>94
+            <a name="94"> </a>
+          </td>
+          <td>MMRV</td>
+          <td>
+                        measles, mumps, rubella, and varicella virus vaccine
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>95
+            <a name="95"> </a>
+          </td>
+          <td>TST-OT tine test</td>
+          <td>
+                        tuberculin skin test; old tuberculin, multipuncture device
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>96
+            <a name="96"> </a>
+          </td>
+          <td>TST-PPD intradermal</td>
+          <td>
+                        tuberculin skin test; purified protein derivative solution, intradermal
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>97
+            <a name="97"> </a>
+          </td>
+          <td>TST-PPD tine test</td>
+          <td>
+                        tuberculin skin test; purified protein derivative, multipuncture device
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>98
+            <a name="98"> </a>
+          </td>
+          <td>TST, NOS</td>
+          <td>
+                        tuberculin skin test; NOS
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/VaccineType"/>
+  <name value="v3 Code System VaccineType"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" The kind of vaccine."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/VaccineType"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="1"/>
+      <display value="DTP"/>
+      <definition value="diphtheria, tetanus toxoids and pertussis vaccine"/>
+    </concept>
+    <concept>
+      <code value="10"/>
+      <display value="IPV"/>
+      <definition value="poliovirus vaccine, inactivated"/>
+    </concept>
+    <concept>
+      <code value="100"/>
+      <display value="pneumococcal conjugate"/>
+      <definition value="pneumococcal conjugate vaccine, polyvalent"/>
+    </concept>
+    <concept>
+      <code value="101"/>
+      <display value="typhoid, ViCPs"/>
+      <definition value="Typhoid Vi capsular polysaccharide vaccine"/>
+    </concept>
+    <concept>
+      <code value="11"/>
+      <display value="pertussis"/>
+      <definition value="pertussis vaccine"/>
+    </concept>
+    <concept>
+      <code value="12"/>
+      <display value="diphtheria antitoxin"/>
+      <definition value="diphtheria antitoxin"/>
+    </concept>
+    <concept>
+      <code value="13"/>
+      <display value="TIG"/>
+      <definition value="tetanus immune globulin"/>
+    </concept>
+    <concept>
+      <code value="14"/>
+      <display value="IG, NOS"/>
+      <definition value="immune globulin, NOS"/>
+    </concept>
+    <concept>
+      <code value="15"/>
+      <display value="influenza, split (incl. purified surface antigen)"/>
+      <definition value="influenza virus vaccine, split virus (incl. purified surface antigen)"/>
+    </concept>
+    <concept>
+      <code value="16"/>
+      <display value="influenza, whole"/>
+      <definition value="influenza virus vaccine, whole virus"/>
+    </concept>
+    <concept>
+      <code value="17"/>
+      <display value="Hib, NOS"/>
+      <definition value="Haemophilus influenzae type b vaccine, conjugate NOS"/>
+    </concept>
+    <concept>
+      <code value="18"/>
+      <display value="rabies, intramuscular injection"/>
+      <definition value="rabies vaccine, for intramuscular injection"/>
+    </concept>
+    <concept>
+      <code value="19"/>
+      <display value="BCG"/>
+      <definition value="Bacillus Calmette-Guerin vaccine"/>
+    </concept>
+    <concept>
+      <code value="2"/>
+      <display value="OPV"/>
+      <definition value="poliovirus vaccine, live, oral"/>
+    </concept>
+    <concept>
+      <code value="20"/>
+      <display value="DTaP"/>
+      <definition value="diphtheria, tetanus toxoids and acellular pertussis vaccine"/>
+    </concept>
+    <concept>
+      <code value="21"/>
+      <display value="varicella"/>
+      <definition value="varicella virus vaccine"/>
+    </concept>
+    <concept>
+      <code value="22"/>
+      <display value="DTP-Hib"/>
+      <definition value="DTP-Haemophilus influenzae type b conjugate vaccine"/>
+    </concept>
+    <concept>
+      <code value="23"/>
+      <display value="plague"/>
+      <definition value="plague vaccine"/>
+    </concept>
+    <concept>
+      <code value="24"/>
+      <display value="Anthrax"/>
+      <definition value="anthrax vaccine"/>
+    </concept>
+    <concept>
+      <code value="25"/>
+      <display value="typhoid, oral"/>
+      <definition value="typhoid vaccine, live, oral"/>
+    </concept>
+    <concept>
+      <code value="26"/>
+      <display value="Cholera"/>
+      <definition value="cholera vaccine"/>
+    </concept>
+    <concept>
+      <code value="27"/>
+      <display value="botulinum antitoxin"/>
+      <definition value="botulinum antitoxin"/>
+    </concept>
+    <concept>
+      <code value="28"/>
+      <display value="DT (pediatric)"/>
+      <definition value="diphtheria and tetanus toxoids, adsorbed for pediatric use"/>
+    </concept>
+    <concept>
+      <code value="29"/>
+      <display value="CMVIG"/>
+      <definition value="cytomegalovirus immune globulin, intravenous"/>
+    </concept>
+    <concept>
+      <code value="3"/>
+      <display value="MMR"/>
+      <definition value="measles, mumps and rubella virus vaccine"/>
+    </concept>
+    <concept>
+      <code value="30"/>
+      <display value="HBIG"/>
+      <definition value="hepatitis B immune globulin"/>
+    </concept>
+    <concept>
+      <code value="31"/>
+      <display value="Hep A, pediatric, NOS"/>
+      <definition value="hepatitis A vaccine, pediatric dosage, NOS"/>
+    </concept>
+    <concept>
+      <code value="32"/>
+      <display value="meningococcal"/>
+      <definition value="meningococcal polysaccharide vaccine"/>
+    </concept>
+    <concept>
+      <code value="33"/>
+      <display value="pneumococcal"/>
+      <definition value="pneumococcal  polysaccharide vaccine"/>
+    </concept>
+    <concept>
+      <code value="34"/>
+      <display value="RIG"/>
+      <definition value="rabies immune globulin"/>
+    </concept>
+    <concept>
+      <code value="35"/>
+      <display value="tetanus toxoid"/>
+      <definition value="tetanus toxoid"/>
+    </concept>
+    <concept>
+      <code value="36"/>
+      <display value="VZIG"/>
+      <definition value="varicella zoster immune globulin"/>
+    </concept>
+    <concept>
+      <code value="37"/>
+      <display value="yellow fever"/>
+      <definition value="yellow fever vaccine"/>
+    </concept>
+    <concept>
+      <code value="38"/>
+      <display value="rubella/mumps"/>
+      <definition value="rubella and mumps virus vaccine"/>
+    </concept>
+    <concept>
+      <code value="39"/>
+      <display value="Japanese encephalitis"/>
+      <definition value="Japanese encephalitis vaccine"/>
+    </concept>
+    <concept>
+      <code value="4"/>
+      <display value="M/R"/>
+      <definition value="measles and rubella virus vaccine"/>
+    </concept>
+    <concept>
+      <code value="40"/>
+      <display value="rabies, intradermal injection"/>
+      <definition value="rabies vaccine, for intradermal injection"/>
+    </concept>
+    <concept>
+      <code value="41"/>
+      <display value="typhoid, parenteral"/>
+      <definition value="typhoid vaccine, parenteral, other than acetone-killed, dried"/>
+    </concept>
+    <concept>
+      <code value="42"/>
+      <display value="Hep B, adolescent/high risk infant"/>
+      <definition value="hepatitis B vaccine, adolescent/high risk infant dosage"/>
+    </concept>
+    <concept>
+      <code value="43"/>
+      <display value="Hep B, adult"/>
+      <definition value="hepatitis B vaccine, adult dosage"/>
+    </concept>
+    <concept>
+      <code value="44"/>
+      <display value="Hep B, dialysis"/>
+      <definition value="hepatitis B vaccine, dialysis patient dosage"/>
+    </concept>
+    <concept>
+      <code value="45"/>
+      <display value="Hep B, NOS"/>
+      <definition value="hepatitis B vaccine, NOS"/>
+    </concept>
+    <concept>
+      <code value="46"/>
+      <display value="Hib (PRP-D)"/>
+      <definition value="Haemophilus influenzae type b vaccine, PRP-D conjugate"/>
+    </concept>
+    <concept>
+      <code value="47"/>
+      <display value="Hib (HbOC)"/>
+      <definition value="Haemophilus influenzae type b vaccine, HbOC conjugate"/>
+    </concept>
+    <concept>
+      <code value="48"/>
+      <display value="Hib (PRP-T)"/>
+      <definition value="Haemophilus influenzae type b vaccine, PRP-T conjugate"/>
+    </concept>
+    <concept>
+      <code value="49"/>
+      <display value="Hib (PRP-OMP)"/>
+      <definition value="Haemophilus influenzae type b vaccine, PRP-OMP conjugate"/>
+    </concept>
+    <concept>
+      <code value="5"/>
+      <display value="measles"/>
+      <definition value="measles virus vaccine"/>
+    </concept>
+    <concept>
+      <code value="50"/>
+      <display value="DTaPHib"/>
+      <definition value="DTaP-Haemophilus influenzae type b conjugate vaccine"/>
+    </concept>
+    <concept>
+      <code value="51"/>
+      <display value="Hib-Hep B"/>
+      <definition value="Haemophilus influenzae type b conjugate and Hepatitis B vaccine"/>
+    </concept>
+    <concept>
+      <code value="52"/>
+      <display value="Hep A, adult"/>
+      <definition value="hepatitis A vaccine, adult dosage"/>
+    </concept>
+    <concept>
+      <code value="53"/>
+      <display value="typhoid, parenteral, AKD (U.S. military)"/>
+      <definition value="typhoid vaccine, parenteral, acetone-killed, dried (U.S. military)"/>
+    </concept>
+    <concept>
+      <code value="54"/>
+      <display value="adenovirus, type 4"/>
+      <definition value="adenovirus vaccine, type 4, live, oral"/>
+    </concept>
+    <concept>
+      <code value="55"/>
+      <display value="adenovirus, type 7"/>
+      <definition value="adenovirus vaccine, type 7, live, oral"/>
+    </concept>
+    <concept>
+      <code value="56"/>
+      <display value="dengue fever"/>
+      <definition value="dengue fever vaccine"/>
+    </concept>
+    <concept>
+      <code value="57"/>
+      <display value="Hantavirus"/>
+      <definition value="hantavirus vaccine"/>
+    </concept>
+    <concept>
+      <code value="58"/>
+      <display value="Hep C"/>
+      <definition value="hepatitis C vaccine"/>
+    </concept>
+    <concept>
+      <code value="59"/>
+      <display value="Hep E"/>
+      <definition value="hepatitis E vaccine"/>
+    </concept>
+    <concept>
+      <code value="6"/>
+      <display value="rubella"/>
+      <definition value="rubella virus vaccine"/>
+    </concept>
+    <concept>
+      <code value="60"/>
+      <display value="herpes simplex 2"/>
+      <definition value="herpes simplex virus, type 2 vaccine"/>
+    </concept>
+    <concept>
+      <code value="61"/>
+      <display value="HIV"/>
+      <definition value="human immunodeficiency virus vaccine"/>
+    </concept>
+    <concept>
+      <code value="62"/>
+      <display value="HPV"/>
+      <definition value="human papilloma virus vaccine"/>
+    </concept>
+    <concept>
+      <code value="63"/>
+      <display value="Junin virus"/>
+      <definition value="Junin virus vaccine"/>
+    </concept>
+    <concept>
+      <code value="64"/>
+      <display value="leishmaniasis"/>
+      <definition value="leishmaniasis vaccine"/>
+    </concept>
+    <concept>
+      <code value="65"/>
+      <display value="leprosy"/>
+      <definition value="leprosy vaccine"/>
+    </concept>
+    <concept>
+      <code value="66"/>
+      <display value="Lyme disease"/>
+      <definition value="Lyme disease vaccine"/>
+    </concept>
+    <concept>
+      <code value="67"/>
+      <display value="malaria"/>
+      <definition value="malaria vaccine"/>
+    </concept>
+    <concept>
+      <code value="68"/>
+      <display value="melanoma"/>
+      <definition value="melanoma vaccine"/>
+    </concept>
+    <concept>
+      <code value="69"/>
+      <display value="parainfluenza-3"/>
+      <definition value="parainfluenza-3 virus vaccine"/>
+    </concept>
+    <concept>
+      <code value="7"/>
+      <display value="mumps"/>
+      <definition value="mumps virus vaccine"/>
+    </concept>
+    <concept>
+      <code value="70"/>
+      <display value="Q fever"/>
+      <definition value="Q fever vaccine"/>
+    </concept>
+    <concept>
+      <code value="71"/>
+      <display value="RSV-IGIV"/>
+      <definition value="respiratory syncytial virus immune globulin, intravenous"/>
+    </concept>
+    <concept>
+      <code value="72"/>
+      <display value="rheumatic fever"/>
+      <definition value="rheumatic fever vaccine"/>
+    </concept>
+    <concept>
+      <code value="73"/>
+      <display value="Rift Valley fever"/>
+      <definition value="Rift Valley fever vaccine"/>
+    </concept>
+    <concept>
+      <code value="74"/>
+      <display value="rotavirus"/>
+      <definition value="rotavirus vaccine, tetravalent, live, oral"/>
+    </concept>
+    <concept>
+      <code value="75"/>
+      <display value="smallpox"/>
+      <definition value="smallpox vaccine"/>
+    </concept>
+    <concept>
+      <code value="76"/>
+      <display value="Staphylococcus bacterio lysate"/>
+      <definition value="Staphylococcus bacteriophage lysate"/>
+    </concept>
+    <concept>
+      <code value="77"/>
+      <display value="tick-borne encephalitis"/>
+      <definition value="tick-borne encephalitis vaccine"/>
+    </concept>
+    <concept>
+      <code value="78"/>
+      <display value="tularemia vaccine"/>
+      <definition value="tularemia vaccine"/>
+    </concept>
+    <concept>
+      <code value="79"/>
+      <display value="vaccinia immune globulin"/>
+      <definition value="vaccinia immune globulin"/>
+    </concept>
+    <concept>
+      <code value="8"/>
+      <display value="Hep B, adolescent or pediatric"/>
+      <definition value="hepatitis B vaccine, pediatric or pediatric/adolescent dosage"/>
+    </concept>
+    <concept>
+      <code value="80"/>
+      <display value="VEE, live"/>
+      <definition value="Venezuelan equine encephalitis, live, attenuated"/>
+    </concept>
+    <concept>
+      <code value="81"/>
+      <display value="VEE, inactivated"/>
+      <definition value="Venezuelan equine encephalitis, inactivated"/>
+    </concept>
+    <concept>
+      <code value="82"/>
+      <display value="adenovirus, NOS"/>
+      <definition value="adenovirus vaccine, NOS"/>
+    </concept>
+    <concept>
+      <code value="83"/>
+      <display value="Hep A, ped/adol, 2 dose"/>
+      <definition value="hepatitis A vaccine, pediatric/adolescent dosage, 2 dose schedule"/>
+    </concept>
+    <concept>
+      <code value="84"/>
+      <display value="Hep A, ped/adol, 3 dose"/>
+      <definition value="hepatitis A vaccine, pediatric/adolescent dosage, 3 dose schedule"/>
+    </concept>
+    <concept>
+      <code value="85"/>
+      <display value="Hep A, NOS"/>
+      <definition value="hepatitis A vaccine, NOS"/>
+    </concept>
+    <concept>
+      <code value="86"/>
+      <display value="IG"/>
+      <definition value="immune globulin, intramuscular"/>
+    </concept>
+    <concept>
+      <code value="87"/>
+      <display value="IGIV"/>
+      <definition value="immune globulin, intravenous"/>
+    </concept>
+    <concept>
+      <code value="88"/>
+      <display value="influenza, NOS"/>
+      <definition value="influenza virus vaccine, NOS"/>
+    </concept>
+    <concept>
+      <code value="89"/>
+      <display value="polio, NOS"/>
+      <definition value="poliovirus vaccine, NOS"/>
+    </concept>
+    <concept>
+      <code value="9"/>
+      <display value="Td (adult)"/>
+      <definition value="tetanus and diphtheria toxoids, adsorbed for adult use"/>
+    </concept>
+    <concept>
+      <code value="90"/>
+      <display value="rabies, NOS"/>
+      <definition value="rabies vaccine, NOS"/>
+    </concept>
+    <concept>
+      <code value="91"/>
+      <display value="typhoid, NOS"/>
+      <definition value="typhoid vaccine, NOS"/>
+    </concept>
+    <concept>
+      <code value="92"/>
+      <display value="VEE, NOS"/>
+      <definition value="Venezuelan equine encephalitis vaccine, NOS"/>
+    </concept>
+    <concept>
+      <code value="93"/>
+      <display value="RSV-Mab"/>
+      <definition value="respiratory syncytial virus monoclonal antibody (palivizumab), intramuscular"/>
+    </concept>
+    <concept>
+      <code value="94"/>
+      <display value="MMRV"/>
+      <definition value="measles, mumps, rubella, and varicella virus vaccine"/>
+    </concept>
+    <concept>
+      <code value="95"/>
+      <display value="TST-OT tine test"/>
+      <definition value="tuberculin skin test; old tuberculin, multipuncture device"/>
+    </concept>
+    <concept>
+      <code value="96"/>
+      <display value="TST-PPD intradermal"/>
+      <definition value="tuberculin skin test; purified protein derivative solution, intradermal"/>
+    </concept>
+    <concept>
+      <code value="97"/>
+      <display value="TST-PPD tine test"/>
+      <definition value="tuberculin skin test; purified protein derivative, multipuncture device"/>
+    </concept>
+    <concept>
+      <code value="98"/>
+      <display value="TST, NOS"/>
+      <definition value="tuberculin skin test; NOS"/>
+    </concept>
+  </define>
+</ValueSet>

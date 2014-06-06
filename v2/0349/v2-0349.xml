@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>PSRO/UR Approval Indicator</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>...
+            <a name=".46.46.46"> </a>
+          </td>
+          <td>No suggested values</td>
+          <td>added v2.5.1, removed after v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>1
+            <a name="1"> </a>
+          </td>
+          <td>Approved by the PSRO/UR as billed</td>
+          <td>added v2.3.1, removed after v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>2
+            <a name="2"> </a>
+          </td>
+          <td>Automatic approval as billed based on focused review</td>
+          <td>added v2.3.1, removed after v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>3
+            <a name="3"> </a>
+          </td>
+          <td>Partial approval</td>
+          <td>added v2.3.1, removed after v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>4
+            <a name="4"> </a>
+          </td>
+          <td>Admission denied</td>
+          <td>added v2.3.1, removed after v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>5
+            <a name="5"> </a>
+          </td>
+          <td>Postpayment review applicable</td>
+          <td>added v2.3.1, removed after v2.4</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0349"/>
+  <name value="v2 PSRO/UR Approval Indicator"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0349 ( PSRO/UR Approval Indicator)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0349"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="..."/>
+      <display value="No suggested values"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="1"/>
+      <display value="Approved by the PSRO/UR as billed"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="2"/>
+      <display value="Automatic approval as billed based on focused review"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="3"/>
+      <display value="Partial approval"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="4"/>
+      <display value="Admission denied"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="5"/>
+      <display value="Postpayment review applicable"/>
+    </concept>
+  </define>
+</ValueSet>

@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Participation</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>AD
+            <a name="AD"> </a>
+          </td>
+          <td>Admitting Provider</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>AI
+            <a name="AI"> </a>
+          </td>
+          <td>Assistant/Alternate Interpreter</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>AP
+            <a name="AP"> </a>
+          </td>
+          <td>Administering Provider</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>ARI
+            <a name="ARI"> </a>
+          </td>
+          <td>Assistant Result Interpreter</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>AT
+            <a name="AT"> </a>
+          </td>
+          <td>Attending Provider</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>AUT
+            <a name="AUT"> </a>
+          </td>
+          <td>AUT Author/Event Initiator</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>CP
+            <a name="CP"> </a>
+          </td>
+          <td>Consulting Provider</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>DP
+            <a name="DP"> </a>
+          </td>
+          <td>Dispensing Provider</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>EP
+            <a name="EP"> </a>
+          </td>
+          <td>Entering Provider (probably not the same as transcriptionist)</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>EQUIP
+            <a name="EQUIP"> </a>
+          </td>
+          <td>Equipment</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>FHCP
+            <a name="FHCP"> </a>
+          </td>
+          <td>Family Health Care Professional</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>MDIR
+            <a name="MDIR"> </a>
+          </td>
+          <td>Medical Director</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>OP
+            <a name="OP"> </a>
+          </td>
+          <td>Ordering Provider</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>PB
+            <a name="PB"> </a>
+          </td>
+          <td>Packed by</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>PH
+            <a name="PH"> </a>
+          </td>
+          <td>Pharmacist   (not sure how to dissect Pharmacist/Treatment Supplier&#39;s Verifier ID)</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>PI
+            <a name="PI"> </a>
+          </td>
+          <td>Primary Interpreter</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>PO
+            <a name="PO"> </a>
+          </td>
+          <td>Performing Organization</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>POMD
+            <a name="POMD"> </a>
+          </td>
+          <td>Performing Organization Medical Director</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>PP
+            <a name="PP"> </a>
+          </td>
+          <td>Primary Care Provider</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>PRI
+            <a name="PRI"> </a>
+          </td>
+          <td>Principal Result Interpreter</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>RCT
+            <a name="RCT"> </a>
+          </td>
+          <td>Results Copies To</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>RO
+            <a name="RO"> </a>
+          </td>
+          <td>Responsible Observer</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>RP
+            <a name="RP"> </a>
+          </td>
+          <td>Referring Provider</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>RT
+            <a name="RT"> </a>
+          </td>
+          <td>Referred to Provider</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>SB
+            <a name="SB"> </a>
+          </td>
+          <td>Send by</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>SC
+            <a name="SC"> </a>
+          </td>
+          <td>Specimen Collector</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>TN
+            <a name="TN"> </a>
+          </td>
+          <td>Technician</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>TR
+            <a name="TR"> </a>
+          </td>
+          <td>Transcriptionist</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>VP
+            <a name="VP"> </a>
+          </td>
+          <td>Verifying Provider</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>VPS
+            <a name="VPS"> </a>
+          </td>
+          <td>Verifying Pharmaceutical Supplier   (not sure how to dissect Pharmacist/Treatment Supplier&#39;s Verifier ID)</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>VTS
+            <a name="VTS"> </a>
+          </td>
+          <td>Verifying Treatment Supplier   (not sure how to dissect Pharmacist/Treatment Supplier&#39;s Verifier ID)</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>WAY
+            <a name="WAY"> </a>
+          </td>
+          <td>Waypoint</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>WAYR
+            <a name="WAYR"> </a>
+          </td>
+          <td>Waypoint Recipient</td>
+          <td>added v2.7</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0912"/>
+  <name value="v2 Participation"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0912 ( Participation)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0912"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="AD"/>
+      <display value="Admitting Provider"/>
+    </concept>
+    <concept>
+      <code value="AI"/>
+      <display value="Assistant/Alternate Interpreter"/>
+    </concept>
+    <concept>
+      <code value="AP"/>
+      <display value="Administering Provider"/>
+    </concept>
+    <concept>
+      <code value="ARI"/>
+      <display value="Assistant Result Interpreter"/>
+    </concept>
+    <concept>
+      <code value="AT"/>
+      <display value="Attending Provider"/>
+    </concept>
+    <concept>
+      <code value="AUT"/>
+      <display value="AUT Author/Event Initiator"/>
+    </concept>
+    <concept>
+      <code value="CP"/>
+      <display value="Consulting Provider"/>
+    </concept>
+    <concept>
+      <code value="DP"/>
+      <display value="Dispensing Provider"/>
+    </concept>
+    <concept>
+      <code value="EP"/>
+      <display value="Entering Provider (probably not the same as transcriptionist)"/>
+    </concept>
+    <concept>
+      <code value="EQUIP"/>
+      <display value="Equipment"/>
+    </concept>
+    <concept>
+      <code value="FHCP"/>
+      <display value="Family Health Care Professional"/>
+    </concept>
+    <concept>
+      <code value="MDIR"/>
+      <display value="Medical Director"/>
+    </concept>
+    <concept>
+      <code value="OP"/>
+      <display value="Ordering Provider"/>
+    </concept>
+    <concept>
+      <code value="PB"/>
+      <display value="Packed by"/>
+    </concept>
+    <concept>
+      <code value="PH"/>
+      <display value="Pharmacist   (not sure how to dissect Pharmacist/Treatment Supplier&#39;s Verifier ID)"/>
+    </concept>
+    <concept>
+      <code value="PI"/>
+      <display value="Primary Interpreter"/>
+    </concept>
+    <concept>
+      <code value="PO"/>
+      <display value="Performing Organization"/>
+    </concept>
+    <concept>
+      <code value="POMD"/>
+      <display value="Performing Organization Medical Director"/>
+    </concept>
+    <concept>
+      <code value="PP"/>
+      <display value="Primary Care Provider"/>
+    </concept>
+    <concept>
+      <code value="PRI"/>
+      <display value="Principal Result Interpreter"/>
+    </concept>
+    <concept>
+      <code value="RCT"/>
+      <display value="Results Copies To"/>
+    </concept>
+    <concept>
+      <code value="RO"/>
+      <display value="Responsible Observer"/>
+    </concept>
+    <concept>
+      <code value="RP"/>
+      <display value="Referring Provider"/>
+    </concept>
+    <concept>
+      <code value="RT"/>
+      <display value="Referred to Provider"/>
+    </concept>
+    <concept>
+      <code value="SB"/>
+      <display value="Send by"/>
+    </concept>
+    <concept>
+      <code value="SC"/>
+      <display value="Specimen Collector"/>
+    </concept>
+    <concept>
+      <code value="TN"/>
+      <display value="Technician"/>
+    </concept>
+    <concept>
+      <code value="TR"/>
+      <display value="Transcriptionist"/>
+    </concept>
+    <concept>
+      <code value="VP"/>
+      <display value="Verifying Provider"/>
+    </concept>
+    <concept>
+      <code value="VPS"/>
+      <display value="Verifying Pharmaceutical Supplier   (not sure how to dissect Pharmacist/Treatment Supplier&#39;s Verifier ID)"/>
+    </concept>
+    <concept>
+      <code value="VTS"/>
+      <display value="Verifying Treatment Supplier   (not sure how to dissect Pharmacist/Treatment Supplier&#39;s Verifier ID)"/>
+    </concept>
+    <concept>
+      <code value="WAY"/>
+      <display value="Waypoint"/>
+    </concept>
+    <concept>
+      <code value="WAYR"/>
+      <display value="Waypoint Recipient"/>
+    </concept>
+  </define>
+</ValueSet>

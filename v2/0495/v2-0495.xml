@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Body Site Modifier</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>ANT
+            <a name="ANT"> </a>
+          </td>
+          <td>Anterior</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>BIL
+            <a name="BIL"> </a>
+          </td>
+          <td>Bilateral</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>DIS
+            <a name="DIS"> </a>
+          </td>
+          <td>Distal</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>EXT
+            <a name="EXT"> </a>
+          </td>
+          <td>External</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>L
+            <a name="L"> </a>
+          </td>
+          <td>Left</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>LAT
+            <a name="LAT"> </a>
+          </td>
+          <td>Lateral</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>LLQ
+            <a name="LLQ"> </a>
+          </td>
+          <td>Quadrant, Left Lower</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>LOW
+            <a name="LOW"> </a>
+          </td>
+          <td>Lower</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>LUQ
+            <a name="LUQ"> </a>
+          </td>
+          <td>Quadrant, Left Upper</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>MED
+            <a name="MED"> </a>
+          </td>
+          <td>Medial</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>POS
+            <a name="POS"> </a>
+          </td>
+          <td>Posterior</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>PRO
+            <a name="PRO"> </a>
+          </td>
+          <td>Proximal</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>R
+            <a name="R"> </a>
+          </td>
+          <td>Right</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>RLQ
+            <a name="RLQ"> </a>
+          </td>
+          <td>Quadrant, Right Lower</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>RUQ
+            <a name="RUQ"> </a>
+          </td>
+          <td>Quadrant, Right Upper</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>UPP
+            <a name="UPP"> </a>
+          </td>
+          <td>Upper</td>
+          <td>added v2.5</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0495"/>
+  <name value="v2 Body Site Modifier"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0495 ( Body Site Modifier)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0495"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="ANT"/>
+      <display value="Anterior"/>
+    </concept>
+    <concept>
+      <code value="BIL"/>
+      <display value="Bilateral"/>
+    </concept>
+    <concept>
+      <code value="DIS"/>
+      <display value="Distal"/>
+    </concept>
+    <concept>
+      <code value="EXT"/>
+      <display value="External"/>
+    </concept>
+    <concept>
+      <code value="L"/>
+      <display value="Left"/>
+    </concept>
+    <concept>
+      <code value="LAT"/>
+      <display value="Lateral"/>
+    </concept>
+    <concept>
+      <code value="LLQ"/>
+      <display value="Quadrant, Left Lower"/>
+    </concept>
+    <concept>
+      <code value="LOW"/>
+      <display value="Lower"/>
+    </concept>
+    <concept>
+      <code value="LUQ"/>
+      <display value="Quadrant, Left Upper"/>
+    </concept>
+    <concept>
+      <code value="MED"/>
+      <display value="Medial"/>
+    </concept>
+    <concept>
+      <code value="POS"/>
+      <display value="Posterior"/>
+    </concept>
+    <concept>
+      <code value="PRO"/>
+      <display value="Proximal"/>
+    </concept>
+    <concept>
+      <code value="R"/>
+      <display value="Right"/>
+    </concept>
+    <concept>
+      <code value="RLQ"/>
+      <display value="Quadrant, Right Lower"/>
+    </concept>
+    <concept>
+      <code value="RUQ"/>
+      <display value="Quadrant, Right Upper"/>
+    </concept>
+    <concept>
+      <code value="UPP"/>
+      <display value="Upper"/>
+    </concept>
+  </define>
+</ValueSet>

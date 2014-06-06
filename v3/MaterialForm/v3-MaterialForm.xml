@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  A value representing the state (solid, liquid, gas) and nature of the material.
+        <br/>
+
+                  Open Issue:  There exist no codes in the repository for this coding system; should it be removed?
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/MaterialForm"/>
+  <name value="v3 Code System MaterialForm"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" A value representing the state (solid, liquid, gas) and nature of the material. Open Issue:There exist no codes in the repository for this coding system; should it be removed?"/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/MaterialForm"/>
+    <caseSensitive value="true"/>
+  </define>
+</ValueSet>

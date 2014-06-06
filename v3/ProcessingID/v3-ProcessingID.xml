@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  Codes used to specify whether a message is part of a production, training, or debugging system.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>D
+            <a name="D"> </a>
+          </td>
+          <td>Debugging</td>
+          <td>
+                        Identifies debugging type of processing.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>P
+            <a name="P"> </a>
+          </td>
+          <td>Production</td>
+          <td>
+                        Identifies production type of processing.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>T
+            <a name="T"> </a>
+          </td>
+          <td>Training</td>
+          <td>
+                        Identifies training type of processing.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/ProcessingID"/>
+  <name value="v3 Code System ProcessingID"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" Codes used to specify whether a message is part of a production, training, or debugging system."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/ProcessingID"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="D"/>
+      <display value="Debugging"/>
+      <definition value="Identifies debugging type of processing."/>
+    </concept>
+    <concept>
+      <code value="P"/>
+      <display value="Production"/>
+      <definition value="Identifies production type of processing."/>
+    </concept>
+    <concept>
+      <code value="T"/>
+      <display value="Training"/>
+      <definition value="Identifies training type of processing."/>
+    </concept>
+  </define>
+</ValueSet>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Processing Mode</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>A
+            <a name="A"> </a>
+          </td>
+          <td>Archive</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>I
+            <a name="I"> </a>
+          </td>
+          <td>Initial load</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>Not present
+            <a name="Notpresent"> </a>
+          </td>
+          <td>Not present (the default, meaning current  processing)</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>R
+            <a name="R"> </a>
+          </td>
+          <td>Restore from archive</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>T
+            <a name="T"> </a>
+          </td>
+          <td>Current processing, transmitted at intervals (scheduled or on demand)</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>a
+            <a name="a"> </a>
+          </td>
+          <td>Archive</td>
+          <td>added v2.3, removed after v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>i
+            <a name="i"> </a>
+          </td>
+          <td>Initial Load</td>
+          <td>added v2.3, removed after v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>not present
+            <a name="notpresent"> </a>
+          </td>
+          <td>Not present (the default, meaning current  processing)</td>
+          <td>added v2.3, removed after v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>r
+            <a name="r"> </a>
+          </td>
+          <td>Restore from Archive</td>
+          <td>added v2.3, removed after v2.3</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0207"/>
+  <name value="v2 Processing Mode"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0207 ( Processing Mode)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0207"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="A"/>
+      <display value="Archive"/>
+    </concept>
+    <concept>
+      <code value="I"/>
+      <display value="Initial load"/>
+    </concept>
+    <concept>
+      <code value="Not present"/>
+      <display value="Not present (the default, meaning current  processing)"/>
+    </concept>
+    <concept>
+      <code value="R"/>
+      <display value="Restore from archive"/>
+    </concept>
+    <concept>
+      <code value="T"/>
+      <display value="Current processing, transmitted at intervals (scheduled or on demand)"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="a"/>
+      <display value="Archive"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="i"/>
+      <display value="Initial Load"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="not present"/>
+      <display value="Not present (the default, meaning current  processing)"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="r"/>
+      <display value="Restore from Archive"/>
+    </concept>
+  </define>
+</ValueSet>

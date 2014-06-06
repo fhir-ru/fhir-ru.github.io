@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  The possible modes of updating that occur when an attribute is received by a system that already contains values for that attribute.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>A
+            <a name="A"> </a>
+          </td>
+          <td>Add</td>
+          <td>
+                        
+                           Description:The item was (or is to be) added, having not been present immediately before. (If it is already present, this may be treated as an error condition.)
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>AR
+            <a name="AR"> </a>
+          </td>
+          <td>Add or Replace</td>
+          <td>
+                        
+                           Description:The item was (or is to be) either added or replaced. 
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>D
+            <a name="D"> </a>
+          </td>
+          <td>Remove</td>
+          <td>
+                        
+                           Description:The item was (or is to be) removed (sometimes referred to as deleted). If the item is part of a collection, delete any matching items.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>K
+            <a name="K"> </a>
+          </td>
+          <td>Key</td>
+          <td>
+                        
+                           Description:This item is part of the identifying information for this object.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>N
+            <a name="N"> </a>
+          </td>
+          <td>No Change</td>
+          <td>
+                        
+                           Description:There was (or is to be) no change to the item. This is primarily used when this element has not changed, but other attributes in the instance have changed. 
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>R
+            <a name="R"> </a>
+          </td>
+          <td>Replace</td>
+          <td>
+                        
+                           Description:The item existed previously and has (or is to be) revised. (If an item does not already exist, this may be treated as an error condition.)
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>REF
+            <a name="REF"> </a>
+          </td>
+          <td>Reference</td>
+          <td>
+                        
+                           Description:This item provides enough information to allow a processing system to locate the full applicable record by identifying the object.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>U
+            <a name="U"> </a>
+          </td>
+          <td>Unknown</td>
+          <td>
+                        
+                           Description:Description:&lt;/b&gt;It is not specified whether or what kind of change has occurred to the item, or whether the item is present as a reference or identifying property. 
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/HL7UpdateMode"/>
+  <name value="v3 Code System HL7UpdateMode"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" The possible modes of updating that occur when an attribute is received by a system that already contains values for that attribute."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/HL7UpdateMode"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="A"/>
+      <display value="Add"/>
+      <definition value="Description:The item was (or is to be) added, having not been present immediately before. (If it is already present, this may be treated as an error condition.)"/>
+    </concept>
+    <concept>
+      <code value="AR"/>
+      <display value="Add or Replace"/>
+      <definition value="Description:The item was (or is to be) either added or replaced."/>
+    </concept>
+    <concept>
+      <code value="D"/>
+      <display value="Remove"/>
+      <definition value="Description:The item was (or is to be) removed (sometimes referred to as deleted). If the item is part of a collection, delete any matching items."/>
+    </concept>
+    <concept>
+      <code value="K"/>
+      <display value="Key"/>
+      <definition value="Description:This item is part of the identifying information for this object."/>
+    </concept>
+    <concept>
+      <code value="N"/>
+      <display value="No Change"/>
+      <definition value="Description:There was (or is to be) no change to the item. This is primarily used when this element has not changed, but other attributes in the instance have changed."/>
+    </concept>
+    <concept>
+      <code value="R"/>
+      <display value="Replace"/>
+      <definition value="Description:The item existed previously and has (or is to be) revised. (If an item does not already exist, this may be treated as an error condition.)"/>
+    </concept>
+    <concept>
+      <code value="REF"/>
+      <display value="Reference"/>
+      <definition value="Description:This item provides enough information to allow a processing system to locate the full applicable record by identifying the object."/>
+    </concept>
+    <concept>
+      <code value="U"/>
+      <display value="Unknown"/>
+      <definition value="Description:Description:&lt;/b&gt;It is not specified whether or what kind of change has occurred to the item, or whether the item is present as a reference or identifying property."/>
+    </concept>
+  </define>
+</ValueSet>

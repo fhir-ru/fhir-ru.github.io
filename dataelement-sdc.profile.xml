@@ -1,0 +1,1382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Profile xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><pre> <span style="float: right"><a title="Documentation for this format" href="formats.html"><img alt="doco" src="help.png"/></a></span>
+<span style="color: Gray">&lt;!-- <span style="color: Darkviolet">Resources</span> --&gt;</span>
+<span style="color: Gray">&lt;!--<a name="StructuredDataCaptureElement"> </a><span style="color: Darkviolet">StructuredDataCaptureElement</span> --&gt;</span>
+&lt;<span title="Resource data element."><b>DataElement</b></span> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+ &lt;!-- from Element: <a href="extensibility.html">extension</a> --&gt;
+ <span style="color: Gray">&lt;!--</span><span style="color: blue">&quot;meaning&quot;:</span>  <span style="color: Gray"> --&gt;</span>
+ &lt;<span title="Additional Content defined by implementations."><b>extension</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/Profile/datelement-11179#meaning"><span style="color: DarkViolet">@ttp://hl7.org/fhir/Profile/datelement-11179#meaning</span></a></span> <span style="color: navy">Additional Content defined by implementations</span><span style="color: Gray"> --&gt;</span>&lt;/extension&gt;
+ <span style="color: Gray">&lt;!--</span><span style="color: blue">&quot;minLength&quot;:</span>  <span style="color: Gray"> --&gt;</span>
+ &lt;<span title="Additional Content defined by implementations (this element must be supported)" style="text-decoration: underline"><b>extension</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/Profile/element-constraints#minLength"><span style="color: DarkViolet">@ttp://hl7.org/fhir/Profile/element-constraints#minLength</span></a></span> <span style="color: navy">Additional Content defined by implementations</span><span style="color: Gray"> --&gt;</span>&lt;/extension&gt;
+ <span style="color: Gray">&lt;!--</span><span style="color: blue">&quot;maxLength&quot;:</span>  <span style="color: Gray"> --&gt;</span>
+ &lt;<span title="Additional Content defined by implementations (this element must be supported)" style="text-decoration: underline"><b>extension</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/Profile/element-constraints#maxLength"><span style="color: DarkViolet">@ttp://hl7.org/fhir/Profile/element-constraints#maxLength</span></a></span> <span style="color: navy">Additional Content defined by implementations</span><span style="color: Gray"> --&gt;</span>&lt;/extension&gt;
+ <span style="color: Gray">&lt;!--</span><span style="color: blue">&quot;regex&quot;:</span>  <span style="color: Gray"> --&gt;</span>
+ &lt;<span title="Additional Content defined by implementations (this element must be supported)" style="text-decoration: underline"><b>extension</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/Profile/element-constraints#regex"><span style="color: DarkViolet">@ttp://hl7.org/fhir/Profile/element-constraints#regex</span></a></span> <span style="color: navy">Additional Content defined by implementations</span><span style="color: Gray"> --&gt;</span>&lt;/extension&gt;
+ <span style="color: Gray">&lt;!--</span><span style="color: blue">&quot;entryFormat&quot;:</span>  <span style="color: Gray"> --&gt;</span>
+ &lt;<span title="Additional Content defined by implementations (this element must be supported)" style="text-decoration: underline"><b>extension</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/Profile/element-constraints#entryFormat"><span style="color: DarkViolet">@ttp://hl7.org/fhir/Profile/element-constraints#entryFormat</span></a></span> <span style="color: navy">Additional Content defined by implementations</span><span style="color: Gray"> --&gt;</span>&lt;/extension&gt;
+ <span style="color: Gray">&lt;!--</span><span style="color: blue">&quot;minValue&quot;:</span>  <span style="color: Gray"> --&gt;</span>
+ &lt;<span title="Additional Content defined by implementations (this element must be supported)" style="text-decoration: underline"><b>extension</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/Profile/element-constraints#minValue"><span style="color: DarkViolet">@ttp://hl7.org/fhir/Profile/element-constraints#minValue</span></a></span> <span style="color: navy">Additional Content defined by implementations</span><span style="color: Gray"> --&gt;</span>&lt;/extension&gt;
+ <span style="color: Gray">&lt;!--</span><span style="color: blue">&quot;maxValue&quot;:</span>  <span style="color: Gray"> --&gt;</span>
+ &lt;<span title="Additional Content defined by implementations (this element must be supported)" style="text-decoration: underline"><b>extension</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/Profile/element-constraints#maxValue"><span style="color: DarkViolet">@ttp://hl7.org/fhir/Profile/element-constraints#maxValue</span></a></span> <span style="color: navy">Additional Content defined by implementations</span><span style="color: Gray"> --&gt;</span>&lt;/extension&gt;
+ <span style="color: Gray">&lt;!--</span><span style="color: blue">&quot;maxDecimalPlaces&quot;:</span>  <span style="color: Gray"> --&gt;</span>
+ &lt;<span title="Additional Content defined by implementations (this element must be supported)" style="text-decoration: underline"><b>extension</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/Profile/element-constraints#maxDecimalPlaces"><span style="color: DarkViolet">@ttp://hl7.org/fhir/Profile/element-constraints#maxDecimalPlaces</span></a></span> <span style="color: navy">Additional Content defined by implementations</span><span style="color: Gray"> --&gt;</span>&lt;/extension&gt;
+ <i class="inherited">&lt;<span title="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."><b>modifierExtension</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..*</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/extensibility.html#Extension">Extension</a></span> <span style="color: navy">Extensions that cannot be ignored</span><span style="color: Gray"> --&gt;</span>&lt;/modifierExtension&gt;</i>
+ <i class="inherited">&lt;<span title="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."><b>text</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/narrative.html#Narrative">Narrative</a></span> <span style="color: navy">Text summary of the resource, for human interpretation</span><span style="color: Gray"> --&gt;</span>&lt;/text&gt;</i>
+ <i class="inherited">&lt;<span title="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."><b>contained</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..*</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/references.html#Resource">Resource</a></span> <span style="color: navy">Contained, inline Resources</span><span style="color: Gray"> --&gt;</span>&lt;/contained&gt;</i>
+ &lt;<span title="Logical id to reference this data element (this element must be supported)" style="text-decoration: underline"><b>identifier</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: navy">Logical id to reference this data element</span><span style="color: Gray"> --&gt;</span>
+ &lt;<span title="Logical id for this version of the data element (this element must be supported)" style="text-decoration: underline"><b>version</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Logical id for this version of the data element</span><span style="color: Gray"> --&gt;</span>
+ &lt;<span title="Name of the publisher (Organization or individual) (this element must be supported)" style="text-decoration: underline"><b>publisher</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Name of the publisher (Organization or individual)</span><span style="color: Gray"> --&gt;</span>
+ &lt;<span title="Contact information of the publisher (this element must be supported)" style="text-decoration: underline"><b>telecom</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..*</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#Contact">Contact</a></span> <span style="color: navy">Contact information of the publisher</span><span style="color: Gray"> --&gt;</span>&lt;/telecom&gt;
+ &lt;<span title="draft | active | retired (this element modifies the meaning of other elements, and must be supported)" style="text-decoration: underline"><b>status</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#code">code</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: navy"><a style="color: navy" href="resource-observation-def-status.html">draft | active | retired</a></span><span style="color: Gray"> --&gt;</span>
+ &lt;<span title="Date for this version of the data element (this element must be supported)" style="text-decoration: underline"><b>date</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#dateTime">dateTime</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Date for this version of the data element</span><span style="color: Gray"> --&gt;</span>
+ &lt;<span title="Descriptive label for this element definition (this element must be supported)" style="text-decoration: underline"><b>name</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: navy">Descriptive label for this element definition</span><span style="color: Gray"> --&gt;</span>
+ &lt;<span title="Assist with indexing and finding (this element must be supported)" style="text-decoration: underline"><b>category</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..*</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#CodeableConcept">CodeableConcept</a></span> <span style="color: navy">Assist with indexing and finding</span><span style="color: Gray"> --&gt;</span>&lt;/category&gt;
+ &lt;<span title="Identifying concept (this element must be supported)" style="text-decoration: underline"><b>code</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..*</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#Coding">Coding</a></span> <span style="color: navy">Identifying concept</span><span style="color: Gray"> --&gt;</span>&lt;/code&gt;
+ &lt;<span title="How to ask for element (this element must be supported)" style="text-decoration: underline"><b>question</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">How to ask for element</span><span style="color: Gray"> --&gt;</span>
+ &lt;<span title="Full formal definition in human language (this element must be supported)" style="text-decoration: underline"><b>definition</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: navy">Full formal definition in human language</span><span style="color: Gray"> --&gt;</span>
+ &lt;<span title="Comments about the use of this element (this element must be supported)" style="text-decoration: underline"><b>comments</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Comments about the use of this element</span><span style="color: Gray"> --&gt;</span>
+ &lt;<span title="Why is this needed? (this element must be supported)" style="text-decoration: underline"><b>requirements</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Why is this needed?</span><span style="color: Gray"> --&gt;</span>
+ &lt;<span title="Other names (this element must be supported)" style="text-decoration: underline"><b>synonym</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..*</b></span> <span style="color: navy">Other names</span><span style="color: Gray"> --&gt;</span>
+ &lt;<span title="Name of Data type (this element must be supported)" style="text-decoration: underline"><b>type</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#code">code</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: navy"><a style="color: navy" href="data-types.html">Name of Data type</a></span><span style="color: Gray"> --&gt;</span>
+ &lt;<span title="Example value: [as defined for type]."><b>example[x]</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen"><a href="datatypes.html#open">*</a></span> <span style="color: navy">Example value: [as defined for type]</span><span style="color: Gray"> --&gt;</span>&lt;/example[x]&gt;
+ &lt;<span title="Length for strings (this element must be supported)" style="text-decoration: underline"><b>maxLength</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#integer">integer</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Length for strings</span><span style="color: Gray"> --&gt;</span>
+ &lt;<span title="Units to use for measured value (this element must be supported)" style="text-decoration: underline"><b>units</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#CodeableConcept">CodeableConcept</a></span> <span style="color: navy"><a style="color: navy" href="valueset-units.html">Units to use for measured value</a></span><span style="color: Gray"> --&gt;</span>&lt;/units&gt;
+ &lt;<span title="ValueSet details if this is coded (this element must be supported)" style="text-decoration: underline"><b>binding</b></span>&gt;  <span style="color: Gray">&lt;!-- <span style="color: brown"><b>0..1</b></span> ValueSet details if this is coded --&gt;</span>
+  <i class="inherited">&lt;<span title="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."><b>extension</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..*</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/extensibility.html#Extension">Extension</a></span> <span style="color: navy">Additional Content defined by implementations</span><span style="color: Gray"> --&gt;</span>&lt;/extension&gt;</i>
+  <i class="inherited">&lt;<span title="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."><b>modifierExtension</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..*</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/extensibility.html#Extension">Extension</a></span> <span style="color: navy">Extensions that cannot be ignored</span><span style="color: Gray"> --&gt;</span>&lt;/modifierExtension&gt;</i>
+  &lt;<span title="Can additional codes be used? (this element must be supported)" style="text-decoration: underline"><b>isExtensible</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#boolean">boolean</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: navy">Can additional codes be used?</span><span style="color: Gray"> --&gt;</span>
+  &lt;<span title="required | preferred | example (this element must be supported)" style="text-decoration: underline"><b>conformance</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#code">code</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy"><a style="color: navy" href="binding-conformance.html">required | preferred | example</a></span><span style="color: Gray"> --&gt;</span>
+  &lt;<span title="Human explanation of the value set."><b>description</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Human explanation of the value set</span><span style="color: Gray"> --&gt;</span>
+  &lt;<span title="Source of value set (this element must be supported)" style="text-decoration: underline"><b>valueSet</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/references.html#Resource">Resource</a>(<a href="http://hl7.org/fhir/valueset.html#ValueSet">ValueSet</a>)</span> <span style="color: navy">Source of value set</span><span style="color: Gray"> --&gt;</span>&lt;/valueSet&gt;
+ &lt;/binding&gt;
+ <span style="color: Gray">&lt;!--</span><span style="color: blue">&quot;ClassPropertyMapping&quot;:</span>  <span style="color: Gray"> --&gt;</span>
+ &lt;<span title="Map element to another set of definitions (this element must be supported)" style="text-decoration: underline"><b>mapping</b></span>&gt;  <span style="color: Gray">&lt;!-- <span style="color: brown"><b>0..1</b></span> Map element to another set of definitions --&gt;</span>
+  <i class="inherited">&lt;<span title="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."><b>extension</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..*</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/extensibility.html#Extension">Extension</a></span> <span style="color: navy">Additional Content defined by implementations</span><span style="color: Gray"> --&gt;</span>&lt;/extension&gt;</i>
+  <i class="inherited">&lt;<span title="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."><b>modifierExtension</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..*</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/extensibility.html#Extension">Extension</a></span> <span style="color: navy">Extensions that cannot be ignored</span><span style="color: Gray"> --&gt;</span>&lt;/modifierExtension&gt;</i>
+  &lt;<span title="Identifies what this mapping refers to (this element must be supported)" style="text-decoration: underline"><b>uri</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#uri">uri</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: navy">Identifies what this mapping refers to</span><span style="color: Gray"> --&gt;</span>
+  &lt;<span title="Names what this mapping refers to (this element must be supported)" style="text-decoration: underline"><b>name</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Names what this mapping refers to</span><span style="color: Gray"> --&gt;</span>
+  &lt;<span title="Versions, Issues, Scope limitations etc (this element must be supported)" style="text-decoration: underline"><b>comments</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Versions, Issues, Scope limitations etc</span><span style="color: Gray"> --&gt;</span>
+  &lt;<span title="This should be expressed as &quot;[uri for object class code system]#[code for object class code system] | [uri for property code system]#[code for property code system]&quot; (this element must be supported)" style="text-decoration: underline"><b>map</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: navy">Details of the mapping</span><span style="color: Gray"> --&gt;</span>
+ &lt;/mapping&gt;
+ <span style="color: Gray">&lt;!--</span><span style="color: blue">&quot;objectClass&quot;:</span>  <span style="color: Gray"> --&gt;</span>
+ &lt;<span title="Additional Content defined by implementations (this element must be supported)" style="text-decoration: underline"><b>extension</b></span>&gt; <span title="Inv-1: Property extension can only be specified if ObjectClass extension is present" style="color: brown"><b><img alt="??" src="lock.png"/> 1..1</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/Profile/datelement-11179#objectClass"><span style="color: DarkViolet">@ttp://hl7.org/fhir/Profile/datelement-11179#objectClass</span></a></span>  <span style="color: Gray">&lt;!-- <span title="Inv-1: Property extension can only be specified if ObjectClass extension is present" style="color: brown"><b><img alt="??" src="lock.png"/> 1..1</b></span> Additional Content defined by implementations --&gt;</span>
+  &lt;<span title="Value of extension (this element must be supported)" style="text-decoration: underline"><b>valueCoding</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#Coding">Coding</a></span> <span style="color: navy"><a style="color: navy" href="valueset-dataelement-sdcobjectclass.html">Value of extension</a></span><span style="color: Gray"> --&gt;</span>&lt;/valueCoding&gt;
+ &lt;/extension&gt;
+ <span style="color: Gray">&lt;!--</span><span style="color: blue">&quot;property&quot;:</span>  <span style="color: Gray"> --&gt;</span>
+ &lt;<span title="Additional Content defined by implementations (this element must be supported)" style="text-decoration: underline"><b>extension</b></span>&gt; <span title="Inv-1: Property extension can only be specified if ObjectClass extension is present" style="color: brown"><b><img alt="??" src="lock.png"/> 1..1</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/Profile/datelement-11179#property"><span style="color: DarkViolet">@ttp://hl7.org/fhir/Profile/datelement-11179#property</span></a></span>  <span style="color: Gray">&lt;!-- <span title="Inv-1: Property extension can only be specified if ObjectClass extension is present" style="color: brown"><b><img alt="??" src="lock.png"/> 1..1</b></span> Additional Content defined by implementations --&gt;</span>
+  &lt;<span title="Value of extension (this element must be supported)" style="text-decoration: underline"><b>valueCoding</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#Coding">Coding</a></span> <span style="color: navy"><a style="color: navy" href="valueset-dataelement-sdcobjectclassproperty.html">Value of extension</a></span><span style="color: Gray"> --&gt;</span>&lt;/valueCoding&gt;
+ &lt;/extension&gt;
+&lt;/DataElement&gt;
+
+</pre></div>
+  </text>
+  <identifier value="http://hl7.org/fhir/profile/Structured Data Capture Data Element"/>
+  <name value="Structured Data Capture Data Element"/>
+  <publisher value="U.S. Office of the National Coordinator (ONC)"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://wiki.siframework.org/Structured+Data+Capture+Initiative"/>
+  </telecom>
+  <description value="Sets expectations for data elements registered or used as part of the structured data capture project"/>
+  <status value="draft"/>
+  <date value="2014-04-21"/>
+  <structure>
+    <type value="DataElement"/>
+    <name value="StructuredDataCaptureElement"/>
+    <publish value="true"/>
+    <element>
+      <path value="DataElement"/>
+      <name value="StructuredDataCaptureElement"/>
+      <definition>
+        <short value="Resource data element"/>
+        <formal value="Resource data element."/>
+        <comments value="Often called a clinical template."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="Resource"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.extension"/>
+      <name value="base extension"/>
+      <slicing>
+        <discriminator value="url"/>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element>
+      <path value="DataElement.extension"/>
+      <name value="meaning"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="Additional Content defined by implementations."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="Extension"/>
+          <profile value="http://hl7.org/fhir/Profile/datelement-11179#meaning"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.extension.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.extension.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.extension"/>
+      <name value="minLength"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="Additional Content defined by implementations."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="Extension"/>
+          <profile value="http://hl7.org/fhir/Profile/element-constraints#minLength"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.extension.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.extension.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.extension"/>
+      <name value="maxLength"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="Additional Content defined by implementations."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="Extension"/>
+          <profile value="http://hl7.org/fhir/Profile/element-constraints#maxLength"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.extension.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.extension.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.extension"/>
+      <name value="regex"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="Additional Content defined by implementations."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="Extension"/>
+          <profile value="http://hl7.org/fhir/Profile/element-constraints#regex"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.extension.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.extension.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.extension"/>
+      <name value="entryFormat"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="Additional Content defined by implementations."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="Extension"/>
+          <profile value="http://hl7.org/fhir/Profile/element-constraints#entryFormat"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.extension.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.extension.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.extension"/>
+      <name value="minValue"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="Additional Content defined by implementations."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="Extension"/>
+          <profile value="http://hl7.org/fhir/Profile/element-constraints#minValue"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.extension.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.extension.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.extension"/>
+      <name value="maxValue"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="Additional Content defined by implementations."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="Extension"/>
+          <profile value="http://hl7.org/fhir/Profile/element-constraints#maxValue"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.extension.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.extension.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.extension"/>
+      <name value="maxDecimalPlaces"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="Additional Content defined by implementations."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="Extension"/>
+          <profile value="http://hl7.org/fhir/Profile/element-constraints#maxDecimalPlaces"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.extension.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.extension.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.extension"/>
+      <name value="objectClass"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="Additional Content defined by implementations."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="Extension"/>
+          <profile value="http://hl7.org/fhir/Profile/datelement-11179#objectClass"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.extension.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.extension.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.extension.valueCoding"/>
+      <definition>
+        <short value="Value of extension"/>
+        <formal value="Value of extension."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="Coding"/>
+        </type>
+        <isModifier value="false"/>
+        <binding>
+          <name value="SDCObjectClass"/>
+          <isExtensible value="true"/>
+          <description value="Allowed values for the ISO 11179 ObjectClass extension when used for Structured Data Capture purposes"/>
+          <referenceResource>
+            <reference value="http://hl7.org/fhir/vs/dataelement-sdcobjectclass"/>
+          </referenceResource>
+        </binding>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.extension"/>
+      <name value="property"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="Additional Content defined by implementations."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="Extension"/>
+          <profile value="http://hl7.org/fhir/Profile/datelement-11179#property"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.extension.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.extension.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.extension.valueCoding"/>
+      <definition>
+        <short value="Value of extension"/>
+        <formal value="Value of extension."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="Coding"/>
+        </type>
+        <isModifier value="false"/>
+        <binding>
+          <name value="SDCObjectClassProperty"/>
+          <isExtensible value="true"/>
+          <description value="Allowed values for the ISO 11179 ObjectClass  Property extension when used for Structured Data Capture purposes"/>
+          <referenceResource>
+            <reference value="http://hl7.org/fhir/vs/dataelement-sdcobjectclassproperty"/>
+          </referenceResource>
+        </binding>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.modifierExtension"/>
+      <name value="base modifierExtension"/>
+      <slicing>
+        <discriminator value="url"/>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element>
+      <path value="DataElement.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.modifierExtension.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.modifierExtension.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.text"/>
+      <definition>
+        <short value="Text summary of the resource, for human interpretation"/>
+        <formal value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."/>
+        <comments value="Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative."/>
+        <synonym value="narrative"/>
+        <synonym value="html"/>
+        <synonym value="xhtml"/>
+        <synonym value="display"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="Narrative"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.contained"/>
+      <definition>
+        <short value="Contained, inline Resources"/>
+        <formal value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."/>
+        <comments value="This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again."/>
+        <synonym value="inline resources"/>
+        <synonym value="anonymous resources"/>
+        <synonym value="contained resources"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Resource"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.text"/>
+      <definition>
+        <short value="Text summary of the resource, for human interpretation"/>
+        <formal value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."/>
+        <comments value="Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="Narrative"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.contained"/>
+      <definition>
+        <short value="Contained, inline Resources"/>
+        <formal value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."/>
+        <comments value="This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again."/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Resource"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.identifier"/>
+      <definition>
+        <short value="Logical id to reference this data element"/>
+        <formal value="Logical id to reference this data element."/>
+        <comments value="N/A."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="string"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.version"/>
+      <definition>
+        <short value="Logical id for this version of the data element"/>
+        <formal value="Logical id for this version of the data element."/>
+        <comments value="N/A."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="string"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.publisher"/>
+      <definition>
+        <short value="Name of the publisher (Organization or individual)"/>
+        <formal value="Name of the publisher (Organization or individual)."/>
+        <comments value="Usually an organization, but may be an individual. This item SHOULD be populated unless the information is available from context."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="string"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.telecom"/>
+      <definition>
+        <short value="Contact information of the publisher"/>
+        <formal value="Contact information of the publisher."/>
+        <comments value="May be a web site, an email address, a telephone number (tel:), etc."/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Contact"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.status"/>
+      <definition>
+        <short value="draft | active | retired"/>
+        <formal value="draft | active | retired."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="code"/>
+        </type>
+        <isModifier value="true"/>
+        <binding>
+          <name value="ResourceDataElementStatus"/>
+          <isExtensible value="false"/>
+          <conformance value="required"/>
+          <description value="The lifecycle status of a Resource data element"/>
+          <referenceResource>
+            <reference value="http://hl7.org/fhir/vs/resource-observation-def-status"/>
+          </referenceResource>
+        </binding>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.date"/>
+      <definition>
+        <short value="Date for this version of the data element"/>
+        <formal value="Date for this version of the data element."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="dateTime"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.name"/>
+      <definition>
+        <short value="Descriptive label for this element definition"/>
+        <formal value="Descriptive label for this element definition."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="string"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.category"/>
+      <definition>
+        <short value="Assist with indexing and finding"/>
+        <formal value="Assist with indexing and finding."/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="CodeableConcept"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.code"/>
+      <definition>
+        <short value="Identifying concept"/>
+        <formal value="Identifying concept."/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Coding"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.question"/>
+      <definition>
+        <short value="How to ask for element"/>
+        <formal value="How to ask for element."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="string"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.definition"/>
+      <definition>
+        <short value="Full formal definition in human language"/>
+        <formal value="Full formal definition in human language."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="string"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.comments"/>
+      <definition>
+        <short value="Comments about the use of this element"/>
+        <formal value="Comments about the use of this element."/>
+        <comments value="If it is possible to capture usage rules using invariants, that mechanism should be used in preference to this element."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="string"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.requirements"/>
+      <definition>
+        <short value="Why is this needed?"/>
+        <formal value="Why is this needed?."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="string"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.synonym"/>
+      <definition>
+        <short value="Other names"/>
+        <formal value="Other names."/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="string"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.type"/>
+      <definition>
+        <short value="Name of Data type"/>
+        <formal value="Name of Data type."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="code"/>
+        </type>
+        <isModifier value="false"/>
+        <binding>
+          <name value="DataType"/>
+          <isExtensible value="false"/>
+          <conformance value="required"/>
+          <description value="The type of an element - one of the FHIR data types"/>
+          <referenceResource>
+            <reference value="http://hl7.org/fhir/vs/data-types"/>
+          </referenceResource>
+        </binding>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.example[x]"/>
+      <definition>
+        <short value="Example value: [as defined for type]"/>
+        <formal value="Example value: [as defined for type]."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="*"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.maxLength"/>
+      <definition>
+        <short value="Length for strings"/>
+        <formal value="Length for strings."/>
+        <comments value="If not specified, there is no conformance expectation for length support."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="integer"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.units"/>
+      <definition>
+        <short value="Units to use for measured value"/>
+        <formal value="Units to use for measured value."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="CodeableConcept"/>
+        </type>
+        <isModifier value="false"/>
+        <binding>
+          <name value="Units"/>
+          <isExtensible value="true"/>
+          <conformance value="preferred"/>
+          <description value="Type of measurement system used to express a value"/>
+          <referenceResource>
+            <reference value="http://hl7.org/fhir/vs/units"/>
+          </referenceResource>
+        </binding>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.binding"/>
+      <definition>
+        <short value="ValueSet details if this is coded"/>
+        <formal value="ValueSet details if this is coded."/>
+        <min value="0"/>
+        <max value="1"/>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.binding.extension"/>
+      <name value="base extension"/>
+      <slicing>
+        <discriminator value="url"/>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element>
+      <path value="DataElement.binding.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.binding.extension.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.binding.extension.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.binding.modifierExtension"/>
+      <name value="base modifierExtension"/>
+      <slicing>
+        <discriminator value="url"/>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element>
+      <path value="DataElement.binding.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.binding.modifierExtension.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.binding.modifierExtension.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.binding.isExtensible"/>
+      <definition>
+        <short value="Can additional codes be used?"/>
+        <formal value="Can additional codes be used?."/>
+        <comments value="When the binding use used for elements with a type of &quot;code&quot; (rather than Coding or CodableConcept), the binding is treated as non-extensible regardless of the value of this property."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="boolean"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.binding.conformance"/>
+      <definition>
+        <short value="required | preferred | example"/>
+        <formal value="required | preferred | example."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="code"/>
+        </type>
+        <isModifier value="false"/>
+        <binding>
+          <name value="BindingConformance"/>
+          <isExtensible value="false"/>
+          <conformance value="required"/>
+          <description value="Binding conformance for applications"/>
+          <referenceResource>
+            <reference value="http://hl7.org/fhir/vs/binding-conformance"/>
+          </referenceResource>
+        </binding>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.binding.description"/>
+      <definition>
+        <short value="Human explanation of the value set"/>
+        <formal value="Human explanation of the value set."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="string"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.binding.valueSet"/>
+      <definition>
+        <short value="Source of value set"/>
+        <formal value="Source of value set."/>
+        <comments value="The display can contain the value set description.  The reference may be version-specific or not."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="ResourceReference"/>
+          <profile value="http://hl7.org/fhir/profiles/ValueSet"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.mapping"/>
+      <name value="ClassPropertyMapping"/>
+      <definition>
+        <short value="Map element to another set of definitions"/>
+        <formal value="Map element to another set of definitions."/>
+        <comments value="Mappings are not necessarily specific enough for safe translation."/>
+        <min value="0"/>
+        <max value="1"/>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.mapping.extension"/>
+      <name value="base extension"/>
+      <slicing>
+        <discriminator value="url"/>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element>
+      <path value="DataElement.mapping.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.mapping.extension.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.mapping.extension.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.mapping.modifierExtension"/>
+      <name value="base modifierExtension"/>
+      <slicing>
+        <discriminator value="url"/>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element>
+      <path value="DataElement.mapping.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.mapping.modifierExtension.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.mapping.modifierExtension.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.mapping.uri"/>
+      <definition>
+        <short value="Identifies what this mapping refers to"/>
+        <formal value="Identifies what this mapping refers to."/>
+        <comments value="A formal identity for the specification being mapped to helps with identifying maps consistently."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="uri"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.mapping.name"/>
+      <definition>
+        <short value="Names what this mapping refers to"/>
+        <formal value="Names what this mapping refers to."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="string"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.mapping.comments"/>
+      <definition>
+        <short value="Versions, Issues, Scope limitations etc"/>
+        <formal value="Versions, Issues, Scope limitations etc."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="string"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="DataElement.mapping.map"/>
+      <definition>
+        <short value="Details of the mapping"/>
+        <formal value="This should be expressed as &quot;[uri for object class code system]#[code for object class code system] | [uri for property code system]#[code for property code system]&quot;."/>
+        <comments value="We express the mapping even though the class and property extensions already convey the data to ensure that systems that don&#39;t recongnize the extensions still understand the mappings."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="string"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+  </structure>
+</Profile>

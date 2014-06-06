@@ -1,0 +1,226 @@
+{
+  "resourceType": "Profile",
+  "text": {
+    "status": "generated",
+    "div": "<div><pre> <span style=\"float: right\"><a title=\"Documentation for this format\" href=\"formats.html\"><img alt=\"doco\" src=\"help.png\"/></a></span>\r\n<span style=\" color: Gray\">&lt;!-- <span style=\"color: Darkviolet\">Extensions</span> --&gt;</span>\r\n&lt;<span title=\"A code that identifies the questionnaire as falling into a particular group of like questionnaires.  E.g. &quot;Pediatric&quot;, &quot;Admissions&quot;, &quot;Research&quot;, &quot;Demographic&quot;, &quot;Opinion Survey&quot;, etc.\"><b>extension</b></span>&gt;<a name=\"category\"> </a>&lt;!--  <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">Context: Resource = Questionnaire</span> --&gt;\r\n &lt;<b>url</b> value=&quot;<span style=\"color: maroon\">http://hl7.org/fhir/Profile/questionnaire-extensions#category</span>&quot;/&gt;\r\n &lt;<span title=\"A code that identifies the questionnaire as falling into a particular group of like questionnaires.  E.g. &quot;Pediatric&quot;, &quot;Admissions&quot;, &quot;Research&quot;, &quot;Demographic&quot;, &quot;Opinion Survey&quot;, etc.\"><b>valueCodeableConcept</b></span>&gt;<span style=\" color: Gray\">&lt;!-- </span> <span style=\"color: brown;\"><b>0..1</b></span>  <span style=\"color: darkgreen\"><a href=\"http://hl7.org/fhir/datatypes.html#CodeableConcept\">CodeableConcept</a></span> <span style=\"color: navy\">What kind of questionnaire?</span> <span style=\" color: Gray\">--&gt; </span>&lt;/valueCodeableConcept&gt;\r\n&lt;/extension&gt;\r\n\r\n&lt;<span title=\"A label for a particular group or question within the questionnaire.\"><b>extension</b></span>&gt;<a name=\"label\"> </a>&lt;!--  <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">Context: Resource = Questionnaire.group; Questionnaire.question</span> --&gt;\r\n &lt;<b>url</b> value=&quot;<span style=\"color: maroon\">http://hl7.org/fhir/Profile/questionnaire-extensions#label</span>&quot;/&gt;\r\n &lt;<span title=\"A label for a particular group or question within the questionnaire.\"><b>valueString</b></span> value=&quot;[<span style=\"color: darkgreen\"><a href=\"http://hl7.org/fhir/datatypes.html#string\">string</a></span>]&quot;/&gt;<span style=\" color: Gray\">&lt;!-- </span><span style=\"color: navy\">E.g. &quot;1(a)&quot;, &quot;2.5.3&quot;</span><span style=\" color: Gray\"> --&gt;</span>\r\n&lt;/extension&gt;\r\n\r\n&lt;<span title=\"The minimum number of times the group must appear or the minimum number of answers for a question - when greater than 1.\"><b>extension</b></span>&gt;<a name=\"minOccurs\"> </a>&lt;!--  <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">Context: Resource = Questionnaire.group; Questionnaire.question</span> --&gt;\r\n &lt;<b>url</b> value=&quot;<span style=\"color: maroon\">http://hl7.org/fhir/Profile/questionnaire-extensions#minOccurs</span>&quot;/&gt;\r\n &lt;<span title=\"The minimum number of times the group must appear or the minimum number of answers for a question - when greater than 1.\"><b>valueInteger</b></span> value=&quot;[<span style=\"color: darkgreen\"><a href=\"http://hl7.org/fhir/datatypes.html#integer\">integer</a></span>]&quot;/&gt;<span style=\" color: Gray\">&lt;!-- </span><span style=\"color: navy\">Minimum repetitions</span><span style=\" color: Gray\"> --&gt;</span>\r\n&lt;/extension&gt;\r\n\r\n&lt;<span title=\"The maximum number of times the group must appear or the minimum number of answers for a question - when greater than 1 and not unlimited.\"><b>extension</b></span>&gt;<a name=\"maxOccurs\"> </a>&lt;!--  <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">Context: Resource = Questionnaire.group; Questionnaire.question</span> --&gt;\r\n &lt;<b>url</b> value=&quot;<span style=\"color: maroon\">http://hl7.org/fhir/Profile/questionnaire-extensions#maxOccurs</span>&quot;/&gt;\r\n &lt;<span title=\"The maximum number of times the group must appear or the minimum number of answers for a question - when greater than 1 and not unlimited.\"><b>valueInteger</b></span> value=&quot;[<span style=\"color: darkgreen\"><a href=\"http://hl7.org/fhir/datatypes.html#integer\">integer</a></span>]&quot;/&gt;<span style=\" color: Gray\">&lt;!-- </span><span style=\"color: navy\">Maximum repetitions</span><span style=\" color: Gray\"> --&gt;</span>\r\n&lt;/extension&gt;\r\n\r\n&lt;<span title=\"This is the value that should be pre-populated when rendering the questionnaire for user input.\"><b>extension</b></span>&gt;<a name=\"defaultValue\"> </a>&lt;!--  <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">Context: Resource = Questionnaire.group.question</span> --&gt;\r\n &lt;<b>url</b> value=&quot;<span style=\"color: maroon\">http://hl7.org/fhir/Profile/questionnaire-extensions#defaultValue</span>&quot;/&gt;\r\n &lt;<span title=\"This is the value that should be pre-populated when rendering the questionnaire for user input.\"><b>value*</b></span> value=&quot;[<span style=\"color: darkgreen\"><a href=\"http://hl7.org/fhir/*.html#*\">*</a></span>]&quot;/&gt;<span style=\" color: Gray\">&lt;!-- </span><span style=\"color: navy\">Initial presumed answer for question</span><span style=\" color: Gray\"> --&gt;</span>\r\n&lt;/extension&gt;\r\n\r\n&lt;<span title=\"Treat default as fixed value?.\"><b>extension</b></span>&gt;<a name=\"defaultAsFixed\"> </a>&lt;!--  <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">Context: Resource = Questionnaire.group.question</span> --&gt;\r\n &lt;<b>url</b> value=&quot;<span style=\"color: maroon\">http://hl7.org/fhir/Profile/questionnaire-extensions#defaultAsFixed</span>&quot;/&gt;\r\n &lt;<span title=\"Treat default as fixed value?.\"><b>valueBoolean</b></span> value=&quot;[<span style=\"color: darkgreen\"><a href=\"http://hl7.org/fhir/datatypes.html#boolean\">boolean</a></span>]&quot;/&gt;<span style=\" color: Gray\">&lt;!-- </span><span style=\"color: navy\">Y</span><span style=\" color: Gray\"> --&gt;</span>\r\n&lt;/extension&gt;\r\n\r\n&lt;<span title=\"A reference to the Data Element that corresponds to the question text and answer constraints for this question.\"><b>extension</b></span>&gt;<a name=\"deReference\"> </a>&lt;!--  <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">Context: Resource = Questionnaire.group.question</span> --&gt;\r\n &lt;<b>url</b> value=&quot;<span style=\"color: maroon\">http://hl7.org/fhir/Profile/questionnaire-extensions#deReference</span>&quot;/&gt;\r\n &lt;<span title=\"A reference to the Data Element that corresponds to the question text and answer constraints for this question.\"><b>valueResourceReference</b></span>&gt;<span style=\" color: Gray\">&lt;!-- </span> <span style=\"color: brown;\"><b>0..1</b></span>  <span style=\"color: darkgreen\"><a href=\"http://hl7.org/fhir/references.html#Resource\">Resource</a>(<a href=\"http://hl7.org/fhir/dataelement.html#DataElement\">DataElement</a>)</span> <span style=\"color: navy\">Implemented CDE</span> <span style=\" color: Gray\">--&gt; </span>&lt;/valueResourceReference&gt;\r\n&lt;/extension&gt;\r\n\r\n</pre></div>"
+  },
+  "identifier": "http://hl7.org/fhir/profile/Core extensions for Questionnaire",
+  "name": "Core extensions for Questionnaire",
+  "publisher": "HL7",
+  "telecom": [
+    {
+      "system": "url",
+      "value": "http://www.hl7.org"
+    }
+  ],
+  "description": "Contains standard extensions for Questionnaire, amongst others for validation",
+  "status": "draft",
+  "date": "2013-07-04",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM"
+    }
+  ],
+  "extensionDefn": [
+    {
+      "code": "category",
+      "display": "What kind of questionnaire?",
+      "contextType": "resource",
+      "context": [
+        "Questionnaire"
+      ],
+      "definition": {
+        "short": "What kind of questionnaire?",
+        "formal": "A code that identifies the questionnaire as falling into a particular group of like questionnaires.  E.g. \"Pediatric\", \"Admissions\", \"Research\", \"Demographic\", \"Opinion Survey\", etc.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "binding": {
+          "name": "QuestionnaireCategory",
+          "isExtensible": true,
+          "description": "Classifications for questionnaires.  Can include such concepts as \"intake form\", \"opinion survey\", \"clinical research questionnaire\", \"pediatric\", etc."
+        },
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "./inboundRelationship[typeCode=SUBJ]/act[classCode=LIST, moodCode=EVN]/code"
+          }
+        ]
+      }
+    },
+    {
+      "code": "label",
+      "display": "E.g. \"1(a)\", \"2.5.3\"",
+      "contextType": "resource",
+      "context": [
+        "Questionnaire.group; Questionnaire.question"
+      ],
+      "definition": {
+        "short": "E.g. \"1(a)\", \"2.5.3\"",
+        "formal": "A label for a particular group or question within the questionnaire.",
+        "comments": "These are generally unique within a questionnaire, though this is not guaranteed (some questionnaires may have multiple questions with the same label with logic to control which gets exposed).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "Not supported"
+          }
+        ]
+      }
+    },
+    {
+      "code": "minOccurs",
+      "display": "Minimum repetitions",
+      "contextType": "resource",
+      "context": [
+        "Questionnaire.group; Questionnaire.question"
+      ],
+      "definition": {
+        "short": "Minimum repetitions",
+        "formal": "The minimum number of times the group must appear or the minimum number of answers for a question - when greater than 1.",
+        "comments": "Default assumption for \"required\" elements is minOccurs=1.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A - MIF rather than RIM level"
+          }
+        ]
+      }
+    },
+    {
+      "code": "maxOccurs",
+      "display": "Maximum repetitions",
+      "contextType": "resource",
+      "context": [
+        "Questionnaire.group; Questionnaire.question"
+      ],
+      "definition": {
+        "short": "Maximum repetitions",
+        "formal": "The maximum number of times the group must appear or the minimum number of answers for a question - when greater than 1 and not unlimited.",
+        "comments": "Only relevant if the element has repeats=true and there's a need to constrain the number of allowed repetitions.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A - MIF rather than RIM level"
+          }
+        ]
+      }
+    },
+    {
+      "code": "defaultValue",
+      "display": "Initial presumed answer for question",
+      "contextType": "resource",
+      "context": [
+        "Questionnaire.group.question"
+      ],
+      "definition": {
+        "short": "Initial presumed answer for question",
+        "formal": "This is the value that should be pre-populated when rendering the questionnaire for user input.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "*"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A - MIF rather than RIM level"
+          }
+        ]
+      }
+    },
+    {
+      "code": "defaultAsFixed",
+      "display": "Y",
+      "contextType": "resource",
+      "context": [
+        "Questionnaire.group.question"
+      ],
+      "definition": {
+        "short": "Y",
+        "formal": "Treat default as fixed value?.",
+        "comments": "If true, the default value is set as a fixed \"answer\" for the question.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A - MIF rather than RIM level"
+          }
+        ]
+      }
+    },
+    {
+      "code": "deReference",
+      "display": "Implemented CDE",
+      "contextType": "resource",
+      "context": [
+        "Questionnaire.group.question"
+      ],
+      "definition": {
+        "short": "Implemented CDE",
+        "formal": "A reference to the Data Element that corresponds to the question text and answer constraints for this question.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Resource(DataElement)"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "./outboundRelationship[typeCode=INST]/target[classCode=OBS, moodCode=DEFN]"
+          }
+        ]
+      }
+    }
+  ]
+}

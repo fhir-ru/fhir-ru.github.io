@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  These concepts represent theconformance requirments defined for including or valuing an element of an HL7 message.  The concepts apply equally to conformance profiles  defined for Version 2.x messgaes as defined by the Conformance SIG, and to the conformance columns for Version 3 messages as specified in the HMD.
+        <br/>
+
+                  
+                     Deprecation Comment: Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>
+            <span style="color: grey">
+              <i>(_InclusionNotMandatory)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_InclusionNotMandatory"> </a>
+          </td>
+          <td>
+                        The message element is not mandatory, but its appearance may be constrained by one of the non-mandatory concepts.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  NP
+            <a name="NP"> </a>
+          </td>
+          <td>Not permitted</td>
+          <td>
+                        This message element may not appear when the message is communicated.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  NR
+            <a name="NR"> </a>
+          </td>
+          <td>Not required</td>
+          <td>
+                        The message element may be populated or used by one system sponsor (or profile), but not by another.  Each system sponsor or profile is required to state the ability to accept or send the message element as part of a conformance claim.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    RE
+            <a name="RE"> </a>
+          </td>
+          <td>Required may be empty</td>
+          <td>
+                        Pursuant to a profile or vendor conformance claim, the message element must appear every time the message is communicated, but the value may be communicated as null.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    X
+            <a name="X"> </a>
+          </td>
+          <td>Excluded</td>
+          <td>
+                        Pursuant to a profile or vendor conformance claim, this message element may not appear when the message is communicated.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  RQ
+            <a name="RQ"> </a>
+          </td>
+          <td>Required</td>
+          <td>
+                        The message element must appear every time the message is communicated, but the value may be communicated as null.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>M
+            <a name="M"> </a>
+          </td>
+          <td>Mandatory</td>
+          <td>
+                        The message element must appear every time the message is communicated and its value must not be null.  This condition is subject to the rules of multiplicity and conditionality. If a non-null default value is defined for the element, a null value may be communicated.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/HL7ConformanceInclusion"/>
+  <name value="v3 Code System HL7ConformanceInclusion"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" These concepts represent theconformance requirments defined for including or valuing an element of an HL7 message.  The concepts apply equally to conformance profiles  defined for Version 2.x messgaes as defined by the Conformance SIG, and to the conformance columns for Version 3 messages as specified in the HMD.  Deprecation Comment:
+Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/HL7ConformanceInclusion"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="_InclusionNotMandatory"/>
+      <abstract value="true"/>
+      <display value="InclusionNotMandatory"/>
+      <definition value="The message element is not mandatory, but its appearance may be constrained by one of the non-mandatory concepts."/>
+      <concept>
+        <code value="NP"/>
+        <display value="Not permitted"/>
+        <definition value="This message element may not appear when the message is communicated."/>
+      </concept>
+      <concept>
+        <code value="NR"/>
+        <display value="Not required"/>
+        <definition value="The message element may be populated or used by one system sponsor (or profile), but not by another.  Each system sponsor or profile is required to state the ability to accept or send the message element as part of a conformance claim."/>
+        <concept>
+          <code value="RE"/>
+          <display value="Required may be empty"/>
+          <definition value="Pursuant to a profile or vendor conformance claim, the message element must appear every time the message is communicated, but the value may be communicated as null."/>
+        </concept>
+        <concept>
+          <code value="X"/>
+          <display value="Excluded"/>
+          <definition value="Pursuant to a profile or vendor conformance claim, this message element may not appear when the message is communicated."/>
+        </concept>
+      </concept>
+      <concept>
+        <code value="RQ"/>
+        <display value="Required"/>
+        <definition value="The message element must appear every time the message is communicated, but the value may be communicated as null."/>
+      </concept>
+    </concept>
+    <concept>
+      <code value="M"/>
+      <display value="Mandatory"/>
+      <definition value="The message element must appear every time the message is communicated and its value must not be null.  This condition is subject to the rules of multiplicity and conditionality. If a non-null default value is defined for the element, a null value may be communicated."/>
+    </concept>
+  </define>
+</ValueSet>

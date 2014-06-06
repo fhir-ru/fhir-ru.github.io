@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Allow Substitution</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>G
+            <a name="G"> </a>
+          </td>
+          <td>Allow generic substitutions.</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>N
+            <a name="N"> </a>
+          </td>
+          <td>Substitutions are NOT authorized.  (This is the default - null.)</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>T
+            <a name="T"> </a>
+          </td>
+          <td>Allow therapeutic substitutions</td>
+          <td>added v2.2</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0161"/>
+  <name value="v2 Allow Substitution"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0161 ( Allow Substitution)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0161"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="G"/>
+      <display value="Allow generic substitutions."/>
+    </concept>
+    <concept>
+      <code value="N"/>
+      <display value="Substitutions are NOT authorized.  (This is the default - null.)"/>
+    </concept>
+    <concept>
+      <code value="T"/>
+      <display value="Allow therapeutic substitutions"/>
+    </concept>
+  </define>
+</ValueSet>

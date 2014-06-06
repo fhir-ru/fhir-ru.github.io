@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Blood Product Transfusion/Disposition Status</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>RA
+            <a name="RA"> </a>
+          </td>
+          <td>Returned unused/no longer needed</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>RL
+            <a name="RL"> </a>
+          </td>
+          <td>Returned unused/keep linked to patient for possible use later</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>TR
+            <a name="TR"> </a>
+          </td>
+          <td>Transfused with adverse reaction</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>TX
+            <a name="TX"> </a>
+          </td>
+          <td>Transfused</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>WA
+            <a name="WA"> </a>
+          </td>
+          <td>Wasted (product no longer viable)</td>
+          <td>added v2.5</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0513"/>
+  <name value="v2 Blood Product Transfusion/Disposition Status"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0513 ( Blood Product Transfusion/Disposition Status)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0513"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="RA"/>
+      <display value="Returned unused/no longer needed"/>
+    </concept>
+    <concept>
+      <code value="RL"/>
+      <display value="Returned unused/keep linked to patient for possible use later"/>
+    </concept>
+    <concept>
+      <code value="TR"/>
+      <display value="Transfused with adverse reaction"/>
+    </concept>
+    <concept>
+      <code value="TX"/>
+      <display value="Transfused"/>
+    </concept>
+    <concept>
+      <code value="WA"/>
+      <display value="Wasted (product no longer viable)"/>
+    </concept>
+  </define>
+</ValueSet>

@@ -1,0 +1,993 @@
+{
+  "resourceType": "Profile",
+  "text": {
+    "status": "generated",
+    "div": "<div><pre>\r\n&lt;<a title=\"The formal description of a single piece of information that can be gathered and reported.\" class=\"dict\" href=\"dataelement-definitions.html#DataElement\"><b>DataElement</b></a> xmlns=&quot;http://hl7.org/fhir&quot;&gt; <span style=\"float: right\"><a title=\"Documentation for this format\" href=\"formats.html\"><img alt=\"doco\" src=\"help.png\"/></a></span>\r\n &lt;!-- from <a href=\"resources.html\">Resource</a>: <a href=\"extensibility.html\">extension</a>, <a href=\"extensibility.html#modifierExtension\">modifierExtension</a>, language, <a href=\"narrative.html#Narrative\">text</a>, and <a href=\"references.html#contained\">contained</a> --&gt;\r\n &lt;<a title=\"The identifier that is used to identify this data element when it is referenced in a Profile, Questionnaire or an instance  (should be globally unique OID, UUID, or URI).\" class=\"dict\" href=\"dataelement-definitions.html#DataElement.identifier\"><b>identifier</b></a> value=&quot;[<span style=\"color: darkgreen\"><a href=\"datatypes.html#string\">string</a></span>]&quot;/&gt;<span style=\"color: Gray\">&lt;!--</span> <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">Logical id to reference this data element<span title=\"This element is included in a summary view (See Search/Query)\" style=\"color: Navy\"> &sect;</span></span><span style=\"color: Gray\"> --&gt;</span>\r\n &lt;<a title=\"The identifier that is used to identify this version of the data element when it is referenced in a Profile, Questionnaire or instance. This is an arbitrary value managed by the definition author manually.\" class=\"dict\" href=\"dataelement-definitions.html#DataElement.version\"><b>version</b></a> value=&quot;[<span style=\"color: darkgreen\"><a href=\"datatypes.html#string\">string</a></span>]&quot;/&gt;<span style=\"color: Gray\">&lt;!--</span> <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">Logical id for this version of the data element<span title=\"This element is included in a summary view (See Search/Query)\" style=\"color: Navy\"> &sect;</span></span><span style=\"color: Gray\"> --&gt;</span>\r\n &lt;<a title=\"Details of the individual or organization who accepts responsibility for publishing the data element.\" class=\"dict\" href=\"dataelement-definitions.html#DataElement.publisher\"><b>publisher</b></a> value=&quot;[<span style=\"color: darkgreen\"><a href=\"datatypes.html#string\">string</a></span>]&quot;/&gt;<span style=\"color: Gray\">&lt;!--</span> <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">Name of the publisher (Organization or individual)<span title=\"This element is included in a summary view (See Search/Query)\" style=\"color: Navy\"> &sect;</span></span><span style=\"color: Gray\"> --&gt;</span>\r\n &lt;<a title=\"Contact details to assist a user in finding and communicating with the publisher.\" class=\"dict\" href=\"dataelement-definitions.html#DataElement.telecom\"><b>telecom</b></a>&gt;<span style=\"color: Gray\">&lt;!--</span> <span style=\"color: brown\"><b>0..*</b></span> <span style=\"color: darkgreen\"><a href=\"datatypes.html#Contact\">Contact</a></span> <span style=\"color: navy\">Contact information of the publisher<span title=\"This element is included in a summary view (See Search/Query)\" style=\"color: Navy\"> &sect;</span></span><span style=\"color: Gray\"> --&gt;</span>&lt;/telecom&gt;\r\n &lt;<a title=\"The status of the data element (this element modifies the meaning of other elements)\" class=\"dict\" href=\"dataelement-definitions.html#DataElement.status\"><span style=\"text-decoration: underline\"><b>status</b></span></a> value=&quot;[<span style=\"color: darkgreen\"><a href=\"datatypes.html#code\">code</a></span>]&quot;/&gt;<span style=\"color: Gray\">&lt;!--</span> <span style=\"color: brown\"><b>1..1</b></span> <span style=\"color: navy\"><a style=\"color: navy\" href=\"resource-observation-def-status.html\">draft | active | retired<span title=\"This element is included in a summary view (See Search/Query)\" style=\"color: Navy\"> &sect;</span></a></span><span style=\"color: Gray\"> --&gt;</span>\r\n &lt;<a title=\"The date that this version of the data element was published.\" class=\"dict\" href=\"dataelement-definitions.html#DataElement.date\"><b>date</b></a> value=&quot;[<span style=\"color: darkgreen\"><a href=\"datatypes.html#dateTime\">dateTime</a></span>]&quot;/&gt;<span style=\"color: Gray\">&lt;!--</span> <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">Date for this version of the data element<span title=\"This element is included in a summary view (See Search/Query)\" style=\"color: Navy\"> &sect;</span></span><span style=\"color: Gray\"> --&gt;</span>\r\n &lt;<a title=\"The term used by humans to refer to the data element.  Should ideally be unique within the context in which the data element is expected to be used.\" class=\"dict\" href=\"dataelement-definitions.html#DataElement.name\"><b>name</b></a> value=&quot;[<span style=\"color: darkgreen\"><a href=\"datatypes.html#string\">string</a></span>]&quot;/&gt;<span style=\"color: Gray\">&lt;!--</span> <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">Descriptive label for this element definition<span title=\"This element is included in a summary view (See Search/Query)\" style=\"color: Navy\"> &sect;</span></span><span style=\"color: Gray\"> --&gt;</span>\r\n &lt;<a title=\"A set of terms from external terminologies that may be used to assist with indexing and searching of data element definitions.\" class=\"dict\" href=\"dataelement-definitions.html#DataElement.category\"><b>category</b></a>&gt;<span style=\"color: Gray\">&lt;!--</span> <span style=\"color: brown\"><b>0..*</b></span> <span style=\"color: darkgreen\"><a href=\"datatypes.html#CodeableConcept\">CodeableConcept</a></span> <span style=\"color: navy\">Assist with indexing and finding<span title=\"This element is included in a summary view (See Search/Query)\" style=\"color: Navy\"> &sect;</span></span><span style=\"color: Gray\"> --&gt;</span>&lt;/category&gt;\r\n &lt;<a title=\"A code assigned to the data element within a particular terminology.\" class=\"dict\" href=\"dataelement-definitions.html#DataElement.code\"><b>code</b></a>&gt;<span style=\"color: Gray\">&lt;!--</span> <span style=\"color: brown\"><b>0..*</b></span> <span style=\"color: darkgreen\"><a href=\"datatypes.html#Coding\">Coding</a></span> <span style=\"color: navy\">Identifying concept<span title=\"This element is included in a summary view (See Search/Query)\" style=\"color: Navy\"> &sect;</span></span><span style=\"color: Gray\"> --&gt;</span>&lt;/code&gt;\r\n &lt;<a title=\"The default/suggested phrasing to use when prompting a human to capture the data element.\" class=\"dict\" href=\"dataelement-definitions.html#DataElement.question\"><b>question</b></a> value=&quot;[<span style=\"color: darkgreen\"><a href=\"datatypes.html#string\">string</a></span>]&quot;/&gt;<span style=\"color: Gray\">&lt;!--</span> <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">How to ask for element<span title=\"This element is included in a summary view (See Search/Query)\" style=\"color: Navy\"> &sect;</span></span><span style=\"color: Gray\"> --&gt;</span>\r\n &lt;<a title=\"Provides a complete explanation of the meaning of the data element for human readability.\" class=\"dict\" href=\"dataelement-definitions.html#DataElement.definition\"><b>definition</b></a> value=&quot;[<span style=\"color: darkgreen\"><a href=\"datatypes.html#string\">string</a></span>]&quot;/&gt;<span style=\"color: Gray\">&lt;!--</span> <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">Full formal definition in human language</span><span style=\"color: Gray\"> --&gt;</span>\r\n &lt;<a title=\"Comments about the use of the element, including notes about how to use the data properly, exceptions to proper use, etc.\" class=\"dict\" href=\"dataelement-definitions.html#DataElement.comments\"><b>comments</b></a> value=&quot;[<span style=\"color: darkgreen\"><a href=\"datatypes.html#string\">string</a></span>]&quot;/&gt;<span style=\"color: Gray\">&lt;!--</span> <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">Comments about the use of this element</span><span style=\"color: Gray\"> --&gt;</span>\r\n &lt;<a title=\"Explains why this element is needed and why it's been constrained as it has.\" class=\"dict\" href=\"dataelement-definitions.html#DataElement.requirements\"><b>requirements</b></a> value=&quot;[<span style=\"color: darkgreen\"><a href=\"datatypes.html#string\">string</a></span>]&quot;/&gt;<span style=\"color: Gray\">&lt;!--</span> <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">Why is this needed?</span><span style=\"color: Gray\"> --&gt;</span>\r\n &lt;<a title=\"Identifies additional names by which this element might also be known.\" class=\"dict\" href=\"dataelement-definitions.html#DataElement.synonym\"><b>synonym</b></a> value=&quot;[<span style=\"color: darkgreen\"><a href=\"datatypes.html#string\">string</a></span>]&quot;/&gt;<span style=\"color: Gray\">&lt;!--</span> <span style=\"color: brown\"><b>0..*</b></span> <span style=\"color: navy\">Other names</span><span style=\"color: Gray\"> --&gt;</span>\r\n &lt;<a title=\"The FHIR data type that is the type for this element.\" class=\"dict\" href=\"dataelement-definitions.html#DataElement.type\"><b>type</b></a> value=&quot;[<span style=\"color: darkgreen\"><a href=\"datatypes.html#code\">code</a></span>]&quot;/&gt;<span style=\"color: Gray\">&lt;!--</span> <span style=\"color: brown\"><b>1..1</b></span> <span style=\"color: navy\"><a style=\"color: navy\" href=\"data-types.html\">Name of Data type</a></span><span style=\"color: Gray\"> --&gt;</span>\r\n &lt;<a title=\"An example value for this element.\" class=\"dict\" href=\"dataelement-definitions.html#DataElement.example_x_\"><b>example[x]</b></a>&gt;<span style=\"color: Gray\">&lt;!--</span> <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: darkgreen\"><a href=\"datatypes.html#open\">*</a></span> <span style=\"color: navy\">Example value: [as defined for type]</span><span style=\"color: Gray\"> --&gt;</span>&lt;/example[x]&gt;\r\n &lt;<a title=\"Indicates the shortest length that SHALL be supported by conformant instances without truncation.\" class=\"dict\" href=\"dataelement-definitions.html#DataElement.maxLength\"><b>maxLength</b></a> value=&quot;[<span style=\"color: darkgreen\"><a href=\"datatypes.html#integer\">integer</a></span>]&quot;/&gt;<span style=\"color: Gray\">&lt;!--</span> <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">Length for strings</span><span style=\"color: Gray\"> --&gt;</span>\r\n &lt;<a title=\"Identifies the units of measure in which the data element should be captured or expressed.\" class=\"dict\" href=\"dataelement-definitions.html#DataElement.units\"><b>units</b></a>&gt;<span style=\"color: Gray\">&lt;!--</span> <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: darkgreen\"><a href=\"datatypes.html#CodeableConcept\">CodeableConcept</a></span> <span style=\"color: navy\"><a style=\"color: navy\" href=\"valueset-units.html\">Units to use for measured value</a></span><span style=\"color: Gray\"> --&gt;</span>&lt;/units&gt;\r\n &lt;<a title=\"Binds to a value set if this element is coded (code, Coding, CodeableConcept).\" class=\"dict\" href=\"dataelement-definitions.html#DataElement.binding\"><b>binding</b></a>&gt;  <span style=\"color: Gray\">&lt;!-- <span style=\"color: brown\"><b>0..1</b></span> ValueSet details if this is coded --&gt;</span>\r\n  &lt;<a title=\"If true, then conformant systems may use additional codes or (where the data type permits) text alone to convey concepts not covered by the set of codes identified in the binding.  If false, then conformant systems are constrained to the provided codes alone.\" class=\"dict\" href=\"dataelement-definitions.html#DataElement.binding.isExtensible\"><b>isExtensible</b></a> value=&quot;[<span style=\"color: darkgreen\"><a href=\"datatypes.html#boolean\">boolean</a></span>]&quot;/&gt;<span style=\"color: Gray\">&lt;!--</span> <span title=\"Inv-14: Example value sets are always extensible\" style=\"color: brown\"><b><img alt=\"??\" src=\"lock.png\"/> 1..1</b></span> <span style=\"color: navy\">Can additional codes be used?</span><span style=\"color: Gray\"> --&gt;</span>\r\n  &lt;<a title=\"Indicates the degree of conformance expectations associated with this binding.\" class=\"dict\" href=\"dataelement-definitions.html#DataElement.binding.conformance\"><b>conformance</b></a> value=&quot;[<span style=\"color: darkgreen\"><a href=\"datatypes.html#code\">code</a></span>]&quot;/&gt;<span style=\"color: Gray\">&lt;!--</span> <span title=\"Inv-14: Example value sets are always extensible\" style=\"color: brown\"><b><img alt=\"??\" src=\"lock.png\"/> 0..1</b></span> <span style=\"color: navy\"><a style=\"color: navy\" href=\"binding-conformance.html\">required | preferred | example</a></span><span style=\"color: Gray\"> --&gt;</span>\r\n  &lt;<a title=\"Describes the intended use of this particular set of codes.\" class=\"dict\" href=\"dataelement-definitions.html#DataElement.binding.description\"><b>description</b></a> value=&quot;[<span style=\"color: darkgreen\"><a href=\"datatypes.html#string\">string</a></span>]&quot;/&gt;<span style=\"color: Gray\">&lt;!--</span> <span title=\"Inv-3: provide either a valueSet or a description (or both)\" style=\"color: brown\"><b><img alt=\"??\" src=\"lock.png\"/> 0..1</b></span> <span style=\"color: navy\">Human explanation of the value set</span><span style=\"color: Gray\"> --&gt;</span>\r\n  &lt;<a title=\"Points to the value set that identifies the set of codes to be used.\" class=\"dict\" href=\"dataelement-definitions.html#DataElement.binding.valueSet\"><b>valueSet</b></a>&gt;<span style=\"color: Gray\">&lt;!--</span> <span title=\"Inv-3: provide either a valueSet or a description (or both)\" style=\"color: brown\"><b><img alt=\"??\" src=\"lock.png\"/> 0..1</b></span> <span style=\"color: darkgreen\"><a href=\"references.html#Resource\">Resource</a>(<a href=\"valueset.html#ValueSet\">ValueSet</a>)</span> <span style=\"color: navy\">Source of value set</span><span style=\"color: Gray\"> --&gt;</span>&lt;/valueSet&gt;\r\n &lt;/binding&gt;\r\n &lt;<a title=\"Identifies a concept from an external specification that roughly corresponds to this element.\" class=\"dict\" href=\"dataelement-definitions.html#DataElement.mapping\"><b>mapping</b></a>&gt;  <span style=\"color: Gray\">&lt;!-- <span style=\"color: brown\"><b>0..*</b></span> Map element to another set of definitions --&gt;</span>\r\n  &lt;<a title=\"A URI that identifies the specification that this mapping is expressed to.\" class=\"dict\" href=\"dataelement-definitions.html#DataElement.mapping.uri\"><b>uri</b></a> value=&quot;[<span style=\"color: darkgreen\"><a href=\"datatypes.html#uri\">uri</a></span>]&quot;/&gt;<span style=\"color: Gray\">&lt;!--</span> <span title=\"Inv-26: Must have at a name or a uri (or both)\" style=\"color: brown\"><b><img alt=\"??\" src=\"lock.png\"/> 0..1</b></span> <span style=\"color: navy\">Identifies what this mapping refers to</span><span style=\"color: Gray\"> --&gt;</span>\r\n  &lt;<a title=\"A name for the specification that is being mapped to.\" class=\"dict\" href=\"dataelement-definitions.html#DataElement.mapping.name\"><b>name</b></a> value=&quot;[<span style=\"color: darkgreen\"><a href=\"datatypes.html#string\">string</a></span>]&quot;/&gt;<span style=\"color: Gray\">&lt;!--</span> <span title=\"Inv-26: Must have at a name or a uri (or both)\" style=\"color: brown\"><b><img alt=\"??\" src=\"lock.png\"/> 0..1</b></span> <span style=\"color: navy\">Names what this mapping refers to</span><span style=\"color: Gray\"> --&gt;</span>\r\n  &lt;<a title=\"Comments about this mapping, including version notes, issues, scope limitations, and other important notes for usage.\" class=\"dict\" href=\"dataelement-definitions.html#DataElement.mapping.comments\"><b>comments</b></a> value=&quot;[<span style=\"color: darkgreen\"><a href=\"datatypes.html#string\">string</a></span>]&quot;/&gt;<span style=\"color: Gray\">&lt;!--</span> <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">Versions, Issues, Scope limitations etc</span><span style=\"color: Gray\"> --&gt;</span>\r\n  &lt;<a title=\"Expresses what part of the target specification corresponds to this element.\" class=\"dict\" href=\"dataelement-definitions.html#DataElement.mapping.map\"><b>map</b></a> value=&quot;[<span style=\"color: darkgreen\"><a href=\"datatypes.html#string\">string</a></span>]&quot;/&gt;<span style=\"color: Gray\">&lt;!--</span> <span style=\"color: brown\"><b>1..1</b></span> <span style=\"color: navy\">Details of the mapping</span><span style=\"color: Gray\"> --&gt;</span>\r\n &lt;/mapping&gt;\r\n&lt;/DataElement&gt;\r\n</pre></div>"
+  },
+  "identifier": "http://hl7.org/fhir/profile/dataelement",
+  "name": "dataelement",
+  "publisher": "FHIR Project",
+  "description": "Basic Profile. The formal description of a single piece of information that can be gathered and reported.",
+  "status": "draft",
+  "date": "2014-06-06",
+  "requirements": "Scope and Usage This resource covers two major use-cases: \r\n\r\n* Definitions of types of observations that may be performed, sometimes referred to as \"observation master files\"\r\n* Definitions of \"data elements\" (DEs) that may be used in questionnaires and profiles and potentially mapped to elements in other resources and profiles\r\nThe purpose of the first use-case is to allow systems to identify what types of lab orders, diagnostic reports and other types of observations may be requested or performed within a particular organization or other context. An ordering practitioner can query for a list of data elements by category name or other criteria and identify which, within a set of similar tests, they wish to be performed. \r\n\r\nThe focus of the second use-case is standardizing data capture and reporting. By defining standard names, data capture constraints, questions and other characteristics, the data gathered within and across organizations via questionnaires, as part of clinical studies, etc. can be made more consistent. When designing clinical studies, constructing questionnaires, building profiles or performing other tasks that involve determining what data will be captured or exchanged and how, designers can query to find pre-defined data element definitions they can leverage or map to. By encouraging consistency around data element definitions, data types, value sets, string lengths and other constraints, data becomes more easily exchangeable and comparible across systems. This benefits interoperability and clinical research. \r\n\r\nThe scope covers base capabilities of the ISO 11179 Metadata Registries specification which defines CDEs. It also covers observation definitions by ontologies such as LOINC. The term \"observation\" is interpretted in its broadest sense as \"any element that might be thought of as the 'value' in a name-value pair\". So it includes such concepts as patient gender, practitioner address and other data elements that would not typically be captured using the Observation resource.",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2"
+    }
+  ],
+  "structure": [
+    {
+      "type": "DataElement",
+      "publish": true,
+      "element": [
+        {
+          "path": "DataElement",
+          "definition": {
+            "short": "Resource data element",
+            "formal": "The formal description of a single piece of information that can be gathered and reported.",
+            "comments": "Often called a clinical template.",
+            "min": 1,
+            "max": "1",
+            "type": [
+              {
+                "code": "Resource"
+              }
+            ],
+            "isModifier": false,
+            "mapping": [
+              {
+                "identity": "rim",
+                "map": "Observation[classCode=OBS, moodCode=DEFN]"
+              },
+              {
+                "identity": "v2",
+                "map": "OM1"
+              }
+            ]
+          }
+        },
+        {
+          "path": "DataElement.extension",
+          "definition": {
+            "short": "Additional Content defined by implementations",
+            "formal": "May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "comments": "there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone.",
+            "synonym": [
+              "extensions",
+              "user content"
+            ],
+            "min": 0,
+            "max": "*",
+            "type": [
+              {
+                "code": "Extension"
+              }
+            ],
+            "isModifier": false
+          }
+        },
+        {
+          "path": "DataElement.modifierExtension",
+          "definition": {
+            "short": "Extensions that cannot be ignored",
+            "formal": "May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
+            "comments": "there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone.",
+            "synonym": [
+              "extensions",
+              "user content"
+            ],
+            "min": 0,
+            "max": "*",
+            "type": [
+              {
+                "code": "Extension"
+              }
+            ],
+            "isModifier": false
+          }
+        },
+        {
+          "path": "DataElement.text",
+          "definition": {
+            "short": "Text summary of the resource, for human interpretation",
+            "formal": "A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.",
+            "comments": "Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative.",
+            "synonym": [
+              "narrative",
+              "html",
+              "xhtml",
+              "display"
+            ],
+            "min": 0,
+            "max": "1",
+            "type": [
+              {
+                "code": "Narrative"
+              }
+            ],
+            "isModifier": false
+          }
+        },
+        {
+          "path": "DataElement.contained",
+          "definition": {
+            "short": "Contained, inline Resources",
+            "formal": "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.",
+            "comments": "This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again.",
+            "synonym": [
+              "inline resources",
+              "anonymous resources",
+              "contained resources"
+            ],
+            "min": 0,
+            "max": "*",
+            "type": [
+              {
+                "code": "Resource"
+              }
+            ],
+            "isModifier": false
+          }
+        },
+        {
+          "path": "DataElement.identifier",
+          "definition": {
+            "short": "Logical id to reference this data element",
+            "formal": "The identifier that is used to identify this data element when it is referenced in a Profile, Questionnaire or an instance  (should be globally unique OID, UUID, or URI).",
+            "comments": "N/A.",
+            "min": 0,
+            "max": "1",
+            "type": [
+              {
+                "code": "string"
+              }
+            ],
+            "isModifier": false,
+            "mapping": [
+              {
+                "identity": "rim",
+                "map": "./id[use=BUS]"
+              },
+              {
+                "identity": "v2",
+                "map": "OM1.2"
+              }
+            ]
+          }
+        },
+        {
+          "path": "DataElement.version",
+          "definition": {
+            "short": "Logical id for this version of the data element",
+            "formal": "The identifier that is used to identify this version of the data element when it is referenced in a Profile, Questionnaire or instance. This is an arbitrary value managed by the definition author manually.",
+            "comments": "N/A.",
+            "min": 0,
+            "max": "1",
+            "type": [
+              {
+                "code": "string"
+              }
+            ],
+            "isModifier": false,
+            "mapping": [
+              {
+                "identity": "rim",
+                "map": "./id[use=VER]"
+              },
+              {
+                "identity": "v2",
+                "map": "N/A"
+              }
+            ]
+          }
+        },
+        {
+          "path": "DataElement.publisher",
+          "definition": {
+            "short": "Name of the publisher (Organization or individual)",
+            "formal": "Details of the individual or organization who accepts responsibility for publishing the data element.",
+            "comments": "Usually an organization, but may be an individual. This item SHOULD be populated unless the information is available from context.",
+            "min": 0,
+            "max": "1",
+            "type": [
+              {
+                "code": "string"
+              }
+            ],
+            "isModifier": false,
+            "mapping": [
+              {
+                "identity": "rim",
+                "map": "./participation[typeCode=AUT]/role[classCode=ASSIGN]/scoper[classCode=ORG,determinerCode=INSTANCE]/name"
+              },
+              {
+                "identity": "v2",
+                "map": "OM1.16"
+              }
+            ]
+          }
+        },
+        {
+          "path": "DataElement.telecom",
+          "definition": {
+            "short": "Contact information of the publisher",
+            "formal": "Contact details to assist a user in finding and communicating with the publisher.",
+            "comments": "May be a web site, an email address, a telephone number (tel:), etc.",
+            "min": 0,
+            "max": "*",
+            "type": [
+              {
+                "code": "Contact"
+              }
+            ],
+            "isModifier": false,
+            "mapping": [
+              {
+                "identity": "rim",
+                "map": "./participation[typeCode=AUT]/role[classCode=ASSIGN]/scoper[classCode=ORG,determinerCode=INSTANCE]/telecom"
+              },
+              {
+                "identity": "v2",
+                "map": "OM1.17"
+              }
+            ]
+          }
+        },
+        {
+          "path": "DataElement.status",
+          "definition": {
+            "short": "draft | active | retired",
+            "formal": "The status of the data element.",
+            "min": 1,
+            "max": "1",
+            "type": [
+              {
+                "code": "code"
+              }
+            ],
+            "isModifier": true,
+            "binding": {
+              "name": "ResourceDataElementStatus",
+              "isExtensible": false,
+              "conformance": "required",
+              "description": "The lifecycle status of a Resource data element",
+              "referenceResource": {
+                "reference": "http://hl7.org/fhir/vs/resource-observation-def-status"
+              }
+            },
+            "mapping": [
+              {
+                "identity": "rim",
+                "map": "./status\n(draft = new\n active = active\n retired = aborted)"
+              }
+            ]
+          }
+        },
+        {
+          "path": "DataElement.date",
+          "definition": {
+            "short": "Date for this version of the data element",
+            "formal": "The date that this version of the data element was published.",
+            "min": 0,
+            "max": "1",
+            "type": [
+              {
+                "code": "dateTime"
+              }
+            ],
+            "isModifier": false,
+            "mapping": [
+              {
+                "identity": "rim",
+                "map": "./participation[typeCode=AUT]/time"
+              },
+              {
+                "identity": "v2",
+                "map": "OM1.21"
+              }
+            ]
+          }
+        },
+        {
+          "path": "DataElement.name",
+          "definition": {
+            "short": "Descriptive label for this element definition",
+            "formal": "The term used by humans to refer to the data element.  Should ideally be unique within the context in which the data element is expected to be used.",
+            "min": 0,
+            "max": "1",
+            "type": [
+              {
+                "code": "string"
+              }
+            ],
+            "isModifier": false,
+            "mapping": [
+              {
+                "identity": "rim",
+                "map": "./title"
+              },
+              {
+                "identity": "v2",
+                "map": "OM1.11"
+              }
+            ]
+          }
+        },
+        {
+          "path": "DataElement.category",
+          "definition": {
+            "short": "Assist with indexing and finding",
+            "formal": "A set of terms from external terminologies that may be used to assist with indexing and searching of data element definitions.",
+            "min": 0,
+            "max": "*",
+            "type": [
+              {
+                "code": "CodeableConcept"
+              }
+            ],
+            "isModifier": false,
+            "mapping": [
+              {
+                "identity": "rim",
+                "map": "./inboundRelationship[typeCode=SUBJ]/source[classCode=LIST, moodCode=EVN]/code"
+              },
+              {
+                "identity": "v2",
+                "map": "OM1.18, OM1.42, OM1.46, OM7.3"
+              }
+            ]
+          }
+        },
+        {
+          "path": "DataElement.code",
+          "definition": {
+            "short": "Identifying concept",
+            "formal": "A code assigned to the data element within a particular terminology.",
+            "min": 0,
+            "max": "*",
+            "type": [
+              {
+                "code": "Coding"
+              }
+            ],
+            "isModifier": false,
+            "mapping": [
+              {
+                "identity": "rim",
+                "map": "./code (root or translation)"
+              },
+              {
+                "identity": "v2",
+                "map": "OM1.7"
+              }
+            ]
+          }
+        },
+        {
+          "path": "DataElement.question",
+          "definition": {
+            "short": "How to ask for element",
+            "formal": "The default/suggested phrasing to use when prompting a human to capture the data element.",
+            "min": 0,
+            "max": "1",
+            "type": [
+              {
+                "code": "string"
+              }
+            ],
+            "isModifier": false,
+            "mapping": [
+              {
+                "identity": "rim",
+                "map": "./code/originalText"
+              }
+            ]
+          }
+        },
+        {
+          "path": "DataElement.definition",
+          "definition": {
+            "short": "Full formal definition in human language",
+            "formal": "Provides a complete explanation of the meaning of the data element for human readability.",
+            "min": 0,
+            "max": "1",
+            "type": [
+              {
+                "code": "string"
+              }
+            ],
+            "isModifier": false,
+            "mapping": [
+              {
+                "identity": "rim",
+                "map": "./text"
+              },
+              {
+                "identity": "v2",
+                "map": "OM1.6"
+              }
+            ]
+          }
+        },
+        {
+          "path": "DataElement.comments",
+          "definition": {
+            "short": "Comments about the use of this element",
+            "formal": "Comments about the use of the element, including notes about how to use the data properly, exceptions to proper use, etc.",
+            "comments": "If it is possible to capture usage rules using invariants, that mechanism should be used in preference to this element.",
+            "min": 0,
+            "max": "1",
+            "type": [
+              {
+                "code": "string"
+              }
+            ],
+            "isModifier": false,
+            "mapping": [
+              {
+                "identity": "rim",
+                "map": "./inboundRelationship[typeCode=SUBJ]/source[classCode=LIST, moodCode=EVN]/code"
+              },
+              {
+                "identity": "v2",
+                "map": "NTE"
+              }
+            ]
+          }
+        },
+        {
+          "path": "DataElement.requirements",
+          "definition": {
+            "short": "Why is this needed?",
+            "formal": "Explains why this element is needed and why it's been constrained as it has.",
+            "min": 0,
+            "max": "1",
+            "type": [
+              {
+                "code": "string"
+              }
+            ],
+            "isModifier": false,
+            "mapping": [
+              {
+                "identity": "rim",
+                "map": "./inboundRelationship[typeCode=META]/source[classCode=ACT, moodCode=EVN, isCriterionInd=true]/reasonCode/originalText"
+              }
+            ]
+          }
+        },
+        {
+          "path": "DataElement.synonym",
+          "definition": {
+            "short": "Other names",
+            "formal": "Identifies additional names by which this element might also be known.",
+            "min": 0,
+            "max": "*",
+            "type": [
+              {
+                "code": "string"
+              }
+            ],
+            "isModifier": false,
+            "mapping": [
+              {
+                "identity": "rim",
+                "map": "Not currently expressible"
+              },
+              {
+                "identity": "v2",
+                "map": "OM1.8"
+              }
+            ]
+          }
+        },
+        {
+          "path": "DataElement.type",
+          "definition": {
+            "short": "Name of Data type",
+            "formal": "The FHIR data type that is the type for this element.",
+            "min": 1,
+            "max": "1",
+            "type": [
+              {
+                "code": "code"
+              }
+            ],
+            "isModifier": false,
+            "binding": {
+              "name": "DataType",
+              "isExtensible": false,
+              "conformance": "required",
+              "description": "The type of an element - one of the FHIR data types",
+              "referenceResource": {
+                "reference": "http://hl7.org/fhir/vs/data-types"
+              }
+            },
+            "mapping": [
+              {
+                "identity": "rim",
+                "map": "N/A (MIF territory)"
+              },
+              {
+                "identity": "v2",
+                "map": "OM1.3"
+              }
+            ]
+          }
+        },
+        {
+          "path": "DataElement.example[x]",
+          "definition": {
+            "short": "Example value: [as defined for type]",
+            "formal": "An example value for this element.",
+            "min": 0,
+            "max": "1",
+            "type": [
+              {
+                "code": "*"
+              }
+            ],
+            "isModifier": false,
+            "mapping": [
+              {
+                "identity": "rim",
+                "map": "N/A (MIF territory)"
+              }
+            ]
+          }
+        },
+        {
+          "path": "DataElement.maxLength",
+          "definition": {
+            "short": "Length for strings",
+            "formal": "Indicates the shortest length that SHALL be supported by conformant instances without truncation.",
+            "comments": "If not specified, there is no conformance expectation for length support.",
+            "min": 0,
+            "max": "1",
+            "type": [
+              {
+                "code": "integer"
+              }
+            ],
+            "isModifier": false,
+            "mapping": [
+              {
+                "identity": "rim",
+                "map": "N/A (MIF territory)"
+              }
+            ]
+          }
+        },
+        {
+          "path": "DataElement.units",
+          "definition": {
+            "short": "Units to use for measured value",
+            "formal": "Identifies the units of measure in which the data element should be captured or expressed.",
+            "min": 0,
+            "max": "1",
+            "type": [
+              {
+                "code": "CodeableConcept"
+              }
+            ],
+            "isModifier": false,
+            "binding": {
+              "name": "Units",
+              "isExtensible": true,
+              "conformance": "preferred",
+              "description": "Type of measurement system used to express a value",
+              "referenceResource": {
+                "reference": "http://hl7.org/fhir/vs/units"
+              }
+            },
+            "mapping": [
+              {
+                "identity": "rim",
+                "map": "N/A (MIF territory)"
+              },
+              {
+                "identity": "v2",
+                "map": "OM2.2"
+              }
+            ]
+          }
+        },
+        {
+          "path": "DataElement.binding",
+          "definition": {
+            "short": "ValueSet details if this is coded",
+            "formal": "Binds to a value set if this element is coded (code, Coding, CodeableConcept).",
+            "min": 0,
+            "max": "1",
+            "constraint": [
+              {
+                "key": "3",
+                "severity": "error",
+                "human": "provide either a valueSet or a description (or both)",
+                "xpath": "(exists(f:valueSet)) or exists(f:description)"
+              },
+              {
+                "key": "14",
+                "severity": "error",
+                "human": "Example value sets are always extensible",
+                "xpath": "not(f:conformance/value='example' and f:isExtensible.value='false')"
+              }
+            ],
+            "isModifier": false,
+            "mapping": [
+              {
+                "identity": "rim",
+                "map": "N/A (MIF territory)"
+              },
+              {
+                "identity": "v2",
+                "map": "OM3"
+              }
+            ]
+          }
+        },
+        {
+          "path": "DataElement.binding.extension",
+          "definition": {
+            "short": "Additional Content defined by implementations",
+            "formal": "May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "comments": "there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone.",
+            "synonym": [
+              "extensions",
+              "user content"
+            ],
+            "min": 0,
+            "max": "*",
+            "type": [
+              {
+                "code": "Extension"
+              }
+            ],
+            "isModifier": false
+          }
+        },
+        {
+          "path": "DataElement.binding.modifierExtension",
+          "definition": {
+            "short": "Extensions that cannot be ignored",
+            "formal": "May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
+            "comments": "there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone.",
+            "synonym": [
+              "extensions",
+              "user content"
+            ],
+            "min": 0,
+            "max": "*",
+            "type": [
+              {
+                "code": "Extension"
+              }
+            ],
+            "isModifier": false
+          }
+        },
+        {
+          "path": "DataElement.binding.isExtensible",
+          "definition": {
+            "short": "Can additional codes be used?",
+            "formal": "If true, then conformant systems may use additional codes or (where the data type permits) text alone to convey concepts not covered by the set of codes identified in the binding.  If false, then conformant systems are constrained to the provided codes alone.",
+            "comments": "When the binding use used for elements with a type of \"code\" (rather than Coding or CodableConcept), the binding is treated as non-extensible regardless of the value of this property.",
+            "min": 1,
+            "max": "1",
+            "type": [
+              {
+                "code": "boolean"
+              }
+            ],
+            "isModifier": false,
+            "mapping": [
+              {
+                "identity": "rim",
+                "map": "N/A (MIF territory)"
+              }
+            ]
+          }
+        },
+        {
+          "path": "DataElement.binding.conformance",
+          "definition": {
+            "short": "required | preferred | example",
+            "formal": "Indicates the degree of conformance expectations associated with this binding.",
+            "min": 0,
+            "max": "1",
+            "type": [
+              {
+                "code": "code"
+              }
+            ],
+            "isModifier": false,
+            "binding": {
+              "name": "BindingConformance",
+              "isExtensible": false,
+              "conformance": "required",
+              "description": "Binding conformance for applications",
+              "referenceResource": {
+                "reference": "http://hl7.org/fhir/vs/binding-conformance"
+              }
+            },
+            "mapping": [
+              {
+                "identity": "rim",
+                "map": "N/A (MIF territory)"
+              }
+            ]
+          }
+        },
+        {
+          "path": "DataElement.binding.description",
+          "definition": {
+            "short": "Human explanation of the value set",
+            "formal": "Describes the intended use of this particular set of codes.",
+            "min": 0,
+            "max": "1",
+            "type": [
+              {
+                "code": "string"
+              }
+            ],
+            "isModifier": false,
+            "mapping": [
+              {
+                "identity": "rim",
+                "map": "N/A (MIF territory)"
+              }
+            ]
+          }
+        },
+        {
+          "path": "DataElement.binding.valueSet",
+          "definition": {
+            "short": "Source of value set",
+            "formal": "Points to the value set that identifies the set of codes to be used.",
+            "comments": "The display can contain the value set description.  The reference may be version-specific or not.",
+            "min": 0,
+            "max": "1",
+            "type": [
+              {
+                "code": "ResourceReference",
+                "profile": "http://hl7.org/fhir/profiles/ValueSet"
+              }
+            ],
+            "isModifier": false,
+            "mapping": [
+              {
+                "identity": "rim",
+                "map": "N/A (MIF territory)"
+              }
+            ]
+          }
+        },
+        {
+          "path": "DataElement.mapping",
+          "definition": {
+            "short": "Map element to another set of definitions",
+            "formal": "Identifies a concept from an external specification that roughly corresponds to this element.",
+            "comments": "Mappings are not necessarily specific enough for safe translation.",
+            "min": 0,
+            "max": "*",
+            "constraint": [
+              {
+                "key": "26",
+                "severity": "error",
+                "human": "Must have at a name or a uri (or both)",
+                "xpath": "exists(f:uri) or exists(f:name)"
+              }
+            ],
+            "isModifier": false,
+            "mapping": [
+              {
+                "identity": "rim",
+                "map": "N/A (MIF territory)"
+              }
+            ]
+          }
+        },
+        {
+          "path": "DataElement.mapping.extension",
+          "definition": {
+            "short": "Additional Content defined by implementations",
+            "formal": "May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "comments": "there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone.",
+            "synonym": [
+              "extensions",
+              "user content"
+            ],
+            "min": 0,
+            "max": "*",
+            "type": [
+              {
+                "code": "Extension"
+              }
+            ],
+            "isModifier": false
+          }
+        },
+        {
+          "path": "DataElement.mapping.modifierExtension",
+          "definition": {
+            "short": "Extensions that cannot be ignored",
+            "formal": "May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
+            "comments": "there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone.",
+            "synonym": [
+              "extensions",
+              "user content"
+            ],
+            "min": 0,
+            "max": "*",
+            "type": [
+              {
+                "code": "Extension"
+              }
+            ],
+            "isModifier": false
+          }
+        },
+        {
+          "path": "DataElement.mapping.uri",
+          "definition": {
+            "short": "Identifies what this mapping refers to",
+            "formal": "A URI that identifies the specification that this mapping is expressed to.",
+            "comments": "A formal identity for the specification being mapped to helps with identifying maps consistently.",
+            "min": 0,
+            "max": "1",
+            "type": [
+              {
+                "code": "uri"
+              }
+            ],
+            "isModifier": false,
+            "mapping": [
+              {
+                "identity": "rim",
+                "map": "N/A (MIF territory)"
+              }
+            ]
+          }
+        },
+        {
+          "path": "DataElement.mapping.name",
+          "definition": {
+            "short": "Names what this mapping refers to",
+            "formal": "A name for the specification that is being mapped to.",
+            "min": 0,
+            "max": "1",
+            "type": [
+              {
+                "code": "string"
+              }
+            ],
+            "isModifier": false,
+            "mapping": [
+              {
+                "identity": "rim",
+                "map": "N/A (MIF territory)"
+              }
+            ]
+          }
+        },
+        {
+          "path": "DataElement.mapping.comments",
+          "definition": {
+            "short": "Versions, Issues, Scope limitations etc",
+            "formal": "Comments about this mapping, including version notes, issues, scope limitations, and other important notes for usage.",
+            "min": 0,
+            "max": "1",
+            "type": [
+              {
+                "code": "string"
+              }
+            ],
+            "isModifier": false,
+            "mapping": [
+              {
+                "identity": "rim",
+                "map": "N/A (MIF territory)"
+              }
+            ]
+          }
+        },
+        {
+          "path": "DataElement.mapping.map",
+          "definition": {
+            "short": "Details of the mapping",
+            "formal": "Expresses what part of the target specification corresponds to this element.",
+            "comments": "For most mappings, the syntax is undefined.  Syntax will be provided for mappings to the RIM.  Multiple mappings may be possible and may include constraints on other resource elements that identify when a particular mapping applies.",
+            "min": 1,
+            "max": "1",
+            "type": [
+              {
+                "code": "string"
+              }
+            ],
+            "isModifier": false,
+            "mapping": [
+              {
+                "identity": "rim",
+                "map": "N/A (MIF territory)"
+              }
+            ]
+          }
+        }
+      ],
+      "searchParam": [
+        {
+          "name": "_id",
+          "type": "token",
+          "documentation": "The logical resource id associated with the resource (must be supported by all servers)"
+        },
+        {
+          "name": "_language",
+          "type": "token",
+          "documentation": "The stated language of the resource"
+        },
+        {
+          "name": "category",
+          "type": "token",
+          "documentation": "A category assigned to the data element (server may choose to do subsumption)",
+          "xpath": "f:DataElement/f:category"
+        },
+        {
+          "name": "code",
+          "type": "token",
+          "documentation": "A code for the data element (server may choose to do subsumption)",
+          "xpath": "f:DataElement/f:code"
+        },
+        {
+          "name": "date",
+          "type": "date",
+          "documentation": "The data element publication date",
+          "xpath": "f:DataElement/f:date"
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "documentation": "Text search in the description of the data element",
+          "xpath": "f:DataElement/f:definition"
+        },
+        {
+          "name": "identifier",
+          "type": "token",
+          "documentation": "The identifier of the data element",
+          "xpath": "f:DataElement/f:identifier"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "documentation": "Name of the data element",
+          "xpath": "f:DataElement/f:name"
+        },
+        {
+          "name": "publisher",
+          "type": "string",
+          "documentation": "Name of the publisher of the data element",
+          "xpath": "f:DataElement/f:publisher"
+        },
+        {
+          "name": "status",
+          "type": "token",
+          "documentation": "The current status of the data element",
+          "xpath": "f:DataElement/f:status"
+        },
+        {
+          "name": "version",
+          "type": "token",
+          "documentation": "The version identifier of the data element",
+          "xpath": "f:DataElement/f:version"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Sterilization Type</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>EOG
+            <a name="EOG"> </a>
+          </td>
+          <td>Ethylene Oxide Gas</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>PCA
+            <a name="PCA"> </a>
+          </td>
+          <td>Peracetic acid</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>STM
+            <a name="STM"> </a>
+          </td>
+          <td>Steam</td>
+          <td>added v2.6</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0806"/>
+  <name value="v2 Sterilization Type"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0806 ( Sterilization Type)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0806"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="EOG"/>
+      <display value="Ethylene Oxide Gas"/>
+    </concept>
+    <concept>
+      <code value="PCA"/>
+      <display value="Peracetic acid"/>
+    </concept>
+    <concept>
+      <code value="STM"/>
+      <display value="Steam"/>
+    </concept>
+  </define>
+</ValueSet>

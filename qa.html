@@ -1,0 +1,1422 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+      
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>QA Report - FHIR v0.2.1</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li>??? qa.html / page</li>
+        <!-- qa.html / page -->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+
+<div class="col-9">
+
+<h1>FHIR QA Report</h1>
+
+<h2>Build Stats</h2>
+<table class="grid">
+ <tr><td>resources</td><td>56</td></tr>
+ <tr><td>types</td><td>85</td></tr>
+ <tr><td>profiles</td><td>6</td></tr>
+ <tr><td>paths</td><td>1293</td></tr>
+ <tr><td>bindings</td><td>234</td></tr>
+ <tr><td>codelists</td><td>106</td></tr>
+ <tr><td>valuesets</td><td>103</td></tr>
+ <tr><td>codes</td><td>622</td></tr>
+ <tr><td>hints</td><td>30</td></tr>
+ <tr><td>warnings</td><td>219</td></tr>
+ <tr><td>uncovered</td><td>454</td></tr>
+ <tr><td>broken Links</td><td>525</td></tr>
+</table>
+<h2>Warnings</h2>
+<ul>
+ <li>warning @ Appointment: RIM Mapping is required (src = ResourceValidator)</li>
+ <li>warning @ Appointment: RIM Mapping is required (src = ResourceValidator)</li>
+ <li>warning @ AppointmentResponse: RIM Mapping is required (src = ResourceValidator)</li>
+ <li>warning @ AppointmentResponse: RIM Mapping is required (src = ResourceValidator)</li>
+ <li>warning @ Availability: RIM Mapping is required (src = ResourceValidator)</li>
+ <li>warning @ Availability: RIM Mapping is required (src = ResourceValidator)</li>
+ <li>warning @ Conformance: RIM Mapping is required (src = ResourceValidator)</li>
+ <li>warning @ Conformance: RIM Mapping is required (src = ResourceValidator)</li>
+ <li>warning @ Medication: All resources should have an identifier (src = ResourceValidator)</li>
+ <li>warning @ Namespace: All resources should have an identifier (src = ResourceValidator)</li>
+ <li>warning @ Profile: RIM Mapping is required (src = ResourceValidator)</li>
+ <li>warning @ Profile: RIM Mapping is required (src = ResourceValidator)</li>
+ <li>warning @ Provenance: All resources should have an identifier (src = ResourceValidator)</li>
+ <li>warning @ QuestionnaireAnswers: All resources should have an identifier (src = ResourceValidator)</li>
+ <li>warning @ SecurityEvent: All resources should have an identifier (src = ResourceValidator)</li>
+ <li>warning @ Slot: RIM Mapping is required (src = ResourceValidator)</li>
+ <li>warning @ Slot: RIM Mapping is required (src = ResourceValidator)</li>
+ <li>warning @ Subscription.tag.term: Short description doesn't add any new content: 'The term for the tag' (src = ResourceValidator)</li>
+ <li>warning @ Subscription.tag.scheme: Short description doesn't add any new content: 'The scheme for the tag' (src = ResourceValidator)</li>
+ <li>warning @ Subscription: All resources should have an identifier (src = ResourceValidator)</li>
+ <li>warning @ Substance: All resources should have an identifier (src = ResourceValidator)</li>
+ <li>warning @ Binding 11179ObjectClass: Need to provide a binding (src = ResourceValidator)</li>
+ <li>warning @ Binding GroupCharacteristicKind: Need to provide a binding (src = ResourceValidator)</li>
+ <li>warning @ Binding QuestionnaireGroupConcept: Need to provide a binding (src = ResourceValidator)</li>
+ <li>warning @ Binding RequestedTime: Need to provide a binding (src = ResourceValidator)</li>
+ <li>warning @ Binding 11179ObjectClassProperty: Need to provide a binding (src = ResourceValidator)</li>
+ <li>warning @ Binding CarePlanActivityType: Need to provide a binding (src = ResourceValidator)</li>
+ <li>warning @ Binding ConditionOutcome: Need to provide a binding (src = ResourceValidator)</li>
+ <li>warning @ Binding NamespaceCategory: Need to provide a binding (src = ResourceValidator)</li>
+ <li>warning @ Binding GroupKind: Need to provide a binding (src = ResourceValidator)</li>
+ <li>warning @ Binding MedicationAsNeededReason: Need to provide a binding (src = ResourceValidator)</li>
+ <li>warning @ Binding GroupCharacteristicValue: Need to provide a binding (src = ResourceValidator)</li>
+ <li>warning @ Binding CarePlanParticipantRole: Need to provide a binding (src = ResourceValidator)</li>
+ <li>warning @ Binding QuestionConcept: Need to provide a binding (src = ResourceValidator)</li>
+ <li>warning @ Binding QuestionnaireCategory: Need to provide a binding (src = ResourceValidator)</li>
+ <li>Search Parameter 'AdverseReaction._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Alert._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'AllergyIntolerance._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Appointment._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'AppointmentResponse._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Availability._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'CarePlan.activitydetail' had no fond values in any example. Consider reviewing the path (f:CarePlan/f:activity/f:detail)</li>
+ <li>Search Parameter 'CarePlan.activitydate' had no fond values in any example. Consider reviewing the path (f:CarePlan/f:activity/f:simple/f:timing[x])</li>
+ <li>Search Parameter 'CarePlan._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Composition.context' had no fond values in any example. Consider reviewing the path (f:Composition/f:event/f:code)</li>
+ <li>Search Parameter 'Composition.class' had no fond values in any example. Consider reviewing the path (f:Composition/f:class)</li>
+ <li>Search Parameter 'Composition._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'ConceptMap.dependson' had no fond values in any example. Consider reviewing the path (f:ConceptMap/f:element/f:dependsOn/f:element)</li>
+ <li>Search Parameter 'ConceptMap.source' had no fond values in any example. Consider reviewing the path (f:ConceptMap/f:source[x])</li>
+ <li>Search Parameter 'ConceptMap.target' had no fond values in any example. Consider reviewing the path (f:ConceptMap/f:target[x])</li>
+ <li>Search Parameter 'ConceptMap._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Condition.onset' had no fond values in any example. Consider reviewing the path (f:Condition/f:onset[x])</li>
+ <li>Search Parameter 'Condition.related-code' had no fond values in any example. Consider reviewing the path (f:Condition/f:relatedItem/f:code)</li>
+ <li>Search Parameter 'Condition._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Conformance.supported-profile' had no fond values in any example. Consider reviewing the path (f:Conformance/f:profile)</li>
+ <li>Search Parameter 'Conformance._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'DataElement._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'DataElement.code' had no fond values in any example. Consider reviewing the path (f:DataElement/f:code)</li>
+ <li>Search Parameter 'DataElement.date' had no fond values in any example. Consider reviewing the path (f:DataElement/f:date)</li>
+ <li>Search Parameter 'Device.organization' had no fond values in any example. Consider reviewing the path (f:Device/f:owner)</li>
+ <li>Search Parameter 'Device.patient' had no fond values in any example. Consider reviewing the path (f:Device/f:patient)</li>
+ <li>Search Parameter 'Device.location' had no fond values in any example. Consider reviewing the path (f:Device/f:location)</li>
+ <li>Search Parameter 'Device._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Device.udi' had no fond values in any example. Consider reviewing the path (f:Device/f:udi)</li>
+ <li>Search Parameter 'DeviceObservationReport._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'DeviceObservationReport.code' had no fond values in any example. Consider reviewing the path (f:DeviceObservationReport/f:virtualDevice/f:code)</li>
+ <li>Search Parameter 'DeviceObservationReport.channel' had no fond values in any example. Consider reviewing the path (f:DeviceObservationReport/f:virtualDevice/f:channel/f:code)</li>
+ <li>Search Parameter 'DiagnosticOrder.item-status' had no fond values in any example. Consider reviewing the path (f:DiagnosticOrder/f:item/f:status)</li>
+ <li>Search Parameter 'DiagnosticOrder.actor' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'DiagnosticOrder.encounter' had no fond values in any example. Consider reviewing the path (f:DiagnosticOrder/f:encounter)</li>
+ <li>Search Parameter 'DiagnosticOrder.item-past-status' had no fond values in any example. Consider reviewing the path (f:DiagnosticOrder/f:item/f:event/f:status)</li>
+ <li>Search Parameter 'DiagnosticOrder.bodysite' had no fond values in any example. Consider reviewing the path (f:DiagnosticOrder/f:item/f:bodySite)</li>
+ <li>Search Parameter 'DiagnosticOrder.item-date' had no fond values in any example. Consider reviewing the path (f:DiagnosticOrder/f:item/f:event/f:dateTime)</li>
+ <li>Search Parameter 'DiagnosticOrder.specimen' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'DiagnosticOrder.event-status-date' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'DiagnosticOrder._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'DiagnosticOrder.item-status-date' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'DiagnosticReport.image' had no fond values in any example. Consider reviewing the path (f:DiagnosticReport/f:image/f:link)</li>
+ <li>Search Parameter 'DiagnosticReport.date' had no fond values in any example. Consider reviewing the path (f:DiagnosticReport/f:diagnostic[x])</li>
+ <li>Search Parameter 'DiagnosticReport.specimen' had no fond values in any example. Consider reviewing the path (f:DiagnosticReport/f:specimen)</li>
+ <li>Search Parameter 'DiagnosticReport._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'DocumentManifest.supersedes' had no fond values in any example. Consider reviewing the path (f:DocumentManifest/f:supercedes)</li>
+ <li>Search Parameter 'DocumentManifest.confidentiality' had no fond values in any example. Consider reviewing the path (f:DocumentManifest/f:confidentiality)</li>
+ <li>Search Parameter 'DocumentManifest._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'DocumentManifest.identifier' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'DocumentManifest.recipient' had no fond values in any example. Consider reviewing the path (f:DocumentManifest/f:recipient)</li>
+ <li>Search Parameter 'DocumentReference.relatesto' had no fond values in any example. Consider reviewing the path (f:DocumentReference/f:relatesTo/f:target)</li>
+ <li>Search Parameter 'DocumentReference.relation' had no fond values in any example. Consider reviewing the path (f:DocumentReference/f:relatesTo/f:code)</li>
+ <li>Search Parameter 'DocumentReference.class' had no fond values in any example. Consider reviewing the path (f:DocumentReference/f:class)</li>
+ <li>Search Parameter 'DocumentReference.format' had no fond values in any example. Consider reviewing the path (f:DocumentReference/f:format)</li>
+ <li>Search Parameter 'DocumentReference.authenticator' had no fond values in any example. Consider reviewing the path (f:DocumentReference/f:authenticator)</li>
+ <li>Search Parameter 'DocumentReference.relationship' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'DocumentReference.custodian' had no fond values in any example. Consider reviewing the path (f:DocumentReference/f:custodian)</li>
+ <li>Search Parameter 'DocumentReference._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'DocumentReference.identifier' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Encounter.location' had no fond values in any example. Consider reviewing the path (f:Encounter/f:location/f:location)</li>
+ <li>Search Parameter 'Encounter._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Encounter.date' had no fond values in any example. Consider reviewing the path (f:Encounter/f:period)</li>
+ <li>Search Parameter 'Encounter.location-period' had no fond values in any example. Consider reviewing the path (f:Encounter/f:location/f:period)</li>
+ <li>Search Parameter 'FamilyHistory._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Group.member' had no fond values in any example. Consider reviewing the path (f:Group/f:member)</li>
+ <li>Search Parameter 'Group.characteristic-value' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Group.value' had no fond values in any example. Consider reviewing the path (f:Group/f:characteristic/f:value[x])</li>
+ <li>Search Parameter 'Group._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Group.identifier' had no fond values in any example. Consider reviewing the path (f:Group/f:identifier)</li>
+ <li>Search Parameter 'ImagingStudy.bodysite' had no fond values in any example. Consider reviewing the path (f:ImagingStudy/f:series/f:bodySite)</li>
+ <li>Search Parameter 'ImagingStudy.accession' had no fond values in any example. Consider reviewing the path (f:ImagingStudy/f:accessionNo)</li>
+ <li>Search Parameter 'ImagingStudy._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'ImagingStudy.size' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Immunization.reaction' had no fond values in any example. Consider reviewing the path (f:Immunization/f:reaction/f:detail)</li>
+ <li>Search Parameter 'Immunization.requester' had no fond values in any example. Consider reviewing the path (f:Immunization/f:requester)</li>
+ <li>Search Parameter 'Immunization.dose-sequence' had no fond values in any example. Consider reviewing the path (f:Immunization/f:vaccinationProtocol/f:doseSequence)</li>
+ <li>Search Parameter 'Immunization.location' had no fond values in any example. Consider reviewing the path (f:Immunization/f:location)</li>
+ <li>Search Parameter 'Immunization.reason' had no fond values in any example. Consider reviewing the path (f:Immunization/f:explanation/f:reason)</li>
+ <li>Search Parameter 'Immunization.reaction-date' had no fond values in any example. Consider reviewing the path (f:Immunization/f:reaction/f:date)</li>
+ <li>Search Parameter 'Immunization.manufacturer' had no fond values in any example. Consider reviewing the path (f:Immunization/f:manufacturer)</li>
+ <li>Search Parameter 'Immunization._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Immunization.refusal-reason' had no fond values in any example. Consider reviewing the path (f:Immunization/f:explanation/f:refusalReason)</li>
+ <li>Search Parameter 'Immunization.identifier' had no fond values in any example. Consider reviewing the path (f:Immunization/f:identifier)</li>
+ <li>Search Parameter 'ImmunizationRecommendation.information' had no fond values in any example. Consider reviewing the path (f:ImmunizationRecommendation/f:recommendation/f:supportingPatientInformation)</li>
+ <li>Search Parameter 'ImmunizationRecommendation.dose-sequence' had no fond values in any example. Consider reviewing the path (f:ImmunizationRecommendation/f:recommendation/f:protocol/f:doseSequence)</li>
+ <li>Search Parameter 'ImmunizationRecommendation.support' had no fond values in any example. Consider reviewing the path (f:ImmunizationRecommendation/f:recommendation/f:supportingImmunization)</li>
+ <li>Search Parameter 'ImmunizationRecommendation.dose-number' had no fond values in any example. Consider reviewing the path (f:ImmunizationRecommendation/f:recommendation/f:doseNumber)</li>
+ <li>Search Parameter 'ImmunizationRecommendation._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'ImmunizationRecommendation.identifier' had no fond values in any example. Consider reviewing the path (f:ImmunizationRecommendation/f:identifier)</li>
+ <li>Search Parameter 'List.subject' had no fond values in any example. Consider reviewing the path (f:List/f:subject)</li>
+ <li>Search Parameter 'List._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Location.near' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Location._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Location.near-distance' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Media._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Media.view' had no fond values in any example. Consider reviewing the path (f:Media/f:view)</li>
+ <li>Search Parameter 'Media.operator' had no fond values in any example. Consider reviewing the path (f:Media/f:operator)</li>
+ <li>Search Parameter 'Medication.content' had no fond values in any example. Consider reviewing the path (f:Medication/f:package/f:content/f:item)</li>
+ <li>Search Parameter 'Medication.manufacturer' had no fond values in any example. Consider reviewing the path (f:Medication/f:manufacturer)</li>
+ <li>Search Parameter 'Medication._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'MedicationAdministration.device' had no fond values in any example. Consider reviewing the path (f:MedicationAdministration/f:device)</li>
+ <li>Search Parameter 'MedicationAdministration.notgiven' had no fond values in any example. Consider reviewing the path (f:MedicationAdministration/f:wasNotGiven)</li>
+ <li>Search Parameter 'MedicationAdministration._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'MedicationAdministration.encounter' had no fond values in any example. Consider reviewing the path (f:MedicationAdministration/f:encounter)</li>
+ <li>Search Parameter 'MedicationAdministration.identifier' had no fond values in any example. Consider reviewing the path (f:MedicationAdministration/f:identifier)</li>
+ <li>Search Parameter 'MedicationDispense.type' had no fond values in any example. Consider reviewing the path (f:MedicationDispense/f:dispense/f:type)</li>
+ <li>Search Parameter 'MedicationDispense.destination' had no fond values in any example. Consider reviewing the path (f:MedicationDispense/f:dispense/f:destination)</li>
+ <li>Search Parameter 'MedicationDispense.responsibleparty' had no fond values in any example. Consider reviewing the path (f:MedicationDispense/f:substitution/f:responsibleParty)</li>
+ <li>Search Parameter 'MedicationDispense._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'MedicationDispense.identifier' had no fond values in any example. Consider reviewing the path (f:MedicationDispense/f:identifier)</li>
+ <li>Search Parameter 'MedicationPrescription._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'MedicationStatement.device' had no fond values in any example. Consider reviewing the path (f:MedicationStatement/f:device)</li>
+ <li>Search Parameter 'MedicationStatement._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'MedicationStatement.identifier' had no fond values in any example. Consider reviewing the path (f:MedicationStatement/f:identifier)</li>
+ <li>Search Parameter 'MessageHeader._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Namespace._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Observation.value-string' had no fond values in any example. Consider reviewing the path (f:Observation/f:value[x])</li>
+ <li>Search Parameter 'Observation.value-concept' had no fond values in any example. Consider reviewing the path (f:Observation/f:value[x])</li>
+ <li>Search Parameter 'Observation.date' had no fond values in any example. Consider reviewing the path (f:Observation/f:applies[x])</li>
+ <li>Search Parameter 'Observation.name-value-[x]' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Observation.related' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Observation.specimen' had no fond values in any example. Consider reviewing the path (f:Observation/f:specimen)</li>
+ <li>Search Parameter 'Observation._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Observation.value-quantity' had no fond values in any example. Consider reviewing the path (f:Observation/f:value[x])</li>
+ <li>Search Parameter 'Observation.value-date' had no fond values in any example. Consider reviewing the path (f:Observation/f:value[x])</li>
+ <li>Search Parameter 'OperationOutcome._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Order.authority' had no fond values in any example. Consider reviewing the path (f:Order/f:authority)</li>
+ <li>Search Parameter 'Order.when' had no fond values in any example. Consider reviewing the path (f:Order/f:when/f:schedule)</li>
+ <li>Search Parameter 'Order._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'OrderResponse._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Organization.phonetic' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Organization._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Other.created' had no fond values in any example. Consider reviewing the path (f:Other/f:created)</li>
+ <li>Search Parameter 'Other._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Patient.phonetic' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Patient._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Practitioner._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Procedure._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Profile.status' had no fond values in any example. Consider reviewing the path (f:Profile/f:status)</li>
+ <li>Search Parameter 'Profile.code' had no fond values in any example. Consider reviewing the path (f:Profile/f:code)</li>
+ <li>Search Parameter 'Profile.type' had no fond values in any example. Consider reviewing the path (f:Profile/f:structure/f:type)</li>
+ <li>Search Parameter 'Profile.date' had no fond values in any example. Consider reviewing the path (f:Profile/f:date)</li>
+ <li>Search Parameter 'Profile.version' had no fond values in any example. Consider reviewing the path (f:Profile/f:version)</li>
+ <li>Search Parameter 'Profile.publisher' had no fond values in any example. Consider reviewing the path (f:Profile/f:publisher)</li>
+ <li>Search Parameter 'Profile.extension' had no fond values in any example. Consider reviewing the path (f:Profile/f:extensionDefn/f:code)</li>
+ <li>Search Parameter 'Profile.valueset' had no fond values in any example. Consider reviewing the path (f:Profile/f:structure/f:element/f:definition/f:binding/f:reference[x])</li>
+ <li>Search Parameter 'Profile.description' had no fond values in any example. Consider reviewing the path (f:Profile/f:description)</li>
+ <li>Search Parameter 'Profile.name' had no fond values in any example. Consider reviewing the path (f:Profile/f:name)</li>
+ <li>Search Parameter 'Profile._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Profile.identifier' had no fond values in any example. Consider reviewing the path (f:Profile/f:identifier)</li>
+ <li>Search Parameter 'Provenance._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Provenance.end' had no fond values in any example. Consider reviewing the path (f:Provenance/f:period/f:end)</li>
+ <li>Search Parameter 'Query.response' had no fond values in any example. Consider reviewing the path (f:Query/f:response/f:identifier)</li>
+ <li>Search Parameter 'Query._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Questionnaire.title' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Questionnaire._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Questionnaire.version' had no fond values in any example. Consider reviewing the path (f:Questionnaire/f:version)</li>
+ <li>Search Parameter 'QuestionnaireAnswers.questionnaire' had no fond values in any example. Consider reviewing the path (f:QuestionnaireAnswers/f:questionnaire)</li>
+ <li>Search Parameter 'QuestionnaireAnswers._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'QuestionnaireAnswers.encounter' had no fond values in any example. Consider reviewing the path (f:QuestionnaireAnswers/f:encounter)</li>
+ <li>Search Parameter 'RelatedPerson.phonetic' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'RelatedPerson._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'SecurityEvent.patientid' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'SecurityEvent._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Slot._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Specimen._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Subscription.tag' had no fond values in any example. Consider reviewing the path (f:Subscription/f:tag/f:term)</li>
+ <li>Search Parameter 'Subscription._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Subscription.contact' had no fond values in any example. Consider reviewing the path (f:Subscription/f:contact)</li>
+ <li>Search Parameter 'Substance.substance' had no fond values in any example. Consider reviewing the path (f:Substance/f:ingredient/f:substance)</li>
+ <li>Search Parameter 'Substance.quantity' had no fond values in any example. Consider reviewing the path (f:Substance/f:instance/f:quantity)</li>
+ <li>Search Parameter 'Substance._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Substance.identifier' had no fond values in any example. Consider reviewing the path (f:Substance/f:instance/f:identifier)</li>
+ <li>Search Parameter 'Substance.expiry' had no fond values in any example. Consider reviewing the path (f:Substance/f:instance/f:expiry)</li>
+ <li>Search Parameter 'Supply.patient' had no fond values in any example. Consider reviewing the path (f:Supply/f:patient)</li>
+ <li>Search Parameter 'Supply.status' had no fond values in any example. Consider reviewing the path (f:Supply/f:status)</li>
+ <li>Search Parameter 'Supply.dispenseid' had no fond values in any example. Consider reviewing the path (f:Supply/f:dispense/f:identifier)</li>
+ <li>Search Parameter 'Supply._language' had no fond values in any example. Consider reviewing the path (null)</li>
+ <li>Search Parameter 'Supply.identifier' had no fond values in any example. Consider reviewing the path (f:Supply/f:identifier)</li>
+ <li>Search Parameter 'Supply.supplier' had no fond values in any example. Consider reviewing the path (f:Supply/f:dispense/f:supplier)</li>
+ <li>Search Parameter 'Supply.kind' had no fond values in any example. Consider reviewing the path (f:Supply/f:kind)</li>
+ <li>Search Parameter 'Supply.dispensestatus' had no fond values in any example. Consider reviewing the path (f:Supply/f:dispense/f:status)</li>
+ <li>Search Parameter 'ValueSet._language' had no fond values in any example. Consider reviewing the path (null)</li>
+</ul>
+<h2>Broken Links</h2>
+<ul>
+ <li>Broken Link in valueset.html: 'test' not found at &quot;test&quot;(concept)</li>
+ <li>Broken Link in valueset.html: 'test' not found at &quot;test&quot;(include)</li>
+ <li>Broken Link in valueset.html: 'test' not found at &quot;test&quot;(contains)</li>
+ <li>Broken Link in profile.html: 'datatypes.html#*' anchor not found (*)</li>
+ <li>Broken Link in profile.html: 'datatypes.html#*' anchor not found (*)</li>
+ <li>Broken Link in profile.html: 'ValueSet.html' not found at &quot;ValueSet.html&quot;(ValueSet)</li>
+ <li>Broken Link in profile.html: 'test' not found at &quot;test&quot;(definition)</li>
+ <li>Broken Link in profile.html: 'test' not found at &quot;test&quot;(searchParam)</li>
+ <li>Broken Link in conformance.html: 'Profile.html' not found at &quot;Profile.html&quot;(Profile)</li>
+ <li>Broken Link in conformance.html: 'Profile.html' not found at &quot;Profile.html&quot;(Profile)</li>
+ <li>Broken Link in conformance.html: 'test' not found at &quot;test&quot;(searchParam)</li>
+ <li>Broken Link in conformance.html: 'Profile.html' not found at &quot;Profile.html&quot;(Profile)</li>
+ <li>Broken Link in conformance.html: 'Profile.html' not found at &quot;Profile.html&quot;(Profile)</li>
+ <li>Broken Link in conformance.html: 'Profile.html' not found at &quot;Profile.html&quot;(Profile)</li>
+ <li>Broken Link in location.html: 'Organization.html' not found at &quot;Organization.html&quot;(Organization)</li>
+ <li>Broken Link in location.html: 'Location.html' not found at &quot;Location.html&quot;(Location)</li>
+ <li>Broken Link in organization.html: 'Organization.html' not found at &quot;Organization.html&quot;(Organization)</li>
+ <li>Broken Link in organization.html: 'Location.html' not found at &quot;Location.html&quot;(Location)</li>
+ <li>Broken Link in valueset-shareable-spreadsheet.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in valueset-shareable-spreadsheet.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in valueset-shareable-spreadsheet.html: 'datatypes.html#Narrative' anchor not found (Narrative)</li>
+ <li>Broken Link in valueset-shareable-spreadsheet.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in valueset-shareable-spreadsheet.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in valueset-shareable-spreadsheet.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in valueset-shareable-spreadsheet.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in valueset-shareable-spreadsheet.html: 'test' not found at &quot;test&quot;(concept)</li>
+ <li>Broken Link in valueset-shareable-spreadsheet.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in valueset-shareable-spreadsheet.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in valueset-shareable-spreadsheet.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in valueset-shareable-spreadsheet.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in valueset-shareable-spreadsheet.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in valueset-shareable-spreadsheet.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in valueset-shareable-spreadsheet.html: 'test' not found at &quot;test&quot;(include)</li>
+ <li>Broken Link in valueset-shareable-spreadsheet.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in valueset-shareable-spreadsheet.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in valueset-shareable-spreadsheet.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in valueset-shareable-spreadsheet.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in valueset-shareable-spreadsheet.html: 'test' not found at &quot;test&quot;(contains)</li>
+ <li>Broken Link in practitioner.html: 'Organization.html' not found at &quot;Organization.html&quot;(Organization)</li>
+ <li>Broken Link in practitioner.html: 'Location.html' not found at &quot;Location.html&quot;(Location)</li>
+ <li>Broken Link in practitioner.html: 'Organization.html' not found at &quot;Organization.html&quot;(Organization)</li>
+ <li>Broken Link in patient.html: 'Organization.html' not found at &quot;Organization.html&quot;(Organization)</li>
+ <li>Broken Link in patient.html: 'Organization.html' not found at &quot;Organization.html&quot;(Organization)</li>
+ <li>Broken Link in patient.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in patient.html: 'Organization.html' not found at &quot;Organization.html&quot;(Organization)</li>
+ <li>Broken Link in patient.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in device.html: 'Organization.html' not found at &quot;Organization.html&quot;(Organization)</li>
+ <li>Broken Link in device.html: 'Location.html' not found at &quot;Location.html&quot;(Location)</li>
+ <li>Broken Link in device.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in securityevent.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in securityevent.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in securityevent.html: 'Device.html' not found at &quot;Device.html&quot;(Device)</li>
+ <li>Broken Link in securityevent.html: 'Any.html' not found at &quot;Any.html&quot;(Any)</li>
+ <li>Broken Link in substance.html: 'Substance.html' not found at &quot;Substance.html&quot;(Substance)</li>
+ <li>Broken Link in medication.html: 'Organization.html' not found at &quot;Organization.html&quot;(Organization)</li>
+ <li>Broken Link in medication.html: 'Substance.html' not found at &quot;Substance.html&quot;(Substance)</li>
+ <li>Broken Link in medication.html: 'Medication.html' not found at &quot;Medication.html&quot;(Medication)</li>
+ <li>Broken Link in medication.html: 'Medication.html' not found at &quot;Medication.html&quot;(Medication)</li>
+ <li>Broken Link in group.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in group.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in group.html: 'Device.html' not found at &quot;Device.html&quot;(Device)</li>
+ <li>Broken Link in group.html: 'Medication.html' not found at &quot;Medication.html&quot;(Medication)</li>
+ <li>Broken Link in group.html: 'Substance.html' not found at &quot;Substance.html&quot;(Substance)</li>
+ <li>Broken Link in appointment.html: 'encounter-reason.html' not found at &quot;encounter-reason.html&quot;(The Reason for the appointment to take placeApptReason)</li>
+ <li>Broken Link in availability.html: 'Any.html' not found at &quot;Any.html&quot;(Any)</li>
+ <li>Broken Link in slot.html: 'Availability.html' not found at &quot;Availability.html&quot;(Availability)</li>
+ <li>Broken Link in order.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in order.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in order.html: 'Organization.html' not found at &quot;Organization.html&quot;(Organization)</li>
+ <li>Broken Link in order.html: 'Device.html' not found at &quot;Device.html&quot;(Device)</li>
+ <li>Broken Link in order.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in order.html: 'Any.html' not found at &quot;Any.html&quot;(Any)</li>
+ <li>Broken Link in order.html: 'Any.html' not found at &quot;Any.html&quot;(Any)</li>
+ <li>Broken Link in order.html: 'Any.html' not found at &quot;Any.html&quot;(Any)</li>
+ <li>Broken Link in relatedperson.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in appointment.html: 'encounter-reason.html' not found at &quot;encounter-reason.html&quot;(The reason that this appointment is being scheduled, this is more clinical than administrative)</li>
+ <li>Broken Link in appointment.html: 'encounter-reason.html' not found at &quot;encounter-reason.html&quot;(ApptReason)</li>
+ <li>Broken Link in appointment.html: 'Slot.html' not found at &quot;Slot.html&quot;(Slot)</li>
+ <li>Broken Link in appointment.html: 'Location.html' not found at &quot;Location.html&quot;(Location)</li>
+ <li>Broken Link in appointment.html: 'Order.html' not found at &quot;Order.html&quot;(Order)</li>
+ <li>Broken Link in appointment.html: 'Any.html' not found at &quot;Any.html&quot;(Any)</li>
+ <li>Broken Link in appointment.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in appointment.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in appointment.html: 'RelatedPerson.html' not found at &quot;RelatedPerson.html&quot;(RelatedPerson)</li>
+ <li>Broken Link in appointment.html: 'encounter-reason.html' not found at &quot;encounter-reason.html&quot;(http://hl7.org/fhir/vs/encounter-reason)</li>
+ <li>Broken Link in encounter.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in encounter.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in encounter.html: 'RelatedPerson.html' not found at &quot;RelatedPerson.html&quot;(RelatedPerson)</li>
+ <li>Broken Link in encounter.html: 'Appointment.html' not found at &quot;Appointment.html&quot;(Appointment)</li>
+ <li>Broken Link in encounter.html: 'Any.html' not found at &quot;Any.html&quot;(Any)</li>
+ <li>Broken Link in encounter.html: 'Location.html' not found at &quot;Location.html&quot;(Location)</li>
+ <li>Broken Link in encounter.html: 'Location.html' not found at &quot;Location.html&quot;(Location)</li>
+ <li>Broken Link in encounter.html: 'Location.html' not found at &quot;Location.html&quot;(Location)</li>
+ <li>Broken Link in encounter.html: 'Any.html' not found at &quot;Any.html&quot;(Any)</li>
+ <li>Broken Link in encounter.html: 'Location.html' not found at &quot;Location.html&quot;(Location)</li>
+ <li>Broken Link in encounter.html: 'Organization.html' not found at &quot;Organization.html&quot;(Organization)</li>
+ <li>Broken Link in encounter.html: 'Encounter.html' not found at &quot;Encounter.html&quot;(Encounter)</li>
+ <li>Broken Link in specimen.html: 'Specimen.html' not found at &quot;Specimen.html&quot;(Specimen)</li>
+ <li>Broken Link in specimen.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in specimen.html: 'Group.html' not found at &quot;Group.html&quot;(Group)</li>
+ <li>Broken Link in specimen.html: 'Device.html' not found at &quot;Device.html&quot;(Device)</li>
+ <li>Broken Link in specimen.html: 'Substance.html' not found at &quot;Substance.html&quot;(Substance)</li>
+ <li>Broken Link in specimen.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in specimen.html: 'Substance.html' not found at &quot;Substance.html&quot;(Substance)</li>
+ <li>Broken Link in specimen.html: 'Substance.html' not found at &quot;Substance.html&quot;(Substance)</li>
+ <li>Broken Link in diagnosticorder.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in diagnosticorder.html: 'Group.html' not found at &quot;Group.html&quot;(Group)</li>
+ <li>Broken Link in diagnosticorder.html: 'Location.html' not found at &quot;Location.html&quot;(Location)</li>
+ <li>Broken Link in diagnosticorder.html: 'Device.html' not found at &quot;Device.html&quot;(Device)</li>
+ <li>Broken Link in diagnosticorder.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in diagnosticorder.html: 'Encounter.html' not found at &quot;Encounter.html&quot;(Encounter)</li>
+ <li>Broken Link in diagnosticorder.html: 'Specimen.html' not found at &quot;Specimen.html&quot;(Specimen)</li>
+ <li>Broken Link in diagnosticorder.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in diagnosticorder.html: 'Device.html' not found at &quot;Device.html&quot;(Device)</li>
+ <li>Broken Link in diagnosticorder.html: 'Specimen.html' not found at &quot;Specimen.html&quot;(Specimen)</li>
+ <li>Broken Link in diagnosticorder.html: 'test' not found at &quot;test&quot;(event)</li>
+ <li>Broken Link in observation.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in observation.html: 'Group.html' not found at &quot;Group.html&quot;(Group)</li>
+ <li>Broken Link in observation.html: 'Device.html' not found at &quot;Device.html&quot;(Device)</li>
+ <li>Broken Link in observation.html: 'Location.html' not found at &quot;Location.html&quot;(Location)</li>
+ <li>Broken Link in observation.html: 'Specimen.html' not found at &quot;Specimen.html&quot;(Specimen)</li>
+ <li>Broken Link in observation.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in observation.html: 'Device.html' not found at &quot;Device.html&quot;(Device)</li>
+ <li>Broken Link in observation.html: 'Organization.html' not found at &quot;Organization.html&quot;(Organization)</li>
+ <li>Broken Link in observation.html: 'Observation.html' not found at &quot;Observation.html&quot;(Observation)</li>
+ <li>Broken Link in imagingstudy.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in imagingstudy.html: 'DiagnosticOrder.html' not found at &quot;DiagnosticOrder.html&quot;(DiagnosticOrder)</li>
+ <li>Broken Link in imagingstudy.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in imagingstudy.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in imagingstudy.html: 'Any.html' not found at &quot;Any.html&quot;(Any)</li>
+ <li>Broken Link in media.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in media.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in media.html: 'Group.html' not found at &quot;Group.html&quot;(Group)</li>
+ <li>Broken Link in media.html: 'Device.html' not found at &quot;Device.html&quot;(Device)</li>
+ <li>Broken Link in media.html: 'Specimen.html' not found at &quot;Specimen.html&quot;(Specimen)</li>
+ <li>Broken Link in media.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in diagnosticreport.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in diagnosticreport.html: 'Group.html' not found at &quot;Group.html&quot;(Group)</li>
+ <li>Broken Link in diagnosticreport.html: 'Device.html' not found at &quot;Device.html&quot;(Device)</li>
+ <li>Broken Link in diagnosticreport.html: 'Location.html' not found at &quot;Location.html&quot;(Location)</li>
+ <li>Broken Link in diagnosticreport.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in diagnosticreport.html: 'Organization.html' not found at &quot;Organization.html&quot;(Organization)</li>
+ <li>Broken Link in diagnosticreport.html: 'DiagnosticOrder.html' not found at &quot;DiagnosticOrder.html&quot;(DiagnosticOrder)</li>
+ <li>Broken Link in diagnosticreport.html: 'Specimen.html' not found at &quot;Specimen.html&quot;(Specimen)</li>
+ <li>Broken Link in diagnosticreport.html: 'Observation.html' not found at &quot;Observation.html&quot;(Observation)</li>
+ <li>Broken Link in diagnosticreport.html: 'ImagingStudy.html' not found at &quot;ImagingStudy.html&quot;(ImagingStudy)</li>
+ <li>Broken Link in diagnosticreport.html: 'Media.html' not found at &quot;Media.html&quot;(Media)</li>
+ <li>Broken Link in questionnaire.html: 'test' not found at &quot;test&quot;(group)</li>
+ <li>Broken Link in questionnaire.html: 'ValueSet.html' not found at &quot;ValueSet.html&quot;(ValueSet)</li>
+ <li>Broken Link in questionnaire.html: 'test' not found at &quot;test&quot;(group)</li>
+ <li>Broken Link in adversereaction.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in adversereaction.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in adversereaction.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in adversereaction.html: 'Substance.html' not found at &quot;Substance.html&quot;(Substance)</li>
+ <li>Broken Link in allergyintolerance.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in allergyintolerance.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in allergyintolerance.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in allergyintolerance.html: 'Substance.html' not found at &quot;Substance.html&quot;(Substance)</li>
+ <li>Broken Link in allergyintolerance.html: 'AdverseReaction.html' not found at &quot;AdverseReaction.html&quot;(AdverseReaction)</li>
+ <li>Broken Link in allergyintolerance.html: 'Observation.html' not found at &quot;Observation.html&quot;(Observation)</li>
+ <li>Broken Link in careplan.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in careplan.html: 'Condition.html' not found at &quot;Condition.html&quot;(Condition)</li>
+ <li>Broken Link in careplan.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in careplan.html: 'RelatedPerson.html' not found at &quot;RelatedPerson.html&quot;(RelatedPerson)</li>
+ <li>Broken Link in careplan.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in careplan.html: 'Organization.html' not found at &quot;Organization.html&quot;(Organization)</li>
+ <li>Broken Link in careplan.html: 'Condition.html' not found at &quot;Condition.html&quot;(Condition)</li>
+ <li>Broken Link in careplan.html: 'datatypes.html#idref' anchor not found (idref)</li>
+ <li>Broken Link in careplan.html: 'Any.html' not found at &quot;Any.html&quot;(Any)</li>
+ <li>Broken Link in careplan.html: 'Procedure.html' not found at &quot;Procedure.html&quot;(Procedure)</li>
+ <li>Broken Link in careplan.html: 'MedicationPrescription.html' not found at &quot;MedicationPrescription.html&quot;(MedicationPrescription)</li>
+ <li>Broken Link in careplan.html: 'DiagnosticOrder.html' not found at &quot;DiagnosticOrder.html&quot;(DiagnosticOrder)</li>
+ <li>Broken Link in careplan.html: 'Encounter.html' not found at &quot;Encounter.html&quot;(Encounter)</li>
+ <li>Broken Link in careplan.html: 'Location.html' not found at &quot;Location.html&quot;(Location)</li>
+ <li>Broken Link in careplan.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in careplan.html: 'Organization.html' not found at &quot;Organization.html&quot;(Organization)</li>
+ <li>Broken Link in careplan.html: 'RelatedPerson.html' not found at &quot;RelatedPerson.html&quot;(RelatedPerson)</li>
+ <li>Broken Link in careplan.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in careplan.html: 'Medication.html' not found at &quot;Medication.html&quot;(Medication)</li>
+ <li>Broken Link in careplan.html: 'Substance.html' not found at &quot;Substance.html&quot;(Substance)</li>
+ <li>Broken Link in deviceobservationreport.html: 'Device.html' not found at &quot;Device.html&quot;(Device)</li>
+ <li>Broken Link in deviceobservationreport.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in deviceobservationreport.html: 'Device.html' not found at &quot;Device.html&quot;(Device)</li>
+ <li>Broken Link in deviceobservationreport.html: 'Location.html' not found at &quot;Location.html&quot;(Location)</li>
+ <li>Broken Link in deviceobservationreport.html: 'Observation.html' not found at &quot;Observation.html&quot;(Observation)</li>
+ <li>Broken Link in familyhistory.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in immunization.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in immunization.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in immunization.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in immunization.html: 'Organization.html' not found at &quot;Organization.html&quot;(Organization)</li>
+ <li>Broken Link in immunization.html: 'Location.html' not found at &quot;Location.html&quot;(Location)</li>
+ <li>Broken Link in immunization.html: 'AdverseReaction.html' not found at &quot;AdverseReaction.html&quot;(AdverseReaction)</li>
+ <li>Broken Link in immunization.html: 'Observation.html' not found at &quot;Observation.html&quot;(Observation)</li>
+ <li>Broken Link in immunization.html: 'Organization.html' not found at &quot;Organization.html&quot;(Organization)</li>
+ <li>Broken Link in immunizationrecommendation.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in immunizationrecommendation.html: 'Organization.html' not found at &quot;Organization.html&quot;(Organization)</li>
+ <li>Broken Link in immunizationrecommendation.html: 'Immunization.html' not found at &quot;Immunization.html&quot;(Immunization)</li>
+ <li>Broken Link in immunizationrecommendation.html: 'Observation.html' not found at &quot;Observation.html&quot;(Observation)</li>
+ <li>Broken Link in immunizationrecommendation.html: 'AdverseReaction.html' not found at &quot;AdverseReaction.html&quot;(AdverseReaction)</li>
+ <li>Broken Link in immunizationrecommendation.html: 'AllergyIntolerance.html' not found at &quot;AllergyIntolerance.html&quot;(AllergyIntolerance)</li>
+ <li>Broken Link in medicationadministration.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in medicationadministration.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in medicationadministration.html: 'Encounter.html' not found at &quot;Encounter.html&quot;(Encounter)</li>
+ <li>Broken Link in medicationadministration.html: 'MedicationPrescription.html' not found at &quot;MedicationPrescription.html&quot;(MedicationPrescription)</li>
+ <li>Broken Link in medicationadministration.html: 'Medication.html' not found at &quot;Medication.html&quot;(Medication)</li>
+ <li>Broken Link in medicationadministration.html: 'Device.html' not found at &quot;Device.html&quot;(Device)</li>
+ <li>Broken Link in medicationstatement.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in medicationstatement.html: 'Medication.html' not found at &quot;Medication.html&quot;(Medication)</li>
+ <li>Broken Link in medicationstatement.html: 'Device.html' not found at &quot;Device.html&quot;(Device)</li>
+ <li>Broken Link in procedure.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in procedure.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in procedure.html: 'Encounter.html' not found at &quot;Encounter.html&quot;(Encounter)</li>
+ <li>Broken Link in procedure.html: 'DiagnosticReport.html' not found at &quot;DiagnosticReport.html&quot;(DiagnosticReport)</li>
+ <li>Broken Link in procedure.html: 'AdverseReaction.html' not found at &quot;AdverseReaction.html&quot;(AdverseReaction)</li>
+ <li>Broken Link in procedure.html: 'AllergyIntolerance.html' not found at &quot;AllergyIntolerance.html&quot;(AllergyIntolerance)</li>
+ <li>Broken Link in procedure.html: 'CarePlan.html' not found at &quot;CarePlan.html&quot;(CarePlan)</li>
+ <li>Broken Link in procedure.html: 'Condition.html' not found at &quot;Condition.html&quot;(Condition)</li>
+ <li>Broken Link in procedure.html: 'DeviceObservationReport.html' not found at &quot;DeviceObservationReport.html&quot;(DeviceObservationReport)</li>
+ <li>Broken Link in procedure.html: 'DiagnosticReport.html' not found at &quot;DiagnosticReport.html&quot;(DiagnosticReport)</li>
+ <li>Broken Link in procedure.html: 'FamilyHistory.html' not found at &quot;FamilyHistory.html&quot;(FamilyHistory)</li>
+ <li>Broken Link in procedure.html: 'ImagingStudy.html' not found at &quot;ImagingStudy.html&quot;(ImagingStudy)</li>
+ <li>Broken Link in procedure.html: 'Immunization.html' not found at &quot;Immunization.html&quot;(Immunization)</li>
+ <li>Broken Link in procedure.html: 'ImmunizationRecommendation.html' not found at &quot;ImmunizationRecommendation.html&quot;(ImmunizationRecommendation)</li>
+ <li>Broken Link in procedure.html: 'MedicationAdministration.html' not found at &quot;MedicationAdministration.html&quot;(MedicationAdministration)</li>
+ <li>Broken Link in procedure.html: 'MedicationDispense.html' not found at &quot;MedicationDispense.html&quot;(MedicationDispense)</li>
+ <li>Broken Link in procedure.html: 'MedicationPrescription.html' not found at &quot;MedicationPrescription.html&quot;(MedicationPrescription)</li>
+ <li>Broken Link in procedure.html: 'MedicationStatement.html' not found at &quot;MedicationStatement.html&quot;(MedicationStatement)</li>
+ <li>Broken Link in procedure.html: 'Observation.html' not found at &quot;Observation.html&quot;(Observation)</li>
+ <li>Broken Link in procedure.html: 'Procedure.html' not found at &quot;Procedure.html&quot;(Procedure)</li>
+ <li>Broken Link in condition.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in condition.html: 'Encounter.html' not found at &quot;Encounter.html&quot;(Encounter)</li>
+ <li>Broken Link in condition.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in condition.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in condition.html: 'Any.html' not found at &quot;Any.html&quot;(Any)</li>
+ <li>Broken Link in condition.html: 'Any.html' not found at &quot;Any.html&quot;(Any)</li>
+ <li>Broken Link in condition.html: 'Condition.html' not found at &quot;Condition.html&quot;(Condition)</li>
+ <li>Broken Link in condition.html: 'Procedure.html' not found at &quot;Procedure.html&quot;(Procedure)</li>
+ <li>Broken Link in condition.html: 'MedicationAdministration.html' not found at &quot;MedicationAdministration.html&quot;(MedicationAdministration)</li>
+ <li>Broken Link in condition.html: 'Immunization.html' not found at &quot;Immunization.html&quot;(Immunization)</li>
+ <li>Broken Link in condition.html: 'MedicationStatement.html' not found at &quot;MedicationStatement.html&quot;(MedicationStatement)</li>
+ <li>Broken Link in medicationprescription.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in medicationprescription.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in medicationprescription.html: 'Encounter.html' not found at &quot;Encounter.html&quot;(Encounter)</li>
+ <li>Broken Link in medicationprescription.html: 'Condition.html' not found at &quot;Condition.html&quot;(Condition)</li>
+ <li>Broken Link in medicationprescription.html: 'Medication.html' not found at &quot;Medication.html&quot;(Medication)</li>
+ <li>Broken Link in medicationprescription.html: 'Medication.html' not found at &quot;Medication.html&quot;(Medication)</li>
+ <li>Broken Link in medicationdispense.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in medicationdispense.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in medicationdispense.html: 'MedicationPrescription.html' not found at &quot;MedicationPrescription.html&quot;(MedicationPrescription)</li>
+ <li>Broken Link in medicationdispense.html: 'Medication.html' not found at &quot;Medication.html&quot;(Medication)</li>
+ <li>Broken Link in medicationdispense.html: 'Location.html' not found at &quot;Location.html&quot;(Location)</li>
+ <li>Broken Link in medicationdispense.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in medicationdispense.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in medicationdispense.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in supply.html: 'Medication.html' not found at &quot;Medication.html&quot;(Medication)</li>
+ <li>Broken Link in supply.html: 'Substance.html' not found at &quot;Substance.html&quot;(Substance)</li>
+ <li>Broken Link in supply.html: 'Device.html' not found at &quot;Device.html&quot;(Device)</li>
+ <li>Broken Link in supply.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in supply.html: 'Medication.html' not found at &quot;Medication.html&quot;(Medication)</li>
+ <li>Broken Link in supply.html: 'Substance.html' not found at &quot;Substance.html&quot;(Substance)</li>
+ <li>Broken Link in supply.html: 'Device.html' not found at &quot;Device.html&quot;(Device)</li>
+ <li>Broken Link in supply.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in supply.html: 'Location.html' not found at &quot;Location.html&quot;(Location)</li>
+ <li>Broken Link in supply.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in documentreference.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in documentreference.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in documentreference.html: 'Group.html' not found at &quot;Group.html&quot;(Group)</li>
+ <li>Broken Link in documentreference.html: 'Device.html' not found at &quot;Device.html&quot;(Device)</li>
+ <li>Broken Link in documentreference.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in documentreference.html: 'Device.html' not found at &quot;Device.html&quot;(Device)</li>
+ <li>Broken Link in documentreference.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in documentreference.html: 'RelatedPerson.html' not found at &quot;RelatedPerson.html&quot;(RelatedPerson)</li>
+ <li>Broken Link in documentreference.html: 'Organization.html' not found at &quot;Organization.html&quot;(Organization)</li>
+ <li>Broken Link in documentreference.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in documentreference.html: 'Organization.html' not found at &quot;Organization.html&quot;(Organization)</li>
+ <li>Broken Link in documentreference.html: 'DocumentReference.html' not found at &quot;DocumentReference.html&quot;(DocumentReference)</li>
+ <li>Broken Link in composition.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in composition.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in composition.html: 'Group.html' not found at &quot;Group.html&quot;(Group)</li>
+ <li>Broken Link in composition.html: 'Device.html' not found at &quot;Device.html&quot;(Device)</li>
+ <li>Broken Link in composition.html: 'Location.html' not found at &quot;Location.html&quot;(Location)</li>
+ <li>Broken Link in composition.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in composition.html: 'Device.html' not found at &quot;Device.html&quot;(Device)</li>
+ <li>Broken Link in composition.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in composition.html: 'RelatedPerson.html' not found at &quot;RelatedPerson.html&quot;(RelatedPerson)</li>
+ <li>Broken Link in composition.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in composition.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in composition.html: 'Organization.html' not found at &quot;Organization.html&quot;(Organization)</li>
+ <li>Broken Link in composition.html: 'Organization.html' not found at &quot;Organization.html&quot;(Organization)</li>
+ <li>Broken Link in composition.html: 'Any.html' not found at &quot;Any.html&quot;(Any)</li>
+ <li>Broken Link in composition.html: 'Encounter.html' not found at &quot;Encounter.html&quot;(Encounter)</li>
+ <li>Broken Link in composition.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in composition.html: 'Group.html' not found at &quot;Group.html&quot;(Group)</li>
+ <li>Broken Link in composition.html: 'Device.html' not found at &quot;Device.html&quot;(Device)</li>
+ <li>Broken Link in composition.html: 'Any.html' not found at &quot;Any.html&quot;(Any)</li>
+ <li>Broken Link in composition.html: 'test' not found at &quot;test&quot;(section)</li>
+ <li>Broken Link in documentmanifest.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in documentmanifest.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in documentmanifest.html: 'Group.html' not found at &quot;Group.html&quot;(Group)</li>
+ <li>Broken Link in documentmanifest.html: 'Device.html' not found at &quot;Device.html&quot;(Device)</li>
+ <li>Broken Link in documentmanifest.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in documentmanifest.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in documentmanifest.html: 'Organization.html' not found at &quot;Organization.html&quot;(Organization)</li>
+ <li>Broken Link in documentmanifest.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in documentmanifest.html: 'Device.html' not found at &quot;Device.html&quot;(Device)</li>
+ <li>Broken Link in documentmanifest.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in documentmanifest.html: 'RelatedPerson.html' not found at &quot;RelatedPerson.html&quot;(RelatedPerson)</li>
+ <li>Broken Link in documentmanifest.html: 'DocumentManifest.html' not found at &quot;DocumentManifest.html&quot;(DocumentManifest)</li>
+ <li>Broken Link in documentmanifest.html: 'DocumentReference.html' not found at &quot;DocumentReference.html&quot;(DocumentReference)</li>
+ <li>Broken Link in documentmanifest.html: 'Binary.html' not found at &quot;Binary.html&quot;(Binary)</li>
+ <li>Broken Link in documentmanifest.html: 'Media.html' not found at &quot;Media.html&quot;(Media)</li>
+ <li>Broken Link in list.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in list.html: 'Group.html' not found at &quot;Group.html&quot;(Group)</li>
+ <li>Broken Link in list.html: 'Device.html' not found at &quot;Device.html&quot;(Device)</li>
+ <li>Broken Link in list.html: 'Location.html' not found at &quot;Location.html&quot;(Location)</li>
+ <li>Broken Link in list.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in list.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in list.html: 'Device.html' not found at &quot;Device.html&quot;(Device)</li>
+ <li>Broken Link in list.html: 'Any.html' not found at &quot;Any.html&quot;(Any)</li>
+ <li>Broken Link in questionnaireanswers.html: 'Questionnaire.html' not found at &quot;Questionnaire.html&quot;(Questionnaire)</li>
+ <li>Broken Link in questionnaireanswers.html: 'Any.html' not found at &quot;Any.html&quot;(Any)</li>
+ <li>Broken Link in questionnaireanswers.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in questionnaireanswers.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in questionnaireanswers.html: 'RelatedPerson.html' not found at &quot;RelatedPerson.html&quot;(RelatedPerson)</li>
+ <li>Broken Link in questionnaireanswers.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in questionnaireanswers.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in questionnaireanswers.html: 'RelatedPerson.html' not found at &quot;RelatedPerson.html&quot;(RelatedPerson)</li>
+ <li>Broken Link in questionnaireanswers.html: 'Encounter.html' not found at &quot;Encounter.html&quot;(Encounter)</li>
+ <li>Broken Link in questionnaireanswers.html: 'Any.html' not found at &quot;Any.html&quot;(Any)</li>
+ <li>Broken Link in questionnaireanswers.html: 'test' not found at &quot;test&quot;(group)</li>
+ <li>Broken Link in questionnaireanswers.html: 'test' not found at &quot;test&quot;(group)</li>
+ <li>Broken Link in namespace.html: 'Namespace.html' not found at &quot;Namespace.html&quot;(Namespace)</li>
+ <li>Broken Link in orderresponse.html: 'Order.html' not found at &quot;Order.html&quot;(Order)</li>
+ <li>Broken Link in orderresponse.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in orderresponse.html: 'Organization.html' not found at &quot;Organization.html&quot;(Organization)</li>
+ <li>Broken Link in orderresponse.html: 'Device.html' not found at &quot;Device.html&quot;(Device)</li>
+ <li>Broken Link in orderresponse.html: 'Any.html' not found at &quot;Any.html&quot;(Any)</li>
+ <li>Broken Link in orderresponse.html: 'Any.html' not found at &quot;Any.html&quot;(Any)</li>
+ <li>Broken Link in dataelement.html: 'datatypes.html#*' anchor not found (*)</li>
+ <li>Broken Link in dataelement.html: 'ValueSet.html' not found at &quot;ValueSet.html&quot;(ValueSet)</li>
+ <li>Invalid &quot;a&quot; link in subscription.html - no href or name (bundles)</li>
+ <li>Broken Link in subscription.html: 'null' not found at &quot;null&quot;(/history operation)</li>
+ <li>Broken Link in subscription.html: 'http.html#base' anchor not found (service base)</li>
+ <li>Broken Link in appointmentresponse.html: 'Appointment.html' not found at &quot;Appointment.html&quot;(Appointment)</li>
+ <li>Broken Link in appointmentresponse.html: 'Any.html' not found at &quot;Any.html&quot;(Any)</li>
+ <li>Broken Link in appointmentresponse.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in appointmentresponse.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in appointmentresponse.html: 'RelatedPerson.html' not found at &quot;RelatedPerson.html&quot;(RelatedPerson)</li>
+ <li>Broken Link in messageheader.html: 'OperationOutcome.html' not found at &quot;OperationOutcome.html&quot;(OperationOutcome)</li>
+ <li>Broken Link in messageheader.html: 'Device.html' not found at &quot;Device.html&quot;(Device)</li>
+ <li>Broken Link in messageheader.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in messageheader.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in messageheader.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in messageheader.html: 'Organization.html' not found at &quot;Organization.html&quot;(Organization)</li>
+ <li>Broken Link in messageheader.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in messageheader.html: 'Organization.html' not found at &quot;Organization.html&quot;(Organization)</li>
+ <li>Broken Link in messageheader.html: 'Any.html' not found at &quot;Any.html&quot;(Any)</li>
+ <li>Broken Link in query.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in query.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in query.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in query.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in query.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in query.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in query.html: 'Any.html' not found at &quot;Any.html&quot;(Any)</li>
+ <li>Broken Link in conceptmap.html: 'ValueSet.html' not found at &quot;ValueSet.html&quot;(ValueSet)</li>
+ <li>Broken Link in conceptmap.html: 'Profile.html' not found at &quot;Profile.html&quot;(Profile)</li>
+ <li>Broken Link in conceptmap.html: 'ValueSet.html' not found at &quot;ValueSet.html&quot;(ValueSet)</li>
+ <li>Broken Link in conceptmap.html: 'Profile.html' not found at &quot;Profile.html&quot;(Profile)</li>
+ <li>Broken Link in conceptmap.html: 'test' not found at &quot;test&quot;(dependsOn)</li>
+ <li>Broken Link in questionnaire-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaire-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaire-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaire-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaire-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaire-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaire-sdc.html: 'datatypes.html#Narrative' anchor not found (Narrative)</li>
+ <li>Broken Link in questionnaire-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaire-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaire-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaire-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaire-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaire-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaire-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaire-sdc.html: 'test' not found at &quot;test&quot;(group)</li>
+ <li>Broken Link in questionnaire-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaire-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaire-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaire-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaire-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaire-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaire-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaire-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaire-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaire-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaire-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaire-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaire-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaire-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaire-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaire-sdc.html: 'ValueSet.html' not found at &quot;ValueSet.html&quot;(ValueSet)</li>
+ <li>Broken Link in questionnaire-sdc.html: 'test' not found at &quot;test&quot;(group)</li>
+ <li>Broken Link in alert.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in alert.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in alert.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in alert.html: 'Device.html' not found at &quot;Device.html&quot;(Device)</li>
+ <li>Broken Link in provenance.html: 'Any.html' not found at &quot;Any.html&quot;(Any)</li>
+ <li>Broken Link in provenance.html: 'Location.html' not found at &quot;Location.html&quot;(Location)</li>
+ <li>Broken Link in provenance.html: 'test' not found at &quot;test&quot;(agent)</li>
+ <li>Broken Link in familyhistory-genetics-pedigree.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in familyhistory-genetics-pedigree.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in familyhistory-genetics-pedigree.html: 'datatypes.html#Narrative' anchor not found (Narrative)</li>
+ <li>Broken Link in familyhistory-genetics-pedigree.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in familyhistory-genetics-pedigree.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in familyhistory-genetics-pedigree.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in familyhistory-genetics-pedigree.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in familyhistory-genetics-pedigree.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in familyhistory-genetics-pedigree.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in familyhistory-genetics-pedigree.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in other.html: 'Any.html' not found at &quot;Any.html&quot;(Any)</li>
+ <li>Broken Link in other.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in other.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in other.html: 'RelatedPerson.html' not found at &quot;RelatedPerson.html&quot;(RelatedPerson)</li>
+ <li>Broken Link in dataelement-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in dataelement-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in dataelement-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in dataelement-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in dataelement-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in dataelement-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in dataelement-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in dataelement-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in dataelement-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in dataelement-sdc.html: 'datatypes.html#Narrative' anchor not found (Narrative)</li>
+ <li>Broken Link in dataelement-sdc.html: 'datatypes.html#*' anchor not found (*)</li>
+ <li>Broken Link in dataelement-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in dataelement-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in dataelement-sdc.html: 'ValueSet.html' not found at &quot;ValueSet.html&quot;(ValueSet)</li>
+ <li>Broken Link in dataelement-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in dataelement-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Narrative' anchor not found (Narrative)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'Observation.html' not found at &quot;Observation.html&quot;(Observation)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'Observation.html' not found at &quot;Observation.html&quot;(Observation)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'Observation.html' not found at &quot;Observation.html&quot;(Observation)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'Observation.html' not found at &quot;Observation.html&quot;(Observation)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Narrative' anchor not found (Narrative)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Narrative' anchor not found (Narrative)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Narrative' anchor not found (Narrative)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Narrative' anchor not found (Narrative)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in diagnosticreport-profile-lipids.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in xds-profile.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in xds-profile.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in xds-profile.html: 'datatypes.html#Narrative' anchor not found (Narrative)</li>
+ <li>Broken Link in xds-profile.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in xds-profile.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in xds-profile.html: 'Device.html' not found at &quot;Device.html&quot;(Device)</li>
+ <li>Broken Link in xds-profile.html: 'Organization.html' not found at &quot;Organization.html&quot;(Organization)</li>
+ <li>Broken Link in xds-profile.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in xds-profile.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in xds-profile.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in xds-profile.html: 'DocumentReference.html' not found at &quot;DocumentReference.html&quot;(DocumentReference)</li>
+ <li>Broken Link in xds-profile.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in xds-profile.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in xds-profile.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in xds-profile.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in xds-profile.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in xds-profile.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in xds-profile.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in xds-profile.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in xds-profile.html: 'datatypes.html#Narrative' anchor not found (Narrative)</li>
+ <li>Broken Link in xds-profile.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in xds-profile.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in xds-profile.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in xds-profile.html: 'Organization.html' not found at &quot;Organization.html&quot;(Organization)</li>
+ <li>Broken Link in xds-profile.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in xds-profile.html: 'Device.html' not found at &quot;Device.html&quot;(Device)</li>
+ <li>Broken Link in xds-profile.html: 'DocumentManifest.html' not found at &quot;DocumentManifest.html&quot;(DocumentManifest)</li>
+ <li>Broken Link in xds-profile.html: 'DocumentReference.html' not found at &quot;DocumentReference.html&quot;(DocumentReference)</li>
+ <li>Broken Link in questionnaireanswers-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaireanswers-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaireanswers-sdc.html: 'datatypes.html#Narrative' anchor not found (Narrative)</li>
+ <li>Broken Link in questionnaireanswers-sdc.html: 'Questionnaire.html' not found at &quot;Questionnaire.html&quot;(Questionnaire)</li>
+ <li>Broken Link in questionnaireanswers-sdc.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in questionnaireanswers-sdc.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in questionnaireanswers-sdc.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in questionnaireanswers-sdc.html: 'RelatedPerson.html' not found at &quot;RelatedPerson.html&quot;(RelatedPerson)</li>
+ <li>Broken Link in questionnaireanswers-sdc.html: 'Patient.html' not found at &quot;Patient.html&quot;(Patient)</li>
+ <li>Broken Link in questionnaireanswers-sdc.html: 'Practitioner.html' not found at &quot;Practitioner.html&quot;(Practitioner)</li>
+ <li>Broken Link in questionnaireanswers-sdc.html: 'RelatedPerson.html' not found at &quot;RelatedPerson.html&quot;(RelatedPerson)</li>
+ <li>Broken Link in questionnaireanswers-sdc.html: 'Encounter.html' not found at &quot;Encounter.html&quot;(Encounter)</li>
+ <li>Broken Link in questionnaireanswers-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaireanswers-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaireanswers-sdc.html: 'Any.html' not found at &quot;Any.html&quot;(Any)</li>
+ <li>Broken Link in questionnaireanswers-sdc.html: 'test' not found at &quot;test&quot;(group)</li>
+ <li>Broken Link in questionnaireanswers-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaireanswers-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaireanswers-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaireanswers-sdc.html: 'datatypes.html#Extension' anchor not found (Extension)</li>
+ <li>Broken Link in questionnaireanswers-sdc.html: 'test' not found at &quot;test&quot;(group)</li>
+ <li>Broken Link in history.html: ' http://hl7-fhir.github.io/' not found at &quot; http://hl7-fhir.github.io/&quot;(http://hl7-fhir.github.io/)</li>
+</ul>
+<h2>Hints</h2>
+<ul>
+ <li>information @ SampledData.data: Name of child (data) overlaps with name of parent (SampledData) (src = ResourceValidator)</li>
+ <li>information @ ResourceReference.reference: Name of child (reference) overlaps with name of parent (ResourceReference) (src = ResourceValidator)</li>
+ <li>information @ ImmunizationRecommendation.recommendation: Name of child (recommendation) overlaps with name of parent (ImmunizationRecommendation) (src = ResourceValidator)</li>
+ <li>information @ MedicationDispense.dispense: Name of child (dispense) overlaps with name of parent (MedicationDispense) (src = ResourceValidator)</li>
+ <li>information @ SecurityEvent.event: Name of child (event) overlaps with name of parent (SecurityEvent) (src = ResourceValidator)</li>
+ <li>information @ Binding Race: Binding is not used (src = ResourceValidator)</li>
+ <li>information @ Binding ParentRelationshipType: Binding is not used (src = ResourceValidator)</li>
+ <li>information @ Binding DataAbsentReason: Binding is not used (src = ResourceValidator)</li>
+ <li>information @ Binding 11179ObjectClass: Binding is not used (src = ResourceValidator)</li>
+ <li>information @ Binding AppointmentStatus: Binding is not used (src = ResourceValidator)</li>
+ <li>information @ Binding NullFlavor: Binding is not used (src = ResourceValidator)</li>
+ <li>information @ Binding SpecialValues: Binding is not used (src = ResourceValidator)</li>
+ <li>information @ Binding NarrativeStatus: Binding is not used (src = ResourceValidator)</li>
+ <li>information @ Binding SDCObjectClassProperty: Binding is not used (src = ResourceValidator)</li>
+ <li>information @ Binding 11179ObjectClassProperty: Binding is not used (src = ResourceValidator)</li>
+ <li>information @ Binding XDSPracticeSettingCodes: Binding is not used (src = ResourceValidator)</li>
+ <li>information @ Binding QuestionnaireQuestionTextType: Binding is not used (src = ResourceValidator)</li>
+ <li>information @ Binding XDSRelationshipType: Binding is not used (src = ResourceValidator)</li>
+ <li>information @ Binding Ethnicity: Binding is not used (src = ResourceValidator)</li>
+ <li>information @ Binding QuestionnaireTitleContext: Binding is not used (src = ResourceValidator)</li>
+ <li>information @ Binding ProbabilityDistributionType: Binding is not used (src = ResourceValidator)</li>
+ <li>information @ Binding QuestionnaireGroupSpecialType: Binding is not used (src = ResourceValidator)</li>
+ <li>information @ Binding QuestionnaireGroupTextType: Binding is not used (src = ResourceValidator)</li>
+ <li>information @ Binding EntityNamePartQualifier: Binding is not used (src = ResourceValidator)</li>
+ <li>information @ Binding QuestionnaireDescriptionContext: Binding is not used (src = ResourceValidator)</li>
+ <li>information @ Binding QuestionConcept: Binding is not used (src = ResourceValidator)</li>
+ <li>information @ Binding SDCObjectClass: Binding is not used (src = ResourceValidator)</li>
+ <li>information @ Binding MaxOccurs: Binding is not used (src = ResourceValidator)</li>
+ <li>information @ Binding PostalAddressUse: Binding is not used (src = ResourceValidator)</li>
+ <li>information @ Binding QuestionnaireCategory: Binding is not used (src = ResourceValidator)</li>
+</ul>
+<h2>Paths not convered in examples</h2>
+<ul>
+ <li>Schedule/event</li>
+ <li>Schedule/repeat</li>
+ <li>Schedule/repeat/frequency</li>
+ <li>Schedule/repeat/when</li>
+ <li>Schedule/repeat/duration</li>
+ <li>Schedule/repeat/units</li>
+ <li>Schedule/repeat/count</li>
+ <li>Schedule/repeat/end</li>
+ <li>Contact/period</li>
+ <li>Address/text</li>
+ <li>Address/period</li>
+ <li>HumanName/period</li>
+ <li>Coding/version</li>
+ <li>Coding/primary</li>
+ <li>Coding/valueSet</li>
+ <li>Range/low</li>
+ <li>Range/high</li>
+ <li>Quantity/comparator</li>
+ <li>Attachment/size</li>
+ <li>Attachment/hash</li>
+ <li>SampledData/origin</li>
+ <li>SampledData/period</li>
+ <li>SampledData/factor</li>
+ <li>SampledData/lowerLimit</li>
+ <li>SampledData/upperLimit</li>
+ <li>SampledData/dimensions</li>
+ <li>SampledData/data</li>
+ <li>ResourceReference/reference</li>
+ <li>ResourceReference/display</li>
+ <li>AdverseReaction/identifier</li>
+ <li>AdverseReaction/exposure/causalityExpectation</li>
+ <li>Alert/identifier</li>
+ <li>Appointment/identifier</li>
+ <li>Appointment/reason</li>
+ <li>Appointment/slot</li>
+ <li>Appointment/order</li>
+ <li>AppointmentResponse/identifier</li>
+ <li>AppointmentResponse/participantType</li>
+ <li>AppointmentResponse/comment</li>
+ <li>AppointmentResponse/start</li>
+ <li>AppointmentResponse/end</li>
+ <li>CarePlan/goal/concern</li>
+ <li>CarePlan/activity/goal</li>
+ <li>CarePlan/activity/detail</li>
+ <li>CarePlan/activity/simple/timing[x]</li>
+ <li>CarePlan/activity/simple/location</li>
+ <li>CarePlan/activity/simple/quantity</li>
+ <li>Composition/class</li>
+ <li>Composition/title</li>
+ <li>Composition/attester/time</li>
+ <li>Composition/event</li>
+ <li>Composition/event/code</li>
+ <li>Composition/event/period</li>
+ <li>Composition/event/detail</li>
+ <li>Composition/encounter</li>
+ <li>Composition/section/subject</li>
+ <li>Composition/section/section</li>
+ <li>ConceptMap/copyright</li>
+ <li>ConceptMap/source[x]</li>
+ <li>ConceptMap/target[x]</li>
+ <li>ConceptMap/element/dependsOn</li>
+ <li>ConceptMap/element/dependsOn/element</li>
+ <li>ConceptMap/element/dependsOn/codeSystem</li>
+ <li>ConceptMap/element/dependsOn/code</li>
+ <li>Condition/identifier</li>
+ <li>Condition/onset[x]</li>
+ <li>Condition/abatement[x]</li>
+ <li>Condition/stage/assessment</li>
+ <li>Condition/relatedItem/code</li>
+ <li>Condition/notes</li>
+ <li>Conformance/experimental</li>
+ <li>Conformance/software/releaseDate</li>
+ <li>Conformance/implementation</li>
+ <li>Conformance/implementation/description</li>
+ <li>Conformance/implementation/url</li>
+ <li>Conformance/profile</li>
+ <li>Conformance/rest/security/cors</li>
+ <li>Conformance/rest/security/certificate</li>
+ <li>Conformance/rest/security/certificate/type</li>
+ <li>Conformance/rest/security/certificate/blob</li>
+ <li>Conformance/rest/resource/readHistory</li>
+ <li>Conformance/rest/resource/updateCreate</li>
+ <li>Conformance/rest/resource/searchInclude</li>
+ <li>Conformance/rest/resource/searchParam/target</li>
+ <li>Conformance/rest/resource/searchParam/chain</li>
+ <li>Conformance/rest/operation/documentation</li>
+ <li>Conformance/rest/query</li>
+ <li>Conformance/rest/query/name</li>
+ <li>Conformance/rest/query/definition</li>
+ <li>Conformance/rest/query/documentation</li>
+ <li>Conformance/rest/query/parameter</li>
+ <li>Conformance/rest/documentMailbox</li>
+ <li>Conformance/messaging/endpoint</li>
+ <li>Conformance/messaging/reliableCache</li>
+ <li>Conformance/messaging/documentation</li>
+ <li>Conformance/messaging/event/category</li>
+ <li>Conformance/messaging/event/protocol</li>
+ <li>Conformance/messaging/event/documentation</li>
+ <li>DataElement/telecom</li>
+ <li>DataElement/date</li>
+ <li>DataElement/code</li>
+ <li>DataElement/comments</li>
+ <li>DataElement/requirements</li>
+ <li>DataElement/synonym</li>
+ <li>DataElement/example[x]</li>
+ <li>DataElement/maxLength</li>
+ <li>DataElement/units</li>
+ <li>DataElement/binding/description</li>
+ <li>DataElement/mapping</li>
+ <li>DataElement/mapping/uri</li>
+ <li>DataElement/mapping/name</li>
+ <li>DataElement/mapping/comments</li>
+ <li>DataElement/mapping/map</li>
+ <li>Device/version</li>
+ <li>Device/expiry</li>
+ <li>Device/udi</li>
+ <li>Device/owner</li>
+ <li>Device/location</li>
+ <li>Device/patient</li>
+ <li>Device/url</li>
+ <li>DeviceObservationReport/identifier</li>
+ <li>DeviceObservationReport/virtualDevice/code</li>
+ <li>DeviceObservationReport/virtualDevice/channel/code</li>
+ <li>DiagnosticOrder/encounter</li>
+ <li>DiagnosticOrder/clinicalNotes</li>
+ <li>DiagnosticOrder/specimen</li>
+ <li>DiagnosticOrder/priority</li>
+ <li>DiagnosticOrder/event/description</li>
+ <li>DiagnosticOrder/event/actor</li>
+ <li>DiagnosticOrder/item/specimen</li>
+ <li>DiagnosticOrder/item/bodySite</li>
+ <li>DiagnosticOrder/item/status</li>
+ <li>DiagnosticOrder/item/event</li>
+ <li>DiagnosticReport/diagnostic[x]</li>
+ <li>DiagnosticReport/imagingStudy</li>
+ <li>DiagnosticReport/image</li>
+ <li>DiagnosticReport/image/comment</li>
+ <li>DiagnosticReport/image/link</li>
+ <li>DocumentManifest/identifier</li>
+ <li>DocumentManifest/recipient</li>
+ <li>DocumentManifest/supercedes</li>
+ <li>DocumentManifest/confidentiality</li>
+ <li>DocumentReference/identifier</li>
+ <li>DocumentReference/class</li>
+ <li>DocumentReference/custodian</li>
+ <li>DocumentReference/policyManager</li>
+ <li>DocumentReference/authenticator</li>
+ <li>DocumentReference/docStatus</li>
+ <li>DocumentReference/relatesTo</li>
+ <li>DocumentReference/relatesTo/code</li>
+ <li>DocumentReference/relatesTo/target</li>
+ <li>DocumentReference/service</li>
+ <li>DocumentReference/service/type</li>
+ <li>DocumentReference/service/address</li>
+ <li>DocumentReference/service/parameter</li>
+ <li>DocumentReference/service/parameter/name</li>
+ <li>DocumentReference/service/parameter/value</li>
+ <li>Encounter/participant/type</li>
+ <li>Encounter/fulfills</li>
+ <li>Encounter/period</li>
+ <li>Encounter/hospitalization/origin</li>
+ <li>Encounter/hospitalization/accomodation/bed</li>
+ <li>Encounter/hospitalization/specialCourtesy</li>
+ <li>Encounter/hospitalization/specialArrangement</li>
+ <li>Encounter/hospitalization/destination</li>
+ <li>Encounter/hospitalization/dischargeDiagnosis</li>
+ <li>Encounter/location</li>
+ <li>Encounter/location/location</li>
+ <li>Encounter/location/period</li>
+ <li>Encounter/partOf</li>
+ <li>FamilyHistory/identifier</li>
+ <li>FamilyHistory/relation/born[x]</li>
+ <li>FamilyHistory/relation/deceased[x]</li>
+ <li>FamilyHistory/relation/note</li>
+ <li>FamilyHistory/relation/condition/onset[x]</li>
+ <li>Group/identifier</li>
+ <li>Group/characteristic/value[x]</li>
+ <li>Group/member</li>
+ <li>ImagingStudy/accessionNo</li>
+ <li>ImagingStudy/identifier</li>
+ <li>ImagingStudy/order</li>
+ <li>ImagingStudy/modality</li>
+ <li>ImagingStudy/referrer</li>
+ <li>ImagingStudy/availability</li>
+ <li>ImagingStudy/url</li>
+ <li>ImagingStudy/clinicalInformation</li>
+ <li>ImagingStudy/procedure</li>
+ <li>ImagingStudy/interpreter</li>
+ <li>ImagingStudy/description</li>
+ <li>ImagingStudy/series/availability</li>
+ <li>ImagingStudy/series/url</li>
+ <li>ImagingStudy/series/bodySite</li>
+ <li>ImagingStudy/series/dateTime</li>
+ <li>ImagingStudy/series/instance/type</li>
+ <li>ImagingStudy/series/instance/title</li>
+ <li>ImagingStudy/series/instance/attachment</li>
+ <li>Immunization/identifier</li>
+ <li>Immunization/requester</li>
+ <li>Immunization/manufacturer</li>
+ <li>Immunization/location</li>
+ <li>Immunization/site</li>
+ <li>Immunization/route</li>
+ <li>Immunization/doseQuantity</li>
+ <li>Immunization/explanation</li>
+ <li>Immunization/explanation/reason</li>
+ <li>Immunization/explanation/refusalReason</li>
+ <li>Immunization/reaction</li>
+ <li>Immunization/reaction/date</li>
+ <li>Immunization/reaction/detail</li>
+ <li>Immunization/reaction/reported</li>
+ <li>Immunization/vaccinationProtocol</li>
+ <li>Immunization/vaccinationProtocol/doseSequence</li>
+ <li>Immunization/vaccinationProtocol/description</li>
+ <li>Immunization/vaccinationProtocol/authority</li>
+ <li>Immunization/vaccinationProtocol/series</li>
+ <li>Immunization/vaccinationProtocol/seriesDoses</li>
+ <li>Immunization/vaccinationProtocol/doseTarget</li>
+ <li>Immunization/vaccinationProtocol/doseStatus</li>
+ <li>Immunization/vaccinationProtocol/doseStatusReason</li>
+ <li>ImmunizationRecommendation/identifier</li>
+ <li>ImmunizationRecommendation/recommendation/doseNumber</li>
+ <li>ImmunizationRecommendation/recommendation/dateCriterion</li>
+ <li>ImmunizationRecommendation/recommendation/dateCriterion/code</li>
+ <li>ImmunizationRecommendation/recommendation/dateCriterion/value</li>
+ <li>ImmunizationRecommendation/recommendation/protocol</li>
+ <li>ImmunizationRecommendation/recommendation/protocol/doseSequence</li>
+ <li>ImmunizationRecommendation/recommendation/protocol/description</li>
+ <li>ImmunizationRecommendation/recommendation/protocol/authority</li>
+ <li>ImmunizationRecommendation/recommendation/protocol/series</li>
+ <li>ImmunizationRecommendation/recommendation/supportingImmunization</li>
+ <li>ImmunizationRecommendation/recommendation/supportingPatientInformation</li>
+ <li>List/identifier</li>
+ <li>List/subject</li>
+ <li>List/entry/date</li>
+ <li>Location/mode</li>
+ <li>Media/operator</li>
+ <li>Media/view</li>
+ <li>Media/frames</li>
+ <li>Media/length</li>
+ <li>Medication/manufacturer</li>
+ <li>Medication/package/content</li>
+ <li>Medication/package/content/item</li>
+ <li>Medication/package/content/amount</li>
+ <li>MedicationAdministration/identifier</li>
+ <li>MedicationAdministration/encounter</li>
+ <li>MedicationAdministration/wasNotGiven</li>
+ <li>MedicationAdministration/reasonNotGiven</li>
+ <li>MedicationAdministration/device</li>
+ <li>MedicationAdministration/dosage/timing[x]</li>
+ <li>MedicationAdministration/dosage/asNeeded[x]</li>
+ <li>MedicationAdministration/dosage/site</li>
+ <li>MedicationAdministration/dosage/method</li>
+ <li>MedicationAdministration/dosage/rate</li>
+ <li>MedicationAdministration/dosage/maxDosePerPeriod</li>
+ <li>MedicationDispense/identifier</li>
+ <li>MedicationDispense/status</li>
+ <li>MedicationDispense/dispense/identifier</li>
+ <li>MedicationDispense/dispense/type</li>
+ <li>MedicationDispense/dispense/destination</li>
+ <li>MedicationDispense/dispense/receiver</li>
+ <li>MedicationDispense/dispense/dosage</li>
+ <li>MedicationDispense/dispense/dosage/additionalInstructions</li>
+ <li>MedicationDispense/dispense/dosage/timing[x]</li>
+ <li>MedicationDispense/dispense/dosage/asNeeded[x]</li>
+ <li>MedicationDispense/dispense/dosage/site</li>
+ <li>MedicationDispense/dispense/dosage/route</li>
+ <li>MedicationDispense/dispense/dosage/method</li>
+ <li>MedicationDispense/dispense/dosage/quantity</li>
+ <li>MedicationDispense/dispense/dosage/rate</li>
+ <li>MedicationDispense/dispense/dosage/maxDosePerPeriod</li>
+ <li>MedicationDispense/substitution/reason</li>
+ <li>MedicationDispense/substitution/responsibleParty</li>
+ <li>MedicationPrescription/reason[x]</li>
+ <li>MedicationPrescription/dosageInstruction/timing[x]</li>
+ <li>MedicationPrescription/dosageInstruction/asNeeded[x]</li>
+ <li>MedicationPrescription/dosageInstruction/rate</li>
+ <li>MedicationPrescription/dispense/medication</li>
+ <li>MedicationPrescription/substitution</li>
+ <li>MedicationPrescription/substitution/type</li>
+ <li>MedicationPrescription/substitution/reason</li>
+ <li>MedicationStatement/identifier</li>
+ <li>MedicationStatement/wasNotGiven</li>
+ <li>MedicationStatement/reasonNotGiven</li>
+ <li>MedicationStatement/device</li>
+ <li>MedicationStatement/dosage/timing</li>
+ <li>MedicationStatement/dosage/asNeeded[x]</li>
+ <li>MedicationStatement/dosage/site</li>
+ <li>MedicationStatement/dosage/method</li>
+ <li>MedicationStatement/dosage/rate</li>
+ <li>MedicationStatement/dosage/maxDosePerPeriod</li>
+ <li>MessageHeader/response/details</li>
+ <li>MessageHeader/enterer</li>
+ <li>MessageHeader/receiver</li>
+ <li>MessageHeader/responsible</li>
+ <li>MessageHeader/reason</li>
+ <li>Namespace/country</li>
+ <li>Namespace/category</li>
+ <li>Namespace/responsible</li>
+ <li>Namespace/usage</li>
+ <li>Namespace/uniqueId/preferred</li>
+ <li>Namespace/uniqueId/period</li>
+ <li>Namespace/contact</li>
+ <li>Namespace/contact/name</li>
+ <li>Namespace/contact/telecom</li>
+ <li>Namespace/replacedBy</li>
+ <li>Observation/value[x]</li>
+ <li>Observation/comments</li>
+ <li>Observation/applies[x]</li>
+ <li>Observation/specimen</li>
+ <li>Observation/referenceRange/age</li>
+ <li>OperationOutcome/issue/details</li>
+ <li>Order/identifier</li>
+ <li>Order/reason[x]</li>
+ <li>Order/authority</li>
+ <li>Order/when/schedule</li>
+ <li>OrderResponse/identifier</li>
+ <li>OrderResponse/authority[x]</li>
+ <li>OrderResponse/description</li>
+ <li>Organization/contact/gender</li>
+ <li>Organization/location</li>
+ <li>Other/identifier</li>
+ <li>Other/author</li>
+ <li>Other/created</li>
+ <li>Patient/deceased[x]</li>
+ <li>Patient/multipleBirth[x]</li>
+ <li>Patient/contact/address</li>
+ <li>Patient/contact/gender</li>
+ <li>Patient/careProvider</li>
+ <li>Practitioner/photo</li>
+ <li>Practitioner/location</li>
+ <li>Practitioner/qualification/period</li>
+ <li>Practitioner/qualification/issuer</li>
+ <li>Procedure/identifier</li>
+ <li>Procedure/complication</li>
+ <li>Procedure/relatedItem</li>
+ <li>Procedure/relatedItem/type</li>
+ <li>Procedure/relatedItem/target</li>
+ <li>Profile/version</li>
+ <li>Profile/code</li>
+ <li>Profile/experimental</li>
+ <li>Profile/fhirVersion</li>
+ <li>Profile/mapping/comments</li>
+ <li>Profile/structure/purpose</li>
+ <li>Profile/structure/element/definition/requirements</li>
+ <li>Profile/structure/element/definition/type/aggregation</li>
+ <li>Profile/structure/element/definition/value[x]</li>
+ <li>Profile/structure/element/definition/example[x]</li>
+ <li>Profile/structure/element/definition/maxLength</li>
+ <li>Profile/structure/element/definition/condition</li>
+ <li>Profile/structure/element/definition/mustSupport</li>
+ <li>Profile/structure/element/definition/binding/reference[x]</li>
+ <li>Profile/structure/searchParam/target</li>
+ <li>Profile/query</li>
+ <li>Profile/query/name</li>
+ <li>Profile/query/documentation</li>
+ <li>Profile/query/parameter</li>
+ <li>Provenance/policy</li>
+ <li>Provenance/entity</li>
+ <li>Provenance/entity/role</li>
+ <li>Provenance/entity/type</li>
+ <li>Provenance/entity/reference</li>
+ <li>Provenance/entity/display</li>
+ <li>Provenance/entity/agent</li>
+ <li>Provenance/integritySignature</li>
+ <li>Query/response/previous</li>
+ <li>Questionnaire/version</li>
+ <li>Questionnaire/group/linkId</li>
+ <li>Questionnaire/group/text</li>
+ <li>Questionnaire/group/required</li>
+ <li>Questionnaire/group/repeats</li>
+ <li>Questionnaire/group/question</li>
+ <li>Questionnaire/group/question/linkId</li>
+ <li>Questionnaire/group/question/concept</li>
+ <li>Questionnaire/group/question/text</li>
+ <li>Questionnaire/group/question/type</li>
+ <li>Questionnaire/group/question/required</li>
+ <li>Questionnaire/group/question/repeats</li>
+ <li>Questionnaire/group/question/options</li>
+ <li>Questionnaire/group/question/group</li>
+ <li>QuestionnaireAnswers/questionnaire</li>
+ <li>QuestionnaireAnswers/encounter</li>
+ <li>QuestionnaireAnswers/group/linkId</li>
+ <li>QuestionnaireAnswers/group/text</li>
+ <li>QuestionnaireAnswers/group/subject</li>
+ <li>QuestionnaireAnswers/group/question</li>
+ <li>QuestionnaireAnswers/group/question/linkId</li>
+ <li>QuestionnaireAnswers/group/question/text</li>
+ <li>QuestionnaireAnswers/group/question/answer</li>
+ <li>QuestionnaireAnswers/group/question/answer/value[x]</li>
+ <li>QuestionnaireAnswers/group/question/group</li>
+ <li>SecurityEvent/event/outcomeDesc</li>
+ <li>SecurityEvent/participant/reference</li>
+ <li>SecurityEvent/participant/media</li>
+ <li>SecurityEvent/object/sensitivity</li>
+ <li>SecurityEvent/object/description</li>
+ <li>SecurityEvent/object/query</li>
+ <li>SecurityEvent/object/detail</li>
+ <li>SecurityEvent/object/detail/type</li>
+ <li>SecurityEvent/object/detail/value</li>
+ <li>Specimen/source</li>
+ <li>Specimen/source/relationship</li>
+ <li>Specimen/source/target</li>
+ <li>Specimen/collection/comment</li>
+ <li>Specimen/collection/collected[x]</li>
+ <li>Specimen/collection/sourceSite</li>
+ <li>Specimen/treatment</li>
+ <li>Specimen/treatment/description</li>
+ <li>Specimen/treatment/procedure</li>
+ <li>Specimen/treatment/additive</li>
+ <li>Subscription/contact</li>
+ <li>Subscription/error</li>
+ <li>Subscription/end</li>
+ <li>Subscription/tag</li>
+ <li>Subscription/tag/term</li>
+ <li>Subscription/tag/scheme</li>
+ <li>Subscription/tag/description</li>
+ <li>Substance/description</li>
+ <li>Substance/instance</li>
+ <li>Substance/instance/identifier</li>
+ <li>Substance/instance/expiry</li>
+ <li>Substance/instance/quantity</li>
+ <li>Substance/ingredient</li>
+ <li>Substance/ingredient/quantity</li>
+ <li>Substance/ingredient/substance</li>
+ <li>Supply/kind</li>
+ <li>Supply/identifier</li>
+ <li>Supply/status</li>
+ <li>Supply/orderedItem</li>
+ <li>Supply/patient</li>
+ <li>Supply/dispense</li>
+ <li>Supply/dispense/identifier</li>
+ <li>Supply/dispense/status</li>
+ <li>Supply/dispense/type</li>
+ <li>Supply/dispense/quantity</li>
+ <li>Supply/dispense/suppliedItem</li>
+ <li>Supply/dispense/supplier</li>
+ <li>Supply/dispense/whenPrepared</li>
+ <li>Supply/dispense/whenHandedOver</li>
+ <li>Supply/dispense/destination</li>
+ <li>Supply/dispense/receiver</li>
+ <li>ValueSet/purpose</li>
+ <li>ValueSet/immutable</li>
+ <li>ValueSet/extensible</li>
+ <li>ValueSet/stableDate</li>
+ <li>ValueSet/define/version</li>
+ <li>ValueSet/compose/exclude</li>
+ <li>ValueSet/expansion</li>
+ <li>ValueSet/expansion/identifier</li>
+ <li>ValueSet/expansion/timestamp</li>
+ <li>ValueSet/expansion/contains</li>
+ <li>ValueSet/expansion/contains/system</li>
+ <li>ValueSet/expansion/contains/code</li>
+ <li>ValueSet/expansion/contains/display</li>
+ <li>ValueSet/expansion/contains/contains</li>
+</ul>
+
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011 - 2014. FHIR DSTU (v0.2.1-????) generated on Fri, Jun 6, 2014 13:35+0000. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a href="dstu.html">What's a DSTU?</a> | <a href="history.html">Version History</a> | <a href="license.html">License</a> | <a href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+
+</body>
+
+</html>

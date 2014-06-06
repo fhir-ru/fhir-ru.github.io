@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Segment action code</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>A
+            <a name="A"> </a>
+          </td>
+          <td>Add/Insert</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>D
+            <a name="D"> </a>
+          </td>
+          <td>Delete</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>U
+            <a name="U"> </a>
+          </td>
+          <td>Update</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>X
+            <a name="X"> </a>
+          </td>
+          <td>No Change</td>
+          <td>added v2.6</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0206"/>
+  <name value="v2 Segment action code"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0206 ( Segment action code)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0206"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="A"/>
+      <display value="Add/Insert"/>
+    </concept>
+    <concept>
+      <code value="D"/>
+      <display value="Delete"/>
+    </concept>
+    <concept>
+      <code value="U"/>
+      <display value="Update"/>
+    </concept>
+    <concept>
+      <code value="X"/>
+      <display value="No Change"/>
+    </concept>
+  </define>
+</ValueSet>

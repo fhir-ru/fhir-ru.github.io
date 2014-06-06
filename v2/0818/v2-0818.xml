@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Package</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>BX
+            <a name="BX"> </a>
+          </td>
+          <td>Box</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>CS
+            <a name="CS"> </a>
+          </td>
+          <td>Case</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>EA
+            <a name="EA"> </a>
+          </td>
+          <td>Each</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>SET
+            <a name="SET"> </a>
+          </td>
+          <td>Set</td>
+          <td>added v2.6</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0818"/>
+  <name value="v2 Package"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0818 ( Package)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0818"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="BX"/>
+      <display value="Box"/>
+    </concept>
+    <concept>
+      <code value="CS"/>
+      <display value="Case"/>
+    </concept>
+    <concept>
+      <code value="EA"/>
+      <display value="Each"/>
+    </concept>
+    <concept>
+      <code value="SET"/>
+      <display value="Set"/>
+    </concept>
+  </define>
+</ValueSet>

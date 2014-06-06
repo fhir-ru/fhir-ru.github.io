@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>DRG Status Financial Calculation</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>00
+            <a name="00"> </a>
+          </td>
+          <td>Effective weight calculated</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>01
+            <a name="01"> </a>
+          </td>
+          <td>Hospital specific contract</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>03
+            <a name="03"> </a>
+          </td>
+          <td>Eeffective weight for transfer/referral calculated</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>04
+            <a name="04"> </a>
+          </td>
+          <td>Referral from other hospital based on a cooperation (no DRG reimbursement)</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>05
+            <a name="05"> </a>
+          </td>
+          <td>Invalid length of stay</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>10
+            <a name="10"> </a>
+          </td>
+          <td>No information/entry in cost data for this DRG</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>11
+            <a name="11"> </a>
+          </td>
+          <td>No relative weight found for department (type)</td>
+          <td>added v2.6</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0742"/>
+  <name value="v2 DRG Status Financial Calculation"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0742 ( DRG Status Financial Calculation)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0742"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="00"/>
+      <display value="Effective weight calculated"/>
+    </concept>
+    <concept>
+      <code value="01"/>
+      <display value="Hospital specific contract"/>
+    </concept>
+    <concept>
+      <code value="03"/>
+      <display value="Eeffective weight for transfer/referral calculated"/>
+    </concept>
+    <concept>
+      <code value="04"/>
+      <display value="Referral from other hospital based on a cooperation (no DRG reimbursement)"/>
+    </concept>
+    <concept>
+      <code value="05"/>
+      <display value="Invalid length of stay"/>
+    </concept>
+    <concept>
+      <code value="10"/>
+      <display value="No information/entry in cost data for this DRG"/>
+    </concept>
+    <concept>
+      <code value="11"/>
+      <display value="No relative weight found for department (type)"/>
+    </concept>
+  </define>
+</ValueSet>

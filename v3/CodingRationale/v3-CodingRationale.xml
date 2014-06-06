@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  Identifies how to interpret the instance of the code, codeSystem value in a set of translations.  Since HL7 (or a government body) may mandate that codes from certain code systems be sent in conformant messages, other synonyms that are sent in the translation set need to be distinguished among the originally captured source, the HL7 specified code, or some future role.  When this code is NULL, it indicates that the translation is an undefined type.  When valued, this property must contain one of the following values:
+        <br/>
+
+                  SRC - Source (or original) code HL7 - HL7 Specified or Mandated SH - both HL7 mandated and the original code (precoordination)
+        <br/>
+
+                  There may be additional values added to this value set as we work through the use of codes in messages and determine other Use Cases requiring special interpretation of the translations.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>O
+            <a name="O"> </a>
+          </td>
+          <td>originally produced code</td>
+          <td>
+                        
+                           Description: Originally produced code.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>OR
+            <a name="OR"> </a>
+          </td>
+          <td>original and required</td>
+          <td>
+                        Originally produced code, required by the specification describing the use of the coded concept.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>P
+            <a name="P"> </a>
+          </td>
+          <td>post-coded</td>
+          <td>
+                        
+                           Description: Post-coded from free text source&lt;/description&gt;
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>PR
+            <a name="PR"> </a>
+          </td>
+          <td>post-coded and required</td>
+          <td>
+                        Post-coded from free text source, required by the specification describing the use of the coded concept.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>R
+            <a name="R"> </a>
+          </td>
+          <td>required</td>
+          <td>
+                        
+                           Description: Required standard code for HL7.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/CodingRationale"/>
+  <name value="v3 Code System CodingRationale"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" Identifies how to interpret the instance of the code, codeSystem value in a set of translations.  Since HL7 (or a government body) may mandate that codes from certain code systems be sent in conformant messages, other synonyms that are sent in the translation set need to be distinguished among the originally captured source, the HL7 specified code, or some future role.  When this code is NULL, it indicates that the translation is an undefined type.  When valued, this property must contain one of the following values: SRC - Source (or original) code HL7 - HL7 Specified or Mandated SH - both HL7 mandated and the original code (precoordination) There may be additional values added to this value set as we work through the use of codes in messages and determine other Use Cases requiring special interpretation of the translations."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/CodingRationale"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="O"/>
+      <display value="originally produced code"/>
+      <definition value="Description: Originally produced code."/>
+    </concept>
+    <concept>
+      <code value="OR"/>
+      <display value="original and required"/>
+      <definition value="Originally produced code, required by the specification describing the use of the coded concept."/>
+    </concept>
+    <concept>
+      <code value="P"/>
+      <display value="post-coded"/>
+      <definition value="Description: Post-coded from free text source&lt;/description&gt;"/>
+    </concept>
+    <concept>
+      <code value="PR"/>
+      <display value="post-coded and required"/>
+      <definition value="Post-coded from free text source, required by the specification describing the use of the coded concept."/>
+    </concept>
+    <concept>
+      <code value="R"/>
+      <display value="required"/>
+      <definition value="Description: Required standard code for HL7."/>
+    </concept>
+  </define>
+</ValueSet>

@@ -1,0 +1,331 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+  <title>QuestionnaireAnswers - FHIR v0.2.1</title>
+
+  
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="http://hl7.org/fhir" name="author"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="./assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="./assets/css/project.css"/>
+  <link rel="stylesheet" href="./assets/css/pygments-manni.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif] -->
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment">  <!-- segment-header -->	
+		<div class="container">  <!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img alt="logo fhir" src="./assets/images/fhir-logo-www.png"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img height="50" alt="visit the hl7 website" width="42" src="./assets/images/hl7-logo.png"/>
+				</a> 
+			</div>       	
+			  <!-- hl7-search -->
+		</div>
+		<div class="container">  <!-- container -->
+	</div></div>  <!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a class="navbar-brand hidden" href="index.html">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+
+						</ul>
+					</div>  <!-- /.nav-collapse -->
+				</div>  <!-- /.container -->
+			</nav>  <!-- /.navbar -->
+      		
+				
+  <!-- /HEADER CONTENT -->				
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+		<div class="container">  <!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clinical.html">Clinical</a></li>        <li><b>QuestionnaireAnswers</b></li>          <!-- questionnaireanswers.html / resource -->
+
+			</ul>	
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment">  <!-- segment-content -->
+	<div class="container">  <!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+  <!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<ul class="nav nav-tabs"><li class="active"><a href="#">Content</a></li><li><a href="questionnaireanswers-examples.html">Examples</a></li><li><a href="questionnaireanswers-definitions.html">Formal Definitions</a></li><li><a href="questionnaireanswers-mappings.html">Mappings</a></li><li><a href="questionnaireanswers-profiles.html">Profiles</a></li></ul>
+
+<h1><span class="sectioncount">4.7<a name="4.7"> </a></span> Resource QuestionnaireAnswers - Content</h1>
+  <!-- <p class="status">Status: null</p> -->
+
+<p> 
+A structured set of questions and their answers. The questions are ordered and grouped into coherent subsets, corresponding to the structure of the grouping of the underlying questions. 
+</p>
+
+
+<div>
+<h2><span class="sectioncount">4.7.1<a name="4.7.1"> </a></span> Scope and Usage</h2>
+<p>
+<b>QuestionnaireAnswers</b> provides a complete or partial list of answers to a set of questions.  The questions may be included directly or by
+reference to a <a href="questionnaire.html">Questionnaire</a> resource that defines the questions as well as the constraints on the allowed answers.  In
+some cases, both may be provided to provide both formal rules for editing the questionnaire (via link to <a href="questionnaire.html">Questionnaire</a>) as
+well as sufficient local information to allow rendering of the questionnaire.
+</p>
+<p>
+Questionnaires cover the need to communicate data originating from forms used in medical history examinations, research questionnaires and sometimes full
+clinical speciality records. In many systems this data is collected using user-defined screens and forms. Questionnaires record specifics about data capture -
+exactly what questions were asked, in what order, what choices for answers were, etc. Each of these questions are part of the Questionnaire, 
+and as such the Questionnaire is a separately identifiable Resource, whereas the individual questions are not.
+</p>
+<p>
+Examples of Questionnaires include:
+</p>
+<ul>
+  <li>Past medical history (PMH)</li>
+  <li>Family diseases</li>
+  <li>Social history</li>
+  <li>Research questionnaires</li>
+  <li>Quality and evaluation forms</li>
+</ul>
+<p>
+<b>QuestionnaireAnswers</b> can be validated against their corresponding <a href="questionnaire.html">Questionnaire</a> to verify that required
+groups and questions are answered and that answers fit constraints in terms of cardinality, data type, etc.
+</p>
+</div>
+
+<div>
+<h2><span class="sectioncount">4.7.2<a name="4.7.2"> </a></span> Boundaries and Relationships</h2>
+<p>
+The <b>QuestionnaireAnswers</b> resource captures the responses to a questionnaire, while <a href="questionnaire.html">Questionnaire</a> represents
+the definition of the questionnaire form, including what questions are asked, how they're organized and the constraints on the allowed answers.
+</p>
+<p>
+While <a href="observation.html">Observation</a>, with its nested <code>relatedObservation</code> structure, can create complex hierarchies of 
+questions and answers, the focus is different.  First, <a href="observation.html">Observation</a> is used primarily for capturing data elements that
+are &quot;true&quot; observations - lab measurements, vital signs, social asssessments, etc.  On the other hand, <b>QuestionnaireAnswers</b> can be used to capture
+any types of data, including data that would typically map to other resources (<a href="procedure.html">Provedure</a>, <a href="patient.html">Patient</a>,
+<a href="medicationstatement.html">MedicationStatement</a>, etc.)  In addition, the focus of <b>QuestionnaireAnswers</b> includes the specific phrasing
+and organization of the questions.  All data must be explicitly captured as a question.  With <a href="observation.html">Observation</a>, the focus is
+only on the meaning of the answer, not what question was asked (assuming a question was even asked at all).  Additional information such as normal
+ranges, interpretation, date, etc. may also be captured.
+</p>
+</div>
+
+  <!-- <div>
+<h2>Background and Context</h2>
+<p>
+</p>
+</div> -->
+
+
+<a name="resource"/>
+<h2><span class="sectioncount">4.7.3<a name="4.7.3"> </a></span> 
+Resource Content
+</h2>
+<a name="uml"> </a>
+<svg height="301.0" width="1068.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">  <defs>
+    <filter id="shadow" height="200%" width="200%" y="0" x="0">
+      <feOffset result="offOut" dx="3" dy="3" in="SourceGraphic"/>
+      <feColorMatrix result="matrixOut" values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0" type="matrix" in="offOut"/>
+      <feGaussianBlur result="blurOut" stdDeviation="2" in="matrixOut"/>
+      <feBlend in2="blurOut" in="SourceGraphic" mode="normal"/>
+    </filter>
+  </defs><rect height="162.0" style="fill:#f0f8ff;stroke:black;stroke-width:1" width="204.0" filter="url(#shadow)" rx="4" y="0.0" ry="4" x="0.0"/><line style="stroke:dimgrey;stroke-width:1" y1="28.0" y2="28.0" x2="204.0" x1="0.0"/><text fill="black" class="diagram-class-title  diagram-class-resource" y="20.0" x="102.0">QuestionnaireAnswers<tspan class="diagram-class-title-link"> (<a class="diagram-class-reference" xlink:href="resources.html">Resource</a>)</tspan></text><text fill="black" class="diagram-class-detail" y="42.0" x="6.0"><a xlink:href="questionnaireanswers-definitions.html#QuestionnaireAnswers.questionnaire"><title>Indicates the Questionnaire resource that defines the form for which answers are being provided</title>questionnaire</a> : <a xlink:href="references.html#Resource">Resource</a>(<a xlink:href="questionnaire.html#Questionnaire">Questionnaire</a>) 0..1</text><text fill="black" class="diagram-class-detail" y="56.0" x="6.0"><a xlink:href="questionnaireanswers-definitions.html#QuestionnaireAnswers.status"><title>The lifecycle status of the questionnaire answers as a whole (this element modifies the meaning of other elements)</title>status</a> : <a xlink:href="datatypes.html#code">code</a> 1..1 « <a xlink:href="questionnaire-answers-status.html"><title>Lifecycle status of the questionnaire answers</title>QuestionnaireAnswersStatus</a> »</text><text fill="black" class="diagram-class-detail" y="70.0" x="6.0"><a xlink:href="questionnaireanswers-definitions.html#QuestionnaireAnswers.subject"><title>The subject of the questionnaire answers.  This could be a patient, organization, practitioner, device, etc.  This is who/what the answers apply to, but is not necessarily the source of information</title>subject</a> : <a xlink:href="references.html#Resource">Resource</a>(<a xlink:href="resourcelist.html#Any">Any</a>) 0..1</text><text fill="black" class="diagram-class-detail" y="84.0" x="6.0"><a xlink:href="questionnaireanswers-definitions.html#QuestionnaireAnswers.author"><title>Person who received the answers to the questions in the QuestionnaireAnswers and recorded them in the system</title>author</a> : <a xlink:href="references.html#Resource">Resource</a>(<a xlink:href="practitioner.html#Practitioner">Practitioner</a>|<a xlink:href="patient.html#Patient">Patient</a>|</text><text fill="black" class="diagram-class-detail" y="98.0" x="26.0">     <a xlink:href="relatedperson.html#RelatedPerson">RelatedPerson</a>) 0..1</text><text fill="black" class="diagram-class-detail" y="112.0" x="6.0"><a xlink:href="questionnaireanswers-definitions.html#QuestionnaireAnswers.authored"><title>The date and/or time that this version of the questionnaire answers was authored</title>authored</a> : <a xlink:href="datatypes.html#dateTime">dateTime</a> 1..1</text><text fill="black" class="diagram-class-detail" y="126.0" x="6.0"><a xlink:href="questionnaireanswers-definitions.html#QuestionnaireAnswers.source"><title>The person who answered the questions about the subject. Only used when this is not the subject him/herself</title>source</a> : <a xlink:href="references.html#Resource">Resource</a>(<a xlink:href="patient.html#Patient">Patient</a>|<a xlink:href="practitioner.html#Practitioner">Practitioner</a>|</text><text fill="black" class="diagram-class-detail" y="140.0" x="26.0">     <a xlink:href="relatedperson.html#RelatedPerson">RelatedPerson</a>) 0..1</text><text fill="black" class="diagram-class-detail" y="154.0" x="6.0"><a xlink:href="questionnaireanswers-definitions.html#QuestionnaireAnswers.encounter"><title>Encounter during which this set of questionnaire answers were collected. When there were multiple encounters, this is the one considered most relevant to the context of the answers</title>encounter</a> : <a xlink:href="references.html#Resource">Resource</a>(<a xlink:href="encounter.html#Encounter">Encounter</a>) 0..1</text><rect height="92.0" style="fill:#f0f8ff;stroke:black;stroke-width:1" width="120.0" filter="url(#shadow)" rx="4" y="35.0" ry="4" x="324.0"/><line style="stroke:dimgrey;stroke-width:1" y1="63.0" y2="63.0" x2="444.0" x1="324.0"/><text fill="black" class="diagram-class-title" y="55.0" x="384.0">Group</text><text fill="black" class="diagram-class-detail" y="77.0" x="330.0"><a xlink:href="questionnaireanswers-definitions.html#QuestionnaireAnswers.group.linkId"><title>Identifies the group from the Questionnaire that corresponds to this group in the QuestionnaireAnswers resource</title>linkId</a> : <a xlink:href="datatypes.html#string">string</a> 0..1</text><text fill="black" class="diagram-class-detail" y="91.0" x="330.0"><a xlink:href="questionnaireanswers-definitions.html#QuestionnaireAnswers.group.title"><title>Text that is displayed above the contents of the group</title>title</a> : <a xlink:href="datatypes.html#string">string</a> 0..1</text><text fill="black" class="diagram-class-detail" y="105.0" x="330.0"><a xlink:href="questionnaireanswers-definitions.html#QuestionnaireAnswers.group.text"><title>Additional text for the group, used for display purposes</title>text</a> : <a xlink:href="datatypes.html#string">string</a> 0..1</text><text fill="black" class="diagram-class-detail" y="119.0" x="330.0"><a xlink:href="questionnaireanswers-definitions.html#QuestionnaireAnswers.group.subject"><title>More specific subject this section's answers are about, details the subject given in QuestionnaireAnswers</title>subject</a> : <a xlink:href="references.html#Resource">Resource</a>(<a xlink:href="resourcelist.html#Any">Any</a>) 0..1</text><rect height="64.0" style="fill:#f0f8ff;stroke:black;stroke-width:1" width="88.0" filter="url(#shadow)" rx="4" y="207.0" ry="4" x="340.0"/><line style="stroke:dimgrey;stroke-width:1" y1="235.0" y2="235.0" x2="428.0" x1="340.0"/><text fill="black" class="diagram-class-title" y="227.0" x="384.0">Question</text><text fill="black" class="diagram-class-detail" y="249.0" x="346.0"><a xlink:href="questionnaireanswers-definitions.html#QuestionnaireAnswers.group.question.linkId"><title>Identifies the question from the Questionnaire that corresponds to this question in the QuestionnaireAnswers resource</title>linkId</a> : <a xlink:href="datatypes.html#string">string</a> 0..1</text><text fill="black" class="diagram-class-detail" y="263.0" x="346.0"><a xlink:href="questionnaireanswers-definitions.html#QuestionnaireAnswers.group.question.text"><title>Text of the question as it is shown to the user</title>text</a> : <a xlink:href="datatypes.html#string">string</a> 0..1</text><rect height="64.0" style="fill:#f0f8ff;stroke:black;stroke-width:1" width="188.0" filter="url(#shadow)" rx="4" y="0.0" ry="4" x="480.0"/><line style="stroke:dimgrey;stroke-width:1" y1="28.0" y2="28.0" x2="668.0" x1="480.0"/><text fill="black" class="diagram-class-title" y="20.0" x="574.0">Answer</text><text fill="black" class="diagram-class-detail" y="42.0" x="486.0"><a xlink:href="questionnaireanswers-definitions.html#QuestionnaireAnswers.group.question.answer.value_x_"><title>Single-valued answer to the question</title>value[x]</a> : <a xlink:href="datatypes.html#decimal">decimal</a>|<a xlink:href="datatypes.html#integer">integer</a>|<a xlink:href="datatypes.html#boolean">boolean</a>|<a xlink:href="datatypes.html#date">date</a>|<a xlink:href="datatypes.html#string">string</a>|</text><text fill="black" class="diagram-class-detail" y="56.0" x="506.0">     <a xlink:href="datatypes.html#dateTime">dateTime</a>|<a xlink:href="datatypes.html#instant">instant</a>|<a xlink:href="datatypes.html#Coding">Coding</a> 0..1</text><line style="stroke:navy;stroke-width:1" y1="56.0" y2="56.0" x2="504.0" x1="444.0"/><line style="stroke:navy;stroke-width:1" y1="56.0" y2="106.0" x2="504.0" x1="504.0"/><line style="stroke:navy;stroke-width:1" y1="106.0" y2="106.0" x2="444.0" x1="504.0"/><polygon transform="rotate(0.0 444.0 56.0)" style="fill:navy;stroke:navy;stroke-width:1" points="444.0,56.0 450.0,60.0 456.0,56.0 450.0,52.0 444.0,56.0"/><rect height="18.0" style="fill:white;stroke:black;stroke-width:0" width="20.0" y="74.0" x="494.0"/><text fill="black" class="diagram-class-linkage" y="84.0" x="504.0"><a xlink:href="questionnaireanswers-definitions.html#QuestionnaireAnswers.group.group"><title>A sub-group within a group. The ordering of groups within this group is relevant</title>group</a></text><text fill="black" class="diagram-class-linkage" y="102.0" x="459.0">0..*</text><line style="stroke:navy;stroke-width:1" y1="207.0" y2="64.0" x2="544.6280193236715" x1="413.3719806763285"/><polygon transform="rotate(-47.45197371039186 413.3719806763285 207.0)" style="fill:navy;stroke:navy;stroke-width:1" points="413.3719806763285,207.0 419.3719806763285,211.0 425.3719806763285,207.0 419.3719806763285,203.0 413.3719806763285,207.0"/><rect height="18.0" style="fill:white;stroke:black;stroke-width:0" width="24.0" y="128.0" x="467.0"/><text fill="black" class="diagram-class-linkage" y="138.0" x="479.0"><a xlink:href="questionnaireanswers-definitions.html#QuestionnaireAnswers.group.question.answer"><title>The respondant's answer(s) to the question</title>answer</a></text><text fill="black" class="diagram-class-linkage" y="78.0" x="544.6280193236715">0..*</text><line style="stroke:navy;stroke-width:1" y1="207.0" y2="127.0" x2="359.0" x1="359.0"/><polygon transform="rotate(-90.0 359.0 207.0)" style="fill:navy;stroke:navy;stroke-width:1" points="359.0,207.0 365.0,211.0 371.0,207.0 365.0,203.0 359.0,207.0"/><rect height="18.0" style="fill:white;stroke:black;stroke-width:0" width="20.0" y="160.0" x="349.0"/><text fill="black" class="diagram-class-linkage" y="170.0" x="359.0"><a xlink:href="questionnaireanswers-definitions.html#QuestionnaireAnswers.group.question.group"><title>Nested group, containing nested question for this question. The order of groups within the question is relevant</title>group</a></text><text fill="black" class="diagram-class-linkage" y="141.0" x="359.0">0..*</text><line style="stroke:navy;stroke-width:1" y1="127.0" y2="207.0" x2="409.0" x1="409.0"/><polygon transform="rotate(90.0 409.0 127.0)" style="fill:navy;stroke:navy;stroke-width:1" points="409.0,127.0 415.0,131.0 421.0,127.0 415.0,123.0 409.0,127.0"/><rect height="18.0" style="fill:white;stroke:black;stroke-width:0" width="32.0" y="174.0" x="393.0"/><text fill="black" class="diagram-class-linkage" y="184.0" x="409.0"><a xlink:href="questionnaireanswers-definitions.html#QuestionnaireAnswers.group.question"><title>Set of questions within this group. The order of questions within the group is relevant</title>question</a></text><text fill="black" class="diagram-class-linkage" y="203.0" x="409.0">0..*</text><line style="stroke:navy;stroke-width:1" y1="81.0" y2="81.0" x2="324.0" x1="204.0"/><polygon transform="rotate(0.0 204.0 81.0)" style="fill:navy;stroke:navy;stroke-width:1" points="204.0,81.0 210.0,85.0 216.0,81.0 210.0,77.0 204.0,81.0"/><rect height="18.0" style="fill:white;stroke:black;stroke-width:0" width="20.0" y="74.0" x="254.0"/><text fill="black" class="diagram-class-linkage" y="84.0" x="264.0"><a xlink:href="questionnaireanswers-definitions.html#QuestionnaireAnswers.group"><title>A group of questions to a possibly similarly grouped set of questions in the questionnaire answers</title>group</a></text><text fill="black" class="diagram-class-linkage" y="77.0" x="304.0">0..1</text></svg>
+
+
+<a name="def"> </a>
+<a name="questionnaireanswers"> </a>
+<a name="QuestionnaireAnswers"> </a>
+<pre class="spec">
+&lt;<a title="A structured set of questions and their answers. The questions are ordered and grouped into coherent subsets, corresponding to the structure of the grouping of the underlying questions." class="dict" href="questionnaireanswers-definitions.html#QuestionnaireAnswers"><b>QuestionnaireAnswers</b></a> xmlns=&quot;http://hl7.org/fhir&quot;&gt; <span style="float: right"><a title="Documentation for this format" href="formats.html"><img alt="doco" src="help.png"/></a></span>
+ &lt;!-- from <a href="resources.html">Resource</a>: <a href="extensibility.html">extension</a>, <a href="extensibility.html#modifierExtension">modifierExtension</a>, language, <a href="narrative.html#Narrative">text</a>, and <a href="references.html#contained">contained</a> --&gt;
+ &lt;<a title="Indicates the Questionnaire resource that defines the form for which answers are being provided." class="dict" href="questionnaireanswers-definitions.html#QuestionnaireAnswers.questionnaire"><b>questionnaire</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen"><a href="references.html#Resource">Resource</a>(<a href="questionnaire.html#Questionnaire">Questionnaire</a>)</span> <span style="color: navy">Form being answered</span><span style="color: Gray"> --&gt;</span>&lt;/questionnaire&gt;
+ &lt;<a title="The lifecycle status of the questionnaire answers as a whole (this element modifies the meaning of other elements)" class="dict" href="questionnaireanswers-definitions.html#QuestionnaireAnswers.status"><span style="text-decoration: underline"><b>status</b></span></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#code">code</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: navy"><a style="color: navy" href="questionnaire-answers-status.html">in progress | completed | amended<span title="This element is included in a summary view (See Search/Query)" style="color: Navy"> &sect;</span></a></span><span style="color: Gray"> --&gt;</span>
+ &lt;<a title="The subject of the questionnaire answers.  This could be a patient, organization, practitioner, device, etc.  This is who/what the answers apply to, but is not necessarily the source of information." class="dict" href="questionnaireanswers-definitions.html#QuestionnaireAnswers.subject"><b>subject</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen"><a href="references.html#Resource">Resource</a>(<a href="resourcelist.html">Any</a>)</span> <span style="color: navy">The subject of the questions<span title="This element is included in a summary view (See Search/Query)" style="color: Navy"> &sect;</span></span><span style="color: Gray"> --&gt;</span>&lt;/subject&gt;
+ &lt;<a title="Person who received the answers to the questions in the QuestionnaireAnswers and recorded them in the system." class="dict" href="questionnaireanswers-definitions.html#QuestionnaireAnswers.author"><b>author</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen"><a href="references.html#Resource">Resource</a>(<a href="practitioner.html#Practitioner">Practitioner</a>|<a href="patient.html#Patient">Patient</a>|<a href="relatedperson.html#RelatedPerson">RelatedPerson</a>)</span> <span style="color: navy">
+     Person who received and recorded the answers<span title="This element is included in a summary view (See Search/Query)" style="color: Navy"> &sect;</span></span><span style="color: Gray"> --&gt;</span>&lt;/author&gt;
+ &lt;<a title="The date and/or time that this version of the questionnaire answers was authored." class="dict" href="questionnaireanswers-definitions.html#QuestionnaireAnswers.authored"><b>authored</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#dateTime">dateTime</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: navy">Date this version was authored<span title="This element is included in a summary view (See Search/Query)" style="color: Navy"> &sect;</span></span><span style="color: Gray"> --&gt;</span>
+ &lt;<a title="The person who answered the questions about the subject. Only used when this is not the subject him/herself." class="dict" href="questionnaireanswers-definitions.html#QuestionnaireAnswers.source"><b>source</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen"><a href="references.html#Resource">Resource</a>(<a href="patient.html#Patient">Patient</a>|<a href="practitioner.html#Practitioner">Practitioner</a>|<a href="relatedperson.html#RelatedPerson">RelatedPerson</a>)</span> <span style="color: navy">
+     The person who answered the questions<span title="This element is included in a summary view (See Search/Query)" style="color: Navy"> &sect;</span></span><span style="color: Gray"> --&gt;</span>&lt;/source&gt;
+ &lt;<a title="Encounter during which this set of questionnaire answers were collected. When there were multiple encounters, this is the one considered most relevant to the context of the answers." class="dict" href="questionnaireanswers-definitions.html#QuestionnaireAnswers.encounter"><b>encounter</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen"><a href="references.html#Resource">Resource</a>(<a href="encounter.html#Encounter">Encounter</a>)</span> <span style="color: navy">
+     Primary encounter during which the answers were collected<span title="This element is included in a summary view (See Search/Query)" style="color: Navy"> &sect;</span></span><span style="color: Gray"> --&gt;</span>&lt;/encounter&gt;
+ &lt;<a title="A group of questions to a possibly similarly grouped set of questions in the questionnaire answers." class="dict" href="questionnaireanswers-definitions.html#QuestionnaireAnswers.group"><b>group</b></a>&gt;  <span style="color: Gray">&lt;!-- <span style="color: brown"><b>0..1</b></span> Grouped questions --&gt;</span>
+  &lt;<a title="Identifies the group from the Questionnaire that corresponds to this group in the QuestionnaireAnswers resource." class="dict" href="questionnaireanswers-definitions.html#QuestionnaireAnswers.group.linkId"><b>linkId</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Corresponding group within Questionnaire</span><span style="color: Gray"> --&gt;</span>
+  &lt;<a title="Text that is displayed above the contents of the group." class="dict" href="questionnaireanswers-definitions.html#QuestionnaireAnswers.group.title"><b>title</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Name for this group</span><span style="color: Gray"> --&gt;</span>
+  &lt;<a title="Additional text for the group, used for display purposes." class="dict" href="questionnaireanswers-definitions.html#QuestionnaireAnswers.group.text"><b>text</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Additional text for the group</span><span style="color: Gray"> --&gt;</span>
+  &lt;<a title="More specific subject this section's answers are about, details the subject given in QuestionnaireAnswers." class="dict" href="questionnaireanswers-definitions.html#QuestionnaireAnswers.group.subject"><b>subject</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen"><a href="references.html#Resource">Resource</a>(<a href="resourcelist.html">Any</a>)</span> <span style="color: navy">The subject this group's answers are about</span><span style="color: Gray"> --&gt;</span>&lt;/subject&gt;
+  &lt;<a title="A sub-group within a group. The ordering of groups within this group is relevant." class="dict" href="questionnaireanswers-definitions.html#QuestionnaireAnswers.group.group"><b>group</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span title="Inv-1: Groups may either contain questions or groups but not both" style="color: brown"><b><img alt="??" src="lock.png"/> 0..*</b></span> <span style="color: darkgreen">Content as for QuestionnaireAnswers.group</span> <span style="color: navy">Nested questionnaire answers group</span><span style="color: Gray"> --&gt;</span>&lt;/group&gt;
+  &lt;<a title="Set of questions within this group. The order of questions within the group is relevant." class="dict" href="questionnaireanswers-definitions.html#QuestionnaireAnswers.group.question"><b>question</b></a>&gt;  <span style="color: Gray">&lt;!-- <span title="Inv-1: Groups may either contain questions or groups but not both" style="color: brown"><b><img alt="??" src="lock.png"/> 0..*</b></span> Questions in this group --&gt;</span>
+   &lt;<a title="Identifies the question from the Questionnaire that corresponds to this question in the QuestionnaireAnswers resource." class="dict" href="questionnaireanswers-definitions.html#QuestionnaireAnswers.group.question.linkId"><b>linkId</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Corresponding question within Questionnaire</span><span style="color: Gray"> --&gt;</span>
+   &lt;<a title="Text of the question as it is shown to the user." class="dict" href="questionnaireanswers-definitions.html#QuestionnaireAnswers.group.question.text"><b>text</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Text of the question as it is shown to the user</span><span style="color: Gray"> --&gt;</span>
+   &lt;<a title="The respondant's answer(s) to the question." class="dict" href="questionnaireanswers-definitions.html#QuestionnaireAnswers.group.question.answer"><b>answer</b></a>&gt;  <span style="color: Gray">&lt;!-- <span style="color: brown"><b>0..*</b></span> The response(s) to the question --&gt;</span>
+    &lt;<a title="Single-valued answer to the question." class="dict" href="questionnaireanswers-definitions.html#QuestionnaireAnswers.group.question.answer.value_x_"><b>value[x]</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen"><a href="datatypes.html#decimal">decimal</a>|<a href="datatypes.html#integer">integer</a>|<a href="datatypes.html#boolean">boolean</a>|<a href="datatypes.html#date">date</a>|<a href="datatypes.html#string">string</a>|<a href="datatypes.html#dateTime">dateTime</a>|<a href="datatypes.html#instant">instant</a>|
+      <a href="datatypes.html#Coding">Coding</a></span> <span style="color: navy">Single-valued answer to the question</span><span style="color: Gray"> --&gt;</span>&lt;/value[x]&gt;
+   &lt;/answer&gt;
+   &lt;<a title="Nested group, containing nested question for this question. The order of groups within the question is relevant." class="dict" href="questionnaireanswers-definitions.html#QuestionnaireAnswers.group.question.group"><b>group</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..*</b></span> <span style="color: darkgreen">Content as for QuestionnaireAnswers.group</span> <span style="color: navy">Nested questionnaire group</span><span style="color: Gray"> --&gt;</span>&lt;/group&gt;
+  &lt;/question&gt;
+ &lt;/group&gt;
+&lt;/QuestionnaireAnswers&gt;
+</pre>
+
+
+<p>Alternate definitions: <a href="questionnaireanswers.xsd">Schema</a>/<a href="questionnaireanswers.sch">Schematron</a>, 
+<a href="questionnaireanswers.profile.xml.html">Resource Profile</a></p>
+
+<table cellpadding="0" class="heirarchy" border="0" cellspacing="0"><tr class="heirarchy"><th class="heirarchy">Name</th><th class="heirarchy">Card.</th><th style="width: 100px" class="heirarchy">Type</th><th class="heirarchy">Description</th><th class="heirarchy">Constraints</th></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck1.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="icon_resource.png"/> <span title="A structured set of questions and their answers. The questions are ordered and grouped into coherent subsets, corresponding to the structure of the grouping of the underlying questions.">QuestionnaireAnswers</span></td><td class="heirarchy"/><td class="heirarchy"><a href="resources.html">Resource</a></td><td class="heirarchy">A structured set of questions and their answers</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck10.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_reference.png"/> <span title="Indicates the Questionnaire resource that defines the form for which answers are being provided.">questionnaire</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="Questionnaire.html">Questionnaire</a></td><td class="heirarchy">Form being answered</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck10.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_primitive.png"/> <span title="The lifecycle status of the questionnaire answers as a whole.">status</span></td><td class="heirarchy">1..1</td><td class="heirarchy"><a href="datatypes.html#code">code</a></td><td class="heirarchy">in progress | completed | amended</td><td class="heirarchy"><a title="Lifecycle status of the questionnaire answers" href="questionnaire-answers-status.html">QuestionnaireAnswersStatus</a> (<a title="One of the the defined codes must be used" href="terminologies.html#code">Required</a>)</td></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck10.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_reference.png"/> <span title="The subject of the questionnaire answers.  This could be a patient, organization, practitioner, device, etc.  This is who/what the answers apply to, but is not necessarily the source of information.">subject</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="Any.html">Any</a></td><td class="heirarchy">The subject of the questions</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck10.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_reference.png"/> <span title="Person who received the answers to the questions in the QuestionnaireAnswers and recorded them in the system.">author</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="Practitioner.html">Practitioner</a> | <a href="Patient.html">Patient</a> | <a href="RelatedPerson.html">RelatedPerson</a></td><td class="heirarchy">Person who received and recorded the answers</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck10.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_primitive.png"/> <span title="The date and/or time that this version of the questionnaire answers was authored.">authored</span></td><td class="heirarchy">1..1</td><td class="heirarchy"><a href="datatypes.html#dateTime">dateTime</a></td><td class="heirarchy">Date this version was authored</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck10.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_reference.png"/> <span title="The person who answered the questions about the subject. Only used when this is not the subject him/herself.">source</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="Patient.html">Patient</a> | <a href="Practitioner.html">Practitioner</a> | <a href="RelatedPerson.html">RelatedPerson</a></td><td class="heirarchy">The person who answered the questions</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck10.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_reference.png"/> <span title="Encounter during which this set of questionnaire answers were collected. When there were multiple encounters, this is the one considered most relevant to the context of the answers.">encounter</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="Encounter.html">Encounter</a></td><td class="heirarchy">Primary encounter during which the answers were collected</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck01.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_vjoin_end.png"/><img class="heirarchy" src="icon_element.gif"/> <span title="A group of questions to a possibly similarly grouped set of questions in the questionnaire answers.">group</span></td><td class="heirarchy">0..1</td><td class="heirarchy"/><td class="heirarchy">Grouped questions</td><td class="heirarchy"><span title="1">Groups may either contain questions or groups but not both</span></td></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_primitive.png"/> <span title="Identifies the group from the Questionnaire that corresponds to this group in the QuestionnaireAnswers resource.">linkId</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="datatypes.html#string">string</a></td><td class="heirarchy">Corresponding group within Questionnaire</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_primitive.png"/> <span title="Text that is displayed above the contents of the group.">title</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="datatypes.html#string">string</a></td><td class="heirarchy">Name for this group</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_primitive.png"/> <span title="Additional text for the group, used for display purposes.">text</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="datatypes.html#string">string</a></td><td class="heirarchy">Additional text for the group</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_reference.png"/> <span title="More specific subject this section's answers are about, details the subject given in QuestionnaireAnswers.">subject</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="Any.html">Any</a></td><td class="heirarchy">The subject this group's answers are about</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_reuse.png"/> <span title="A sub-group within a group. The ordering of groups within this group is relevant.">group</span></td><td class="heirarchy">0..*</td><td class="heirarchy">see <a title="QuestionnaireAnswers.group" href="test">group</a></td><td class="heirarchy">Nested questionnaire answers group</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck001.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin_end.png"/><img class="heirarchy" src="icon_element.gif"/> <span title="Set of questions within this group. The order of questions within the group is relevant.">question</span></td><td class="heirarchy">0..*</td><td class="heirarchy"/><td class="heirarchy">Questions in this group</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck0010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_primitive.png"/> <span title="Identifies the question from the Questionnaire that corresponds to this question in the QuestionnaireAnswers resource.">linkId</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="datatypes.html#string">string</a></td><td class="heirarchy">Corresponding question within Questionnaire</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck0010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_primitive.png"/> <span title="Text of the question as it is shown to the user.">text</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="datatypes.html#string">string</a></td><td class="heirarchy">Text of the question as it is shown to the user</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck0011.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_element.gif"/> <span title="The respondant's answer(s) to the question.">answer</span></td><td class="heirarchy">0..*</td><td class="heirarchy"/><td class="heirarchy">The response(s) to the question</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck00101.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vline.png"/><img class="heirarchy" src="tbl_vjoin_end.png"/><img class="heirarchy" src="icon_choice.gif"/> <span title="Single-valued answer to the question.">value[x]</span></td><td class="heirarchy"/><td class="heirarchy"/><td class="heirarchy">Single-valued answer to the question</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck001010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vline.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_primitive.png"/> <span title="A rational number with implicit precision">valueDecimal</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="datatypes.html#decimal">decimal</a></td><td class="heirarchy"/><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck001010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vline.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_primitive.png"/> <span title="A whole number">valueInteger</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="datatypes.html#integer">integer</a></td><td class="heirarchy"/><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck001010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vline.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_primitive.png"/> <span title="Value of &quot;true&quot; or &quot;false&quot;">valueBoolean</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="datatypes.html#boolean">boolean</a></td><td class="heirarchy"/><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck001010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vline.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_primitive.png"/> <span title="A date, or partial date (e.g. just year or year + month). There is no time zone. The format is a union of the schema types gYear, gYearMonth and date.  Dates SHALL be valid dates.">valueDate</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="datatypes.html#date">date</a></td><td class="heirarchy"/><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck001010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vline.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_primitive.png"/> <span title="A sequence of Unicode characters">valueString</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="datatypes.html#string">string</a></td><td class="heirarchy"/><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck001010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vline.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_primitive.png"/> <span title="A date, date-time or partial date (e.g. just year or year + month).  If hours and minutes are specified, a time zone SHALL be populated. The format is a union of the schema types gYear, gYearMonth, date and dateTime. Seconds may be provided but may also be ignored.  Dates SHALL be valid dates.">valueDateTime</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="datatypes.html#dateTime">dateTime</a></td><td class="heirarchy"/><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck001010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vline.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_primitive.png"/> <span title="An instant in time - known at least to the second">valueInstant</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="datatypes.html#instant">instant</a></td><td class="heirarchy"/><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck001000.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vline.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin_end.png"/><img class="heirarchy" src="icon_datatype.gif"/> <span title="A reference to a code defined by a terminology system.">valueCoding</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="datatypes.html#Coding">Coding</a></td><td class="heirarchy"/><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck0000.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin_end.png"/><img class="heirarchy" src="icon_reuse.png"/> <span title="Nested group, containing nested question for this question. The order of groups within the question is relevant.">group</span></td><td class="heirarchy">0..*</td><td class="heirarchy">see <a title="QuestionnaireAnswers.group" href="test">group</a></td><td class="heirarchy">Nested questionnaire group</td><td class="heirarchy"/></tr></table>
+
+<a name="tx"> </a>
+<h3><span class="sectioncount">4.7.3.1<a name="4.7.3.1"> </a></span> 
+Terminology Bindings
+</h3>
+<table class="grid">
+ <tr><th>Path</th><th>Definition</th><th>Type</th><th>Reference</th></tr>
+ <tr><td title="QuestionnaireAnswersStatus" valign="top">QuestionnaireAnswers.status </td><td valign="top">Lifecycle status of the questionnaire answers</td><td><a href="terminologies.html#code">Fixed</a></td><td valign="top"><a href="questionnaire-answers-status.html">http://hl7.org/fhir/questionnaire-answers-status</a></td> </tr>
+</table>
+<p> </p>
+
+
+<h3><span class="sectioncount">4.7.3.2<a name="4.7.3.2"> </a></span> Constraints</h3><ul><li><b title="Formal Invariant Identifier">Inv-1</b>: On QuestionnaireAnswers.group: Groups may either contain questions or groups but not both (xpath on f:QuestionnaireAnswers/f:group: <span style="font-family: Courier New, monospace">not(exists(f:group) and exists(f:question))</span>)</li></ul>
+
+
+<h2><span class="sectioncount">4.7.4<a name="4.7.4"> </a></span> 
+Notes:
+</h2>
+<ul>
+<li>Questionnaires can be authored by clinicians, the patient his/herself or a patients relatives (or even owner in the case of animals). Clinicians
+may author questionnaires, where the answers are provided by others on behalf of the patient his/herself. Additionally, information gathered for the
+purpose of a patient may be about the patient's relatives (e.g. in family anamnesis). Therefore, Questionnaire makes a distinction between the author,
+the subject and the source of information.</li>
+<li>A QuestionnaireAnswers may be stand-alone or may point to the form that defines the questions in <a href="questionnaire.html">Questionnaire</a>.  In
+this second case, the linkage between the questions and groups in the two resources is established using the <code>linkId</code> element.</li>
+<li>Because of the lack of explicit support for Questionnaires in HL7v3, HL7 CDA Documents frequently used named sections with
+Observations to model Questionnaires. Such use cases should now utilize the QuestionnaireAnswers Resource instead.</li>
+<li>The Questionnaire's <i>encounter</i> element can be used to link to the encounter during which the Questionnaire was taken. This can be relevant since the
+encounter gives context to the answers and can be used to relate information in the Questionnaire to orders and observations that were done during the same Encounter.</li>
+<li>The order of questions within groups, groups withing groups and groups withing questions in relevant and must be retained for display and capture.</li>
+</ul>
+
+<p>
+Refer to additional guidance provided in the <a href="questionnaire.html">Questionnaire</a> resource dealing with designs of questionnaires.
+</p>
+
+
+
+<a name="search"> </a>
+<h2><span class="sectioncount">4.7.5<a name="4.7.5"> </a></span> Search Parameters</h2>
+<p>Search parameters for this resource. The standard parameters also apply. See <a href="search.html">Searching</a> for more information about searching in REST, messaging, and services.</p>
+<table class="list">
+<tr><td><b>Name</b></td><td><b>Type</b></td><td><b>Description</b></td><td><b>Paths</b></td></tr>
+<tr><td>_id</td><td><a href="search.html#token">token</a></td><td>The logical resource id associated with the resource (must be supported by all servers)</td><td/></tr>
+<tr><td>_language</td><td><a href="search.html#token">token</a></td><td>The stated language of the resource</td><td/></tr>
+<tr><td>author</td><td><a href="search.html#reference">reference</a></td><td>The author of the questionnaire</td><td>QuestionnaireAnswers.author<br/>(<a href="patient.html">Patient</a>, <a href="practitioner.html">Practitioner</a>, <a href="relatedperson.html">RelatedPerson</a>)</td></tr>
+<tr><td>authored</td><td><a href="search.html#date">date</a></td><td>When the questionnaire was authored</td><td>QuestionnaireAnswers.authored</td></tr>
+<tr><td>encounter</td><td><a href="search.html#reference">reference</a></td><td>Encounter during which questionnaire was authored</td><td>QuestionnaireAnswers.encounter<br/>(<a href="encounter.html">Encounter</a>)</td></tr>
+<tr><td>questionnaire</td><td><a href="search.html#reference">reference</a></td><td>The questionnaire the answers are provided for</td><td>QuestionnaireAnswers.questionnaire<br/>(<a href="questionnaire.html">Questionnaire</a>)</td></tr>
+<tr><td>status</td><td><a href="search.html#token">token</a></td><td>The status of the questionnaire answers</td><td>QuestionnaireAnswers.status</td></tr>
+<tr><td>subject</td><td><a href="search.html#reference">reference</a></td><td>The subject of the questionnaire</td><td>QuestionnaireAnswers.subject<br/>(Any)</td></tr>
+</table>
+
+
+
+</div>
+
+
+				</div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+        
+    </div>  <!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment">  <!-- segment-footer -->
+		<div class="container">  <!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        &copy; HL7.org 2011 - 2014. FHIR DSTU (v0.2.1-????) generated on Fri, Jun 6, 2014 13:29+0000.   <!-- <a href="qa.html">QA Report</a> -->   <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a href="dstu.html">What's a DSTU?</a> | <a href="history.html">Version History</a> | <a href="license.html">License</a> | <a href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
+        </span>
+        </p>
+			</div>  <!-- /inner-wrapper -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
+    
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

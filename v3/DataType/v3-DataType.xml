@@ -1,0 +1,1155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  Code system retired.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>ANY
+            <a name="ANY"> </a>
+          </td>
+          <td>ANY</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  ANT&lt;ANY&gt;
+            <a name="ANT.60ANY.62"> </a>
+          </td>
+          <td>Annotated</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    ANT&lt;CD&gt;
+            <a name="ANT.60CD.62"> </a>
+          </td>
+          <td>Annotated Concept Descriptor</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    ANT&lt;PQ&gt;
+            <a name="ANT.60PQ.62"> </a>
+          </td>
+          <td>Annotated Physical Quantity</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  BAG&lt;ANY&gt;
+            <a name="BAG.60ANY.62"> </a>
+          </td>
+          <td>Bag</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    BAG&lt;CD&gt;
+            <a name="BAG.60CD.62"> </a>
+          </td>
+          <td>Bag Of Concept Descriptors</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    BAG&lt;PQ&gt;
+            <a name="BAG.60PQ.62"> </a>
+          </td>
+          <td>Bag Of Physical Quantities</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  BL
+            <a name="BL"> </a>
+          </td>
+          <td>Boolean</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  CD
+            <a name="CD"> </a>
+          </td>
+          <td>Concept Descriptor</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    CE
+            <a name="CE"> </a>
+          </td>
+          <td>Coded With Equivalents</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    CS
+            <a name="CS"> </a>
+          </td>
+          <td>Coded Simple Value</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    CV
+            <a name="CV"> </a>
+          </td>
+          <td>Coded Value</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  CR
+            <a name="CR"> </a>
+          </td>
+          <td>Concept Role</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  HXIT&lt;ANY&gt;
+            <a name="HXIT.60ANY.62"> </a>
+          </td>
+          <td>Historical</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    HXIT&lt;AD&gt;
+            <a name="HXIT.60AD.62"> </a>
+          </td>
+          <td>Historical Address</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  II
+            <a name="II"> </a>
+          </td>
+          <td>Instance Identifier</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  IVL&lt;QTY&gt;
+            <a name="IVL.60QTY.62"> </a>
+          </td>
+          <td>Interval</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    IVL&lt;INT&gt;
+            <a name="IVL.60INT.62"> </a>
+          </td>
+          <td>Interval Of Integer Numbers</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    IVL&lt;PQ&gt;
+            <a name="IVL.60PQ.62"> </a>
+          </td>
+          <td>Interval Of Physical Quantities</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      UVP&lt;IVL&lt;PQ&gt;&gt;
+            <a name="UVP.60IVL.60PQ.62.62"> </a>
+          </td>
+          <td>Uncertain Probabilistic Interval Of Physical Quant</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    IVL&lt;REAL&gt;
+            <a name="IVL.60REAL.62"> </a>
+          </td>
+          <td>Interval Of Real Numbers</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    IVL&lt;TS&gt;
+            <a name="IVL.60TS.62"> </a>
+          </td>
+          <td>Interval Of Points In Time</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      SET&lt;TS&gt;
+            <a name="SET.60TS.62"> </a>
+          </td>
+          <td>Set Of Points In Time</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        EIVL&lt;TS&gt;
+            <a name="EIVL.60TS.62"> </a>
+          </td>
+          <td>Event Related Interval</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        GTS
+            <a name="GTS"> </a>
+          </td>
+          <td>General Timing Specification</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        PIVL&lt;TS&gt;
+            <a name="PIVL.60TS.62"> </a>
+          </td>
+          <td>Periodic Interval Of Time</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  LIST&lt;ANY&gt;
+            <a name="LIST.60ANY.62"> </a>
+          </td>
+          <td>Sequence</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    LIST&lt;BL&gt;
+            <a name="LIST.60BL.62"> </a>
+          </td>
+          <td>Sequence Of Booleans</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      BIN
+            <a name="BIN"> </a>
+          </td>
+          <td>Binary Data</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        ED
+            <a name="ED"> </a>
+          </td>
+          <td>Encoded Data</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>6</td>
+          <td>          ST
+            <a name="ST"> </a>
+          </td>
+          <td>Character String</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>7</td>
+          <td>            ADXP
+            <a name="ADXP"> </a>
+          </td>
+          <td>Address Part</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>7</td>
+          <td>            ON
+            <a name="ON"> </a>
+          </td>
+          <td>Organization Name</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>7</td>
+          <td>            PNXP
+            <a name="PNXP"> </a>
+          </td>
+          <td>Person Name Part</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    LIST&lt;LIST&lt;ANY&gt;&gt;
+            <a name="LIST.60LIST.60ANY.62.62"> </a>
+          </td>
+          <td>Sequence Of Sequences Of Data Values</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      LIST&lt;LIST&lt;BL&gt;&gt;
+            <a name="LIST.60LIST.60BL.62.62"> </a>
+          </td>
+          <td>Sequence Of Sequence Of Booleans</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        LIST&lt;BIN&gt;
+            <a name="LIST.60BIN.62"> </a>
+          </td>
+          <td>Sequence Of Binary Data</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>6</td>
+          <td>          LIST&lt;ED&gt;
+            <a name="LIST.60ED.62"> </a>
+          </td>
+          <td>Sequence Of Encoded Data</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>7</td>
+          <td>            LIST&lt;ST&gt;
+            <a name="LIST.60ST.62"> </a>
+          </td>
+          <td>Sequence Of Character Strings</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>8</td>
+          <td>              LIST&lt;ADXP&gt;
+            <a name="LIST.60ADXP.62"> </a>
+          </td>
+          <td>Sequence Of Postal Address Parts</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>9</td>
+          <td>                AD
+            <a name="AD"> </a>
+          </td>
+          <td>Postal And Residential Address</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>8</td>
+          <td>              LIST&lt;PNXP&gt;
+            <a name="LIST.60PNXP.62"> </a>
+          </td>
+          <td>Sequence Of Person Name Parts</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>9</td>
+          <td>                PN
+            <a name="PN"> </a>
+          </td>
+          <td>Person Name Type</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  OID
+            <a name="OID"> </a>
+          </td>
+          <td>Object Identifier</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  QTY
+            <a name="QTY"> </a>
+          </td>
+          <td>Quantity</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    INT
+            <a name="INT"> </a>
+          </td>
+          <td>Integer Number</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    MO
+            <a name="MO"> </a>
+          </td>
+          <td>Monetary Amount</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    PPD&lt;QTY&gt;
+            <a name="PPD.60QTY.62"> </a>
+          </td>
+          <td>Parametric Probability Distribution</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    PQ
+            <a name="PQ"> </a>
+          </td>
+          <td>Physical Quantity</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      PPD&lt;PQ&gt;
+            <a name="PPD.60PQ.62"> </a>
+          </td>
+          <td>Parametric Probability Distribution Of Physical Quantity</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    REAL
+            <a name="REAL"> </a>
+          </td>
+          <td>Real Number</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      PPD&lt;REAL&gt;
+            <a name="PPD.60REAL.62"> </a>
+          </td>
+          <td>Parametric Probability Distribution Of Real Number</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    RTO
+            <a name="RTO"> </a>
+          </td>
+          <td>Ratio</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    TS
+            <a name="TS"> </a>
+          </td>
+          <td>Point In Time</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  SET&lt;ANY&gt;
+            <a name="SET.60ANY.62"> </a>
+          </td>
+          <td>Set</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    SET&lt;CD&gt;
+            <a name="SET.60CD.62"> </a>
+          </td>
+          <td>Set Of Concept Descriptors</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      SET&lt;UVP&lt;CD&gt;&gt;
+            <a name="SET.60UVP.60CD.62.62"> </a>
+          </td>
+          <td>Set Of Uncertain Probabilistic Concept Descriptor</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        NPPD&lt;CD&gt;
+            <a name="NPPD.60CD.62"> </a>
+          </td>
+          <td>Non Parametric Probability Distribution Of Concept Descriptors</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      SET&lt;CE&gt;
+            <a name="SET.60CE.62"> </a>
+          </td>
+          <td>Set Of Coded With Equivalents</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      SET&lt;CS&gt;
+            <a name="SET.60CS.62"> </a>
+          </td>
+          <td>Set Of Coded Simple Value</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      SET&lt;CV&gt;
+            <a name="SET.60CV.62"> </a>
+          </td>
+          <td>Set Of Coded Value</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    SET&lt;IVL&lt;PQ&gt;&gt;
+            <a name="SET.60IVL.60PQ.62.62"> </a>
+          </td>
+          <td>Set Of Intervals Of Physical Quantity</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      SET&lt;UVP&lt;IVL&lt;PQ&gt;&gt;&gt;
+            <a name="SET.60UVP.60IVL.60PQ.62.62.62"> </a>
+          </td>
+          <td>Set Of Uncertain Probabilistic Interval Of Physical Quantities</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        NPPD&lt;IVL&lt;PQ&gt;&gt;
+            <a name="NPPD.60IVL.60PQ.62.62"> </a>
+          </td>
+          <td>Non Parametric Probability Distribution Of Intervals of Physical Quantities</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    SET&lt;LIST&lt;ST&gt;&gt;
+            <a name="SET.60LIST.60ST.62.62"> </a>
+          </td>
+          <td>Set Of Sequences Of Character Strings</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      SET&lt;AD&gt;
+            <a name="SET.60AD.62"> </a>
+          </td>
+          <td>Set Of Addresses</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        SET&lt;HXIT&lt;AD&gt;&gt;
+            <a name="SET.60HXIT.60AD.62.62"> </a>
+          </td>
+          <td>Set Of Historical Addresses</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>6</td>
+          <td>          HIST&lt;AD&gt;
+            <a name="HIST.60AD.62"> </a>
+          </td>
+          <td>History Of Address</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    SET&lt;PQ&gt;
+            <a name="SET.60PQ.62"> </a>
+          </td>
+          <td>Set Of Physical Quantities</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    SET&lt;ST&gt;
+            <a name="SET.60ST.62"> </a>
+          </td>
+          <td>Set Of Character Strings</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    SET&lt;UVP&lt;ANY&gt;&gt;
+            <a name="SET.60UVP.60ANY.62.62"> </a>
+          </td>
+          <td>Set Of Uncertain Value Probabilistic</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      NPPD&lt;ANY&gt;
+            <a name="NPPD.60ANY.62"> </a>
+          </td>
+          <td>Non Parametric Probability Distribution</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    
+            <a href="#SET.60UVP.60CD.62.62">SET&lt;UVP&lt;CD&gt;&gt;</a>
+          </td>
+          <td/>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    
+            <a href="#SET.60UVP.60IVL.60PQ.62.62.62">SET&lt;UVP&lt;IVL&lt;PQ&gt;&gt;&gt;</a>
+          </td>
+          <td/>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  URL
+            <a name="URL"> </a>
+          </td>
+          <td>Universal Resource Locator</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    TEL
+            <a name="TEL"> </a>
+          </td>
+          <td>Telecommunication Address</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  UVN&lt;ANY&gt;
+            <a name="UVN.60ANY.62"> </a>
+          </td>
+          <td>Uncertain Value Narrative</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    UVN&lt;CD&gt;
+            <a name="UVN.60CD.62"> </a>
+          </td>
+          <td>Uncertain Narrative Concept Descriptor</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  UVP&lt;ANY&gt;
+            <a name="UVP.60ANY.62"> </a>
+          </td>
+          <td>Uncertain Value Probabilistic</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    
+            <a href="#UVP.60IVL.60PQ.62.62">UVP&lt;IVL&lt;PQ&gt;&gt;</a>
+          </td>
+          <td/>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    UVP&lt;CD&gt;
+            <a name="UVP.60CD.62"> </a>
+          </td>
+          <td>Uncertain Probabilistic Concept Descriptor</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>SET&lt;INT&gt;
+            <a name="SET.60INT.62"> </a>
+          </td>
+          <td>Set Of Integer Numbers</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <a href="#IVL.60INT.62">IVL&lt;INT&gt;</a>
+          </td>
+          <td/>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>SET&lt;REAL&gt;
+            <a name="SET.60REAL.62"> </a>
+          </td>
+          <td>Set Of Real Numbers</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <a href="#IVL.60REAL.62">IVL&lt;REAL&gt;</a>
+          </td>
+          <td/>
+          <td/>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/DataType"/>
+  <name value="v3 Code System DataType"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" Code system retired."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/DataType"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="ANY"/>
+      <display value="ANY"/>
+      <concept>
+        <code value="ANT&lt;ANY&gt;"/>
+        <display value="Annotated"/>
+        <concept>
+          <code value="ANT&lt;CD&gt;"/>
+          <display value="Annotated Concept Descriptor"/>
+        </concept>
+        <concept>
+          <code value="ANT&lt;PQ&gt;"/>
+          <display value="Annotated Physical Quantity"/>
+        </concept>
+      </concept>
+      <concept>
+        <code value="BAG&lt;ANY&gt;"/>
+        <display value="Bag"/>
+        <concept>
+          <code value="BAG&lt;CD&gt;"/>
+          <display value="Bag Of Concept Descriptors"/>
+        </concept>
+        <concept>
+          <code value="BAG&lt;PQ&gt;"/>
+          <display value="Bag Of Physical Quantities"/>
+        </concept>
+      </concept>
+      <concept>
+        <code value="BL"/>
+        <display value="Boolean"/>
+      </concept>
+      <concept>
+        <code value="CD"/>
+        <display value="Concept Descriptor"/>
+        <concept>
+          <code value="CE"/>
+          <display value="Coded With Equivalents"/>
+        </concept>
+        <concept>
+          <code value="CS"/>
+          <display value="Coded Simple Value"/>
+        </concept>
+        <concept>
+          <code value="CV"/>
+          <display value="Coded Value"/>
+        </concept>
+      </concept>
+      <concept>
+        <code value="CR"/>
+        <display value="Concept Role"/>
+      </concept>
+      <concept>
+        <code value="HXIT&lt;ANY&gt;"/>
+        <display value="Historical"/>
+        <concept>
+          <code value="HXIT&lt;AD&gt;"/>
+          <display value="Historical Address"/>
+        </concept>
+      </concept>
+      <concept>
+        <code value="II"/>
+        <display value="Instance Identifier"/>
+      </concept>
+      <concept>
+        <code value="IVL&lt;QTY&gt;"/>
+        <display value="Interval"/>
+        <concept>
+          <code value="IVL&lt;INT&gt;"/>
+          <display value="Interval Of Integer Numbers"/>
+        </concept>
+        <concept>
+          <code value="IVL&lt;PQ&gt;"/>
+          <display value="Interval Of Physical Quantities"/>
+          <concept>
+            <code value="UVP&lt;IVL&lt;PQ&gt;&gt;"/>
+            <display value="Uncertain Probabilistic Interval Of Physical Quant"/>
+          </concept>
+        </concept>
+        <concept>
+          <code value="IVL&lt;REAL&gt;"/>
+          <display value="Interval Of Real Numbers"/>
+        </concept>
+        <concept>
+          <code value="IVL&lt;TS&gt;"/>
+          <display value="Interval Of Points In Time"/>
+          <concept>
+            <code value="SET&lt;TS&gt;"/>
+            <display value="Set Of Points In Time"/>
+            <concept>
+              <code value="EIVL&lt;TS&gt;"/>
+              <display value="Event Related Interval"/>
+            </concept>
+            <concept>
+              <code value="GTS"/>
+              <display value="General Timing Specification"/>
+            </concept>
+            <concept>
+              <code value="PIVL&lt;TS&gt;"/>
+              <display value="Periodic Interval Of Time"/>
+            </concept>
+          </concept>
+        </concept>
+      </concept>
+      <concept>
+        <code value="LIST&lt;ANY&gt;"/>
+        <display value="Sequence"/>
+        <concept>
+          <code value="LIST&lt;BL&gt;"/>
+          <display value="Sequence Of Booleans"/>
+          <concept>
+            <code value="BIN"/>
+            <display value="Binary Data"/>
+            <concept>
+              <code value="ED"/>
+              <display value="Encoded Data"/>
+              <concept>
+                <code value="ST"/>
+                <display value="Character String"/>
+                <concept>
+                  <code value="ADXP"/>
+                  <display value="Address Part"/>
+                </concept>
+                <concept>
+                  <code value="ON"/>
+                  <display value="Organization Name"/>
+                </concept>
+                <concept>
+                  <code value="PNXP"/>
+                  <display value="Person Name Part"/>
+                </concept>
+              </concept>
+            </concept>
+          </concept>
+        </concept>
+        <concept>
+          <code value="LIST&lt;LIST&lt;ANY&gt;&gt;"/>
+          <display value="Sequence Of Sequences Of Data Values"/>
+          <concept>
+            <code value="LIST&lt;LIST&lt;BL&gt;&gt;"/>
+            <display value="Sequence Of Sequence Of Booleans"/>
+            <concept>
+              <code value="LIST&lt;BIN&gt;"/>
+              <display value="Sequence Of Binary Data"/>
+              <concept>
+                <code value="LIST&lt;ED&gt;"/>
+                <display value="Sequence Of Encoded Data"/>
+                <concept>
+                  <code value="LIST&lt;ST&gt;"/>
+                  <display value="Sequence Of Character Strings"/>
+                  <concept>
+                    <code value="LIST&lt;ADXP&gt;"/>
+                    <display value="Sequence Of Postal Address Parts"/>
+                    <concept>
+                      <code value="AD"/>
+                      <display value="Postal And Residential Address"/>
+                    </concept>
+                  </concept>
+                  <concept>
+                    <code value="LIST&lt;PNXP&gt;"/>
+                    <display value="Sequence Of Person Name Parts"/>
+                    <concept>
+                      <code value="PN"/>
+                      <display value="Person Name Type"/>
+                    </concept>
+                  </concept>
+                </concept>
+              </concept>
+            </concept>
+          </concept>
+        </concept>
+      </concept>
+      <concept>
+        <code value="OID"/>
+        <display value="Object Identifier"/>
+      </concept>
+      <concept>
+        <code value="QTY"/>
+        <display value="Quantity"/>
+        <concept>
+          <code value="INT"/>
+          <display value="Integer Number"/>
+        </concept>
+        <concept>
+          <code value="MO"/>
+          <display value="Monetary Amount"/>
+        </concept>
+        <concept>
+          <code value="PPD&lt;QTY&gt;"/>
+          <display value="Parametric Probability Distribution"/>
+        </concept>
+        <concept>
+          <code value="PQ"/>
+          <display value="Physical Quantity"/>
+          <concept>
+            <code value="PPD&lt;PQ&gt;"/>
+            <display value="Parametric Probability Distribution Of Physical Quantity"/>
+          </concept>
+        </concept>
+        <concept>
+          <code value="REAL"/>
+          <display value="Real Number"/>
+          <concept>
+            <code value="PPD&lt;REAL&gt;"/>
+            <display value="Parametric Probability Distribution Of Real Number"/>
+          </concept>
+        </concept>
+        <concept>
+          <code value="RTO"/>
+          <display value="Ratio"/>
+        </concept>
+        <concept>
+          <code value="TS"/>
+          <display value="Point In Time"/>
+        </concept>
+      </concept>
+      <concept>
+        <modifierExtension url="http://hl7.org/fhir/Profile/tools-extensions#subsumes">
+          <valueCode value="SET&lt;UVP&lt;CD&gt;&gt;"/>
+        </modifierExtension>
+        <modifierExtension url="http://hl7.org/fhir/Profile/tools-extensions#subsumes">
+          <valueCode value="SET&lt;UVP&lt;IVL&lt;PQ&gt;&gt;&gt;"/>
+        </modifierExtension>
+        <code value="SET&lt;ANY&gt;"/>
+        <display value="Set"/>
+        <concept>
+          <code value="SET&lt;CD&gt;"/>
+          <display value="Set Of Concept Descriptors"/>
+          <concept>
+            <code value="SET&lt;UVP&lt;CD&gt;&gt;"/>
+            <display value="Set Of Uncertain Probabilistic Concept Descriptor"/>
+            <concept>
+              <code value="NPPD&lt;CD&gt;"/>
+              <display value="Non Parametric Probability Distribution Of Concept Descriptors"/>
+            </concept>
+          </concept>
+          <concept>
+            <code value="SET&lt;CE&gt;"/>
+            <display value="Set Of Coded With Equivalents"/>
+          </concept>
+          <concept>
+            <code value="SET&lt;CS&gt;"/>
+            <display value="Set Of Coded Simple Value"/>
+          </concept>
+          <concept>
+            <code value="SET&lt;CV&gt;"/>
+            <display value="Set Of Coded Value"/>
+          </concept>
+        </concept>
+        <concept>
+          <code value="SET&lt;IVL&lt;PQ&gt;&gt;"/>
+          <display value="Set Of Intervals Of Physical Quantity"/>
+          <concept>
+            <code value="SET&lt;UVP&lt;IVL&lt;PQ&gt;&gt;&gt;"/>
+            <display value="Set Of Uncertain Probabilistic Interval Of Physical Quantities"/>
+            <concept>
+              <code value="NPPD&lt;IVL&lt;PQ&gt;&gt;"/>
+              <display value="Non Parametric Probability Distribution Of Intervals of Physical Quantities"/>
+            </concept>
+          </concept>
+        </concept>
+        <concept>
+          <code value="SET&lt;LIST&lt;ST&gt;&gt;"/>
+          <display value="Set Of Sequences Of Character Strings"/>
+          <concept>
+            <code value="SET&lt;AD&gt;"/>
+            <display value="Set Of Addresses"/>
+            <concept>
+              <code value="SET&lt;HXIT&lt;AD&gt;&gt;"/>
+              <display value="Set Of Historical Addresses"/>
+              <concept>
+                <code value="HIST&lt;AD&gt;"/>
+                <display value="History Of Address"/>
+              </concept>
+            </concept>
+          </concept>
+        </concept>
+        <concept>
+          <code value="SET&lt;PQ&gt;"/>
+          <display value="Set Of Physical Quantities"/>
+        </concept>
+        <concept>
+          <code value="SET&lt;ST&gt;"/>
+          <display value="Set Of Character Strings"/>
+        </concept>
+        <concept>
+          <code value="SET&lt;UVP&lt;ANY&gt;&gt;"/>
+          <display value="Set Of Uncertain Value Probabilistic"/>
+          <concept>
+            <code value="NPPD&lt;ANY&gt;"/>
+            <display value="Non Parametric Probability Distribution"/>
+          </concept>
+        </concept>
+      </concept>
+      <concept>
+        <code value="URL"/>
+        <display value="Universal Resource Locator"/>
+        <concept>
+          <code value="TEL"/>
+          <display value="Telecommunication Address"/>
+        </concept>
+      </concept>
+      <concept>
+        <code value="UVN&lt;ANY&gt;"/>
+        <display value="Uncertain Value Narrative"/>
+        <concept>
+          <code value="UVN&lt;CD&gt;"/>
+          <display value="Uncertain Narrative Concept Descriptor"/>
+        </concept>
+      </concept>
+      <concept>
+        <modifierExtension url="http://hl7.org/fhir/Profile/tools-extensions#subsumes">
+          <valueCode value="UVP&lt;IVL&lt;PQ&gt;&gt;"/>
+        </modifierExtension>
+        <code value="UVP&lt;ANY&gt;"/>
+        <display value="Uncertain Value Probabilistic"/>
+        <concept>
+          <code value="UVP&lt;CD&gt;"/>
+          <display value="Uncertain Probabilistic Concept Descriptor"/>
+        </concept>
+      </concept>
+    </concept>
+    <concept>
+      <modifierExtension url="http://hl7.org/fhir/Profile/tools-extensions#subsumes">
+        <valueCode value="IVL&lt;INT&gt;"/>
+      </modifierExtension>
+      <code value="SET&lt;INT&gt;"/>
+      <display value="Set Of Integer Numbers"/>
+    </concept>
+    <concept>
+      <modifierExtension url="http://hl7.org/fhir/Profile/tools-extensions#subsumes">
+        <valueCode value="IVL&lt;REAL&gt;"/>
+      </modifierExtension>
+      <code value="SET&lt;REAL&gt;"/>
+      <display value="Set Of Real Numbers"/>
+    </concept>
+  </define>
+</ValueSet>

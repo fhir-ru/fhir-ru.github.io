@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>PurposeOfUse</h2>
+      <p> Supports communication of purpose of use at a general level. (OID = 2.16.840.1.113883.1.11.20448)</p>
+      <p>This value set includes codes defined in other code systems, using the following rules:</p>
+      <ul>
+        <li>Include codes from 
+          <a href="../../../v3/ActReason/index.html">http://hl7.org/fhir/v3/ActReason</a> where concept  is-a  
+          <a href="../../../v3/ActReason/index.html#PurposeOfUse">PurposeOfUse</a>
+        </li>
+      </ul>
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/PurposeOfUse"/>
+  <version value="2013-12-07"/>
+  <name value="PurposeOfUse"/>
+  <publisher value="HL7 v3"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://www.hl7.org"/>
+  </telecom>
+  <description value=" Supports communication of purpose of use at a general level. (OID = 2.16.840.1.113883.1.11.20448)"/>
+  <status value="active"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/v3/ActReason"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="PurposeOfUse"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

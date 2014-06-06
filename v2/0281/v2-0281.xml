@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Referral Type</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>HOM
+            <a name="HOM"> </a>
+          </td>
+          <td>Home Care</td>
+          <td>added v2.3, removed after v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>Hom
+            <a name="Hom"> </a>
+          </td>
+          <td>Home Care</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>LAB
+            <a name="LAB"> </a>
+          </td>
+          <td>Laboratory</td>
+          <td>added v2.3, removed after v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>Lab
+            <a name="Lab"> </a>
+          </td>
+          <td>Laboratory</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>MED
+            <a name="MED"> </a>
+          </td>
+          <td>Medical</td>
+          <td>added v2.3, removed after v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>Med
+            <a name="Med"> </a>
+          </td>
+          <td>Medical</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>PSY
+            <a name="PSY"> </a>
+          </td>
+          <td>Psychiatric</td>
+          <td>added v2.3, removed after v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>Psy
+            <a name="Psy"> </a>
+          </td>
+          <td>Psychiatric</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>RAD
+            <a name="RAD"> </a>
+          </td>
+          <td>Radiology</td>
+          <td>added v2.3, removed after v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>Rad
+            <a name="Rad"> </a>
+          </td>
+          <td>Radiology</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>SKN
+            <a name="SKN"> </a>
+          </td>
+          <td>Skilled Nursing</td>
+          <td>added v2.3, removed after v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>Skn
+            <a name="Skn"> </a>
+          </td>
+          <td>Skilled Nursing</td>
+          <td>added v2.3.1</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0281"/>
+  <name value="v2 Referral Type"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0281 ( Referral Type)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0281"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="HOM"/>
+      <display value="Home Care"/>
+    </concept>
+    <concept>
+      <code value="Hom"/>
+      <display value="Home Care"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="LAB"/>
+      <display value="Laboratory"/>
+    </concept>
+    <concept>
+      <code value="Lab"/>
+      <display value="Laboratory"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="MED"/>
+      <display value="Medical"/>
+    </concept>
+    <concept>
+      <code value="Med"/>
+      <display value="Medical"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="PSY"/>
+      <display value="Psychiatric"/>
+    </concept>
+    <concept>
+      <code value="Psy"/>
+      <display value="Psychiatric"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="RAD"/>
+      <display value="Radiology"/>
+    </concept>
+    <concept>
+      <code value="Rad"/>
+      <display value="Radiology"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="SKN"/>
+      <display value="Skilled Nursing"/>
+    </concept>
+    <concept>
+      <code value="Skn"/>
+      <display value="Skilled Nursing"/>
+    </concept>
+  </define>
+</ValueSet>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Patient Class</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>B
+            <a name="B"> </a>
+          </td>
+          <td>Obstetrics</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>C
+            <a name="C"> </a>
+          </td>
+          <td>Commercial Account</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>E
+            <a name="E"> </a>
+          </td>
+          <td>Emergency</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>I
+            <a name="I"> </a>
+          </td>
+          <td>Inpatient</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>N
+            <a name="N"> </a>
+          </td>
+          <td>Not Applicable</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>O
+            <a name="O"> </a>
+          </td>
+          <td>Outpatient</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>P
+            <a name="P"> </a>
+          </td>
+          <td>Preadmit</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>R
+            <a name="R"> </a>
+          </td>
+          <td>Recurring patient</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>TK
+            <a name="TK"> </a>
+          </td>
+          <td/>
+          <td>added v2.2, removed after v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>TS
+            <a name="TS"> </a>
+          </td>
+          <td>teilstationäre Behandlung</td>
+          <td>added v2.2, removed after v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>U
+            <a name="U"> </a>
+          </td>
+          <td>Unknown</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>VS
+            <a name="VS"> </a>
+          </td>
+          <td>vollstationäre Behandlung</td>
+          <td>added v2.2, removed after v2.2</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0004"/>
+  <name value="v2 Patient Class"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0004 ( Patient Class)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0004"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="B"/>
+      <display value="Obstetrics"/>
+    </concept>
+    <concept>
+      <code value="C"/>
+      <display value="Commercial Account"/>
+    </concept>
+    <concept>
+      <code value="E"/>
+      <display value="Emergency"/>
+    </concept>
+    <concept>
+      <code value="I"/>
+      <display value="Inpatient"/>
+    </concept>
+    <concept>
+      <code value="N"/>
+      <display value="Not Applicable"/>
+    </concept>
+    <concept>
+      <code value="O"/>
+      <display value="Outpatient"/>
+    </concept>
+    <concept>
+      <code value="P"/>
+      <display value="Preadmit"/>
+    </concept>
+    <concept>
+      <code value="R"/>
+      <display value="Recurring patient"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="TK"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="TS"/>
+      <display value="teilstationäre Behandlung"/>
+    </concept>
+    <concept>
+      <code value="U"/>
+      <display value="Unknown"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="VS"/>
+      <display value="vollstationäre Behandlung"/>
+    </concept>
+  </define>
+</ValueSet>

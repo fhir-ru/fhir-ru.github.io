@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Accept/Application Acknowledgment Conditions</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>AL
+            <a name="AL"> </a>
+          </td>
+          <td>Always</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>ER
+            <a name="ER"> </a>
+          </td>
+          <td>Error/reject conditions only</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>NE
+            <a name="NE"> </a>
+          </td>
+          <td>Never</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>SU
+            <a name="SU"> </a>
+          </td>
+          <td>Successful completion only</td>
+          <td>added v2.2</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0155"/>
+  <name value="v2 Accept/Application Acknowledgment Conditions"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0155 ( Accept/Application Acknowledgment Conditions)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0155"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="AL"/>
+      <display value="Always"/>
+    </concept>
+    <concept>
+      <code value="ER"/>
+      <display value="Error/reject conditions only"/>
+    </concept>
+    <concept>
+      <code value="NE"/>
+      <display value="Never"/>
+    </concept>
+    <concept>
+      <code value="SU"/>
+      <display value="Successful completion only"/>
+    </concept>
+  </define>
+</ValueSet>

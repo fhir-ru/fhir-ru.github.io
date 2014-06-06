@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  Holds the codes used to identify the committees and SIGS of HL7 in RIM repository tables.
+        <br/>
+
+                  
+                     Deprecation Comment: Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>C00
+            <a name="C00"> </a>
+          </td>
+          <td>Modeling and Methodology</td>
+          <td>
+                        Modeling and Methodology
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>C01
+            <a name="C01"> </a>
+          </td>
+          <td>Technical Steering Committee</td>
+          <td>
+                        Technical Steering Committee
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>C02
+            <a name="C02"> </a>
+          </td>
+          <td>Control/Query/MasterFiles</td>
+          <td>
+                        Control/Query/MasterFiles
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>C03
+            <a name="C03"> </a>
+          </td>
+          <td>Patient Administration</td>
+          <td>
+                        Patient Administration
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>C04
+            <a name="C04"> </a>
+          </td>
+          <td>Orders/Observation</td>
+          <td>
+                        Orders/Observation
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>C06
+            <a name="C06"> </a>
+          </td>
+          <td>Financial Management</td>
+          <td>
+                        Financial Management
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>C09
+            <a name="C09"> </a>
+          </td>
+          <td>Medical records</td>
+          <td>
+                        Information Management (Medical Records)
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>C10
+            <a name="C10"> </a>
+          </td>
+          <td>Scheduling</td>
+          <td>
+                        Scheduling &amp; Referral
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>C12
+            <a name="C12"> </a>
+          </td>
+          <td>Patient Care</td>
+          <td>
+                        Patient Care
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>C20
+            <a name="C20"> </a>
+          </td>
+          <td>Structured Document Committee</td>
+          <td>
+                        PRA Technical Committee
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>C21
+            <a name="C21"> </a>
+          </td>
+          <td>Vocabulary Committee</td>
+          <td>
+                        PRA Technical Committee
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/HL7CommitteeIDInRIM"/>
+  <name value="v3 Code System HL7CommitteeIDInRIM"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" Holds the codes used to identify the committees and SIGS of HL7 in RIM repository tables.  Deprecation Comment:
+Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/HL7CommitteeIDInRIM"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="C00"/>
+      <display value="Modeling and Methodology"/>
+      <definition value="Modeling and Methodology"/>
+    </concept>
+    <concept>
+      <code value="C01"/>
+      <display value="Technical Steering Committee"/>
+      <definition value="Technical Steering Committee"/>
+    </concept>
+    <concept>
+      <code value="C02"/>
+      <display value="Control/Query/MasterFiles"/>
+      <definition value="Control/Query/MasterFiles"/>
+    </concept>
+    <concept>
+      <code value="C03"/>
+      <display value="Patient Administration"/>
+      <definition value="Patient Administration"/>
+    </concept>
+    <concept>
+      <code value="C04"/>
+      <display value="Orders/Observation"/>
+      <definition value="Orders/Observation"/>
+    </concept>
+    <concept>
+      <code value="C06"/>
+      <display value="Financial Management"/>
+      <definition value="Financial Management"/>
+    </concept>
+    <concept>
+      <code value="C09"/>
+      <display value="Medical records"/>
+      <definition value="Information Management (Medical Records)"/>
+    </concept>
+    <concept>
+      <code value="C10"/>
+      <display value="Scheduling"/>
+      <definition value="Scheduling &amp; Referral"/>
+    </concept>
+    <concept>
+      <code value="C12"/>
+      <display value="Patient Care"/>
+      <definition value="Patient Care"/>
+    </concept>
+    <concept>
+      <code value="C20"/>
+      <display value="Structured Document Committee"/>
+      <definition value="PRA Technical Committee"/>
+    </concept>
+    <concept>
+      <code value="C21"/>
+      <display value="Vocabulary Committee"/>
+      <definition value="PRA Technical Committee"/>
+    </concept>
+  </define>
+</ValueSet>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Report priority</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>R
+            <a name="R"> </a>
+          </td>
+          <td>Routine</td>
+          <td>from v2.1, removed after v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>S
+            <a name="S"> </a>
+          </td>
+          <td>Stat</td>
+          <td>from v2.1, removed after v2.6</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0109"/>
+  <name value="v2 Report priority"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0109 ( Report priority)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0109"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="R"/>
+      <display value="Routine"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="S"/>
+      <display value="Stat"/>
+    </concept>
+  </define>
+</ValueSet>

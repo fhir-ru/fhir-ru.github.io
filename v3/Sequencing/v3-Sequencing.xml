@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  Specifies sequence of sort order.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>A
+            <a name="A"> </a>
+          </td>
+          <td>Ascending</td>
+          <td>
+                        Ascending sequence order.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>D
+            <a name="D"> </a>
+          </td>
+          <td>Descending</td>
+          <td>
+                        Descending sequence order.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>N
+            <a name="N"> </a>
+          </td>
+          <td>None</td>
+          <td>
+                        No enforced sequence order.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/Sequencing"/>
+  <name value="v3 Code System Sequencing"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" Specifies sequence of sort order."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/Sequencing"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="A"/>
+      <display value="Ascending"/>
+      <definition value="Ascending sequence order."/>
+    </concept>
+    <concept>
+      <code value="D"/>
+      <display value="Descending"/>
+      <definition value="Descending sequence order."/>
+    </concept>
+    <concept>
+      <code value="N"/>
+      <display value="None"/>
+      <definition value="No enforced sequence order."/>
+    </concept>
+  </define>
+</ValueSet>

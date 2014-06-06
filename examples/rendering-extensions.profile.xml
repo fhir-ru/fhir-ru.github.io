@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Profile xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><pre> <span style="float: right"><a title="Documentation for this format" href="formats.html"><img alt="doco" src="help.png"/></a></span>
+<span style=" color: Gray">&lt;!-- <span style="color: Darkviolet">Extensions</span> --&gt;</span>
+&lt;<span title="Identifies how the specified element should be rendered when displayed."><b>extension</b></span>&gt;<a name="style"> </a>&lt;!--  <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Context: DataType = *</span> --&gt;
+ &lt;<b>url</b> value=&quot;<span style="color: maroon">http://hl7.org/fhir/Profile/rendering-extensions#style</span>&quot;/&gt;
+ &lt;<span title="Identifies how the specified element should be rendered when displayed."><b>valueString</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]&quot;/&gt;<span style=" color: Gray">&lt;!-- </span><span style="color: navy">Html style value</span><span style=" color: Gray"> --&gt;</span>
+&lt;/extension&gt;
+
+&lt;<span title="This is an equivalent of the string on which the extension is sent, but includes additional xhtml markup, such as bold, italics, styles, tables, etc."><b>extension</b></span>&gt;<a name="markup"> </a>&lt;!--  <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Context: DataType = string</span> --&gt;
+ &lt;<b>url</b> value=&quot;<span style="color: maroon">http://hl7.org/fhir/Profile/rendering-extensions#markup</span>&quot;/&gt;
+ &lt;<span title="This is an equivalent of the string on which the extension is sent, but includes additional xhtml markup, such as bold, italics, styles, tables, etc."><b>valueString</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]&quot;/&gt;<span style=" color: Gray">&lt;!-- </span><span style="color: navy">String equivalent with html markup</span><span style=" color: Gray"> --&gt;</span>
+&lt;/extension&gt;
+
+</pre></div>
+  </text>
+  <identifier value="http://hl7.org/fhir/profile/Extensions for rendering data elements"/>
+  <name value="Extensions for rendering data elements"/>
+  <publisher value="HL7 FHIR project"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/fhir"/>
+  </telecom>
+  <description value="A set of extensions dealing with controlling how particular data elements are rendered when displayed.  Initially created for questionnaires, but potentially useable elsewhere."/>
+  <status value="draft"/>
+  <date value="2014-04-23"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM"/>
+  </mapping>
+  <extensionDefn>
+    <code value="style"/>
+    <display value="Html style value"/>
+    <contextType value="datatype"/>
+    <context value="*"/>
+    <definition>
+      <short value="Html style value"/>
+      <formal value="Identifies how the specified element should be rendered when displayed."/>
+      <comments value="This extension would be equivalent to setting the HTML &quot;style&quot; attribute on the root element for the element containing the extension."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </definition>
+  </extensionDefn>
+  <extensionDefn>
+    <code value="markup"/>
+    <display value="String equivalent with html markup"/>
+    <contextType value="datatype"/>
+    <context value="string"/>
+    <definition>
+      <short value="String equivalent with html markup"/>
+      <formal value="This is an equivalent of the string on which the extension is sent, but includes additional xhtml markup, such as bold, italics, styles, tables, etc."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="ED can be XHTML content"/>
+      </mapping>
+    </definition>
+  </extensionDefn>
+</Profile>

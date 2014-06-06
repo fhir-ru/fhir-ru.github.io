@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Occurrence Span</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>...
+            <a name=".46.46.46"> </a>
+          </td>
+          <td>use NUBC codes</td>
+          <td>added v2.5.1, removed after v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>70
+            <a name="70"> </a>
+          </td>
+          <td>Qualifying stay dates for SNF</td>
+          <td>added v2.3.1, removed after v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>71
+            <a name="71"> </a>
+          </td>
+          <td>Prior stay dates</td>
+          <td>added v2.3.1, removed after v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>72
+            <a name="72"> </a>
+          </td>
+          <td>First/last visit</td>
+          <td>added v2.3.1, removed after v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>73
+            <a name="73"> </a>
+          </td>
+          <td>Benefit eligibility period</td>
+          <td>added v2.3.1, removed after v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>74
+            <a name="74"> </a>
+          </td>
+          <td>Non-covered level of care</td>
+          <td>added v2.3.1, removed after v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>75
+            <a name="75"> </a>
+          </td>
+          <td>SNF level of care</td>
+          <td>added v2.3.1, removed after v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>76
+            <a name="76"> </a>
+          </td>
+          <td>Patient liability</td>
+          <td>added v2.3.1, removed after v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>77
+            <a name="77"> </a>
+          </td>
+          <td>Provider liability period</td>
+          <td>added v2.3.1, removed after v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>78
+            <a name="78"> </a>
+          </td>
+          <td>SNF prior stay dates</td>
+          <td>added v2.3.1, removed after v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>79
+            <a name="79"> </a>
+          </td>
+          <td>Payer code</td>
+          <td>added v2.3.1, removed after v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>M0
+            <a name="M0"> </a>
+          </td>
+          <td>PSRO/UR approved stay dates</td>
+          <td>added v2.3.1, removed after v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>…
+            <a name=".8230"> </a>
+          </td>
+          <td>use NUBC codes</td>
+          <td>added v2.7</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0351"/>
+  <name value="v2 Occurrence Span"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0351 ( Occurrence Span)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0351"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="..."/>
+      <display value="use NUBC codes"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="70"/>
+      <display value="Qualifying stay dates for SNF"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="71"/>
+      <display value="Prior stay dates"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="72"/>
+      <display value="First/last visit"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="73"/>
+      <display value="Benefit eligibility period"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="74"/>
+      <display value="Non-covered level of care"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="75"/>
+      <display value="SNF level of care"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="76"/>
+      <display value="Patient liability"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="77"/>
+      <display value="Provider liability period"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="78"/>
+      <display value="SNF prior stay dates"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="79"/>
+      <display value="Payer code"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="M0"/>
+      <display value="PSRO/UR approved stay dates"/>
+    </concept>
+    <concept>
+      <code value="…"/>
+      <display value="use NUBC codes"/>
+    </concept>
+  </define>
+</ValueSet>

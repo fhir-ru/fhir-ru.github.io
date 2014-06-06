@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Order Control Codes</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>AF
+            <a name="AF"> </a>
+          </td>
+          <td>Order/service refill request approval</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>CA
+            <a name="CA"> </a>
+          </td>
+          <td>Cancel order/service request</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>CH
+            <a name="CH"> </a>
+          </td>
+          <td>Child order/service</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>CN
+            <a name="CN"> </a>
+          </td>
+          <td>Combined result</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>CR
+            <a name="CR"> </a>
+          </td>
+          <td>Canceled as requested</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>DC
+            <a name="DC"> </a>
+          </td>
+          <td>Discontinue order/service request</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>DE
+            <a name="DE"> </a>
+          </td>
+          <td>Data errors</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>DF
+            <a name="DF"> </a>
+          </td>
+          <td>Order/service refill request denied</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>DR
+            <a name="DR"> </a>
+          </td>
+          <td>Discontinued as requested</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>FU
+            <a name="FU"> </a>
+          </td>
+          <td>Order/service refilled, unsolicited</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>HD
+            <a name="HD"> </a>
+          </td>
+          <td>Hold order request</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>HR
+            <a name="HR"> </a>
+          </td>
+          <td>On hold as requested</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>LI
+            <a name="LI"> </a>
+          </td>
+          <td>Link order/service to patient care problem or goal</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>MC
+            <a name="MC"> </a>
+          </td>
+          <td>Miscellaneous Charge - not associated with an order</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>NA
+            <a name="NA"> </a>
+          </td>
+          <td>Number assigned</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>NW
+            <a name="NW"> </a>
+          </td>
+          <td>New order/service</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>NW or RO
+            <a name="NWorRO"> </a>
+          </td>
+          <td>Other application to filler application</td>
+          <td>added v2.6, removed after v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>OC
+            <a name="OC"> </a>
+          </td>
+          <td>Order/service canceled</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>OD
+            <a name="OD"> </a>
+          </td>
+          <td>Order/service discontinued</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>OE
+            <a name="OE"> </a>
+          </td>
+          <td>Order/service released</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>OF
+            <a name="OF"> </a>
+          </td>
+          <td>Order/service refilled as requested</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>OH
+            <a name="OH"> </a>
+          </td>
+          <td>Order/service held</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>OK
+            <a name="OK"> </a>
+          </td>
+          <td>Order/service accepted &amp; OK</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>OP
+            <a name="OP"> </a>
+          </td>
+          <td>Notification of order for outside dispense</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>OR
+            <a name="OR"> </a>
+          </td>
+          <td>Released as requested</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>PA
+            <a name="PA"> </a>
+          </td>
+          <td>Parent order/service</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>PR
+            <a name="PR"> </a>
+          </td>
+          <td>Previous Results with new order/service</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>PY
+            <a name="PY"> </a>
+          </td>
+          <td>Notification of replacement order for outside dispense</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>RE
+            <a name="RE"> </a>
+          </td>
+          <td>Observations/Performed Service to follow</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>RF
+            <a name="RF"> </a>
+          </td>
+          <td>Refill order/service request</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>RL
+            <a name="RL"> </a>
+          </td>
+          <td>Release previous hold</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>RO
+            <a name="RO"> </a>
+          </td>
+          <td>Replacement order</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>RP
+            <a name="RP"> </a>
+          </td>
+          <td>Order/service replace request</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>RQ
+            <a name="RQ"> </a>
+          </td>
+          <td>Replaced as requested</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>RR
+            <a name="RR"> </a>
+          </td>
+          <td>Request received</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>RU
+            <a name="RU"> </a>
+          </td>
+          <td>Replaced unsolicited</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>SC
+            <a name="SC"> </a>
+          </td>
+          <td>Status changed</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>SN
+            <a name="SN"> </a>
+          </td>
+          <td>Send order/service number</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>SR
+            <a name="SR"> </a>
+          </td>
+          <td>Response to send order/service status request</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>SS
+            <a name="SS"> </a>
+          </td>
+          <td>Send order/service status request</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>UA
+            <a name="UA"> </a>
+          </td>
+          <td>Unable to accept order/service</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>UC
+            <a name="UC"> </a>
+          </td>
+          <td>Unable to cancel</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>UD
+            <a name="UD"> </a>
+          </td>
+          <td>Unable to discontinue</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>UF
+            <a name="UF"> </a>
+          </td>
+          <td>Unable to refill</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>UH
+            <a name="UH"> </a>
+          </td>
+          <td>Unable to put on hold</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>UM
+            <a name="UM"> </a>
+          </td>
+          <td>Unable to replace</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>UN
+            <a name="UN"> </a>
+          </td>
+          <td>Unlink order/service from patient care problem or goal</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>UR
+            <a name="UR"> </a>
+          </td>
+          <td>Unable to release</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>UX
+            <a name="UX"> </a>
+          </td>
+          <td>Unable to change</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>XO
+            <a name="XO"> </a>
+          </td>
+          <td>Change order/service request</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>XR
+            <a name="XR"> </a>
+          </td>
+          <td>Changed as requested</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>XX
+            <a name="XX"> </a>
+          </td>
+          <td>Order/service changed, unsol.</td>
+          <td>from v2.1</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0119"/>
+  <name value="v2 Order Control Codes"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0119 ( Order Control Codes)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0119"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="AF"/>
+      <display value="Order/service refill request approval"/>
+    </concept>
+    <concept>
+      <code value="CA"/>
+      <display value="Cancel order/service request"/>
+    </concept>
+    <concept>
+      <code value="CH"/>
+      <display value="Child order/service"/>
+    </concept>
+    <concept>
+      <code value="CN"/>
+      <display value="Combined result"/>
+    </concept>
+    <concept>
+      <code value="CR"/>
+      <display value="Canceled as requested"/>
+    </concept>
+    <concept>
+      <code value="DC"/>
+      <display value="Discontinue order/service request"/>
+    </concept>
+    <concept>
+      <code value="DE"/>
+      <display value="Data errors"/>
+    </concept>
+    <concept>
+      <code value="DF"/>
+      <display value="Order/service refill request denied"/>
+    </concept>
+    <concept>
+      <code value="DR"/>
+      <display value="Discontinued as requested"/>
+    </concept>
+    <concept>
+      <code value="FU"/>
+      <display value="Order/service refilled, unsolicited"/>
+    </concept>
+    <concept>
+      <code value="HD"/>
+      <display value="Hold order request"/>
+    </concept>
+    <concept>
+      <code value="HR"/>
+      <display value="On hold as requested"/>
+    </concept>
+    <concept>
+      <code value="LI"/>
+      <display value="Link order/service to patient care problem or goal"/>
+    </concept>
+    <concept>
+      <code value="MC"/>
+      <display value="Miscellaneous Charge - not associated with an order"/>
+    </concept>
+    <concept>
+      <code value="NA"/>
+      <display value="Number assigned"/>
+    </concept>
+    <concept>
+      <code value="NW"/>
+      <display value="New order/service"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="NW or RO"/>
+      <display value="Other application to filler application"/>
+    </concept>
+    <concept>
+      <code value="OC"/>
+      <display value="Order/service canceled"/>
+    </concept>
+    <concept>
+      <code value="OD"/>
+      <display value="Order/service discontinued"/>
+    </concept>
+    <concept>
+      <code value="OE"/>
+      <display value="Order/service released"/>
+    </concept>
+    <concept>
+      <code value="OF"/>
+      <display value="Order/service refilled as requested"/>
+    </concept>
+    <concept>
+      <code value="OH"/>
+      <display value="Order/service held"/>
+    </concept>
+    <concept>
+      <code value="OK"/>
+      <display value="Order/service accepted &amp; OK"/>
+    </concept>
+    <concept>
+      <code value="OP"/>
+      <display value="Notification of order for outside dispense"/>
+    </concept>
+    <concept>
+      <code value="OR"/>
+      <display value="Released as requested"/>
+    </concept>
+    <concept>
+      <code value="PA"/>
+      <display value="Parent order/service"/>
+    </concept>
+    <concept>
+      <code value="PR"/>
+      <display value="Previous Results with new order/service"/>
+    </concept>
+    <concept>
+      <code value="PY"/>
+      <display value="Notification of replacement order for outside dispense"/>
+    </concept>
+    <concept>
+      <code value="RE"/>
+      <display value="Observations/Performed Service to follow"/>
+    </concept>
+    <concept>
+      <code value="RF"/>
+      <display value="Refill order/service request"/>
+    </concept>
+    <concept>
+      <code value="RL"/>
+      <display value="Release previous hold"/>
+    </concept>
+    <concept>
+      <code value="RO"/>
+      <display value="Replacement order"/>
+    </concept>
+    <concept>
+      <code value="RP"/>
+      <display value="Order/service replace request"/>
+    </concept>
+    <concept>
+      <code value="RQ"/>
+      <display value="Replaced as requested"/>
+    </concept>
+    <concept>
+      <code value="RR"/>
+      <display value="Request received"/>
+    </concept>
+    <concept>
+      <code value="RU"/>
+      <display value="Replaced unsolicited"/>
+    </concept>
+    <concept>
+      <code value="SC"/>
+      <display value="Status changed"/>
+    </concept>
+    <concept>
+      <code value="SN"/>
+      <display value="Send order/service number"/>
+    </concept>
+    <concept>
+      <code value="SR"/>
+      <display value="Response to send order/service status request"/>
+    </concept>
+    <concept>
+      <code value="SS"/>
+      <display value="Send order/service status request"/>
+    </concept>
+    <concept>
+      <code value="UA"/>
+      <display value="Unable to accept order/service"/>
+    </concept>
+    <concept>
+      <code value="UC"/>
+      <display value="Unable to cancel"/>
+    </concept>
+    <concept>
+      <code value="UD"/>
+      <display value="Unable to discontinue"/>
+    </concept>
+    <concept>
+      <code value="UF"/>
+      <display value="Unable to refill"/>
+    </concept>
+    <concept>
+      <code value="UH"/>
+      <display value="Unable to put on hold"/>
+    </concept>
+    <concept>
+      <code value="UM"/>
+      <display value="Unable to replace"/>
+    </concept>
+    <concept>
+      <code value="UN"/>
+      <display value="Unlink order/service from patient care problem or goal"/>
+    </concept>
+    <concept>
+      <code value="UR"/>
+      <display value="Unable to release"/>
+    </concept>
+    <concept>
+      <code value="UX"/>
+      <display value="Unable to change"/>
+    </concept>
+    <concept>
+      <code value="XO"/>
+      <display value="Change order/service request"/>
+    </concept>
+    <concept>
+      <code value="XR"/>
+      <display value="Changed as requested"/>
+    </concept>
+    <concept>
+      <code value="XX"/>
+      <display value="Order/service changed, unsol."/>
+    </concept>
+  </define>
+</ValueSet>

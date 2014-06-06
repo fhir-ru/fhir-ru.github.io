@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  
+                     Description:Indicates whether the name part is a given name, family name, prefix, suffix, etc.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>DEL
+            <a name="DEL"> </a>
+          </td>
+          <td>delimiter</td>
+          <td>
+                        
+                           Description:A delimiter has no meaning other than being literally printed in this name representation. A delimiter has no implicit leading and trailing white space.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>FAM
+            <a name="FAM"> </a>
+          </td>
+          <td>family</td>
+          <td>
+                        
+                           Description:Family name, this is the name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>GIV
+            <a name="GIV"> </a>
+          </td>
+          <td>given</td>
+          <td>
+                        
+                           Description:Given name. Note: don&#39;t call it &quot;first name&quot; since the given names do not always come first.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>TITLE
+            <a name="TITLE"> </a>
+          </td>
+          <td>title</td>
+          <td>
+                        
+                           Description:Part of the name that is acquired as a title due to academic, legal, employment or nobility status etc.
+            <br/>
+
+                        
+                           Note:Title name parts include name parts that come after the name such as qualifications, even if they are not always considered to be titles.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/EntityNamePartTypeR2"/>
+  <name value="v3 Code System EntityNamePartTypeR2"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="  Description:
+Indicates whether the name part is a given name, family name, prefix, suffix, etc."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/EntityNamePartTypeR2"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="DEL"/>
+      <display value="delimiter"/>
+      <definition value="Description:A delimiter has no meaning other than being literally printed in this name representation. A delimiter has no implicit leading and trailing white space."/>
+    </concept>
+    <concept>
+      <code value="FAM"/>
+      <display value="family"/>
+      <definition value="Description:Family name, this is the name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father."/>
+    </concept>
+    <concept>
+      <code value="GIV"/>
+      <display value="given"/>
+      <definition value="Description:Given name. Note: don&#39;t call it &quot;first name&quot; since the given names do not always come first."/>
+    </concept>
+    <concept>
+      <code value="TITLE"/>
+      <display value="title"/>
+      <definition value="Description:Part of the name that is acquired as a title due to academic, legal, employment or nobility status etc.
+
+                        
+                           Note:Title name parts include name parts that come after the name such as qualifications, even if they are not always considered to be titles."/>
+    </concept>
+  </define>
+</ValueSet>

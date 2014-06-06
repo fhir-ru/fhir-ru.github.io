@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  A value representing the level of proficiency in a language.
+        <br/>
+
+                  
+                     Example:Excellent, good, fair, poor.
+        <br/>
+
+                  
+                     OpenIssue: Description copied from Concept Domain of same name.  Must be verified.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>E
+            <a name="E"> </a>
+          </td>
+          <td>Excellent</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>F
+            <a name="F"> </a>
+          </td>
+          <td>Fair</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>G
+            <a name="G"> </a>
+          </td>
+          <td>Good</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>P
+            <a name="P"> </a>
+          </td>
+          <td>Poor</td>
+          <td/>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/LanguageAbilityProficiency"/>
+  <name value="v3 Code System LanguageAbilityProficiency"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" A value representing the level of proficiency in a language.  Example:
+Excellent, good, fair, poor.  OpenIssue:
+Description copied from Concept Domain of same name.  Must be verified."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/LanguageAbilityProficiency"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="E"/>
+      <display value="Excellent"/>
+    </concept>
+    <concept>
+      <code value="F"/>
+      <display value="Fair"/>
+    </concept>
+    <concept>
+      <code value="G"/>
+      <display value="Good"/>
+    </concept>
+    <concept>
+      <code value="P"/>
+      <display value="Poor"/>
+    </concept>
+  </define>
+</ValueSet>

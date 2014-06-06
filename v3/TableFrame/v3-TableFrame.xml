@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  These values are defined within the XHTML 4.0 Table Model
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>above
+            <a name="above"> </a>
+          </td>
+          <td>above</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>below
+            <a name="below"> </a>
+          </td>
+          <td>below</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>border
+            <a name="border"> </a>
+          </td>
+          <td>border</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>box
+            <a name="box"> </a>
+          </td>
+          <td>box</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>hsides
+            <a name="hsides"> </a>
+          </td>
+          <td>hsides</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>lhs
+            <a name="lhs"> </a>
+          </td>
+          <td>lhs</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>rhs
+            <a name="rhs"> </a>
+          </td>
+          <td>rhs</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>void
+            <a name="void"> </a>
+          </td>
+          <td>void</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>vsides
+            <a name="vsides"> </a>
+          </td>
+          <td>vsides</td>
+          <td/>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/TableFrame"/>
+  <name value="v3 Code System TableFrame"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" These values are defined within the XHTML 4.0 Table Model"/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/TableFrame"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="above"/>
+      <display value="above"/>
+    </concept>
+    <concept>
+      <code value="below"/>
+      <display value="below"/>
+    </concept>
+    <concept>
+      <code value="border"/>
+      <display value="border"/>
+    </concept>
+    <concept>
+      <code value="box"/>
+      <display value="box"/>
+    </concept>
+    <concept>
+      <code value="hsides"/>
+      <display value="hsides"/>
+    </concept>
+    <concept>
+      <code value="lhs"/>
+      <display value="lhs"/>
+    </concept>
+    <concept>
+      <code value="rhs"/>
+      <display value="rhs"/>
+    </concept>
+    <concept>
+      <code value="void"/>
+      <display value="void"/>
+    </concept>
+    <concept>
+      <code value="vsides"/>
+      <display value="vsides"/>
+    </concept>
+  </define>
+</ValueSet>

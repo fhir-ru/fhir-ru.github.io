@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Check Digit Scheme</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>BCV
+            <a name="BCV"> </a>
+          </td>
+          <td>Bank Card Validation Number</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>ISO
+            <a name="ISO"> </a>
+          </td>
+          <td>ISO 7064: 1983</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>M10
+            <a name="M10"> </a>
+          </td>
+          <td>Mod 10 algorithm</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>M11
+            <a name="M11"> </a>
+          </td>
+          <td>Mod 11 algorithm</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>NPI
+            <a name="NPI"> </a>
+          </td>
+          <td>Check digit algorithm in the US National Provider Identifier</td>
+          <td>added v2.3.1</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0061"/>
+  <name value="v2 Check Digit Scheme"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0061 ( Check Digit Scheme)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0061"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="BCV"/>
+      <display value="Bank Card Validation Number"/>
+    </concept>
+    <concept>
+      <code value="ISO"/>
+      <display value="ISO 7064: 1983"/>
+    </concept>
+    <concept>
+      <code value="M10"/>
+      <display value="Mod 10 algorithm"/>
+    </concept>
+    <concept>
+      <code value="M11"/>
+      <display value="Mod 11 algorithm"/>
+    </concept>
+    <concept>
+      <code value="NPI"/>
+      <display value="Check digit algorithm in the US National Provider Identifier"/>
+    </concept>
+  </define>
+</ValueSet>

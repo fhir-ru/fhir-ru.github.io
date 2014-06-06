@@ -1,0 +1,836 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>V2-0119.xml - FHIR v0.2.1</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="../../fhir.css" rel="stylesheet"/>
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="../.././dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="../.././assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="../.././assets/css/project.css" rel="stylesheet"/>
+  <link href="../.././assets/css/pygments-manni.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="../.././assets/js/html5shiv.js"></script>
+  <script src="../.././assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../.././assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../.././assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../.././assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="../.././assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="../.././assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="../.././assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="../.././assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="../../index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="../../index.html">Home</a></li>
+              <li><a href="../../documentation.html">Documentation</a></li>
+              <li><a href="../../implementation.html">Implementation</a></li>
+              <li><a href="../../resourcelist.html">Resources</a></li>
+              <li><a href="../../clinical.html">Clinical</a></li>
+              <li><a href="../../administration.html">Administrative</a></li>
+              <li><a href="../../infrastructure.html">Infrastructure</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../documentation.html">Documentation</a></li>        <li><a href="../../terminologies.html">Using Codes</a></li>        <li><a href="../../terminologies-v2.html">V2 Tables</a></li>        <li><a href="index.html">v2-0119</a></li>        <li><b>Instance</b></li>        <!-- v2-0119.xml.html / v2:tbl0119 -->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<h1>V2-0119.xml</h1>
+
+<div class="example">
+<p>FHIR Value set/code system definition for HL7 v2 table 0119 ( Order Control Codes)</p>
+<p><a href="v2-0119.xml">Raw XML</a></p>
+<pre class="xml">
+<span class="xmltag">&lt;ValueSet</span><span class="xmlattr"> xmlns="<span class="xmlattrvalue">http://hl7.org/fhir</span>"</span><span class="xmltag">&gt;</span><b>
+  </b><span class="xmltag">&lt;text</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">additional</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;div</span><span class="xmlattr"> xmlns="<span class="xmlattrvalue">http://www.w3.org/1999/xhtml</span>"</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;p</span><span class="xmltag">&gt;</span><b>Order Control Codes</b><span class="xmltag">&lt;/p&gt;</span><b>
+
+      </b><span class="xmltag">&lt;table</span><span class="xmlattr"> class="<span class="xmlattrvalue">grid</span>"</span><span class="xmltag">&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>Code</b><span class="xmltag">&lt;/b&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>Description</b><span class="xmltag">&lt;/b&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>Version</b><span class="xmltag">&lt;/b&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>AF
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">AF</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Order/service refill request approval</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>added v2.3</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>CA
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">CA</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Cancel order/service request</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>from v2.1</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>CH
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">CH</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Child order/service</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>from v2.1</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>CN
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">CN</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Combined result</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>from v2.1</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>CR
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">CR</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Canceled as requested</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>added v2.2</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>DC
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">DC</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Discontinue order/service request</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>from v2.1</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>DE
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">DE</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Data errors</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>from v2.1</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>DF
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">DF</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Order/service refill request denied</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>added v2.3</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>DR
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">DR</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Discontinued as requested</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>from v2.1</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>FU
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">FU</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Order/service refilled, unsolicited</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>added v2.3</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>HD
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">HD</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Hold order request</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>from v2.1</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>HR
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">HR</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>On hold as requested</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>from v2.1</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>LI
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">LI</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Link order/service to patient care problem or goal</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>added v2.3.1</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>MC
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">MC</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Miscellaneous Charge - not associated with an order</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>added v2.6</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>NA
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">NA</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Number assigned</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>from v2.1</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>NW
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">NW</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>New order/service</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>from v2.1</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>NW or RO
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">NWorRO</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Other application to filler application</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>added v2.6, removed after v2.6</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>OC
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">OC</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Order/service canceled</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>added v2.2</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>OD
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">OD</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Order/service discontinued</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>from v2.1</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>OE
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">OE</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Order/service released</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>added v2.3</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>OF
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">OF</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Order/service refilled as requested</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>added v2.3</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>OH
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">OH</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Order/service held</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>added v2.2</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>OK
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">OK</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Order/service accepted &amp;amp; OK</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>from v2.1</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>OP
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">OP</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Notification of order for outside dispense</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>added v2.5</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>OR
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">OR</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Released as requested</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>from v2.1</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>PA
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">PA</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Parent order/service</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>from v2.1</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>PR
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">PR</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Previous Results with new order/service</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>added v2.4</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>PY
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">PY</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Notification of replacement order for outside dispense</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>added v2.5</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>RE
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">RE</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Observations/Performed Service to follow</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>from v2.1</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>RF
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">RF</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Refill order/service request</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>added v2.3</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>RL
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">RL</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Release previous hold</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>added v2.2</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>RO
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">RO</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Replacement order</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>from v2.1</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>RP
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">RP</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Order/service replace request</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>from v2.1</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>RQ
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">RQ</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Replaced as requested</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>added v2.2</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>RR
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">RR</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Request received</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>from v2.1</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>RU
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">RU</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Replaced unsolicited</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>from v2.1</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>SC
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">SC</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Status changed</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>added v2.2</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>SN
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">SN</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Send order/service number</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>from v2.1</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>SR
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">SR</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Response to send order/service status request</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>added v2.2</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>SS
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">SS</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Send order/service status request</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>from v2.1</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>UA
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">UA</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Unable to accept order/service</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>added v2.3</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>UC
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">UC</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Unable to cancel</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>added v2.2</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>UD
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">UD</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Unable to discontinue</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>from v2.1</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>UF
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">UF</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Unable to refill</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>added v2.3</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>UH
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">UH</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Unable to put on hold</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>from v2.1</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>UM
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">UM</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Unable to replace</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>added v2.2</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>UN
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">UN</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Unlink order/service from patient care problem or goal</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>added v2.3.1</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>UR
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">UR</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Unable to release</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>from v2.1</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>UX
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">UX</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Unable to change</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>from v2.1</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>XO
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">XO</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Change order/service request</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>added v2.2</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>XR
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">XR</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Changed as requested</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>from v2.1</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>XX
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">XX</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Order/service changed, unsol.</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>from v2.1</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+
+      </b><span class="xmltag">&lt;/table&gt;</span><b>
+
+    </b><span class="xmltag">&lt;/div&gt;</span><b>
+  </b><span class="xmltag">&lt;/text&gt;</span><b>
+  </b><span class="xmltag">&lt;identifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/v2/vs/0119</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">v2 Order Control Codes</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;publisher</span><span class="xmlattr"> value="<span class="xmlattrvalue">HL7, Inc</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;telecom</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">url</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;value</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;/telecom&gt;</span><b>
+  </b><span class="xmltag">&lt;description</span><span class="xmlattr"> value="<span class="xmlattrvalue">FHIR Value set/code system definition for HL7 v2 table 0119 ( Order Control Codes)</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">active</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;date</span><span class="xmlattr"> value="<span class="xmlattrvalue">2011-01-28</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;define</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/v2/0119</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;caseSensitive</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">AF</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Order/service refill request approval</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">CA</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Cancel order/service request</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">CH</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Child order/service</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">CN</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Combined result</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">CR</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Canceled as requested</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">DC</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Discontinue order/service request</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">DE</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Data errors</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">DF</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Order/service refill request denied</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">DR</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Discontinued as requested</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">FU</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Order/service refilled, unsolicited</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">HD</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Hold order request</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">HR</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">On hold as requested</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">LI</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Link order/service to patient care problem or goal</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">MC</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Miscellaneous Charge - not associated with an order</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">NA</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Number assigned</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">NW</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">New order/service</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/Profile/tools-extensions#deprecated</span>"</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;valueBoolean</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/extension&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">NW or RO</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Other application to filler application</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">OC</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Order/service canceled</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">OD</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Order/service discontinued</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">OE</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Order/service released</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">OF</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Order/service refilled as requested</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">OH</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Order/service held</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">OK</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Order/service accepted &amp;amp; OK</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">OP</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Notification of order for outside dispense</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">OR</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Released as requested</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">PA</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Parent order/service</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">PR</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Previous Results with new order/service</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">PY</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Notification of replacement order for outside dispense</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">RE</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Observations/Performed Service to follow</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">RF</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Refill order/service request</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">RL</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Release previous hold</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">RO</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Replacement order</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">RP</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Order/service replace request</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">RQ</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Replaced as requested</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">RR</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Request received</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">RU</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Replaced unsolicited</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">SC</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Status changed</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">SN</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Send order/service number</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">SR</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Response to send order/service status request</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">SS</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Send order/service status request</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">UA</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Unable to accept order/service</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">UC</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Unable to cancel</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">UD</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Unable to discontinue</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">UF</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Unable to refill</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">UH</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Unable to put on hold</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">UM</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Unable to replace</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">UN</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Unlink order/service from patient care problem or goal</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">UR</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Unable to release</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">UX</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Unable to change</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">XO</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Change order/service request</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">XR</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Changed as requested</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">XX</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Order/service changed, unsol.</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+  </b><span class="xmltag">&lt;/define&gt;</span><b>
+</b><span class="xmltag">&lt;/ValueSet&gt;</span></pre>
+</div>
+
+
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011 - 2014. FHIR DSTU (v0.2.1-????) generated on Fri, Jun 6, 2014 13:29+0000. <!-- <a href="../../qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a href="../../dstu.html">What's a DSTU?</a> | <a href="../../history.html">Version History</a> | <a href="../../license.html">License</a> | <a href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../.././assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="../.././dist/js/bootstrap.min.js"> </script>
+<script src="../.././assets/js/respond.min.js"> </script>
+
+<script src="../.././assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

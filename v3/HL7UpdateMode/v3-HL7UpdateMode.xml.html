@@ -1,0 +1,402 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>V3-HL7UpdateMode.xml - FHIR v0.2.1</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="../../fhir.css" rel="stylesheet"/>
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="../.././dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="../.././assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="../.././assets/css/project.css" rel="stylesheet"/>
+  <link href="../.././assets/css/pygments-manni.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="../.././assets/js/html5shiv.js"></script>
+  <script src="../.././assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../.././assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../.././assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../.././assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="../.././assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="../.././assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="../.././assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="../.././assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="../../index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="../../index.html">Home</a></li>
+              <li><a href="../../documentation.html">Documentation</a></li>
+              <li><a href="../../implementation.html">Implementation</a></li>
+              <li><a href="../../resourcelist.html">Resources</a></li>
+              <li><a href="../../clinical.html">Clinical</a></li>
+              <li><a href="../../administration.html">Administrative</a></li>
+              <li><a href="../../infrastructure.html">Infrastructure</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../documentation.html">Documentation</a></li>        <li><a href="../../terminologies.html">Using Codes</a></li>        <li><a href="../../terminologies-v3.html">V3 Namespaces</a></li>        <li><a href="index.html">HL7UpdateMode</a></li>        <li><b>Instance</b></li>        <!-- v3-HL7UpdateMode.xml.html / v3:cs:HL7UpdateMode -->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<h1>V3-HL7UpdateMode.xml</h1>
+
+<div class="example">
+<p> The possible modes of updating that occur when an attribute is received by a system that already contains values for that attribute.</p>
+<p><a href="v3-HL7UpdateMode.xml">Raw XML</a></p>
+<pre class="xml">
+<span class="xmltag">&lt;ValueSet</span><span class="xmlattr"> xmlns="<span class="xmlattrvalue">http://hl7.org/fhir</span>"</span><span class="xmltag">&gt;</span><b>
+  </b><span class="xmltag">&lt;text</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">generated</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;div</span><span class="xmlattr"> xmlns="<span class="xmlattrvalue">http://www.w3.org/1999/xhtml</span>"</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;p</span><span class="xmltag">&gt;</span><b>Release Date: 2013-12-07</b><span class="xmltag">&lt;/p&gt;</span><b>
+
+      </b><span class="xmltag">&lt;h2</span><span class="xmltag">&gt;</span><b>Description</b><span class="xmltag">&lt;/h2&gt;</span><b>
+
+      </b><span class="xmltag">&lt;p</span><span class="xmltag">&gt;</span><b>
+                  The possible modes of updating that occur when an attribute is received
+           by a system that already contains values for that attribute.
+        </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+               
+      </b><span class="xmltag">&lt;/p&gt;</span><b>
+
+      </b><span class="xmltag">&lt;hr</span><span class="xmltag">/&gt;</span><b>
+
+      </b><span class="xmltag">&lt;table</span><span class="xmlattr"> class="<span class="xmlattrvalue">grid</span>"</span><span class="xmltag">&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>Level</b><span class="xmltag">&lt;/b&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>Code</b><span class="xmltag">&lt;/b&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>Display</b><span class="xmltag">&lt;/b&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>Definition</b><span class="xmltag">&lt;/b&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>1</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>A
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">A</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Add</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        
+                           Description:The item was (or is to be) added, having not been
+               present immediately before. (If it is already present, this may be treated as an error
+               condition.)
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>1</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>AR
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">AR</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Add or Replace</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        
+                           Description:The item was (or is to be) either added or replaced.
+               
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>1</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>D
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">D</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Remove</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        
+                           Description:The item was (or is to be) removed (sometimes referred
+               to as deleted). If the item is part of a collection, delete any matching items.
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>1</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>K
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">K</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Key</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        
+                           Description:This item is part of the identifying information
+               for this object.
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>1</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>N
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">N</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>No Change</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        
+                           Description:There was (or is to be) no change to the item.
+               This is primarily used when this element has not changed, but other attributes in the
+               instance have changed. 
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>1</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>R
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">R</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Replace</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        
+                           Description:The item existed previously and has (or is to be)
+               revised. (If an item does not already exist, this may be treated as an error condition.)
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>1</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>REF
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">REF</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Reference</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        
+                           Description:This item provides enough information to allow
+               a processing system to locate the full applicable record by identifying the object.
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>1</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>U
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">U</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Unknown</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        
+                           Description:Description:&amp;lt;/b&amp;gt;It is not specified whether
+               or what kind of change has occurred to the item, or whether the item is present as a reference
+               or identifying property. 
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+
+      </b><span class="xmltag">&lt;/table&gt;</span><b>
+
+    </b><span class="xmltag">&lt;/div&gt;</span><b>
+  </b><span class="xmltag">&lt;/text&gt;</span><b>
+  </b><span class="xmltag">&lt;identifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/v3/vs/HL7UpdateMode</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">v3 Code System HL7UpdateMode</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;publisher</span><span class="xmlattr"> value="<span class="xmlattrvalue">HL7, Inc</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;telecom</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">url</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;value</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;/telecom&gt;</span><b>
+  </b><span class="xmltag">&lt;description</span><span class="xmlattr"> value="<span class="xmlattrvalue"> The possible modes of updating that occur when an attribute is received by a system that
+     already contains values for that attribute.</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">active</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;date</span><span class="xmlattr"> value="<span class="xmlattrvalue">2013-12-07T00:00:00-00:00</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;define</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/v3/HL7UpdateMode</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;caseSensitive</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">A</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Add</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">Description:The item was (or is to be) added, having not been present immediately before.
+         (If it is already present, this may be treated as an error condition.)</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">AR</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Add or Replace</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">Description:The item was (or is to be) either added or replaced.</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">D</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Remove</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">Description:The item was (or is to be) removed (sometimes referred to as deleted). If
+         the item is part of a collection, delete any matching items.</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">K</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Key</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">Description:This item is part of the identifying information for this object.</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">N</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">No Change</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">Description:There was (or is to be) no change to the item. This is primarily used when
+         this element has not changed, but other attributes in the instance have changed.</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">R</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Replace</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">Description:The item existed previously and has (or is to be) revised. (If an item does
+         not already exist, this may be treated as an error condition.)</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">REF</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Reference</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">Description:This item provides enough information to allow a processing system to locate
+         the full applicable record by identifying the object.</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">U</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Unknown</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">Description:Description:&amp;lt;/b&amp;gt;It is not specified whether or what kind of change has
+         occurred to the item, or whether the item is present as a reference or identifying property.</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+  </b><span class="xmltag">&lt;/define&gt;</span><b>
+</b><span class="xmltag">&lt;/ValueSet&gt;</span></pre>
+</div>
+
+
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011 - 2014. FHIR DSTU (v0.2.1-????) generated on Fri, Jun 6, 2014 13:29+0000. <!-- <a href="../../qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a href="../../dstu.html">What's a DSTU?</a> | <a href="../../history.html">Version History</a> | <a href="../../license.html">License</a> | <a href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../.././assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="../.././dist/js/bootstrap.min.js"> </script>
+<script src="../.././assets/js/respond.min.js"> </script>
+
+<script src="../.././assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

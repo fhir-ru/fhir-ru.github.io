@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  Specifies the mode, immediate versus deferred or queued, by which a receiver should communicate its receiver responsibilities.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>D
+            <a name="D"> </a>
+          </td>
+          <td>deferred</td>
+          <td>
+                        The receiver may respond in a non-immediate manner. Note: this will be the default value.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>I
+            <a name="I"> </a>
+          </td>
+          <td>immediate</td>
+          <td>
+                        The receiver is required to assume that the sender is blocking and behave appropriately by sending an immediate response.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>Q
+            <a name="Q"> </a>
+          </td>
+          <td>queue</td>
+          <td>
+                        The receiver shall keep any application responses in a queue until such time as the queue is polled.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/ResponseMode"/>
+  <name value="v3 Code System ResponseMode"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" Specifies the mode, immediate versus deferred or queued, by which a receiver should communicate its receiver responsibilities."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/ResponseMode"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="D"/>
+      <display value="deferred"/>
+      <definition value="The receiver may respond in a non-immediate manner. Note: this will be the default value."/>
+    </concept>
+    <concept>
+      <code value="I"/>
+      <display value="immediate"/>
+      <definition value="The receiver is required to assume that the sender is blocking and behave appropriately by sending an immediate response."/>
+    </concept>
+    <concept>
+      <code value="Q"/>
+      <display value="queue"/>
+      <definition value="The receiver shall keep any application responses in a queue until such time as the queue is polled."/>
+    </concept>
+  </define>
+</ValueSet>

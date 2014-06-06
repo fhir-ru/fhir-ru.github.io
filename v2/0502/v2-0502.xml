@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Non-Subject Consenter Reason</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>LM
+            <a name="LM"> </a>
+          </td>
+          <td>Legally mandated</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>MIN
+            <a name="MIN"> </a>
+          </td>
+          <td>Subject is a minor</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>NC
+            <a name="NC"> </a>
+          </td>
+          <td>Subject is not competent to consent</td>
+          <td>added v2.5</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0502"/>
+  <name value="v2 Non-Subject Consenter Reason"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0502 ( Non-Subject Consenter Reason)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0502"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="LM"/>
+      <display value="Legally mandated"/>
+    </concept>
+    <concept>
+      <code value="MIN"/>
+      <display value="Subject is a minor"/>
+    </concept>
+    <concept>
+      <code value="NC"/>
+      <display value="Subject is not competent to consent"/>
+    </concept>
+  </define>
+</ValueSet>

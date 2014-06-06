@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  Specifies the reliability with which the identifier is known. This attribute MAY be used to assist with identifier matching algorithms.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>ISS
+            <a name="ISS"> </a>
+          </td>
+          <td>Issued by System</td>
+          <td>
+                        
+                           Description: The identifier was issued by the system responsible for constructing the instance.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>UNV
+            <a name="UNV"> </a>
+          </td>
+          <td>Unverified by system</td>
+          <td>
+                        
+                           Description: The identifier was provided to the system that constructed the instance, but has not been verified. e.g. a Drivers  license entered manually into a system by a user.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>VRF
+            <a name="VRF"> </a>
+          </td>
+          <td>Verified by system</td>
+          <td>
+                        
+                           Description: The identifier was not issued by the system responsible for constructing the instance, but the system that captured the id has verified the identifier with the issuing authority, or with another system that has verified the identifier.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/IdentifierReliability"/>
+  <name value="v3 Code System IdentifierReliability"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" Specifies the reliability with which the identifier is known. This attribute MAY be used to assist with identifier matching algorithms."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/IdentifierReliability"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="ISS"/>
+      <display value="Issued by System"/>
+      <definition value="Description: The identifier was issued by the system responsible for constructing the instance."/>
+    </concept>
+    <concept>
+      <code value="UNV"/>
+      <display value="Unverified by system"/>
+      <definition value="Description: The identifier was provided to the system that constructed the instance, but has not been verified. e.g. a Drivers  license entered manually into a system by a user."/>
+    </concept>
+    <concept>
+      <code value="VRF"/>
+      <display value="Verified by system"/>
+      <definition value="Description: The identifier was not issued by the system responsible for constructing the instance, but the system that captured the id has verified the identifier with the issuing authority, or with another system that has verified the identifier."/>
+    </concept>
+  </define>
+</ValueSet>

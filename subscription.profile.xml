@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Profile xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><pre>
+&lt;<a title="Todo." class="dict" href="subscription-definitions.html#Subscription"><b>Subscription</b></a> xmlns=&quot;http://hl7.org/fhir&quot;&gt; <span style="float: right"><a title="Documentation for this format" href="formats.html"><img alt="doco" src="help.png"/></a></span>
+ &lt;!-- from <a href="resources.html">Resource</a>: <a href="extensibility.html">extension</a>, <a href="extensibility.html#modifierExtension">modifierExtension</a>, language, <a href="narrative.html#Narrative">text</a>, and <a href="references.html#contained">contained</a> --&gt;
+ &lt;<a title="Todo." class="dict" href="subscription-definitions.html#Subscription.criteria"><b>criteria</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: navy">Rule for server push criteria</span><span style="color: Gray"> --&gt;</span>
+ &lt;<a title="Todo." class="dict" href="subscription-definitions.html#Subscription.contact"><b>contact</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..*</b></span> <span style="color: darkgreen"><a href="datatypes.html#Contact">Contact</a></span> <span style="color: navy">Contact details for source (e.g. troubleshooting)</span><span style="color: Gray"> --&gt;</span>&lt;/contact&gt;
+ &lt;<a title="Todo." class="dict" href="subscription-definitions.html#Subscription.reason"><b>reason</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: navy">Description of why this subscription was created</span><span style="color: Gray"> --&gt;</span>
+ &lt;<a title="Todo." class="dict" href="subscription-definitions.html#Subscription.status"><b>status</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#code">code</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: navy"><a style="color: navy" href="subscription-status.html">requested | active | error | off</a></span><span style="color: Gray"> --&gt;</span>
+ &lt;<a title="Todo." class="dict" href="subscription-definitions.html#Subscription.error"><b>error</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Latest error note</span><span style="color: Gray"> --&gt;</span>
+ &lt;<a title="Todo." class="dict" href="subscription-definitions.html#Subscription.channel"><b>channel</b></a>&gt;  <span style="color: Gray">&lt;!-- <span style="color: brown"><b>1..1</b></span> The channel on which to report matches to the criteria --&gt;</span>
+  &lt;<a title="Todo." class="dict" href="subscription-definitions.html#Subscription.channel.type"><b>type</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#code">code</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: navy"><a style="color: navy" href="subscription-channel-type.html">rest-hook | websocket | email | sms | message</a></span><span style="color: Gray"> --&gt;</span>
+  &lt;<a title="Todo." class="dict" href="subscription-definitions.html#Subscription.channel.url"><b>url</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#uri">uri</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Where the channel points to</span><span style="color: Gray"> --&gt;</span>
+  &lt;<a title="ToDo." class="dict" href="subscription-definitions.html#Subscription.channel.payload"><b>payload</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: navy">Mimetype to send, or blank for no payload</span><span style="color: Gray"> --&gt;</span>
+  &lt;<a title="Usage depends on the channel type." class="dict" href="subscription-definitions.html#Subscription.channel.header"><b>header</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Usage depends on the channel type</span><span style="color: Gray"> --&gt;</span>
+ &lt;/channel&gt;
+ &lt;<a title="Todo." class="dict" href="subscription-definitions.html#Subscription.end"><b>end</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#instant">instant</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">When to automatically delete the subscription</span><span style="color: Gray"> --&gt;</span>
+ &lt;<a title="Todo." class="dict" href="subscription-definitions.html#Subscription.tag"><b>tag</b></a>&gt;  <span style="color: Gray">&lt;!-- <span style="color: brown"><b>0..*</b></span> A tag to add to matching resources --&gt;</span>
+  &lt;<a title="Todo." class="dict" href="subscription-definitions.html#Subscription.tag.term"><b>term</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#uri">uri</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: navy">The term for the tag</span><span style="color: Gray"> --&gt;</span>
+  &lt;<a title="Todo." class="dict" href="subscription-definitions.html#Subscription.tag.scheme"><b>scheme</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#uri">uri</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: navy">The scheme for the tag</span><span style="color: Gray"> --&gt;</span>
+  &lt;<a title="Todo." class="dict" href="subscription-definitions.html#Subscription.tag.description"><b>description</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Tag description label</span><span style="color: Gray"> --&gt;</span>
+ &lt;/tag&gt;
+&lt;/Subscription&gt;
+</pre></div>
+  </text>
+  <identifier value="http://hl7.org/fhir/profile/subscription"/>
+  <name value="subscription"/>
+  <publisher value="FHIR Project"/>
+  <description value="Basic Profile. Todo."/>
+  <status value="draft"/>
+  <date value="2014-06-06"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM"/>
+  </mapping>
+  <structure>
+    <type value="Subscription"/>
+    <publish value="true"/>
+    <element>
+      <path value="Subscription"/>
+      <definition>
+        <short value="A server push subscription criteria"/>
+        <formal value="Todo."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="Resource"/>
+        </type>
+        <isModifier value="false"/>
+        <mapping>
+          <identity value="rim"/>
+          <map value="N/A"/>
+        </mapping>
+      </definition>
+    </element>
+    <element>
+      <path value="Subscription.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="Subscription.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="Subscription.text"/>
+      <definition>
+        <short value="Text summary of the resource, for human interpretation"/>
+        <formal value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."/>
+        <comments value="Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative."/>
+        <synonym value="narrative"/>
+        <synonym value="html"/>
+        <synonym value="xhtml"/>
+        <synonym value="display"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="Narrative"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="Subscription.contained"/>
+      <definition>
+        <short value="Contained, inline Resources"/>
+        <formal value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."/>
+        <comments value="This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again."/>
+        <synonym value="inline resources"/>
+        <synonym value="anonymous resources"/>
+        <synonym value="contained resources"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Resource"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="Subscription.criteria"/>
+      <definition>
+        <short value="Rule for server push criteria"/>
+        <formal value="Todo."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="string"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="Subscription.contact"/>
+      <definition>
+        <short value="Contact details for source (e.g. troubleshooting)"/>
+        <formal value="Todo."/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Contact"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="Subscription.reason"/>
+      <definition>
+        <short value="Description of why this subscription was created"/>
+        <formal value="Todo."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="string"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="Subscription.status"/>
+      <definition>
+        <short value="requested | active | error | off"/>
+        <formal value="Todo."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="code"/>
+        </type>
+        <isModifier value="false"/>
+        <binding>
+          <name value="SubscriptionStatus"/>
+          <isExtensible value="false"/>
+          <conformance value="required"/>
+          <description value="The status of a subscription"/>
+          <referenceResource>
+            <reference value="http://hl7.org/fhir/vs/subscription-status"/>
+          </referenceResource>
+        </binding>
+      </definition>
+    </element>
+    <element>
+      <path value="Subscription.error"/>
+      <definition>
+        <short value="Latest error note"/>
+        <formal value="Todo."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="string"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="Subscription.channel"/>
+      <definition>
+        <short value="The channel on which to report matches to the criteria"/>
+        <formal value="Todo."/>
+        <min value="1"/>
+        <max value="1"/>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="Subscription.channel.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="Subscription.channel.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="Subscription.channel.type"/>
+      <definition>
+        <short value="rest-hook | websocket | email | sms | message"/>
+        <formal value="Todo."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="code"/>
+        </type>
+        <isModifier value="false"/>
+        <binding>
+          <name value="SubscriptionChannelType"/>
+          <isExtensible value="false"/>
+          <conformance value="required"/>
+          <description value="The type of method used to execute a subscription"/>
+          <referenceResource>
+            <reference value="http://hl7.org/fhir/vs/subscription-channel-type"/>
+          </referenceResource>
+        </binding>
+      </definition>
+    </element>
+    <element>
+      <path value="Subscription.channel.url"/>
+      <definition>
+        <short value="Where the channel points to"/>
+        <formal value="Todo."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="uri"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="Subscription.channel.payload"/>
+      <definition>
+        <short value="Mimetype to send, or blank for no payload"/>
+        <formal value="ToDo."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="string"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="Subscription.channel.header"/>
+      <definition>
+        <short value="Usage depends on the channel type"/>
+        <formal value="Usage depends on the channel type."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="string"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="Subscription.end"/>
+      <definition>
+        <short value="When to automatically delete the subscription"/>
+        <formal value="Todo."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="instant"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="Subscription.tag"/>
+      <definition>
+        <short value="A tag to add to matching resources"/>
+        <formal value="Todo."/>
+        <min value="0"/>
+        <max value="*"/>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="Subscription.tag.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="Subscription.tag.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="Subscription.tag.term"/>
+      <definition>
+        <short value="The term for the tag"/>
+        <formal value="Todo."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="uri"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="Subscription.tag.scheme"/>
+      <definition>
+        <short value="The scheme for the tag"/>
+        <formal value="Todo."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="uri"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="Subscription.tag.description"/>
+      <definition>
+        <short value="Tag description label"/>
+        <formal value="Todo."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="string"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <searchParam>
+      <name value="_id"/>
+      <type value="token"/>
+      <documentation value="The logical resource id associated with the resource (must be supported by all servers)"/>
+    </searchParam>
+    <searchParam>
+      <name value="_language"/>
+      <type value="token"/>
+      <documentation value="The stated language of the resource"/>
+    </searchParam>
+    <searchParam>
+      <name value="contact"/>
+      <type value="token"/>
+      <documentation value="Contact details for source (e.g. troubleshooting)"/>
+      <xpath value="f:Subscription/f:contact"/>
+    </searchParam>
+    <searchParam>
+      <name value="criteria"/>
+      <type value="string"/>
+      <documentation value="Rule for server push criteria"/>
+      <xpath value="f:Subscription/f:criteria"/>
+    </searchParam>
+    <searchParam>
+      <name value="payload"/>
+      <type value="string"/>
+      <documentation value="Mimetype to send, or blank for no payload"/>
+      <xpath value="f:Subscription/f:channel/f:payload"/>
+    </searchParam>
+    <searchParam>
+      <name value="status"/>
+      <type value="token"/>
+      <documentation value="requested | active | error | off"/>
+      <xpath value="f:Subscription/f:status"/>
+    </searchParam>
+    <searchParam>
+      <name value="tag"/>
+      <type value="string"/>
+      <documentation value="The term for the tag"/>
+      <xpath value="f:Subscription/f:tag/f:term"/>
+    </searchParam>
+    <searchParam>
+      <name value="type"/>
+      <type value="token"/>
+      <documentation value="rest-hook | websocket | email | sms | message"/>
+      <xpath value="f:Subscription/f:channel/f:type"/>
+    </searchParam>
+    <searchParam>
+      <name value="url"/>
+      <type value="string"/>
+      <documentation value="Where the channel points to"/>
+      <xpath value="f:Subscription/f:channel/f:url"/>
+    </searchParam>
+  </structure>
+</Profile>

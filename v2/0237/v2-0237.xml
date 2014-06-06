@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Event Qualification</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>A
+            <a name="A"> </a>
+          </td>
+          <td>Abuse</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>B
+            <a name="B"> </a>
+          </td>
+          <td>Unexpected beneficial effect</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>D
+            <a name="D"> </a>
+          </td>
+          <td>Dependency</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>I
+            <a name="I"> </a>
+          </td>
+          <td>Interaction</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>L
+            <a name="L"> </a>
+          </td>
+          <td>Lack of expect therapeutic effect</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>M
+            <a name="M"> </a>
+          </td>
+          <td>Misuse</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>O
+            <a name="O"> </a>
+          </td>
+          <td>Overdose</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>W
+            <a name="W"> </a>
+          </td>
+          <td>Drug withdrawal</td>
+          <td>added v2.3</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0237"/>
+  <name value="v2 Event Qualification"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0237 ( Event Qualification)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0237"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="A"/>
+      <display value="Abuse"/>
+    </concept>
+    <concept>
+      <code value="B"/>
+      <display value="Unexpected beneficial effect"/>
+    </concept>
+    <concept>
+      <code value="D"/>
+      <display value="Dependency"/>
+    </concept>
+    <concept>
+      <code value="I"/>
+      <display value="Interaction"/>
+    </concept>
+    <concept>
+      <code value="L"/>
+      <display value="Lack of expect therapeutic effect"/>
+    </concept>
+    <concept>
+      <code value="M"/>
+      <display value="Misuse"/>
+    </concept>
+    <concept>
+      <code value="O"/>
+      <display value="Overdose"/>
+    </concept>
+    <concept>
+      <code value="W"/>
+      <display value="Drug withdrawal"/>
+    </concept>
+  </define>
+</ValueSet>

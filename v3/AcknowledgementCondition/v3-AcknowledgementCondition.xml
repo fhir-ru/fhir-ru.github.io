@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  The codes identify the conditions under which accept acknowledgements are required to be returned in response to this message. Note that accept acknowledgement address two different issues at the same time: reliable transport as well as syntactical correctness
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>AL
+            <a name="AL"> </a>
+          </td>
+          <td>Always</td>
+          <td>
+                        Always send an acknowledgement.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>ER
+            <a name="ER"> </a>
+          </td>
+          <td>Error/reject only</td>
+          <td>
+                        Send an acknowledgement for error/reject conditions only.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>NE
+            <a name="NE"> </a>
+          </td>
+          <td>Never</td>
+          <td>
+                        Never send an acknowledgement.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/AcknowledgementCondition"/>
+  <name value="v3 Code System AcknowledgementCondition"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" The codes identify the conditions under which accept acknowledgements are required to be returned in response to this message. Note that accept acknowledgement address two different issues at the same time: reliable transport as well as syntactical correctness"/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/AcknowledgementCondition"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="AL"/>
+      <display value="Always"/>
+      <definition value="Always send an acknowledgement."/>
+    </concept>
+    <concept>
+      <code value="ER"/>
+      <display value="Error/reject only"/>
+      <definition value="Send an acknowledgement for error/reject conditions only."/>
+    </concept>
+    <concept>
+      <code value="NE"/>
+      <display value="Never"/>
+      <definition value="Never send an acknowledgement."/>
+    </concept>
+  </define>
+</ValueSet>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  
+                     Deprecation Comment: Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used.  All of these are maintained under EntityNameType.  This was created in error and should never be used. 
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>A
+            <a name="A"> </a>
+          </td>
+          <td>Alias</td>
+          <td>
+                        An alias, typically a shorter name than the legal name. This is the default.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>L
+            <a name="L"> </a>
+          </td>
+          <td>Legal</td>
+          <td>
+                        The full legal name of the organization as used in public records.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>ST
+            <a name="ST"> </a>
+          </td>
+          <td>Stock exchange</td>
+          <td>
+                        A stock market ticker symbol.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/OrganizationNameType"/>
+  <name value="v3 Code System OrganizationNameType"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="  Deprecation Comment:
+Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used.  All of these are maintained under EntityNameType.  This was created in error and should never be used."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/OrganizationNameType"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="A"/>
+      <display value="Alias"/>
+      <definition value="An alias, typically a shorter name than the legal name. This is the default."/>
+    </concept>
+    <concept>
+      <code value="L"/>
+      <display value="Legal"/>
+      <definition value="The full legal name of the organization as used in public records."/>
+    </concept>
+    <concept>
+      <code value="ST"/>
+      <display value="Stock exchange"/>
+      <definition value="A stock market ticker symbol."/>
+    </concept>
+  </define>
+</ValueSet>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  
+                     Deprecation Comment: Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>A
+            <a name="A"> </a>
+          </td>
+          <td>Active</td>
+          <td>
+                        Concept code is active and in use
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>D
+            <a name="D"> </a>
+          </td>
+          <td>Deleted</td>
+          <td>
+                        Concept code is not longer in use anywhere.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>P
+            <a name="P"> </a>
+          </td>
+          <td>Proposed</td>
+          <td>
+                        Proposed but not yet in general use
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>R
+            <a name="R"> </a>
+          </td>
+          <td>Retired</td>
+          <td>
+                        Concept code has been used previously, but is no longer value for new use.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/ConceptStatus"/>
+  <name value="v3 Code System ConceptStatus"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="  Deprecation Comment:
+Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/ConceptStatus"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="A"/>
+      <display value="Active"/>
+      <definition value="Concept code is active and in use"/>
+    </concept>
+    <concept>
+      <code value="D"/>
+      <display value="Deleted"/>
+      <definition value="Concept code is not longer in use anywhere."/>
+    </concept>
+    <concept>
+      <code value="P"/>
+      <display value="Proposed"/>
+      <definition value="Proposed but not yet in general use"/>
+    </concept>
+    <concept>
+      <code value="R"/>
+      <display value="Retired"/>
+      <definition value="Concept code has been used previously, but is no longer value for new use."/>
+    </concept>
+  </define>
+</ValueSet>

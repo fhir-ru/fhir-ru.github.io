@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  Vocabulary domain qualifiers are concepts that are used in domain constraints to specify behavior of the new domain.
+        <br/>
+
+                  Code system retired.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>
+            <span style="color: grey">
+              <i>(_Extensibility)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Extensibility"> </a>
+          </td>
+          <td>
+                        The extensibility of coding determines whether or not extensions are allowed in the domain of a coded attribute.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  CNE
+            <a name="CNE"> </a>
+          </td>
+          <td>Coded No Extensions</td>
+          <td>
+                        The coded attribute allows only concepts from the defined value set. No extensions are allowed.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  CWE
+            <a name="CWE"> </a>
+          </td>
+          <td>Coded With Extensions</td>
+          <td>
+                        The coded attribute allows local codes or user entered text to be sent when the concept that the user would like to express is not a member of the defined value set.  If the concept that the user wants to express is represented by a code in the standard value set, the standard code must be sent.  The local code can be sent in addition to the standard code if desired.  Only if the concept that the user wants to express is NOT represented by a standard code, can a solitary local code be sent.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>
+            <span style="color: grey">
+              <i>(_RealmOfUse)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_RealmOfUse"> </a>
+          </td>
+          <td>
+                        The jurisdiction or realm within which the domain will be used. A realm might be a country, a group of countries, a region of the world, or an organization.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  Canada
+            <a name="Canada"> </a>
+          </td>
+          <td>Canada</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  NorthAmerica
+            <a name="NorthAmerica"> </a>
+          </td>
+          <td>North America</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  USA
+            <a name="USA"> </a>
+          </td>
+          <td>United States</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  UV
+            <a name="UV"> </a>
+          </td>
+          <td>Universal</td>
+          <td>
+                        The root or universal HL7 jurisdiction or realm from which all subsequent specializations are derived.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/VocabularyDomainQualifier"/>
+  <name value="v3 Code System VocabularyDomainQualifier"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" Vocabulary domain qualifiers are concepts that are used in domain constraints to specify behavior of the new domain. Code system retired."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/VocabularyDomainQualifier"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="_Extensibility"/>
+      <abstract value="true"/>
+      <display value="Extensibility"/>
+      <definition value="The extensibility of coding determines whether or not extensions are allowed in the domain of a coded attribute."/>
+      <concept>
+        <code value="CNE"/>
+        <display value="Coded No Extensions"/>
+        <definition value="The coded attribute allows only concepts from the defined value set. No extensions are allowed."/>
+      </concept>
+      <concept>
+        <code value="CWE"/>
+        <display value="Coded With Extensions"/>
+        <definition value="The coded attribute allows local codes or user entered text to be sent when the concept that the user would like to express is not a member of the defined value set.  If the concept that the user wants to express is represented by a code in the standard value set, the standard code must be sent.  The local code can be sent in addition to the standard code if desired.  Only if the concept that the user wants to express is NOT represented by a standard code, can a solitary local code be sent."/>
+      </concept>
+    </concept>
+    <concept>
+      <code value="_RealmOfUse"/>
+      <abstract value="true"/>
+      <display value="RealmOfUse"/>
+      <definition value="The jurisdiction or realm within which the domain will be used. A realm might be a country, a group of countries, a region of the world, or an organization."/>
+      <concept>
+        <code value="Canada"/>
+        <display value="Canada"/>
+      </concept>
+      <concept>
+        <code value="NorthAmerica"/>
+        <display value="North America"/>
+      </concept>
+      <concept>
+        <code value="USA"/>
+        <display value="United States"/>
+      </concept>
+      <concept>
+        <code value="UV"/>
+        <display value="Universal"/>
+        <definition value="The root or universal HL7 jurisdiction or realm from which all subsequent specializations are derived."/>
+      </concept>
+    </concept>
+  </define>
+</ValueSet>

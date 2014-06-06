@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>ActPharmacySupplyType</h2>
+      <p> Identifies types of dispensing events (OID = 2.16.840.1.113883.1.11.16208)</p>
+      <p>This value set includes codes defined in other code systems, using the following rules:</p>
+      <ul>
+        <li>Include codes from 
+          <a href="../../../v3/ActCode/index.html">http://hl7.org/fhir/v3/ActCode</a> where concept  is-a  
+          <a href="../../../v3/ActCode/index.html#_ActPharmacySupplyType">_ActPharmacySupplyType</a>
+        </li>
+      </ul>
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/ActPharmacySupplyType"/>
+  <version value="2013-12-07"/>
+  <name value="ActPharmacySupplyType"/>
+  <publisher value="HL7 v3"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://www.hl7.org"/>
+  </telecom>
+  <description value=" Identifies types of dispensing events (OID = 2.16.840.1.113883.1.11.16208)"/>
+  <status value="active"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/v3/ActCode"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="_ActPharmacySupplyType"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

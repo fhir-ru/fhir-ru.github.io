@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Type of Referenced Data</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>AP
+            <a name="AP"> </a>
+          </td>
+          <td>Other application data, typically uninterpreted binary data (HL7 V2.3 and later)</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>AU
+            <a name="AU"> </a>
+          </td>
+          <td>Audio data (HL7 V2.3 and later)</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>Application
+            <a name="Application"> </a>
+          </td>
+          <td>Other application data, typically uninterpreted binary data  (HL7 V2.3 and later)</td>
+          <td>added v2.3.1, removed after v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>Audio
+            <a name="Audio"> </a>
+          </td>
+          <td>Audio data  (HL7 V2.3 and later)</td>
+          <td>added v2.3.1, removed after v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>FT
+            <a name="FT"> </a>
+          </td>
+          <td>Formatted text (HL7 V2.2 only)</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>IM
+            <a name="IM"> </a>
+          </td>
+          <td>Image data (HL7 V2.3 and later)</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>Image
+            <a name="Image"> </a>
+          </td>
+          <td>Image data  (HL7 V2.3 and later)</td>
+          <td>added v2.3.1, removed after v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>NS
+            <a name="NS"> </a>
+          </td>
+          <td>Non-scanned image (HL7 V2.2 only)</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>SD
+            <a name="SD"> </a>
+          </td>
+          <td>Scanned document (HL7 V2.2 only)</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>SGML
+            <a name="SGML"> </a>
+          </td>
+          <td>Structured Generalized Markup Language (HL7 V2.3 and later)</td>
+          <td>added v2.3.1, removed after v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>SI
+            <a name="SI"> </a>
+          </td>
+          <td>Scanned image (HL7 V2.2 only)</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>TEXT
+            <a name="TEXT"> </a>
+          </td>
+          <td>Machine readable text document (HL7 V2.3.1 and later)</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>TX
+            <a name="TX"> </a>
+          </td>
+          <td>Machine readable text document (HL7 V2.2 only)</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>multipart
+            <a name="multipart"> </a>
+          </td>
+          <td>MIME multipart package</td>
+          <td>added v2.4</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0191"/>
+  <name value="v2 Type of Referenced Data"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0191 ( Type of Referenced Data)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0191"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="AP"/>
+      <display value="Other application data, typically uninterpreted binary data (HL7 V2.3 and later)"/>
+    </concept>
+    <concept>
+      <code value="AU"/>
+      <display value="Audio data (HL7 V2.3 and later)"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="Application"/>
+      <display value="Other application data, typically uninterpreted binary data  (HL7 V2.3 and later)"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="Audio"/>
+      <display value="Audio data  (HL7 V2.3 and later)"/>
+    </concept>
+    <concept>
+      <code value="FT"/>
+      <display value="Formatted text (HL7 V2.2 only)"/>
+    </concept>
+    <concept>
+      <code value="IM"/>
+      <display value="Image data (HL7 V2.3 and later)"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="Image"/>
+      <display value="Image data  (HL7 V2.3 and later)"/>
+    </concept>
+    <concept>
+      <code value="NS"/>
+      <display value="Non-scanned image (HL7 V2.2 only)"/>
+    </concept>
+    <concept>
+      <code value="SD"/>
+      <display value="Scanned document (HL7 V2.2 only)"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="SGML"/>
+      <display value="Structured Generalized Markup Language (HL7 V2.3 and later)"/>
+    </concept>
+    <concept>
+      <code value="SI"/>
+      <display value="Scanned image (HL7 V2.2 only)"/>
+    </concept>
+    <concept>
+      <code value="TEXT"/>
+      <display value="Machine readable text document (HL7 V2.3.1 and later)"/>
+    </concept>
+    <concept>
+      <code value="TX"/>
+      <display value="Machine readable text document (HL7 V2.2 only)"/>
+    </concept>
+    <concept>
+      <code value="multipart"/>
+      <display value="MIME multipart package"/>
+    </concept>
+  </define>
+</ValueSet>

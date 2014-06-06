@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Item Type</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>EQP
+            <a name="EQP"> </a>
+          </td>
+          <td>Equipment</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>IMP
+            <a name="IMP"> </a>
+          </td>
+          <td>Implant</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>MED
+            <a name="MED"> </a>
+          </td>
+          <td>Medication</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>SUP
+            <a name="SUP"> </a>
+          </td>
+          <td>Supply</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>TDC
+            <a name="TDC"> </a>
+          </td>
+          <td>Tubes, Drains, and Catheters</td>
+          <td>added v2.6</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0778"/>
+  <name value="v2 Item Type"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0778 ( Item Type)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0778"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="EQP"/>
+      <display value="Equipment"/>
+    </concept>
+    <concept>
+      <code value="IMP"/>
+      <display value="Implant"/>
+    </concept>
+    <concept>
+      <code value="MED"/>
+      <display value="Medication"/>
+    </concept>
+    <concept>
+      <code value="SUP"/>
+      <display value="Supply"/>
+    </concept>
+    <concept>
+      <code value="TDC"/>
+      <display value="Tubes, Drains, and Catheters"/>
+    </concept>
+  </define>
+</ValueSet>

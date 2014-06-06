@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  
+                     Definition: Defines the units associated with the magnitude of the maximum size limit of a query response that can be accepted by the requesting application.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>
+            <span style="color: grey">
+              <i>(_QueryRequestLimit)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_QueryRequestLimit"> </a>
+          </td>
+          <td>
+                        
+                           Definition: The number of matching instances (number of focal classes). The document header class is the focal class of a document, a record would therefore be equal to a document.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  RD
+            <a name="RD"> </a>
+          </td>
+          <td>record</td>
+          <td>
+                        
+                           Definition: The number of matching instances (number of focal classes). The document header class is the focal class of a document, a record would therefore be equal to a document.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/QueryRequestLimit"/>
+  <name value="v3 Code System QueryRequestLimit"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="  Definition:
+Defines the units associated with the magnitude of the maximum size limit of a query response that can be accepted by the requesting application."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/QueryRequestLimit"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="_QueryRequestLimit"/>
+      <abstract value="true"/>
+      <display value="QueryRequestLimit"/>
+      <definition value="Definition: The number of matching instances (number of focal classes). The document header class is the focal class of a document, a record would therefore be equal to a document."/>
+      <concept>
+        <code value="RD"/>
+        <display value="record"/>
+        <definition value="Definition: The number of matching instances (number of focal classes). The document header class is the focal class of a document, a record would therefore be equal to a document."/>
+      </concept>
+    </concept>
+  </define>
+</ValueSet>

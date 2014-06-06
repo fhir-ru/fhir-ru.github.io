@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Specimen Action Code</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>A
+            <a name="A"> </a>
+          </td>
+          <td>Add ordered tests to the existing specimen</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>C
+            <a name="C"> </a>
+          </td>
+          <td>Cancel order for battery or tests named</td>
+          <td>from v2.1, removed after v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>G
+            <a name="G"> </a>
+          </td>
+          <td>Generated order; reflex order</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>L
+            <a name="L"> </a>
+          </td>
+          <td>Lab to obtain specimen from patient</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>O
+            <a name="O"> </a>
+          </td>
+          <td>Specimen obtained by service other than Lab</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>P
+            <a name="P"> </a>
+          </td>
+          <td>Pending specimen; Order sent prior to delivery</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>R
+            <a name="R"> </a>
+          </td>
+          <td>Revised order</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>S
+            <a name="S"> </a>
+          </td>
+          <td>Schedule the tests specified below</td>
+          <td>from v2.1</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0065"/>
+  <name value="v2 Specimen Action Code"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0065 ( Specimen Action Code)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0065"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="A"/>
+      <display value="Add ordered tests to the existing specimen"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="C"/>
+      <display value="Cancel order for battery or tests named"/>
+    </concept>
+    <concept>
+      <code value="G"/>
+      <display value="Generated order; reflex order"/>
+    </concept>
+    <concept>
+      <code value="L"/>
+      <display value="Lab to obtain specimen from patient"/>
+    </concept>
+    <concept>
+      <code value="O"/>
+      <display value="Specimen obtained by service other than Lab"/>
+    </concept>
+    <concept>
+      <code value="P"/>
+      <display value="Pending specimen; Order sent prior to delivery"/>
+    </concept>
+    <concept>
+      <code value="R"/>
+      <display value="Revised order"/>
+    </concept>
+    <concept>
+      <code value="S"/>
+      <display value="Schedule the tests specified below"/>
+    </concept>
+  </define>
+</ValueSet>

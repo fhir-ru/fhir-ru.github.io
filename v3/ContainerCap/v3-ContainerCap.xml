@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  The type of cap associated with a container
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>
+            <span style="color: grey">
+              <i>(_MedicationCap)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_MedicationCap"> </a>
+          </td>
+          <td>
+                        Cap types for medication containers
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  CHILD
+            <a name="CHILD"> </a>
+          </td>
+          <td>ChildProof</td>
+          <td>
+                        A cap designed to be difficult to open for children.  Generally requires multiple simultaneous actions (e.g. squeeze and twist) to open.  Used for products that may be dangerous if ingested or overdosed by children.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  EASY
+            <a name="EASY"> </a>
+          </td>
+          <td>EasyOpen</td>
+          <td>
+                        A cap designed to be easily removed.  For products intended to be opened by persons with limited strength or dexterity.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>FILM
+            <a name="FILM"> </a>
+          </td>
+          <td>Film</td>
+          <td>
+                        A non-reactive plastic film covering over the opening of a container.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>FOIL
+            <a name="FOIL"> </a>
+          </td>
+          <td>Foil</td>
+          <td>
+                        A foil covering (type of foil not specified) over the opening of a container
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>PUSH
+            <a name="PUSH"> </a>
+          </td>
+          <td>Push Cap</td>
+          <td>
+                        A non-threaded cap that forms a tight-fitting closure on a container by pushing the fitted end into the conatiner opening
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>SCR
+            <a name="SCR"> </a>
+          </td>
+          <td>Screw Cap</td>
+          <td>
+                        A threaded cap that is screwed onto the opening of a container
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/ContainerCap"/>
+  <name value="v3 Code System ContainerCap"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" The type of cap associated with a container"/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/ContainerCap"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="_MedicationCap"/>
+      <abstract value="true"/>
+      <display value="MedicationCap"/>
+      <definition value="Cap types for medication containers"/>
+      <concept>
+        <code value="CHILD"/>
+        <display value="ChildProof"/>
+        <definition value="A cap designed to be difficult to open for children.  Generally requires multiple simultaneous actions (e.g. squeeze and twist) to open.  Used for products that may be dangerous if ingested or overdosed by children."/>
+      </concept>
+      <concept>
+        <code value="EASY"/>
+        <display value="EasyOpen"/>
+        <definition value="A cap designed to be easily removed.  For products intended to be opened by persons with limited strength or dexterity."/>
+      </concept>
+    </concept>
+    <concept>
+      <code value="FILM"/>
+      <display value="Film"/>
+      <definition value="A non-reactive plastic film covering over the opening of a container."/>
+    </concept>
+    <concept>
+      <code value="FOIL"/>
+      <display value="Foil"/>
+      <definition value="A foil covering (type of foil not specified) over the opening of a container"/>
+    </concept>
+    <concept>
+      <code value="PUSH"/>
+      <display value="Push Cap"/>
+      <definition value="A non-threaded cap that forms a tight-fitting closure on a container by pushing the fitted end into the conatiner opening"/>
+    </concept>
+    <concept>
+      <code value="SCR"/>
+      <display value="Screw Cap"/>
+      <definition value="A threaded cap that is screwed onto the opening of a container"/>
+    </concept>
+  </define>
+</ValueSet>

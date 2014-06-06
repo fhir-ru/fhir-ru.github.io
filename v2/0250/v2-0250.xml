@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Relatedness Assessment</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>H
+            <a name="H"> </a>
+          </td>
+          <td>Highly probable</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>I
+            <a name="I"> </a>
+          </td>
+          <td>Improbable</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>M
+            <a name="M"> </a>
+          </td>
+          <td>Moderately probable</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>N
+            <a name="N"> </a>
+          </td>
+          <td>Not related</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>S
+            <a name="S"> </a>
+          </td>
+          <td>Somewhat probable</td>
+          <td>added v2.3</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0250"/>
+  <name value="v2 Relatedness Assessment"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0250 ( Relatedness Assessment)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0250"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="H"/>
+      <display value="Highly probable"/>
+    </concept>
+    <concept>
+      <code value="I"/>
+      <display value="Improbable"/>
+    </concept>
+    <concept>
+      <code value="M"/>
+      <display value="Moderately probable"/>
+    </concept>
+    <concept>
+      <code value="N"/>
+      <display value="Not related"/>
+    </concept>
+    <concept>
+      <code value="S"/>
+      <display value="Somewhat probable"/>
+    </concept>
+  </define>
+</ValueSet>

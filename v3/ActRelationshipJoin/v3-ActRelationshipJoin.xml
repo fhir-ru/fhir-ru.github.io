@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>D
+            <a name="D"> </a>
+          </td>
+          <td>detached</td>
+          <td>
+                        Detach this branch from the other branches so it will not be resynchronized with the other branches.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>K
+            <a name="K"> </a>
+          </td>
+          <td>kill</td>
+          <td>
+                        When all other concurrent branches are terminated, interrupt and discontinue this branch.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>W
+            <a name="W"> </a>
+          </td>
+          <td>wait</td>
+          <td>
+                        Wait for this branch to terminate.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>X
+            <a name="X"> </a>
+          </td>
+          <td>exclusive wait</td>
+          <td>
+                        Wait for any one of the branches in the set of exclusive wait branches to terminate, then discontinue all the other exclusive wait branches.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/ActRelationshipJoin"/>
+  <name value="v3 Code System ActRelationshipJoin"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="? not found"/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/ActRelationshipJoin"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="D"/>
+      <display value="detached"/>
+      <definition value="Detach this branch from the other branches so it will not be resynchronized with the other branches."/>
+    </concept>
+    <concept>
+      <code value="K"/>
+      <display value="kill"/>
+      <definition value="When all other concurrent branches are terminated, interrupt and discontinue this branch."/>
+    </concept>
+    <concept>
+      <code value="W"/>
+      <display value="wait"/>
+      <definition value="Wait for this branch to terminate."/>
+    </concept>
+    <concept>
+      <code value="X"/>
+      <display value="exclusive wait"/>
+      <definition value="Wait for any one of the branches in the set of exclusive wait branches to terminate, then discontinue all the other exclusive wait branches."/>
+    </concept>
+  </define>
+</ValueSet>

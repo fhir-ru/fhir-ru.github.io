@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Approving Regulatory Agency</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>AMA
+            <a name="AMA"> </a>
+          </td>
+          <td>American Medical Association</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>FDA
+            <a name="FDA"> </a>
+          </td>
+          <td>Food and Drug Administration</td>
+          <td>added v2.6</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0790"/>
+  <name value="v2 Approving Regulatory Agency"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0790 ( Approving Regulatory Agency)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0790"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="AMA"/>
+      <display value="American Medical Association"/>
+    </concept>
+    <concept>
+      <code value="FDA"/>
+      <display value="Food and Drug Administration"/>
+    </concept>
+  </define>
+</ValueSet>

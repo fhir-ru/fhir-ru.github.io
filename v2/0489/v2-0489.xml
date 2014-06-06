@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Risk Codes</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>AGG
+            <a name="AGG"> </a>
+          </td>
+          <td>Aggressive</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>BHZ
+            <a name="BHZ"> </a>
+          </td>
+          <td>Biohazard</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>BIO
+            <a name="BIO"> </a>
+          </td>
+          <td>Biological</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>COR
+            <a name="COR"> </a>
+          </td>
+          <td>Corrosive</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>ESC
+            <a name="ESC"> </a>
+          </td>
+          <td>Escape Risk</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>EXP
+            <a name="EXP"> </a>
+          </td>
+          <td>Explosive</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>IFL
+            <a name="IFL"> </a>
+          </td>
+          <td>MaterialDangerInflammable</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>INF
+            <a name="INF"> </a>
+          </td>
+          <td>MaterialDangerInfectious</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>INJ
+            <a name="INJ"> </a>
+          </td>
+          <td>Injury Hazard</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>POI
+            <a name="POI"> </a>
+          </td>
+          <td>Poison</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>RAD
+            <a name="RAD"> </a>
+          </td>
+          <td>Radioactive</td>
+          <td>added v2.5</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0489"/>
+  <name value="v2 Risk Codes"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0489 ( Risk Codes)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0489"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="AGG"/>
+      <display value="Aggressive"/>
+    </concept>
+    <concept>
+      <code value="BHZ"/>
+      <display value="Biohazard"/>
+    </concept>
+    <concept>
+      <code value="BIO"/>
+      <display value="Biological"/>
+    </concept>
+    <concept>
+      <code value="COR"/>
+      <display value="Corrosive"/>
+    </concept>
+    <concept>
+      <code value="ESC"/>
+      <display value="Escape Risk"/>
+    </concept>
+    <concept>
+      <code value="EXP"/>
+      <display value="Explosive"/>
+    </concept>
+    <concept>
+      <code value="IFL"/>
+      <display value="MaterialDangerInflammable"/>
+    </concept>
+    <concept>
+      <code value="INF"/>
+      <display value="MaterialDangerInfectious"/>
+    </concept>
+    <concept>
+      <code value="INJ"/>
+      <display value="Injury Hazard"/>
+    </concept>
+    <concept>
+      <code value="POI"/>
+      <display value="Poison"/>
+    </concept>
+    <concept>
+      <code value="RAD"/>
+      <display value="Radioactive"/>
+    </concept>
+  </define>
+</ValueSet>

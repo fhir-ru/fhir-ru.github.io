@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Relationship</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>ASC
+            <a name="ASC"> </a>
+          </td>
+          <td>Associate</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>BRO
+            <a name="BRO"> </a>
+          </td>
+          <td>Brother</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>CGV
+            <a name="CGV"> </a>
+          </td>
+          <td>Care giver</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>CHD
+            <a name="CHD"> </a>
+          </td>
+          <td>Child</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>DEP
+            <a name="DEP"> </a>
+          </td>
+          <td>Handicapped dependent</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>DOM
+            <a name="DOM"> </a>
+          </td>
+          <td>Life partner</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>EMC
+            <a name="EMC"> </a>
+          </td>
+          <td>Emergency contact</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>EME
+            <a name="EME"> </a>
+          </td>
+          <td>Employee</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>EMR
+            <a name="EMR"> </a>
+          </td>
+          <td>Employer</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>EXF
+            <a name="EXF"> </a>
+          </td>
+          <td>Extended family</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>FCH
+            <a name="FCH"> </a>
+          </td>
+          <td>Foster child</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>FND
+            <a name="FND"> </a>
+          </td>
+          <td>Friend</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>FTH
+            <a name="FTH"> </a>
+          </td>
+          <td>Father</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>GCH
+            <a name="GCH"> </a>
+          </td>
+          <td>Grandchild</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>GRD
+            <a name="GRD"> </a>
+          </td>
+          <td>Guardian</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>GRP
+            <a name="GRP"> </a>
+          </td>
+          <td>Grandparent</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>MGR
+            <a name="MGR"> </a>
+          </td>
+          <td>Manager</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>MTH
+            <a name="MTH"> </a>
+          </td>
+          <td>Mother</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>NCH
+            <a name="NCH"> </a>
+          </td>
+          <td>Natural child</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>NON
+            <a name="NON"> </a>
+          </td>
+          <td>None</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>OAD
+            <a name="OAD"> </a>
+          </td>
+          <td>Other adult</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>OTH
+            <a name="OTH"> </a>
+          </td>
+          <td>Other</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>OWN
+            <a name="OWN"> </a>
+          </td>
+          <td>Owner</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>PAR
+            <a name="PAR"> </a>
+          </td>
+          <td>Parent</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>SCH
+            <a name="SCH"> </a>
+          </td>
+          <td>Stepchild</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>SEL
+            <a name="SEL"> </a>
+          </td>
+          <td>Self</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>SIB
+            <a name="SIB"> </a>
+          </td>
+          <td>Sibling</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>SIS
+            <a name="SIS"> </a>
+          </td>
+          <td>Sister</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>SPO
+            <a name="SPO"> </a>
+          </td>
+          <td>Spouse</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>TRA
+            <a name="TRA"> </a>
+          </td>
+          <td>Trainer</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>UNK
+            <a name="UNK"> </a>
+          </td>
+          <td>Unknown</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>WRD
+            <a name="WRD"> </a>
+          </td>
+          <td>Ward of court</td>
+          <td>added v2.4</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0063"/>
+  <name value="v2 Relationship"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0063 ( Relationship)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0063"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="ASC"/>
+      <display value="Associate"/>
+    </concept>
+    <concept>
+      <code value="BRO"/>
+      <display value="Brother"/>
+    </concept>
+    <concept>
+      <code value="CGV"/>
+      <display value="Care giver"/>
+    </concept>
+    <concept>
+      <code value="CHD"/>
+      <display value="Child"/>
+    </concept>
+    <concept>
+      <code value="DEP"/>
+      <display value="Handicapped dependent"/>
+    </concept>
+    <concept>
+      <code value="DOM"/>
+      <display value="Life partner"/>
+    </concept>
+    <concept>
+      <code value="EMC"/>
+      <display value="Emergency contact"/>
+    </concept>
+    <concept>
+      <code value="EME"/>
+      <display value="Employee"/>
+    </concept>
+    <concept>
+      <code value="EMR"/>
+      <display value="Employer"/>
+    </concept>
+    <concept>
+      <code value="EXF"/>
+      <display value="Extended family"/>
+    </concept>
+    <concept>
+      <code value="FCH"/>
+      <display value="Foster child"/>
+    </concept>
+    <concept>
+      <code value="FND"/>
+      <display value="Friend"/>
+    </concept>
+    <concept>
+      <code value="FTH"/>
+      <display value="Father"/>
+    </concept>
+    <concept>
+      <code value="GCH"/>
+      <display value="Grandchild"/>
+    </concept>
+    <concept>
+      <code value="GRD"/>
+      <display value="Guardian"/>
+    </concept>
+    <concept>
+      <code value="GRP"/>
+      <display value="Grandparent"/>
+    </concept>
+    <concept>
+      <code value="MGR"/>
+      <display value="Manager"/>
+    </concept>
+    <concept>
+      <code value="MTH"/>
+      <display value="Mother"/>
+    </concept>
+    <concept>
+      <code value="NCH"/>
+      <display value="Natural child"/>
+    </concept>
+    <concept>
+      <code value="NON"/>
+      <display value="None"/>
+    </concept>
+    <concept>
+      <code value="OAD"/>
+      <display value="Other adult"/>
+    </concept>
+    <concept>
+      <code value="OTH"/>
+      <display value="Other"/>
+    </concept>
+    <concept>
+      <code value="OWN"/>
+      <display value="Owner"/>
+    </concept>
+    <concept>
+      <code value="PAR"/>
+      <display value="Parent"/>
+    </concept>
+    <concept>
+      <code value="SCH"/>
+      <display value="Stepchild"/>
+    </concept>
+    <concept>
+      <code value="SEL"/>
+      <display value="Self"/>
+    </concept>
+    <concept>
+      <code value="SIB"/>
+      <display value="Sibling"/>
+    </concept>
+    <concept>
+      <code value="SIS"/>
+      <display value="Sister"/>
+    </concept>
+    <concept>
+      <code value="SPO"/>
+      <display value="Spouse"/>
+    </concept>
+    <concept>
+      <code value="TRA"/>
+      <display value="Trainer"/>
+    </concept>
+    <concept>
+      <code value="UNK"/>
+      <display value="Unknown"/>
+    </concept>
+    <concept>
+      <code value="WRD"/>
+      <display value="Ward of court"/>
+    </concept>
+  </define>
+</ValueSet>

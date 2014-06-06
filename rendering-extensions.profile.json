@@ -1,0 +1,83 @@
+{
+  "resourceType": "Profile",
+  "text": {
+    "status": "generated",
+    "div": "<div><pre> <span style=\"float: right\"><a title=\"Documentation for this format\" href=\"formats.html\"><img alt=\"doco\" src=\"help.png\"/></a></span>\r\n<span style=\" color: Gray\">&lt;!-- <span style=\"color: Darkviolet\">Extensions</span> --&gt;</span>\r\n&lt;<span title=\"Identifies how the specified element should be rendered when displayed.\"><b>extension</b></span>&gt;<a name=\"style\"> </a>&lt;!--  <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">Context: DataType = *</span> --&gt;\r\n &lt;<b>url</b> value=&quot;<span style=\"color: maroon\">http://hl7.org/fhir/Profile/rendering-extensions#style</span>&quot;/&gt;\r\n &lt;<span title=\"Identifies how the specified element should be rendered when displayed.\"><b>valueString</b></span> value=&quot;[<span style=\"color: darkgreen\"><a href=\"http://hl7.org/fhir/datatypes.html#string\">string</a></span>]&quot;/&gt;<span style=\" color: Gray\">&lt;!-- </span><span style=\"color: navy\">Html style value</span><span style=\" color: Gray\"> --&gt;</span>\r\n&lt;/extension&gt;\r\n\r\n&lt;<span title=\"This is an equivalent of the string on which the extension is sent, but includes additional xhtml markup, such as bold, italics, styles, tables, etc.\"><b>extension</b></span>&gt;<a name=\"markup\"> </a>&lt;!--  <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">Context: DataType = string</span> --&gt;\r\n &lt;<b>url</b> value=&quot;<span style=\"color: maroon\">http://hl7.org/fhir/Profile/rendering-extensions#markup</span>&quot;/&gt;\r\n &lt;<span title=\"This is an equivalent of the string on which the extension is sent, but includes additional xhtml markup, such as bold, italics, styles, tables, etc.\"><b>valueString</b></span> value=&quot;[<span style=\"color: darkgreen\"><a href=\"http://hl7.org/fhir/datatypes.html#string\">string</a></span>]&quot;/&gt;<span style=\" color: Gray\">&lt;!-- </span><span style=\"color: navy\">String equivalent with html markup</span><span style=\" color: Gray\"> --&gt;</span>\r\n&lt;/extension&gt;\r\n\r\n</pre></div>"
+  },
+  "identifier": "http://hl7.org/fhir/profile/Extensions for rendering data elements",
+  "name": "Extensions for rendering data elements",
+  "publisher": "HL7 FHIR project",
+  "telecom": [
+    {
+      "system": "url",
+      "value": "http://hl7.org/fhir"
+    }
+  ],
+  "description": "A set of extensions dealing with controlling how particular data elements are rendered when displayed.  Initially created for questionnaires, but potentially useable elsewhere.",
+  "status": "draft",
+  "date": "2014-04-23",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM"
+    }
+  ],
+  "extensionDefn": [
+    {
+      "code": "style",
+      "display": "Html style value",
+      "contextType": "datatype",
+      "context": [
+        "*"
+      ],
+      "definition": {
+        "short": "Html style value",
+        "formal": "Identifies how the specified element should be rendered when displayed.",
+        "comments": "This extension would be equivalent to setting the HTML \"style\" attribute on the root element for the element containing the extension.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      }
+    },
+    {
+      "code": "markup",
+      "display": "String equivalent with html markup",
+      "contextType": "datatype",
+      "context": [
+        "string"
+      ],
+      "definition": {
+        "short": "String equivalent with html markup",
+        "formal": "This is an equivalent of the string on which the extension is sent, but includes additional xhtml markup, such as bold, italics, styles, tables, etc.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "ED can be XHTML content"
+          }
+        ]
+      }
+    }
+  ]
+}

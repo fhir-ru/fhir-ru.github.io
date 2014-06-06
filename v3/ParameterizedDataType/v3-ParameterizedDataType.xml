@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  
+                     Deprecation Comment: Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>BAG&lt;T&gt;
+            <a name="BAG.60T.62"> </a>
+          </td>
+          <td>Bag</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>LIST&lt;T&gt;
+            <a name="LIST.60T.62"> </a>
+          </td>
+          <td>Sequence</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>SET&lt;T&gt;
+            <a name="SET.60T.62"> </a>
+          </td>
+          <td>Set</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  EIVL&lt;T&gt;
+            <a name="EIVL.60T.62"> </a>
+          </td>
+          <td>Event Related Interval</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  IVL&lt;T&gt;
+            <a name="IVL.60T.62"> </a>
+          </td>
+          <td>Interval</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  PIVL&lt;T&gt;
+            <a name="PIVL.60T.62"> </a>
+          </td>
+          <td>Periodic Interval</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>T
+            <a name="T"> </a>
+          </td>
+          <td>Type</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  ANT&lt;T&gt;
+            <a name="ANT.60T.62"> </a>
+          </td>
+          <td>Annotated</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  HXIT&lt;T&gt;
+            <a name="HXIT.60T.62"> </a>
+          </td>
+          <td>Historical</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  NPPD&lt;T&gt;
+            <a name="NPPD.60T.62"> </a>
+          </td>
+          <td>Non Parametric Probability Distribution</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  PPD&lt;T&gt;
+            <a name="PPD.60T.62"> </a>
+          </td>
+          <td>Parametric Probability Distribution</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  UVN&lt;T&gt;
+            <a name="UVN.60T.62"> </a>
+          </td>
+          <td>Uncertain Value Narrative</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  UVP&lt;T&gt;
+            <a name="UVP.60T.62"> </a>
+          </td>
+          <td>Uncertain Value Probabilistic</td>
+          <td/>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/ParameterizedDataType"/>
+  <name value="v3 Code System ParameterizedDataType"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="  Deprecation Comment:
+Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/ParameterizedDataType"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="BAG&lt;T&gt;"/>
+      <display value="Bag"/>
+    </concept>
+    <concept>
+      <code value="LIST&lt;T&gt;"/>
+      <display value="Sequence"/>
+    </concept>
+    <concept>
+      <code value="SET&lt;T&gt;"/>
+      <display value="Set"/>
+      <concept>
+        <code value="EIVL&lt;T&gt;"/>
+        <display value="Event Related Interval"/>
+      </concept>
+      <concept>
+        <code value="IVL&lt;T&gt;"/>
+        <display value="Interval"/>
+      </concept>
+      <concept>
+        <code value="PIVL&lt;T&gt;"/>
+        <display value="Periodic Interval"/>
+      </concept>
+    </concept>
+    <concept>
+      <code value="T"/>
+      <display value="Type"/>
+      <concept>
+        <code value="ANT&lt;T&gt;"/>
+        <display value="Annotated"/>
+      </concept>
+      <concept>
+        <code value="HXIT&lt;T&gt;"/>
+        <display value="Historical"/>
+      </concept>
+      <concept>
+        <code value="NPPD&lt;T&gt;"/>
+        <display value="Non Parametric Probability Distribution"/>
+      </concept>
+      <concept>
+        <code value="PPD&lt;T&gt;"/>
+        <display value="Parametric Probability Distribution"/>
+      </concept>
+      <concept>
+        <code value="UVN&lt;T&gt;"/>
+        <display value="Uncertain Value Narrative"/>
+      </concept>
+      <concept>
+        <code value="UVP&lt;T&gt;"/>
+        <display value="Uncertain Value Probabilistic"/>
+      </concept>
+    </concept>
+  </define>
+</ValueSet>

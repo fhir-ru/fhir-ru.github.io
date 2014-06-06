@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>Compartment</h2>
+      <p> A named tag set for metadata used to populate a security category label field that &quot;segments&quot; an IT resource per policy by indicating that access and use is restricted to members of a defined community or project. (HL7 Healthcare Privacy and Security Classification System)  Usage Note:
+        <br/>This is the healthcare analog to the US Intelligence Community&#39;s concept of a Special Access Program.  Compartment codes may be used in as a field value in an initiator&#39;s clearance to indicate permission to access and use an IT Resource with a security label having the same compartment value in security category label field. Map: Aligns with ISO 2382-8 definition of Compartment -  &quot;A division of data into isolated blocks with separate security controls for the purpose of reducing risk.&quot; (OID = 2.16.840.1.113883.1.11.20478)
+      </p>
+      <p>This value set includes codes defined in other code systems, using the following rules:</p>
+      <ul>
+        <li>Include codes from 
+          <a href="../../../v3/ActCode/index.html">http://hl7.org/fhir/v3/ActCode</a> where concept  is-a  
+          <a href="../../../v3/ActCode/index.html#COMPT">COMPT</a>
+        </li>
+      </ul>
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/Compartment"/>
+  <version value="2013-12-07"/>
+  <name value="Compartment"/>
+  <publisher value="HL7 v3"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://www.hl7.org"/>
+  </telecom>
+  <description value=" A named tag set for metadata used to populate a security category label field that &quot;segments&quot; an IT resource per policy by indicating that access and use is restricted to members of a defined community or project. (HL7 Healthcare Privacy and Security Classification System)  Usage Note:
+This is the healthcare analog to the US Intelligence Community&#39;s concept of a Special Access Program.  Compartment codes may be used in as a field value in an initiator&#39;s clearance to indicate permission to access and use an IT Resource with a security label having the same compartment value in security category label field. Map: Aligns with ISO 2382-8 definition of Compartment -  &quot;A division of data into isolated blocks with separate security controls for the purpose of reducing risk.&quot; (OID = 2.16.840.1.113883.1.11.20478)"/>
+  <status value="active"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/v3/ActCode"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="COMPT"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

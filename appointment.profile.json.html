@@ -1,0 +1,806 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Appointment.profile.xml - FHIR v0.2.1</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="administration.html">Administrative</a></li>          <li><a href="appointment.html">Appointment</a></li>        <li><b>Profile Instance</b></li>        <!-- appointment.profile.xml.html / profile-instance:resource:Appointment -->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<h1>Appointment.profile.xml</h1>
+
+<div class="example">
+<p>Profile for appointment</p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;Profile&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;pre&gt;\r\n&amp;lt;&lt;a title=\&quot;(informative) A scheduled appointment for a patient and/or practitioner(s) where a service may take place.\&quot; class=\&quot;dict\&quot; href=\&quot;appointment-definitions.html#Appointment\&quot;&gt;&lt;b&gt;Appointment&lt;/b&gt;&lt;/a&gt; xmlns=&amp;quot;http://hl7.org/fhir&amp;quot;&amp;gt; &lt;span style=\&quot;float: right\&quot;&gt;&lt;a title=\&quot;Documentation for this format\&quot; href=\&quot;formats.html\&quot;&gt;&lt;img alt=\&quot;doco\&quot; src=\&quot;help.png\&quot;/&gt;&lt;/a&gt;&lt;/span&gt;\r\n &amp;lt;!-- from &lt;a href=\&quot;resources.html\&quot;&gt;Resource&lt;/a&gt;: &lt;a href=\&quot;extensibility.html\&quot;&gt;extension&lt;/a&gt;, &lt;a href=\&quot;extensibility.html#modifierExtension\&quot;&gt;modifierExtension&lt;/a&gt;, language, &lt;a href=\&quot;narrative.html#Narrative\&quot;&gt;text&lt;/a&gt;, and &lt;a href=\&quot;references.html#contained\&quot;&gt;contained&lt;/a&gt; --&amp;gt;\r\n &amp;lt;&lt;a title=\&quot;This records identifiers associated with this appointment concern that are defined by business processed and/ or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation).\&quot; class=\&quot;dict\&quot; href=\&quot;appointment-definitions.html#Appointment.identifier\&quot;&gt;&lt;b&gt;identifier&lt;/b&gt;&lt;/a&gt;&amp;gt;&lt;span style=\&quot;color: Gray\&quot;&gt;&amp;lt;!--&lt;/span&gt; &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..*&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;datatypes.html#Identifier\&quot;&gt;Identifier&lt;/a&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;External Ids for this item&lt;/span&gt;&lt;span style=\&quot;color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;&amp;lt;/identifier&amp;gt;\r\n &amp;lt;&lt;a title=\&quot;The priority of the appointment. Can be used to make informed decisions if needing to re-prioritize appointments. (The iCal Standard specifies 0 as undefined, 1 as highest, 9 as lowest priority) (Need to change back to CodeableConcept).\&quot; class=\&quot;dict\&quot; href=\&quot;appointment-definitions.html#Appointment.priority\&quot;&gt;&lt;b&gt;priority&lt;/b&gt;&lt;/a&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;datatypes.html#integer\&quot;&gt;integer&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot;color: Gray\&quot;&gt;&amp;lt;!--&lt;/span&gt; &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;\r\n     The priority of the appointment. Can be used to make informed decisions if needing to re-prioritize appointments. (The iCal Standard specifies 0 as undefined, 1 as highest, 9 as lowest priority) (Need to change back to CodeableConcept)&lt;/span&gt;&lt;span style=\&quot;color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n &amp;lt;&lt;a title=\&quot;Each of the participants has their own participation status which indicates their involvement in the process, however this status indicates the shared status.\&quot; class=\&quot;dict\&quot; href=\&quot;appointment-definitions.html#Appointment.status\&quot;&gt;&lt;b&gt;status&lt;/b&gt;&lt;/a&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;datatypes.html#code\&quot;&gt;code&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot;color: Gray\&quot;&gt;&amp;lt;!--&lt;/span&gt; &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;a style=\&quot;color: navy\&quot; href=\&quot;v3/ActStatus/index.html\&quot;&gt;The overall status of the Appointment&lt;/a&gt;&lt;span style=\&quot;color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n &amp;lt;&lt;a title=\&quot;The type of appointments that is being booked (ideally this would be an identifiable service - which is at a location, rather than the location itself).\&quot; class=\&quot;dict\&quot; href=\&quot;appointment-definitions.html#Appointment.type\&quot;&gt;&lt;b&gt;type&lt;/b&gt;&lt;/a&gt;&amp;gt;&lt;span style=\&quot;color: Gray\&quot;&gt;&amp;lt;!--&lt;/span&gt; &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;datatypes.html#CodeableConcept\&quot;&gt;CodeableConcept&lt;/a&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;\r\n     The type of appointments that is being booked (ideally this would be an identifiable service - which is at a location, rather than the location itself)&lt;/span&gt;&lt;span style=\&quot;color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;&amp;lt;/type&amp;gt;\r\n &amp;lt;&lt;a title=\&quot;The reason that this appointment is being scheduled, this is more clinical than administrative.\&quot; class=\&quot;dict\&quot; href=\&quot;appointment-definitions.html#Appointment.reason\&quot;&gt;&lt;b&gt;reason&lt;/b&gt;&lt;/a&gt;&amp;gt;&lt;span style=\&quot;color: Gray\&quot;&gt;&amp;lt;!--&lt;/span&gt; &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;datatypes.html#CodeableConcept\&quot;&gt;CodeableConcept&lt;/a&gt;&lt;/span&gt; &lt;a style=\&quot;color: navy\&quot; href=\&quot;encounter-reason.html\&quot;&gt;The reason that this appointment is being scheduled, this is more clinical than administrative&lt;/a&gt;&lt;span style=\&quot;color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;&amp;lt;/reason&amp;gt;\r\n &amp;lt;&lt;a title=\&quot;The brief description of the appointment as would be shown on a subject line in a meeting request, or appointment list. Detailed or expanded information should be put in the comment field.\&quot; class=\&quot;dict\&quot; href=\&quot;appointment-definitions.html#Appointment.description\&quot;&gt;&lt;b&gt;description&lt;/b&gt;&lt;/a&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;datatypes.html#string\&quot;&gt;string&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot;color: Gray\&quot;&gt;&amp;lt;!--&lt;/span&gt; &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;\r\n     The brief description of the appointment as would be shown on a subject line in a meeting request, or appointment list. Detailed or expanded information should be put in the comment field&lt;/span&gt;&lt;span style=\&quot;color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n &amp;lt;&lt;a title=\&quot;Date/Time that the appointment is to take place.\&quot; class=\&quot;dict\&quot; href=\&quot;appointment-definitions.html#Appointment.start\&quot;&gt;&lt;b&gt;start&lt;/b&gt;&lt;/a&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;datatypes.html#instant\&quot;&gt;instant&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot;color: Gray\&quot;&gt;&amp;lt;!--&lt;/span&gt; &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;1..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Date/Time that the appointment is to take place&lt;/span&gt;&lt;span style=\&quot;color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n &amp;lt;&lt;a title=\&quot;Date/Time that the appointment is to conclude.\&quot; class=\&quot;dict\&quot; href=\&quot;appointment-definitions.html#Appointment.end\&quot;&gt;&lt;b&gt;end&lt;/b&gt;&lt;/a&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;datatypes.html#instant\&quot;&gt;instant&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot;color: Gray\&quot;&gt;&amp;lt;!--&lt;/span&gt; &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;1..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Date/Time that the appointment is to conclude&lt;/span&gt;&lt;span style=\&quot;color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n &amp;lt;&lt;a title=\&quot;The slot that this appointment is filling. If provided then the schedule will not be provided as slots are not recursive, and the start/end values MUST be the same as from the slot.\&quot; class=\&quot;dict\&quot; href=\&quot;appointment-definitions.html#Appointment.slot\&quot;&gt;&lt;b&gt;slot&lt;/b&gt;&lt;/a&gt;&amp;gt;&lt;span style=\&quot;color: Gray\&quot;&gt;&amp;lt;!--&lt;/span&gt; &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..*&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;references.html#Resource\&quot;&gt;Resource&lt;/a&gt;(&lt;a href=\&quot;slot.html#Slot\&quot;&gt;Slot&lt;/a&gt;)&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;\r\n     The slot that this appointment is filling. If provided then the schedule will not be provided as slots are not recursive, and the start/end values MUST be the same as from the slot&lt;/span&gt;&lt;span style=\&quot;color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;&amp;lt;/slot&amp;gt;\r\n &amp;lt;&lt;a title=\&quot;The primary location that this appointment is to take place.\&quot; class=\&quot;dict\&quot; href=\&quot;appointment-definitions.html#Appointment.location\&quot;&gt;&lt;b&gt;location&lt;/b&gt;&lt;/a&gt;&amp;gt;&lt;span style=\&quot;color: Gray\&quot;&gt;&amp;lt;!--&lt;/span&gt; &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;references.html#Resource\&quot;&gt;Resource&lt;/a&gt;(&lt;a href=\&quot;location.html#Location\&quot;&gt;Location&lt;/a&gt;)&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;\r\n     The primary location that this appointment is to take place&lt;/span&gt;&lt;span style=\&quot;color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;&amp;lt;/location&amp;gt;\r\n &amp;lt;&lt;a title=\&quot;Additional comments about the appointment.\&quot; class=\&quot;dict\&quot; href=\&quot;appointment-definitions.html#Appointment.comment\&quot;&gt;&lt;b&gt;comment&lt;/b&gt;&lt;/a&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;datatypes.html#string\&quot;&gt;string&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot;color: Gray\&quot;&gt;&amp;lt;!--&lt;/span&gt; &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Additional comments about the appointment&lt;/span&gt;&lt;span style=\&quot;color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n &amp;lt;&lt;a title=\&quot;An Order that lead to the creation of this appointment.\&quot; class=\&quot;dict\&quot; href=\&quot;appointment-definitions.html#Appointment.order\&quot;&gt;&lt;b&gt;order&lt;/b&gt;&lt;/a&gt;&amp;gt;&lt;span style=\&quot;color: Gray\&quot;&gt;&amp;lt;!--&lt;/span&gt; &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;references.html#Resource\&quot;&gt;Resource&lt;/a&gt;(&lt;a href=\&quot;order.html#Order\&quot;&gt;Order&lt;/a&gt;)&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;An Order that lead to the creation of this appointment&lt;/span&gt;&lt;span style=\&quot;color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;&amp;lt;/order&amp;gt;\r\n &amp;lt;&lt;a title=\&quot;List of participants involved in the appointment.\&quot; class=\&quot;dict\&quot; href=\&quot;appointment-definitions.html#Appointment.participant\&quot;&gt;&lt;b&gt;participant&lt;/b&gt;&lt;/a&gt;&amp;gt;  &lt;span style=\&quot;color: Gray\&quot;&gt;&amp;lt;!-- &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;1..*&lt;/b&gt;&lt;/span&gt; List of participants involved in the appointment --&amp;gt;&lt;/span&gt;\r\n  &amp;lt;&lt;a title=\&quot;Role of participant in the appointment.\&quot; class=\&quot;dict\&quot; href=\&quot;appointment-definitions.html#Appointment.participant.type\&quot;&gt;&lt;b&gt;type&lt;/b&gt;&lt;/a&gt;&amp;gt;&lt;span style=\&quot;color: Gray\&quot;&gt;&amp;lt;!--&lt;/span&gt; &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..*&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;datatypes.html#CodeableConcept\&quot;&gt;CodeableConcept&lt;/a&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;&lt;a style=\&quot;color: navy\&quot; href=\&quot;valueset-encounter-participant-type.html\&quot;&gt;Role of participant in the appointment&lt;/a&gt;&lt;/span&gt;&lt;span style=\&quot;color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;&amp;lt;/type&amp;gt;\r\n  &amp;lt;&lt;a title=\&quot;A Person of device that is participating in the appointment, usually Practitioner, Patient, RelatedPerson or Device.\&quot; class=\&quot;dict\&quot; href=\&quot;appointment-definitions.html#Appointment.participant.individual\&quot;&gt;&lt;b&gt;individual&lt;/b&gt;&lt;/a&gt;&amp;gt;&lt;span style=\&quot;color: Gray\&quot;&gt;&amp;lt;!--&lt;/span&gt; &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;references.html#Resource\&quot;&gt;Resource&lt;/a&gt;(&lt;a href=\&quot;resourcelist.html\&quot;&gt;Any&lt;/a&gt;)&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;\r\n      A Person of device that is participating in the appointment, usually Practitioner, Patient, RelatedPerson or Device&lt;/span&gt;&lt;span style=\&quot;color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;&amp;lt;/individual&amp;gt;\r\n  &amp;lt;&lt;a title=\&quot;Is this participant required to be present at the meeting. This covers a use-case where 2 doctors need to meet to discuss the results for a specific patient, and the patient is not required to be present.\&quot; class=\&quot;dict\&quot; href=\&quot;appointment-definitions.html#Appointment.participant.required\&quot;&gt;&lt;b&gt;required&lt;/b&gt;&lt;/a&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;datatypes.html#code\&quot;&gt;code&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot;color: Gray\&quot;&gt;&amp;lt;!--&lt;/span&gt; &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;&lt;a style=\&quot;color: navy\&quot; href=\&quot;participantrequired.html\&quot;&gt;required | optional | information-only&lt;/a&gt;&lt;/span&gt;&lt;span style=\&quot;color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n  &amp;lt;&lt;a title=\&quot;Participation status of the Patient.\&quot; class=\&quot;dict\&quot; href=\&quot;appointment-definitions.html#Appointment.participant.status\&quot;&gt;&lt;b&gt;status&lt;/b&gt;&lt;/a&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;datatypes.html#code\&quot;&gt;code&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot;color: Gray\&quot;&gt;&amp;lt;!--&lt;/span&gt; &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;1..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;&lt;a style=\&quot;color: navy\&quot; href=\&quot;participationstatus.html\&quot;&gt;accepted | declined | tentative | in-process | completed | needs-action&lt;/a&gt;&lt;/span&gt;&lt;span style=\&quot;color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n &amp;lt;/participant&amp;gt;\r\n &amp;lt;&lt;a title=\&quot;Who recorded the appointment.\&quot; class=\&quot;dict\&quot; href=\&quot;appointment-definitions.html#Appointment.lastModifiedBy\&quot;&gt;&lt;b&gt;lastModifiedBy&lt;/b&gt;&lt;/a&gt;&amp;gt;&lt;span style=\&quot;color: Gray\&quot;&gt;&amp;lt;!--&lt;/span&gt; &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;references.html#Resource\&quot;&gt;Resource&lt;/a&gt;(&lt;a href=\&quot;practitioner.html#Practitioner\&quot;&gt;Practitioner&lt;/a&gt;|&lt;a href=\&quot;patient.html#Patient\&quot;&gt;Patient&lt;/a&gt;|&lt;a href=\&quot;relatedperson.html#RelatedPerson\&quot;&gt;RelatedPerson&lt;/a&gt;)&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;\r\n     Who recorded the appointment&lt;/span&gt;&lt;span style=\&quot;color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;&amp;lt;/lastModifiedBy&amp;gt;\r\n &amp;lt;&lt;a title=\&quot;Date when the appointment was recorded.\&quot; class=\&quot;dict\&quot; href=\&quot;appointment-definitions.html#Appointment.lastModified\&quot;&gt;&lt;b&gt;lastModified&lt;/b&gt;&lt;/a&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;datatypes.html#dateTime\&quot;&gt;dateTime&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot;color: Gray\&quot;&gt;&amp;lt;!--&lt;/span&gt; &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Date when the appointment was recorded&lt;/span&gt;&lt;span style=\&quot;color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/Appointment&amp;gt;\r\n&lt;/pre&gt;&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: &quot;http://hl7.org/fhir/profile/appointment&quot;,
+  &quot;name&quot;: &quot;appointment&quot;,
+  &quot;publisher&quot;: &quot;FHIR Project&quot;,
+  &quot;description&quot;: &quot;Basic Profile. (informative) A scheduled appointment for a patient and/or practitioner(s) where a service may take place.&quot;,
+  &quot;status&quot;: &quot;draft&quot;,
+  &quot;date&quot;: &quot;2014-06-06&quot;,
+  &quot;requirements&quot;: &quot;Scope and Usage Appointment resources are used to provide information about a planned meeting that may be in the future or past. The resource only describes a single meeting, a series of repeating visits would require multiple appointment resources be created for each instance. Examples include a scheduled surgery, a follow-up for a clinical visit, a scheduled conference call between clinicians to discuss a case, the reservation of a piece of diagnostic equipment for a particular use, etc. The visit scheduled by an appointment may be in person or remote (by phone, video conference, etc.) All that matters is that the time and usage of one or more individuals, locations and/or pieces of equipment is being fully or partially reserved for a designated period of time. \r\n\r\nThis definition takes the concepts of appointments in a clinical setting and also extends them to be relevant in the community healthcare space, and also ease exposure to other appointment / calendar standards widely used outside of healthcare. \r\n\r\nThe basic workflow to create an appointment * Discovery/Addressing Before an appointment can be made the address of the resource that we want to schedule an appointment with must be determined. This is often based on the healthcare Service Type, any formatting information which indicates how to make the request. This is typically handled via the Availability resource. \r\n\r\n\r\n* Checking Availability (optional) This optional step permits the checking of any existing available times (slot resources associated with a selected availability ) that can be booked against. Just because a time is indicated it is available doesn't guarantee that an appointment can be made. The booking system that is going to process the request may make other qualifying decisions to determine if the appointment can be made, such as permissions, assessments, availability of other resources etc. \r\n\r\nThis step is optional as the creation of the appointment is never a guaranteed action. But by performing this availability check, you can increase the chances of making a successful booking. \r\n\r\n\r\n* Making the Appointment Request The request is performed by posting an Appointment to the address found during discovery. This will have a needs-action status for each of the participants. (The system that receives the request may modify the status of any posted appointment based on internal business rules, such as certain users do not have permission to request certain appointments) \r\n\r\n\r\n* Replying to the request The reply process is simply performed by the person/system handing the requests updating the Participant Statuses as needed. If there are multiple systems involved, then these will create AppointmentResponse entries with the desired statuses. \r\n\r\nOnce all participants have their participation status created/updated (and the main system marking the appointment participant records with the AppointmentResponse statuses) then the overall status of the appointment is updated. \r\n\r\n\r\n* Checking the overall status (Requester) The Requester (organizer) of the appointment checks for the overall status of the appointment (and appointmentresponses where applicable) using fhir pub-sub techniques. \r\n\r\nWhere the participant statuses indicate that a re-scheduling is required, then the process may start again, with other systems replying to a new set of times. \r\n\r\n\r\nThere are 2 typical workflows that occur with appointments * Outlook Style - Community These types of requests are typically handled by selecting a specific time from a list of available slots. Then making the request for that timeslot. \r\n\r\n\r\n* Hospital Scheduling - Clinical Clinical scheduling is often far more complex in its requirements and processing. Often this involves checking multiple availabilities across multiple systems and timing with other internal systems, not just those exposed by the Slot resources. \r\n\r\nConsideration should be given to situations where scheduling needs to be handled in more of a queue-like process. \r\n\r\nNote: This type of clinical appointment scheduling has not been specifically covered with this definition of the appointment (and the related resources), however if you would like to contribute to the modification of this resource to cover these use cases, please contact the HL7 Patient Administration work-group.&quot;,
+  &quot;mapping&quot;: [
+    {
+      &quot;identity&quot;: &quot;ical&quot;,
+      &quot;uri&quot;: &quot;http://www.ietf.org/rfc/rfc2445.txt&quot;,
+      &quot;name&quot;: &quot;iCalendar&quot;
+    },
+    {
+      &quot;identity&quot;: &quot;rim&quot;,
+      &quot;uri&quot;: &quot;http://hl7.org/v3&quot;,
+      &quot;name&quot;: &quot;RIM&quot;
+    },
+    {
+      &quot;identity&quot;: &quot;v2&quot;,
+      &quot;uri&quot;: &quot;http://hl7.org/v2&quot;,
+      &quot;name&quot;: &quot;HL7 v2&quot;
+    }
+  ],
+  &quot;structure&quot;: [
+    {
+      &quot;type&quot;: &quot;Appointment&quot;,
+      &quot;publish&quot;: true,
+      &quot;element&quot;: [
+        {
+          &quot;path&quot;: &quot;Appointment&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;(informative) A scheduled appointment for a patient and/or practitioner(s) where a service may take place&quot;,
+            &quot;formal&quot;: &quot;(informative) A scheduled appointment for a patient and/or practitioner(s) where a service may take place.&quot;,
+            &quot;min&quot;: 1,
+            &quot;max&quot;: &quot;1&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;Resource&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false,
+            &quot;mapping&quot;: [
+              {
+                &quot;identity&quot;: &quot;ical&quot;,
+                &quot;map&quot;: &quot;VEVENT&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Appointment.extension&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;Additional Content defined by implementations&quot;,
+            &quot;formal&quot;: &quot;May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot;,
+            &quot;comments&quot;: &quot;there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone.&quot;,
+            &quot;synonym&quot;: [
+              &quot;extensions&quot;,
+              &quot;user content&quot;
+            ],
+            &quot;min&quot;: 0,
+            &quot;max&quot;: &quot;*&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;Extension&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Appointment.modifierExtension&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;Extensions that cannot be ignored&quot;,
+            &quot;formal&quot;: &quot;May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&quot;,
+            &quot;comments&quot;: &quot;there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone.&quot;,
+            &quot;synonym&quot;: [
+              &quot;extensions&quot;,
+              &quot;user content&quot;
+            ],
+            &quot;min&quot;: 0,
+            &quot;max&quot;: &quot;*&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;Extension&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Appointment.text&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;Text summary of the resource, for human interpretation&quot;,
+            &quot;formal&quot;: &quot;A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \&quot;clinically safe\&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.&quot;,
+            &quot;comments&quot;: &quot;Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative.&quot;,
+            &quot;synonym&quot;: [
+              &quot;narrative&quot;,
+              &quot;html&quot;,
+              &quot;xhtml&quot;,
+              &quot;display&quot;
+            ],
+            &quot;min&quot;: 0,
+            &quot;max&quot;: &quot;1&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;Narrative&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Appointment.contained&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;Contained, inline Resources&quot;,
+            &quot;formal&quot;: &quot;These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.&quot;,
+            &quot;comments&quot;: &quot;This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again.&quot;,
+            &quot;synonym&quot;: [
+              &quot;inline resources&quot;,
+              &quot;anonymous resources&quot;,
+              &quot;contained resources&quot;
+            ],
+            &quot;min&quot;: 0,
+            &quot;max&quot;: &quot;*&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;Resource&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Appointment.identifier&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;External Ids for this item&quot;,
+            &quot;formal&quot;: &quot;This records identifiers associated with this appointment concern that are defined by business processed and/ or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation).&quot;,
+            &quot;min&quot;: 0,
+            &quot;max&quot;: &quot;*&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;Identifier&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false,
+            &quot;mapping&quot;: [
+              {
+                &quot;identity&quot;: &quot;rim&quot;,
+                &quot;map&quot;: &quot;.id&quot;
+              },
+              {
+                &quot;identity&quot;: &quot;ical&quot;,
+                &quot;map&quot;: &quot;UID&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Appointment.priority&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;The priority of the appointment. Can be used to make informed decisions if needing to re-prioritize appointments. (The iCal Standard specifies 0 as undefined, 1 as highest, 9 as lowest priority) (Need to change back to CodeableConcept)&quot;,
+            &quot;formal&quot;: &quot;The priority of the appointment. Can be used to make informed decisions if needing to re-prioritize appointments. (The iCal Standard specifies 0 as undefined, 1 as highest, 9 as lowest priority) (Need to change back to CodeableConcept).&quot;,
+            &quot;min&quot;: 0,
+            &quot;max&quot;: &quot;1&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;integer&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false,
+            &quot;mapping&quot;: [
+              {
+                &quot;identity&quot;: &quot;ical&quot;,
+                &quot;map&quot;: &quot;PRIORITY&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Appointment.status&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;The overall status of the Appointment&quot;,
+            &quot;formal&quot;: &quot;Each of the participants has their own participation status which indicates their involvement in the process, however this status indicates the shared status.&quot;,
+            &quot;min&quot;: 0,
+            &quot;max&quot;: &quot;1&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;code&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false,
+            &quot;binding&quot;: {
+              &quot;name&quot;: &quot;ActStatus&quot;,
+              &quot;isExtensible&quot;: false,
+              &quot;conformance&quot;: &quot;required&quot;,
+              &quot;description&quot;: &quot;The status of the appointment&quot;,
+              &quot;referenceResource&quot;: {
+                &quot;reference&quot;: &quot;http://hl7.org/fhir/v3/vs/ActStatus&quot;
+              }
+            }
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Appointment.type&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;The type of appointments that is being booked (ideally this would be an identifiable service - which is at a location, rather than the location itself)&quot;,
+            &quot;formal&quot;: &quot;The type of appointments that is being booked (ideally this would be an identifiable service - which is at a location, rather than the location itself).&quot;,
+            &quot;min&quot;: 0,
+            &quot;max&quot;: &quot;1&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;CodeableConcept&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Appointment.reason&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;The reason that this appointment is being scheduled, this is more clinical than administrative&quot;,
+            &quot;formal&quot;: &quot;The reason that this appointment is being scheduled, this is more clinical than administrative.&quot;,
+            &quot;min&quot;: 0,
+            &quot;max&quot;: &quot;1&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;CodeableConcept&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false,
+            &quot;binding&quot;: {
+              &quot;name&quot;: &quot;ApptReason&quot;,
+              &quot;isExtensible&quot;: true,
+              &quot;conformance&quot;: &quot;preferred&quot;,
+              &quot;description&quot;: &quot;The Reason for the appointment to take place&quot;,
+              &quot;referenceResource&quot;: {
+                &quot;reference&quot;: &quot;http://hl7.org/fhir/vs/encounter-reason&quot;
+              }
+            }
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Appointment.description&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;The brief description of the appointment as would be shown on a subject line in a meeting request, or appointment list. Detailed or expanded information should be put in the comment field&quot;,
+            &quot;formal&quot;: &quot;The brief description of the appointment as would be shown on a subject line in a meeting request, or appointment list. Detailed or expanded information should be put in the comment field.&quot;,
+            &quot;min&quot;: 0,
+            &quot;max&quot;: &quot;1&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false,
+            &quot;mapping&quot;: [
+              {
+                &quot;identity&quot;: &quot;ical&quot;,
+                &quot;map&quot;: &quot;DESCRIPTION&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Appointment.start&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;Date/Time that the appointment is to take place&quot;,
+            &quot;formal&quot;: &quot;Date/Time that the appointment is to take place.&quot;,
+            &quot;min&quot;: 1,
+            &quot;max&quot;: &quot;1&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;instant&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Appointment.end&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;Date/Time that the appointment is to conclude&quot;,
+            &quot;formal&quot;: &quot;Date/Time that the appointment is to conclude.&quot;,
+            &quot;min&quot;: 1,
+            &quot;max&quot;: &quot;1&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;instant&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Appointment.slot&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;The slot that this appointment is filling. If provided then the schedule will not be provided as slots are not recursive, and the start/end values MUST be the same as from the slot&quot;,
+            &quot;formal&quot;: &quot;The slot that this appointment is filling. If provided then the schedule will not be provided as slots are not recursive, and the start/end values MUST be the same as from the slot.&quot;,
+            &quot;min&quot;: 0,
+            &quot;max&quot;: &quot;*&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;ResourceReference&quot;,
+                &quot;profile&quot;: &quot;http://hl7.org/fhir/profiles/Slot&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Appointment.location&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;The primary location that this appointment is to take place&quot;,
+            &quot;formal&quot;: &quot;The primary location that this appointment is to take place.&quot;,
+            &quot;min&quot;: 0,
+            &quot;max&quot;: &quot;1&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;ResourceReference&quot;,
+                &quot;profile&quot;: &quot;http://hl7.org/fhir/profiles/Location&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Appointment.comment&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;Additional comments about the appointment&quot;,
+            &quot;formal&quot;: &quot;Additional comments about the appointment.&quot;,
+            &quot;min&quot;: 0,
+            &quot;max&quot;: &quot;1&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false,
+            &quot;mapping&quot;: [
+              {
+                &quot;identity&quot;: &quot;ical&quot;,
+                &quot;map&quot;: &quot;COMMENT&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Appointment.order&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;An Order that lead to the creation of this appointment&quot;,
+            &quot;formal&quot;: &quot;An Order that lead to the creation of this appointment.&quot;,
+            &quot;min&quot;: 0,
+            &quot;max&quot;: &quot;1&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;ResourceReference&quot;,
+                &quot;profile&quot;: &quot;http://hl7.org/fhir/profiles/Order&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Appointment.participant&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;List of participants involved in the appointment&quot;,
+            &quot;formal&quot;: &quot;List of participants involved in the appointment.&quot;,
+            &quot;min&quot;: 1,
+            &quot;max&quot;: &quot;*&quot;,
+            &quot;isModifier&quot;: false,
+            &quot;mapping&quot;: [
+              {
+                &quot;identity&quot;: &quot;ical&quot;,
+                &quot;map&quot;: &quot;ATTENDEE component to be created&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Appointment.participant.extension&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;Additional Content defined by implementations&quot;,
+            &quot;formal&quot;: &quot;May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot;,
+            &quot;comments&quot;: &quot;there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone.&quot;,
+            &quot;synonym&quot;: [
+              &quot;extensions&quot;,
+              &quot;user content&quot;
+            ],
+            &quot;min&quot;: 0,
+            &quot;max&quot;: &quot;*&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;Extension&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Appointment.participant.modifierExtension&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;Extensions that cannot be ignored&quot;,
+            &quot;formal&quot;: &quot;May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&quot;,
+            &quot;comments&quot;: &quot;there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone.&quot;,
+            &quot;synonym&quot;: [
+              &quot;extensions&quot;,
+              &quot;user content&quot;
+            ],
+            &quot;min&quot;: 0,
+            &quot;max&quot;: &quot;*&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;Extension&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Appointment.participant.type&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;Role of participant in the appointment&quot;,
+            &quot;formal&quot;: &quot;Role of participant in the appointment.&quot;,
+            &quot;min&quot;: 0,
+            &quot;max&quot;: &quot;*&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;CodeableConcept&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false,
+            &quot;binding&quot;: {
+              &quot;name&quot;: &quot;ParticipantType&quot;,
+              &quot;isExtensible&quot;: true,
+              &quot;conformance&quot;: &quot;preferred&quot;,
+              &quot;description&quot;: &quot;Role of participant in encounter&quot;,
+              &quot;referenceResource&quot;: {
+                &quot;reference&quot;: &quot;http://hl7.org/fhir/vs/encounter-participant-type&quot;
+              }
+            },
+            &quot;mapping&quot;: [
+              {
+                &quot;identity&quot;: &quot;ical&quot;,
+                &quot;map&quot;: &quot;n/a&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Appointment.participant.individual&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;A Person of device that is participating in the appointment, usually Practitioner, Patient, RelatedPerson or Device&quot;,
+            &quot;formal&quot;: &quot;A Person of device that is participating in the appointment, usually Practitioner, Patient, RelatedPerson or Device.&quot;,
+            &quot;comments&quot;: &quot;Should this be multiple? And move to a child enitity.&quot;,
+            &quot;min&quot;: 0,
+            &quot;max&quot;: &quot;1&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;ResourceReference&quot;,
+                &quot;profile&quot;: &quot;http://hl7.org/fhir/profiles/Any&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false,
+            &quot;mapping&quot;: [
+              {
+                &quot;identity&quot;: &quot;v2&quot;,
+                &quot;map&quot;: &quot;PID-3-Patient ID List&quot;
+              },
+              {
+                &quot;identity&quot;: &quot;ical&quot;,
+                &quot;map&quot;: &quot;ATTENDEE: (Need to provide the common name CN and also the MAILTO properties from the practitioner resource)&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Appointment.participant.required&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;required | optional | information-only&quot;,
+            &quot;formal&quot;: &quot;Is this participant required to be present at the meeting. This covers a use-case where 2 doctors need to meet to discuss the results for a specific patient, and the patient is not required to be present.&quot;,
+            &quot;min&quot;: 0,
+            &quot;max&quot;: &quot;1&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;code&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false,
+            &quot;binding&quot;: {
+              &quot;name&quot;: &quot;ParticipantRequired&quot;,
+              &quot;isExtensible&quot;: false,
+              &quot;conformance&quot;: &quot;required&quot;,
+              &quot;description&quot;: &quot;Is the Participant required to attend the appointment&quot;,
+              &quot;referenceResource&quot;: {
+                &quot;reference&quot;: &quot;http://hl7.org/fhir/vs/participantrequired&quot;
+              }
+            },
+            &quot;mapping&quot;: [
+              {
+                &quot;identity&quot;: &quot;ical&quot;,
+                &quot;map&quot;: &quot;ROLE=REQ-PARTICIPANT (roleparam)&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Appointment.participant.status&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;accepted | declined | tentative | in-process | completed | needs-action&quot;,
+            &quot;formal&quot;: &quot;Participation status of the Patient.&quot;,
+            &quot;min&quot;: 1,
+            &quot;max&quot;: &quot;1&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;code&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false,
+            &quot;binding&quot;: {
+              &quot;name&quot;: &quot;ParticipationStatus&quot;,
+              &quot;isExtensible&quot;: false,
+              &quot;conformance&quot;: &quot;required&quot;,
+              &quot;description&quot;: &quot;The Participation status of an appointment&quot;,
+              &quot;referenceResource&quot;: {
+                &quot;reference&quot;: &quot;http://hl7.org/fhir/vs/participationstatus&quot;
+              }
+            },
+            &quot;mapping&quot;: [
+              {
+                &quot;identity&quot;: &quot;ical&quot;,
+                &quot;map&quot;: &quot;ATTENDEE;CN=\&quot;Brian Postlethwaite\&quot;;RSVP=TRUE:mailto:BPostlethwaite@data.com (rsvpparam | partstatparam)&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Appointment.lastModifiedBy&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;Who recorded the appointment&quot;,
+            &quot;formal&quot;: &quot;Who recorded the appointment.&quot;,
+            &quot;min&quot;: 0,
+            &quot;max&quot;: &quot;1&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;ResourceReference&quot;,
+                &quot;profile&quot;: &quot;http://hl7.org/fhir/profiles/Practitioner&quot;
+              },
+              {
+                &quot;code&quot;: &quot;ResourceReference&quot;,
+                &quot;profile&quot;: &quot;http://hl7.org/fhir/profiles/Patient&quot;
+              },
+              {
+                &quot;code&quot;: &quot;ResourceReference&quot;,
+                &quot;profile&quot;: &quot;http://hl7.org/fhir/profiles/RelatedPerson&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false,
+            &quot;mapping&quot;: [
+              {
+                &quot;identity&quot;: &quot;v2&quot;,
+                &quot;map&quot;: &quot;IAM-14-Reported By (if patient) / IAM-18-Statused By Person (if practitioner)&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Appointment.lastModified&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;Date when the appointment was recorded&quot;,
+            &quot;formal&quot;: &quot;Date when the appointment was recorded.&quot;,
+            &quot;min&quot;: 0,
+            &quot;max&quot;: &quot;1&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;dateTime&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false,
+            &quot;mapping&quot;: [
+              {
+                &quot;identity&quot;: &quot;v2&quot;,
+                &quot;map&quot;: &quot;IAM-20-Statused at Date/Time&quot;
+              },
+              {
+                &quot;identity&quot;: &quot;ical&quot;,
+                &quot;map&quot;: &quot;DTSTAMP&quot;
+              }
+            ]
+          }
+        }
+      ],
+      &quot;searchParam&quot;: [
+        {
+          &quot;name&quot;: &quot;_id&quot;,
+          &quot;type&quot;: &quot;token&quot;,
+          &quot;documentation&quot;: &quot;The logical resource id associated with the resource (must be supported by all servers)&quot;
+        },
+        {
+          &quot;name&quot;: &quot;_language&quot;,
+          &quot;type&quot;: &quot;token&quot;,
+          &quot;documentation&quot;: &quot;The stated language of the resource&quot;
+        },
+        {
+          &quot;name&quot;: &quot;date&quot;,
+          &quot;type&quot;: &quot;date&quot;,
+          &quot;documentation&quot;: &quot;Appointment date/time.&quot;,
+          &quot;xpath&quot;: &quot;f:Appointment/f:start&quot;
+        },
+        {
+          &quot;name&quot;: &quot;individual&quot;,
+          &quot;type&quot;: &quot;reference&quot;,
+          &quot;documentation&quot;: &quot;Any one of the individuals participating in the appointment&quot;,
+          &quot;xpath&quot;: &quot;f:Appointment/f:participant/f:individual&quot;
+        },
+        {
+          &quot;name&quot;: &quot;partstatus&quot;,
+          &quot;type&quot;: &quot;token&quot;,
+          &quot;documentation&quot;: &quot;The Participation status of the subject, or other participant on the appointment&quot;,
+          &quot;xpath&quot;: &quot;f:Appointment/f:participant/f:status&quot;
+        },
+        {
+          &quot;name&quot;: &quot;status&quot;,
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;documentation&quot;: &quot;The overall status of the appointment&quot;,
+          &quot;xpath&quot;: &quot;f:Appointment/f:status&quot;
+        }
+      ]
+    }
+  ]
+}
+</pre>
+</div>
+
+
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011 - 2014. FHIR DSTU (v0.2.1-????) generated on Fri, Jun 6, 2014 13:26+0000. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a href="dstu.html">What's a DSTU?</a> | <a href="history.html">Version History</a> | <a href="license.html">License</a> | <a href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Administrative Sex</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>A
+            <a name="A"> </a>
+          </td>
+          <td>Ambiguous</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>F
+            <a name="F"> </a>
+          </td>
+          <td>Female</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>M
+            <a name="M"> </a>
+          </td>
+          <td>Male</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>N
+            <a name="N"> </a>
+          </td>
+          <td>Not applicable</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>O
+            <a name="O"> </a>
+          </td>
+          <td>Other</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>U
+            <a name="U"> </a>
+          </td>
+          <td>Unknown</td>
+          <td>from v2.1</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0001"/>
+  <name value="v2 Administrative Sex"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0001 ( Administrative Sex)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0001"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="A"/>
+      <display value="Ambiguous"/>
+    </concept>
+    <concept>
+      <code value="F"/>
+      <display value="Female"/>
+    </concept>
+    <concept>
+      <code value="M"/>
+      <display value="Male"/>
+    </concept>
+    <concept>
+      <code value="N"/>
+      <display value="Not applicable"/>
+    </concept>
+    <concept>
+      <code value="O"/>
+      <display value="Other"/>
+    </concept>
+    <concept>
+      <code value="U"/>
+      <display value="Unknown"/>
+    </concept>
+  </define>
+</ValueSet>

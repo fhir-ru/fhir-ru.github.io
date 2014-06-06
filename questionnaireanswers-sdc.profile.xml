@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Profile xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><pre> <span style="float: right"><a title="Documentation for this format" href="formats.html"><img alt="doco" src="help.png"/></a></span>
+<span style="color: Gray">&lt;!-- <span style="color: Darkviolet">Resources</span> --&gt;</span>
+<span style="color: Gray">&lt;!--<a name="StructuredDataCaptureAnswers"> </a><span style="color: Darkviolet">StructuredDataCaptureAnswers</span> --&gt;</span>
+&lt;<span title="A structured set of questions and their answers."><b>QuestionnaireAnswers</b></span> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+ &lt;!-- from Element: <a href="extensibility.html">extension</a> --&gt;
+ <i class="inherited">&lt;<span title="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."><b>extension</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..*</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/extensibility.html#Extension">Extension</a></span> <span style="color: navy">Additional Content defined by implementations</span><span style="color: Gray"> --&gt;</span>&lt;/extension&gt;</i>
+ <i class="inherited">&lt;<span title="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."><b>modifierExtension</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..*</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/extensibility.html#Extension">Extension</a></span> <span style="color: navy">Extensions that cannot be ignored</span><span style="color: Gray"> --&gt;</span>&lt;/modifierExtension&gt;</i>
+ <i class="inherited">&lt;<span title="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."><b>text</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/narrative.html#Narrative">Narrative</a></span> <span style="color: navy">Text summary of the resource, for human interpretation</span><span style="color: Gray"> --&gt;</span>&lt;/text&gt;</i>
+ <i class="inherited">&lt;<span title="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."><b>contained</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..*</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/references.html#Resource">Resource</a></span> <span style="color: navy">Contained, inline Resources</span><span style="color: Gray"> --&gt;</span>&lt;/contained&gt;</i>
+ &lt;<span title="Form being answered (this element must be supported)" style="text-decoration: underline"><b>questionnaire</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/references.html#Resource">Resource</a>(<a href="http://hl7.org/fhir/questionnaire.html#Questionnaire">Questionnaire</a>)</span> <span style="color: navy">Form being answered</span><span style="color: Gray"> --&gt;</span>&lt;/questionnaire&gt;
+ &lt;<span title="in progress | completed | amended (this element modifies the meaning of other elements, and must be supported)" style="text-decoration: underline"><b>status</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#code">code</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: navy"><a style="color: navy" href="questionnaire-answers-status.html">in progress | completed | amended</a></span><span style="color: Gray"> --&gt;</span>
+ &lt;<span title="The subject of the questions (this element must be supported)" style="text-decoration: underline"><b>subject</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/references.html#Resource">Resource</a>(<a href="http://hl7.org/fhir/patient.html#Patient">Patient</a>)</span> <span style="color: navy">The subject of the questions</span><span style="color: Gray"> --&gt;</span>&lt;/subject&gt;
+ &lt;<span title="Person who received and recorded the answers (this element must be supported)" style="text-decoration: underline"><b>author</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/references.html#Resource">Resource</a>(<a href="http://hl7.org/fhir/practitioner.html#Practitioner">Practitioner</a>|<a href="http://hl7.org/fhir/patient.html#Patient">Patient</a>|<a href="http://hl7.org/fhir/relatedperson.html#RelatedPerson">RelatedPerson</a>)</span> <span style="color: navy">
+     Person who received and recorded the answers</span><span style="color: Gray"> --&gt;</span>&lt;/author&gt;
+ &lt;<span title="Identifies when this version of the answer set was created.  Changes whenever the answers are updated (this element must be supported)" style="text-decoration: underline"><b>authored</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#dateTime">dateTime</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: navy">Date this version was authored</span><span style="color: Gray"> --&gt;</span>
+ &lt;<span title="The person who answered the questions."><b>source</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/references.html#Resource">Resource</a>(<a href="http://hl7.org/fhir/patient.html#Patient">Patient</a>|<a href="http://hl7.org/fhir/practitioner.html#Practitioner">Practitioner</a>|<a href="http://hl7.org/fhir/relatedperson.html#RelatedPerson">RelatedPerson</a>)</span> <span style="color: navy">
+     The person who answered the questions</span><span style="color: Gray"> --&gt;</span>&lt;/source&gt;
+ &lt;<span title="Primary encounter during which the answers were collected."><b>encounter</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/references.html#Resource">Resource</a>(<a href="http://hl7.org/fhir/encounter.html#Encounter">Encounter</a>)</span> <span style="color: navy">
+     Primary encounter during which the answers were collected</span><span style="color: Gray"> --&gt;</span>&lt;/encounter&gt;
+ &lt;<span title="Grouped questions (this element must be supported)" style="text-decoration: underline"><b>group</b></span>&gt; <span style="color: brown"><b>1..1</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/=group.html#=Group">=Group</a></span>  <span style="color: Gray">&lt;!-- <span style="color: brown"><b>1..1</b></span> Grouped questions --&gt;</span>
+  <i class="inherited">&lt;<span title="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."><b>extension</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..*</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/extensibility.html#Extension">Extension</a></span> <span style="color: navy">Additional Content defined by implementations</span><span style="color: Gray"> --&gt;</span>&lt;/extension&gt;</i>
+  <i class="inherited">&lt;<span title="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."><b>modifierExtension</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..*</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/extensibility.html#Extension">Extension</a></span> <span style="color: navy">Extensions that cannot be ignored</span><span style="color: Gray"> --&gt;</span>&lt;/modifierExtension&gt;</i>
+  &lt;<span title="Corresponding group within Questionnaire (this element must be supported)" style="text-decoration: underline"><b>linkId</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: navy">Corresponding group within Questionnaire</span><span style="color: Gray"> --&gt;</span>&lt;/linkId&gt;
+  &lt;<span title="Name for this group (this element must be supported)" style="text-decoration: underline"><b>title</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Name for this group</span><span style="color: Gray"> --&gt;</span>
+  &lt;<span title="Additional text for the group (this element must be supported)" style="text-decoration: underline"><b>text</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Additional text for the group</span><span style="color: Gray"> --&gt;</span>
+  &lt;<span title="The subject this group&#39;s answers are about."><b>subject</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/references.html#Resource">Resource</a>(<a href="resourcelist.html">Any</a>)</span> <span style="color: navy">The subject this group&#39;s answers are about</span><span style="color: Gray"> --&gt;</span>&lt;/subject&gt;
+  &lt;<span title="Grouped questions (this element must be supported)" style="text-decoration: underline"><b>group</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..*</b></span> <span style="color: darkgreen">Content as for QuestionnaireAnswers.group</span> <span style="color: navy">Grouped questions</span><span style="color: Gray"> --&gt;</span>&lt;/group&gt;
+  &lt;<span title="Questions in this group (this element must be supported)" style="text-decoration: underline"><b>question</b></span>&gt; <span style="color: brown"><b>0..*</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/=question.html#=Question">=Question</a></span>  <span style="color: Gray">&lt;!-- <span style="color: brown"><b>0..*</b></span> Questions in this group --&gt;</span>
+   <i class="inherited">&lt;<span title="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."><b>extension</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..*</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/extensibility.html#Extension">Extension</a></span> <span style="color: navy">Additional Content defined by implementations</span><span style="color: Gray"> --&gt;</span>&lt;/extension&gt;</i>
+   <i class="inherited">&lt;<span title="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."><b>modifierExtension</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..*</b></span> <span style="color: darkgreen"><a href="http://hl7.org/fhir/extensibility.html#Extension">Extension</a></span> <span style="color: navy">Extensions that cannot be ignored</span><span style="color: Gray"> --&gt;</span>&lt;/modifierExtension&gt;</i>
+   &lt;<span title="Corresponding question within Questionnaire (this element must be supported)" style="text-decoration: underline"><b>linkId</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: navy">Corresponding question within Questionnaire</span><span style="color: Gray"> --&gt;</span>
+   &lt;<span title="Text of the question as it is shown to the user (this element must be supported)" style="text-decoration: underline"><b>text</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: navy">Text of the question as it is shown to the user</span><span style="color: Gray"> --&gt;</span>
+   &lt;<span title="The response(s) to the question (this element must be supported)" style="text-decoration: underline"><b>answer</b></span>&gt;  <span style="color: Gray">&lt;!-- <span style="color: brown"><b>0..0</b></span><span style="text-decoration: line-through"> The response(s) to the question</span> --&gt;</span>
+   &lt;/answer&gt;
+   &lt;<span title="Grouped questions."><b>group</b></span>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..*</b></span> <span style="color: darkgreen">Content as for QuestionnaireAnswers.group</span> <span style="color: navy">Grouped questions</span><span style="color: Gray"> --&gt;</span>&lt;/group&gt;
+  &lt;/question&gt;
+ &lt;/group&gt;
+&lt;/QuestionnaireAnswers&gt;
+
+</pre></div>
+  </text>
+  <identifier value="http://hl7.org/fhir/profile/Structured Data Capture Data Capture"/>
+  <name value="Structured Data Capture Data Capture"/>
+  <publisher value="U.S. Office of the National Coordinator (ONC)"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://wiki.siframework.org/Structured+Data+Capture+Initiative"/>
+  </telecom>
+  <description value="Defines how the questionnaire answers resource is used to reflect form data within the ONC&#39;s Structured Data Capture standard."/>
+  <status value="draft"/>
+  <date value="2014-04-21"/>
+  <structure>
+    <type value="QuestionnaireAnswers"/>
+    <name value="StructuredDataCaptureAnswers"/>
+    <publish value="true"/>
+    <element>
+      <path value="QuestionnaireAnswers"/>
+      <name value="StructuredDataCaptureAnswers"/>
+      <definition>
+        <short value="A structured set of questions and their answers"/>
+        <formal value="A structured set of questions and their answers."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="Resource"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.extension"/>
+      <name value="base extension"/>
+      <slicing>
+        <discriminator value="url"/>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.extension.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.extension.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.modifierExtension"/>
+      <name value="base modifierExtension"/>
+      <slicing>
+        <discriminator value="url"/>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.modifierExtension.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.modifierExtension.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.text"/>
+      <definition>
+        <short value="Text summary of the resource, for human interpretation"/>
+        <formal value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."/>
+        <comments value="Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative."/>
+        <synonym value="narrative"/>
+        <synonym value="html"/>
+        <synonym value="xhtml"/>
+        <synonym value="display"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="Narrative"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.contained"/>
+      <definition>
+        <short value="Contained, inline Resources"/>
+        <formal value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."/>
+        <comments value="This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again."/>
+        <synonym value="inline resources"/>
+        <synonym value="anonymous resources"/>
+        <synonym value="contained resources"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Resource"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.text"/>
+      <definition>
+        <short value="Text summary of the resource, for human interpretation"/>
+        <formal value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."/>
+        <comments value="Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="Narrative"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.contained"/>
+      <definition>
+        <short value="Contained, inline Resources"/>
+        <formal value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."/>
+        <comments value="This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again."/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Resource"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.questionnaire"/>
+      <definition>
+        <short value="Form being answered"/>
+        <formal value="Form being answered."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="ResourceReference"/>
+          <profile value="http://hl7.org/fhir/profiles/Questionnaire"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.status"/>
+      <definition>
+        <short value="in progress | completed | amended"/>
+        <formal value="in progress | completed | amended."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="code"/>
+        </type>
+        <isModifier value="true"/>
+        <binding>
+          <name value="QuestionnaireAnswersStatus"/>
+          <isExtensible value="false"/>
+          <conformance value="required"/>
+          <description value="Lifecycle status of the questionnaire answers"/>
+          <referenceResource>
+            <reference value="http://hl7.org/fhir/vs/questionnaire-answers-status"/>
+          </referenceResource>
+        </binding>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.subject"/>
+      <definition>
+        <short value="The subject of the questions"/>
+        <formal value="The subject of the questions."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="ResourceReference"/>
+          <profile value="http://hl7.org/fhir/profiles/Patient"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.author"/>
+      <definition>
+        <short value="Person who received and recorded the answers"/>
+        <formal value="Person who received and recorded the answers."/>
+        <comments value="Mapping a subject&#39;s answers to multiple choice options and determining what to put in the textual answer is a matter of interpretation."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="ResourceReference"/>
+          <profile value="http://hl7.org/fhir/profiles/Practitioner"/>
+        </type>
+        <type>
+          <code value="ResourceReference"/>
+          <profile value="http://hl7.org/fhir/profiles/Patient"/>
+        </type>
+        <type>
+          <code value="ResourceReference"/>
+          <profile value="http://hl7.org/fhir/profiles/RelatedPerson"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.authored"/>
+      <definition>
+        <short value="Date this version was authored"/>
+        <formal value="Identifies when this version of the answer set was created.  Changes whenever the answers are updated."/>
+        <comments value="May be different from the update time of the resource itself, because that is the status of the collection and authoring."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="dateTime"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.source"/>
+      <definition>
+        <short value="The person who answered the questions"/>
+        <formal value="The person who answered the questions."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="ResourceReference"/>
+          <profile value="http://hl7.org/fhir/profiles/Patient"/>
+        </type>
+        <type>
+          <code value="ResourceReference"/>
+          <profile value="http://hl7.org/fhir/profiles/Practitioner"/>
+        </type>
+        <type>
+          <code value="ResourceReference"/>
+          <profile value="http://hl7.org/fhir/profiles/RelatedPerson"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.encounter"/>
+      <definition>
+        <short value="Primary encounter during which the answers were collected"/>
+        <formal value="Primary encounter during which the answers were collected."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="ResourceReference"/>
+          <profile value="http://hl7.org/fhir/profiles/Encounter"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group"/>
+      <definition>
+        <short value="Grouped questions"/>
+        <formal value="Grouped questions."/>
+        <comments value="The Questionnaire itself has one &quot;root&quot; group with the actual contents of the Questionnaire."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="=Group"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.extension"/>
+      <name value="base extension"/>
+      <slicing>
+        <discriminator value="url"/>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.extension.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.extension.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.modifierExtension"/>
+      <name value="base modifierExtension"/>
+      <slicing>
+        <discriminator value="url"/>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.modifierExtension.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.modifierExtension.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.linkId"/>
+      <definition>
+        <short value="Corresponding group within Questionnaire"/>
+        <formal value="Corresponding group within Questionnaire."/>
+        <min value="1"/>
+        <max value="1"/>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.linkId.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.linkId.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.title"/>
+      <definition>
+        <short value="Name for this group"/>
+        <formal value="Name for this group."/>
+        <comments value="On the root group, this is the title of the questionnaire."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="string"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.text"/>
+      <definition>
+        <short value="Additional text for the group"/>
+        <formal value="Additional text for the group."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="string"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.subject"/>
+      <definition>
+        <short value="The subject this group&#39;s answers are about"/>
+        <formal value="The subject this group&#39;s answers are about."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="ResourceReference"/>
+          <profile value="http://hl7.org/fhir/profiles/Any"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.group"/>
+      <definition>
+        <short value="Grouped questions"/>
+        <formal value="Grouped questions."/>
+        <comments value="The Questionnaire itself has one &quot;root&quot; group with the actual contents of the Questionnaire."/>
+        <min value="0"/>
+        <max value="*"/>
+        <nameReference value="QuestionnaireAnswers.group"/>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.question"/>
+      <definition>
+        <short value="Questions in this group"/>
+        <formal value="Questions in this group."/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="=Question"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.question.extension"/>
+      <name value="base extension"/>
+      <slicing>
+        <discriminator value="url"/>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.question.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.question.extension.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.question.extension.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.question.modifierExtension"/>
+      <name value="base modifierExtension"/>
+      <slicing>
+        <discriminator value="url"/>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.question.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.question.modifierExtension.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.question.modifierExtension.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.question.linkId"/>
+      <definition>
+        <short value="Corresponding question within Questionnaire"/>
+        <formal value="Corresponding question within Questionnaire."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="string"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.question.text"/>
+      <definition>
+        <short value="Text of the question as it is shown to the user"/>
+        <formal value="Text of the question as it is shown to the user."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="string"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.question.answer"/>
+      <definition>
+        <short value="The response(s) to the question"/>
+        <formal value="The response(s) to the question."/>
+        <comments value="We nest the value because we can&#39;t have a repeating structure that has variable type."/>
+        <min value="0"/>
+        <max value="0"/>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.question.answer.extension"/>
+      <name value="base extension"/>
+      <slicing>
+        <discriminator value="url"/>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.question.answer.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.question.answer.extension.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.question.answer.extension.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.question.answer.modifierExtension"/>
+      <name value="base modifierExtension"/>
+      <slicing>
+        <discriminator value="url"/>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.question.answer.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.question.answer.modifierExtension.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.question.answer.modifierExtension.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.question.answer.value[x]"/>
+      <definition>
+        <short value="Single-valued answer to the question"/>
+        <formal value="Single-valued answer to the question."/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="decimal"/>
+        </type>
+        <type>
+          <code value="integer"/>
+        </type>
+        <type>
+          <code value="boolean"/>
+        </type>
+        <type>
+          <code value="date"/>
+        </type>
+        <type>
+          <code value="string"/>
+        </type>
+        <type>
+          <code value="dateTime"/>
+        </type>
+        <type>
+          <code value="instant"/>
+        </type>
+        <type>
+          <code value="Coding"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="QuestionnaireAnswers.group.question.group"/>
+      <definition>
+        <short value="Grouped questions"/>
+        <formal value="Grouped questions."/>
+        <comments value="The Questionnaire itself has one &quot;root&quot; group with the actual contents of the Questionnaire."/>
+        <min value="0"/>
+        <max value="*"/>
+        <nameReference value="QuestionnaireAnswers.group"/>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+  </structure>
+</Profile>

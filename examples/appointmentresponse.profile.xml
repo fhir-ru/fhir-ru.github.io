@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Profile xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><pre>
+&lt;<a title="(informative) A response to a scheduled appointment for a patient and/or practitioner(s)." class="dict" href="appointmentresponse-definitions.html#AppointmentResponse"><b>AppointmentResponse</b></a> xmlns=&quot;http://hl7.org/fhir&quot;&gt; <span style="float: right"><a title="Documentation for this format" href="formats.html"><img alt="doco" src="help.png"/></a></span>
+ &lt;!-- from <a href="resources.html">Resource</a>: <a href="extensibility.html">extension</a>, <a href="extensibility.html#modifierExtension">modifierExtension</a>, language, <a href="narrative.html#Narrative">text</a>, and <a href="references.html#contained">contained</a> --&gt;
+ &lt;<a title="This records identifiers associated with this appointment concern that are defined by business processed and/ or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation)." class="dict" href="appointmentresponse-definitions.html#AppointmentResponse.identifier"><b>identifier</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..*</b></span> <span style="color: darkgreen"><a href="datatypes.html#Identifier">Identifier</a></span> <span style="color: navy">External Ids for this item</span><span style="color: Gray"> --&gt;</span>&lt;/identifier&gt;
+ &lt;<a title="Parent appointment that this response is replying to." class="dict" href="appointmentresponse-definitions.html#AppointmentResponse.appointment"><b>appointment</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: darkgreen"><a href="references.html#Resource">Resource</a>(<a href="appointment.html#Appointment">Appointment</a>)</span> <span style="color: navy">
+     Parent appointment that this response is replying to</span><span style="color: Gray"> --&gt;</span>&lt;/appointment&gt;
+ &lt;<a title="Role of participant in the appointment." class="dict" href="appointmentresponse-definitions.html#AppointmentResponse.participantType"><b>participantType</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..*</b></span> <span style="color: darkgreen"><a href="datatypes.html#CodeableConcept">CodeableConcept</a></span> <span style="color: navy"><a style="color: navy" href="valueset-encounter-participant-type.html">Role of participant in the appointment</a></span><span style="color: Gray"> --&gt;</span>&lt;/participantType&gt;
+ &lt;<a title="A Person of device that is participating in the appointment, usually Practitioner, Patient, RelatedPerson or Device." class="dict" href="appointmentresponse-definitions.html#AppointmentResponse.individual"><b>individual</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..*</b></span> <span style="color: darkgreen"><a href="references.html#Resource">Resource</a>(<a href="resourcelist.html">Any</a>)</span> <span style="color: navy">
+     A Person of device that is participating in the appointment, usually Practitioner, Patient, RelatedPerson or Device</span><span style="color: Gray"> --&gt;</span>&lt;/individual&gt;
+ &lt;<a title="Participation status of the Patient." class="dict" href="appointmentresponse-definitions.html#AppointmentResponse.participantStatus"><b>participantStatus</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#code">code</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: navy"><a style="color: navy" href="participantstatus.html">accepted | declined | tentative | in-process | completed | needs-action</a></span><span style="color: Gray"> --&gt;</span>
+ &lt;<a title="Additional comments about the appointment." class="dict" href="appointmentresponse-definitions.html#AppointmentResponse.comment"><b>comment</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Additional comments about the appointment</span><span style="color: Gray"> --&gt;</span>
+ &lt;<a title="Date/Time that the appointment is to take place." class="dict" href="appointmentresponse-definitions.html#AppointmentResponse.start"><b>start</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#instant">instant</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Date/Time that the appointment is to take place</span><span style="color: Gray"> --&gt;</span>
+ &lt;<a title="Date/Time that the appointment is to conclude." class="dict" href="appointmentresponse-definitions.html#AppointmentResponse.end"><b>end</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#instant">instant</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Date/Time that the appointment is to conclude</span><span style="color: Gray"> --&gt;</span>
+ &lt;<a title="Who recorded the appointment response." class="dict" href="appointmentresponse-definitions.html#AppointmentResponse.lastModifiedBy"><b>lastModifiedBy</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen"><a href="references.html#Resource">Resource</a>(<a href="practitioner.html#Practitioner">Practitioner</a>|<a href="patient.html#Patient">Patient</a>|<a href="relatedperson.html#RelatedPerson">RelatedPerson</a>)</span> <span style="color: navy">
+     Who recorded the appointment response</span><span style="color: Gray"> --&gt;</span>&lt;/lastModifiedBy&gt;
+ &lt;<a title="Date when the response was recorded or last updated." class="dict" href="appointmentresponse-definitions.html#AppointmentResponse.lastModified"><b>lastModified</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#dateTime">dateTime</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Date when the response was recorded or last updated</span><span style="color: Gray"> --&gt;</span>
+&lt;/AppointmentResponse&gt;
+</pre></div>
+  </text>
+  <identifier value="http://hl7.org/fhir/profile/appointmentresponse"/>
+  <name value="appointmentresponse"/>
+  <publisher value="FHIR Project"/>
+  <description value="Basic Profile. (informative) A response to a scheduled appointment for a patient and/or practitioner(s)."/>
+  <status value="draft"/>
+  <date value="2014-06-06"/>
+  <requirements value="Scope and Usage Appointment resources are used to provide information about a planned meeting that may be in the future or past. They may be for a single meeting or for a series of repeating visits. Examples include a scheduled surgery, a follow-up for a clinical visit, a scheduled conference call between clinicians to discuss a case, the reservation of a piece of diagnostic equipment for a particular use, etc. The visit scheduled by an appointment may be in person or remote (by phone, video conference, etc.) All that matters is that the time and usage of one or more individuals, locations and/or pieces of equipment is being fully or partially reserved for a designated period of time. 
+
+This definition takes the concepts of appointments in a clinical setting and also extends them to be relevant in the community healthcare space, and also ease exposure to other appointment / calendar standards widely used outside of Healthcare."/>
+  <mapping>
+    <identity value="ical"/>
+    <uri value="http://www.ietf.org/rfc/rfc2445.txt"/>
+    <name value="iCalendar"/>
+  </mapping>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM"/>
+  </mapping>
+  <mapping>
+    <identity value="v2"/>
+    <uri value="http://hl7.org/v2"/>
+    <name value="HL7 v2"/>
+  </mapping>
+  <structure>
+    <type value="AppointmentResponse"/>
+    <publish value="true"/>
+    <element>
+      <path value="AppointmentResponse"/>
+      <definition>
+        <short value="(informative) A response to a scheduled appointment for a patient and/or practitioner(s)"/>
+        <formal value="(informative) A response to a scheduled appointment for a patient and/or practitioner(s)."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="Resource"/>
+        </type>
+        <isModifier value="false"/>
+        <mapping>
+          <identity value="ical"/>
+          <map value="VEVENT"/>
+        </mapping>
+      </definition>
+    </element>
+    <element>
+      <path value="AppointmentResponse.extension"/>
+      <definition>
+        <short value="Additional Content defined by implementations"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="AppointmentResponse.modifierExtension"/>
+      <definition>
+        <short value="Extensions that cannot be ignored"/>
+        <formal value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        <comments value="there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone."/>
+        <synonym value="extensions"/>
+        <synonym value="user content"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Extension"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="AppointmentResponse.text"/>
+      <definition>
+        <short value="Text summary of the resource, for human interpretation"/>
+        <formal value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."/>
+        <comments value="Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative."/>
+        <synonym value="narrative"/>
+        <synonym value="html"/>
+        <synonym value="xhtml"/>
+        <synonym value="display"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="Narrative"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="AppointmentResponse.contained"/>
+      <definition>
+        <short value="Contained, inline Resources"/>
+        <formal value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."/>
+        <comments value="This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again."/>
+        <synonym value="inline resources"/>
+        <synonym value="anonymous resources"/>
+        <synonym value="contained resources"/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Resource"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="AppointmentResponse.identifier"/>
+      <definition>
+        <short value="External Ids for this item"/>
+        <formal value="This records identifiers associated with this appointment concern that are defined by business processed and/ or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation)."/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="Identifier"/>
+        </type>
+        <isModifier value="false"/>
+        <mapping>
+          <identity value="rim"/>
+          <map value=".id"/>
+        </mapping>
+        <mapping>
+          <identity value="ical"/>
+          <map value="UID"/>
+        </mapping>
+      </definition>
+    </element>
+    <element>
+      <path value="AppointmentResponse.appointment"/>
+      <definition>
+        <short value="Parent appointment that this response is replying to"/>
+        <formal value="Parent appointment that this response is replying to."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="ResourceReference"/>
+          <profile value="http://hl7.org/fhir/profiles/Appointment"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="AppointmentResponse.participantType"/>
+      <definition>
+        <short value="Role of participant in the appointment"/>
+        <formal value="Role of participant in the appointment."/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="CodeableConcept"/>
+        </type>
+        <isModifier value="false"/>
+        <binding>
+          <name value="ParticipantType"/>
+          <isExtensible value="true"/>
+          <conformance value="preferred"/>
+          <description value="Role of participant in encounter"/>
+          <referenceResource>
+            <reference value="http://hl7.org/fhir/vs/encounter-participant-type"/>
+          </referenceResource>
+        </binding>
+        <mapping>
+          <identity value="ical"/>
+          <map value="n/a"/>
+        </mapping>
+      </definition>
+    </element>
+    <element>
+      <path value="AppointmentResponse.individual"/>
+      <definition>
+        <short value="A Person of device that is participating in the appointment, usually Practitioner, Patient, RelatedPerson or Device"/>
+        <formal value="A Person of device that is participating in the appointment, usually Practitioner, Patient, RelatedPerson or Device."/>
+        <comments value="Should this be multiple? And move to a child enitity."/>
+        <min value="0"/>
+        <max value="*"/>
+        <type>
+          <code value="ResourceReference"/>
+          <profile value="http://hl7.org/fhir/profiles/Any"/>
+        </type>
+        <isModifier value="false"/>
+        <mapping>
+          <identity value="v2"/>
+          <map value="PID-3-Patient ID List"/>
+        </mapping>
+        <mapping>
+          <identity value="ical"/>
+          <map value="ATTENDEE: (Need to provide the common name CN and also the MAILTO properties from the practitioner resource)"/>
+        </mapping>
+      </definition>
+    </element>
+    <element>
+      <path value="AppointmentResponse.participantStatus"/>
+      <definition>
+        <short value="accepted | declined | tentative | in-process | completed | needs-action"/>
+        <formal value="Participation status of the Patient."/>
+        <min value="1"/>
+        <max value="1"/>
+        <type>
+          <code value="code"/>
+        </type>
+        <isModifier value="false"/>
+        <binding>
+          <name value="ParticipantStatus"/>
+          <isExtensible value="false"/>
+          <conformance value="required"/>
+          <description value="The Participation status of an appointment"/>
+          <referenceResource>
+            <reference value="http://hl7.org/fhir/vs/participantstatus"/>
+          </referenceResource>
+        </binding>
+        <mapping>
+          <identity value="ical"/>
+          <map value="ATTENDEE;CN=&quot;Brian Postlethwaite&quot;;RSVP=TRUE:mailto:BPostlethwaite@data.com (rsvpparam | partstatparam)"/>
+        </mapping>
+      </definition>
+    </element>
+    <element>
+      <path value="AppointmentResponse.comment"/>
+      <definition>
+        <short value="Additional comments about the appointment"/>
+        <formal value="Additional comments about the appointment."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="string"/>
+        </type>
+        <isModifier value="false"/>
+        <mapping>
+          <identity value="ical"/>
+          <map value="COMMENT"/>
+        </mapping>
+      </definition>
+    </element>
+    <element>
+      <path value="AppointmentResponse.start"/>
+      <definition>
+        <short value="Date/Time that the appointment is to take place"/>
+        <formal value="Date/Time that the appointment is to take place."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="instant"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="AppointmentResponse.end"/>
+      <definition>
+        <short value="Date/Time that the appointment is to conclude"/>
+        <formal value="Date/Time that the appointment is to conclude."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="instant"/>
+        </type>
+        <isModifier value="false"/>
+      </definition>
+    </element>
+    <element>
+      <path value="AppointmentResponse.lastModifiedBy"/>
+      <definition>
+        <short value="Who recorded the appointment response"/>
+        <formal value="Who recorded the appointment response."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="ResourceReference"/>
+          <profile value="http://hl7.org/fhir/profiles/Practitioner"/>
+        </type>
+        <type>
+          <code value="ResourceReference"/>
+          <profile value="http://hl7.org/fhir/profiles/Patient"/>
+        </type>
+        <type>
+          <code value="ResourceReference"/>
+          <profile value="http://hl7.org/fhir/profiles/RelatedPerson"/>
+        </type>
+        <isModifier value="false"/>
+        <mapping>
+          <identity value="v2"/>
+          <map value="IAM-14-Reported By (if patient) / IAM-18-Statused By Person (if practitioner)"/>
+        </mapping>
+      </definition>
+    </element>
+    <element>
+      <path value="AppointmentResponse.lastModified"/>
+      <definition>
+        <short value="Date when the response was recorded or last updated"/>
+        <formal value="Date when the response was recorded or last updated."/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="dateTime"/>
+        </type>
+        <isModifier value="false"/>
+        <mapping>
+          <identity value="v2"/>
+          <map value="IAM-20-Statused at Date/Time"/>
+        </mapping>
+        <mapping>
+          <identity value="ical"/>
+          <map value="DTSTAMP"/>
+        </mapping>
+      </definition>
+    </element>
+    <searchParam>
+      <name value="_id"/>
+      <type value="token"/>
+      <documentation value="The logical resource id associated with the resource (must be supported by all servers)"/>
+    </searchParam>
+    <searchParam>
+      <name value="_language"/>
+      <type value="token"/>
+      <documentation value="The stated language of the resource"/>
+    </searchParam>
+    <searchParam>
+      <name value="appointment"/>
+      <type value="reference"/>
+      <documentation value="The appointment that the response is attached to"/>
+      <xpath value="f:AppointmentResponse/f:appointment"/>
+    </searchParam>
+    <searchParam>
+      <name value="partstatus"/>
+      <type value="string"/>
+      <documentation value="The overall status of the appointment"/>
+      <xpath value="f:AppointmentResponse/f:participantStatus"/>
+    </searchParam>
+    <searchParam>
+      <name value="subject"/>
+      <type value="reference"/>
+      <documentation value="The subject that the appointment response replies for"/>
+      <xpath value="f:AppointmentResponse/f:individual"/>
+    </searchParam>
+  </structure>
+</Profile>

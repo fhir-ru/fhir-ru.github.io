@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Administration Device</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>AP
+            <a name="AP"> </a>
+          </td>
+          <td>Applicator</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>BT
+            <a name="BT"> </a>
+          </td>
+          <td>Buretrol</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>HL
+            <a name="HL"> </a>
+          </td>
+          <td>Heparin Lock</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>IPPB
+            <a name="IPPB"> </a>
+          </td>
+          <td>IPPB</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>IVP
+            <a name="IVP"> </a>
+          </td>
+          <td>IV Pump</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>IVS
+            <a name="IVS"> </a>
+          </td>
+          <td>IV Soluset</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>MI
+            <a name="MI"> </a>
+          </td>
+          <td>Metered Inhaler</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>NEB
+            <a name="NEB"> </a>
+          </td>
+          <td>Nebulizer</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>PCA
+            <a name="PCA"> </a>
+          </td>
+          <td>PCA Pump</td>
+          <td>added v2.2</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0164"/>
+  <name value="v2 Administration Device"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0164 ( Administration Device)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0164"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="AP"/>
+      <display value="Applicator"/>
+    </concept>
+    <concept>
+      <code value="BT"/>
+      <display value="Buretrol"/>
+    </concept>
+    <concept>
+      <code value="HL"/>
+      <display value="Heparin Lock"/>
+    </concept>
+    <concept>
+      <code value="IPPB"/>
+      <display value="IPPB"/>
+    </concept>
+    <concept>
+      <code value="IVP"/>
+      <display value="IV Pump"/>
+    </concept>
+    <concept>
+      <code value="IVS"/>
+      <display value="IV Soluset"/>
+    </concept>
+    <concept>
+      <code value="MI"/>
+      <display value="Metered Inhaler"/>
+    </concept>
+    <concept>
+      <code value="NEB"/>
+      <display value="Nebulizer"/>
+    </concept>
+    <concept>
+      <code value="PCA"/>
+      <display value="PCA Pump"/>
+    </concept>
+  </define>
+</ValueSet>

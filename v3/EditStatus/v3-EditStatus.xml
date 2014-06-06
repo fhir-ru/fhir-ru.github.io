@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  The status of an entry as it pertains to its review and incorporation into the HL7 domain specification database.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>A
+            <a name="A"> </a>
+          </td>
+          <td>Active</td>
+          <td>
+                        The item has been reviewed and approved and is now valid for use in HL7 standards and messages.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>I
+            <a name="I"> </a>
+          </td>
+          <td>Inactive</td>
+          <td>
+                        A previously active item has been retired from use.  The item may exist as previously stored data in a database, but no current or new HL7 standards or messges should use this item.  The code for an inactive item will not be reused by HL7.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>O
+            <a name="O"> </a>
+          </td>
+          <td>Obsolete</td>
+          <td>
+                        A previously active item that is scheduled to be retired from use, but for practical reasons can not be immediately inactivated.  It is still legal to use an obsolete item in HL7 standards or messages, but those creating new messages should make every effort to use an active concept instead.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>P
+            <a name="P"> </a>
+          </td>
+          <td>Proposed</td>
+          <td>
+                        The item has been suggested for incorporation but has not been officially approved.  The item is not yet legal for use in HL7 standards and messages.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>R
+            <a name="R"> </a>
+          </td>
+          <td>Rejected</td>
+          <td>
+                        The item has been reviewed and rejected. The item is not legal for use in HL7 standards and messages.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/EditStatus"/>
+  <name value="v3 Code System EditStatus"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" The status of an entry as it pertains to its review and incorporation into the HL7 domain specification database."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/EditStatus"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="A"/>
+      <display value="Active"/>
+      <definition value="The item has been reviewed and approved and is now valid for use in HL7 standards and messages."/>
+    </concept>
+    <concept>
+      <code value="I"/>
+      <display value="Inactive"/>
+      <definition value="A previously active item has been retired from use.  The item may exist as previously stored data in a database, but no current or new HL7 standards or messges should use this item.  The code for an inactive item will not be reused by HL7."/>
+    </concept>
+    <concept>
+      <code value="O"/>
+      <display value="Obsolete"/>
+      <definition value="A previously active item that is scheduled to be retired from use, but for practical reasons can not be immediately inactivated.  It is still legal to use an obsolete item in HL7 standards or messages, but those creating new messages should make every effort to use an active concept instead."/>
+    </concept>
+    <concept>
+      <code value="P"/>
+      <display value="Proposed"/>
+      <definition value="The item has been suggested for incorporation but has not been officially approved.  The item is not yet legal for use in HL7 standards and messages."/>
+    </concept>
+    <concept>
+      <code value="R"/>
+      <display value="Rejected"/>
+      <definition value="The item has been reviewed and rejected. The item is not legal for use in HL7 standards and messages."/>
+    </concept>
+  </define>
+</ValueSet>

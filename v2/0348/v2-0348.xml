@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Special Program Indicator</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>...
+            <a name=".46.46.46"> </a>
+          </td>
+          <td>No suggested values defined</td>
+          <td>added v2.5.1, removed after v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>01
+            <a name="01"> </a>
+          </td>
+          <td>EPSDT-CHAP</td>
+          <td>added v2.3.1, removed after v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>02
+            <a name="02"> </a>
+          </td>
+          <td>Physically handicapped children&#39;s program</td>
+          <td>added v2.3.1, removed after v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>03
+            <a name="03"> </a>
+          </td>
+          <td>Special federal funding</td>
+          <td>added v2.3.1, removed after v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>04
+            <a name="04"> </a>
+          </td>
+          <td>Family planning</td>
+          <td>added v2.3.1, removed after v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>05
+            <a name="05"> </a>
+          </td>
+          <td>Disability</td>
+          <td>added v2.3.1, removed after v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>06
+            <a name="06"> </a>
+          </td>
+          <td>PPV/Medicare 100% payment</td>
+          <td>added v2.3.1, removed after v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>07
+            <a name="07"> </a>
+          </td>
+          <td>Induced abortion-danger to life</td>
+          <td>added v2.3.1, removed after v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>08
+            <a name="08"> </a>
+          </td>
+          <td>Induced abortion victim rape/incest</td>
+          <td>added v2.3.1, removed after v2.4</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0348"/>
+  <name value="v2 Special Program Indicator"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0348 ( Special Program Indicator)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0348"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="..."/>
+      <display value="No suggested values defined"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="01"/>
+      <display value="EPSDT-CHAP"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="02"/>
+      <display value="Physically handicapped children&#39;s program"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="03"/>
+      <display value="Special federal funding"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="04"/>
+      <display value="Family planning"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="05"/>
+      <display value="Disability"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="06"/>
+      <display value="PPV/Medicare 100% payment"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="07"/>
+      <display value="Induced abortion-danger to life"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="08"/>
+      <display value="Induced abortion victim rape/incest"/>
+    </concept>
+  </define>
+</ValueSet>

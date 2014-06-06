@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Processing Priority</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>A
+            <a name="A"> </a>
+          </td>
+          <td>As soon as possible (a priority lower than stat)</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>B
+            <a name="B"> </a>
+          </td>
+          <td>Do at bedside or portable (may be used with other codes)</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>C
+            <a name="C"> </a>
+          </td>
+          <td>Measure continuously (e.g., arterial line blood pressure)</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>P
+            <a name="P"> </a>
+          </td>
+          <td>Preoperative (to be done prior to surgery)</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>R
+            <a name="R"> </a>
+          </td>
+          <td>Routine</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>S
+            <a name="S"> </a>
+          </td>
+          <td>Stat (do immediately)</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>T
+            <a name="T"> </a>
+          </td>
+          <td>Timing critical (do as near as possible to requested time)</td>
+          <td>added v2.2</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0168"/>
+  <name value="v2 Processing Priority"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0168 ( Processing Priority)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0168"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="A"/>
+      <display value="As soon as possible (a priority lower than stat)"/>
+    </concept>
+    <concept>
+      <code value="B"/>
+      <display value="Do at bedside or portable (may be used with other codes)"/>
+    </concept>
+    <concept>
+      <code value="C"/>
+      <display value="Measure continuously (e.g., arterial line blood pressure)"/>
+    </concept>
+    <concept>
+      <code value="P"/>
+      <display value="Preoperative (to be done prior to surgery)"/>
+    </concept>
+    <concept>
+      <code value="R"/>
+      <display value="Routine"/>
+    </concept>
+    <concept>
+      <code value="S"/>
+      <display value="Stat (do immediately)"/>
+    </concept>
+    <concept>
+      <code value="T"/>
+      <display value="Timing critical (do as near as possible to requested time)"/>
+    </concept>
+  </define>
+</ValueSet>

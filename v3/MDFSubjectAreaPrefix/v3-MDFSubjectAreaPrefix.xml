@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  The standard prefixes used in Rose for RIM subject areas that determine the role or function of each subject area.
+        <br/>
+
+                  
+                     Deprecation Comment: Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>COI
+            <a name="COI"> </a>
+          </td>
+          <td>Class of Interest</td>
+          <td>
+                        Holds classes that are of interest to the committee identified by the rest of the Subject Area Name.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>DIM
+            <a name="DIM"> </a>
+          </td>
+          <td>Domain model</td>
+          <td>
+                        Holds a sub-set of the RIM that is the domain information model for the committee identified by the rest of the Subject Area name.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>RIM
+            <a name="RIM"> </a>
+          </td>
+          <td>RIM content</td>
+          <td>
+                        Is one of a set of subject areas that hold the classes defined in the Reference Information Model (RIM).
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>STW
+            <a name="STW"> </a>
+          </td>
+          <td>Stewardship</td>
+          <td>
+                        Holds classes whose steward is the committee identified by the remaining portions of the Subject Area Name.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/MDFSubjectAreaPrefix"/>
+  <name value="v3 Code System MDFSubjectAreaPrefix"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" The standard prefixes used in Rose for RIM subject areas that determine the role or function of each subject area.  Deprecation Comment:
+Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/MDFSubjectAreaPrefix"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="COI"/>
+      <display value="Class of Interest"/>
+      <definition value="Holds classes that are of interest to the committee identified by the rest of the Subject Area Name."/>
+    </concept>
+    <concept>
+      <code value="DIM"/>
+      <display value="Domain model"/>
+      <definition value="Holds a sub-set of the RIM that is the domain information model for the committee identified by the rest of the Subject Area name."/>
+    </concept>
+    <concept>
+      <code value="RIM"/>
+      <display value="RIM content"/>
+      <definition value="Is one of a set of subject areas that hold the classes defined in the Reference Information Model (RIM)."/>
+    </concept>
+    <concept>
+      <code value="STW"/>
+      <display value="Stewardship"/>
+      <definition value="Holds classes whose steward is the committee identified by the remaining portions of the Subject Area Name."/>
+    </concept>
+  </define>
+</ValueSet>

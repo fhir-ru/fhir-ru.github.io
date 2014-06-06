@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Days of the Week</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>FRI
+            <a name="FRI"> </a>
+          </td>
+          <td>Friday</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>MON
+            <a name="MON"> </a>
+          </td>
+          <td>Monday</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>SAT
+            <a name="SAT"> </a>
+          </td>
+          <td>Saturday</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>SUN
+            <a name="SUN"> </a>
+          </td>
+          <td>Sunday</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>THU
+            <a name="THU"> </a>
+          </td>
+          <td>Thursday</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>TUE
+            <a name="TUE"> </a>
+          </td>
+          <td>Tuesday</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>WED
+            <a name="WED"> </a>
+          </td>
+          <td>Wednesday</td>
+          <td>added v2.3</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0267"/>
+  <name value="v2 Days of the Week"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0267 ( Days of the Week)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0267"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="FRI"/>
+      <display value="Friday"/>
+    </concept>
+    <concept>
+      <code value="MON"/>
+      <display value="Monday"/>
+    </concept>
+    <concept>
+      <code value="SAT"/>
+      <display value="Saturday"/>
+    </concept>
+    <concept>
+      <code value="SUN"/>
+      <display value="Sunday"/>
+    </concept>
+    <concept>
+      <code value="THU"/>
+      <display value="Thursday"/>
+    </concept>
+    <concept>
+      <code value="TUE"/>
+      <display value="Tuesday"/>
+    </concept>
+    <concept>
+      <code value="WED"/>
+      <display value="Wednesday"/>
+    </concept>
+  </define>
+</ValueSet>

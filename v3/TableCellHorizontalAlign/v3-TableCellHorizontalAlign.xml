@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  These values are defined within the XHTML 4.0 Table Model
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>center
+            <a name="center"> </a>
+          </td>
+          <td>center</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>char
+            <a name="char"> </a>
+          </td>
+          <td>char</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>justify
+            <a name="justify"> </a>
+          </td>
+          <td>justify</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>left
+            <a name="left"> </a>
+          </td>
+          <td>left</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>right
+            <a name="right"> </a>
+          </td>
+          <td>right</td>
+          <td/>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/TableCellHorizontalAlign"/>
+  <name value="v3 Code System TableCellHorizontalAlign"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" These values are defined within the XHTML 4.0 Table Model"/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/TableCellHorizontalAlign"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="center"/>
+      <display value="center"/>
+    </concept>
+    <concept>
+      <code value="char"/>
+      <display value="char"/>
+    </concept>
+    <concept>
+      <code value="justify"/>
+      <display value="justify"/>
+    </concept>
+    <concept>
+      <code value="left"/>
+      <display value="left"/>
+    </concept>
+    <concept>
+      <code value="right"/>
+      <display value="right"/>
+    </concept>
+  </define>
+</ValueSet>

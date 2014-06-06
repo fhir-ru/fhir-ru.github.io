@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Status Patient</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1
+            <a name="1"> </a>
+          </td>
+          <td>Normal length of stay</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>2
+            <a name="2"> </a>
+          </td>
+          <td>Short length of stay</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>3
+            <a name="3"> </a>
+          </td>
+          <td>Long length of stay</td>
+          <td>added v2.6</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0739"/>
+  <name value="v2 Status Patient"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0739 ( Status Patient)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0739"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="1"/>
+      <display value="Normal length of stay"/>
+    </concept>
+    <concept>
+      <code value="2"/>
+      <display value="Short length of stay"/>
+    </concept>
+    <concept>
+      <code value="3"/>
+      <display value="Long length of stay"/>
+    </concept>
+  </define>
+</ValueSet>

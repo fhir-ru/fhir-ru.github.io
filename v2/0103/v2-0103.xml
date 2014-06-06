@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Processing ID</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>D
+            <a name="D"> </a>
+          </td>
+          <td>Debugging</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>P
+            <a name="P"> </a>
+          </td>
+          <td>Production</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>T
+            <a name="T"> </a>
+          </td>
+          <td>Training</td>
+          <td>from v2.1</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0103"/>
+  <name value="v2 Processing ID"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0103 ( Processing ID)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0103"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="D"/>
+      <display value="Debugging"/>
+    </concept>
+    <concept>
+      <code value="P"/>
+      <display value="Production"/>
+    </concept>
+    <concept>
+      <code value="T"/>
+      <display value="Training"/>
+    </concept>
+  </define>
+</ValueSet>

@@ -1,0 +1,442 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Element-extensions.profile.xml - FHIR v0.2.1</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="implementation.html">Implementation</a></li>        <li><a href="profilelist.html">Profile List</a></li>        <li><b>Profile</b></li>        <!-- element-extensions.profile.xml.html / profile-instance -->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<h1>Element-extensions.profile.xml</h1>
+
+<div class="example">
+<p>Profile for A set of extensions that constrain data elements, whether used in CommonDataElements, Profiles or Questionnaires</p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;Profile&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;pre&gt; &lt;span style=\&quot;float: right\&quot;&gt;&lt;a title=\&quot;Documentation for this format\&quot; href=\&quot;formats.html\&quot;&gt;&lt;img alt=\&quot;doco\&quot; src=\&quot;help.png\&quot;/&gt;&lt;/a&gt;&lt;/span&gt;\r\n&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;span style=\&quot;color: Darkviolet\&quot;&gt;Extensions&lt;/span&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;&lt;span title=\&quot;The minimum number of characters that must be present in the simple data type to be considered a &amp;quot;valid&amp;quot; instance.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;minLength\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Resource = CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/Profile/element-constraints#minLength&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;The minimum number of characters that must be present in the simple data type to be considered a &amp;quot;valid&amp;quot; instance.\&quot;&gt;&lt;b&gt;valueInteger&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#integer\&quot;&gt;integer&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;At least this many characters&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;The maximum number of characters that must be present in the simple data type to be considered a &amp;quot;valid&amp;quot; instance.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;maxLength\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Resource = CommonDataElement;Questionnaire.group.question&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/Profile/element-constraints#maxLength&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;The maximum number of characters that must be present in the simple data type to be considered a &amp;quot;valid&amp;quot; instance.\&quot;&gt;&lt;b&gt;valueInteger&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#integer\&quot;&gt;integer&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;No more than this many characters&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;A regular expression that defines the syntax for the data element to be considered valid.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;regex\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Resource = CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/Profile/element-constraints#regex&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;A regular expression that defines the syntax for the data element to be considered valid.\&quot;&gt;&lt;b&gt;valueString&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#string\&quot;&gt;string&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;Regular expression pattern&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;A syntax intended for display to the user to guide their input (i.e. a human readable version of a rgular expression).  For example &amp;quot;nnn-nnn-nnn&amp;quot;.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;entryFormat\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Resource = CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/Profile/element-constraints#entryFormat&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;A syntax intended for display to the user to guide their input (i.e. a human readable version of a rgular expression).  For example &amp;quot;nnn-nnn-nnn&amp;quot;.\&quot;&gt;&lt;b&gt;valueString&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#string\&quot;&gt;string&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;User prompt for format&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;The inclusive lower bound on the range of allowed values for the data element.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;minValue\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Resource = CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/Profile/element-constraints#minValue&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;The inclusive lower bound on the range of allowed values for the data element.\&quot;&gt;&lt;b&gt;value[x]&lt;/b&gt;&lt;/span&gt;&amp;gt;[todo: type and short defn]&amp;lt;/value[x]&amp;gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;The inclusive upper bound on the range of allowed values for the data element.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;maxValue\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Resource = CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/Profile/element-constraints#maxValue&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;The inclusive upper bound on the range of allowed values for the data element.\&quot;&gt;&lt;b&gt;value[x]&lt;/b&gt;&lt;/span&gt;&amp;gt;[todo: type and short defn]&amp;lt;/value[x]&amp;gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;Identifies the maximum number of decimal places that may be specified for the data element.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;maxDecimalPlaces\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Resource = CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/Profile/element-constraints#maxDecimalPlaces&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;Identifies the maximum number of decimal places that may be specified for the data element.\&quot;&gt;&lt;b&gt;valueInteger&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#integer\&quot;&gt;integer&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;Maximum digits after decimal&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&lt;/pre&gt;&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: &quot;http://hl7.org/fhir/profile/Element-definition Extensions for use by FHIR Implementers&quot;,
+  &quot;name&quot;: &quot;Element-definition Extensions for use by FHIR Implementers&quot;,
+  &quot;publisher&quot;: &quot;HL7 FHIR project&quot;,
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;url&quot;,
+      &quot;value&quot;: &quot;http://hl7.org/fhir&quot;
+    }
+  ],
+  &quot;description&quot;: &quot;A set of extensions that constrain data elements, whether used in CommonDataElements, Profiles or Questionnaires&quot;,
+  &quot;status&quot;: &quot;draft&quot;,
+  &quot;date&quot;: &quot;2014-04-27&quot;,
+  &quot;mapping&quot;: [
+    {
+      &quot;identity&quot;: &quot;rim&quot;,
+      &quot;uri&quot;: &quot;http://hl7.org/v3&quot;,
+      &quot;name&quot;: &quot;RIM&quot;
+    },
+    {
+      &quot;identity&quot;: &quot;v2&quot;,
+      &quot;uri&quot;: &quot;http://hl7.org/v2&quot;,
+      &quot;name&quot;: &quot;HL7 v2&quot;
+    }
+  ],
+  &quot;extensionDefn&quot;: [
+    {
+      &quot;code&quot;: &quot;minLength&quot;,
+      &quot;display&quot;: &quot;At least this many characters&quot;,
+      &quot;contextType&quot;: &quot;resource&quot;,
+      &quot;context&quot;: [
+        &quot;CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;At least this many characters&quot;,
+        &quot;formal&quot;: &quot;The minimum number of characters that must be present in the simple data type to be considered a \&quot;valid\&quot; instance.&quot;,
+        &quot;comments&quot;: &quot;For base64binary, reflects the number of characters representing the encoded data, not the number of bytes of the binary data.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;integer&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A (MIF-level)&quot;
+          },
+          {
+            &quot;identity&quot;: &quot;v2&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      }
+    },
+    {
+      &quot;code&quot;: &quot;maxLength&quot;,
+      &quot;display&quot;: &quot;No more than this many characters&quot;,
+      &quot;contextType&quot;: &quot;resource&quot;,
+      &quot;context&quot;: [
+        &quot;CommonDataElement;Questionnaire.group.question&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;No more than this many characters&quot;,
+        &quot;formal&quot;: &quot;The maximum number of characters that must be present in the simple data type to be considered a \&quot;valid\&quot; instance.&quot;,
+        &quot;comments&quot;: &quot;For base64binary, reflects the number of characters representing the encoded data, not the number of bytes of the binary data.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;integer&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A (MIF-level)&quot;
+          },
+          {
+            &quot;identity&quot;: &quot;v2&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      }
+    },
+    {
+      &quot;code&quot;: &quot;regex&quot;,
+      &quot;display&quot;: &quot;Regular expression pattern&quot;,
+      &quot;contextType&quot;: &quot;resource&quot;,
+      &quot;context&quot;: [
+        &quot;CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;Regular expression pattern&quot;,
+        &quot;formal&quot;: &quot;A regular expression that defines the syntax for the data element to be considered valid.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A (MIF-level)&quot;
+          },
+          {
+            &quot;identity&quot;: &quot;v2&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      }
+    },
+    {
+      &quot;code&quot;: &quot;entryFormat&quot;,
+      &quot;display&quot;: &quot;User prompt for format&quot;,
+      &quot;contextType&quot;: &quot;resource&quot;,
+      &quot;context&quot;: [
+        &quot;CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;User prompt for format&quot;,
+        &quot;formal&quot;: &quot;A syntax intended for display to the user to guide their input (i.e. a human readable version of a rgular expression).  For example \&quot;nnn-nnn-nnn\&quot;.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A (MIF-level)&quot;
+          },
+          {
+            &quot;identity&quot;: &quot;v2&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      }
+    },
+    {
+      &quot;code&quot;: &quot;minValue&quot;,
+      &quot;display&quot;: &quot;Must be &gt;= this value&quot;,
+      &quot;contextType&quot;: &quot;resource&quot;,
+      &quot;context&quot;: [
+        &quot;CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;Must be &gt;= this value&quot;,
+        &quot;formal&quot;: &quot;The inclusive lower bound on the range of allowed values for the data element.&quot;,
+        &quot;comments&quot;: &quot;Data type specified must be the same as the data type for the data element.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;date&quot;
+          },
+          {
+            &quot;code&quot;: &quot;dateTime&quot;
+          },
+          {
+            &quot;code&quot;: &quot;decimal&quot;
+          },
+          {
+            &quot;code&quot;: &quot;integer&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A (MIF-level)&quot;
+          },
+          {
+            &quot;identity&quot;: &quot;v2&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      }
+    },
+    {
+      &quot;code&quot;: &quot;maxValue&quot;,
+      &quot;display&quot;: &quot;Must be &lt;= this value&quot;,
+      &quot;contextType&quot;: &quot;resource&quot;,
+      &quot;context&quot;: [
+        &quot;CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;Must be &lt;= this value&quot;,
+        &quot;formal&quot;: &quot;The inclusive upper bound on the range of allowed values for the data element.&quot;,
+        &quot;comments&quot;: &quot;Data type specified must be the same as the data type for the data element.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;date&quot;
+          },
+          {
+            &quot;code&quot;: &quot;dateTime&quot;
+          },
+          {
+            &quot;code&quot;: &quot;decimal&quot;
+          },
+          {
+            &quot;code&quot;: &quot;integer&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A (MIF-level)&quot;
+          },
+          {
+            &quot;identity&quot;: &quot;v2&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      }
+    },
+    {
+      &quot;code&quot;: &quot;maxDecimalPlaces&quot;,
+      &quot;display&quot;: &quot;Maximum digits after decimal&quot;,
+      &quot;contextType&quot;: &quot;resource&quot;,
+      &quot;context&quot;: [
+        &quot;CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;Maximum digits after decimal&quot;,
+        &quot;formal&quot;: &quot;Identifies the maximum number of decimal places that may be specified for the data element.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;integer&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A (MIF-level)&quot;
+          },
+          {
+            &quot;identity&quot;: &quot;v2&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      }
+    }
+  ]
+}
+</pre>
+</div>
+
+
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011 - 2014. FHIR DSTU (v0.2.1-????) generated on Fri, Jun 6, 2014 13:29+0000. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a href="dstu.html">What's a DSTU?</a> | <a href="history.html">Version History</a> | <a href="license.html">License</a> | <a href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

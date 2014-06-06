@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Which date/time status qualifier</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>ANY
+            <a name="ANY"> </a>
+          </td>
+          <td>Any status</td>
+          <td>added v2.2, removed after v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>CFN
+            <a name="CFN"> </a>
+          </td>
+          <td>Current final value, whether final or corrected</td>
+          <td>added v2.2, removed after v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>COR
+            <a name="COR"> </a>
+          </td>
+          <td>Corrected only (no final with corrections)</td>
+          <td>added v2.2, removed after v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>FIN
+            <a name="FIN"> </a>
+          </td>
+          <td>Final only (no corrections)</td>
+          <td>added v2.2, removed after v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>PRE
+            <a name="PRE"> </a>
+          </td>
+          <td>Preliminary</td>
+          <td>added v2.2, removed after v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>REP
+            <a name="REP"> </a>
+          </td>
+          <td>Report completion date/time</td>
+          <td>added v2.2, removed after v2.6</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0157"/>
+  <name value="v2 Which date/time status qualifier"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0157 ( Which date/time status qualifier)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0157"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="ANY"/>
+      <display value="Any status"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="CFN"/>
+      <display value="Current final value, whether final or corrected"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="COR"/>
+      <display value="Corrected only (no final with corrections)"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="FIN"/>
+      <display value="Final only (no corrections)"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="PRE"/>
+      <display value="Preliminary"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="REP"/>
+      <display value="Report completion date/time"/>
+    </concept>
+  </define>
+</ValueSet>

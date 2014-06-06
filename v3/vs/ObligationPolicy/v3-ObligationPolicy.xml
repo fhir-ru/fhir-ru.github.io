@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>ObligationPolicy</h2>
+      <p> Conveys the mandated workflow action that an information custodian, receiver, or user must perform.  Examples:
+        <br/>  encrypt  Usage Note:
+        <br/>Per OASIS XACML, an obligation is an operation specified in a policy or policy that is performed in conjunction with the enforcement of an access control decision. (OID = 2.16.840.1.113883.1.11.20445)
+      </p>
+      <p>This value set includes codes defined in other code systems, using the following rules:</p>
+      <ul>
+        <li>Include codes from 
+          <a href="../../../v3/ActCode/index.html">http://hl7.org/fhir/v3/ActCode</a> where concept  is-a  
+          <a href="../../../v3/ActCode/index.html#ObligationPolicy">ObligationPolicy</a>
+        </li>
+      </ul>
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/ObligationPolicy"/>
+  <version value="2013-12-07"/>
+  <name value="ObligationPolicy"/>
+  <publisher value="HL7 v3"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://www.hl7.org"/>
+  </telecom>
+  <description value=" Conveys the mandated workflow action that an information custodian, receiver, or user must perform.  Examples:
+  encrypt  Usage Note:
+Per OASIS XACML, an obligation is an operation specified in a policy or policy that is performed in conjunction with the enforcement of an access control decision. (OID = 2.16.840.1.113883.1.11.20445)"/>
+  <status value="active"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/v3/ActCode"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="ObligationPolicy"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

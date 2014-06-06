@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Order status</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>A
+            <a name="A"> </a>
+          </td>
+          <td>Some, but not all, results available</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>CA
+            <a name="CA"> </a>
+          </td>
+          <td>Order was canceled</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>CM
+            <a name="CM"> </a>
+          </td>
+          <td>Order is completed</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>DC
+            <a name="DC"> </a>
+          </td>
+          <td>Order was discontinued</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>ER
+            <a name="ER"> </a>
+          </td>
+          <td>Error, order not found</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>HD
+            <a name="HD"> </a>
+          </td>
+          <td>Order is on hold</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>IP
+            <a name="IP"> </a>
+          </td>
+          <td>In process, unspecified</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>RP
+            <a name="RP"> </a>
+          </td>
+          <td>Order has been replaced</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>SC
+            <a name="SC"> </a>
+          </td>
+          <td>In process, scheduled</td>
+          <td>from v2.1</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0038"/>
+  <name value="v2 Order status"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0038 ( Order status)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0038"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="A"/>
+      <display value="Some, but not all, results available"/>
+    </concept>
+    <concept>
+      <code value="CA"/>
+      <display value="Order was canceled"/>
+    </concept>
+    <concept>
+      <code value="CM"/>
+      <display value="Order is completed"/>
+    </concept>
+    <concept>
+      <code value="DC"/>
+      <display value="Order was discontinued"/>
+    </concept>
+    <concept>
+      <code value="ER"/>
+      <display value="Error, order not found"/>
+    </concept>
+    <concept>
+      <code value="HD"/>
+      <display value="Order is on hold"/>
+    </concept>
+    <concept>
+      <code value="IP"/>
+      <display value="In process, unspecified"/>
+    </concept>
+    <concept>
+      <code value="RP"/>
+      <display value="Order has been replaced"/>
+    </concept>
+    <concept>
+      <code value="SC"/>
+      <display value="In process, scheduled"/>
+    </concept>
+  </define>
+</ValueSet>

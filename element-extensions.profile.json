@@ -1,0 +1,272 @@
+{
+  "resourceType": "Profile",
+  "text": {
+    "status": "generated",
+    "div": "<div><pre> <span style=\"float: right\"><a title=\"Documentation for this format\" href=\"formats.html\"><img alt=\"doco\" src=\"help.png\"/></a></span>\r\n<span style=\" color: Gray\">&lt;!-- <span style=\"color: Darkviolet\">Extensions</span> --&gt;</span>\r\n&lt;<span title=\"The minimum number of characters that must be present in the simple data type to be considered a &quot;valid&quot; instance.\"><b>extension</b></span>&gt;<a name=\"minLength\"> </a>&lt;!--  <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">Context: Resource = CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition</span> --&gt;\r\n &lt;<b>url</b> value=&quot;<span style=\"color: maroon\">http://hl7.org/fhir/Profile/element-constraints#minLength</span>&quot;/&gt;\r\n &lt;<span title=\"The minimum number of characters that must be present in the simple data type to be considered a &quot;valid&quot; instance.\"><b>valueInteger</b></span> value=&quot;[<span style=\"color: darkgreen\"><a href=\"http://hl7.org/fhir/datatypes.html#integer\">integer</a></span>]&quot;/&gt;<span style=\" color: Gray\">&lt;!-- </span><span style=\"color: navy\">At least this many characters</span><span style=\" color: Gray\"> --&gt;</span>\r\n&lt;/extension&gt;\r\n\r\n&lt;<span title=\"The maximum number of characters that must be present in the simple data type to be considered a &quot;valid&quot; instance.\"><b>extension</b></span>&gt;<a name=\"maxLength\"> </a>&lt;!--  <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">Context: Resource = CommonDataElement;Questionnaire.group.question</span> --&gt;\r\n &lt;<b>url</b> value=&quot;<span style=\"color: maroon\">http://hl7.org/fhir/Profile/element-constraints#maxLength</span>&quot;/&gt;\r\n &lt;<span title=\"The maximum number of characters that must be present in the simple data type to be considered a &quot;valid&quot; instance.\"><b>valueInteger</b></span> value=&quot;[<span style=\"color: darkgreen\"><a href=\"http://hl7.org/fhir/datatypes.html#integer\">integer</a></span>]&quot;/&gt;<span style=\" color: Gray\">&lt;!-- </span><span style=\"color: navy\">No more than this many characters</span><span style=\" color: Gray\"> --&gt;</span>\r\n&lt;/extension&gt;\r\n\r\n&lt;<span title=\"A regular expression that defines the syntax for the data element to be considered valid.\"><b>extension</b></span>&gt;<a name=\"regex\"> </a>&lt;!--  <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">Context: Resource = CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition</span> --&gt;\r\n &lt;<b>url</b> value=&quot;<span style=\"color: maroon\">http://hl7.org/fhir/Profile/element-constraints#regex</span>&quot;/&gt;\r\n &lt;<span title=\"A regular expression that defines the syntax for the data element to be considered valid.\"><b>valueString</b></span> value=&quot;[<span style=\"color: darkgreen\"><a href=\"http://hl7.org/fhir/datatypes.html#string\">string</a></span>]&quot;/&gt;<span style=\" color: Gray\">&lt;!-- </span><span style=\"color: navy\">Regular expression pattern</span><span style=\" color: Gray\"> --&gt;</span>\r\n&lt;/extension&gt;\r\n\r\n&lt;<span title=\"A syntax intended for display to the user to guide their input (i.e. a human readable version of a rgular expression).  For example &quot;nnn-nnn-nnn&quot;.\"><b>extension</b></span>&gt;<a name=\"entryFormat\"> </a>&lt;!--  <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">Context: Resource = CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition</span> --&gt;\r\n &lt;<b>url</b> value=&quot;<span style=\"color: maroon\">http://hl7.org/fhir/Profile/element-constraints#entryFormat</span>&quot;/&gt;\r\n &lt;<span title=\"A syntax intended for display to the user to guide their input (i.e. a human readable version of a rgular expression).  For example &quot;nnn-nnn-nnn&quot;.\"><b>valueString</b></span> value=&quot;[<span style=\"color: darkgreen\"><a href=\"http://hl7.org/fhir/datatypes.html#string\">string</a></span>]&quot;/&gt;<span style=\" color: Gray\">&lt;!-- </span><span style=\"color: navy\">User prompt for format</span><span style=\" color: Gray\"> --&gt;</span>\r\n&lt;/extension&gt;\r\n\r\n&lt;<span title=\"The inclusive lower bound on the range of allowed values for the data element.\"><b>extension</b></span>&gt;<a name=\"minValue\"> </a>&lt;!--  <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">Context: Resource = CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition</span> --&gt;\r\n &lt;<b>url</b> value=&quot;<span style=\"color: maroon\">http://hl7.org/fhir/Profile/element-constraints#minValue</span>&quot;/&gt;\r\n &lt;<span title=\"The inclusive lower bound on the range of allowed values for the data element.\"><b>value[x]</b></span>&gt;[todo: type and short defn]&lt;/value[x]&gt;\r\n&lt;/extension&gt;\r\n\r\n&lt;<span title=\"The inclusive upper bound on the range of allowed values for the data element.\"><b>extension</b></span>&gt;<a name=\"maxValue\"> </a>&lt;!--  <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">Context: Resource = CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition</span> --&gt;\r\n &lt;<b>url</b> value=&quot;<span style=\"color: maroon\">http://hl7.org/fhir/Profile/element-constraints#maxValue</span>&quot;/&gt;\r\n &lt;<span title=\"The inclusive upper bound on the range of allowed values for the data element.\"><b>value[x]</b></span>&gt;[todo: type and short defn]&lt;/value[x]&gt;\r\n&lt;/extension&gt;\r\n\r\n&lt;<span title=\"Identifies the maximum number of decimal places that may be specified for the data element.\"><b>extension</b></span>&gt;<a name=\"maxDecimalPlaces\"> </a>&lt;!--  <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">Context: Resource = CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition</span> --&gt;\r\n &lt;<b>url</b> value=&quot;<span style=\"color: maroon\">http://hl7.org/fhir/Profile/element-constraints#maxDecimalPlaces</span>&quot;/&gt;\r\n &lt;<span title=\"Identifies the maximum number of decimal places that may be specified for the data element.\"><b>valueInteger</b></span> value=&quot;[<span style=\"color: darkgreen\"><a href=\"http://hl7.org/fhir/datatypes.html#integer\">integer</a></span>]&quot;/&gt;<span style=\" color: Gray\">&lt;!-- </span><span style=\"color: navy\">Maximum digits after decimal</span><span style=\" color: Gray\"> --&gt;</span>\r\n&lt;/extension&gt;\r\n\r\n</pre></div>"
+  },
+  "identifier": "http://hl7.org/fhir/profile/Element-definition Extensions for use by FHIR Implementers",
+  "name": "Element-definition Extensions for use by FHIR Implementers",
+  "publisher": "HL7 FHIR project",
+  "telecom": [
+    {
+      "system": "url",
+      "value": "http://hl7.org/fhir"
+    }
+  ],
+  "description": "A set of extensions that constrain data elements, whether used in CommonDataElements, Profiles or Questionnaires",
+  "status": "draft",
+  "date": "2014-04-27",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2"
+    }
+  ],
+  "extensionDefn": [
+    {
+      "code": "minLength",
+      "display": "At least this many characters",
+      "contextType": "resource",
+      "context": [
+        "CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition"
+      ],
+      "definition": {
+        "short": "At least this many characters",
+        "formal": "The minimum number of characters that must be present in the simple data type to be considered a \"valid\" instance.",
+        "comments": "For base64binary, reflects the number of characters representing the encoded data, not the number of bytes of the binary data.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A (MIF-level)"
+          },
+          {
+            "identity": "v2",
+            "map": "N/A"
+          }
+        ]
+      }
+    },
+    {
+      "code": "maxLength",
+      "display": "No more than this many characters",
+      "contextType": "resource",
+      "context": [
+        "CommonDataElement;Questionnaire.group.question"
+      ],
+      "definition": {
+        "short": "No more than this many characters",
+        "formal": "The maximum number of characters that must be present in the simple data type to be considered a \"valid\" instance.",
+        "comments": "For base64binary, reflects the number of characters representing the encoded data, not the number of bytes of the binary data.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A (MIF-level)"
+          },
+          {
+            "identity": "v2",
+            "map": "N/A"
+          }
+        ]
+      }
+    },
+    {
+      "code": "regex",
+      "display": "Regular expression pattern",
+      "contextType": "resource",
+      "context": [
+        "CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition"
+      ],
+      "definition": {
+        "short": "Regular expression pattern",
+        "formal": "A regular expression that defines the syntax for the data element to be considered valid.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A (MIF-level)"
+          },
+          {
+            "identity": "v2",
+            "map": "N/A"
+          }
+        ]
+      }
+    },
+    {
+      "code": "entryFormat",
+      "display": "User prompt for format",
+      "contextType": "resource",
+      "context": [
+        "CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition"
+      ],
+      "definition": {
+        "short": "User prompt for format",
+        "formal": "A syntax intended for display to the user to guide their input (i.e. a human readable version of a rgular expression).  For example \"nnn-nnn-nnn\".",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A (MIF-level)"
+          },
+          {
+            "identity": "v2",
+            "map": "N/A"
+          }
+        ]
+      }
+    },
+    {
+      "code": "minValue",
+      "display": "Must be >= this value",
+      "contextType": "resource",
+      "context": [
+        "CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition"
+      ],
+      "definition": {
+        "short": "Must be >= this value",
+        "formal": "The inclusive lower bound on the range of allowed values for the data element.",
+        "comments": "Data type specified must be the same as the data type for the data element.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "integer"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A (MIF-level)"
+          },
+          {
+            "identity": "v2",
+            "map": "N/A"
+          }
+        ]
+      }
+    },
+    {
+      "code": "maxValue",
+      "display": "Must be <= this value",
+      "contextType": "resource",
+      "context": [
+        "CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition"
+      ],
+      "definition": {
+        "short": "Must be <= this value",
+        "formal": "The inclusive upper bound on the range of allowed values for the data element.",
+        "comments": "Data type specified must be the same as the data type for the data element.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "integer"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A (MIF-level)"
+          },
+          {
+            "identity": "v2",
+            "map": "N/A"
+          }
+        ]
+      }
+    },
+    {
+      "code": "maxDecimalPlaces",
+      "display": "Maximum digits after decimal",
+      "contextType": "resource",
+      "context": [
+        "CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition"
+      ],
+      "definition": {
+        "short": "Maximum digits after decimal",
+        "formal": "Identifies the maximum number of decimal places that may be specified for the data element.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A (MIF-level)"
+          },
+          {
+            "identity": "v2",
+            "map": "N/A"
+          }
+        ]
+      }
+    }
+  ]
+}

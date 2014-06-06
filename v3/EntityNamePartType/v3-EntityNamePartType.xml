@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>DEL
+            <a name="DEL"> </a>
+          </td>
+          <td>delimiter</td>
+          <td>
+                        A delimiter has no meaning other than being literally printed in this name representation.  A delimiter has no implicit leading and trailing white space.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>FAM
+            <a name="FAM"> </a>
+          </td>
+          <td>family</td>
+          <td>
+                        Family name, this is the name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>GIV
+            <a name="GIV"> </a>
+          </td>
+          <td>given</td>
+          <td>
+                        Given name (don&#39;t call it &quot;first name&quot; since this given names do not always come first)
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>PFX
+            <a name="PFX"> </a>
+          </td>
+          <td>prefix</td>
+          <td>
+                        A prefix has a strong association to the immediately following name part. A prefix has no implicit trailing white space (it has implicit leading white space though). Note that prefixes can be inverted.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>SFX
+            <a name="SFX"> </a>
+          </td>
+          <td>suffix</td>
+          <td>
+                        
+                           Description:A suffix has a strong association to the immediately preceding name part. A suffix has no implicit leading white space (it has implicit trailing white space though). Suffices cannot be inverted.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/EntityNamePartType"/>
+  <name value="v3 Code System EntityNamePartType"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="? not found"/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/EntityNamePartType"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="DEL"/>
+      <display value="delimiter"/>
+      <definition value="A delimiter has no meaning other than being literally printed in this name representation.  A delimiter has no implicit leading and trailing white space."/>
+    </concept>
+    <concept>
+      <code value="FAM"/>
+      <display value="family"/>
+      <definition value="Family name, this is the name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father."/>
+    </concept>
+    <concept>
+      <code value="GIV"/>
+      <display value="given"/>
+      <definition value="Given name (don&#39;t call it &quot;first name&quot; since this given names do not always come first)"/>
+    </concept>
+    <concept>
+      <code value="PFX"/>
+      <display value="prefix"/>
+      <definition value="A prefix has a strong association to the immediately following name part. A prefix has no implicit trailing white space (it has implicit leading white space though). Note that prefixes can be inverted."/>
+    </concept>
+    <concept>
+      <code value="SFX"/>
+      <display value="suffix"/>
+      <definition value="Description:A suffix has a strong association to the immediately preceding name part. A suffix has no implicit leading white space (it has implicit trailing white space though). Suffices cannot be inverted."/>
+    </concept>
+  </define>
+</ValueSet>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  Indicates whether the concept that is the target should be interpreted as itself, or whether it should be expanded to include its child concepts, or both when it is included in the source domain/valueset.
+        <br/>
+
+                  
+                     Deprecation Comment: Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>A
+            <a name="A"> </a>
+          </td>
+          <td>Abstract</td>
+          <td>
+                        Include only the descendents of this concept in the domain or value set, not the concept itself.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>L
+            <a name="L"> </a>
+          </td>
+          <td>Leaf</td>
+          <td>
+                        Include only the concept itself in the domain or value set.  Do not include descendents of the concept.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>S
+            <a name="S"> </a>
+          </td>
+          <td>Specializable</td>
+          <td>
+                        Include both the concept and its descendents as possible values in the domain or value set.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/ConceptGenerality"/>
+  <name value="v3 Code System ConceptGenerality"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" Indicates whether the concept that is the target should be interpreted as itself, or whether it should be expanded to include its child concepts, or both when it is included in the source domain/valueset.  Deprecation Comment:
+Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/ConceptGenerality"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="A"/>
+      <display value="Abstract"/>
+      <definition value="Include only the descendents of this concept in the domain or value set, not the concept itself."/>
+    </concept>
+    <concept>
+      <code value="L"/>
+      <display value="Leaf"/>
+      <definition value="Include only the concept itself in the domain or value set.  Do not include descendents of the concept."/>
+    </concept>
+    <concept>
+      <code value="S"/>
+      <display value="Specializable"/>
+      <definition value="Include both the concept and its descendents as possible values in the domain or value set."/>
+    </concept>
+  </define>
+</ValueSet>

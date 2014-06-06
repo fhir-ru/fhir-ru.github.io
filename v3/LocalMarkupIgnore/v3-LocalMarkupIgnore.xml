@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  Tells a receiver to ignore just the local markup tags (local_markup, local_header, local_attr) when value=&quot;markup&quot;, or to ignore the local markup tags and all contained content when value=&quot;all&quot;
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>all
+            <a name="all"> </a>
+          </td>
+          <td>all</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>markup
+            <a name="markup"> </a>
+          </td>
+          <td>markup</td>
+          <td/>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/LocalMarkupIgnore"/>
+  <name value="v3 Code System LocalMarkupIgnore"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" Tells a receiver to ignore just the local markup tags (local_markup, local_header, local_attr) when value=&quot;markup&quot;, or to ignore the local markup tags and all contained content when value=&quot;all&quot;"/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/LocalMarkupIgnore"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="all"/>
+      <display value="all"/>
+    </concept>
+    <concept>
+      <code value="markup"/>
+      <display value="markup"/>
+    </concept>
+  </define>
+</ValueSet>

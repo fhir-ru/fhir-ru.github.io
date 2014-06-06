@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Telecommunication Equipment Type</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>BP
+            <a name="BP"> </a>
+          </td>
+          <td>Beeper</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>CP
+            <a name="CP"> </a>
+          </td>
+          <td>Cellular or Mobile Phone</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>FX
+            <a name="FX"> </a>
+          </td>
+          <td>Fax</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>Internet
+            <a name="Internet"> </a>
+          </td>
+          <td>Internet Address</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>MD
+            <a name="MD"> </a>
+          </td>
+          <td>Modem</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>PH
+            <a name="PH"> </a>
+          </td>
+          <td>Telephone</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>SAT
+            <a name="SAT"> </a>
+          </td>
+          <td>Satellite Phone</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>TDD
+            <a name="TDD"> </a>
+          </td>
+          <td>Telecommunications Device for the Deaf</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>TTY
+            <a name="TTY"> </a>
+          </td>
+          <td>Teletypewriter</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>X.400
+            <a name="X.46400"> </a>
+          </td>
+          <td>X.400 email address</td>
+          <td>added v2.3</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0202"/>
+  <name value="v2 Telecommunication Equipment Type"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0202 ( Telecommunication Equipment Type)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0202"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="BP"/>
+      <display value="Beeper"/>
+    </concept>
+    <concept>
+      <code value="CP"/>
+      <display value="Cellular or Mobile Phone"/>
+    </concept>
+    <concept>
+      <code value="FX"/>
+      <display value="Fax"/>
+    </concept>
+    <concept>
+      <code value="Internet"/>
+      <display value="Internet Address"/>
+    </concept>
+    <concept>
+      <code value="MD"/>
+      <display value="Modem"/>
+    </concept>
+    <concept>
+      <code value="PH"/>
+      <display value="Telephone"/>
+    </concept>
+    <concept>
+      <code value="SAT"/>
+      <display value="Satellite Phone"/>
+    </concept>
+    <concept>
+      <code value="TDD"/>
+      <display value="Telecommunications Device for the Deaf"/>
+    </concept>
+    <concept>
+      <code value="TTY"/>
+      <display value="Teletypewriter"/>
+    </concept>
+    <concept>
+      <code value="X.400"/>
+      <display value="X.400 email address"/>
+    </concept>
+  </define>
+</ValueSet>

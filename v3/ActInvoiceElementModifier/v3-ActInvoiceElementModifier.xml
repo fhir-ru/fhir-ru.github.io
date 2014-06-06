@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  Processing consideration and clarification codes.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>EFORM
+            <a name="EFORM"> </a>
+          </td>
+          <td>Electronic Form To Follow</td>
+          <td>
+                        Electronic form with supporting information to follow.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>FAX
+            <a name="FAX"> </a>
+          </td>
+          <td>Fax To Follow</td>
+          <td>
+                        Fax with supporting information to follow.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>LINV
+            <a name="LINV"> </a>
+          </td>
+          <td>Last Invoice</td>
+          <td>
+                        Represents the last invoice from the perspective of the provider.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>PAPER
+            <a name="PAPER"> </a>
+          </td>
+          <td>Paper Documentation To Follow</td>
+          <td>
+                        Paper documentation (or other physical format) with supporting information to follow.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/ActInvoiceElementModifier"/>
+  <name value="v3 Code System ActInvoiceElementModifier"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" Processing consideration and clarification codes."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/ActInvoiceElementModifier"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="EFORM"/>
+      <display value="Electronic Form To Follow"/>
+      <definition value="Electronic form with supporting information to follow."/>
+    </concept>
+    <concept>
+      <code value="FAX"/>
+      <display value="Fax To Follow"/>
+      <definition value="Fax with supporting information to follow."/>
+    </concept>
+    <concept>
+      <code value="LINV"/>
+      <display value="Last Invoice"/>
+      <definition value="Represents the last invoice from the perspective of the provider."/>
+    </concept>
+    <concept>
+      <code value="PAPER"/>
+      <display value="Paper Documentation To Follow"/>
+      <definition value="Paper documentation (or other physical format) with supporting information to follow."/>
+    </concept>
+  </define>
+</ValueSet>

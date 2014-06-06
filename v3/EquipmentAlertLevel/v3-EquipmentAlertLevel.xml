@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>C
+            <a name="C"> </a>
+          </td>
+          <td>Critical</td>
+          <td>
+                        Shut Down, Fix Problem and Re-init
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>N
+            <a name="N"> </a>
+          </td>
+          <td>Normal</td>
+          <td>
+                        No Corrective Action Needed
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>S
+            <a name="S"> </a>
+          </td>
+          <td>Serious</td>
+          <td>
+                        Corrective Action Required
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>W
+            <a name="W"> </a>
+          </td>
+          <td>Warning</td>
+          <td>
+                        Corrective Action Anticipated
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/EquipmentAlertLevel"/>
+  <name value="v3 Code System EquipmentAlertLevel"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="? not found"/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/EquipmentAlertLevel"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="C"/>
+      <display value="Critical"/>
+      <definition value="Shut Down, Fix Problem and Re-init"/>
+    </concept>
+    <concept>
+      <code value="N"/>
+      <display value="Normal"/>
+      <definition value="No Corrective Action Needed"/>
+    </concept>
+    <concept>
+      <code value="S"/>
+      <display value="Serious"/>
+      <definition value="Corrective Action Required"/>
+    </concept>
+    <concept>
+      <code value="W"/>
+      <display value="Warning"/>
+      <definition value="Corrective Action Anticipated"/>
+    </concept>
+  </define>
+</ValueSet>

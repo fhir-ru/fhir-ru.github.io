@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>SecurityIntegrityObservationValue</h2>
+      <p>?? (OID = 2.16.840.1.113883.1.11.20481)</p>
+      <p>This value set includes codes defined in other code systems, using the following rules:</p>
+      <ul>
+        <li>Include codes from 
+          <a href="../../../v3/ObservationValue/index.html">http://hl7.org/fhir/v3/ObservationValue</a> where concept  is-a  
+          <a href="../../../v3/ObservationValue/index.html#_SECINTOBV">_SECINTOBV</a>
+        </li>
+      </ul>
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/SecurityIntegrityObservationValue"/>
+  <version value="2013-12-07"/>
+  <name value="SecurityIntegrityObservationValue"/>
+  <publisher value="HL7 v3"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://www.hl7.org"/>
+  </telecom>
+  <description value="?? (OID = 2.16.840.1.113883.1.11.20481)"/>
+  <status value="active"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/v3/ObservationValue"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="_SECINTOBV"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

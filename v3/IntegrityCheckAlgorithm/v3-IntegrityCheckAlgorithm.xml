@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>SHA-1
+            <a name="SHA-1"> </a>
+          </td>
+          <td>secure hash algorithm - 1</td>
+          <td>
+                        This algorithm is defined in FIPS PUB 180-1: Secure Hash Standard.  As of April 17, 1995.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>SHA-256
+            <a name="SHA-256"> </a>
+          </td>
+          <td>secure hash algorithm - 256</td>
+          <td>
+                        This algorithm is defined in FIPS PUB 180-2: Secure Hash Standard.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/IntegrityCheckAlgorithm"/>
+  <name value="v3 Code System IntegrityCheckAlgorithm"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="? not found"/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/IntegrityCheckAlgorithm"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="SHA-1"/>
+      <display value="secure hash algorithm - 1"/>
+      <definition value="This algorithm is defined in FIPS PUB 180-1: Secure Hash Standard.  As of April 17, 1995."/>
+    </concept>
+    <concept>
+      <code value="SHA-256"/>
+      <display value="secure hash algorithm - 256"/>
+      <definition value="This algorithm is defined in FIPS PUB 180-2: Secure Hash Standard."/>
+    </concept>
+  </define>
+</ValueSet>

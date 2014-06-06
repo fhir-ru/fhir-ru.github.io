@@ -1,0 +1,886 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Valueset-extensions.xml - FHIR v0.2.1</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="infrastructure.html">Infrastructure</a></li>        <li><a href="valueset.html">ValueSet</a></li>        <li><a href="valueset-extensions.html">valueset-extensions</a></li>        <li><b>Profile Instance</b></li>        <!-- valueset-extensions.xml.html / profile-instance:res:ValueSet -->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<h1>Valueset-extensions.xml</h1>
+
+<div class="example">
+<p>ValueSet HL7 Extensions</p>
+<p><a href="valueset-extensions.profile.xml">Raw XML</a></p>
+<pre class="xml">
+<span class="xmltag">&lt;Profile</span><span class="xmlattr"> xmlns="<span class="xmlattrvalue">http://hl7.org/fhir</span>"</span><span class="xmltag">&gt;</span><b>
+  </b><span class="xmltag">&lt;text</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">generated</span>"</span><span class="xmltag">/&gt;</span><span class="xmltag">&lt;div</span><span class="xmlattr"> xmlns="<span class="xmlattrvalue">http://www.w3.org/1999/xhtml</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;pre</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">float: right</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;a</span><span class="xmlattr"> href="<span class="xmlattrvalue">formats.html</span>" title="<span class="xmlattrvalue">Documentation for this format</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;img</span><span class="xmlattr"> alt="<span class="xmlattrvalue">doco</span>" src="<span class="xmlattrvalue">help.png</span>"</span><span class="xmltag">/&gt;</span><span class="xmltag">&lt;/a&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>
+</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>&amp;lt;!-- </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: Darkviolet</span>"</span><span class="xmltag">&gt;</span><b>Extensions</b><span class="xmltag">&lt;/span&gt;</span><b> --&amp;gt;</b><span class="xmltag">&lt;/span&gt;</span><b>
+&amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Comparison value for ordinal codes.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>extension</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>&amp;gt;</b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">ordinalValue</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>&amp;lt;!--  </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: brown</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>0..1</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Context: Resource = ValueSet.compose.include.code</b><span class="xmltag">&lt;/span&gt;</span><b> --&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>url</b><span class="xmltag">&lt;/b&gt;</span><b> value=&amp;quot;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: maroon</span>"</span><span class="xmltag">&gt;</span><b>http://hl7.org/fhir/extensions/ValueSet#ordinalValue</b><span class="xmltag">&lt;/span&gt;</span><b>&amp;quot;/&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Comparison value for ordinal codes.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>valueInteger</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> value=&amp;quot;[</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: darkgreen</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;a</span><span class="xmlattr"> href="<span class="xmlattrvalue">http://hl7.org/fhir/datatypes.html#integer</span>"</span><span class="xmltag">&gt;</span><b>integer</b><span class="xmltag">&lt;/a&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>]&amp;quot;/&amp;gt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>&amp;lt;!-- </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Comparison value for ordinal codes</b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b> --&amp;gt;</b><span class="xmltag">&lt;/span&gt;</span><b>
+&amp;lt;/extension&amp;gt;
+
+&amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Appearance order for user selection.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>extension</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>&amp;gt;</b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">conceptOrder</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>&amp;lt;!--  </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: brown</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>0..1</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Context: Resource = ValueSet.compose.include.code</b><span class="xmltag">&lt;/span&gt;</span><b> --&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>url</b><span class="xmltag">&lt;/b&gt;</span><b> value=&amp;quot;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: maroon</span>"</span><span class="xmltag">&gt;</span><b>http://hl7.org/fhir/extensions/ValueSet#conceptOrder</b><span class="xmltag">&lt;/span&gt;</span><b>&amp;quot;/&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Appearance order for user selection.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>valueInteger</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> value=&amp;quot;[</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: darkgreen</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;a</span><span class="xmlattr"> href="<span class="xmlattrvalue">http://hl7.org/fhir/datatypes.html#integer</span>"</span><span class="xmltag">&gt;</span><b>integer</b><span class="xmltag">&lt;/a&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>]&amp;quot;/&amp;gt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>&amp;lt;!-- </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Appearance order for user selection</b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b> --&amp;gt;</b><span class="xmltag">&lt;/span&gt;</span><b>
+&amp;lt;/extension&amp;gt;
+
+&amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Display value for the code.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>extension</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>&amp;gt;</b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">display</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>&amp;lt;!--  </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: brown</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>0..*</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Context: Resource = ValueSet.compose.include.code</b><span class="xmltag">&lt;/span&gt;</span><b> --&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>url</b><span class="xmltag">&lt;/b&gt;</span><b> value=&amp;quot;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: maroon</span>"</span><span class="xmltag">&gt;</span><b>http://hl7.org/fhir/extensions/ValueSet#display</b><span class="xmltag">&lt;/span&gt;</span><b>&amp;quot;/&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Display value for the code.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>valueString</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> value=&amp;quot;[</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: darkgreen</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;a</span><span class="xmlattr"> href="<span class="xmlattrvalue">http://hl7.org/fhir/datatypes.html#string</span>"</span><span class="xmltag">&gt;</span><b>string</b><span class="xmltag">&lt;/a&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>]&amp;quot;/&amp;gt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>&amp;lt;!-- </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Display value for the code</b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b> --&amp;gt;</b><span class="xmltag">&lt;/span&gt;</span><b>
+&amp;lt;/extension&amp;gt;
+
+&amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Code system name.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>extension</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>&amp;gt;</b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">systemName</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>&amp;lt;!--  </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: brown</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>0..1</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Context: Resource = ValueSet.compose.include</b><span class="xmltag">&lt;/span&gt;</span><b> --&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>url</b><span class="xmltag">&lt;/b&gt;</span><b> value=&amp;quot;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: maroon</span>"</span><span class="xmltag">&gt;</span><b>http://hl7.org/fhir/extensions/ValueSet#systemName</b><span class="xmltag">&lt;/span&gt;</span><b>&amp;quot;/&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Code system name.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>valueString</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> value=&amp;quot;[</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: darkgreen</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;a</span><span class="xmlattr"> href="<span class="xmlattrvalue">http://hl7.org/fhir/datatypes.html#string</span>"</span><span class="xmltag">&gt;</span><b>string</b><span class="xmltag">&lt;/a&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>]&amp;quot;/&amp;gt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>&amp;lt;!-- </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Code system name</b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b> --&amp;gt;</b><span class="xmltag">&lt;/span&gt;</span><b>
+&amp;lt;/extension&amp;gt;
+
+&amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Where to find code system.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>extension</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>&amp;gt;</b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">systemRef</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>&amp;lt;!--  </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: brown</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>0..1</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Context: Resource = ValueSet.compose.include</b><span class="xmltag">&lt;/span&gt;</span><b> --&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>url</b><span class="xmltag">&lt;/b&gt;</span><b> value=&amp;quot;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: maroon</span>"</span><span class="xmltag">&gt;</span><b>http://hl7.org/fhir/extensions/ValueSet#systemRef</b><span class="xmltag">&lt;/span&gt;</span><b>&amp;quot;/&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Where to find code system.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>valueUri</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> value=&amp;quot;[</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: darkgreen</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;a</span><span class="xmlattr"> href="<span class="xmlattrvalue">http://hl7.org/fhir/datatypes.html#uri</span>"</span><span class="xmltag">&gt;</span><b>uri</b><span class="xmltag">&lt;/a&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>]&amp;quot;/&amp;gt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>&amp;lt;!-- </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Where to find code system</b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b> --&amp;gt;</b><span class="xmltag">&lt;/span&gt;</span><b>
+&amp;lt;/extension&amp;gt;
+
+&amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Human readable names for the valueset.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>extension</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>&amp;gt;</b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">otherName</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>&amp;lt;!--  </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: brown</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>0..*</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Context: Resource = ValueSet</b><span class="xmltag">&lt;/span&gt;</span><b> --&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>url</b><span class="xmltag">&lt;/b&gt;</span><b> value=&amp;quot;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: maroon</span>"</span><span class="xmltag">&gt;</span><b>http://hl7.org/fhir/extensions/ValueSet#otherName</b><span class="xmltag">&lt;/span&gt;</span><b>&amp;quot;/&amp;gt;
+ </b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Human readable names for the valueset.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>&amp;lt;!-- </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Extensions: #name, #name-language, #preferred</b><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>--&amp;gt; </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>
+&amp;lt;/extension&amp;gt;
+
+&amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">This name is intended to be human readable, short and as specific as possible and to convey
+         the purpose of the value set.  It is considered to be the name of the value set.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>extension</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>&amp;gt;</b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">name</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>&amp;lt;!--  </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: brown</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>1..1</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Context: Extension = http://hl7.org/fhir/extensions/ValueSet#otherName</b><span class="xmltag">&lt;/span&gt;</span><b> --&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>url</b><span class="xmltag">&lt;/b&gt;</span><b> value=&amp;quot;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: maroon</span>"</span><span class="xmltag">&gt;</span><b>http://hl7.org/fhir/extensions/ValueSet#name</b><span class="xmltag">&lt;/span&gt;</span><b>&amp;quot;/&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">This name is intended to be human readable, short and as specific as possible and to convey
+         the purpose of the value set.  It is considered to be the name of the value set.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>valueString</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> value=&amp;quot;[</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: darkgreen</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;a</span><span class="xmlattr"> href="<span class="xmlattrvalue">http://hl7.org/fhir/datatypes.html#string</span>"</span><span class="xmltag">&gt;</span><b>string</b><span class="xmltag">&lt;/a&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>]&amp;quot;/&amp;gt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>&amp;lt;!-- </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Human readable, short and specific</b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b> --&amp;gt;</b><span class="xmltag">&lt;/span&gt;</span><b>
+&amp;lt;/extension&amp;gt;
+
+&amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">This indicates the language system (e.g. US English) in which the name is expressed.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>extension</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>&amp;gt;</b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">name-language</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>&amp;lt;!--  </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: brown</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>0..1</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Context: Extension = http://hl7.org/fhir/extensions/ValueSet#otherName</b><span class="xmltag">&lt;/span&gt;</span><b> --&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>url</b><span class="xmltag">&lt;/b&gt;</span><b> value=&amp;quot;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: maroon</span>"</span><span class="xmltag">&gt;</span><b>http://hl7.org/fhir/extensions/ValueSet#name-language</b><span class="xmltag">&lt;/span&gt;</span><b>&amp;quot;/&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">This indicates the language system (e.g. US English) in which the name is expressed.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>valueCode</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> value=&amp;quot;[</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: darkgreen</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;a</span><span class="xmlattr"> href="<span class="xmlattrvalue">http://hl7.org/fhir/datatypes.html#code</span>"</span><span class="xmltag">&gt;</span><b>code</b><span class="xmltag">&lt;/a&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>]&amp;quot;/&amp;gt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>&amp;lt;!-- </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>IETF language tag (BCP-13)</b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b> --&amp;gt;</b><span class="xmltag">&lt;/span&gt;</span><b>
+&amp;lt;/extension&amp;gt;
+
+&amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Flag that this Name in this Name Language is the preferred human-readable signifier in
+         this language.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>extension</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>&amp;gt;</b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">preferred</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>&amp;lt;!--  </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: brown</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>0..1</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Context: Extension = http://hl7.org/fhir/extensions/ValueSet#otherName</b><span class="xmltag">&lt;/span&gt;</span><b> --&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>url</b><span class="xmltag">&lt;/b&gt;</span><b> value=&amp;quot;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: maroon</span>"</span><span class="xmltag">&gt;</span><b>http://hl7.org/fhir/extensions/ValueSet#preferred</b><span class="xmltag">&lt;/span&gt;</span><b>&amp;quot;/&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Flag that this Name in this Name Language is the preferred human-readable signifier in
+         this language.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>valueBoolean</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> value=&amp;quot;[</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: darkgreen</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;a</span><span class="xmlattr"> href="<span class="xmlattrvalue">http://hl7.org/fhir/datatypes.html#boolean</span>"</span><span class="xmltag">&gt;</span><b>boolean</b><span class="xmltag">&lt;/a&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>]&amp;quot;/&amp;gt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>&amp;lt;!-- </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Which name is preferred for this language</b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b> --&amp;gt;</b><span class="xmltag">&lt;/span&gt;</span><b>
+&amp;lt;/extension&amp;gt;
+
+&amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">: This text is intended to act as a citation to work done elsewhere that is not part of
+         the current stewarding process where the referenced source is in some way a basis of the
+         current value set definition.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>extension</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>&amp;gt;</b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">sourceReference</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>&amp;lt;!--  </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: brown</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>0..1</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Context: Resource = ValueSet</b><span class="xmltag">&lt;/span&gt;</span><b> --&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>url</b><span class="xmltag">&lt;/b&gt;</span><b> value=&amp;quot;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: maroon</span>"</span><span class="xmltag">&gt;</span><b>http://hl7.org/fhir/extensions/ValueSet#sourceReference</b><span class="xmltag">&lt;/span&gt;</span><b>&amp;quot;/&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">: This text is intended to act as a citation to work done elsewhere that is not part of
+         the current stewarding process where the referenced source is in some way a basis of the
+         current value set definition.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>valueUri</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> value=&amp;quot;[</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: darkgreen</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;a</span><span class="xmlattr"> href="<span class="xmlattrvalue">http://hl7.org/fhir/datatypes.html#uri</span>"</span><span class="xmltag">&gt;</span><b>uri</b><span class="xmltag">&lt;/a&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>]&amp;quot;/&amp;gt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>&amp;lt;!-- </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>An external source useful in understanding the basis for the value set</b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b> --&amp;gt;</b><span class="xmltag">&lt;/span&gt;</span><b>
+&amp;lt;/extension&amp;gt;
+
+&amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Word or words used in an information retrieval system to indicate the content of the value
+         set.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>extension</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>&amp;gt;</b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">keyWord</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>&amp;lt;!--  </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: brown</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>0..*</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Context: Resource = ValueSet</b><span class="xmltag">&lt;/span&gt;</span><b> --&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>url</b><span class="xmltag">&lt;/b&gt;</span><b> value=&amp;quot;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: maroon</span>"</span><span class="xmltag">&gt;</span><b>http://hl7.org/fhir/extensions/ValueSet#keyWord</b><span class="xmltag">&lt;/span&gt;</span><b>&amp;quot;/&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Word or words used in an information retrieval system to indicate the content of the value
+         set.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>valueString</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> value=&amp;quot;[</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: darkgreen</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;a</span><span class="xmlattr"> href="<span class="xmlattrvalue">http://hl7.org/fhir/datatypes.html#string</span>"</span><span class="xmltag">&gt;</span><b>string</b><span class="xmltag">&lt;/a&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>]&amp;quot;/&amp;gt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>&amp;lt;!-- </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>can be used to help find the value set</b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b> --&amp;gt;</b><span class="xmltag">&lt;/span&gt;</span><b>
+&amp;lt;/extension&amp;gt;
+
+&amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">The optional and repeating Use set of elements hold information about consumers of the
+         value set and the implementations, projects or standards that the author has utilized
+         the value set in.  Value sets that share the same Use information can be grouped together
+         by that information for implementation purposes.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>extension</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>&amp;gt;</b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">usage</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>&amp;lt;!--  </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: brown</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>0..*</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Context: Resource = ValueSet</b><span class="xmltag">&lt;/span&gt;</span><b> --&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>url</b><span class="xmltag">&lt;/b&gt;</span><b> value=&amp;quot;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: maroon</span>"</span><span class="xmltag">&gt;</span><b>http://hl7.org/fhir/extensions/ValueSet#usage</b><span class="xmltag">&lt;/span&gt;</span><b>&amp;quot;/&amp;gt;
+ </b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">The optional and repeating Use set of elements hold information about consumers of the
+         value set and the implementations, projects or standards that the author has utilized
+         the value set in.  Value sets that share the same Use information can be grouped together
+         by that information for implementation purposes.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>&amp;lt;!-- </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Extensions: #usage-user, #usage-use</b><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>--&amp;gt; </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>
+&amp;lt;/extension&amp;gt;
+
+&amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">This is most likely to be an organization but can be an individual. It would not be a
+         program, that information should be recorded in the Usage.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>extension</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>&amp;gt;</b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">usage-user</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>&amp;lt;!--  </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: brown</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>1..1</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Context: Extension = http://hl7.org/fhir/extensions/ValueSet#usage</b><span class="xmltag">&lt;/span&gt;</span><b> --&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>url</b><span class="xmltag">&lt;/b&gt;</span><b> value=&amp;quot;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: maroon</span>"</span><span class="xmltag">&gt;</span><b>http://hl7.org/fhir/extensions/ValueSet#usage-user</b><span class="xmltag">&lt;/span&gt;</span><b>&amp;quot;/&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">This is most likely to be an organization but can be an individual. It would not be a
+         program, that information should be recorded in the Usage.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>valueString</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> value=&amp;quot;[</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: darkgreen</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;a</span><span class="xmlattr"> href="<span class="xmlattrvalue">http://hl7.org/fhir/datatypes.html#string</span>"</span><span class="xmltag">&gt;</span><b>string</b><span class="xmltag">&lt;/a&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>]&amp;quot;/&amp;gt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>&amp;lt;!-- </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>A consumer of or client for the value set</b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b> --&amp;gt;</b><span class="xmltag">&lt;/span&gt;</span><b>
+&amp;lt;/extension&amp;gt;
+
+&amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">A descriptive name of the project or standard in which the value set is used.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>extension</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>&amp;gt;</b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">usage-use</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>&amp;lt;!--  </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: brown</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>1..1</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Context: Extension = http://hl7.org/fhir/extensions/ValueSet#usage</b><span class="xmltag">&lt;/span&gt;</span><b> --&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>url</b><span class="xmltag">&lt;/b&gt;</span><b> value=&amp;quot;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: maroon</span>"</span><span class="xmltag">&gt;</span><b>http://hl7.org/fhir/extensions/ValueSet#usage-use</b><span class="xmltag">&lt;/span&gt;</span><b>&amp;quot;/&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">A descriptive name of the project or standard in which the value set is used.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>valueString</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> value=&amp;quot;[</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: darkgreen</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;a</span><span class="xmlattr"> href="<span class="xmlattrvalue">http://hl7.org/fhir/datatypes.html#string</span>"</span><span class="xmltag">&gt;</span><b>string</b><span class="xmltag">&lt;/a&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>]&amp;quot;/&amp;gt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>&amp;lt;!-- </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Implementation or project or standard that uses the value set</b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b> --&amp;gt;</b><span class="xmltag">&lt;/span&gt;</span><b>
+&amp;lt;/extension&amp;gt;
+
+&amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Workflow Status is used to represent details of the value set development process while
+         the value set has an Activity Status of Preliminary. The development of a value set often
+         follows a formal workflow process from initiation to completion, and this element carries
+         the state variable for this state machine. The assumption is that when first created a
+         value set would have a workflow state of Draft. Additional workflow states may be used.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>extension</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>&amp;gt;</b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">workflowStatus</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>&amp;lt;!--  </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: brown</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>0..1</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Context: Resource = ValueSet</b><span class="xmltag">&lt;/span&gt;</span><b> --&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>url</b><span class="xmltag">&lt;/b&gt;</span><b> value=&amp;quot;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: maroon</span>"</span><span class="xmltag">&gt;</span><b>http://hl7.org/fhir/extensions/ValueSet#workflowStatus</b><span class="xmltag">&lt;/span&gt;</span><b>&amp;quot;/&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Workflow Status is used to represent details of the value set development process while
+         the value set has an Activity Status of Preliminary. The development of a value set often
+         follows a formal workflow process from initiation to completion, and this element carries
+         the state variable for this state machine. The assumption is that when first created a
+         value set would have a workflow state of Draft. Additional workflow states may be used.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>valueString</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> value=&amp;quot;[</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: darkgreen</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;a</span><span class="xmlattr"> href="<span class="xmlattrvalue">http://hl7.org/fhir/datatypes.html#string</span>"</span><span class="xmltag">&gt;</span><b>string</b><span class="xmltag">&lt;/a&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>]&amp;quot;/&amp;gt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>&amp;lt;!-- </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Indicates the state of development of the value set</b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b> --&amp;gt;</b><span class="xmltag">&lt;/span&gt;</span><b>
+&amp;lt;/extension&amp;gt;
+
+&amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">This is the first date-time when the value set version becomes active, so this value is
+         present on Inactive value set versions as well. The start Date_time is expected to be
+         as of 0001 UTC of the Effective Date.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>extension</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>&amp;gt;</b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">effectiveDate</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>&amp;lt;!--  </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: brown</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>0..1</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Context: Resource = ValueSet</b><span class="xmltag">&lt;/span&gt;</span><b> --&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>url</b><span class="xmltag">&lt;/b&gt;</span><b> value=&amp;quot;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: maroon</span>"</span><span class="xmltag">&gt;</span><b>http://hl7.org/fhir/extensions/ValueSet#effectiveDate</b><span class="xmltag">&lt;/span&gt;</span><b>&amp;quot;/&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">This is the first date-time when the value set version becomes active, so this value is
+         present on Inactive value set versions as well. The start Date_time is expected to be
+         as of 0001 UTC of the Effective Date.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>valueDate</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> value=&amp;quot;[</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: darkgreen</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;a</span><span class="xmlattr"> href="<span class="xmlattrvalue">http://hl7.org/fhir/datatypes.html#date</span>"</span><span class="xmltag">&gt;</span><b>date</b><span class="xmltag">&lt;/a&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>]&amp;quot;/&amp;gt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>&amp;lt;!-- </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>When the value set version becomes Active and is available for use</b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b> --&amp;gt;</b><span class="xmltag">&lt;/span&gt;</span><b>
+&amp;lt;/extension&amp;gt;
+
+&amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">The date when the value set version is no longer expected to be used to create new content.
+         This is the first date-time when the value set version becomes Inactive, so this value
+         MUST present on all Inactive value set versions. The start Date_time is expected to be
+         as of 0001 UTC of the Expiration Date.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>extension</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>&amp;gt;</b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">expirationDate</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>&amp;lt;!--  </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: brown</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>0..1</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Context: Resource = ValueSet</b><span class="xmltag">&lt;/span&gt;</span><b> --&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>url</b><span class="xmltag">&lt;/b&gt;</span><b> value=&amp;quot;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: maroon</span>"</span><span class="xmltag">&gt;</span><b>http://hl7.org/fhir/extensions/ValueSet#expirationDate</b><span class="xmltag">&lt;/span&gt;</span><b>&amp;quot;/&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">The date when the value set version is no longer expected to be used to create new content.
+         This is the first date-time when the value set version becomes Inactive, so this value
+         MUST present on all Inactive value set versions. The start Date_time is expected to be
+         as of 0001 UTC of the Expiration Date.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>valueDate</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> value=&amp;quot;[</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: darkgreen</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;a</span><span class="xmlattr"> href="<span class="xmlattrvalue">http://hl7.org/fhir/datatypes.html#date</span>"</span><span class="xmltag">&gt;</span><b>date</b><span class="xmltag">&lt;/a&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>]&amp;quot;/&amp;gt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>&amp;lt;!-- </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>When the value set version should no longer be used</b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b> --&amp;gt;</b><span class="xmltag">&lt;/span&gt;</span><b>
+&amp;lt;/extension&amp;gt;
+
+&amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">User or Org actually involved in creating the value set content.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>extension</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>&amp;gt;</b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">author</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>&amp;lt;!--  </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: brown</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>0..*</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Context: Resource = ValueSet</b><span class="xmltag">&lt;/span&gt;</span><b> --&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>url</b><span class="xmltag">&lt;/b&gt;</span><b> value=&amp;quot;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: maroon</span>"</span><span class="xmltag">&gt;</span><b>http://hl7.org/fhir/extensions/ValueSet#author</b><span class="xmltag">&lt;/span&gt;</span><b>&amp;quot;/&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">User or Org actually involved in creating the value set content.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>valueString</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> value=&amp;quot;[</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: darkgreen</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;a</span><span class="xmlattr"> href="<span class="xmlattrvalue">http://hl7.org/fhir/datatypes.html#string</span>"</span><span class="xmltag">&gt;</span><b>string</b><span class="xmltag">&lt;/a&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>]&amp;quot;/&amp;gt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>&amp;lt;!-- </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>User or Org actually involved in creating the value set content</b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b> --&amp;gt;</b><span class="xmltag">&lt;/span&gt;</span><b>
+&amp;lt;/extension&amp;gt;
+
+&amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Each comment is a time-stamped entry of arbitrary length that is not editable except by
+         anyone in the author group.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>extension</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>&amp;gt;</b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">comment</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>&amp;lt;!--  </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: brown</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>0..*</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Context: Resource = ValueSet</b><span class="xmltag">&lt;/span&gt;</span><b> --&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>url</b><span class="xmltag">&lt;/b&gt;</span><b> value=&amp;quot;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: maroon</span>"</span><span class="xmltag">&gt;</span><b>http://hl7.org/fhir/extensions/ValueSet#comment</b><span class="xmltag">&lt;/span&gt;</span><b>&amp;quot;/&amp;gt;
+ </b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Each comment is a time-stamped entry of arbitrary length that is not editable except by
+         anyone in the author group.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>&amp;lt;!-- </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Extensions: #comment-content, #comment-timestamp</b><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>--&amp;gt; </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>
+&amp;lt;/extension&amp;gt;
+
+&amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Remarks or other text.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>extension</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>&amp;gt;</b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">comment-content</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>&amp;lt;!--  </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: brown</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>1..1</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Context: Extension = http://hl7.org/fhir/extensions/ValueSet#comment</b><span class="xmltag">&lt;/span&gt;</span><b> --&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>url</b><span class="xmltag">&lt;/b&gt;</span><b> value=&amp;quot;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: maroon</span>"</span><span class="xmltag">&gt;</span><b>http://hl7.org/fhir/extensions/ValueSet#comment-content</b><span class="xmltag">&lt;/span&gt;</span><b>&amp;quot;/&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Remarks or other text.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>valueString</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> value=&amp;quot;[</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: darkgreen</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;a</span><span class="xmlattr"> href="<span class="xmlattrvalue">http://hl7.org/fhir/datatypes.html#string</span>"</span><span class="xmltag">&gt;</span><b>string</b><span class="xmltag">&lt;/a&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>]&amp;quot;/&amp;gt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>&amp;lt;!-- </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Remarks or other text</b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b> --&amp;gt;</b><span class="xmltag">&lt;/span&gt;</span><b>
+&amp;lt;/extension&amp;gt;
+
+&amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">When the comment was created.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>extension</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>&amp;gt;</b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">comment-timestamp</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>&amp;lt;!--  </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: brown</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>1..1</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Context: Extension = http://hl7.org/fhir/extensions/ValueSet#comment</b><span class="xmltag">&lt;/span&gt;</span><b> --&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>url</b><span class="xmltag">&lt;/b&gt;</span><b> value=&amp;quot;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: maroon</span>"</span><span class="xmltag">&gt;</span><b>http://hl7.org/fhir/extensions/ValueSet#comment-timestamp</b><span class="xmltag">&lt;/span&gt;</span><b>&amp;quot;/&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">When the comment was created.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>valueInstant</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> value=&amp;quot;[</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: darkgreen</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;a</span><span class="xmlattr"> href="<span class="xmlattrvalue">http://hl7.org/fhir/datatypes.html#instant</span>"</span><span class="xmltag">&gt;</span><b>instant</b><span class="xmltag">&lt;/a&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>]&amp;quot;/&amp;gt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>&amp;lt;!-- </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>When the comment was created</b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b> --&amp;gt;</b><span class="xmltag">&lt;/span&gt;</span><b>
+&amp;lt;/extension&amp;gt;
+
+&amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Reference to a trusted expansion.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>extension</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>&amp;gt;</b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">trusted-expansion</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>&amp;lt;!--  </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: brown</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>0..*</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Context: Resource = ValueSet</b><span class="xmltag">&lt;/span&gt;</span><b> --&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>url</b><span class="xmltag">&lt;/b&gt;</span><b> value=&amp;quot;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: maroon</span>"</span><span class="xmltag">&gt;</span><b>http://hl7.org/fhir/extensions/ValueSet#trusted-expansion</b><span class="xmltag">&lt;/span&gt;</span><b>&amp;quot;/&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Reference to a trusted expansion.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>valueUri</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> value=&amp;quot;[</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: darkgreen</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;a</span><span class="xmlattr"> href="<span class="xmlattrvalue">http://hl7.org/fhir/datatypes.html#uri</span>"</span><span class="xmltag">&gt;</span><b>uri</b><span class="xmltag">&lt;/a&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>]&amp;quot;/&amp;gt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>&amp;lt;!-- </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Reference to a trusted expansion</b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b> --&amp;gt;</b><span class="xmltag">&lt;/span&gt;</span><b>
+&amp;lt;/extension&amp;gt;
+
+&amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Information on changes made to the Value Set Definition over time, and also has a contained
+         audit trail of all such changes.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>extension</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>&amp;gt;</b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">history</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>&amp;lt;!--  </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: brown</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>0..*</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Context: Resource = ValueSet</b><span class="xmltag">&lt;/span&gt;</span><b> --&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>url</b><span class="xmltag">&lt;/b&gt;</span><b> value=&amp;quot;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: maroon</span>"</span><span class="xmltag">&gt;</span><b>http://hl7.org/fhir/extensions/ValueSet#history</b><span class="xmltag">&lt;/span&gt;</span><b>&amp;quot;/&amp;gt;
+ </b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Information on changes made to the Value Set Definition over time, and also has a contained
+         audit trail of all such changes.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>&amp;lt;!-- </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Extensions: #history-name, #revision</b><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>--&amp;gt; </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>
+&amp;lt;/extension&amp;gt;
+
+&amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">The name of this set of history entries.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>extension</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>&amp;gt;</b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">history-name</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>&amp;lt;!--  </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: brown</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>0..1</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Context: Extension = http://hl7.org/fhir/extensions/ValueSet#history</b><span class="xmltag">&lt;/span&gt;</span><b> --&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>url</b><span class="xmltag">&lt;/b&gt;</span><b> value=&amp;quot;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: maroon</span>"</span><span class="xmltag">&gt;</span><b>http://hl7.org/fhir/extensions/ValueSet#history-name</b><span class="xmltag">&lt;/span&gt;</span><b>&amp;quot;/&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">The name of this set of history entries.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>valueString</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> value=&amp;quot;[</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: darkgreen</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;a</span><span class="xmlattr"> href="<span class="xmlattrvalue">http://hl7.org/fhir/datatypes.html#string</span>"</span><span class="xmltag">&gt;</span><b>string</b><span class="xmltag">&lt;/a&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>]&amp;quot;/&amp;gt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>&amp;lt;!-- </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>The name of this set of history entries</b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b> --&amp;gt;</b><span class="xmltag">&lt;/span&gt;</span><b>
+&amp;lt;/extension&amp;gt;
+
+&amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Audit of all changes for a history entry.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>extension</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>&amp;gt;</b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">revision</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>&amp;lt;!--  </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: brown</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>0..*</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Context: Extension = http://hl7.org/fhir/extensions/ValueSet#history</b><span class="xmltag">&lt;/span&gt;</span><b> --&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>url</b><span class="xmltag">&lt;/b&gt;</span><b> value=&amp;quot;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: maroon</span>"</span><span class="xmltag">&gt;</span><b>http://hl7.org/fhir/extensions/ValueSet#revision</b><span class="xmltag">&lt;/span&gt;</span><b>&amp;quot;/&amp;gt;
+ </b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Audit of all changes for a history entry.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>&amp;lt;!-- </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Extensions: #revision-date, #revision-id, #revision-author, #revision-notes</b><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>--&amp;gt; </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>
+&amp;lt;/extension&amp;gt;
+
+&amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Date the change was made.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>extension</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>&amp;gt;</b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">revision-date</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>&amp;lt;!--  </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: brown</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>1..1</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Context: Extension = http://hl7.org/fhir/extensions/ValueSet#revision</b><span class="xmltag">&lt;/span&gt;</span><b> --&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>url</b><span class="xmltag">&lt;/b&gt;</span><b> value=&amp;quot;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: maroon</span>"</span><span class="xmltag">&gt;</span><b>http://hl7.org/fhir/extensions/ValueSet#revision-date</b><span class="xmltag">&lt;/span&gt;</span><b>&amp;quot;/&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Date the change was made.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>valueDatetime</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> value=&amp;quot;[</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: darkgreen</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;a</span><span class="xmlattr"> href="<span class="xmlattrvalue">http://hl7.org/fhir/datatypes.html#datetime</span>"</span><span class="xmltag">&gt;</span><b>datetime</b><span class="xmltag">&lt;/a&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>]&amp;quot;/&amp;gt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>&amp;lt;!-- </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Date the change was made</b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b> --&amp;gt;</b><span class="xmltag">&lt;/span&gt;</span><b>
+&amp;lt;/extension&amp;gt;
+
+&amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Version marker after the change was made.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>extension</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>&amp;gt;</b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">revision-id</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>&amp;lt;!--  </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: brown</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>1..1</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Context: Extension = http://hl7.org/fhir/extensions/ValueSet#revision</b><span class="xmltag">&lt;/span&gt;</span><b> --&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>url</b><span class="xmltag">&lt;/b&gt;</span><b> value=&amp;quot;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: maroon</span>"</span><span class="xmltag">&gt;</span><b>http://hl7.org/fhir/extensions/ValueSet#revision-id</b><span class="xmltag">&lt;/span&gt;</span><b>&amp;quot;/&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Version marker after the change was made.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>valueString</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> value=&amp;quot;[</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: darkgreen</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;a</span><span class="xmlattr"> href="<span class="xmlattrvalue">http://hl7.org/fhir/datatypes.html#string</span>"</span><span class="xmltag">&gt;</span><b>string</b><span class="xmltag">&lt;/a&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>]&amp;quot;/&amp;gt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>&amp;lt;!-- </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Version marker after the change was made</b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b> --&amp;gt;</b><span class="xmltag">&lt;/span&gt;</span><b>
+&amp;lt;/extension&amp;gt;
+
+&amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Who made the change.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>extension</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>&amp;gt;</b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">revision-author</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>&amp;lt;!--  </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: brown</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>1..1</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Context: Extension = http://hl7.org/fhir/extensions/ValueSet#revision</b><span class="xmltag">&lt;/span&gt;</span><b> --&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>url</b><span class="xmltag">&lt;/b&gt;</span><b> value=&amp;quot;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: maroon</span>"</span><span class="xmltag">&gt;</span><b>http://hl7.org/fhir/extensions/ValueSet#revision-author</b><span class="xmltag">&lt;/span&gt;</span><b>&amp;quot;/&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Who made the change.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>valueString</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> value=&amp;quot;[</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: darkgreen</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;a</span><span class="xmlattr"> href="<span class="xmlattrvalue">http://hl7.org/fhir/datatypes.html#string</span>"</span><span class="xmltag">&gt;</span><b>string</b><span class="xmltag">&lt;/a&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>]&amp;quot;/&amp;gt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>&amp;lt;!-- </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Who made the change</b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b> --&amp;gt;</b><span class="xmltag">&lt;/span&gt;</span><b>
+&amp;lt;/extension&amp;gt;
+
+&amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Information about the change.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>extension</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>&amp;gt;</b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">revision-notes</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>&amp;lt;!--  </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: brown</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>0..1</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> </b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Context: Extension = http://hl7.org/fhir/extensions/ValueSet#revision</b><span class="xmltag">&lt;/span&gt;</span><b> --&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>url</b><span class="xmltag">&lt;/b&gt;</span><b> value=&amp;quot;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: maroon</span>"</span><span class="xmltag">&gt;</span><b>http://hl7.org/fhir/extensions/ValueSet#revision-notes</b><span class="xmltag">&lt;/span&gt;</span><b>&amp;quot;/&amp;gt;
+ &amp;lt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> title="<span class="xmlattrvalue">Information about the change.</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>valueString</b><span class="xmltag">&lt;/b&gt;</span><span class="xmltag">&lt;/span&gt;</span><b> value=&amp;quot;[</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: darkgreen</span>"</span><span class="xmltag">&gt;</span><span class="xmltag">&lt;a</span><span class="xmlattr"> href="<span class="xmlattrvalue">http://hl7.org/fhir/datatypes.html#string</span>"</span><span class="xmltag">&gt;</span><b>string</b><span class="xmltag">&lt;/a&gt;</span><span class="xmltag">&lt;/span&gt;</span><b>]&amp;quot;/&amp;gt;</b><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b>&amp;lt;!-- </b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue">color: navy</span>"</span><span class="xmltag">&gt;</span><b>Information about the change</b><span class="xmltag">&lt;/span&gt;</span><span class="xmltag">&lt;span</span><span class="xmlattr"> style="<span class="xmlattrvalue"> color: Gray</span>"</span><span class="xmltag">&gt;</span><b> --&amp;gt;</b><span class="xmltag">&lt;/span&gt;</span><b>
+&amp;lt;/extension&amp;gt;
+
+</b><span class="xmltag">&lt;/pre&gt;</span><span class="xmltag">&lt;/div&gt;</span><b>
+  </b><span class="xmltag">&lt;/text&gt;</span><b>
+  </b><span class="xmltag">&lt;identifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/profile/ValueSet HL7 Extensions</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">ValueSet HL7 Extensions</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;publisher</span><span class="xmlattr"> value="<span class="xmlattrvalue">HL7</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;description</span><span class="xmlattr"> value="<span class="xmlattrvalue">Defines common extensions used with or related to the ValueSet resource</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">draft</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;extensionDefn</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">ordinalValue</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Comparison value for ordinal codes</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;contextType</span><span class="xmlattr"> value="<span class="xmlattrvalue">resource</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;context</span><span class="xmlattr"> value="<span class="xmlattrvalue">ValueSet.compose.include.code</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;definition</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Comparison value for ordinal codes</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Comparison value for ordinal codes.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">integer</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isModifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/definition&gt;</span><b>
+  </b><span class="xmltag">&lt;/extensionDefn&gt;</span><b>
+  </b><span class="xmltag">&lt;extensionDefn</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">conceptOrder</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Appearance order for user selection</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;contextType</span><span class="xmlattr"> value="<span class="xmlattrvalue">resource</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;context</span><span class="xmlattr"> value="<span class="xmlattrvalue">ValueSet.compose.include.code</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;definition</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Appearance order for user selection</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Appearance order for user selection.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">integer</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isModifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/definition&gt;</span><b>
+  </b><span class="xmltag">&lt;/extensionDefn&gt;</span><b>
+  </b><span class="xmltag">&lt;extensionDefn</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">display</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Display value for the code</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;contextType</span><span class="xmlattr"> value="<span class="xmlattrvalue">resource</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;context</span><span class="xmlattr"> value="<span class="xmlattrvalue">ValueSet.compose.include.code</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;definition</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Display value for the code</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Display value for the code.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">string</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isModifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/definition&gt;</span><b>
+  </b><span class="xmltag">&lt;/extensionDefn&gt;</span><b>
+  </b><span class="xmltag">&lt;extensionDefn</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">systemName</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Code system name</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;contextType</span><span class="xmlattr"> value="<span class="xmlattrvalue">resource</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;context</span><span class="xmlattr"> value="<span class="xmlattrvalue">ValueSet.compose.include</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;definition</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Code system name</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Code system name.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">string</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isModifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/definition&gt;</span><b>
+  </b><span class="xmltag">&lt;/extensionDefn&gt;</span><b>
+  </b><span class="xmltag">&lt;extensionDefn</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">systemRef</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Where to find code system</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;contextType</span><span class="xmlattr"> value="<span class="xmlattrvalue">resource</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;context</span><span class="xmlattr"> value="<span class="xmlattrvalue">ValueSet.compose.include</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;definition</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Where to find code system</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Where to find code system.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">uri</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isModifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/definition&gt;</span><b>
+  </b><span class="xmltag">&lt;/extensionDefn&gt;</span><b>
+  </b><span class="xmltag">&lt;extensionDefn</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">otherName</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Alternative names</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;contextType</span><span class="xmlattr"> value="<span class="xmlattrvalue">resource</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;context</span><span class="xmlattr"> value="<span class="xmlattrvalue">ValueSet</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;definition</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Alternative names</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Human readable names for the valueset.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isModifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/definition&gt;</span><b>
+  </b><span class="xmltag">&lt;/extensionDefn&gt;</span><b>
+  </b><span class="xmltag">&lt;extensionDefn</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">name</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Human readable, short and specific</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;contextType</span><span class="xmlattr"> value="<span class="xmlattrvalue">extension</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;context</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/extensions/ValueSet#otherName</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;definition</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Human readable, short and specific</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">This name is intended to be human readable, short and as specific as possible and to convey
+       the purpose of the value set.  It is considered to be the name of the value set.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">This need not be unique. However some use cases require uniqueness within a namespace
+       and therefore best practice would be to make the name unique.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">string</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isModifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/definition&gt;</span><b>
+  </b><span class="xmltag">&lt;/extensionDefn&gt;</span><b>
+  </b><span class="xmltag">&lt;extensionDefn</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">name-language</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">IETF language tag (BCP-13)</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;contextType</span><span class="xmlattr"> value="<span class="xmlattrvalue">extension</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;context</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/extensions/ValueSet#otherName</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;definition</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">IETF language tag (BCP-13)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">This indicates the language system (e.g. US English) in which the name is expressed.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">code</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isModifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/definition&gt;</span><b>
+  </b><span class="xmltag">&lt;/extensionDefn&gt;</span><b>
+  </b><span class="xmltag">&lt;extensionDefn</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">preferred</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Which name is preferred for this language</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;contextType</span><span class="xmlattr"> value="<span class="xmlattrvalue">extension</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;context</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/extensions/ValueSet#otherName</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;definition</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Which name is preferred for this language</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Flag that this Name in this Name Language is the preferred human-readable signifier in
+       this language.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">There may be multiple human readable names in a given language, and this flag indicates
+       which of them is preferred for the given language.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">boolean</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isModifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/definition&gt;</span><b>
+  </b><span class="xmltag">&lt;/extensionDefn&gt;</span><b>
+  </b><span class="xmltag">&lt;extensionDefn</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">sourceReference</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">An external source useful in understanding the basis for the value set</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;contextType</span><span class="xmlattr"> value="<span class="xmlattrvalue">resource</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;context</span><span class="xmlattr"> value="<span class="xmlattrvalue">ValueSet</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;definition</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">An external source useful in understanding the basis for the value set</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">: This text is intended to act as a citation to work done elsewhere that is not part of
+       the current stewarding process where the referenced source is in some way a basis of the
+       current value set definition.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">This is not intended to be a direct link to another value set. It is only intended to
+       support a link or textual description that indicates related material for the value set.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">uri</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isModifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/definition&gt;</span><b>
+  </b><span class="xmltag">&lt;/extensionDefn&gt;</span><b>
+  </b><span class="xmltag">&lt;extensionDefn</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">keyWord</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">can be used to help find the value set</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;contextType</span><span class="xmlattr"> value="<span class="xmlattrvalue">resource</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;context</span><span class="xmlattr"> value="<span class="xmlattrvalue">ValueSet</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;definition</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">can be used to help find the value set</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Word or words used in an information retrieval system to indicate the content of the value
+       set.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">string</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isModifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/definition&gt;</span><b>
+  </b><span class="xmltag">&lt;/extensionDefn&gt;</span><b>
+  </b><span class="xmltag">&lt;extensionDefn</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">usage</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Consumers of the value set and the implementations, projects or standards that the author
+     has utilized the value set in</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;contextType</span><span class="xmlattr"> value="<span class="xmlattrvalue">resource</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;context</span><span class="xmlattr"> value="<span class="xmlattrvalue">ValueSet</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;definition</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Consumers of the value set and the implementations, projects or standards that the author
+       has utilized the value set in</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The optional and repeating Use set of elements hold information about consumers of the
+       value set and the implementations, projects or standards that the author has utilized
+       the value set in.  Value sets that share the same Use information can be grouped together
+       by that information for implementation purposes.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">This is likely to be a “point in time” view and should not be considered an authoritative
+       listing of all uses of the value set.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isModifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/definition&gt;</span><b>
+  </b><span class="xmltag">&lt;/extensionDefn&gt;</span><b>
+  </b><span class="xmltag">&lt;extensionDefn</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">usage-user</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">A consumer of or client for the value set</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;contextType</span><span class="xmlattr"> value="<span class="xmlattrvalue">extension</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;context</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/extensions/ValueSet#usage</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;definition</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">A consumer of or client for the value set</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">This is most likely to be an organization but can be an individual. It would not be a
+       program, that information should be recorded in the Usage.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">string</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isModifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/definition&gt;</span><b>
+  </b><span class="xmltag">&lt;/extensionDefn&gt;</span><b>
+  </b><span class="xmltag">&lt;extensionDefn</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">usage-use</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Implementation or project or standard that uses the value set</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;contextType</span><span class="xmlattr"> value="<span class="xmlattrvalue">extension</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;context</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/extensions/ValueSet#usage</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;definition</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Implementation or project or standard that uses the value set</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">A descriptive name of the project or standard in which the value set is used.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">string</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isModifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/definition&gt;</span><b>
+  </b><span class="xmltag">&lt;/extensionDefn&gt;</span><b>
+  </b><span class="xmltag">&lt;extensionDefn</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">workflowStatus</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Indicates the state of development of the value set</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;contextType</span><span class="xmlattr"> value="<span class="xmlattrvalue">resource</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;context</span><span class="xmlattr"> value="<span class="xmlattrvalue">ValueSet</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;definition</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Indicates the state of development of the value set</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Workflow Status is used to represent details of the value set development process while
+       the value set has an Activity Status of Preliminary. The development of a value set often
+       follows a formal workflow process from initiation to completion, and this element carries
+       the state variable for this state machine. The assumption is that when first created a
+       value set would have a workflow state of Draft. Additional workflow states may be used.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">The values that this element may assume include phrases that capture various stages in
+       review and approval. In addition to the minimum of “Draft”,  these include “Proposed”,
+       “Approved”, “Ready to Publish”.  There may be additional states defined by different developers.
+       This is an optional element because the use of Activity Status “Preliminary” may be sufficient
+       for some implementations.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">string</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isModifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/definition&gt;</span><b>
+  </b><span class="xmltag">&lt;/extensionDefn&gt;</span><b>
+  </b><span class="xmltag">&lt;extensionDefn</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">effectiveDate</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">When the value set version becomes Active and is available for use</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;contextType</span><span class="xmlattr"> value="<span class="xmlattrvalue">resource</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;context</span><span class="xmlattr"> value="<span class="xmlattrvalue">ValueSet</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;definition</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">When the value set version becomes Active and is available for use</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">This is the first date-time when the value set version becomes active, so this value is
+       present on Inactive value set versions as well. The start Date_time is expected to be
+       as of 0001 UTC of the Effective Date.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">date</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isModifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/definition&gt;</span><b>
+  </b><span class="xmltag">&lt;/extensionDefn&gt;</span><b>
+  </b><span class="xmltag">&lt;extensionDefn</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">expirationDate</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">When the value set version should no longer be used</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;contextType</span><span class="xmlattr"> value="<span class="xmlattrvalue">resource</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;context</span><span class="xmlattr"> value="<span class="xmlattrvalue">ValueSet</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;definition</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">When the value set version should no longer be used</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The date when the value set version is no longer expected to be used to create new content.
+       This is the first date-time when the value set version becomes Inactive, so this value
+       MUST present on all Inactive value set versions. The start Date_time is expected to be
+       as of 0001 UTC of the Expiration Date.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">Upon reaching the Expiration Date, the value set Activity Status should be consdiered
+       as inactive. An Inactive value set version may no longer be used to create new content,
+       but it may be used to evaluate content created prior to the Expiration Date.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">date</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isModifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/definition&gt;</span><b>
+  </b><span class="xmltag">&lt;/extensionDefn&gt;</span><b>
+  </b><span class="xmltag">&lt;extensionDefn</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">author</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">User or Org actually involved in creating the value set content</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;contextType</span><span class="xmlattr"> value="<span class="xmlattrvalue">resource</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;context</span><span class="xmlattr"> value="<span class="xmlattrvalue">ValueSet</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;definition</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">User or Org actually involved in creating the value set content</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">User or Org actually involved in creating the value set content.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">string</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isModifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/definition&gt;</span><b>
+  </b><span class="xmltag">&lt;/extensionDefn&gt;</span><b>
+  </b><span class="xmltag">&lt;extensionDefn</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">comment</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Human-specified notes and other documentation</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;contextType</span><span class="xmlattr"> value="<span class="xmlattrvalue">resource</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;context</span><span class="xmlattr"> value="<span class="xmlattrvalue">ValueSet</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;definition</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Human-specified notes and other documentation</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Each comment is a time-stamped entry of arbitrary length that is not editable except by
+       anyone in the author group.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isModifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/definition&gt;</span><b>
+  </b><span class="xmltag">&lt;/extensionDefn&gt;</span><b>
+  </b><span class="xmltag">&lt;extensionDefn</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">comment-content</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Remarks or other text</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;contextType</span><span class="xmlattr"> value="<span class="xmlattrvalue">extension</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;context</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/extensions/ValueSet#comment</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;definition</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Remarks or other text</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Remarks or other text.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">string</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isModifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/definition&gt;</span><b>
+  </b><span class="xmltag">&lt;/extensionDefn&gt;</span><b>
+  </b><span class="xmltag">&lt;extensionDefn</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">comment-timestamp</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">When the comment was created</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;contextType</span><span class="xmlattr"> value="<span class="xmlattrvalue">extension</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;context</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/extensions/ValueSet#comment</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;definition</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">When the comment was created</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">When the comment was created.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">instant</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isModifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/definition&gt;</span><b>
+  </b><span class="xmltag">&lt;/extensionDefn&gt;</span><b>
+  </b><span class="xmltag">&lt;extensionDefn</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">trusted-expansion</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Reference to a trusted expansion</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;contextType</span><span class="xmlattr"> value="<span class="xmlattrvalue">resource</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;context</span><span class="xmlattr"> value="<span class="xmlattrvalue">ValueSet</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;definition</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Reference to a trusted expansion</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Reference to a trusted expansion.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">uri</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isModifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/definition&gt;</span><b>
+  </b><span class="xmltag">&lt;/extensionDefn&gt;</span><b>
+  </b><span class="xmltag">&lt;extensionDefn</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">history</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Information on changes made to the Value Set Definition over time, and also has a contained
+     audit trail of all such changes</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;contextType</span><span class="xmlattr"> value="<span class="xmlattrvalue">resource</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;context</span><span class="xmlattr"> value="<span class="xmlattrvalue">ValueSet</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;definition</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Information on changes made to the Value Set Definition over time, and also has a contained
+       audit trail of all such changes</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Information on changes made to the Value Set Definition over time, and also has a contained
+       audit trail of all such changes.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isModifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/definition&gt;</span><b>
+  </b><span class="xmltag">&lt;/extensionDefn&gt;</span><b>
+  </b><span class="xmltag">&lt;extensionDefn</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">history-name</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">The name of this set of history entries</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;contextType</span><span class="xmlattr"> value="<span class="xmlattrvalue">extension</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;context</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/extensions/ValueSet#history</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;definition</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">The name of this set of history entries</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The name of this set of history entries.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">Typically, a value set will have a set of history entries for each maor publication milestone.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">string</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isModifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/definition&gt;</span><b>
+  </b><span class="xmltag">&lt;/extensionDefn&gt;</span><b>
+  </b><span class="xmltag">&lt;extensionDefn</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">revision</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Audit of all changes for a history entry</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;contextType</span><span class="xmlattr"> value="<span class="xmlattrvalue">extension</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;context</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/extensions/ValueSet#history</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;definition</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Audit of all changes for a history entry</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Audit of all changes for a history entry.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isModifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/definition&gt;</span><b>
+  </b><span class="xmltag">&lt;/extensionDefn&gt;</span><b>
+  </b><span class="xmltag">&lt;extensionDefn</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">revision-date</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Date the change was made</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;contextType</span><span class="xmlattr"> value="<span class="xmlattrvalue">extension</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;context</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/extensions/ValueSet#revision</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;definition</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Date the change was made</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Date the change was made.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">datetime</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isModifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/definition&gt;</span><b>
+  </b><span class="xmltag">&lt;/extensionDefn&gt;</span><b>
+  </b><span class="xmltag">&lt;extensionDefn</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">revision-id</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Version marker after the change was made</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;contextType</span><span class="xmlattr"> value="<span class="xmlattrvalue">extension</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;context</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/extensions/ValueSet#revision</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;definition</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Version marker after the change was made</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Version marker after the change was made.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">string</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isModifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/definition&gt;</span><b>
+  </b><span class="xmltag">&lt;/extensionDefn&gt;</span><b>
+  </b><span class="xmltag">&lt;extensionDefn</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">revision-author</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Who made the change</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;contextType</span><span class="xmlattr"> value="<span class="xmlattrvalue">extension</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;context</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/extensions/ValueSet#revision</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;definition</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Who made the change</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Who made the change.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">string</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isModifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/definition&gt;</span><b>
+  </b><span class="xmltag">&lt;/extensionDefn&gt;</span><b>
+  </b><span class="xmltag">&lt;extensionDefn</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">revision-notes</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Information about the change</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;contextType</span><span class="xmlattr"> value="<span class="xmlattrvalue">extension</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;context</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/extensions/ValueSet#revision</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;definition</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Information about the change</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Information about the change.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">string</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isModifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/definition&gt;</span><b>
+  </b><span class="xmltag">&lt;/extensionDefn&gt;</span><b>
+</b><span class="xmltag">&lt;/Profile&gt;</span></pre>
+</div>
+
+
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011 - 2014. FHIR DSTU (v0.2.1-????) generated on Fri, Jun 6, 2014 13:26+0000. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a href="dstu.html">What's a DSTU?</a> | <a href="history.html">Version History</a> | <a href="license.html">License</a> | <a href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

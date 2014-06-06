@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Cyclic Entry/Exit Indicator</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>#
+            <a name=".35"> </a>
+          </td>
+          <td>The last service request in a cyclic group.</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>*
+            <a name=".42"> </a>
+          </td>
+          <td>The first service request in a cyclic group</td>
+          <td>added v2.5</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0505"/>
+  <name value="v2 Cyclic Entry/Exit Indicator"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0505 ( Cyclic Entry/Exit Indicator)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0505"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="#"/>
+      <display value="The last service request in a cyclic group."/>
+    </concept>
+    <concept>
+      <code value="*"/>
+      <display value="The first service request in a cyclic group"/>
+    </concept>
+  </define>
+</ValueSet>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  A material in a blood collection container that facilites the separation of of blood cells from serum or plasma
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>GEL
+            <a name="GEL"> </a>
+          </td>
+          <td>Gel</td>
+          <td>
+                        A gelatinous type of separator material.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>NONE
+            <a name="NONE"> </a>
+          </td>
+          <td>None</td>
+          <td>
+                        No separator material is present in the container.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/ContainerSeparator"/>
+  <name value="v3 Code System ContainerSeparator"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" A material in a blood collection container that facilites the separation of of blood cells from serum or plasma"/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/ContainerSeparator"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="GEL"/>
+      <display value="Gel"/>
+      <definition value="A gelatinous type of separator material."/>
+    </concept>
+    <concept>
+      <code value="NONE"/>
+      <display value="None"/>
+      <definition value="No separator material is present in the container."/>
+    </concept>
+  </define>
+</ValueSet>

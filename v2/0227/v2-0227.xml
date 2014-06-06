@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Manufacturers of Vaccines (code=MVX)</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>AB
+            <a name="AB"> </a>
+          </td>
+          <td>Abbott Laboratories</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>AD
+            <a name="AD"> </a>
+          </td>
+          <td>Adams Laboratories, Inc.</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>ALP
+            <a name="ALP"> </a>
+          </td>
+          <td>Alpha Therapeutic Corporation</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>AR
+            <a name="AR"> </a>
+          </td>
+          <td>Armour</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>AVB
+            <a name="AVB"> </a>
+          </td>
+          <td>Aventis Behring L.L.C.</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>AVI
+            <a name="AVI"> </a>
+          </td>
+          <td>Aviron</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>BA
+            <a name="BA"> </a>
+          </td>
+          <td>Baxter Healthcare Corporation</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>BAH
+            <a name="BAH"> </a>
+          </td>
+          <td>Baxter Healthcare Corporation</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>BAY
+            <a name="BAY"> </a>
+          </td>
+          <td>Bayer Corporation</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>BP
+            <a name="BP"> </a>
+          </td>
+          <td>Berna Products</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>BPC
+            <a name="BPC"> </a>
+          </td>
+          <td>Berna Products Corporation</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>CEN
+            <a name="CEN"> </a>
+          </td>
+          <td>Centeon L.L.C.</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>CHI
+            <a name="CHI"> </a>
+          </td>
+          <td>Chiron Corporation</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>CMP
+            <a name="CMP"> </a>
+          </td>
+          <td>Celltech Medeva Pharmaceuticals</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>CNJ
+            <a name="CNJ"> </a>
+          </td>
+          <td>Cangene Corporation</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>CON
+            <a name="CON"> </a>
+          </td>
+          <td>Connaught</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>DVC
+            <a name="DVC"> </a>
+          </td>
+          <td>DynPort Vaccine Company, LLC</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>EVN
+            <a name="EVN"> </a>
+          </td>
+          <td>Evans Medical Limited</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>GEO
+            <a name="GEO"> </a>
+          </td>
+          <td>GeoVax Labs, Inc.</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>GRE
+            <a name="GRE"> </a>
+          </td>
+          <td>Greer Laboratories, Inc.</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>IAG
+            <a name="IAG"> </a>
+          </td>
+          <td>Immuno International AG</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>IM
+            <a name="IM"> </a>
+          </td>
+          <td>Merieux</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>IUS
+            <a name="IUS"> </a>
+          </td>
+          <td>Immuno-U.S., Inc.</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>JPN
+            <a name="JPN"> </a>
+          </td>
+          <td>The Research Foundation for Microbial Diseases of Osaka University</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>KGC
+            <a name="KGC"> </a>
+          </td>
+          <td>Korea Green Cross Corporation</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>LED
+            <a name="LED"> </a>
+          </td>
+          <td>Lederle</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>MA
+            <a name="MA"> </a>
+          </td>
+          <td>Massachusetts Public Health Biologic Laboratories</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>MBL
+            <a name="MBL"> </a>
+          </td>
+          <td>Massachusetts Biologic Laboratories</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>MED
+            <a name="MED"> </a>
+          </td>
+          <td>MedImmune, Inc.</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>MIL
+            <a name="MIL"> </a>
+          </td>
+          <td>Miles</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>MIP
+            <a name="MIP"> </a>
+          </td>
+          <td>Bioport Corporation</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>MSD
+            <a name="MSD"> </a>
+          </td>
+          <td>Merck &amp; Co., Inc.</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>NAB
+            <a name="NAB"> </a>
+          </td>
+          <td>NABI</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>NAV
+            <a name="NAV"> </a>
+          </td>
+          <td>North American Vaccine, Inc.</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>NOV
+            <a name="NOV"> </a>
+          </td>
+          <td>Novartis Pharmaceutical Corporation</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>NVX
+            <a name="NVX"> </a>
+          </td>
+          <td>Novavax, Inc.</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>NYB
+            <a name="NYB"> </a>
+          </td>
+          <td>New York Blood Center</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>ORT
+            <a name="ORT"> </a>
+          </td>
+          <td>Ortho-Clinical Diagnostics</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>OTC
+            <a name="OTC"> </a>
+          </td>
+          <td>Organon Teknika Corporation</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>OTH
+            <a name="OTH"> </a>
+          </td>
+          <td>Other manufacturer</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>PD
+            <a name="PD"> </a>
+          </td>
+          <td>Parkedale Pharmaceuticals</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>PMC
+            <a name="PMC"> </a>
+          </td>
+          <td>sanofi pasteur</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>PRX
+            <a name="PRX"> </a>
+          </td>
+          <td>Praxis Biologics</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>PWJ
+            <a name="PWJ"> </a>
+          </td>
+          <td>PowderJect Pharmaceuticals</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>SCL
+            <a name="SCL"> </a>
+          </td>
+          <td>Sclavo, Inc.</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>SI
+            <a name="SI"> </a>
+          </td>
+          <td>Swiss Serum and Vaccine Inst.</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>SKB
+            <a name="SKB"> </a>
+          </td>
+          <td>GlaxoSmithKline</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>SOL
+            <a name="SOL"> </a>
+          </td>
+          <td>Solvay Pharmaceuticals</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>TAL
+            <a name="TAL"> </a>
+          </td>
+          <td>Talecris Biotherapeutics</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>UNK
+            <a name="UNK"> </a>
+          </td>
+          <td>Unknown manufacturer</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>USA
+            <a name="USA"> </a>
+          </td>
+          <td>United States Army Medical Research and Material Command</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>VXG
+            <a name="VXG"> </a>
+          </td>
+          <td>VaxGen</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>WA
+            <a name="WA"> </a>
+          </td>
+          <td>Wyeth-Ayerst</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>WAL
+            <a name="WAL"> </a>
+          </td>
+          <td>Wyeth-Ayerst</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>ZLB
+            <a name="ZLB"> </a>
+          </td>
+          <td>ZLB Behring</td>
+          <td>added v2.6</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0227"/>
+  <name value="v2 Manufacturers of Vaccines (code=MVX)"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0227 ( Manufacturers of Vaccines (code=MVX))"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0227"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="AB"/>
+      <display value="Abbott Laboratories"/>
+    </concept>
+    <concept>
+      <code value="AD"/>
+      <display value="Adams Laboratories, Inc."/>
+    </concept>
+    <concept>
+      <code value="ALP"/>
+      <display value="Alpha Therapeutic Corporation"/>
+    </concept>
+    <concept>
+      <code value="AR"/>
+      <display value="Armour"/>
+    </concept>
+    <concept>
+      <code value="AVB"/>
+      <display value="Aventis Behring L.L.C."/>
+    </concept>
+    <concept>
+      <code value="AVI"/>
+      <display value="Aviron"/>
+    </concept>
+    <concept>
+      <code value="BA"/>
+      <display value="Baxter Healthcare Corporation"/>
+    </concept>
+    <concept>
+      <code value="BAH"/>
+      <display value="Baxter Healthcare Corporation"/>
+    </concept>
+    <concept>
+      <code value="BAY"/>
+      <display value="Bayer Corporation"/>
+    </concept>
+    <concept>
+      <code value="BP"/>
+      <display value="Berna Products"/>
+    </concept>
+    <concept>
+      <code value="BPC"/>
+      <display value="Berna Products Corporation"/>
+    </concept>
+    <concept>
+      <code value="CEN"/>
+      <display value="Centeon L.L.C."/>
+    </concept>
+    <concept>
+      <code value="CHI"/>
+      <display value="Chiron Corporation"/>
+    </concept>
+    <concept>
+      <code value="CMP"/>
+      <display value="Celltech Medeva Pharmaceuticals"/>
+    </concept>
+    <concept>
+      <code value="CNJ"/>
+      <display value="Cangene Corporation"/>
+    </concept>
+    <concept>
+      <code value="CON"/>
+      <display value="Connaught"/>
+    </concept>
+    <concept>
+      <code value="DVC"/>
+      <display value="DynPort Vaccine Company, LLC"/>
+    </concept>
+    <concept>
+      <code value="EVN"/>
+      <display value="Evans Medical Limited"/>
+    </concept>
+    <concept>
+      <code value="GEO"/>
+      <display value="GeoVax Labs, Inc."/>
+    </concept>
+    <concept>
+      <code value="GRE"/>
+      <display value="Greer Laboratories, Inc."/>
+    </concept>
+    <concept>
+      <code value="IAG"/>
+      <display value="Immuno International AG"/>
+    </concept>
+    <concept>
+      <code value="IM"/>
+      <display value="Merieux"/>
+    </concept>
+    <concept>
+      <code value="IUS"/>
+      <display value="Immuno-U.S., Inc."/>
+    </concept>
+    <concept>
+      <code value="JPN"/>
+      <display value="The Research Foundation for Microbial Diseases of Osaka University"/>
+    </concept>
+    <concept>
+      <code value="KGC"/>
+      <display value="Korea Green Cross Corporation"/>
+    </concept>
+    <concept>
+      <code value="LED"/>
+      <display value="Lederle"/>
+    </concept>
+    <concept>
+      <code value="MA"/>
+      <display value="Massachusetts Public Health Biologic Laboratories"/>
+    </concept>
+    <concept>
+      <code value="MBL"/>
+      <display value="Massachusetts Biologic Laboratories"/>
+    </concept>
+    <concept>
+      <code value="MED"/>
+      <display value="MedImmune, Inc."/>
+    </concept>
+    <concept>
+      <code value="MIL"/>
+      <display value="Miles"/>
+    </concept>
+    <concept>
+      <code value="MIP"/>
+      <display value="Bioport Corporation"/>
+    </concept>
+    <concept>
+      <code value="MSD"/>
+      <display value="Merck &amp; Co., Inc."/>
+    </concept>
+    <concept>
+      <code value="NAB"/>
+      <display value="NABI"/>
+    </concept>
+    <concept>
+      <code value="NAV"/>
+      <display value="North American Vaccine, Inc."/>
+    </concept>
+    <concept>
+      <code value="NOV"/>
+      <display value="Novartis Pharmaceutical Corporation"/>
+    </concept>
+    <concept>
+      <code value="NVX"/>
+      <display value="Novavax, Inc."/>
+    </concept>
+    <concept>
+      <code value="NYB"/>
+      <display value="New York Blood Center"/>
+    </concept>
+    <concept>
+      <code value="ORT"/>
+      <display value="Ortho-Clinical Diagnostics"/>
+    </concept>
+    <concept>
+      <code value="OTC"/>
+      <display value="Organon Teknika Corporation"/>
+    </concept>
+    <concept>
+      <code value="OTH"/>
+      <display value="Other manufacturer"/>
+    </concept>
+    <concept>
+      <code value="PD"/>
+      <display value="Parkedale Pharmaceuticals"/>
+    </concept>
+    <concept>
+      <code value="PMC"/>
+      <display value="sanofi pasteur"/>
+    </concept>
+    <concept>
+      <code value="PRX"/>
+      <display value="Praxis Biologics"/>
+    </concept>
+    <concept>
+      <code value="PWJ"/>
+      <display value="PowderJect Pharmaceuticals"/>
+    </concept>
+    <concept>
+      <code value="SCL"/>
+      <display value="Sclavo, Inc."/>
+    </concept>
+    <concept>
+      <code value="SI"/>
+      <display value="Swiss Serum and Vaccine Inst."/>
+    </concept>
+    <concept>
+      <code value="SKB"/>
+      <display value="GlaxoSmithKline"/>
+    </concept>
+    <concept>
+      <code value="SOL"/>
+      <display value="Solvay Pharmaceuticals"/>
+    </concept>
+    <concept>
+      <code value="TAL"/>
+      <display value="Talecris Biotherapeutics"/>
+    </concept>
+    <concept>
+      <code value="UNK"/>
+      <display value="Unknown manufacturer"/>
+    </concept>
+    <concept>
+      <code value="USA"/>
+      <display value="United States Army Medical Research and Material Command"/>
+    </concept>
+    <concept>
+      <code value="VXG"/>
+      <display value="VaxGen"/>
+    </concept>
+    <concept>
+      <code value="WA"/>
+      <display value="Wyeth-Ayerst"/>
+    </concept>
+    <concept>
+      <code value="WAL"/>
+      <display value="Wyeth-Ayerst"/>
+    </concept>
+    <concept>
+      <code value="ZLB"/>
+      <display value="ZLB Behring"/>
+    </concept>
+  </define>
+</ValueSet>

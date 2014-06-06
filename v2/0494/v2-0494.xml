@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Specimen Child Role</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>A
+            <a name="A"> </a>
+          </td>
+          <td>Aliquot</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>C
+            <a name="C"> </a>
+          </td>
+          <td>Component</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>M
+            <a name="M"> </a>
+          </td>
+          <td>Modified from original specimen</td>
+          <td>added v2.5</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0494"/>
+  <name value="v2 Specimen Child Role"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0494 ( Specimen Child Role)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0494"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="A"/>
+      <display value="Aliquot"/>
+    </concept>
+    <concept>
+      <code value="C"/>
+      <display value="Component"/>
+    </concept>
+    <concept>
+      <code value="M"/>
+      <display value="Modified from original specimen"/>
+    </concept>
+  </define>
+</ValueSet>

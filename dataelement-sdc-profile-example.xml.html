@@ -1,0 +1,372 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Dataelement-sdc-profile-example.xml - FHIR v0.2.1</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="implementation.html">Implementation</a></li>        <li><a href="profilelist.html">Profile List</a></li>        <li><b>Profile</b></li>        <!-- dataelement-sdc-profile-example.xml.html / profile-instance:example -->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<h1>Dataelement-sdc-profile-example.xml</h1>
+
+<div class="example">
+<p>Example for Profile Structured Data Capture Data Element</p>
+<p><a href="dataelement-sdc-profile-example.xml">Raw XML</a></p>
+<pre class="xml">
+<span class="xmltag">&lt;DataElement</span><span class="xmlattr"> xmlns="<span class="xmlattrvalue">http://hl7.org/fhir</span>"</span><span class="xmltag">&gt;</span><b>
+  </b><span class="xmlcomment">&lt;!--   No home for:
+         Data Element: Document Text, Used by Context, Origin, Workflow Status, Short
+   Name
+         Data Element Concept: Anything other than Object Class &amp;amp; Property
+         Value Domain: Short Name, Conceptual Domain Short Name, Origin, Workflow Status
+         Reference Document: Alternate Question Text
+         Classifications: CS Definition, CSI Type   --&gt;</span><b>
+  </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/Profile/element-extensions#minLength</span>"</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;valueInteger</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;/extension&gt;</span><b>
+  </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/Profile/element-extensions#maxLength</span>"</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;valueInteger</span><span class="xmlattr"> value="<span class="xmlattrvalue">13</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;/extension&gt;</span><b>
+  </b><span class="xmltag">&lt;text</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">generated</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;div</span><span class="xmlattr"> xmlns="<span class="xmlattrvalue">http://www.w3.org/1999/xhtml</span>"</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;p</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>Gender Code</b><span class="xmltag">&lt;/b&gt;</span><b>: The code representing the gender of a person</b><span class="xmltag">&lt;/p&gt;</span><b>
+      </b><span class="xmltag">&lt;table</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;tbody</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltag">&lt;th</span><span class="xmltag">&gt;</span><b>Code</b><span class="xmltag">&lt;/th&gt;</span><b>
+            </b><span class="xmltag">&lt;th</span><span class="xmltag">&gt;</span><b>Display</b><span class="xmltag">&lt;/th&gt;</span><b>
+            </b><span class="xmltag">&lt;th</span><span class="xmltag">&gt;</span><b>Definition</b><span class="xmltag">&lt;/th&gt;</span><b>
+          </b><span class="xmltag">&lt;/tr&gt;</span><b>
+          </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>0</b><span class="xmltag">&lt;/td&gt;</span><b>
+            </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Unknown</b><span class="xmltag">&lt;/td&gt;</span><b>
+            </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Not known, not observed, not recorded, or refused.</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;/tr&gt;</span><b>
+          </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>1</b><span class="xmltag">&lt;/td&gt;</span><b>
+            </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Male</b><span class="xmltag">&lt;/td&gt;</span><b>
+            </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>A person who belongs to the sex that normally produces sperm. The term is used to indicate
+               biological sex distinctions, cultural gender role distinctions, or both.</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;/tr&gt;</span><b>
+          </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>2</b><span class="xmltag">&lt;/td&gt;</span><b>
+            </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Female</b><span class="xmltag">&lt;/td&gt;</span><b>
+            </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>A person who belongs to the sex that normally produces ova. The term is used to indicate
+               biological sex distinctions, or cultural gender role distinctions, or both.</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;/tr&gt;</span><b>
+          </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>3</b><span class="xmltag">&lt;/td&gt;</span><b>
+            </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Not specified</b><span class="xmltag">&lt;/td&gt;</span><b>
+            </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Not specified</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;/tr&gt;</span><b>
+        </b><span class="xmltag">&lt;/tbody&gt;</span><b>
+      </b><span class="xmltag">&lt;/table&gt;</span><b>
+    </b><span class="xmltag">&lt;/div&gt;</span><b>
+  </b><span class="xmltag">&lt;/text&gt;</span><b>
+  </b><span class="xmltag">&lt;contained</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;ValueSet</span><span class="xmlattr"> id="<span class="xmlattrvalue">2179414</span>"</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;identifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">2179414</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;version</span><span class="xmlattr"> value="<span class="xmlattrvalue">1.0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">Gender Code</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;description</span><span class="xmlattr"> value="<span class="xmlattrvalue">All codes representing the gender of a person.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">active</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;define</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://example.org/fhir/2179414</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Unknown</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">Not known, not observed, not recorded, or refused. </span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/concept&gt;</span><b>
+        </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Male</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">A person who belongs to the sex that normally produces sperm. The term is used to indicate
+           biological sex distinctions, cultural gender role distinctions, or both.</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/concept&gt;</span><b>
+        </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">2</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Female</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">A person who belongs to the sex that normally produces ova. The term is used to indicate
+           biological sex distinctions, or cultural gender role distinctions, or both.</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/concept&gt;</span><b>
+        </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">3</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Not specified</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">Not specified</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/concept&gt;</span><b>
+      </b><span class="xmltag">&lt;/define&gt;</span><b>
+    </b><span class="xmltag">&lt;/ValueSet&gt;</span><b>
+  </b><span class="xmltag">&lt;/contained&gt;</span><b>
+  </b><span class="xmltag">&lt;contained</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;ConceptMap</span><span class="xmlattr"> id="<span class="xmlattrvalue">2179414-cm</span>"</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">TODO - remove</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">active</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;sourceResource</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">#2179414</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/sourceResource&gt;</span><b>
+      </b><span class="xmltag">&lt;targetUri</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://ncit.nci.nih.gov</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;codeSystem</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://example.org/fhir/2179414</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">C17998</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;equivalence</span><span class="xmlattr"> value="<span class="xmlattrvalue">equal</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/map&gt;</span><b>
+      </b><span class="xmltag">&lt;/element&gt;</span><b>
+      </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;codeSystem</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://example.org/fhir/2179414</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">C20197</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;equivalence</span><span class="xmlattr"> value="<span class="xmlattrvalue">equal</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/map&gt;</span><b>
+      </b><span class="xmltag">&lt;/element&gt;</span><b>
+      </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;codeSystem</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://example.org/fhir/2179414</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">C16576</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;equivalence</span><span class="xmlattr"> value="<span class="xmlattrvalue">equal</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/map&gt;</span><b>
+      </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;/ConceptMap&gt;</span><b>
+  </b><span class="xmltag">&lt;/contained&gt;</span><b>
+  </b><span class="xmltag">&lt;identifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">2179650</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;version</span><span class="xmlattr"> value="<span class="xmlattrvalue">1.0</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;publisher</span><span class="xmlattr"> value="<span class="xmlattrvalue">DCP</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">active</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">Gender Code</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;category</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;coding</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://unknown/FBPP</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">FBPP Pooled Database</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/coding&gt;</span><b>
+    </b><span class="xmltag">&lt;coding</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://unknown/PhenX</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Demographics</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/coding&gt;</span><b>
+    </b><span class="xmltag">&lt;coding</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://unknown/Eligibility Criteria</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Pt. Administrative</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/coding&gt;</span><b>
+    </b><span class="xmltag">&lt;coding</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://unknown/UAMS Clinical Research</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">UAMS New CDEs</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/coding&gt;</span><b>
+    </b><span class="xmltag">&lt;coding</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://unknown/PhenX</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Substance Abuse and </span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/coding&gt;</span><b>
+    </b><span class="xmltag">&lt;coding</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://unknown/Category</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">CSAERS Adverse Event</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/coding&gt;</span><b>
+    </b><span class="xmltag">&lt;coding</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://unknown/PhenX</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Core: Tier 1</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/coding&gt;</span><b>
+    </b><span class="xmltag">&lt;coding</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://unknown/Category</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Case Report Forms</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/coding&gt;</span><b>
+    </b><span class="xmltag">&lt;coding</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://unknown/Category</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">CSAERS Review Set</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/coding&gt;</span><b>
+    </b><span class="xmltag">&lt;coding</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://unknown/Demonstration%20Applications</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">CIAF</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/coding&gt;</span><b>
+    </b><span class="xmltag">&lt;coding</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://unknown/NIDA%20CTN%20Usage</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Clinical Research</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/coding&gt;</span><b>
+    </b><span class="xmltag">&lt;coding</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://unknown/NIDA%20CTN%20Usage</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Electronic Health Re</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/coding&gt;</span><b>
+    </b><span class="xmltag">&lt;coding</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://unknown/Condition</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Barretts Esophagus</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/coding&gt;</span><b>
+    </b><span class="xmltag">&lt;coding</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://unknown/Condition</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bladder Cancer</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/coding&gt;</span><b>
+    </b><span class="xmltag">&lt;coding</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://unknown/Condition</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Oral Leukoplakia</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/coding&gt;</span><b>
+    </b><span class="xmltag">&lt;coding</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://unknown/Condition</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Sulindac for Breast</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/coding&gt;</span><b>
+  </b><span class="xmltag">&lt;/category&gt;</span><b>
+  </b><span class="xmltag">&lt;question</span><span class="xmlattr"> value="<span class="xmlattrvalue">Gender</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">The code representing the gender of a person.</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">CodeableConcept</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;binding</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;isExtensible</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;conformance</span><span class="xmlattr"> value="<span class="xmlattrvalue">required</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;valueSet</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">#2179414</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/valueSet&gt;</span><b>
+  </b><span class="xmltag">&lt;/binding&gt;</span><b>
+</b><span class="xmltag">&lt;/DataElement&gt;</span></pre>
+</div>
+
+
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011 - 2014. FHIR DSTU (v0.2.1-????) generated on Fri, Jun 6, 2014 13:27+0000. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a href="dstu.html">What's a DSTU?</a> | <a href="history.html">Version History</a> | <a href="license.html">License</a> | <a href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>A
+            <a name="A"> </a>
+          </td>
+          <td>Archive</td>
+          <td>
+                        Identifies archive mode of processing.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>I
+            <a name="I"> </a>
+          </td>
+          <td>Initial load</td>
+          <td>
+                        Identifies initial load mode of processing.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>R
+            <a name="R"> </a>
+          </td>
+          <td>Restore from archive</td>
+          <td>
+                        Identifies restore mode of processing.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>T
+            <a name="T"> </a>
+          </td>
+          <td>Current processing</td>
+          <td>
+                        Identifies on-line mode of processing.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/ProcessingMode"/>
+  <name value="v3 Code System ProcessingMode"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="? not found"/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/ProcessingMode"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="A"/>
+      <display value="Archive"/>
+      <definition value="Identifies archive mode of processing."/>
+    </concept>
+    <concept>
+      <code value="I"/>
+      <display value="Initial load"/>
+      <definition value="Identifies initial load mode of processing."/>
+    </concept>
+    <concept>
+      <code value="R"/>
+      <display value="Restore from archive"/>
+      <definition value="Identifies restore mode of processing."/>
+    </concept>
+    <concept>
+      <code value="T"/>
+      <display value="Current processing"/>
+      <definition value="Identifies on-line mode of processing."/>
+    </concept>
+  </define>
+</ValueSet>

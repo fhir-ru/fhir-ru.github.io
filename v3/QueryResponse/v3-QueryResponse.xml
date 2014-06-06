@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  A code classifying the general nature of the response to a given query. Includes whether or not data was found, or whether an error occurred.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>AE
+            <a name="AE"> </a>
+          </td>
+          <td>ApplicationError</td>
+          <td>
+                        Query Error.  Application Error.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>NF
+            <a name="NF"> </a>
+          </td>
+          <td>No data found</td>
+          <td>
+                        No errors, but no data was found matching the query request specification.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>OK
+            <a name="OK"> </a>
+          </td>
+          <td>Data found</td>
+          <td>
+                        Query reponse data found for 1 or more result sets matching the query request specification.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>QE
+            <a name="QE"> </a>
+          </td>
+          <td>QueryParameterError</td>
+          <td>
+                        QueryError. Problem with input ParmetersError
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/QueryResponse"/>
+  <name value="v3 Code System QueryResponse"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" A code classifying the general nature of the response to a given query. Includes whether or not data was found, or whether an error occurred."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/QueryResponse"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="AE"/>
+      <display value="ApplicationError"/>
+      <definition value="Query Error.  Application Error."/>
+    </concept>
+    <concept>
+      <code value="NF"/>
+      <display value="No data found"/>
+      <definition value="No errors, but no data was found matching the query request specification."/>
+    </concept>
+    <concept>
+      <code value="OK"/>
+      <display value="Data found"/>
+      <definition value="Query reponse data found for 1 or more result sets matching the query request specification."/>
+    </concept>
+    <concept>
+      <code value="QE"/>
+      <display value="QueryParameterError"/>
+      <definition value="QueryError. Problem with input ParmetersError"/>
+    </concept>
+  </define>
+</ValueSet>

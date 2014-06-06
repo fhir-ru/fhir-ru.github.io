@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  
+                     Deprecation Comment: This code system was deprecated as of the November 2007 harmonization meeting. The content was folded into AddressUse (2.16.840.1.113883.5.1119), which replaces this code system.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>
+            <span style="color: grey">
+              <i>(_AddressUse)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_AddressUse"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  BAD
+            <a name="BAD"> </a>
+          </td>
+          <td>bad address</td>
+          <td>
+                        A flag indicating that the address is bad, in fact, useless.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  H
+            <a name="H"> </a>
+          </td>
+          <td>home address</td>
+          <td>
+                        A communication address at a home, attempted contacts for business purposes might intrude privacy and chances are one will contact family or other household members instead of the person one wishes to call.  Typically used with urgent cases, or if no other contacts are available.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    HP
+            <a name="HP"> </a>
+          </td>
+          <td>primary home</td>
+          <td>
+                        The primary home, to reach a person after business hours.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    HV
+            <a name="HV"> </a>
+          </td>
+          <td>vacation home</td>
+          <td>
+                        A vacation home, to reach a person while on vacation.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  TMP
+            <a name="TMP"> </a>
+          </td>
+          <td>temporary address</td>
+          <td>
+                        A temporary address, may be good for visit or mailing.  Note that an address history can provide more detailed information.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  WP
+            <a name="WP"> </a>
+          </td>
+          <td>work place</td>
+          <td>
+                        An office address.  First choice for business related contacts during business hours.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    DIR
+            <a name="DIR"> </a>
+          </td>
+          <td>Direct</td>
+          <td>
+                        Indicates a work place address or telecommunication address that reaches the individual or organization directly without intermediaries. For phones, often referred to as a &#39;private line&#39;.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    PUB
+            <a name="PUB"> </a>
+          </td>
+          <td>Public</td>
+          <td>
+                        Indicates a work place address or telecommunication address that is a &#39;standard&#39; address which may reach a reception service, mail-room, or other intermediary prior to the target entity.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>PHYS
+            <a name="PHYS"> </a>
+          </td>
+          <td>physical visit address</td>
+          <td>
+                        Used primarily to visit an address.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>PST
+            <a name="PST"> </a>
+          </td>
+          <td>postal address</td>
+          <td>
+                        Used to send mail.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/PostalAddressUse"/>
+  <name value="v3 Code System PostalAddressUse"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="  Deprecation Comment:
+This code system was deprecated as of the November 2007 harmonization meeting. The content was folded into AddressUse (2.16.840.1.113883.5.1119), which replaces this code system."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/PostalAddressUse"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="_AddressUse"/>
+      <abstract value="true"/>
+      <display value="AddressUse"/>
+      <concept>
+        <code value="BAD"/>
+        <display value="bad address"/>
+        <definition value="A flag indicating that the address is bad, in fact, useless."/>
+      </concept>
+      <concept>
+        <code value="H"/>
+        <display value="home address"/>
+        <definition value="A communication address at a home, attempted contacts for business purposes might intrude privacy and chances are one will contact family or other household members instead of the person one wishes to call.  Typically used with urgent cases, or if no other contacts are available."/>
+        <concept>
+          <code value="HP"/>
+          <display value="primary home"/>
+          <definition value="The primary home, to reach a person after business hours."/>
+        </concept>
+        <concept>
+          <code value="HV"/>
+          <display value="vacation home"/>
+          <definition value="A vacation home, to reach a person while on vacation."/>
+        </concept>
+      </concept>
+      <concept>
+        <code value="TMP"/>
+        <display value="temporary address"/>
+        <definition value="A temporary address, may be good for visit or mailing.  Note that an address history can provide more detailed information."/>
+      </concept>
+      <concept>
+        <code value="WP"/>
+        <display value="work place"/>
+        <definition value="An office address.  First choice for business related contacts during business hours."/>
+        <concept>
+          <code value="DIR"/>
+          <display value="Direct"/>
+          <definition value="Indicates a work place address or telecommunication address that reaches the individual or organization directly without intermediaries. For phones, often referred to as a &#39;private line&#39;."/>
+        </concept>
+        <concept>
+          <code value="PUB"/>
+          <display value="Public"/>
+          <definition value="Indicates a work place address or telecommunication address that is a &#39;standard&#39; address which may reach a reception service, mail-room, or other intermediary prior to the target entity."/>
+        </concept>
+      </concept>
+    </concept>
+    <concept>
+      <code value="PHYS"/>
+      <display value="physical visit address"/>
+      <definition value="Used primarily to visit an address."/>
+    </concept>
+    <concept>
+      <code value="PST"/>
+      <display value="postal address"/>
+      <definition value="Used to send mail."/>
+    </concept>
+  </define>
+</ValueSet>

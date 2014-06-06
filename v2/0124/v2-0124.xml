@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Transportation Mode</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>CART
+            <a name="CART"> </a>
+          </td>
+          <td>Cart - patient travels on cart or gurney</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>PORT
+            <a name="PORT"> </a>
+          </td>
+          <td>The examining device goes to patient&#39;s location</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>WALK
+            <a name="WALK"> </a>
+          </td>
+          <td>Patient walks to diagnostic service</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>WHLC
+            <a name="WHLC"> </a>
+          </td>
+          <td>Wheelchair</td>
+          <td>from v2.1</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0124"/>
+  <name value="v2 Transportation Mode"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0124 ( Transportation Mode)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0124"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="CART"/>
+      <display value="Cart - patient travels on cart or gurney"/>
+    </concept>
+    <concept>
+      <code value="PORT"/>
+      <display value="The examining device goes to patient&#39;s location"/>
+    </concept>
+    <concept>
+      <code value="WALK"/>
+      <display value="Patient walks to diagnostic service"/>
+    </concept>
+    <concept>
+      <code value="WHLC"/>
+      <display value="Wheelchair"/>
+    </concept>
+  </define>
+</ValueSet>

@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  
+                     Deprecation Comment: Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>ADDR
+            <a name="ADDR"> </a>
+          </td>
+          <td>Address</td>
+          <td>
+                        For attributes representing the location at which an organization, person, or item may be found or reached.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>CD
+            <a name="CD"> </a>
+          </td>
+          <td>Code</td>
+          <td>
+                        For attributes representing some concept. Note that names of individual things are not considered concepts.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>COM
+            <a name="COM"> </a>
+          </td>
+          <td>Communication Address</td>
+          <td>
+                        For attributes representing communication addresses, such as telephones, fax, pagers, e-mail, Web-sites and other devices and their respective protocols. See also PHON.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>DESC
+            <a name="DESC"> </a>
+          </td>
+          <td>Description</td>
+          <td>
+                        For attributes representing a statement used to describe something.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>DTTM
+            <a name="DTTM"> </a>
+          </td>
+          <td>Date and Time</td>
+          <td>
+                        For attributes representing a point in time at which an event happened or will happen. Levels of precision and variation are part of this concept and should usually not be specified in separate attributes.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>EXPR
+            <a name="EXPR"> </a>
+          </td>
+          <td>Formal Expression</td>
+          <td>
+                        For attributes representing formalized text that is to be evaluated primarily by computes. An attribute named &quot;constraint_text&quot; is most likely such a formal expression and should be renamed to &quot;constraint_expr&quot;.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>FRC
+            <a name="FRC"> </a>
+          </td>
+          <td>Fraction</td>
+          <td>
+                        For attributes that represent a fraction or proportion. The former attribute type PCT for &quot;percentage&quot; is superceded by FRC and is no longer permitted. See also QTY.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>ID
+            <a name="ID"> </a>
+          </td>
+          <td>Identifier</td>
+          <td>
+                        For attributes that serve to identify some instance of an information model class. Note that real world Identifiers (e.g., SSN) exist not as attributes but as an association to a special information model class. The attribute type &quot;id&quot; without a prefix is reserved to be the main instance identifier of the class.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>IND
+            <a name="IND"> </a>
+          </td>
+          <td>Indicator</td>
+          <td>
+                        For attributes representing a specific condition as true or false.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>NBR
+            <a name="NBR"> </a>
+          </td>
+          <td>Number</td>
+          <td>
+                        For attributes representing dimensionless numbers. Note that there is a big conceptual difference between integer numbers and floating point numbers. See also QTY.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>NM
+            <a name="NM"> </a>
+          </td>
+          <td>Name</td>
+          <td>
+                        For attributes that represent a name by which an instance of the class is known.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>PHON
+            <a name="PHON"> </a>
+          </td>
+          <td>Phone</td>
+          <td>
+                        For attributes representing telephone number of a telecommunication device.  See also COM.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>QTY
+            <a name="QTY"> </a>
+          </td>
+          <td>Quantity</td>
+          <td>
+                        For attributes representing a quantity. The nature of the quantity must be further specified through the choice of data type and through additional constraints. For physical quantities (including elapsed time) the PQ data type must be used. For monetary amounts the MO data type must be used. Parallel unit attributes are not permitted in these cases. Counted objects are not physical quantities and the count nouns are not units of measure.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>TIME
+            <a name="TIME"> </a>
+          </td>
+          <td>General Timing</td>
+          <td>
+                        A range of time between a start and an end time having a duration. The range may be infinite or undefined on either side.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>TMR
+            <a name="TMR"> </a>
+          </td>
+          <td>Time Range</td>
+          <td>
+                        A range of time between a start and an end time having a duration. The range may be infinite or undefined on either side.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>TXT
+            <a name="TXT"> </a>
+          </td>
+          <td>Text</td>
+          <td>
+                        For attributes representing non-descriptive, non-naming text not targeted to human interpretation. Formal expressions evaluated by computers should use the EXPR attribute type instead.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>VALUE
+            <a name="VALUE"> </a>
+          </td>
+          <td>Value</td>
+          <td>
+                        For an attribute (e.g., Observation.value) that represents a value whose data type is determined dynamically and is not predefined by the static class diagram.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/MDFAttributeType"/>
+  <name value="v3 Code System MDFAttributeType"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="  Deprecation Comment:
+Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/MDFAttributeType"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="ADDR"/>
+      <display value="Address"/>
+      <definition value="For attributes representing the location at which an organization, person, or item may be found or reached."/>
+    </concept>
+    <concept>
+      <code value="CD"/>
+      <display value="Code"/>
+      <definition value="For attributes representing some concept. Note that names of individual things are not considered concepts."/>
+    </concept>
+    <concept>
+      <code value="COM"/>
+      <display value="Communication Address"/>
+      <definition value="For attributes representing communication addresses, such as telephones, fax, pagers, e-mail, Web-sites and other devices and their respective protocols. See also PHON."/>
+    </concept>
+    <concept>
+      <code value="DESC"/>
+      <display value="Description"/>
+      <definition value="For attributes representing a statement used to describe something."/>
+    </concept>
+    <concept>
+      <code value="DTTM"/>
+      <display value="Date and Time"/>
+      <definition value="For attributes representing a point in time at which an event happened or will happen. Levels of precision and variation are part of this concept and should usually not be specified in separate attributes."/>
+    </concept>
+    <concept>
+      <code value="EXPR"/>
+      <display value="Formal Expression"/>
+      <definition value="For attributes representing formalized text that is to be evaluated primarily by computes. An attribute named &quot;constraint_text&quot; is most likely such a formal expression and should be renamed to &quot;constraint_expr&quot;."/>
+    </concept>
+    <concept>
+      <code value="FRC"/>
+      <display value="Fraction"/>
+      <definition value="For attributes that represent a fraction or proportion. The former attribute type PCT for &quot;percentage&quot; is superceded by FRC and is no longer permitted. See also QTY."/>
+    </concept>
+    <concept>
+      <code value="ID"/>
+      <display value="Identifier"/>
+      <definition value="For attributes that serve to identify some instance of an information model class. Note that real world Identifiers (e.g., SSN) exist not as attributes but as an association to a special information model class. The attribute type &quot;id&quot; without a prefix is reserved to be the main instance identifier of the class."/>
+    </concept>
+    <concept>
+      <code value="IND"/>
+      <display value="Indicator"/>
+      <definition value="For attributes representing a specific condition as true or false."/>
+    </concept>
+    <concept>
+      <code value="NBR"/>
+      <display value="Number"/>
+      <definition value="For attributes representing dimensionless numbers. Note that there is a big conceptual difference between integer numbers and floating point numbers. See also QTY."/>
+    </concept>
+    <concept>
+      <code value="NM"/>
+      <display value="Name"/>
+      <definition value="For attributes that represent a name by which an instance of the class is known."/>
+    </concept>
+    <concept>
+      <code value="PHON"/>
+      <display value="Phone"/>
+      <definition value="For attributes representing telephone number of a telecommunication device.  See also COM."/>
+    </concept>
+    <concept>
+      <code value="QTY"/>
+      <display value="Quantity"/>
+      <definition value="For attributes representing a quantity. The nature of the quantity must be further specified through the choice of data type and through additional constraints. For physical quantities (including elapsed time) the PQ data type must be used. For monetary amounts the MO data type must be used. Parallel unit attributes are not permitted in these cases. Counted objects are not physical quantities and the count nouns are not units of measure."/>
+    </concept>
+    <concept>
+      <code value="TIME"/>
+      <display value="General Timing"/>
+      <definition value="A range of time between a start and an end time having a duration. The range may be infinite or undefined on either side."/>
+    </concept>
+    <concept>
+      <code value="TMR"/>
+      <display value="Time Range"/>
+      <definition value="A range of time between a start and an end time having a duration. The range may be infinite or undefined on either side."/>
+    </concept>
+    <concept>
+      <code value="TXT"/>
+      <display value="Text"/>
+      <definition value="For attributes representing non-descriptive, non-naming text not targeted to human interpretation. Formal expressions evaluated by computers should use the EXPR attribute type instead."/>
+    </concept>
+    <concept>
+      <code value="VALUE"/>
+      <display value="Value"/>
+      <definition value="For an attribute (e.g., Observation.value) that represents a value whose data type is determined dynamically and is not predefined by the static class diagram."/>
+    </concept>
+  </define>
+</ValueSet>

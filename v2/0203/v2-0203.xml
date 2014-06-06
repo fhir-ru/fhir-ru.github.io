@@ -1,0 +1,1337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Identifier Type</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>ACSN
+            <a name="ACSN"> </a>
+          </td>
+          <td>Accession ID</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>AM
+            <a name="AM"> </a>
+          </td>
+          <td>American Express</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>AMA
+            <a name="AMA"> </a>
+          </td>
+          <td>American Medical Association Number</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>AN
+            <a name="AN"> </a>
+          </td>
+          <td>Account number</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>ANC
+            <a name="ANC"> </a>
+          </td>
+          <td>Account number Creditor</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>AND
+            <a name="AND"> </a>
+          </td>
+          <td>Account number debitor</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>ANON
+            <a name="ANON"> </a>
+          </td>
+          <td>Anonymous identifier</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>ANT
+            <a name="ANT"> </a>
+          </td>
+          <td>Temporary Account Number</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>APRN
+            <a name="APRN"> </a>
+          </td>
+          <td>Advanced Practice Registered Nurse number</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>ASID
+            <a name="ASID"> </a>
+          </td>
+          <td>Ancestor Specimen ID</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>BA
+            <a name="BA"> </a>
+          </td>
+          <td>Bank Account Number</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>BC
+            <a name="BC"> </a>
+          </td>
+          <td>Bank Card Number</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>BCT
+            <a name="BCT"> </a>
+          </td>
+          <td>Birth Certificate</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>BR
+            <a name="BR"> </a>
+          </td>
+          <td>Birth registry number</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>BRN
+            <a name="BRN"> </a>
+          </td>
+          <td>Breed Registry Number</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>BSNR
+            <a name="BSNR"> </a>
+          </td>
+          <td>Primary physician office number</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>CC
+            <a name="CC"> </a>
+          </td>
+          <td>Cost Center number</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>CONM
+            <a name="CONM"> </a>
+          </td>
+          <td>Change of Name Document</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>CY
+            <a name="CY"> </a>
+          </td>
+          <td>County number</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>CZ
+            <a name="CZ"> </a>
+          </td>
+          <td>Citizenship Card</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>DDS
+            <a name="DDS"> </a>
+          </td>
+          <td>Dentist license number</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>DEA
+            <a name="DEA"> </a>
+          </td>
+          <td>Drug Enforcement Administration registration number</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>DFN
+            <a name="DFN"> </a>
+          </td>
+          <td>Drug Furnishing or prescriptive authority Number</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>DI
+            <a name="DI"> </a>
+          </td>
+          <td>Diner&#39;s Club card</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>DL
+            <a name="DL"> </a>
+          </td>
+          <td>Driver&#39;s license number</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>DN
+            <a name="DN"> </a>
+          </td>
+          <td>Doctor number</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>DO
+            <a name="DO"> </a>
+          </td>
+          <td>Osteopathic License number</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>DP
+            <a name="DP"> </a>
+          </td>
+          <td>Diplomatic Passport</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>DPM
+            <a name="DPM"> </a>
+          </td>
+          <td>Podiatrist license number</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>DR
+            <a name="DR"> </a>
+          </td>
+          <td>Donor Registration Number</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>DS
+            <a name="DS"> </a>
+          </td>
+          <td>Discover Card</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>EI
+            <a name="EI"> </a>
+          </td>
+          <td>Employee number</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>EN
+            <a name="EN"> </a>
+          </td>
+          <td>Employer number</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>ESN
+            <a name="ESN"> </a>
+          </td>
+          <td>Staff Enterprise Number</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>FI
+            <a name="FI"> </a>
+          </td>
+          <td>Facility ID</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>GI
+            <a name="GI"> </a>
+          </td>
+          <td>Guarantor internal identifier</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>GL
+            <a name="GL"> </a>
+          </td>
+          <td>General ledger number</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>GN
+            <a name="GN"> </a>
+          </td>
+          <td>Guarantor external  identifier</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>HC
+            <a name="HC"> </a>
+          </td>
+          <td>Health Card Number</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>IND
+            <a name="IND"> </a>
+          </td>
+          <td>Indigenous/Aboriginal</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>JHN
+            <a name="JHN"> </a>
+          </td>
+          <td>Jurisdictional health number (Canada)</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>LACSN
+            <a name="LACSN"> </a>
+          </td>
+          <td>Laboratory Accession ID</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>LANR
+            <a name="LANR"> </a>
+          </td>
+          <td>Lifelong physician number</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>LI
+            <a name="LI"> </a>
+          </td>
+          <td>Labor and industries number</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>LN
+            <a name="LN"> </a>
+          </td>
+          <td>License number</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>LR
+            <a name="LR"> </a>
+          </td>
+          <td>Local Registry ID</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>MA
+            <a name="MA"> </a>
+          </td>
+          <td>Patient Medicaid number</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>MB
+            <a name="MB"> </a>
+          </td>
+          <td>Member Number</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>MC
+            <a name="MC"> </a>
+          </td>
+          <td>Patient&#39;s Medicare number</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>MCD
+            <a name="MCD"> </a>
+          </td>
+          <td>Practitioner Medicaid number</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>MCN
+            <a name="MCN"> </a>
+          </td>
+          <td>Microchip Number</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>MCR
+            <a name="MCR"> </a>
+          </td>
+          <td>Practitioner Medicare number</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>MCT
+            <a name="MCT"> </a>
+          </td>
+          <td>Marriage Certificate</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>MD
+            <a name="MD"> </a>
+          </td>
+          <td>Medical License number</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>MI
+            <a name="MI"> </a>
+          </td>
+          <td>Military ID number</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>MR
+            <a name="MR"> </a>
+          </td>
+          <td>Medical record number</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>MRT
+            <a name="MRT"> </a>
+          </td>
+          <td>Temporary Medical Record Number</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>MS
+            <a name="MS"> </a>
+          </td>
+          <td>MasterCard</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>NBSNR
+            <a name="NBSNR"> </a>
+          </td>
+          <td>Secondary physician office number</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>NCT
+            <a name="NCT"> </a>
+          </td>
+          <td>Naturalization Certificate</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>NE
+            <a name="NE"> </a>
+          </td>
+          <td>National employer identifier</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>NH
+            <a name="NH"> </a>
+          </td>
+          <td>National Health Plan Identifier</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>NI
+            <a name="NI"> </a>
+          </td>
+          <td>National unique individual identifier</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>NII
+            <a name="NII"> </a>
+          </td>
+          <td>National Insurance Organization Identifier</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>NIIP
+            <a name="NIIP"> </a>
+          </td>
+          <td>National Insurance Payor Identifier (Payor)</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>NNxxx
+            <a name="NNxxx"> </a>
+          </td>
+          <td>National Person Identifier where the xxx is the ISO table 3166 3-character (alphabetic) country code</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>NP
+            <a name="NP"> </a>
+          </td>
+          <td>Nurse practitioner number</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>NPI
+            <a name="NPI"> </a>
+          </td>
+          <td>National provider identifier</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>OD
+            <a name="OD"> </a>
+          </td>
+          <td>Optometrist license number</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>PA
+            <a name="PA"> </a>
+          </td>
+          <td>Physician Assistant number</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>PC
+            <a name="PC"> </a>
+          </td>
+          <td>Parole Card</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>PCN
+            <a name="PCN"> </a>
+          </td>
+          <td>Penitentiary/correctional institution Number</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>PE
+            <a name="PE"> </a>
+          </td>
+          <td>Living Subject Enterprise Number</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>PEN
+            <a name="PEN"> </a>
+          </td>
+          <td>Pension Number</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>PI
+            <a name="PI"> </a>
+          </td>
+          <td>Patient internal identifier</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>PN
+            <a name="PN"> </a>
+          </td>
+          <td>Person number</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>PNT
+            <a name="PNT"> </a>
+          </td>
+          <td>Temporary Living Subject Number</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>PPIN
+            <a name="PPIN"> </a>
+          </td>
+          <td>Medicare/CMS Performing Provider Identification Number</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>PPN
+            <a name="PPN"> </a>
+          </td>
+          <td>Passport number</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>PRC
+            <a name="PRC"> </a>
+          </td>
+          <td>Permanent Resident Card Number</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>PRN
+            <a name="PRN"> </a>
+          </td>
+          <td>Provider number</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>PT
+            <a name="PT"> </a>
+          </td>
+          <td>Patient external identifier</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>QA
+            <a name="QA"> </a>
+          </td>
+          <td>QA number</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>RI
+            <a name="RI"> </a>
+          </td>
+          <td>Resource identifier</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>RN
+            <a name="RN"> </a>
+          </td>
+          <td>Registered Nurse Number</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>RPH
+            <a name="RPH"> </a>
+          </td>
+          <td>Pharmacist license number</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>RR
+            <a name="RR"> </a>
+          </td>
+          <td>Railroad Retirement number</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>RRI
+            <a name="RRI"> </a>
+          </td>
+          <td>Regional registry ID</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>RRP
+            <a name="RRP"> </a>
+          </td>
+          <td>Railroad Retirement Provider</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>SID
+            <a name="SID"> </a>
+          </td>
+          <td>Specimen ID</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>SL
+            <a name="SL"> </a>
+          </td>
+          <td>State license</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>SN
+            <a name="SN"> </a>
+          </td>
+          <td>Subscriber Number</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>SP
+            <a name="SP"> </a>
+          </td>
+          <td>Study Permit</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>SR
+            <a name="SR"> </a>
+          </td>
+          <td>State registry ID</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>SS
+            <a name="SS"> </a>
+          </td>
+          <td>Social Security number</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>TAX
+            <a name="TAX"> </a>
+          </td>
+          <td>Tax ID number</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>TN
+            <a name="TN"> </a>
+          </td>
+          <td>Treaty Number/ (Canada)</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>TPR
+            <a name="TPR"> </a>
+          </td>
+          <td>Temporary Permanent Resident (Canada)</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>U
+            <a name="U"> </a>
+          </td>
+          <td>Unspecified identifier</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>UPIN
+            <a name="UPIN"> </a>
+          </td>
+          <td>Medicare/CMS (formerly HCFA)&#39;s Universal Physician Identification numbers</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>USID
+            <a name="USID"> </a>
+          </td>
+          <td>Unique Specimen ID</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>VN
+            <a name="VN"> </a>
+          </td>
+          <td>Visit number</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>VP
+            <a name="VP"> </a>
+          </td>
+          <td>Visitor Permit</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>VS
+            <a name="VS"> </a>
+          </td>
+          <td>VISA</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>WC
+            <a name="WC"> </a>
+          </td>
+          <td>WIC identifier</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>WCN
+            <a name="WCN"> </a>
+          </td>
+          <td>Workers&#39; Comp Number</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>WP
+            <a name="WP"> </a>
+          </td>
+          <td>Work Permit</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>XX
+            <a name="XX"> </a>
+          </td>
+          <td>Organization identifier</td>
+          <td>added v2.3</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0203"/>
+  <name value="v2 Identifier Type"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0203 ( Identifier Type)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0203"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="ACSN"/>
+      <display value="Accession ID"/>
+    </concept>
+    <concept>
+      <code value="AM"/>
+      <display value="American Express"/>
+    </concept>
+    <concept>
+      <code value="AMA"/>
+      <display value="American Medical Association Number"/>
+    </concept>
+    <concept>
+      <code value="AN"/>
+      <display value="Account number"/>
+    </concept>
+    <concept>
+      <code value="ANC"/>
+      <display value="Account number Creditor"/>
+    </concept>
+    <concept>
+      <code value="AND"/>
+      <display value="Account number debitor"/>
+    </concept>
+    <concept>
+      <code value="ANON"/>
+      <display value="Anonymous identifier"/>
+    </concept>
+    <concept>
+      <code value="ANT"/>
+      <display value="Temporary Account Number"/>
+    </concept>
+    <concept>
+      <code value="APRN"/>
+      <display value="Advanced Practice Registered Nurse number"/>
+    </concept>
+    <concept>
+      <code value="ASID"/>
+      <display value="Ancestor Specimen ID"/>
+    </concept>
+    <concept>
+      <code value="BA"/>
+      <display value="Bank Account Number"/>
+    </concept>
+    <concept>
+      <code value="BC"/>
+      <display value="Bank Card Number"/>
+    </concept>
+    <concept>
+      <code value="BCT"/>
+      <display value="Birth Certificate"/>
+    </concept>
+    <concept>
+      <code value="BR"/>
+      <display value="Birth registry number"/>
+    </concept>
+    <concept>
+      <code value="BRN"/>
+      <display value="Breed Registry Number"/>
+    </concept>
+    <concept>
+      <code value="BSNR"/>
+      <display value="Primary physician office number"/>
+    </concept>
+    <concept>
+      <code value="CC"/>
+      <display value="Cost Center number"/>
+    </concept>
+    <concept>
+      <code value="CONM"/>
+      <display value="Change of Name Document"/>
+    </concept>
+    <concept>
+      <code value="CY"/>
+      <display value="County number"/>
+    </concept>
+    <concept>
+      <code value="CZ"/>
+      <display value="Citizenship Card"/>
+    </concept>
+    <concept>
+      <code value="DDS"/>
+      <display value="Dentist license number"/>
+    </concept>
+    <concept>
+      <code value="DEA"/>
+      <display value="Drug Enforcement Administration registration number"/>
+    </concept>
+    <concept>
+      <code value="DFN"/>
+      <display value="Drug Furnishing or prescriptive authority Number"/>
+    </concept>
+    <concept>
+      <code value="DI"/>
+      <display value="Diner&#39;s Club card"/>
+    </concept>
+    <concept>
+      <code value="DL"/>
+      <display value="Driver&#39;s license number"/>
+    </concept>
+    <concept>
+      <code value="DN"/>
+      <display value="Doctor number"/>
+    </concept>
+    <concept>
+      <code value="DO"/>
+      <display value="Osteopathic License number"/>
+    </concept>
+    <concept>
+      <code value="DP"/>
+      <display value="Diplomatic Passport"/>
+    </concept>
+    <concept>
+      <code value="DPM"/>
+      <display value="Podiatrist license number"/>
+    </concept>
+    <concept>
+      <code value="DR"/>
+      <display value="Donor Registration Number"/>
+    </concept>
+    <concept>
+      <code value="DS"/>
+      <display value="Discover Card"/>
+    </concept>
+    <concept>
+      <code value="EI"/>
+      <display value="Employee number"/>
+    </concept>
+    <concept>
+      <code value="EN"/>
+      <display value="Employer number"/>
+    </concept>
+    <concept>
+      <code value="ESN"/>
+      <display value="Staff Enterprise Number"/>
+    </concept>
+    <concept>
+      <code value="FI"/>
+      <display value="Facility ID"/>
+    </concept>
+    <concept>
+      <code value="GI"/>
+      <display value="Guarantor internal identifier"/>
+    </concept>
+    <concept>
+      <code value="GL"/>
+      <display value="General ledger number"/>
+    </concept>
+    <concept>
+      <code value="GN"/>
+      <display value="Guarantor external  identifier"/>
+    </concept>
+    <concept>
+      <code value="HC"/>
+      <display value="Health Card Number"/>
+    </concept>
+    <concept>
+      <code value="IND"/>
+      <display value="Indigenous/Aboriginal"/>
+    </concept>
+    <concept>
+      <code value="JHN"/>
+      <display value="Jurisdictional health number (Canada)"/>
+    </concept>
+    <concept>
+      <code value="LACSN"/>
+      <display value="Laboratory Accession ID"/>
+    </concept>
+    <concept>
+      <code value="LANR"/>
+      <display value="Lifelong physician number"/>
+    </concept>
+    <concept>
+      <code value="LI"/>
+      <display value="Labor and industries number"/>
+    </concept>
+    <concept>
+      <code value="LN"/>
+      <display value="License number"/>
+    </concept>
+    <concept>
+      <code value="LR"/>
+      <display value="Local Registry ID"/>
+    </concept>
+    <concept>
+      <code value="MA"/>
+      <display value="Patient Medicaid number"/>
+    </concept>
+    <concept>
+      <code value="MB"/>
+      <display value="Member Number"/>
+    </concept>
+    <concept>
+      <code value="MC"/>
+      <display value="Patient&#39;s Medicare number"/>
+    </concept>
+    <concept>
+      <code value="MCD"/>
+      <display value="Practitioner Medicaid number"/>
+    </concept>
+    <concept>
+      <code value="MCN"/>
+      <display value="Microchip Number"/>
+    </concept>
+    <concept>
+      <code value="MCR"/>
+      <display value="Practitioner Medicare number"/>
+    </concept>
+    <concept>
+      <code value="MCT"/>
+      <display value="Marriage Certificate"/>
+    </concept>
+    <concept>
+      <code value="MD"/>
+      <display value="Medical License number"/>
+    </concept>
+    <concept>
+      <code value="MI"/>
+      <display value="Military ID number"/>
+    </concept>
+    <concept>
+      <code value="MR"/>
+      <display value="Medical record number"/>
+    </concept>
+    <concept>
+      <code value="MRT"/>
+      <display value="Temporary Medical Record Number"/>
+    </concept>
+    <concept>
+      <code value="MS"/>
+      <display value="MasterCard"/>
+    </concept>
+    <concept>
+      <code value="NBSNR"/>
+      <display value="Secondary physician office number"/>
+    </concept>
+    <concept>
+      <code value="NCT"/>
+      <display value="Naturalization Certificate"/>
+    </concept>
+    <concept>
+      <code value="NE"/>
+      <display value="National employer identifier"/>
+    </concept>
+    <concept>
+      <code value="NH"/>
+      <display value="National Health Plan Identifier"/>
+    </concept>
+    <concept>
+      <code value="NI"/>
+      <display value="National unique individual identifier"/>
+    </concept>
+    <concept>
+      <code value="NII"/>
+      <display value="National Insurance Organization Identifier"/>
+    </concept>
+    <concept>
+      <code value="NIIP"/>
+      <display value="National Insurance Payor Identifier (Payor)"/>
+    </concept>
+    <concept>
+      <code value="NNxxx"/>
+      <display value="National Person Identifier where the xxx is the ISO table 3166 3-character (alphabetic) country code"/>
+    </concept>
+    <concept>
+      <code value="NP"/>
+      <display value="Nurse practitioner number"/>
+    </concept>
+    <concept>
+      <code value="NPI"/>
+      <display value="National provider identifier"/>
+    </concept>
+    <concept>
+      <code value="OD"/>
+      <display value="Optometrist license number"/>
+    </concept>
+    <concept>
+      <code value="PA"/>
+      <display value="Physician Assistant number"/>
+    </concept>
+    <concept>
+      <code value="PC"/>
+      <display value="Parole Card"/>
+    </concept>
+    <concept>
+      <code value="PCN"/>
+      <display value="Penitentiary/correctional institution Number"/>
+    </concept>
+    <concept>
+      <code value="PE"/>
+      <display value="Living Subject Enterprise Number"/>
+    </concept>
+    <concept>
+      <code value="PEN"/>
+      <display value="Pension Number"/>
+    </concept>
+    <concept>
+      <code value="PI"/>
+      <display value="Patient internal identifier"/>
+    </concept>
+    <concept>
+      <code value="PN"/>
+      <display value="Person number"/>
+    </concept>
+    <concept>
+      <code value="PNT"/>
+      <display value="Temporary Living Subject Number"/>
+    </concept>
+    <concept>
+      <code value="PPIN"/>
+      <display value="Medicare/CMS Performing Provider Identification Number"/>
+    </concept>
+    <concept>
+      <code value="PPN"/>
+      <display value="Passport number"/>
+    </concept>
+    <concept>
+      <code value="PRC"/>
+      <display value="Permanent Resident Card Number"/>
+    </concept>
+    <concept>
+      <code value="PRN"/>
+      <display value="Provider number"/>
+    </concept>
+    <concept>
+      <code value="PT"/>
+      <display value="Patient external identifier"/>
+    </concept>
+    <concept>
+      <code value="QA"/>
+      <display value="QA number"/>
+    </concept>
+    <concept>
+      <code value="RI"/>
+      <display value="Resource identifier"/>
+    </concept>
+    <concept>
+      <code value="RN"/>
+      <display value="Registered Nurse Number"/>
+    </concept>
+    <concept>
+      <code value="RPH"/>
+      <display value="Pharmacist license number"/>
+    </concept>
+    <concept>
+      <code value="RR"/>
+      <display value="Railroad Retirement number"/>
+    </concept>
+    <concept>
+      <code value="RRI"/>
+      <display value="Regional registry ID"/>
+    </concept>
+    <concept>
+      <code value="RRP"/>
+      <display value="Railroad Retirement Provider"/>
+    </concept>
+    <concept>
+      <code value="SID"/>
+      <display value="Specimen ID"/>
+    </concept>
+    <concept>
+      <code value="SL"/>
+      <display value="State license"/>
+    </concept>
+    <concept>
+      <code value="SN"/>
+      <display value="Subscriber Number"/>
+    </concept>
+    <concept>
+      <code value="SP"/>
+      <display value="Study Permit"/>
+    </concept>
+    <concept>
+      <code value="SR"/>
+      <display value="State registry ID"/>
+    </concept>
+    <concept>
+      <code value="SS"/>
+      <display value="Social Security number"/>
+    </concept>
+    <concept>
+      <code value="TAX"/>
+      <display value="Tax ID number"/>
+    </concept>
+    <concept>
+      <code value="TN"/>
+      <display value="Treaty Number/ (Canada)"/>
+    </concept>
+    <concept>
+      <code value="TPR"/>
+      <display value="Temporary Permanent Resident (Canada)"/>
+    </concept>
+    <concept>
+      <code value="U"/>
+      <display value="Unspecified identifier"/>
+    </concept>
+    <concept>
+      <code value="UPIN"/>
+      <display value="Medicare/CMS (formerly HCFA)&#39;s Universal Physician Identification numbers"/>
+    </concept>
+    <concept>
+      <code value="USID"/>
+      <display value="Unique Specimen ID"/>
+    </concept>
+    <concept>
+      <code value="VN"/>
+      <display value="Visit number"/>
+    </concept>
+    <concept>
+      <code value="VP"/>
+      <display value="Visitor Permit"/>
+    </concept>
+    <concept>
+      <code value="VS"/>
+      <display value="VISA"/>
+    </concept>
+    <concept>
+      <code value="WC"/>
+      <display value="WIC identifier"/>
+    </concept>
+    <concept>
+      <code value="WCN"/>
+      <display value="Workers&#39; Comp Number"/>
+    </concept>
+    <concept>
+      <code value="WP"/>
+      <display value="Work Permit"/>
+    </concept>
+    <concept>
+      <code value="XX"/>
+      <display value="Organization identifier"/>
+    </concept>
+  </define>
+</ValueSet>

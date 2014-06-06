@@ -1,0 +1,3850 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  American Indian and Alaska Native languages currently being used in the United States.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>
+            <span style="color: grey">
+              <i>(_Algic)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Algic"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_Algonquian)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Algonquian"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    
+            <span style="color: grey">
+              <i>(_Arapahoan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Arapahoan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      
+            <span style="color: grey">
+              <i>(_ArapahoGrosVentre)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_ArapahoGrosVentre"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        x-ARP
+            <a name="x-ARP"> </a>
+          </td>
+          <td>Arapaho</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        x-ATS
+            <a name="x-ATS"> </a>
+          </td>
+          <td>Gros Ventre</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    
+            <span style="color: grey">
+              <i>(_CreeMontagnais)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_CreeMontagnais"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      
+            <span style="color: grey">
+              <i>(_Cree)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Cree"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        x-CRP
+            <a name="x-CRP"> </a>
+          </td>
+          <td>Western Cree</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    
+            <span style="color: grey">
+              <i>(_EasternAlgonquin)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_EasternAlgonquin"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      
+            <span style="color: grey">
+              <i>(_Abenakian)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Abenakian"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        x-AAQ
+            <a name="x-AAQ"> </a>
+          </td>
+          <td>Eastern Abenaki</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        x-ABE
+            <a name="x-ABE"> </a>
+          </td>
+          <td>Western Abenaki</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        x-MAC
+            <a name="x-MAC"> </a>
+          </td>
+          <td>Maliseet-Passamaquoddy</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      
+            <span style="color: grey">
+              <i>(_Delawaran)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Delawaran"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        x-DEL
+            <a name="x-DEL"> </a>
+          </td>
+          <td>Unami Delaware</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      x-MIC
+            <a name="x-MIC"> </a>
+          </td>
+          <td>Micmac</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    
+            <span style="color: grey">
+              <i>(_Ojibwayan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Ojibwayan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      x-OJB
+            <a name="x-OJB"> </a>
+          </td>
+          <td>Southern Ojibwa</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      x-POT
+            <a name="x-POT"> </a>
+          </td>
+          <td>Potawatami</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    
+            <span style="color: grey">
+              <i>(_SaukFoxKickapoo)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_SaukFoxKickapoo"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      x-KIC
+            <a name="x-KIC"> </a>
+          </td>
+          <td>Kickapoo</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      x-SAC
+            <a name="x-SAC"> </a>
+          </td>
+          <td>Mesquakie</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      x-SJW
+            <a name="x-SJW"> </a>
+          </td>
+          <td>Shawnee</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-BLC
+            <a name="x-BLC"> </a>
+          </td>
+          <td>Blackfoot</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-CHY
+            <a name="x-CHY"> </a>
+          </td>
+          <td>Cheyenne</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-MEZ
+            <a name="x-MEZ"> </a>
+          </td>
+          <td>Menominee</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_Ritwan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Ritwan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-YUR
+            <a name="x-YUR"> </a>
+          </td>
+          <td>Yurok</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>
+            <span style="color: grey">
+              <i>(_Caddoan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Caddoan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_NorthernCaddoan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_NorthernCaddoan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-ARI
+            <a name="x-ARI"> </a>
+          </td>
+          <td>Arikara</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-PAW
+            <a name="x-PAW"> </a>
+          </td>
+          <td>Pawnee</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-WIC
+            <a name="x-WIC"> </a>
+          </td>
+          <td>Wichita</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_SouthernCaddoan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_SouthernCaddoan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-CAD
+            <a name="x-CAD"> </a>
+          </td>
+          <td>Caddo</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>
+            <span style="color: grey">
+              <i>(_Chimakuan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Chimakuan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  x-QUI
+            <a name="x-QUI"> </a>
+          </td>
+          <td>Quileute</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>
+            <span style="color: grey">
+              <i>(_EskimoAleut)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_EskimoAleut"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_Aleut)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Aleut"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-ALW
+            <a name="x-ALW"> </a>
+          </td>
+          <td>Aleut</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_Eskimoan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Eskimoan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    
+            <span style="color: grey">
+              <i>(_InuitInupiaq)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_InuitInupiaq"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      x-ESI
+            <a name="x-ESI"> </a>
+          </td>
+          <td>North Alaskan Inuktitut</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      x-ESK
+            <a name="x-ESK"> </a>
+          </td>
+          <td>Northwest Alaska Inuktitut</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    
+            <span style="color: grey">
+              <i>(_SirenikskiYupik)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_SirenikskiYupik"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      x-EMS
+            <a name="x-EMS"> </a>
+          </td>
+          <td>Pacific Yupik Gulf</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      x-ESS
+            <a name="x-ESS"> </a>
+          </td>
+          <td>Central Siberian Yupik</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      x-ESU
+            <a name="x-ESU"> </a>
+          </td>
+          <td>Central Alaskan Yupik</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>
+            <span style="color: grey">
+              <i>(_Hokan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Hokan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_CochimiYuman)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_CochimiYuman"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    
+            <span style="color: grey">
+              <i>(_Yuman)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Yuman"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      
+            <span style="color: grey">
+              <i>(_DeltaCalifornia)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_DeltaCalifornia"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        
+            <span style="color: grey">
+              <i>(_Diegueno)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Diegueno"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>6</td>
+          <td>          x-DIH
+            <a name="x-DIH"> </a>
+          </td>
+          <td>Kumeyaay</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        x-COC
+            <a name="x-COC"> </a>
+          </td>
+          <td>Cocopa</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      
+            <span style="color: grey">
+              <i>(_Pai)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Pai"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        x-YUF
+            <a name="x-YUF"> </a>
+          </td>
+          <td>Havasupai</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      
+            <span style="color: grey">
+              <i>(_River)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_River"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        x-MOV
+            <a name="x-MOV"> </a>
+          </td>
+          <td>Mohave</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        x-MRC
+            <a name="x-MRC"> </a>
+          </td>
+          <td>Maricopa</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        x-YUM
+            <a name="x-YUM"> </a>
+          </td>
+          <td>Quechan</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_Palaihnihan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Palaihnihan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-ACH
+            <a name="x-ACH"> </a>
+          </td>
+          <td>Achumawi</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-ATW
+            <a name="x-ATW"> </a>
+          </td>
+          <td>Atsugewi</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_Pomoan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Pomoan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-KJU
+            <a name="x-KJU"> </a>
+          </td>
+          <td>Kashaya</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-PEF
+            <a name="x-PEF"> </a>
+          </td>
+          <td>Northeastern Pomo</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-PEO
+            <a name="x-PEO"> </a>
+          </td>
+          <td>Southeastern Pomo</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-PEQ
+            <a name="x-PEQ"> </a>
+          </td>
+          <td>Southern Pomo</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-POO
+            <a name="x-POO"> </a>
+          </td>
+          <td>Central Pomo</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_Shasta)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Shasta"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-SHT
+            <a name="x-SHT"> </a>
+          </td>
+          <td>Shasta</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  x-KYH
+            <a name="x-KYH"> </a>
+          </td>
+          <td>Karok</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  x-WAS
+            <a name="x-WAS"> </a>
+          </td>
+          <td>Washoe</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>
+            <span style="color: grey">
+              <i>(_Iroquoian)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Iroquoian"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_NorthernIroquoian)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_NorthernIroquoian"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-CAY
+            <a name="x-CAY"> </a>
+          </td>
+          <td>Cayuga</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-MOH
+            <a name="x-MOH"> </a>
+          </td>
+          <td>Mohawk</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-ONE
+            <a name="x-ONE"> </a>
+          </td>
+          <td>Oneida</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-ONO
+            <a name="x-ONO"> </a>
+          </td>
+          <td>Onondaga</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-SEE
+            <a name="x-SEE"> </a>
+          </td>
+          <td>Seneca</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-TUS
+            <a name="x-TUS"> </a>
+          </td>
+          <td>Tuscarora</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  x-CER
+            <a name="x-CER"> </a>
+          </td>
+          <td>Cherokee</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>
+            <span style="color: grey">
+              <i>(_Keresan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Keresan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  x-KEE
+            <a name="x-KEE"> </a>
+          </td>
+          <td>Rio Grande Keresan</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  x-KJQ
+            <a name="x-KJQ"> </a>
+          </td>
+          <td>Acoma-Laguna</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>
+            <span style="color: grey">
+              <i>(_KiowaTanoan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_KiowaTanoan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_Tiwa)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Tiwa"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-TAO
+            <a name="x-TAO"> </a>
+          </td>
+          <td>Northern Tiwa</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-TIX
+            <a name="x-TIX"> </a>
+          </td>
+          <td>Southern Tiwa</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  x-KIO
+            <a name="x-KIO"> </a>
+          </td>
+          <td>Kiowa</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  x-TEW
+            <a name="x-TEW"> </a>
+          </td>
+          <td>Tewa</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  x-TOW
+            <a name="x-TOW"> </a>
+          </td>
+          <td>Jemez</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>
+            <span style="color: grey">
+              <i>(_Muskogean)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Muskogean"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_CentralMuskogean)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_CentralMuskogean"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-AKZ
+            <a name="x-AKZ"> </a>
+          </td>
+          <td>Alabama</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-CKU
+            <a name="x-CKU"> </a>
+          </td>
+          <td>Koasati</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-MIK
+            <a name="x-MIK"> </a>
+          </td>
+          <td>Mikasuki</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_WesternMuskogean)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_WesternMuskogean"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-CCT
+            <a name="x-CCT"> </a>
+          </td>
+          <td>Choctaw</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-CIC
+            <a name="x-CIC"> </a>
+          </td>
+          <td>Chickasaw</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  x-CRK
+            <a name="x-CRK"> </a>
+          </td>
+          <td>Creek</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>
+            <span style="color: grey">
+              <i>(_Nadene)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Nadene"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_AthapaskanEyak)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_AthapaskanEyak"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    
+            <span style="color: grey">
+              <i>(_Athapaskan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Athapaskan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      
+            <span style="color: grey">
+              <i>(_Apachean)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Apachean"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        
+            <span style="color: grey">
+              <i>(_EasternApachean)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_EasternApachean"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>6</td>
+          <td>          x-APJ
+            <a name="x-APJ"> </a>
+          </td>
+          <td>Jicarilla</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>6</td>
+          <td>          x-APL
+            <a name="x-APL"> </a>
+          </td>
+          <td>Lipan</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        
+            <span style="color: grey">
+              <i>(_WesternApachean)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_WesternApachean"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>6</td>
+          <td>          x-APM
+            <a name="x-APM"> </a>
+          </td>
+          <td>Mescalero-Chiricahua</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>6</td>
+          <td>          x-APW
+            <a name="x-APW"> </a>
+          </td>
+          <td>Western Apache</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>6</td>
+          <td>          x-NAV
+            <a name="x-NAV"> </a>
+          </td>
+          <td>Dine</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        x-APK
+            <a name="x-APK"> </a>
+          </td>
+          <td>Kiowa Apache</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      
+            <span style="color: grey">
+              <i>(_CentralAlaskaYukon)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_CentralAlaskaYukon"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        
+            <span style="color: grey">
+              <i>(_KoyukonIngalik)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_KoyukonIngalik"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>6</td>
+          <td>          x-HOI
+            <a name="x-HOI"> </a>
+          </td>
+          <td>Holikachuk</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>6</td>
+          <td>          x-ING
+            <a name="x-ING"> </a>
+          </td>
+          <td>Degexit&#39;an</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>6</td>
+          <td>          x-KOY
+            <a name="x-KOY"> </a>
+          </td>
+          <td>Koyukon</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        
+            <span style="color: grey">
+              <i>(_KutchinHan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_KutchinHan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>6</td>
+          <td>          x-HAA
+            <a name="x-HAA"> </a>
+          </td>
+          <td>Han</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>6</td>
+          <td>          x-KUC
+            <a name="x-KUC"> </a>
+          </td>
+          <td>Kutchin</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        
+            <span style="color: grey">
+              <i>(_TananaTutchone)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_TananaTutchone"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>6</td>
+          <td>          
+            <span style="color: grey">
+              <i>(_Tanana)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Tanana"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>7</td>
+          <td>            x-TAA
+            <a name="x-TAA"> </a>
+          </td>
+          <td>Lower Tanana</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>7</td>
+          <td>            x-TAU
+            <a name="x-TAU"> </a>
+          </td>
+          <td>Upper Tanana</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>7</td>
+          <td>            x-TCB
+            <a name="x-TCB"> </a>
+          </td>
+          <td>Tanacross</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>6</td>
+          <td>          x-KUU
+            <a name="x-KUU"> </a>
+          </td>
+          <td>Upper Kuskokwim</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      
+            <span style="color: grey">
+              <i>(_PacificCoastAthapaskan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_PacificCoastAthapaskan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        
+            <span style="color: grey">
+              <i>(_CaliforniaAthapaskan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_CaliforniaAthapaskan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>6</td>
+          <td>          x-HUP
+            <a name="x-HUP"> </a>
+          </td>
+          <td>Hupa</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>6</td>
+          <td>          x-KTW
+            <a name="x-KTW"> </a>
+          </td>
+          <td>Cahto</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        
+            <span style="color: grey">
+              <i>(_OregonAthapaskan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_OregonAthapaskan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>6</td>
+          <td>          x-TOL
+            <a name="x-TOL"> </a>
+          </td>
+          <td>Tolowa</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>6</td>
+          <td>          x-TUU
+            <a name="x-TUU"> </a>
+          </td>
+          <td>Tututni</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      
+            <span style="color: grey">
+              <i>(_SouthernAlaska)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_SouthernAlaska"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        x-AHT
+            <a name="x-AHT"> </a>
+          </td>
+          <td>Ahtna</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        x-TFN
+            <a name="x-TFN"> </a>
+          </td>
+          <td>Tanaina</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-EYA
+            <a name="x-EYA"> </a>
+          </td>
+          <td>Eyak</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  x-TLI
+            <a name="x-TLI"> </a>
+          </td>
+          <td>Tlingit</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>
+            <span style="color: grey">
+              <i>(_Penutian)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Penutian"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_Chinookan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Chinookan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    
+            <span style="color: grey">
+              <i>(_UpperChinook)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_UpperChinook"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      x-WAC
+            <a name="x-WAC"> </a>
+          </td>
+          <td>Kiksht</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_Coosan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Coosan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-COS
+            <a name="x-COS"> </a>
+          </td>
+          <td>Hanis</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_Maiduan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Maiduan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-MAI
+            <a name="x-MAI"> </a>
+          </td>
+          <td>Northwest Maidu</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-NMU
+            <a name="x-NMU"> </a>
+          </td>
+          <td>Northeast Maidu</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-NSZ
+            <a name="x-NSZ"> </a>
+          </td>
+          <td>Nisenan</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_PlateauPenutian)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_PlateauPenutian"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    
+            <span style="color: grey">
+              <i>(_Sahaptian)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Sahaptian"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      x-UMA
+            <a name="x-UMA"> </a>
+          </td>
+          <td>Umatilla</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      x-WAA
+            <a name="x-WAA"> </a>
+          </td>
+          <td>Walla Walla</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      x-WAR
+            <a name="x-WAR"> </a>
+          </td>
+          <td>Tenino</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      x-YAK
+            <a name="x-YAK"> </a>
+          </td>
+          <td>Yakima</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-KLA
+            <a name="x-KLA"> </a>
+          </td>
+          <td>Klamath-Modoc</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-NEZ
+            <a name="x-NEZ"> </a>
+          </td>
+          <td>Nez Perce</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_Takelman)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Takelman"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    
+            <span style="color: grey">
+              <i>(_Kalapuyan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Kalapuyan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      x-KAL
+            <a name="x-KAL"> </a>
+          </td>
+          <td>Central Kalapuyan</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_Tsimshianic)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Tsimshianic"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-TSI
+            <a name="x-TSI"> </a>
+          </td>
+          <td>Coast Tsimshain</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_Utian)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Utian"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    
+            <span style="color: grey">
+              <i>(_Miwokan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Miwokan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      
+            <span style="color: grey">
+              <i>(_EasternMiwok)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_EasternMiwok"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        x-CSM
+            <a name="x-CSM"> </a>
+          </td>
+          <td>Central Sierra Miwok</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        x-NSQ
+            <a name="x-NSQ"> </a>
+          </td>
+          <td>Northern Sierra Miwok</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        x-PMW
+            <a name="x-PMW"> </a>
+          </td>
+          <td>Plains Miwok</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        x-SKD
+            <a name="x-SKD"> </a>
+          </td>
+          <td>Southern Sierra Miwok</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      
+            <span style="color: grey">
+              <i>(_WesternMiwok)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_WesternMiwok"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        x-CSI
+            <a name="x-CSI"> </a>
+          </td>
+          <td>Coast Miwok</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        x-LMW
+            <a name="x-LMW"> </a>
+          </td>
+          <td>Lake Miwok</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_Wintuan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Wintuan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-WIT
+            <a name="x-WIT"> </a>
+          </td>
+          <td>Wintu-Nomlaki</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_Yokutsan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Yokutsan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-ENH
+            <a name="x-ENH"> </a>
+          </td>
+          <td>Kings River</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-GSH
+            <a name="x-GSH"> </a>
+          </td>
+          <td>Gashowu</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-PYL
+            <a name="x-PYL"> </a>
+          </td>
+          <td>Poso Creek</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-TKH
+            <a name="x-TKH"> </a>
+          </td>
+          <td>Tule-Kaweah</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>
+            <span style="color: grey">
+              <i>(_Pidgin)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Pidgin"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  x-CHH
+            <a name="x-CHH"> </a>
+          </td>
+          <td>Chinook Wawa</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>
+            <span style="color: grey">
+              <i>(_Salishan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Salishan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_CentralSalish)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_CentralSalish"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-CLM
+            <a name="x-CLM"> </a>
+          </td>
+          <td>Clallam</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-LUT
+            <a name="x-LUT"> </a>
+          </td>
+          <td>Lushootseed</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-STR
+            <a name="x-STR"> </a>
+          </td>
+          <td>Northern Straits</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_InteriorSalish)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_InteriorSalish"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-COL
+            <a name="x-COL"> </a>
+          </td>
+          <td>Columbian</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-CRD
+            <a name="x-CRD"> </a>
+          </td>
+          <td>Coeur D&#39;alene</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-FLA
+            <a name="x-FLA"> </a>
+          </td>
+          <td>Kalispel</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-OKA
+            <a name="x-OKA"> </a>
+          </td>
+          <td>Okanagan</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_Tsamosan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Tsamosan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-CEA
+            <a name="x-CEA"> </a>
+          </td>
+          <td>Lower Chehalis</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-CJH
+            <a name="x-CJH"> </a>
+          </td>
+          <td>Upper Chehalis</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-COW
+            <a name="x-COW"> </a>
+          </td>
+          <td>Cowlitz</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-QUN
+            <a name="x-QUN"> </a>
+          </td>
+          <td>Quinault</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>
+            <span style="color: grey">
+              <i>(_SiouanCatawba)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_SiouanCatawba"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_Siouan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Siouan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    
+            <span style="color: grey">
+              <i>(_MississippiValley)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_MississippiValley"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      
+            <span style="color: grey">
+              <i>(_ChiwereWinnebago)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_ChiwereWinnebago"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        x-IOW
+            <a name="x-IOW"> </a>
+          </td>
+          <td>Chiwere</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        x-WIN
+            <a name="x-WIN"> </a>
+          </td>
+          <td>Hocak</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      
+            <span style="color: grey">
+              <i>(_Dakotan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Dakotan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        x-ASB
+            <a name="x-ASB"> </a>
+          </td>
+          <td>Assiniboine</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        x-DHG
+            <a name="x-DHG"> </a>
+          </td>
+          <td>Dakota</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        x-LKT
+            <a name="x-LKT"> </a>
+          </td>
+          <td>Lakota</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        x-NKT
+            <a name="x-NKT"> </a>
+          </td>
+          <td>Nakota</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      
+            <span style="color: grey">
+              <i>(_Dhegiha)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Dhegiha"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        x-KAA
+            <a name="x-KAA"> </a>
+          </td>
+          <td>Kansa</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        x-OMA
+            <a name="x-OMA"> </a>
+          </td>
+          <td>Omaha-Ponca</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        x-OSA
+            <a name="x-OSA"> </a>
+          </td>
+          <td>Osage</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>5</td>
+          <td>        x-QUA
+            <a name="x-QUA"> </a>
+          </td>
+          <td>Quapaw</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    
+            <span style="color: grey">
+              <i>(_MissouriRiver)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_MissouriRiver"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      x-CRO
+            <a name="x-CRO"> </a>
+          </td>
+          <td>Crow</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      x-HID
+            <a name="x-HID"> </a>
+          </td>
+          <td>Hidatsa</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-MHQ
+            <a name="x-MHQ"> </a>
+          </td>
+          <td>Mandan</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>
+            <span style="color: grey">
+              <i>(_UtoAztecan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_UtoAztecan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_Numic)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Numic"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    
+            <span style="color: grey">
+              <i>(_CentralNumic)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_CentralNumic"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      x-COM
+            <a name="x-COM"> </a>
+          </td>
+          <td>Comanche</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      x-PAR
+            <a name="x-PAR"> </a>
+          </td>
+          <td>Panamint</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      x-SHH
+            <a name="x-SHH"> </a>
+          </td>
+          <td>Shoshone</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    
+            <span style="color: grey">
+              <i>(_SouthernNumic)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_SouthernNumic"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      x-KAW
+            <a name="x-KAW"> </a>
+          </td>
+          <td>Kawaiisu</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      x-UTE
+            <a name="x-UTE"> </a>
+          </td>
+          <td>Ute-Southern Paiute</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    
+            <span style="color: grey">
+              <i>(_WesternNumic)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_WesternNumic"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      x-MON
+            <a name="x-MON"> </a>
+          </td>
+          <td>Mono</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      x-PAO
+            <a name="x-PAO"> </a>
+          </td>
+          <td>Northern Paiute-Bannock</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_Takic)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Takic"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    
+            <span style="color: grey">
+              <i>(_Cupan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Cupan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      x-CHL
+            <a name="x-CHL"> </a>
+          </td>
+          <td>Cahuilla</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      x-CUP
+            <a name="x-CUP"> </a>
+          </td>
+          <td>Cupeno</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      x-LUI
+            <a name="x-LUI"> </a>
+          </td>
+          <td>Luiseno</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    
+            <span style="color: grey">
+              <i>(_SerranoGabrielino)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_SerranoGabrielino"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      x-SER
+            <a name="x-SER"> </a>
+          </td>
+          <td>Serrano</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_Taracahitan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Taracahitan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    
+            <span style="color: grey">
+              <i>(_Cahitan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Cahitan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>4</td>
+          <td>      x-YAQ
+            <a name="x-YAQ"> </a>
+          </td>
+          <td>Yaqui</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_Tepiman)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Tepiman"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-PAP
+            <a name="x-PAP"> </a>
+          </td>
+          <td>Papago-Pima</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  x-HOP
+            <a name="x-HOP"> </a>
+          </td>
+          <td>Hopi</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  x-TUB
+            <a name="x-TUB"> </a>
+          </td>
+          <td>Tubatululabal</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>
+            <span style="color: grey">
+              <i>(_Wakashan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Wakashan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  
+            <span style="color: grey">
+              <i>(_Nootkan)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Nootkan"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>3</td>
+          <td>    x-MYH
+            <a name="x-MYH"> </a>
+          </td>
+          <td>Makah</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>
+            <span style="color: grey">
+              <i>(_Yukian)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Yukian"> </a>
+          </td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  x-WAO
+            <a name="x-WAO"> </a>
+          </td>
+          <td>Wappo</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  x-YUK
+            <a name="x-YUK"> </a>
+          </td>
+          <td>Yuki</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>x-HAI
+            <a name="x-HAI"> </a>
+          </td>
+          <td>Haida</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>x-KUN
+            <a name="x-KUN"> </a>
+          </td>
+          <td>Kootenai</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>x-PSD
+            <a name="x-PSD"> </a>
+          </td>
+          <td>Plains Indian Sign Language</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>x-YUC
+            <a name="x-YUC"> </a>
+          </td>
+          <td>Yuchi</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>x-ZUN
+            <a name="x-ZUN"> </a>
+          </td>
+          <td>Zuni</td>
+          <td/>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/AmericanIndianAlaskaNativeLanguages"/>
+  <name value="v3 Code System AmericanIndianAlaskaNativeLanguages"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" American Indian and Alaska Native languages currently being used in the United States."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="_Algic"/>
+      <abstract value="true"/>
+      <display value="Algic"/>
+      <concept>
+        <code value="_Algonquian"/>
+        <abstract value="true"/>
+        <display value="Algonquian"/>
+        <concept>
+          <code value="_Arapahoan"/>
+          <abstract value="true"/>
+          <display value="Arapahoan"/>
+          <concept>
+            <code value="_ArapahoGrosVentre"/>
+            <abstract value="true"/>
+            <display value="ArapahoGrosVentre"/>
+            <concept>
+              <code value="x-ARP"/>
+              <display value="Arapaho"/>
+            </concept>
+            <concept>
+              <code value="x-ATS"/>
+              <display value="Gros Ventre"/>
+            </concept>
+          </concept>
+        </concept>
+        <concept>
+          <code value="_CreeMontagnais"/>
+          <abstract value="true"/>
+          <display value="CreeMontagnais"/>
+          <concept>
+            <code value="_Cree"/>
+            <abstract value="true"/>
+            <display value="Cree"/>
+            <concept>
+              <code value="x-CRP"/>
+              <display value="Western Cree"/>
+            </concept>
+          </concept>
+        </concept>
+        <concept>
+          <code value="_EasternAlgonquin"/>
+          <abstract value="true"/>
+          <display value="EasternAlgonquin"/>
+          <concept>
+            <code value="_Abenakian"/>
+            <abstract value="true"/>
+            <display value="Abenakian"/>
+            <concept>
+              <code value="x-AAQ"/>
+              <display value="Eastern Abenaki"/>
+            </concept>
+            <concept>
+              <code value="x-ABE"/>
+              <display value="Western Abenaki"/>
+            </concept>
+            <concept>
+              <code value="x-MAC"/>
+              <display value="Maliseet-Passamaquoddy"/>
+            </concept>
+          </concept>
+          <concept>
+            <code value="_Delawaran"/>
+            <abstract value="true"/>
+            <display value="Delawaran"/>
+            <concept>
+              <code value="x-DEL"/>
+              <display value="Unami Delaware"/>
+            </concept>
+          </concept>
+          <concept>
+            <code value="x-MIC"/>
+            <display value="Micmac"/>
+          </concept>
+        </concept>
+        <concept>
+          <code value="_Ojibwayan"/>
+          <abstract value="true"/>
+          <display value="Ojibwayan"/>
+          <concept>
+            <code value="x-OJB"/>
+            <display value="Southern Ojibwa"/>
+          </concept>
+          <concept>
+            <code value="x-POT"/>
+            <display value="Potawatami"/>
+          </concept>
+        </concept>
+        <concept>
+          <code value="_SaukFoxKickapoo"/>
+          <abstract value="true"/>
+          <display value="SaukFoxKickapoo"/>
+          <concept>
+            <code value="x-KIC"/>
+            <display value="Kickapoo"/>
+          </concept>
+          <concept>
+            <code value="x-SAC"/>
+            <display value="Mesquakie"/>
+          </concept>
+          <concept>
+            <code value="x-SJW"/>
+            <display value="Shawnee"/>
+          </concept>
+        </concept>
+        <concept>
+          <code value="x-BLC"/>
+          <display value="Blackfoot"/>
+        </concept>
+        <concept>
+          <code value="x-CHY"/>
+          <display value="Cheyenne"/>
+        </concept>
+        <concept>
+          <code value="x-MEZ"/>
+          <display value="Menominee"/>
+        </concept>
+      </concept>
+      <concept>
+        <code value="_Ritwan"/>
+        <abstract value="true"/>
+        <display value="Ritwan"/>
+        <concept>
+          <code value="x-YUR"/>
+          <display value="Yurok"/>
+        </concept>
+      </concept>
+    </concept>
+    <concept>
+      <code value="_Caddoan"/>
+      <abstract value="true"/>
+      <display value="Caddoan"/>
+      <concept>
+        <code value="_NorthernCaddoan"/>
+        <abstract value="true"/>
+        <display value="NorthernCaddoan"/>
+        <concept>
+          <code value="x-ARI"/>
+          <display value="Arikara"/>
+        </concept>
+        <concept>
+          <code value="x-PAW"/>
+          <display value="Pawnee"/>
+        </concept>
+        <concept>
+          <code value="x-WIC"/>
+          <display value="Wichita"/>
+        </concept>
+      </concept>
+      <concept>
+        <code value="_SouthernCaddoan"/>
+        <abstract value="true"/>
+        <display value="SouthernCaddoan"/>
+        <concept>
+          <code value="x-CAD"/>
+          <display value="Caddo"/>
+        </concept>
+      </concept>
+    </concept>
+    <concept>
+      <code value="_Chimakuan"/>
+      <abstract value="true"/>
+      <display value="Chimakuan"/>
+      <concept>
+        <code value="x-QUI"/>
+        <display value="Quileute"/>
+      </concept>
+    </concept>
+    <concept>
+      <code value="_EskimoAleut"/>
+      <abstract value="true"/>
+      <display value="EskimoAleut"/>
+      <concept>
+        <code value="_Aleut"/>
+        <abstract value="true"/>
+        <display value="Aleut"/>
+        <concept>
+          <code value="x-ALW"/>
+          <display value="Aleut"/>
+        </concept>
+      </concept>
+      <concept>
+        <code value="_Eskimoan"/>
+        <abstract value="true"/>
+        <display value="Eskimoan"/>
+        <concept>
+          <code value="_InuitInupiaq"/>
+          <abstract value="true"/>
+          <display value="InuitInupiaq"/>
+          <concept>
+            <code value="x-ESI"/>
+            <display value="North Alaskan Inuktitut"/>
+          </concept>
+          <concept>
+            <code value="x-ESK"/>
+            <display value="Northwest Alaska Inuktitut"/>
+          </concept>
+        </concept>
+        <concept>
+          <code value="_SirenikskiYupik"/>
+          <abstract value="true"/>
+          <display value="SirenikskiYupik"/>
+          <concept>
+            <code value="x-EMS"/>
+            <display value="Pacific Yupik Gulf"/>
+          </concept>
+          <concept>
+            <code value="x-ESS"/>
+            <display value="Central Siberian Yupik"/>
+          </concept>
+          <concept>
+            <code value="x-ESU"/>
+            <display value="Central Alaskan Yupik"/>
+          </concept>
+        </concept>
+      </concept>
+    </concept>
+    <concept>
+      <code value="_Hokan"/>
+      <abstract value="true"/>
+      <display value="Hokan"/>
+      <concept>
+        <code value="_CochimiYuman"/>
+        <abstract value="true"/>
+        <display value="CochimiYuman"/>
+        <concept>
+          <code value="_Yuman"/>
+          <abstract value="true"/>
+          <display value="Yuman"/>
+          <concept>
+            <code value="_DeltaCalifornia"/>
+            <abstract value="true"/>
+            <display value="DeltaCalifornia"/>
+            <concept>
+              <code value="_Diegueno"/>
+              <abstract value="true"/>
+              <display value="Diegueno"/>
+              <concept>
+                <code value="x-DIH"/>
+                <display value="Kumeyaay"/>
+              </concept>
+            </concept>
+            <concept>
+              <code value="x-COC"/>
+              <display value="Cocopa"/>
+            </concept>
+          </concept>
+          <concept>
+            <code value="_Pai"/>
+            <abstract value="true"/>
+            <display value="Pai"/>
+            <concept>
+              <code value="x-YUF"/>
+              <display value="Havasupai"/>
+            </concept>
+          </concept>
+          <concept>
+            <code value="_River"/>
+            <abstract value="true"/>
+            <display value="River"/>
+            <concept>
+              <code value="x-MOV"/>
+              <display value="Mohave"/>
+            </concept>
+            <concept>
+              <code value="x-MRC"/>
+              <display value="Maricopa"/>
+            </concept>
+            <concept>
+              <code value="x-YUM"/>
+              <display value="Quechan"/>
+            </concept>
+          </concept>
+        </concept>
+      </concept>
+      <concept>
+        <code value="_Palaihnihan"/>
+        <abstract value="true"/>
+        <display value="Palaihnihan"/>
+        <concept>
+          <code value="x-ACH"/>
+          <display value="Achumawi"/>
+        </concept>
+        <concept>
+          <code value="x-ATW"/>
+          <display value="Atsugewi"/>
+        </concept>
+      </concept>
+      <concept>
+        <code value="_Pomoan"/>
+        <abstract value="true"/>
+        <display value="Pomoan"/>
+        <concept>
+          <code value="x-KJU"/>
+          <display value="Kashaya"/>
+        </concept>
+        <concept>
+          <code value="x-PEF"/>
+          <display value="Northeastern Pomo"/>
+        </concept>
+        <concept>
+          <code value="x-PEO"/>
+          <display value="Southeastern Pomo"/>
+        </concept>
+        <concept>
+          <code value="x-PEQ"/>
+          <display value="Southern Pomo"/>
+        </concept>
+        <concept>
+          <code value="x-POO"/>
+          <display value="Central Pomo"/>
+        </concept>
+      </concept>
+      <concept>
+        <code value="_Shasta"/>
+        <abstract value="true"/>
+        <display value="Shasta"/>
+        <concept>
+          <code value="x-SHT"/>
+          <display value="Shasta"/>
+        </concept>
+      </concept>
+      <concept>
+        <code value="x-KYH"/>
+        <display value="Karok"/>
+      </concept>
+      <concept>
+        <code value="x-WAS"/>
+        <display value="Washoe"/>
+      </concept>
+    </concept>
+    <concept>
+      <code value="_Iroquoian"/>
+      <abstract value="true"/>
+      <display value="Iroquoian"/>
+      <concept>
+        <code value="_NorthernIroquoian"/>
+        <abstract value="true"/>
+        <display value="NorthernIroquoian"/>
+        <concept>
+          <code value="x-CAY"/>
+          <display value="Cayuga"/>
+        </concept>
+        <concept>
+          <code value="x-MOH"/>
+          <display value="Mohawk"/>
+        </concept>
+        <concept>
+          <code value="x-ONE"/>
+          <display value="Oneida"/>
+        </concept>
+        <concept>
+          <code value="x-ONO"/>
+          <display value="Onondaga"/>
+        </concept>
+        <concept>
+          <code value="x-SEE"/>
+          <display value="Seneca"/>
+        </concept>
+        <concept>
+          <code value="x-TUS"/>
+          <display value="Tuscarora"/>
+        </concept>
+      </concept>
+      <concept>
+        <code value="x-CER"/>
+        <display value="Cherokee"/>
+      </concept>
+    </concept>
+    <concept>
+      <code value="_Keresan"/>
+      <abstract value="true"/>
+      <display value="Keresan"/>
+      <concept>
+        <code value="x-KEE"/>
+        <display value="Rio Grande Keresan"/>
+      </concept>
+      <concept>
+        <code value="x-KJQ"/>
+        <display value="Acoma-Laguna"/>
+      </concept>
+    </concept>
+    <concept>
+      <code value="_KiowaTanoan"/>
+      <abstract value="true"/>
+      <display value="KiowaTanoan"/>
+      <concept>
+        <code value="_Tiwa"/>
+        <abstract value="true"/>
+        <display value="Tiwa"/>
+        <concept>
+          <code value="x-TAO"/>
+          <display value="Northern Tiwa"/>
+        </concept>
+        <concept>
+          <code value="x-TIX"/>
+          <display value="Southern Tiwa"/>
+        </concept>
+      </concept>
+      <concept>
+        <code value="x-KIO"/>
+        <display value="Kiowa"/>
+      </concept>
+      <concept>
+        <code value="x-TEW"/>
+        <display value="Tewa"/>
+      </concept>
+      <concept>
+        <code value="x-TOW"/>
+        <display value="Jemez"/>
+      </concept>
+    </concept>
+    <concept>
+      <code value="_Muskogean"/>
+      <abstract value="true"/>
+      <display value="Muskogean"/>
+      <concept>
+        <code value="_CentralMuskogean"/>
+        <abstract value="true"/>
+        <display value="CentralMuskogean"/>
+        <concept>
+          <code value="x-AKZ"/>
+          <display value="Alabama"/>
+        </concept>
+        <concept>
+          <code value="x-CKU"/>
+          <display value="Koasati"/>
+        </concept>
+        <concept>
+          <code value="x-MIK"/>
+          <display value="Mikasuki"/>
+        </concept>
+      </concept>
+      <concept>
+        <code value="_WesternMuskogean"/>
+        <abstract value="true"/>
+        <display value="WesternMuskogean"/>
+        <concept>
+          <code value="x-CCT"/>
+          <display value="Choctaw"/>
+        </concept>
+        <concept>
+          <code value="x-CIC"/>
+          <display value="Chickasaw"/>
+        </concept>
+      </concept>
+      <concept>
+        <code value="x-CRK"/>
+        <display value="Creek"/>
+      </concept>
+    </concept>
+    <concept>
+      <code value="_Nadene"/>
+      <abstract value="true"/>
+      <display value="Nadene"/>
+      <concept>
+        <code value="_AthapaskanEyak"/>
+        <abstract value="true"/>
+        <display value="AthapaskanEyak"/>
+        <concept>
+          <code value="_Athapaskan"/>
+          <abstract value="true"/>
+          <display value="Athapaskan"/>
+          <concept>
+            <code value="_Apachean"/>
+            <abstract value="true"/>
+            <display value="Apachean"/>
+            <concept>
+              <code value="_EasternApachean"/>
+              <abstract value="true"/>
+              <display value="EasternApachean"/>
+              <concept>
+                <code value="x-APJ"/>
+                <display value="Jicarilla"/>
+              </concept>
+              <concept>
+                <code value="x-APL"/>
+                <display value="Lipan"/>
+              </concept>
+            </concept>
+            <concept>
+              <code value="_WesternApachean"/>
+              <abstract value="true"/>
+              <display value="WesternApachean"/>
+              <concept>
+                <code value="x-APM"/>
+                <display value="Mescalero-Chiricahua"/>
+              </concept>
+              <concept>
+                <code value="x-APW"/>
+                <display value="Western Apache"/>
+              </concept>
+              <concept>
+                <code value="x-NAV"/>
+                <display value="Dine"/>
+              </concept>
+            </concept>
+            <concept>
+              <code value="x-APK"/>
+              <display value="Kiowa Apache"/>
+            </concept>
+          </concept>
+          <concept>
+            <code value="_CentralAlaskaYukon"/>
+            <abstract value="true"/>
+            <display value="CentralAlaskaYukon"/>
+            <concept>
+              <code value="_KoyukonIngalik"/>
+              <abstract value="true"/>
+              <display value="KoyukonIngalik"/>
+              <concept>
+                <code value="x-HOI"/>
+                <display value="Holikachuk"/>
+              </concept>
+              <concept>
+                <code value="x-ING"/>
+                <display value="Degexit&#39;an"/>
+              </concept>
+              <concept>
+                <code value="x-KOY"/>
+                <display value="Koyukon"/>
+              </concept>
+            </concept>
+            <concept>
+              <code value="_KutchinHan"/>
+              <abstract value="true"/>
+              <display value="KutchinHan"/>
+              <concept>
+                <code value="x-HAA"/>
+                <display value="Han"/>
+              </concept>
+              <concept>
+                <code value="x-KUC"/>
+                <display value="Kutchin"/>
+              </concept>
+            </concept>
+            <concept>
+              <code value="_TananaTutchone"/>
+              <abstract value="true"/>
+              <display value="TananaTutchone"/>
+              <concept>
+                <code value="_Tanana"/>
+                <abstract value="true"/>
+                <display value="Tanana"/>
+                <concept>
+                  <code value="x-TAA"/>
+                  <display value="Lower Tanana"/>
+                </concept>
+                <concept>
+                  <code value="x-TAU"/>
+                  <display value="Upper Tanana"/>
+                </concept>
+                <concept>
+                  <code value="x-TCB"/>
+                  <display value="Tanacross"/>
+                </concept>
+              </concept>
+              <concept>
+                <code value="x-KUU"/>
+                <display value="Upper Kuskokwim"/>
+              </concept>
+            </concept>
+          </concept>
+          <concept>
+            <code value="_PacificCoastAthapaskan"/>
+            <abstract value="true"/>
+            <display value="PacificCoastAthapaskan"/>
+            <concept>
+              <code value="_CaliforniaAthapaskan"/>
+              <abstract value="true"/>
+              <display value="CaliforniaAthapaskan"/>
+              <concept>
+                <code value="x-HUP"/>
+                <display value="Hupa"/>
+              </concept>
+              <concept>
+                <code value="x-KTW"/>
+                <display value="Cahto"/>
+              </concept>
+            </concept>
+            <concept>
+              <code value="_OregonAthapaskan"/>
+              <abstract value="true"/>
+              <display value="OregonAthapaskan"/>
+              <concept>
+                <code value="x-TOL"/>
+                <display value="Tolowa"/>
+              </concept>
+              <concept>
+                <code value="x-TUU"/>
+                <display value="Tututni"/>
+              </concept>
+            </concept>
+          </concept>
+          <concept>
+            <code value="_SouthernAlaska"/>
+            <abstract value="true"/>
+            <display value="SouthernAlaska"/>
+            <concept>
+              <code value="x-AHT"/>
+              <display value="Ahtna"/>
+            </concept>
+            <concept>
+              <code value="x-TFN"/>
+              <display value="Tanaina"/>
+            </concept>
+          </concept>
+        </concept>
+        <concept>
+          <code value="x-EYA"/>
+          <display value="Eyak"/>
+        </concept>
+      </concept>
+      <concept>
+        <code value="x-TLI"/>
+        <display value="Tlingit"/>
+      </concept>
+    </concept>
+    <concept>
+      <code value="_Penutian"/>
+      <abstract value="true"/>
+      <display value="Penutian"/>
+      <concept>
+        <code value="_Chinookan"/>
+        <abstract value="true"/>
+        <display value="Chinookan"/>
+        <concept>
+          <code value="_UpperChinook"/>
+          <abstract value="true"/>
+          <display value="UpperChinook"/>
+          <concept>
+            <code value="x-WAC"/>
+            <display value="Kiksht"/>
+          </concept>
+        </concept>
+      </concept>
+      <concept>
+        <code value="_Coosan"/>
+        <abstract value="true"/>
+        <display value="Coosan"/>
+        <concept>
+          <code value="x-COS"/>
+          <display value="Hanis"/>
+        </concept>
+      </concept>
+      <concept>
+        <code value="_Maiduan"/>
+        <abstract value="true"/>
+        <display value="Maiduan"/>
+        <concept>
+          <code value="x-MAI"/>
+          <display value="Northwest Maidu"/>
+        </concept>
+        <concept>
+          <code value="x-NMU"/>
+          <display value="Northeast Maidu"/>
+        </concept>
+        <concept>
+          <code value="x-NSZ"/>
+          <display value="Nisenan"/>
+        </concept>
+      </concept>
+      <concept>
+        <code value="_PlateauPenutian"/>
+        <abstract value="true"/>
+        <display value="PlateauPenutian"/>
+        <concept>
+          <code value="_Sahaptian"/>
+          <abstract value="true"/>
+          <display value="Sahaptian"/>
+          <concept>
+            <code value="x-UMA"/>
+            <display value="Umatilla"/>
+          </concept>
+          <concept>
+            <code value="x-WAA"/>
+            <display value="Walla Walla"/>
+          </concept>
+          <concept>
+            <code value="x-WAR"/>
+            <display value="Tenino"/>
+          </concept>
+          <concept>
+            <code value="x-YAK"/>
+            <display value="Yakima"/>
+          </concept>
+        </concept>
+        <concept>
+          <code value="x-KLA"/>
+          <display value="Klamath-Modoc"/>
+        </concept>
+        <concept>
+          <code value="x-NEZ"/>
+          <display value="Nez Perce"/>
+        </concept>
+      </concept>
+      <concept>
+        <code value="_Takelman"/>
+        <abstract value="true"/>
+        <display value="Takelman"/>
+        <concept>
+          <code value="_Kalapuyan"/>
+          <abstract value="true"/>
+          <display value="Kalapuyan"/>
+          <concept>
+            <code value="x-KAL"/>
+            <display value="Central Kalapuyan"/>
+          </concept>
+        </concept>
+      </concept>
+      <concept>
+        <code value="_Tsimshianic"/>
+        <abstract value="true"/>
+        <display value="Tsimshianic"/>
+        <concept>
+          <code value="x-TSI"/>
+          <display value="Coast Tsimshain"/>
+        </concept>
+      </concept>
+      <concept>
+        <code value="_Utian"/>
+        <abstract value="true"/>
+        <display value="Utian"/>
+        <concept>
+          <code value="_Miwokan"/>
+          <abstract value="true"/>
+          <display value="Miwokan"/>
+          <concept>
+            <code value="_EasternMiwok"/>
+            <abstract value="true"/>
+            <display value="EasternMiwok"/>
+            <concept>
+              <code value="x-CSM"/>
+              <display value="Central Sierra Miwok"/>
+            </concept>
+            <concept>
+              <code value="x-NSQ"/>
+              <display value="Northern Sierra Miwok"/>
+            </concept>
+            <concept>
+              <code value="x-PMW"/>
+              <display value="Plains Miwok"/>
+            </concept>
+            <concept>
+              <code value="x-SKD"/>
+              <display value="Southern Sierra Miwok"/>
+            </concept>
+          </concept>
+          <concept>
+            <code value="_WesternMiwok"/>
+            <abstract value="true"/>
+            <display value="WesternMiwok"/>
+            <concept>
+              <code value="x-CSI"/>
+              <display value="Coast Miwok"/>
+            </concept>
+            <concept>
+              <code value="x-LMW"/>
+              <display value="Lake Miwok"/>
+            </concept>
+          </concept>
+        </concept>
+      </concept>
+      <concept>
+        <code value="_Wintuan"/>
+        <abstract value="true"/>
+        <display value="Wintuan"/>
+        <concept>
+          <code value="x-WIT"/>
+          <display value="Wintu-Nomlaki"/>
+        </concept>
+      </concept>
+      <concept>
+        <code value="_Yokutsan"/>
+        <abstract value="true"/>
+        <display value="Yokutsan"/>
+        <concept>
+          <code value="x-ENH"/>
+          <display value="Kings River"/>
+        </concept>
+        <concept>
+          <code value="x-GSH"/>
+          <display value="Gashowu"/>
+        </concept>
+        <concept>
+          <code value="x-PYL"/>
+          <display value="Poso Creek"/>
+        </concept>
+        <concept>
+          <code value="x-TKH"/>
+          <display value="Tule-Kaweah"/>
+        </concept>
+      </concept>
+    </concept>
+    <concept>
+      <code value="_Pidgin"/>
+      <abstract value="true"/>
+      <display value="Pidgin"/>
+      <concept>
+        <code value="x-CHH"/>
+        <display value="Chinook Wawa"/>
+      </concept>
+    </concept>
+    <concept>
+      <code value="_Salishan"/>
+      <abstract value="true"/>
+      <display value="Salishan"/>
+      <concept>
+        <code value="_CentralSalish"/>
+        <abstract value="true"/>
+        <display value="CentralSalish"/>
+        <concept>
+          <code value="x-CLM"/>
+          <display value="Clallam"/>
+        </concept>
+        <concept>
+          <code value="x-LUT"/>
+          <display value="Lushootseed"/>
+        </concept>
+        <concept>
+          <code value="x-STR"/>
+          <display value="Northern Straits"/>
+        </concept>
+      </concept>
+      <concept>
+        <code value="_InteriorSalish"/>
+        <abstract value="true"/>
+        <display value="InteriorSalish"/>
+        <concept>
+          <code value="x-COL"/>
+          <display value="Columbian"/>
+        </concept>
+        <concept>
+          <code value="x-CRD"/>
+          <display value="Coeur D&#39;alene"/>
+        </concept>
+        <concept>
+          <code value="x-FLA"/>
+          <display value="Kalispel"/>
+        </concept>
+        <concept>
+          <code value="x-OKA"/>
+          <display value="Okanagan"/>
+        </concept>
+      </concept>
+      <concept>
+        <code value="_Tsamosan"/>
+        <abstract value="true"/>
+        <display value="Tsamosan"/>
+        <concept>
+          <code value="x-CEA"/>
+          <display value="Lower Chehalis"/>
+        </concept>
+        <concept>
+          <code value="x-CJH"/>
+          <display value="Upper Chehalis"/>
+        </concept>
+        <concept>
+          <code value="x-COW"/>
+          <display value="Cowlitz"/>
+        </concept>
+        <concept>
+          <code value="x-QUN"/>
+          <display value="Quinault"/>
+        </concept>
+      </concept>
+    </concept>
+    <concept>
+      <code value="_SiouanCatawba"/>
+      <abstract value="true"/>
+      <display value="SiouanCatawba"/>
+      <concept>
+        <code value="_Siouan"/>
+        <abstract value="true"/>
+        <display value="Siouan"/>
+        <concept>
+          <code value="_MississippiValley"/>
+          <abstract value="true"/>
+          <display value="MississippiValley"/>
+          <concept>
+            <code value="_ChiwereWinnebago"/>
+            <abstract value="true"/>
+            <display value="ChiwereWinnebago"/>
+            <concept>
+              <code value="x-IOW"/>
+              <display value="Chiwere"/>
+            </concept>
+            <concept>
+              <code value="x-WIN"/>
+              <display value="Hocak"/>
+            </concept>
+          </concept>
+          <concept>
+            <code value="_Dakotan"/>
+            <abstract value="true"/>
+            <display value="Dakotan"/>
+            <concept>
+              <code value="x-ASB"/>
+              <display value="Assiniboine"/>
+            </concept>
+            <concept>
+              <code value="x-DHG"/>
+              <display value="Dakota"/>
+            </concept>
+            <concept>
+              <code value="x-LKT"/>
+              <display value="Lakota"/>
+            </concept>
+            <concept>
+              <code value="x-NKT"/>
+              <display value="Nakota"/>
+            </concept>
+          </concept>
+          <concept>
+            <code value="_Dhegiha"/>
+            <abstract value="true"/>
+            <display value="Dhegiha"/>
+            <concept>
+              <code value="x-KAA"/>
+              <display value="Kansa"/>
+            </concept>
+            <concept>
+              <code value="x-OMA"/>
+              <display value="Omaha-Ponca"/>
+            </concept>
+            <concept>
+              <code value="x-OSA"/>
+              <display value="Osage"/>
+            </concept>
+            <concept>
+              <code value="x-QUA"/>
+              <display value="Quapaw"/>
+            </concept>
+          </concept>
+        </concept>
+        <concept>
+          <code value="_MissouriRiver"/>
+          <abstract value="true"/>
+          <display value="MissouriRiver"/>
+          <concept>
+            <code value="x-CRO"/>
+            <display value="Crow"/>
+          </concept>
+          <concept>
+            <code value="x-HID"/>
+            <display value="Hidatsa"/>
+          </concept>
+        </concept>
+        <concept>
+          <code value="x-MHQ"/>
+          <display value="Mandan"/>
+        </concept>
+      </concept>
+    </concept>
+    <concept>
+      <code value="_UtoAztecan"/>
+      <abstract value="true"/>
+      <display value="UtoAztecan"/>
+      <concept>
+        <code value="_Numic"/>
+        <abstract value="true"/>
+        <display value="Numic"/>
+        <concept>
+          <code value="_CentralNumic"/>
+          <abstract value="true"/>
+          <display value="CentralNumic"/>
+          <concept>
+            <code value="x-COM"/>
+            <display value="Comanche"/>
+          </concept>
+          <concept>
+            <code value="x-PAR"/>
+            <display value="Panamint"/>
+          </concept>
+          <concept>
+            <code value="x-SHH"/>
+            <display value="Shoshone"/>
+          </concept>
+        </concept>
+        <concept>
+          <code value="_SouthernNumic"/>
+          <abstract value="true"/>
+          <display value="SouthernNumic"/>
+          <concept>
+            <code value="x-KAW"/>
+            <display value="Kawaiisu"/>
+          </concept>
+          <concept>
+            <code value="x-UTE"/>
+            <display value="Ute-Southern Paiute"/>
+          </concept>
+        </concept>
+        <concept>
+          <code value="_WesternNumic"/>
+          <abstract value="true"/>
+          <display value="WesternNumic"/>
+          <concept>
+            <code value="x-MON"/>
+            <display value="Mono"/>
+          </concept>
+          <concept>
+            <code value="x-PAO"/>
+            <display value="Northern Paiute-Bannock"/>
+          </concept>
+        </concept>
+      </concept>
+      <concept>
+        <code value="_Takic"/>
+        <abstract value="true"/>
+        <display value="Takic"/>
+        <concept>
+          <code value="_Cupan"/>
+          <abstract value="true"/>
+          <display value="Cupan"/>
+          <concept>
+            <code value="x-CHL"/>
+            <display value="Cahuilla"/>
+          </concept>
+          <concept>
+            <code value="x-CUP"/>
+            <display value="Cupeno"/>
+          </concept>
+          <concept>
+            <code value="x-LUI"/>
+            <display value="Luiseno"/>
+          </concept>
+        </concept>
+        <concept>
+          <code value="_SerranoGabrielino"/>
+          <abstract value="true"/>
+          <display value="SerranoGabrielino"/>
+          <concept>
+            <code value="x-SER"/>
+            <display value="Serrano"/>
+          </concept>
+        </concept>
+      </concept>
+      <concept>
+        <code value="_Taracahitan"/>
+        <abstract value="true"/>
+        <display value="Taracahitan"/>
+        <concept>
+          <code value="_Cahitan"/>
+          <abstract value="true"/>
+          <display value="Cahitan"/>
+          <concept>
+            <code value="x-YAQ"/>
+            <display value="Yaqui"/>
+          </concept>
+        </concept>
+      </concept>
+      <concept>
+        <code value="_Tepiman"/>
+        <abstract value="true"/>
+        <display value="Tepiman"/>
+        <concept>
+          <code value="x-PAP"/>
+          <display value="Papago-Pima"/>
+        </concept>
+      </concept>
+      <concept>
+        <code value="x-HOP"/>
+        <display value="Hopi"/>
+      </concept>
+      <concept>
+        <code value="x-TUB"/>
+        <display value="Tubatululabal"/>
+      </concept>
+    </concept>
+    <concept>
+      <code value="_Wakashan"/>
+      <abstract value="true"/>
+      <display value="Wakashan"/>
+      <concept>
+        <code value="_Nootkan"/>
+        <abstract value="true"/>
+        <display value="Nootkan"/>
+        <concept>
+          <code value="x-MYH"/>
+          <display value="Makah"/>
+        </concept>
+      </concept>
+    </concept>
+    <concept>
+      <code value="_Yukian"/>
+      <abstract value="true"/>
+      <display value="Yukian"/>
+      <concept>
+        <code value="x-WAO"/>
+        <display value="Wappo"/>
+      </concept>
+      <concept>
+        <code value="x-YUK"/>
+        <display value="Yuki"/>
+      </concept>
+    </concept>
+    <concept>
+      <code value="x-HAI"/>
+      <display value="Haida"/>
+    </concept>
+    <concept>
+      <code value="x-KUN"/>
+      <display value="Kootenai"/>
+    </concept>
+    <concept>
+      <code value="x-PSD"/>
+      <display value="Plains Indian Sign Language"/>
+    </concept>
+    <concept>
+      <code value="x-YUC"/>
+      <display value="Yuchi"/>
+    </concept>
+    <concept>
+      <code value="x-ZUN"/>
+      <display value="Zuni"/>
+    </concept>
+  </define>
+</ValueSet>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  These values are defined within the XHTML 4.0 Table Model
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>col
+            <a name="col"> </a>
+          </td>
+          <td>col</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>colgroup
+            <a name="colgroup"> </a>
+          </td>
+          <td>colgroup</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>row
+            <a name="row"> </a>
+          </td>
+          <td>row</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>rowgroup
+            <a name="rowgroup"> </a>
+          </td>
+          <td>rowgroup</td>
+          <td/>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/TableCellScope"/>
+  <name value="v3 Code System TableCellScope"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" These values are defined within the XHTML 4.0 Table Model"/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/TableCellScope"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="col"/>
+      <display value="col"/>
+    </concept>
+    <concept>
+      <code value="colgroup"/>
+      <display value="colgroup"/>
+    </concept>
+    <concept>
+      <code value="row"/>
+      <display value="row"/>
+    </concept>
+    <concept>
+      <code value="rowgroup"/>
+      <display value="rowgroup"/>
+    </concept>
+  </define>
+</ValueSet>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Provider Role</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>CP
+            <a name="CP"> </a>
+          </td>
+          <td>Consulting Provider</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>PP
+            <a name="PP"> </a>
+          </td>
+          <td>Primary Care Provider</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>RP
+            <a name="RP"> </a>
+          </td>
+          <td>Referring Provider</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>RT
+            <a name="RT"> </a>
+          </td>
+          <td>Referred to Provider</td>
+          <td>added v2.3</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0286"/>
+  <name value="v2 Provider Role"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0286 ( Provider Role)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0286"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="CP"/>
+      <display value="Consulting Provider"/>
+    </concept>
+    <concept>
+      <code value="PP"/>
+      <display value="Primary Care Provider"/>
+    </concept>
+    <concept>
+      <code value="RP"/>
+      <display value="Referring Provider"/>
+    </concept>
+    <concept>
+      <code value="RT"/>
+      <display value="Referred to Provider"/>
+    </concept>
+  </define>
+</ValueSet>

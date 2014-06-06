@@ -1,0 +1,343 @@
+{
+  "resourceType": "Profile",
+  "text": {
+    "status": "generated",
+    "div": "<div><pre>\r\n&lt;<a title=\"(informative) A slot of time on a schedule that may be available for booking appointments.\" class=\"dict\" href=\"slot-definitions.html#Slot\"><b>Slot</b></a> xmlns=&quot;http://hl7.org/fhir&quot;&gt; <span style=\"float: right\"><a title=\"Documentation for this format\" href=\"formats.html\"><img alt=\"doco\" src=\"help.png\"/></a></span>\r\n &lt;!-- from <a href=\"resources.html\">Resource</a>: <a href=\"extensibility.html\">extension</a>, <a href=\"extensibility.html#modifierExtension\">modifierExtension</a>, language, <a href=\"narrative.html#Narrative\">text</a>, and <a href=\"references.html#contained\">contained</a> --&gt;\r\n &lt;<a title=\"External Ids for this item.\" class=\"dict\" href=\"slot-definitions.html#Slot.identifier\"><b>identifier</b></a>&gt;<span style=\"color: Gray\">&lt;!--</span> <span style=\"color: brown\"><b>0..*</b></span> <span style=\"color: darkgreen\"><a href=\"datatypes.html#Identifier\">Identifier</a></span> <span style=\"color: navy\">External Ids for this item</span><span style=\"color: Gray\"> --&gt;</span>&lt;/identifier&gt;\r\n &lt;<a title=\"The type of appointments that can be booked into this slot (ideally this would be an identifiable service - which is at a location, rather than the location itself). If provided then this overrides the value provided on the availability resource.\" class=\"dict\" href=\"slot-definitions.html#Slot.type\"><b>type</b></a>&gt;<span style=\"color: Gray\">&lt;!--</span> <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: darkgreen\"><a href=\"datatypes.html#CodeableConcept\">CodeableConcept</a></span> <span style=\"color: navy\">\r\n     The type of appointments that can be booked into this slot (ideally this would be an identifiable service - which is at a location, rather than the location itself). If provided then this overrides the value provided on the availability resource</span><span style=\"color: Gray\"> --&gt;</span>&lt;/type&gt;\r\n &lt;<a title=\"The availability resource that this slot defines an interval of status information.\" class=\"dict\" href=\"slot-definitions.html#Slot.availability\"><b>availability</b></a>&gt;<span style=\"color: Gray\">&lt;!--</span> <span style=\"color: brown\"><b>1..1</b></span> <span style=\"color: darkgreen\"><a href=\"references.html#Resource\">Resource</a>(<a href=\"availability.html#Availability\">Availability</a>)</span> <span style=\"color: navy\">\r\n     The availability resource that this slot defines an interval of status information</span><span style=\"color: Gray\"> --&gt;</span>&lt;/availability&gt;\r\n &lt;<a title=\"BUSY | FREE | BUSY-UNAVAILABLE | BUSY-TENTATIVE.\" class=\"dict\" href=\"slot-definitions.html#Slot.freeBusyType\"><b>freeBusyType</b></a> value=&quot;[<span style=\"color: darkgreen\"><a href=\"datatypes.html#code\">code</a></span>]&quot;/&gt;<span style=\"color: Gray\">&lt;!--</span> <span style=\"color: brown\"><b>1..1</b></span> <span style=\"color: navy\"><a style=\"color: navy\" href=\"slotstatus.html\">BUSY | FREE | BUSY-UNAVAILABLE | BUSY-TENTATIVE</a></span><span style=\"color: Gray\"> --&gt;</span>\r\n &lt;<a title=\"Date/Time that the slot is to begin.\" class=\"dict\" href=\"slot-definitions.html#Slot.start\"><b>start</b></a> value=&quot;[<span style=\"color: darkgreen\"><a href=\"datatypes.html#instant\">instant</a></span>]&quot;/&gt;<span style=\"color: Gray\">&lt;!--</span> <span style=\"color: brown\"><b>1..1</b></span> <span style=\"color: navy\">Date/Time that the slot is to begin</span><span style=\"color: Gray\"> --&gt;</span>\r\n &lt;<a title=\"Date/Time that the slot is to conclude.\" class=\"dict\" href=\"slot-definitions.html#Slot.end\"><b>end</b></a> value=&quot;[<span style=\"color: darkgreen\"><a href=\"datatypes.html#instant\">instant</a></span>]&quot;/&gt;<span style=\"color: Gray\">&lt;!--</span> <span style=\"color: brown\"><b>1..1</b></span> <span style=\"color: navy\">Date/Time that the slot is to conclude</span><span style=\"color: Gray\"> --&gt;</span>\r\n &lt;<a title=\"This slot has already been overbooked, appointments are unlikely to be accepted for this time.\" class=\"dict\" href=\"slot-definitions.html#Slot.overbooked\"><b>overbooked</b></a> value=&quot;[<span style=\"color: darkgreen\"><a href=\"datatypes.html#boolean\">boolean</a></span>]&quot;/&gt;<span style=\"color: Gray\">&lt;!--</span> <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">\r\n     This slot has already been overbooked, appointments are unlikely to be accepted for this time</span><span style=\"color: Gray\"> --&gt;</span>\r\n &lt;<a title=\"Comments on the slot to describe any extended information. Such as custom constraints on the slot.\" class=\"dict\" href=\"slot-definitions.html#Slot.comment\"><b>comment</b></a> value=&quot;[<span style=\"color: darkgreen\"><a href=\"datatypes.html#string\">string</a></span>]&quot;/&gt;<span style=\"color: Gray\">&lt;!--</span> <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">\r\n     Comments on the slot to describe any extended information. Such as custom constraints on the slot</span><span style=\"color: Gray\"> --&gt;</span>\r\n &lt;<a title=\"When this slot was created, or last revised.\" class=\"dict\" href=\"slot-definitions.html#Slot.lastModified\"><b>lastModified</b></a> value=&quot;[<span style=\"color: darkgreen\"><a href=\"datatypes.html#dateTime\">dateTime</a></span>]&quot;/&gt;<span style=\"color: Gray\">&lt;!--</span> <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">When this slot was created, or last revised</span><span style=\"color: Gray\"> --&gt;</span>\r\n&lt;/Slot&gt;\r\n</pre></div>"
+  },
+  "identifier": "http://hl7.org/fhir/profile/slot",
+  "name": "slot",
+  "publisher": "FHIR Project",
+  "description": "Basic Profile. (informative) A slot of time on a schedule that may be available for booking appointments.",
+  "status": "draft",
+  "date": "2014-06-06",
+  "requirements": "Scope and Usage Slot resources are used to provide time-slots that can be booked using an appointment. They do not provide any information about appointments that are available, just the time, and optionally what the time can be used for. These are effectively spaces of free/busy time. HL7 v2.7 specifies the slot as a part of a schedule (availability in fhir): \r\n\r\nA schedule controls the dates and times available for the performance of a service and/or the use of a resource. One schedule applies to one service or resource, since each service or resource can be reserved independently of the others. (If two or more services, people, locations, or things cannot be reserved independently of one another, they are considered to be one activity or resource.) A schedule consists of slots of time during which the controlled service or resource is potentially available for performance or use. Slots are categorized as open, booked, or blocked. An open slot on a schedule indicates that the service or resource is available for performance or use during that period of time. A booked slot indicates that the service or resource is not available during the time period, because an appointment has been scheduled. A blocked slot indicates that a service or resource is unavailable for reasons other than a scheduled appointment. \r\n\r\nThe real-world, non-automated analog of the schedule described above is a standard appointment book. These books are generally organized with rows of time slots, during which a service or resource is available. \r\n\r\nA slot is one unit on a schedule. A slot represents the smallest unit of time or quantity that a service or resource may be booked. Depending on the nature of the service or resource, there may be more than one defined slot at a given instant of time. For example, if a service is an open group therapy session with twelve available seats, then there are twelve slots for the given block of time. \r\n\r\nIt is expected that servers could expose this information as an alternate representation using the iCalendar free/busy format.",
+  "mapping": [
+    {
+      "identity": "ical",
+      "uri": "http://www.ietf.org/rfc/rfc2445.txt",
+      "name": "iCalendar"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM"
+    }
+  ],
+  "structure": [
+    {
+      "type": "Slot",
+      "publish": true,
+      "element": [
+        {
+          "path": "Slot",
+          "definition": {
+            "short": "(informative) A slot of time on a schedule that may be available for booking appointments",
+            "formal": "(informative) A slot of time on a schedule that may be available for booking appointments.",
+            "min": 1,
+            "max": "1",
+            "type": [
+              {
+                "code": "Resource"
+              }
+            ],
+            "isModifier": false,
+            "mapping": [
+              {
+                "identity": "ical",
+                "map": "(refer to the Availability resource for the header mapping details)"
+              }
+            ]
+          }
+        },
+        {
+          "path": "Slot.extension",
+          "definition": {
+            "short": "Additional Content defined by implementations",
+            "formal": "May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "comments": "there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone.",
+            "synonym": [
+              "extensions",
+              "user content"
+            ],
+            "min": 0,
+            "max": "*",
+            "type": [
+              {
+                "code": "Extension"
+              }
+            ],
+            "isModifier": false
+          }
+        },
+        {
+          "path": "Slot.modifierExtension",
+          "definition": {
+            "short": "Extensions that cannot be ignored",
+            "formal": "May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
+            "comments": "there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core simplicity for everyone.",
+            "synonym": [
+              "extensions",
+              "user content"
+            ],
+            "min": 0,
+            "max": "*",
+            "type": [
+              {
+                "code": "Extension"
+              }
+            ],
+            "isModifier": false
+          }
+        },
+        {
+          "path": "Slot.text",
+          "definition": {
+            "short": "Text summary of the resource, for human interpretation",
+            "formal": "A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.",
+            "comments": "Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative.",
+            "synonym": [
+              "narrative",
+              "html",
+              "xhtml",
+              "display"
+            ],
+            "min": 0,
+            "max": "1",
+            "type": [
+              {
+                "code": "Narrative"
+              }
+            ],
+            "isModifier": false
+          }
+        },
+        {
+          "path": "Slot.contained",
+          "definition": {
+            "short": "Contained, inline Resources",
+            "formal": "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.",
+            "comments": "This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again.",
+            "synonym": [
+              "inline resources",
+              "anonymous resources",
+              "contained resources"
+            ],
+            "min": 0,
+            "max": "*",
+            "type": [
+              {
+                "code": "Resource"
+              }
+            ],
+            "isModifier": false
+          }
+        },
+        {
+          "path": "Slot.identifier",
+          "definition": {
+            "short": "External Ids for this item",
+            "formal": "External Ids for this item.",
+            "min": 0,
+            "max": "*",
+            "type": [
+              {
+                "code": "Identifier"
+              }
+            ],
+            "isModifier": false,
+            "mapping": [
+              {
+                "identity": "rim",
+                "map": ".id"
+              }
+            ]
+          }
+        },
+        {
+          "path": "Slot.type",
+          "definition": {
+            "short": "The type of appointments that can be booked into this slot (ideally this would be an identifiable service - which is at a location, rather than the location itself). If provided then this overrides the value provided on the availability resource",
+            "formal": "The type of appointments that can be booked into this slot (ideally this would be an identifiable service - which is at a location, rather than the location itself). If provided then this overrides the value provided on the availability resource.",
+            "min": 0,
+            "max": "1",
+            "type": [
+              {
+                "code": "CodeableConcept"
+              }
+            ],
+            "isModifier": false
+          }
+        },
+        {
+          "path": "Slot.availability",
+          "definition": {
+            "short": "The availability resource that this slot defines an interval of status information",
+            "formal": "The availability resource that this slot defines an interval of status information.",
+            "min": 1,
+            "max": "1",
+            "type": [
+              {
+                "code": "ResourceReference",
+                "profile": "http://hl7.org/fhir/profiles/Availability"
+              }
+            ],
+            "isModifier": false
+          }
+        },
+        {
+          "path": "Slot.freeBusyType",
+          "definition": {
+            "short": "BUSY | FREE | BUSY-UNAVAILABLE | BUSY-TENTATIVE",
+            "formal": "BUSY | FREE | BUSY-UNAVAILABLE | BUSY-TENTATIVE.",
+            "min": 1,
+            "max": "1",
+            "type": [
+              {
+                "code": "code"
+              }
+            ],
+            "isModifier": false,
+            "binding": {
+              "name": "SlotStatus",
+              "isExtensible": false,
+              "conformance": "required",
+              "description": "The free/busy status of an appointment",
+              "referenceResource": {
+                "reference": "http://hl7.org/fhir/vs/slotstatus"
+              }
+            },
+            "mapping": [
+              {
+                "identity": "ical",
+                "map": "FREEBUSY;FBTYPE=(freeBusyType):19980314T233000Z/19980315T003000Z\nIf the freeBusyType is BUSY, then this value can be excluded"
+              }
+            ]
+          }
+        },
+        {
+          "path": "Slot.start",
+          "definition": {
+            "short": "Date/Time that the slot is to begin",
+            "formal": "Date/Time that the slot is to begin.",
+            "min": 1,
+            "max": "1",
+            "type": [
+              {
+                "code": "instant"
+              }
+            ],
+            "isModifier": false,
+            "mapping": [
+              {
+                "identity": "ical",
+                "map": "FREEBUSY;FBTYPE=FREE:(start)/19980315T003000Z\nIf the freeBusyType is BUSY, then this value can be excluded"
+              }
+            ]
+          }
+        },
+        {
+          "path": "Slot.end",
+          "definition": {
+            "short": "Date/Time that the slot is to conclude",
+            "formal": "Date/Time that the slot is to conclude.",
+            "min": 1,
+            "max": "1",
+            "type": [
+              {
+                "code": "instant"
+              }
+            ],
+            "isModifier": false,
+            "mapping": [
+              {
+                "identity": "ical",
+                "map": "FREEBUSY:19980314T233000Z/(end)\nIf the freeBusyType is BUSY, then this value can be excluded (as shown)"
+              }
+            ]
+          }
+        },
+        {
+          "path": "Slot.overbooked",
+          "definition": {
+            "short": "This slot has already been overbooked, appointments are unlikely to be accepted for this time",
+            "formal": "This slot has already been overbooked, appointments are unlikely to be accepted for this time.",
+            "min": 0,
+            "max": "1",
+            "type": [
+              {
+                "code": "boolean"
+              }
+            ],
+            "isModifier": false
+          }
+        },
+        {
+          "path": "Slot.comment",
+          "definition": {
+            "short": "Comments on the slot to describe any extended information. Such as custom constraints on the slot",
+            "formal": "Comments on the slot to describe any extended information. Such as custom constraints on the slot.",
+            "min": 0,
+            "max": "1",
+            "type": [
+              {
+                "code": "string"
+              }
+            ],
+            "isModifier": false
+          }
+        },
+        {
+          "path": "Slot.lastModified",
+          "definition": {
+            "short": "When this slot was created, or last revised",
+            "formal": "When this slot was created, or last revised.",
+            "min": 0,
+            "max": "1",
+            "type": [
+              {
+                "code": "dateTime"
+              }
+            ],
+            "isModifier": false
+          }
+        }
+      ],
+      "searchParam": [
+        {
+          "name": "_id",
+          "type": "token",
+          "documentation": "The logical resource id associated with the resource (must be supported by all servers)"
+        },
+        {
+          "name": "_language",
+          "type": "token",
+          "documentation": "The stated language of the resource"
+        },
+        {
+          "name": "availability",
+          "type": "reference",
+          "documentation": "The Availability Resource that we are seeking a slot within",
+          "xpath": "f:Slot/f:availability"
+        },
+        {
+          "name": "fbtype",
+          "type": "token",
+          "documentation": "The free/busy status of the appointment",
+          "xpath": "f:Slot/f:freeBusyType"
+        },
+        {
+          "name": "slottype",
+          "type": "token",
+          "documentation": "The type of appointments that can be booked into the slot",
+          "xpath": "f:Slot/f:type"
+        },
+        {
+          "name": "start",
+          "type": "date",
+          "documentation": "Appointment date/time.",
+          "xpath": "f:Slot/f:start"
+        }
+      ]
+    }
+  ]
+}

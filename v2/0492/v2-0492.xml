@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Specimen Appropriateness</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>??
+            <a name=".63.63"> </a>
+          </td>
+          <td>Inappropriate due to ...</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>A
+            <a name="A"> </a>
+          </td>
+          <td>Appropriate</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>I
+            <a name="I"> </a>
+          </td>
+          <td>Inappropriate</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>P
+            <a name="P"> </a>
+          </td>
+          <td>Preferred</td>
+          <td>added v2.5</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0492"/>
+  <name value="v2 Specimen Appropriateness"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0492 ( Specimen Appropriateness)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0492"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="??"/>
+      <display value="Inappropriate due to ..."/>
+    </concept>
+    <concept>
+      <code value="A"/>
+      <display value="Appropriate"/>
+    </concept>
+    <concept>
+      <code value="I"/>
+      <display value="Inappropriate"/>
+    </concept>
+    <concept>
+      <code value="P"/>
+      <display value="Preferred"/>
+    </concept>
+  </define>
+</ValueSet>

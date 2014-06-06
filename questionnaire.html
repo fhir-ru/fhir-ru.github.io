@@ -1,0 +1,382 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+  <title>Questionnaire - FHIR v0.2.1</title>
+
+  
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="http://hl7.org/fhir" name="author"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="./assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="./assets/css/project.css"/>
+  <link rel="stylesheet" href="./assets/css/pygments-manni.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif] -->
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment">  <!-- segment-header -->	
+		<div class="container">  <!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img alt="logo fhir" src="./assets/images/fhir-logo-www.png"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img height="50" alt="visit the hl7 website" width="42" src="./assets/images/hl7-logo.png"/>
+				</a> 
+			</div>       	
+			  <!-- hl7-search -->
+		</div>
+		<div class="container">  <!-- container -->
+	</div></div>  <!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a class="navbar-brand hidden" href="index.html">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+
+						</ul>
+					</div>  <!-- /.nav-collapse -->
+				</div>  <!-- /.container -->
+			</nav>  <!-- /.navbar -->
+      		
+				
+  <!-- /HEADER CONTENT -->				
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+		<div class="container">  <!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="infrastructure.html">Infrastructure</a></li>        <li><b>Questionnaire</b></li>          <!-- questionnaire.html / resource -->
+
+			</ul>	
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment">  <!-- segment-content -->
+	<div class="container">  <!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+  <!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<ul class="nav nav-tabs"><li class="active"><a href="#">Content</a></li><li><a href="questionnaire-examples.html">Examples</a></li><li><a href="questionnaire-definitions.html">Formal Definitions</a></li><li><a href="questionnaire-mappings.html">Mappings</a></li><li><a href="questionnaire-profiles.html">Profiles</a></li></ul>
+
+<h1><span class="sectioncount">6.5<a name="6.5"> </a></span> Resource Questionnaire - Content</h1>
+  <!-- <p class="status">Status: null</p> -->
+
+<p> 
+A structured set of questions intended to guide the collection of answers. The questions are ordered and grouped into coherent subsets, corresponding to the structure of the grouping of the underlying questions. 
+</p>
+
+
+<div>
+<h2><span class="sectioncount">6.5.1<a name="6.5.1"> </a></span> Scope and Usage</h2>
+<p>
+A <b>Questionnaire</b> is an organized collection of questions intended to solicit infomation from patients, providers or other individuals involved
+in the healthcare domain.  They may be simple flat lists of questions or can be hierarchically organized in 
+groups and sub-groups, each containing questions.  The <b>Questionnaire</b> defines the questions to be asked, how they are ordered and grouped and what
+the constraints are on the allowed answers.  The results of a <b>Questionnaire</b> can be communicated using the <a href="questionnaireanswers.html">QuestionnaireAnswer</a> resource.
+</p>
+<p>
+Questionnaires cover the need to communicate data originating from forms used in medical history examinations, research questionnaires and sometimes full
+clinical speciality records. In many systems this data is collected using user-defined screens and forms. Questionnaires record specifics about data capture -
+exactly what questions were asked, in what order, what choices for answers were, etc. Each of these questions are part of the Questionnaire, 
+and as such the Questionnaire is a separately identifiable Resource, whereas the individual questions are not.
+</p>
+<p>Examples of Questionnaires include:</p>
+<ul>
+<li>Past medical history (PMH)</li>
+<li>Family diseases</li>
+<li>Social history</li>
+<li>Research questionnaires/Clincial resarch forms (CRFs)</li>
+<li>Quality and evaluation forms</li>
+</ul>
+<p>
+This resource is limited in scope to support the characteristics of simple questionnaires.  However, common extensions have been defined to allow more
+sophisticated behavior.  This includes:
+</p>
+<ul>
+  <li><a href="questionnaire-extensions.html">Questionnaire core extensions</a> which defines the additional descriptive characteristics for questionnaires and their groups and questions</li>
+  <li><a href="element-extensions.html">Element extensions</a> which can describe additional constraints on allowed answers for questionnaires such as string length and date and numeric ranges</li>
+</ul>
+<p>
+Additional profiles such as the <a href="questionnaire-sdc.html">Structured Data Capture Questionnaire profile</a> may provide additional capabilities for defining
+more sophisticated questionnaires and forms.
+</p>
+</div>
+
+<div>
+<h2><span class="sectioncount">6.5.2<a name="6.5.2"> </a></span> Boundaries and Relationships</h2>
+<p>
+<b>Questionnaires</b> differ from <a href="list.html">Lists</a> because <a href="list.html">Lists</a> group existing resources, while <b>Questionnaires</b> group
+arbitrary questions.  In theory, a <b>Questionnaire</b> could be expressed as a <a href="list.html">List</a> or <a href="composition.html">Composition</a> containing
+<a href="dataelement.html">DataElement</a> resources.  However, the former would disregard the &quot;wholeness&quot; associated with a questionnaire where questions 
+must generally be maintained as a single structure.  The latter would focus on rendering of the data elements rather than organizing the capture of information.
+</p>
+</div>
+
+<div>
+<h2><span class="sectioncount">6.5.3<a name="6.5.3"> </a></span> Background and Context</h2>
+<p>
+Groups and questions that make up a Questionnaire can be explicitly coded to refer to externally defined numbering or identification of questions and sections on
+formally defined questionnaires. This allows extraction of the data on a form and post-processing of the data contained in a Questionnaire. Such coding is not required however 
+and Questionnaires may be quite loosely defined. The section <a href="#qversusr">Questionnaire versus Resources</a> below discusses the issues of collecting data in such
+loosely defined Questionnaires versus collecting data as well-defined separate Resources.
+</p>
+</div>
+
+
+<a name="resource"/>
+<h2><span class="sectioncount">6.5.4<a name="6.5.4"> </a></span> 
+Resource Content
+</h2>
+<a name="uml"> </a>
+<svg height="364.0" width="716.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">  <defs>
+    <filter id="shadow" height="200%" width="200%" y="0" x="0">
+      <feOffset result="offOut" dx="3" dy="3" in="SourceGraphic"/>
+      <feColorMatrix result="matrixOut" values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0" type="matrix" in="offOut"/>
+      <feGaussianBlur result="blurOut" stdDeviation="2" in="matrixOut"/>
+      <feBlend in2="blurOut" in="SourceGraphic" mode="normal"/>
+    </filter>
+  </defs><rect height="106.0" style="fill:#f0f8ff;stroke:black;stroke-width:1" width="176.0" filter="url(#shadow)" rx="4" y="7.0" ry="4" x="0.0"/><line style="stroke:dimgrey;stroke-width:1" y1="35.0" y2="35.0" x2="176.0" x1="0.0"/><text fill="black" class="diagram-class-title  diagram-class-resource" y="27.0" x="88.0">Questionnaire<tspan class="diagram-class-title-link"> (<a class="diagram-class-reference" xlink:href="resources.html">Resource</a>)</tspan></text><text fill="black" class="diagram-class-detail" y="49.0" x="6.0"><a xlink:href="questionnaire-definitions.html#Questionnaire.identifier"><title>This records identifiers associated with this question set that are defined by business processed and/ or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation)</title>identifier</a> : <a xlink:href="datatypes.html#Identifier">Identifier</a> 0..*</text><text fill="black" class="diagram-class-detail" y="63.0" x="6.0"><a xlink:href="questionnaire-definitions.html#Questionnaire.version"><title>The version number assigned by the publisher for business reasons.  It may remain the same when the resource is updated</title>version</a> : <a xlink:href="datatypes.html#string">string</a> 0..1</text><text fill="black" class="diagram-class-detail" y="77.0" x="6.0"><a xlink:href="questionnaire-definitions.html#Questionnaire.status"><title>The lifecycle status of the questionnaire as a whole (this element modifies the meaning of other elements)</title>status</a> : <a xlink:href="datatypes.html#code">code</a> 1..1 « <a xlink:href="questionnaire-status.html"><title>Lifecycle status of the questionnaire</title>QuestionnaireStatus</a> »</text><text fill="black" class="diagram-class-detail" y="91.0" x="6.0"><a xlink:href="questionnaire-definitions.html#Questionnaire.date"><title>The date that this version of the questionnaire was authored</title>date</a> : <a xlink:href="datatypes.html#date">date</a> 0..1</text><text fill="black" class="diagram-class-detail" y="105.0" x="6.0"><a xlink:href="questionnaire-definitions.html#Questionnaire.publisher"><title>Organization responsible for developing and maintaining the questionnaire</title>publisher</a> : <a xlink:href="datatypes.html#string">string</a> 0..1</text><rect height="120.0" style="fill:#f0f8ff;stroke:black;stroke-width:1" width="100.0" filter="url(#shadow)" rx="4" y="0.0" ry="4" x="296.0"/><line style="stroke:dimgrey;stroke-width:1" y1="28.0" y2="28.0" x2="396.0" x1="296.0"/><text fill="black" class="diagram-class-title" y="20.0" x="346.0">Group</text><text fill="black" class="diagram-class-detail" y="42.0" x="302.0"><a xlink:href="questionnaire-definitions.html#Questionnaire.group.linkId"><title>A unique identifier within the questionnaire allowing linkage to the equivalent group in a QuestionnaireAnswers resource</title>linkId</a> : <a xlink:href="datatypes.html#string">string</a> 0..1</text><text fill="black" class="diagram-class-detail" y="56.0" x="302.0"><a xlink:href="questionnaire-definitions.html#Questionnaire.group.title"><title>The human-readable name for this section of the questionnaire</title>title</a> : <a xlink:href="datatypes.html#string">string</a> 0..1</text><text fill="black" class="diagram-class-detail" y="70.0" x="302.0"><a xlink:href="questionnaire-definitions.html#Questionnaire.group.concept"><title>Identifies a how this group of questions is known in a particular terminology such as LOINC</title>concept</a> : <a xlink:href="datatypes.html#Coding">Coding</a> 0..*</text><text fill="black" class="diagram-class-detail" y="84.0" x="302.0"><a xlink:href="questionnaire-definitions.html#Questionnaire.group.text"><title>Additional text for the group, used for display purposes</title>text</a> : <a xlink:href="datatypes.html#string">string</a> 0..1</text><text fill="black" class="diagram-class-detail" y="98.0" x="302.0"><a xlink:href="questionnaire-definitions.html#Questionnaire.group.required"><title>If true, indicates that the group must be present and have required questions within it answered.  If false, the group may be skipped when answering the questionnaire</title>required</a> : <a xlink:href="datatypes.html#boolean">boolean</a> 0..1</text><text fill="black" class="diagram-class-detail" y="112.0" x="302.0"><a xlink:href="questionnaire-definitions.html#Questionnaire.group.repeats"><title>Whether the group may occur multiple times in the instance, containing multiple sets of answers</title>repeats</a> : <a xlink:href="datatypes.html#boolean">boolean</a> 0..1</text><rect height="134.0" style="fill:#f0f8ff;stroke:black;stroke-width:1" width="140.0" filter="url(#shadow)" rx="4" y="200.0" ry="4" x="276.0"/><line style="stroke:dimgrey;stroke-width:1" y1="228.0" y2="228.0" x2="416.0" x1="276.0"/><text fill="black" class="diagram-class-title" y="220.0" x="346.0">Question</text><text fill="black" class="diagram-class-detail" y="242.0" x="282.0"><a xlink:href="questionnaire-definitions.html#Questionnaire.group.question.linkId"><title>A unique identifiers within the questionnaire allowing linkage to the equivalent group in a QuestionnaireData resource</title>linkId</a> : <a xlink:href="datatypes.html#string">string</a> 0..1</text><text fill="black" class="diagram-class-detail" y="256.0" x="282.0"><a xlink:href="questionnaire-definitions.html#Questionnaire.group.question.concept"><title>Identifies a how this group of questions is known in a particular terminology such as LOINC</title>concept</a> : <a xlink:href="datatypes.html#Coding">Coding</a> 0..*</text><text fill="black" class="diagram-class-detail" y="270.0" x="282.0"><a xlink:href="questionnaire-definitions.html#Questionnaire.group.question.text"><title>Text of the question as it is shown to the user</title>text</a> : <a xlink:href="datatypes.html#string">string</a> 0..1</text><text fill="black" class="diagram-class-detail" y="284.0" x="282.0"><a xlink:href="questionnaire-definitions.html#Questionnaire.group.question.type"><title>The expected format of the answer, e.g. the type of input (string, integer) or whether a (multiple)choice is expected</title>type</a> : <a xlink:href="datatypes.html#code">code</a> 0..1 « <a xlink:href="answer-format.html"><title>The expected format of an answer</title>AnswerFormat</a> »</text><text fill="black" class="diagram-class-detail" y="298.0" x="282.0"><a xlink:href="questionnaire-definitions.html#Questionnaire.group.question.required"><title>If true, indicates that the group must be present and have required questions within it answered.  If false, the group may be skipped when answering the questionnaire</title>required</a> : <a xlink:href="datatypes.html#boolean">boolean</a> 0..1</text><text fill="black" class="diagram-class-detail" y="312.0" x="282.0"><a xlink:href="questionnaire-definitions.html#Questionnaire.group.question.repeats"><title>Whether the group may occur multiple times in the instance, containing multiple sets of answers</title>repeats</a> : <a xlink:href="datatypes.html#boolean">boolean</a> 0..1</text><text fill="black" class="diagram-class-detail" y="326.0" x="282.0"><a xlink:href="questionnaire-definitions.html#Questionnaire.group.question.options"><title>Reference to a valueset containing the possible options</title>options</a> : <a xlink:href="references.html#Resource">Resource</a>(<a xlink:href="valueset.html#ValueSet">ValueSet</a>) 0..1</text><line style="stroke:navy;stroke-width:1" y1="35.0" y2="35.0" x2="456.0" x1="396.0"/><line style="stroke:navy;stroke-width:1" y1="35.0" y2="85.0" x2="456.0" x1="456.0"/><line style="stroke:navy;stroke-width:1" y1="85.0" y2="85.0" x2="396.0" x1="456.0"/><polygon transform="rotate(0.0 396.0 35.0)" style="fill:navy;stroke:navy;stroke-width:1" points="396.0,35.0 402.0,39.0 408.0,35.0 402.0,31.0 396.0,35.0"/><rect height="18.0" style="fill:white;stroke:black;stroke-width:0" width="20.0" y="53.0" x="446.0"/><text fill="black" class="diagram-class-linkage" y="63.0" x="456.0"><a xlink:href="questionnaire-definitions.html#Questionnaire.group.group"><title>A sub-group within a group. The ordering of groups within this group is relevant</title>group</a></text><text fill="black" class="diagram-class-linkage" y="81.0" x="411.0">0..*</text><line style="stroke:navy;stroke-width:1" y1="200.0" y2="120.0" x2="321.0" x1="321.0"/><polygon transform="rotate(-90.0 321.0 200.0)" style="fill:navy;stroke:navy;stroke-width:1" points="321.0,200.0 327.0,204.0 333.0,200.0 327.0,196.0 321.0,200.0"/><rect height="18.0" style="fill:white;stroke:black;stroke-width:0" width="20.0" y="153.0" x="311.0"/><text fill="black" class="diagram-class-linkage" y="163.0" x="321.0"><a xlink:href="questionnaire-definitions.html#Questionnaire.group.question.group"><title>Nested group, containing nested question for this question. The order of groups within the question is relevant</title>group</a></text><text fill="black" class="diagram-class-linkage" y="134.0" x="321.0">0..*</text><line style="stroke:navy;stroke-width:1" y1="120.0" y2="200.0" x2="371.0" x1="371.0"/><polygon transform="rotate(90.0 371.0 120.0)" style="fill:navy;stroke:navy;stroke-width:1" points="371.0,120.0 377.0,124.0 383.0,120.0 377.0,116.0 371.0,120.0"/><rect height="18.0" style="fill:white;stroke:black;stroke-width:0" width="32.0" y="167.0" x="355.0"/><text fill="black" class="diagram-class-linkage" y="177.0" x="371.0"><a xlink:href="questionnaire-definitions.html#Questionnaire.group.question"><title>Set of questions within this group. The order of questions within the group is relevant</title>question</a></text><text fill="black" class="diagram-class-linkage" y="196.0" x="371.0">0..*</text><line style="stroke:navy;stroke-width:1" y1="60.0" y2="60.0" x2="296.0" x1="176.0"/><polygon transform="rotate(0.0 176.0 60.0)" style="fill:navy;stroke:navy;stroke-width:1" points="176.0,60.0 182.0,64.0 188.0,60.0 182.0,56.0 176.0,60.0"/><rect height="18.0" style="fill:white;stroke:black;stroke-width:0" width="20.0" y="53.0" x="226.0"/><text fill="black" class="diagram-class-linkage" y="63.0" x="236.0"><a xlink:href="questionnaire-definitions.html#Questionnaire.group"><title>A collection of related questions (or further groupings of questions)</title>group</a></text><text fill="black" class="diagram-class-linkage" y="56.0" x="276.0">1..1</text></svg>
+<p>This resource is referenced by <a href="questionnaireanswers.html">[QuestionnaireAnswers]</a></p>
+
+
+<a name="def"> </a>
+<a name="questionnaire"> </a>
+<a name="Questionnaire"> </a>
+<pre class="spec">
+&lt;<a title="A structured set of questions intended to guide the collection of answers. The questions are ordered and grouped into coherent subsets, corresponding to the structure of the grouping of the underlying questions." class="dict" href="questionnaire-definitions.html#Questionnaire"><b>Questionnaire</b></a> xmlns=&quot;http://hl7.org/fhir&quot;&gt; <span style="float: right"><a title="Documentation for this format" href="formats.html"><img alt="doco" src="help.png"/></a></span>
+ &lt;!-- from <a href="resources.html">Resource</a>: <a href="extensibility.html">extension</a>, <a href="extensibility.html#modifierExtension">modifierExtension</a>, language, <a href="narrative.html#Narrative">text</a>, and <a href="references.html#contained">contained</a> --&gt;
+ &lt;<a title="This records identifiers associated with this question set that are defined by business processed and/ or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation)." class="dict" href="questionnaire-definitions.html#Questionnaire.identifier"><b>identifier</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..*</b></span> <span style="color: darkgreen"><a href="datatypes.html#Identifier">Identifier</a></span> <span style="color: navy">External Ids for this questionnaire<span title="This element is included in a summary view (See Search/Query)" style="color: Navy"> &sect;</span></span><span style="color: Gray"> --&gt;</span>&lt;/identifier&gt;
+ &lt;<a title="The version number assigned by the publisher for business reasons.  It may remain the same when the resource is updated." class="dict" href="questionnaire-definitions.html#Questionnaire.version"><b>version</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Logical id for this version of Questionnaire<span title="This element is included in a summary view (See Search/Query)" style="color: Navy"> &sect;</span></span><span style="color: Gray"> --&gt;</span>
+ &lt;<a title="The lifecycle status of the questionnaire as a whole (this element modifies the meaning of other elements)" class="dict" href="questionnaire-definitions.html#Questionnaire.status"><span style="text-decoration: underline"><b>status</b></span></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#code">code</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: navy"><a style="color: navy" href="questionnaire-status.html">draft | published | retired<span title="This element is included in a summary view (See Search/Query)" style="color: Navy"> &sect;</span></a></span><span style="color: Gray"> --&gt;</span>
+ &lt;<a title="The date that this version of the questionnaire was authored." class="dict" href="questionnaire-definitions.html#Questionnaire.date"><b>date</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#date">date</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Date this version was authored<span title="This element is included in a summary view (See Search/Query)" style="color: Navy"> &sect;</span></span><span style="color: Gray"> --&gt;</span>
+ &lt;<a title="Organization responsible for developing and maintaining the questionnaire." class="dict" href="questionnaire-definitions.html#Questionnaire.publisher"><b>publisher</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Organization who designed the questionnaire<span title="This element is included in a summary view (See Search/Query)" style="color: Navy"> &sect;</span></span><span style="color: Gray"> --&gt;</span>
+ &lt;<a title="A collection of related questions (or further groupings of questions)." class="dict" href="questionnaire-definitions.html#Questionnaire.group"><b>group</b></a>&gt;  <span style="color: Gray">&lt;!-- <span style="color: brown"><b>1..1</b></span> Grouped questions --&gt;</span>
+  &lt;<a title="A unique identifier within the questionnaire allowing linkage to the equivalent group in a QuestionnaireAnswers resource." class="dict" href="questionnaire-definitions.html#Questionnaire.group.linkId"><b>linkId</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">To link questionnaire with questionnaire answers</span><span style="color: Gray"> --&gt;</span>
+  &lt;<a title="The human-readable name for this section of the questionnaire." class="dict" href="questionnaire-definitions.html#Questionnaire.group.title"><b>title</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Name to be displayed for group</span><span style="color: Gray"> --&gt;</span>
+  &lt;<a title="Identifies a how this group of questions is known in a particular terminology such as LOINC." class="dict" href="questionnaire-definitions.html#Questionnaire.group.concept"><b>concept</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..*</b></span> <span style="color: darkgreen"><a href="datatypes.html#Coding">Coding</a></span> <span style="color: navy">Concept that represents this section on a questionnaire</span><span style="color: Gray"> --&gt;</span>&lt;/concept&gt;
+  &lt;<a title="Additional text for the group, used for display purposes." class="dict" href="questionnaire-definitions.html#Questionnaire.group.text"><b>text</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Additional text for the group</span><span style="color: Gray"> --&gt;</span>
+  &lt;<a title="If true, indicates that the group must be present and have required questions within it answered.  If false, the group may be skipped when answering the questionnaire." class="dict" href="questionnaire-definitions.html#Questionnaire.group.required"><b>required</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#boolean">boolean</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Must group be included in data results?</span><span style="color: Gray"> --&gt;</span>
+  &lt;<a title="Whether the group may occur multiple times in the instance, containing multiple sets of answers." class="dict" href="questionnaire-definitions.html#Questionnaire.group.repeats"><b>repeats</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#boolean">boolean</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Whether the group may repeat</span><span style="color: Gray"> --&gt;</span>
+  &lt;<a title="A sub-group within a group. The ordering of groups within this group is relevant." class="dict" href="questionnaire-definitions.html#Questionnaire.group.group"><b>group</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span title="Inv-1: Groups may either contain questions or groups but not both" style="color: brown"><b><img alt="??" src="lock.png"/> 0..*</b></span> <span style="color: darkgreen">Content as for Questionnaire.group</span> <span style="color: navy">Nested questionnaire group</span><span style="color: Gray"> --&gt;</span>&lt;/group&gt;
+  &lt;<a title="Set of questions within this group. The order of questions within the group is relevant." class="dict" href="questionnaire-definitions.html#Questionnaire.group.question"><b>question</b></a>&gt;  <span style="color: Gray">&lt;!-- <span title="Inv-1: Groups may either contain questions or groups but not both" style="color: brown"><b><img alt="??" src="lock.png"/> 0..*</b></span> Questions in this group --&gt;</span>
+   &lt;<a title="A unique identifiers within the questionnaire allowing linkage to the equivalent group in a QuestionnaireData resource." class="dict" href="questionnaire-definitions.html#Questionnaire.group.question.linkId"><b>linkId</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">To link questionnaire with questionnaire answers</span><span style="color: Gray"> --&gt;</span>
+   &lt;<a title="Identifies a how this group of questions is known in a particular terminology such as LOINC." class="dict" href="questionnaire-definitions.html#Questionnaire.group.question.concept"><b>concept</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..*</b></span> <span style="color: darkgreen"><a href="datatypes.html#Coding">Coding</a></span> <span style="color: navy">Concept that represents this section on a questionnaire</span><span style="color: Gray"> --&gt;</span>&lt;/concept&gt;
+   &lt;<a title="Text of the question as it is shown to the user." class="dict" href="questionnaire-definitions.html#Questionnaire.group.question.text"><b>text</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Text of the question as it is shown to the user</span><span style="color: Gray"> --&gt;</span>
+   &lt;<a title="The expected format of the answer, e.g. the type of input (string, integer) or whether a (multiple)choice is expected." class="dict" href="questionnaire-definitions.html#Questionnaire.group.question.type"><b>type</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#code">code</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy"><a style="color: navy" href="answer-format.html">decimal | integer | boolean | date | string +</a></span><span style="color: Gray"> --&gt;</span>
+   &lt;<a title="If true, indicates that the group must be present and have required questions within it answered.  If false, the group may be skipped when answering the questionnaire." class="dict" href="questionnaire-definitions.html#Questionnaire.group.question.required"><b>required</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#boolean">boolean</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Must group be included in data results?</span><span style="color: Gray"> --&gt;</span>
+   &lt;<a title="Whether the group may occur multiple times in the instance, containing multiple sets of answers." class="dict" href="questionnaire-definitions.html#Questionnaire.group.question.repeats"><b>repeats</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#boolean">boolean</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Whether the group may repeat</span><span style="color: Gray"> --&gt;</span>
+   &lt;<a title="Reference to a valueset containing the possible options." class="dict" href="questionnaire-definitions.html#Questionnaire.group.question.options"><b>options</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen"><a href="references.html#Resource">Resource</a>(<a href="valueset.html#ValueSet">ValueSet</a>)</span> <span style="color: navy">Valueset containing the possible options</span><span style="color: Gray"> --&gt;</span>&lt;/options&gt;
+   &lt;<a title="Nested group, containing nested question for this question. The order of groups within the question is relevant." class="dict" href="questionnaire-definitions.html#Questionnaire.group.question.group"><b>group</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..*</b></span> <span style="color: darkgreen">Content as for Questionnaire.group</span> <span style="color: navy">Nested questionnaire group</span><span style="color: Gray"> --&gt;</span>&lt;/group&gt;
+  &lt;/question&gt;
+ &lt;/group&gt;
+&lt;/Questionnaire&gt;
+</pre>
+
+
+<p>Alternate definitions: <a href="questionnaire.xsd">Schema</a>/<a href="questionnaire.sch">Schematron</a>, 
+<a href="questionnaire.profile.xml.html">Resource Profile</a></p>
+
+<table cellpadding="0" class="heirarchy" border="0" cellspacing="0"><tr class="heirarchy"><th class="heirarchy">Name</th><th class="heirarchy">Card.</th><th style="width: 100px" class="heirarchy">Type</th><th class="heirarchy">Description</th><th class="heirarchy">Constraints</th></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck1.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="icon_resource.png"/> <span title="A structured set of questions intended to guide the collection of answers. The questions are ordered and grouped into coherent subsets, corresponding to the structure of the grouping of the underlying questions.">Questionnaire</span></td><td class="heirarchy"/><td class="heirarchy"><a href="resources.html">Resource</a></td><td class="heirarchy">A structured set of questions</td><td class="heirarchy"><span title="2">The link ids for groups and questions must be unique within the questionnaire</span></td></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck10.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_datatype.gif"/> <span title="This records identifiers associated with this question set that are defined by business processed and/ or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation).">identifier</span></td><td class="heirarchy">0..*</td><td class="heirarchy"><a href="datatypes.html#Identifier">Identifier</a></td><td class="heirarchy">External Ids for this questionnaire</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck10.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_primitive.png"/> <span title="The version number assigned by the publisher for business reasons.  It may remain the same when the resource is updated.">version</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="datatypes.html#string">string</a></td><td class="heirarchy">Logical id for this version of Questionnaire</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck10.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_primitive.png"/> <span title="The lifecycle status of the questionnaire as a whole.">status</span></td><td class="heirarchy">1..1</td><td class="heirarchy"><a href="datatypes.html#code">code</a></td><td class="heirarchy">draft | published | retired</td><td class="heirarchy"><a title="Lifecycle status of the questionnaire" href="questionnaire-status.html">QuestionnaireStatus</a> (<a title="One of the the defined codes must be used" href="terminologies.html#code">Required</a>)</td></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck10.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_primitive.png"/> <span title="The date that this version of the questionnaire was authored.">date</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="datatypes.html#date">date</a></td><td class="heirarchy">Date this version was authored</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck10.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_primitive.png"/> <span title="Organization responsible for developing and maintaining the questionnaire.">publisher</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="datatypes.html#string">string</a></td><td class="heirarchy">Organization who designed the questionnaire</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck01.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_vjoin_end.png"/><img class="heirarchy" src="icon_element.gif"/> <span title="A collection of related questions (or further groupings of questions).">group</span></td><td class="heirarchy">1..1</td><td class="heirarchy"/><td class="heirarchy">Grouped questions</td><td class="heirarchy"><span title="1">Groups may either contain questions or groups but not both</span></td></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_primitive.png"/> <span title="A unique identifier within the questionnaire allowing linkage to the equivalent group in a QuestionnaireAnswers resource.">linkId</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="datatypes.html#string">string</a></td><td class="heirarchy">To link questionnaire with questionnaire answers</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_primitive.png"/> <span title="The human-readable name for this section of the questionnaire.">title</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="datatypes.html#string">string</a></td><td class="heirarchy">Name to be displayed for group</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_datatype.gif"/> <span title="Identifies a how this group of questions is known in a particular terminology such as LOINC.">concept</span></td><td class="heirarchy">0..*</td><td class="heirarchy"><a href="datatypes.html#Coding">Coding</a></td><td class="heirarchy">Concept that represents this section on a questionnaire</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_primitive.png"/> <span title="Additional text for the group, used for display purposes.">text</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="datatypes.html#string">string</a></td><td class="heirarchy">Additional text for the group</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_primitive.png"/> <span title="If true, indicates that the group must be present and have required questions within it answered.  If false, the group may be skipped when answering the questionnaire.">required</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="datatypes.html#boolean">boolean</a></td><td class="heirarchy">Must group be included in data results?</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_primitive.png"/> <span title="Whether the group may occur multiple times in the instance, containing multiple sets of answers.">repeats</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="datatypes.html#boolean">boolean</a></td><td class="heirarchy">Whether the group may repeat</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_reuse.png"/> <span title="A sub-group within a group. The ordering of groups within this group is relevant.">group</span></td><td class="heirarchy">0..*</td><td class="heirarchy">see <a title="Questionnaire.group" href="test">group</a></td><td class="heirarchy">Nested questionnaire group</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck001.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin_end.png"/><img class="heirarchy" src="icon_element.gif"/> <span title="Set of questions within this group. The order of questions within the group is relevant.">question</span></td><td class="heirarchy">0..*</td><td class="heirarchy"/><td class="heirarchy">Questions in this group</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck0010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_primitive.png"/> <span title="A unique identifiers within the questionnaire allowing linkage to the equivalent group in a QuestionnaireData resource.">linkId</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="datatypes.html#string">string</a></td><td class="heirarchy">To link questionnaire with questionnaire answers</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck0010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_datatype.gif"/> <span title="Identifies a how this group of questions is known in a particular terminology such as LOINC.">concept</span></td><td class="heirarchy">0..*</td><td class="heirarchy"><a href="datatypes.html#Coding">Coding</a></td><td class="heirarchy">Concept that represents this section on a questionnaire</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck0010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_primitive.png"/> <span title="Text of the question as it is shown to the user.">text</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="datatypes.html#string">string</a></td><td class="heirarchy">Text of the question as it is shown to the user</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck0010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_primitive.png"/> <span title="The expected format of the answer, e.g. the type of input (string, integer) or whether a (multiple)choice is expected.">type</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="datatypes.html#code">code</a></td><td class="heirarchy">decimal | integer | boolean | date | string +</td><td class="heirarchy"><a title="The expected format of an answer" href="answer-format.html">AnswerFormat</a> (<a title="One of the the defined codes must be used" href="terminologies.html#code">Required</a>)</td></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck0010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_primitive.png"/> <span title="If true, indicates that the group must be present and have required questions within it answered.  If false, the group may be skipped when answering the questionnaire.">required</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="datatypes.html#boolean">boolean</a></td><td class="heirarchy">Must group be included in data results?</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck0010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_primitive.png"/> <span title="Whether the group may occur multiple times in the instance, containing multiple sets of answers.">repeats</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="datatypes.html#boolean">boolean</a></td><td class="heirarchy">Whether the group may repeat</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck0010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/><img class="heirarchy" src="icon_reference.png"/> <span title="Reference to a valueset containing the possible options.">options</span></td><td class="heirarchy">0..1</td><td class="heirarchy"><a href="ValueSet.html">ValueSet</a></td><td class="heirarchy">Valueset containing the possible options</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck0000.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin_end.png"/><img class="heirarchy" src="icon_reuse.png"/> <span title="Nested group, containing nested question for this question. The order of groups within the question is relevant.">group</span></td><td class="heirarchy">0..*</td><td class="heirarchy">see <a title="Questionnaire.group" href="test">group</a></td><td class="heirarchy">Nested questionnaire group</td><td class="heirarchy"/></tr></table>
+
+<a name="tx"> </a>
+<h3><span class="sectioncount">6.5.4.1<a name="6.5.4.1"> </a></span> 
+Terminology Bindings
+</h3>
+<table class="grid">
+ <tr><th>Path</th><th>Definition</th><th>Type</th><th>Reference</th></tr>
+ <tr><td title="QuestionnaireStatus" valign="top">Questionnaire.status </td><td valign="top">Lifecycle status of the questionnaire</td><td><a href="terminologies.html#code">Fixed</a></td><td valign="top"><a href="questionnaire-status.html">http://hl7.org/fhir/questionnaire-status</a></td> </tr>
+ <tr><td title="QuestionnaireGroupConcept" valign="top">Questionnaire.group.concept </td><td valign="top">Codes for questionnaires and groupings of questionnaire questions</td><td>Unknown</td><td valign="top">No details provided yet</td> </tr>
+ <tr><td title="AnswerFormat" valign="top">Questionnaire.group.question.type </td><td valign="top">The expected format of an answer</td><td><a href="terminologies.html#code">Fixed</a></td><td valign="top"><a href="answer-format.html">http://hl7.org/fhir/answer-format</a></td> </tr>
+</table>
+<p> </p>
+
+
+<h3><span class="sectioncount">6.5.4.2<a name="6.5.4.2"> </a></span> Constraints</h3><ul><li><b title="Formal Invariant Identifier">Inv-2</b>: The link ids for groups and questions must be unique within the questionnaire (xpath: <span style="font-family: Courier New, monospace">count(descendant::f:linkId/@value)=count(distinct-values(descendant::f:linkId/@value))</span>)</li><li><b title="Formal Invariant Identifier">Inv-1</b>: On Questionnaire.group: Groups may either contain questions or groups but not both (xpath on f:Questionnaire/f:group: <span style="font-family: Courier New, monospace">not(exists(f:group) and exists(f:question))</span>)</li></ul>
+
+
+<h2><span class="sectioncount">6.5.5<a name="6.5.5"> </a></span> 
+Notes:
+</h2>
+<ul>
+<li>Questionnaires may be used to represent predefined forms, named using Questionnaire.name. Questionnaires.identifier identify a specific
+set of answers to the questions on these forms.</li>
+<li>A Questionnaire's contents are placed inside its single nested Group, which may contain Questions or subgroups with Questions.</li>
+<li>Groups and Questions may have linkIds allowing groups and question answers captured in a <a href="questionnaireanswers.html">QuestionnaireAnswers</a>
+to be associated with their corresponding group or question.</li>
+<li>Questionnaire allows for flexible naming and structuring of its contents to reflect the flexible and varying nature of forms and questionnaires. 
+It explicitly does not try to standardize or streamline exchange of its contents outside its context of use, although exchanging partners may further
+constrain its structure and flexibility using profiles to define standardized, reusable forms.</li>
+<li>Because of the lack of explicit support for Questionnaires in HL7v3, HL7 CDA Documents frequently used named sections with
+Observations to model Questionnaires. Such use cases should now utilize the Questionnaire Resource instead.</li>
+<li>The order of questions within groups, groups withing groups and groups withing questions in relevant and must be retained for display and capture.</li>
+</ul>
+
+<a name="qversusr"/>
+<h3><span class="sectioncount">6.5.5.1<a name="6.5.5.1"> </a></span> Using Questionnaires versus using Resources</h3>
+<p>
+There is considerable overlap between the information covered by <b>Questionnaires</b> and other Resources (especially <a href="familyhistory.html">FamilyHistory</a>,
+<a href="medicationstatement.html">MedicationStatement</a>, <a href="observation.html">Observation</a>, <a href="procedure.html">Procedure</a>, etc.): 
+<b>Questionnaire's</b> flexible structure can easily be misused to capture any data, even data that should be captured as separate Resources. The choice between using <b>Questionnaires</b> or separate 
+Resources may be dictated by the procedure of collection and recording. E.g. if the data is captured as a physician-agreed (electronic) form, it might be impossible or undesirable to 
+distill separate resources from it and capturing the data in a <b>Questionnaire</b> would be most appropriate.
+</p> 
+
+<p>
+However, data captured only in <b>Questionnaires</b> can be difficult to query after-the-fact. Queries against other Resources will not return data captured only in <b>Questionnaires</b>, 
+and querying against <b>Questionnaires</b> directly may not find all desired data, depending on how the questions may have been phrased or encoded over time or by different clinicians. 
+Moreover, interoperability of such <b>Questionnaires</b> is limited as interpretation of its contents is only known to the circle of parties that were involved in its definition: encoding data from 
+such <b>Questionnaires</b> using other, more specific, Resources increases the ability and consistency with which it can be understood and queried.
+</p> 
+
+<h3><span class="sectioncount">6.5.5.2<a name="6.5.5.2"> </a></span> Structure of the Questionnaire</h3>
+<p>
+A Questionnaire is built out of three components:</p>
+<ul>
+  <li>The main component is Questionnaire, which holds information <em>about</em> the Questionnaire, 
+  like the identifier, publisher, date authored, etc. The Questionnaire contains one &quot;main&quot; Group, which contains all the content of the questionnaire.</li>
+  <li>This Group, can contain <em>either</em> nested Groups (to represent sections and subsections on a questionnaire form) or Questions.
+  This way, any form containing sections or subsections can be represented, down to the actual questions.</li>
+  <li>The Questions themselves may be simple questions with a promp text and one expected answer, but they may also contain nested groups, 
+each containing sets of nested questions. This way, one can model &quot;panels&quot; of questions which would only be relevant (and thus would only be displayed)
+depending on the answers of a parent question, e.g. a Question &quot;Did the patient receive treatment in the past six months?&quot;, would contain a nested
+group of questions asking for further details about the treatment. See an <a href="questionnaire-example-bluebook.xml.html">example</a> from 
+the <a href="http://www.health.nsw.gov.au/Kids/Publications/my-personal-health-record.pdf">Australian NSW blue book</a></li>
+<li>Specific controls on dynamic display of groups, questions, etc. based on the answers to other questions is outside the scope of the base resource and
+are expected to be introduced as extensions.</li>
+</ul>
+
+<h3><span class="sectioncount">6.5.5.3<a name="6.5.5.3"> </a></span> Question Definitions</h3>
+<p>
+Questionnaires can be crafted using any questions the author can conceive phrased in whatever manner is appropriate or convenient.  However, standardization of
+questions and the constraints enforced on the accompanying answers increases the ability to compare data gathered across questionnaires.  There are two
+mechanisms defined in the specification for linking a Question (or Group) to a standardized definition:
+</p>
+<ul>
+  <li>The <code>code</code> element on both Group and Question allows an individual question, a group of questions or even the questionnaire as a whole to be associated
+  with a pre-defined terminology of questions and question groups such as LOINC or SNOMED</li>
+  <li>The <a href="questionnaire-extensions.html#deReference">deReference</a> extension allows a question or group to be associated with the
+  <a href="dataelement.html">DataElement</a> (DE) resource that formally defines the data element.</li>
+</ul>
+<p>
+Linking to formal definitions of a question allows data captured by distinct questionnaires to be compared.  If systems have the necessary mappings to the
+formal definition, linkages to formal definitions may also be used to automatically pre-populate or extract data from a corresponding 
+<a href="questionnaireanswers.html">QuestionnaireAnswers</a> resource.
+</p>
+
+
+<a name="search"> </a>
+<h2><span class="sectioncount">6.5.6<a name="6.5.6"> </a></span> Search Parameters</h2>
+<p>Search parameters for this resource. The standard parameters also apply. See <a href="search.html">Searching</a> for more information about searching in REST, messaging, and services.</p>
+<table class="list">
+<tr><td><b>Name</b></td><td><b>Type</b></td><td><b>Description</b></td><td><b>Paths</b></td></tr>
+<tr><td>_id</td><td><a href="search.html#token">token</a></td><td>The logical resource id associated with the resource (must be supported by all servers)</td><td/></tr>
+<tr><td>_language</td><td><a href="search.html#token">token</a></td><td>The stated language of the resource</td><td/></tr>
+<tr><td>code</td><td><a href="search.html#token">token</a></td><td>A code that corresponds to the questionnaire or one of its groups</td><td>Questionnaire.group.concept</td></tr>
+<tr><td>date</td><td><a href="search.html#date">date</a></td><td>When the questionnaire was last changed</td><td>Questionnaire.date</td></tr>
+<tr><td>identifier</td><td><a href="search.html#token">token</a></td><td>An identifier for the questionnaire</td><td>Questionnaire.identifier</td></tr>
+<tr><td>publisher</td><td><a href="search.html#string">string</a></td><td>The author of the questionnaire</td><td>Questionnaire.publisher</td></tr>
+<tr><td>status</td><td><a href="search.html#token">token</a></td><td>The status of the questionnaire</td><td>Questionnaire.status</td></tr>
+<tr><td>title</td><td><a href="search.html#string">string</a></td><td>All or part of the name of the questionnaire (title for the root group of the questionnaire)</td><td/></tr>
+<tr><td>version</td><td><a href="search.html#string">string</a></td><td>The business version of the questionnaire</td><td>Questionnaire.version</td></tr>
+</table>
+
+
+
+</div>
+
+
+				</div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+        
+    </div>  <!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment">  <!-- segment-footer -->
+		<div class="container">  <!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        &copy; HL7.org 2011 - 2014. FHIR DSTU (v0.2.1-????) generated on Fri, Jun 6, 2014 13:29+0000.   <!-- <a href="qa.html">QA Report</a> -->   <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a href="dstu.html">What's a DSTU?</a> | <a href="history.html">Version History</a> | <a href="license.html">License</a> | <a href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
+        </span>
+        </p>
+			</div>  <!-- /inner-wrapper -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
+    
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

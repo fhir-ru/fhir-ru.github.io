@@ -1,0 +1,779 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>V3-EntityClass.xml - FHIR v0.2.1</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="../../fhir.css" rel="stylesheet"/>
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="../.././dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="../.././assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="../.././assets/css/project.css" rel="stylesheet"/>
+  <link href="../.././assets/css/pygments-manni.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="../.././assets/js/html5shiv.js"></script>
+  <script src="../.././assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../.././assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../.././assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../.././assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="../.././assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="../.././assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="../.././assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="../.././assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="../../index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="../../index.html">Home</a></li>
+              <li><a href="../../documentation.html">Documentation</a></li>
+              <li><a href="../../implementation.html">Implementation</a></li>
+              <li><a href="../../resourcelist.html">Resources</a></li>
+              <li><a href="../../clinical.html">Clinical</a></li>
+              <li><a href="../../administration.html">Administrative</a></li>
+              <li><a href="../../infrastructure.html">Infrastructure</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../documentation.html">Documentation</a></li>        <li><a href="../../terminologies.html">Using Codes</a></li>        <li><a href="../../terminologies-v3.html">V3 Namespaces</a></li>        <li><a href="index.html">EntityClass</a></li>        <li><b>Instance</b></li>        <!-- v3-EntityClass.xml.html / v3:cs:EntityClass -->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<h1>V3-EntityClass.xml</h1>
+
+<div class="example">
+<p> Classifies the Entity class and all of its subclasses.  The terminology is hierarchical.  At the top is this  HL7-defined domain of high-level categories (such as represented by the Entity subclasses). Each of these terms must be harmonized and is specializable. The value sets beneath are drawn from multiple, frequently external, domains that reflect much more fine-grained typing.</p>
+<p><a href="v3-EntityClass.xml">Raw XML</a></p>
+<pre class="xml">
+<span class="xmltag">&lt;ValueSet</span><span class="xmlattr"> xmlns="<span class="xmlattrvalue">http://hl7.org/fhir</span>"</span><span class="xmltag">&gt;</span><b>
+  </b><span class="xmltag">&lt;text</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">generated</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;div</span><span class="xmlattr"> xmlns="<span class="xmlattrvalue">http://www.w3.org/1999/xhtml</span>"</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;p</span><span class="xmltag">&gt;</span><b>Release Date: 2013-12-07</b><span class="xmltag">&lt;/p&gt;</span><b>
+
+      </b><span class="xmltag">&lt;h2</span><span class="xmltag">&gt;</span><b>Description</b><span class="xmltag">&lt;/h2&gt;</span><b>
+
+      </b><span class="xmltag">&lt;p</span><span class="xmltag">&gt;</span><b>
+                  Classifies the Entity class and all of its subclasses.  The terminology
+           is hierarchical.  At the top is this  HL7-defined domain of high-level categories (such
+           as represented by the Entity subclasses). Each of these terms must be harmonized and is
+           specializable. The value sets beneath are drawn from multiple, frequently external, domains
+           that reflect much more fine-grained typing.
+        </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+               
+      </b><span class="xmltag">&lt;/p&gt;</span><b>
+
+      </b><span class="xmltag">&lt;hr</span><span class="xmltag">/&gt;</span><b>
+
+      </b><span class="xmltag">&lt;table</span><span class="xmlattr"> class="<span class="xmlattrvalue">grid</span>"</span><span class="xmltag">&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>Level</b><span class="xmltag">&lt;/b&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>Code</b><span class="xmltag">&lt;/b&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>Display</b><span class="xmltag">&lt;/b&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltag">&lt;b</span><span class="xmltag">&gt;</span><b>Definition</b><span class="xmltag">&lt;/b&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>1</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>ENT
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">ENT</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>entity</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        Corresponds to the Entity class
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>2</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>  HCE
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">HCE</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>health chart entity</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        A health chart included to serve as a document receiving entity
+               in the management of medical records.
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>2</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>  LIV
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">LIV</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>living subject</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        Anything that essentially has the property of life, independent
+               of current state (a dead human corpse is still essentially a living subject).
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>3</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>    NLIV
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">NLIV</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>non-person living subject</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>A subtype of living subject that includes all living things except the species Homo Sapiens.</b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>4</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>      ANM
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">ANM</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>animal</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        A living subject from the animal kingdom.
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>4</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>      MIC
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">MIC</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>microorganism</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        All single celled living organisms including protozoa, bacteria,
+               yeast, viruses, etc.
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>4</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>      PLNT
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">PLNT</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>plant</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        A living subject from the order of plants.
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>3</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>    PSN
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">PSN</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>person</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        A living subject of the species homo sapiens.
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>2</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>  MAT
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">MAT</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>material</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        Any thing that has extension in space and mass, may be of living
+               or non-living origin.
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>3</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>    CHEM
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">CHEM</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>chemical substance</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        A substance that is fully defined by an organic or inorganic chemical
+               formula, includes mixtures of other chemical substances. Refine using, e.g., IUPAC codes.
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>3</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>    FOOD
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">FOOD</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>food</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        Naturally occurring, processed or manufactured entities that are
+               primarily used as food for humans and animals.
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>3</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>    MMAT
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">MMAT</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>manufactured material</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        Corresponds to the ManufacturedMaterial class
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>4</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>      CONT
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">CONT</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>container</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        A container of other entities.
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>5</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>        HOLD
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">HOLD</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>holder</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        A type of container that can hold other containers or other holders.
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>4</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>      DEV
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">DEV</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>device</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        A subtype of ManufacturedMaterial used in an activity, without
+               being substantially changed through that activity.  The kind of device is identified by
+               the code attribute inherited from Entity.
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                        
+                           Usage: This includes durable (reusable) medical equipment as
+               well as disposable equipment.
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>5</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>        CER
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">CER</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>certificate representation</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        A physical artifact that stores information about the granting
+               of authorization.
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>5</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>        MODDV
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">MODDV</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>imaging modality</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        Class to contain unique attributes of diagnostic imaging equipment.
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>2</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>  ORG
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">ORG</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>organization</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        A social or legal structure formed by human beings.
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>3</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>    PUB
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">PUB</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>public institution</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        An agency of the people of a state often assuming some authority
+               over a certain matter. Includes government, governmental agencies, associations.
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>3</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>    STATE
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">STATE</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>state</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        A politically organized body of people bonded by territory, culture,
+               or ethnicity, having sovereignty (to a certain extent) granted by other states (enclosing
+               or neighboring states). This includes countries (nations), provinces (e.g., one of the
+               United States of America or a French departement), counties or municipalities. Refine
+               using, e.g., ISO country codes, FIPS-PUB state codes, etc.
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>4</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>      NAT
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">NAT</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>Nation</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        A politically organized body of people bonded by territory and
+               known as a nation.
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>2</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>  PLC
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">PLC</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>place</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        A physical place or site with its containing structure. May be
+               natural or man-made. The geographic position of a place may or may not be constant.
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>3</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>    CITY
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">CITY</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>city or town</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        The territory of a city, town or other municipality.
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>3</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>    COUNTRY
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">COUNTRY</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>country</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        The territory of a sovereign nation.
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>3</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>    COUNTY
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">COUNTY</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>county or parish</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        The territory of a county, parish or other division of a state
+               or province.
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>3</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>    PROVINCE
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">PROVINCE</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>state or province</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        The territory of a state, province, department or other division
+               of a sovereign country.
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+ 
+        </b><span class="xmltag">&lt;tr</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>2</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>  RGRP
+            </b><span class="xmltag">&lt;a</span><span class="xmlattr"> name="<span class="xmlattrvalue">RGRP</span>"</span><span class="xmltag">&gt;</span><b> </b><span class="xmltag">&lt;/a&gt;</span><b>
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>group</b><span class="xmltag">&lt;/td&gt;</span><b>
+          </b><span class="xmltag">&lt;td</span><span class="xmltag">&gt;</span><b>
+                        A grouping of resources (personnel, material, or places) to be
+               used for scheduling purposes.  May be a pool of like-type resources, a team, or combination
+               of personnel, material and places.
+            </b><span class="xmltag">&lt;br</span><span class="xmltag">/&gt;</span><b>
+
+                     
+          </b><span class="xmltag">&lt;/td&gt;</span><b>
+        </b><span class="xmltag">&lt;/tr&gt;</span><b>
+
+      </b><span class="xmltag">&lt;/table&gt;</span><b>
+
+    </b><span class="xmltag">&lt;/div&gt;</span><b>
+  </b><span class="xmltag">&lt;/text&gt;</span><b>
+  </b><span class="xmltag">&lt;identifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/v3/vs/EntityClass</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">v3 Code System EntityClass</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;publisher</span><span class="xmlattr"> value="<span class="xmlattrvalue">HL7, Inc</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;telecom</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">url</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;value</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;/telecom&gt;</span><b>
+  </b><span class="xmltag">&lt;description</span><span class="xmlattr"> value="<span class="xmlattrvalue"> Classifies the Entity class and all of its subclasses.  The terminology is hierarchical.
+      At the top is this  HL7-defined domain of high-level categories (such as represented
+     by the Entity subclasses). Each of these terms must be harmonized and is specializable.
+     The value sets beneath are drawn from multiple, frequently external, domains that reflect
+     much more fine-grained typing.</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">active</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;date</span><span class="xmlattr"> value="<span class="xmlattrvalue">2013-12-07T00:00:00-00:00</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;define</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/v3/EntityClass</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;caseSensitive</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">ENT</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">entity</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">Corresponds to the Entity class</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">HCE</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">health chart entity</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">A health chart included to serve as a document receiving entity in the management of medical
+           records.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/concept&gt;</span><b>
+      </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">LIV</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">living subject</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">Anything that essentially has the property of life, independent of current state (a dead
+           human corpse is still essentially a living subject).</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">NLIV</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">non-person living subject</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">A subtype of living subject that includes all living things except the species Homo Sapiens.</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">ANM</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">animal</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">A living subject from the animal kingdom.</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;/concept&gt;</span><b>
+          </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">MIC</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">microorganism</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">All single celled living organisms including protozoa, bacteria, yeast, viruses, etc.</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;/concept&gt;</span><b>
+          </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">PLNT</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">plant</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">A living subject from the order of plants.</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;/concept&gt;</span><b>
+        </b><span class="xmltag">&lt;/concept&gt;</span><b>
+        </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">PSN</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">person</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">A living subject of the species homo sapiens.</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/concept&gt;</span><b>
+      </b><span class="xmltag">&lt;/concept&gt;</span><b>
+      </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">MAT</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">material</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">Any thing that has extension in space and mass, may be of living or non-living origin.</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">CHEM</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">chemical substance</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">A substance that is fully defined by an organic or inorganic chemical formula, includes
+             mixtures of other chemical substances. Refine using, e.g., IUPAC codes.</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/concept&gt;</span><b>
+        </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">FOOD</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">food</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">Naturally occurring, processed or manufactured entities that are primarily used as food
+             for humans and animals.</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/concept&gt;</span><b>
+        </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">MMAT</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">manufactured material</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">Corresponds to the ManufacturedMaterial class</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">CONT</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">container</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">A container of other entities.</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+              </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">HOLD</span>"</span><span class="xmltag">/&gt;</span><b>
+              </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">holder</span>"</span><span class="xmltag">/&gt;</span><b>
+              </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">A type of container that can hold other containers or other holders.</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltag">&lt;/concept&gt;</span><b>
+          </b><span class="xmltag">&lt;/concept&gt;</span><b>
+          </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">DEV</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">device</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">A subtype of ManufacturedMaterial used in an activity, without being substantially changed
+               through that activity.  The kind of device is identified by the code attribute inherited
+               from Entity.                                                      Usage: This includes
+               durable (reusable) medical equipment as well as disposable equipment.</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+              </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">CER</span>"</span><span class="xmltag">/&gt;</span><b>
+              </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">certificate representation</span>"</span><span class="xmltag">/&gt;</span><b>
+              </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">A physical artifact that stores information about the granting of authorization.</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltag">&lt;/concept&gt;</span><b>
+            </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+              </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">MODDV</span>"</span><span class="xmltag">/&gt;</span><b>
+              </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">imaging modality</span>"</span><span class="xmltag">/&gt;</span><b>
+              </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">Class to contain unique attributes of diagnostic imaging equipment.</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltag">&lt;/concept&gt;</span><b>
+          </b><span class="xmltag">&lt;/concept&gt;</span><b>
+        </b><span class="xmltag">&lt;/concept&gt;</span><b>
+      </b><span class="xmltag">&lt;/concept&gt;</span><b>
+      </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">ORG</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">organization</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">A social or legal structure formed by human beings.</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">PUB</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">public institution</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">An agency of the people of a state often assuming some authority over a certain matter.
+             Includes government, governmental agencies, associations.</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/concept&gt;</span><b>
+        </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">STATE</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">state</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">A politically organized body of people bonded by territory, culture, or ethnicity, having
+             sovereignty (to a certain extent) granted by other states (enclosing or neighboring states).
+             This includes countries (nations), provinces (e.g., one of the United States of America
+             or a French departement), counties or municipalities. Refine using, e.g., ISO country
+             codes, FIPS-PUB state codes, etc.</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">NAT</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Nation</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">A politically organized body of people bonded by territory and known as a nation.</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;/concept&gt;</span><b>
+        </b><span class="xmltag">&lt;/concept&gt;</span><b>
+      </b><span class="xmltag">&lt;/concept&gt;</span><b>
+      </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">PLC</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">place</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">A physical place or site with its containing structure. May be natural or man-made. The
+           geographic position of a place may or may not be constant.</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">CITY</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">city or town</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">The territory of a city, town or other municipality.</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/concept&gt;</span><b>
+        </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">COUNTRY</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">country</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">The territory of a sovereign nation.</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/concept&gt;</span><b>
+        </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">COUNTY</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">county or parish</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">The territory of a county, parish or other division of a state or province.</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/concept&gt;</span><b>
+        </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">PROVINCE</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">state or province</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">The territory of a state, province, department or other division of a sovereign country.</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/concept&gt;</span><b>
+      </b><span class="xmltag">&lt;/concept&gt;</span><b>
+      </b><span class="xmltag">&lt;concept</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">RGRP</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">group</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;definition</span><span class="xmlattr"> value="<span class="xmlattrvalue">A grouping of resources (personnel, material, or places) to be used for scheduling purposes.
+            May be a pool of like-type resources, a team, or combination of personnel, material and
+           places.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/concept&gt;</span><b>
+    </b><span class="xmltag">&lt;/concept&gt;</span><b>
+  </b><span class="xmltag">&lt;/define&gt;</span><b>
+</b><span class="xmltag">&lt;/ValueSet&gt;</span></pre>
+</div>
+
+
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011 - 2014. FHIR DSTU (v0.2.1-????) generated on Fri, Jun 6, 2014 13:29+0000. <!-- <a href="../../qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a href="../../dstu.html">What's a DSTU?</a> | <a href="../../history.html">Version History</a> | <a href="../../license.html">License</a> | <a href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../.././assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="../.././dist/js/bootstrap.min.js"> </script>
+<script src="../.././assets/js/respond.min.js"> </script>
+
+<script src="../.././assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

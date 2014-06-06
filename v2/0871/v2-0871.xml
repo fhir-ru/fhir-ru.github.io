@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Supply Risk Codes</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>COR
+            <a name="COR"> </a>
+          </td>
+          <td>Corrosive</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>EXP
+            <a name="EXP"> </a>
+          </td>
+          <td>Explosive</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>FLA
+            <a name="FLA"> </a>
+          </td>
+          <td>Flammable</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>INJ
+            <a name="INJ"> </a>
+          </td>
+          <td>Injury Hazard</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>RAD
+            <a name="RAD"> </a>
+          </td>
+          <td>Radioactive</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>TOX
+            <a name="TOX"> </a>
+          </td>
+          <td>Toxic</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>UNK
+            <a name="UNK"> </a>
+          </td>
+          <td>Unknown</td>
+          <td>added v2.6</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0871"/>
+  <name value="v2 Supply Risk Codes"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0871 ( Supply Risk Codes)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0871"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="COR"/>
+      <display value="Corrosive"/>
+    </concept>
+    <concept>
+      <code value="EXP"/>
+      <display value="Explosive"/>
+    </concept>
+    <concept>
+      <code value="FLA"/>
+      <display value="Flammable"/>
+    </concept>
+    <concept>
+      <code value="INJ"/>
+      <display value="Injury Hazard"/>
+    </concept>
+    <concept>
+      <code value="RAD"/>
+      <display value="Radioactive"/>
+    </concept>
+    <concept>
+      <code value="TOX"/>
+      <display value="Toxic"/>
+    </concept>
+    <concept>
+      <code value="UNK"/>
+      <display value="Unknown"/>
+    </concept>
+  </define>
+</ValueSet>

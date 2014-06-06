@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  A qualitative measure of the degree of exposure to the causative agent.  This includes concepts such as &quot;low&quot;, &quot;medium&quot; and &quot;high&quot;.  This quantifies how the quantity that was available to be administered to the target differs from typical or background levels of the substance.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>
+            <span style="color: grey">
+              <i>(_ActExposureLevelCode)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_ActExposureLevelCode"> </a>
+          </td>
+          <td>
+                        A qualitative measure of the degree of exposure to the causative agent.  This includes concepts such as &quot;low&quot;, &quot;medium&quot; and &quot;high&quot;.  This quantifies how the quantity that was available to be administered to the target differs from typical or background levels of the substance.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  HIGH
+            <a name="HIGH"> </a>
+          </td>
+          <td>high</td>
+          <td>
+                        
+                           Description: Exposure to an agent at a relatively high level above background.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  LOW
+            <a name="LOW"> </a>
+          </td>
+          <td>low</td>
+          <td>
+                        
+                           Description: Exposure to an agent at a relatively low level above background.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  MEDIUM
+            <a name="MEDIUM"> </a>
+          </td>
+          <td>medium</td>
+          <td>
+                        
+                           Description: Exposure to an agent at a relatively moderate level above background.A
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/ActExposureLevelCode"/>
+  <name value="v3 Code System ActExposureLevelCode"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" A qualitative measure of the degree of exposure to the causative agent.  This includes concepts such as &quot;low&quot;, &quot;medium&quot; and &quot;high&quot;.  This quantifies how the quantity that was available to be administered to the target differs from typical or background levels of the substance."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/ActExposureLevelCode"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="_ActExposureLevelCode"/>
+      <abstract value="true"/>
+      <display value="ActExposureLevelCode"/>
+      <definition value="A qualitative measure of the degree of exposure to the causative agent.  This includes concepts such as &quot;low&quot;, &quot;medium&quot; and &quot;high&quot;.  This quantifies how the quantity that was available to be administered to the target differs from typical or background levels of the substance."/>
+      <concept>
+        <code value="HIGH"/>
+        <display value="high"/>
+        <definition value="Description: Exposure to an agent at a relatively high level above background."/>
+      </concept>
+      <concept>
+        <code value="LOW"/>
+        <display value="low"/>
+        <definition value="Description: Exposure to an agent at a relatively low level above background."/>
+      </concept>
+      <concept>
+        <code value="MEDIUM"/>
+        <display value="medium"/>
+        <definition value="Description: Exposure to an agent at a relatively moderate level above background.A"/>
+      </concept>
+    </concept>
+  </define>
+</ValueSet>

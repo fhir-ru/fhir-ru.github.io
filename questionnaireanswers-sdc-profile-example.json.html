@@ -1,0 +1,132 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+ <title>Example for Profile Structured Data Capture Data Capture</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>Example for Profile Structured Data Capture Data Capture</p>
+<p><a href="questionnaireanswers-sdc-profile-example.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;QuestionnaireAnswers&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;\n      &lt;h1&gt;Diagnosis NCI Standard Template&lt;/h1&gt;\n      &lt;h2&gt;Mandatory Diagnosis Questions&lt;/h2&gt;\n      &lt;pre&gt;These items must be included when this data is collected for reporting.\n\n  &lt;b&gt;Date of Current Pathologic Diagnosis&lt;/b&gt;: 02/18/2003\n  &lt;b&gt;Diagnosis Type&lt;/b&gt;                      : Primary Diagnosis__\n  &lt;b&gt;Primary Site&lt;/b&gt;                        : Left Ovary\n&lt;/pre&gt;\n&lt;h2&gt;Conditional Diagnosis Questions&lt;/h2&gt;\n&lt;pre&gt;There are business rules to indicate situations under which these elements should be used on a case report form.\n\n  &lt;b&gt;Diagnosis Time Point&lt;/b&gt;: Restaging\n&lt;/pre&gt;\n&lt;h2&gt;Optional Diagnosis Conditions&lt;/h2&gt;\n&lt;pre&gt;There is no requirement for inclusion of these elements on the case report form. If the design and scientific questions posed in the study dictate the need to collect this type of data, these elements should be included.\n\n  &lt;b&gt;Reviewing Pathologist&lt;/b&gt;: Harold Ornada\n  &lt;b&gt;MedDRA Source Code&lt;/b&gt;   : __________\n  &lt;b&gt;Assessment Method&lt;/b&gt;    : Histological Procedure\n  &lt;b&gt;Tumor Grade&lt;/b&gt;          : Moderately Differentiated&lt;/pre&gt;\n    &lt;/div&gt;&quot;
+  },
+  &quot;status&quot;: &quot;completed&quot;,
+  &quot;authored&quot;: &quot;2014-01-21&quot;,
+  &quot;group&quot;: {
+    &quot;title&quot;: &quot;Diagnosis NCI Standard Template&quot;,
+    &quot;group&quot;: [
+      {
+        &quot;linkId&quot;: &quot;3921053v1.0&quot;,
+        &quot;title&quot;: &quot;Mandatory Diagnosis Questions&quot;,
+        &quot;text&quot;: &quot;These items must be included when this data is collected for reporting.&quot;,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;3921059v1.0&quot;,
+            &quot;text&quot;: &quot;Date of Current Pathologic Diagnosis&quot;,
+            &quot;answer&quot;: [
+              {
+                &quot;valueDate&quot;: &quot;2003-02-18&quot;
+              }
+            ]
+          },
+          {
+            &quot;linkId&quot;: &quot;3921060v1.0&quot;,
+            &quot;text&quot;: &quot;Diagnosis Type&quot;,
+            &quot;answer&quot;: [
+              {
+                &quot;valueCoding&quot;: {
+                  &quot;system&quot;: &quot;http://nci.nih.gov/xml/owl/cadsr/data_element_scoped_identifier#3921060v1.0-cs&quot;,
+                  &quot;code&quot;: &quot;1&quot;,
+                  &quot;display&quot;: &quot;Primary Diagnosis&quot;
+                }
+              }
+            ]
+          },
+          {
+            &quot;linkId&quot;: &quot;3921053v1.0&quot;,
+            &quot;text&quot;: &quot;Primary Site&quot;,
+            &quot;answer&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Left Ovary&quot;
+              }
+            ]
+          }
+        ]
+      },
+      {
+        &quot;linkId&quot;: &quot;3921066v1.0&quot;,
+        &quot;title&quot;: &quot;Conditional Diagnosis Questions&quot;,
+        &quot;text&quot;: &quot;There are business rules to indicate situations under which these elements should be used on a case report form.&quot;,
+        &quot;question&quot;: [
+          {
+            &quot;text&quot;: &quot;Diagnosis Time Point&quot;,
+            &quot;answer&quot;: [
+              {
+                &quot;valueCoding&quot;: {
+                  &quot;system&quot;: &quot;http://nci.nih.gov/xml/owl/cadsr/data_element_scoped_identifier#3921066v1.0-cs&quot;,
+                  &quot;code&quot;: &quot;3&quot;,
+                  &quot;display&quot;: &quot;Restaging&quot;
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        &quot;linkId&quot;: &quot;3921077v1.0&quot;,
+        &quot;title&quot;: &quot;Optional Diagnosis Questions&quot;,
+        &quot;text&quot;: &quot;There is no requirement for inclusion of these elements on the case report form. If the design and scientific questions posed in the study dictate the need to collect this type of data, these elements should be included.&quot;,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;3921079v1.0&quot;,
+            &quot;text&quot;: &quot;Reviewing Pathologist&quot;,
+            &quot;answer&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Harold Ornada&quot;
+              }
+            ]
+          },
+          {
+            &quot;linkId&quot;: &quot;3921080v1.0&quot;,
+            &quot;text&quot;: &quot;MedDRA disease code&quot;
+          },
+          {
+            &quot;linkId&quot;: &quot;3921081v1.0&quot;,
+            &quot;text&quot;: &quot;Assessment Method&quot;,
+            &quot;answer&quot;: [
+              {
+                &quot;valueCoding&quot;: {
+                  &quot;system&quot;: &quot;http://nci.nih.gov/xml/owl/cadsr/data_element_scoped_identifier#3921081v1.0-cs&quot;,
+                  &quot;code&quot;: &quot;2&quot;,
+                  &quot;display&quot;: &quot;Histological Procedure&quot;
+                }
+              }
+            ]
+          },
+          {
+            &quot;linkId&quot;: &quot;3921085v1.0&quot;,
+            &quot;text&quot;: &quot;Tumor grade&quot;,
+            &quot;answer&quot;: [
+              {
+                &quot;valueCoding&quot;: {
+                  &quot;system&quot;: &quot;http://nci.nih.gov/xml/owl/cadsr/data_element_scoped_identifier#3921085v1.0-cs&quot;,
+                  &quot;code&quot;: &quot;2&quot;,
+                  &quot;display&quot;: &quot;Moderately Differentiated&quot;
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
+</pre>
+</div>
+</body>
+</html>

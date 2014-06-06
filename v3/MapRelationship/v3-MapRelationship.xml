@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  The closeness or quality of the mapping between the HL7 concept (as represented by the HL7 concept identifier) and the source coding system. The values are patterned after the similar relationships used in the UMLS Metathesaurus. Because the HL7 coding sy
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>BT
+            <a name="BT"> </a>
+          </td>
+          <td>Broader Than</td>
+          <td>
+                        The first concept is at a more abstract level than the second concept.  For example, Hepatitis is broader than Hepatitis A, and endocrine disease is broader than Diabetes Mellitus.  Broader than is the opposite of the narrower than relationship.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>E
+            <a name="E"> </a>
+          </td>
+          <td>Exact</td>
+          <td>
+                        The two concepts have identical meaning.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>NT
+            <a name="NT"> </a>
+          </td>
+          <td>Narrower Than</td>
+          <td>
+                        The first concept is at a more detailed level than the second concept.  For example, Pennicillin G is narrower than Pennicillin, and vellus hair is narrower than hair.  Narrower than is the opposite of broader than.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/MapRelationship"/>
+  <name value="v3 Code System MapRelationship"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" The closeness or quality of the mapping between the HL7 concept (as represented by the HL7 concept identifier) and the source coding system. The values are patterned after the similar relationships used in the UMLS Metathesaurus. Because the HL7 coding sy"/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/MapRelationship"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="BT"/>
+      <display value="Broader Than"/>
+      <definition value="The first concept is at a more abstract level than the second concept.  For example, Hepatitis is broader than Hepatitis A, and endocrine disease is broader than Diabetes Mellitus.  Broader than is the opposite of the narrower than relationship."/>
+    </concept>
+    <concept>
+      <code value="E"/>
+      <display value="Exact"/>
+      <definition value="The two concepts have identical meaning."/>
+    </concept>
+    <concept>
+      <code value="NT"/>
+      <display value="Narrower Than"/>
+      <definition value="The first concept is at a more detailed level than the second concept.  For example, Pennicillin G is narrower than Pennicillin, and vellus hair is narrower than hair.  Narrower than is the opposite of broader than."/>
+    </concept>
+  </define>
+</ValueSet>

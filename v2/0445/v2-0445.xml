@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Identity Reliability Code</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>AL
+            <a name="AL"> </a>
+          </td>
+          <td>Patient/Person Name is an Alias</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>UA
+            <a name="UA"> </a>
+          </td>
+          <td>Unknown/Default Address</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>UD
+            <a name="UD"> </a>
+          </td>
+          <td>Unknown/Default Date of Birth</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>US
+            <a name="US"> </a>
+          </td>
+          <td>Unknown/Default Social Security Number</td>
+          <td>added v2.4</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0445"/>
+  <name value="v2 Identity Reliability Code"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0445 ( Identity Reliability Code)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0445"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="AL"/>
+      <display value="Patient/Person Name is an Alias"/>
+    </concept>
+    <concept>
+      <code value="UA"/>
+      <display value="Unknown/Default Address"/>
+    </concept>
+    <concept>
+      <code value="UD"/>
+      <display value="Unknown/Default Date of Birth"/>
+    </concept>
+    <concept>
+      <code value="US"/>
+      <display value="Unknown/Default Social Security Number"/>
+    </concept>
+  </define>
+</ValueSet>

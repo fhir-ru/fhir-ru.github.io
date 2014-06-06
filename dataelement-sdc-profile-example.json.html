@@ -1,0 +1,195 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+ <title>Example for Profile Structured Data Capture Data Element</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>Example for Profile Structured Data Capture Data Element</p>
+<p><a href="dataelement-sdc-profile-example.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;DataElement&quot;,
+  &quot;extension&quot;: [
+    {
+      &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/element-extensions#minLength&quot;,
+      &quot;valueInteger&quot;: 1
+    },
+    {
+      &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/element-extensions#maxLength&quot;,
+      &quot;valueInteger&quot;: 13
+    }
+  ],
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;\n      &lt;p&gt;\n        &lt;b&gt;Gender Code&lt;/b&gt;: The code representing the gender of a person&lt;/p&gt;\n      &lt;table&gt;\n        &lt;tbody&gt;\n          &lt;tr&gt;\n            &lt;th&gt;Code&lt;/th&gt;\n            &lt;th&gt;Display&lt;/th&gt;\n            &lt;th&gt;Definition&lt;/th&gt;\n          &lt;/tr&gt;\n          &lt;tr&gt;\n            &lt;td&gt;0&lt;/td&gt;\n            &lt;td&gt;Unknown&lt;/td&gt;\n            &lt;td&gt;Not known, not observed, not recorded, or refused.&lt;/td&gt;\n          &lt;/tr&gt;\n          &lt;tr&gt;\n            &lt;td&gt;1&lt;/td&gt;\n            &lt;td&gt;Male&lt;/td&gt;\n            &lt;td&gt;A person who belongs to the sex that normally produces sperm. The term is used to indicate biological sex distinctions, cultural gender role distinctions, or both.&lt;/td&gt;\n          &lt;/tr&gt;\n          &lt;tr&gt;\n            &lt;td&gt;2&lt;/td&gt;\n            &lt;td&gt;Female&lt;/td&gt;\n            &lt;td&gt;A person who belongs to the sex that normally produces ova. The term is used to indicate biological sex distinctions, or cultural gender role distinctions, or both.&lt;/td&gt;\n          &lt;/tr&gt;\n          &lt;tr&gt;\n            &lt;td&gt;3&lt;/td&gt;\n            &lt;td&gt;Not specified&lt;/td&gt;\n            &lt;td&gt;Not specified&lt;/td&gt;\n          &lt;/tr&gt;\n        &lt;/tbody&gt;\n      &lt;/table&gt;\n    &lt;/div&gt;&quot;
+  },
+  &quot;contained&quot;: [
+    {
+      &quot;resourceType&quot;: &quot;ValueSet&quot;,
+      &quot;_id&quot;: &quot;2179414&quot;,
+      &quot;identifier&quot;: &quot;2179414&quot;,
+      &quot;version&quot;: &quot;1.0&quot;,
+      &quot;name&quot;: &quot;Gender Code&quot;,
+      &quot;description&quot;: &quot;All codes representing the gender of a person.&quot;,
+      &quot;status&quot;: &quot;active&quot;,
+      &quot;define&quot;: {
+        &quot;system&quot;: &quot;http://example.org/fhir/2179414&quot;,
+        &quot;concept&quot;: [
+          {
+            &quot;code&quot;: &quot;0&quot;,
+            &quot;display&quot;: &quot;Unknown&quot;,
+            &quot;definition&quot;: &quot;Not known, not observed, not recorded, or refused. &quot;
+          },
+          {
+            &quot;code&quot;: &quot;1&quot;,
+            &quot;display&quot;: &quot;Male&quot;,
+            &quot;definition&quot;: &quot;A person who belongs to the sex that normally produces sperm. The term is used to indicate biological sex distinctions, cultural gender role distinctions, or both.&quot;
+          },
+          {
+            &quot;code&quot;: &quot;2&quot;,
+            &quot;display&quot;: &quot;Female&quot;,
+            &quot;definition&quot;: &quot;A person who belongs to the sex that normally produces ova. The term is used to indicate biological sex distinctions, or cultural gender role distinctions, or both.&quot;
+          },
+          {
+            &quot;code&quot;: &quot;3&quot;,
+            &quot;display&quot;: &quot;Not specified&quot;,
+            &quot;definition&quot;: &quot;Not specified&quot;
+          }
+        ]
+      }
+    },
+    {
+      &quot;resourceType&quot;: &quot;ConceptMap&quot;,
+      &quot;_id&quot;: &quot;2179414-cm&quot;,
+      &quot;name&quot;: &quot;TODO - remove&quot;,
+      &quot;status&quot;: &quot;active&quot;,
+      &quot;sourceResource&quot;: {
+        &quot;reference&quot;: &quot;#2179414&quot;
+      },
+      &quot;targetUri&quot;: &quot;http://ncit.nci.nih.gov&quot;,
+      &quot;element&quot;: [
+        {
+          &quot;codeSystem&quot;: &quot;http://example.org/fhir/2179414&quot;,
+          &quot;code&quot;: &quot;0&quot;,
+          &quot;map&quot;: [
+            {
+              &quot;code&quot;: &quot;C17998&quot;,
+              &quot;equivalence&quot;: &quot;equal&quot;
+            }
+          ]
+        },
+        {
+          &quot;codeSystem&quot;: &quot;http://example.org/fhir/2179414&quot;,
+          &quot;code&quot;: &quot;1&quot;,
+          &quot;map&quot;: [
+            {
+              &quot;code&quot;: &quot;C20197&quot;,
+              &quot;equivalence&quot;: &quot;equal&quot;
+            }
+          ]
+        },
+        {
+          &quot;codeSystem&quot;: &quot;http://example.org/fhir/2179414&quot;,
+          &quot;code&quot;: &quot;2&quot;,
+          &quot;map&quot;: [
+            {
+              &quot;code&quot;: &quot;C16576&quot;,
+              &quot;equivalence&quot;: &quot;equal&quot;
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  &quot;identifier&quot;: &quot;2179650&quot;,
+  &quot;version&quot;: &quot;1.0&quot;,
+  &quot;publisher&quot;: &quot;DCP&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;name&quot;: &quot;Gender Code&quot;,
+  &quot;category&quot;: [
+    {
+      &quot;coding&quot;: [
+        {
+          &quot;system&quot;: &quot;http://unknown/FBPP&quot;,
+          &quot;display&quot;: &quot;FBPP Pooled Database&quot;
+        },
+        {
+          &quot;system&quot;: &quot;http://unknown/PhenX&quot;,
+          &quot;display&quot;: &quot;Demographics&quot;
+        },
+        {
+          &quot;system&quot;: &quot;http://unknown/Eligibility Criteria&quot;,
+          &quot;display&quot;: &quot;Pt. Administrative&quot;
+        },
+        {
+          &quot;system&quot;: &quot;http://unknown/UAMS Clinical Research&quot;,
+          &quot;display&quot;: &quot;UAMS New CDEs&quot;
+        },
+        {
+          &quot;system&quot;: &quot;http://unknown/PhenX&quot;,
+          &quot;display&quot;: &quot;Substance Abuse and &quot;
+        },
+        {
+          &quot;system&quot;: &quot;http://unknown/Category&quot;,
+          &quot;display&quot;: &quot;CSAERS Adverse Event&quot;
+        },
+        {
+          &quot;system&quot;: &quot;http://unknown/PhenX&quot;,
+          &quot;display&quot;: &quot;Core: Tier 1&quot;
+        },
+        {
+          &quot;system&quot;: &quot;http://unknown/Category&quot;,
+          &quot;display&quot;: &quot;Case Report Forms&quot;
+        },
+        {
+          &quot;system&quot;: &quot;http://unknown/Category&quot;,
+          &quot;display&quot;: &quot;CSAERS Review Set&quot;
+        },
+        {
+          &quot;system&quot;: &quot;http://unknown/Demonstration%20Applications&quot;,
+          &quot;display&quot;: &quot;CIAF&quot;
+        },
+        {
+          &quot;system&quot;: &quot;http://unknown/NIDA%20CTN%20Usage&quot;,
+          &quot;display&quot;: &quot;Clinical Research&quot;
+        },
+        {
+          &quot;system&quot;: &quot;http://unknown/NIDA%20CTN%20Usage&quot;,
+          &quot;display&quot;: &quot;Electronic Health Re&quot;
+        },
+        {
+          &quot;system&quot;: &quot;http://unknown/Condition&quot;,
+          &quot;display&quot;: &quot;Barretts Esophagus&quot;
+        },
+        {
+          &quot;system&quot;: &quot;http://unknown/Condition&quot;,
+          &quot;display&quot;: &quot;Bladder Cancer&quot;
+        },
+        {
+          &quot;system&quot;: &quot;http://unknown/Condition&quot;,
+          &quot;display&quot;: &quot;Oral Leukoplakia&quot;
+        },
+        {
+          &quot;system&quot;: &quot;http://unknown/Condition&quot;,
+          &quot;display&quot;: &quot;Sulindac for Breast&quot;
+        }
+      ]
+    }
+  ],
+  &quot;question&quot;: &quot;Gender&quot;,
+  &quot;definition&quot;: &quot;The code representing the gender of a person.&quot;,
+  &quot;type&quot;: &quot;CodeableConcept&quot;,
+  &quot;binding&quot;: {
+    &quot;isExtensible&quot;: false,
+    &quot;conformance&quot;: &quot;required&quot;,
+    &quot;valueSet&quot;: {
+      &quot;reference&quot;: &quot;#2179414&quot;
+    }
+  }
+}
+</pre>
+</div>
+</body>
+</html>

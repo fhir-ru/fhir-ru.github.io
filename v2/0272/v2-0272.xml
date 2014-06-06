@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Document Confidentiality Status</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1
+            <a name="1"> </a>
+          </td>
+          <td>ASTM Level 1</td>
+          <td>added v2.3, removed after v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>2
+            <a name="2"> </a>
+          </td>
+          <td>ASTM Level 2</td>
+          <td>added v2.3, removed after v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>3
+            <a name="3"> </a>
+          </td>
+          <td>ASTM Level 3</td>
+          <td>added v2.3, removed after v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>R
+            <a name="R"> </a>
+          </td>
+          <td>Restricted</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>RE
+            <a name="RE"> </a>
+          </td>
+          <td>Restricted</td>
+          <td>added v2.3, removed after v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>U
+            <a name="U"> </a>
+          </td>
+          <td>Usual control</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>UC
+            <a name="UC"> </a>
+          </td>
+          <td>Usual control</td>
+          <td>added v2.3, removed after v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>V
+            <a name="V"> </a>
+          </td>
+          <td>Very restricted</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>VR
+            <a name="VR"> </a>
+          </td>
+          <td>Very restricted</td>
+          <td>added v2.3, removed after v2.3</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0272"/>
+  <name value="v2 Document Confidentiality Status"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0272 ( Document Confidentiality Status)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0272"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="1"/>
+      <display value="ASTM Level 1"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="2"/>
+      <display value="ASTM Level 2"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="3"/>
+      <display value="ASTM Level 3"/>
+    </concept>
+    <concept>
+      <code value="R"/>
+      <display value="Restricted"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="RE"/>
+      <display value="Restricted"/>
+    </concept>
+    <concept>
+      <code value="U"/>
+      <display value="Usual control"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="UC"/>
+      <display value="Usual control"/>
+    </concept>
+    <concept>
+      <code value="V"/>
+      <display value="Very restricted"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="VR"/>
+      <display value="Very restricted"/>
+    </concept>
+  </define>
+</ValueSet>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Preferred Method of Contact</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>B
+            <a name="B"> </a>
+          </td>
+          <td>Beeper Number</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>C
+            <a name="C"> </a>
+          </td>
+          <td>Cellular Phone Number</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>E
+            <a name="E"> </a>
+          </td>
+          <td>E-Mail Address (for backward compatibility)</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>F
+            <a name="F"> </a>
+          </td>
+          <td>FAX Number</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>H
+            <a name="H"> </a>
+          </td>
+          <td>Home Phone Number</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>M
+            <a name="M"> </a>
+          </td>
+          <td>Mail</td>
+          <td>added v2.3, removed after v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>O
+            <a name="O"> </a>
+          </td>
+          <td>Office Phone Number</td>
+          <td>added v2.2</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0185"/>
+  <name value="v2 Preferred Method of Contact"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0185 ( Preferred Method of Contact)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0185"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="B"/>
+      <display value="Beeper Number"/>
+    </concept>
+    <concept>
+      <code value="C"/>
+      <display value="Cellular Phone Number"/>
+    </concept>
+    <concept>
+      <code value="E"/>
+      <display value="E-Mail Address (for backward compatibility)"/>
+    </concept>
+    <concept>
+      <code value="F"/>
+      <display value="FAX Number"/>
+    </concept>
+    <concept>
+      <code value="H"/>
+      <display value="Home Phone Number"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="M"/>
+      <display value="Mail"/>
+    </concept>
+    <concept>
+      <code value="O"/>
+      <display value="Office Phone Number"/>
+    </concept>
+  </define>
+</ValueSet>

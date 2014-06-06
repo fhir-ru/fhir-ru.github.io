@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Telecommunication Use Code</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>ASN
+            <a name="ASN"> </a>
+          </td>
+          <td>Answering Service Number</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>BPN
+            <a name="BPN"> </a>
+          </td>
+          <td>Beeper Number</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>EMR
+            <a name="EMR"> </a>
+          </td>
+          <td>Emergency Number</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>NET
+            <a name="NET"> </a>
+          </td>
+          <td>Network (email) Address</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>ORN
+            <a name="ORN"> </a>
+          </td>
+          <td>Other Residence Number</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>PRN
+            <a name="PRN"> </a>
+          </td>
+          <td>Primary Residence Number</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>PRS
+            <a name="PRS"> </a>
+          </td>
+          <td>Personal</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>VHN
+            <a name="VHN"> </a>
+          </td>
+          <td>Vacation Home Number</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>WPN
+            <a name="WPN"> </a>
+          </td>
+          <td>Work Number</td>
+          <td>added v2.3</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0201"/>
+  <name value="v2 Telecommunication Use Code"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0201 ( Telecommunication Use Code)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0201"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="ASN"/>
+      <display value="Answering Service Number"/>
+    </concept>
+    <concept>
+      <code value="BPN"/>
+      <display value="Beeper Number"/>
+    </concept>
+    <concept>
+      <code value="EMR"/>
+      <display value="Emergency Number"/>
+    </concept>
+    <concept>
+      <code value="NET"/>
+      <display value="Network (email) Address"/>
+    </concept>
+    <concept>
+      <code value="ORN"/>
+      <display value="Other Residence Number"/>
+    </concept>
+    <concept>
+      <code value="PRN"/>
+      <display value="Primary Residence Number"/>
+    </concept>
+    <concept>
+      <code value="PRS"/>
+      <display value="Personal"/>
+    </concept>
+    <concept>
+      <code value="VHN"/>
+      <display value="Vacation Home Number"/>
+    </concept>
+    <concept>
+      <code value="WPN"/>
+      <display value="Work Number"/>
+    </concept>
+  </define>
+</ValueSet>

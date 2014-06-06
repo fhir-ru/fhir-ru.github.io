@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  
+                     Description:Identifies the order in which content should be processed.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>SEQL
+            <a name="SEQL"> </a>
+          </td>
+          <td>Sequential</td>
+          <td>
+                        
+                           Description:The content should be processed in a sequential fashion.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>UNOR
+            <a name="UNOR"> </a>
+          </td>
+          <td>Unordered</td>
+          <td>
+                        
+                           Description:The content may be processed in any order.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/ContentProcessingMode"/>
+  <name value="v3 Code System ContentProcessingMode"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="  Description:
+Identifies the order in which content should be processed."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/ContentProcessingMode"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="SEQL"/>
+      <display value="Sequential"/>
+      <definition value="Description:The content should be processed in a sequential fashion."/>
+    </concept>
+    <concept>
+      <code value="UNOR"/>
+      <display value="Unordered"/>
+      <definition value="Description:The content may be processed in any order."/>
+    </concept>
+  </define>
+</ValueSet>

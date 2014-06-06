@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Quantity Limited Request</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>CH
+            <a name="CH"> </a>
+          </td>
+          <td>Characters</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>LI
+            <a name="LI"> </a>
+          </td>
+          <td>Lines</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>PG
+            <a name="PG"> </a>
+          </td>
+          <td>Pages</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>RD
+            <a name="RD"> </a>
+          </td>
+          <td>Records</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>ZO
+            <a name="ZO"> </a>
+          </td>
+          <td>Locally defined</td>
+          <td>from v2.1</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0126"/>
+  <name value="v2 Quantity Limited Request"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0126 ( Quantity Limited Request)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0126"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="CH"/>
+      <display value="Characters"/>
+    </concept>
+    <concept>
+      <code value="LI"/>
+      <display value="Lines"/>
+    </concept>
+    <concept>
+      <code value="PG"/>
+      <display value="Pages"/>
+    </concept>
+    <concept>
+      <code value="RD"/>
+      <display value="Records"/>
+    </concept>
+    <concept>
+      <code value="ZO"/>
+      <display value="Locally defined"/>
+    </concept>
+  </define>
+</ValueSet>

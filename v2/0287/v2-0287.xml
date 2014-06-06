@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Problem/Goal Action Code</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>AD
+            <a name="AD"> </a>
+          </td>
+          <td>ADD</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>CO
+            <a name="CO"> </a>
+          </td>
+          <td>CORRECT</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>DE
+            <a name="DE"> </a>
+          </td>
+          <td>DELETE</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>LI
+            <a name="LI"> </a>
+          </td>
+          <td>LINK</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>UC
+            <a name="UC"> </a>
+          </td>
+          <td>UNCHANGED *</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>UN
+            <a name="UN"> </a>
+          </td>
+          <td>UNLINK</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>UP
+            <a name="UP"> </a>
+          </td>
+          <td>UPDATE</td>
+          <td>added v2.3</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0287"/>
+  <name value="v2 Problem/Goal Action Code"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0287 ( Problem/Goal Action Code)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0287"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="AD"/>
+      <display value="ADD"/>
+    </concept>
+    <concept>
+      <code value="CO"/>
+      <display value="CORRECT"/>
+    </concept>
+    <concept>
+      <code value="DE"/>
+      <display value="DELETE"/>
+    </concept>
+    <concept>
+      <code value="LI"/>
+      <display value="LINK"/>
+    </concept>
+    <concept>
+      <code value="UC"/>
+      <display value="UNCHANGED *"/>
+    </concept>
+    <concept>
+      <code value="UN"/>
+      <display value="UNLINK"/>
+    </concept>
+    <concept>
+      <code value="UP"/>
+      <display value="UPDATE"/>
+    </concept>
+  </define>
+</ValueSet>

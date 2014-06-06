@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>EXT
+            <a name="EXT"> </a>
+          </td>
+          <td>extended courtesy</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>NRM
+            <a name="NRM"> </a>
+          </td>
+          <td>normal courtesy</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>PRF
+            <a name="PRF"> </a>
+          </td>
+          <td>professional courtesy</td>
+          <td/>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>STF
+            <a name="STF"> </a>
+          </td>
+          <td>staff</td>
+          <td>
+                        Courtesies extended to the staff of the entity providing service.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>VIP
+            <a name="VIP"> </a>
+          </td>
+          <td>very important person</td>
+          <td/>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/EncounterSpecialCourtesy"/>
+  <name value="v3 Code System EncounterSpecialCourtesy"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="? not found"/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/EncounterSpecialCourtesy"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="EXT"/>
+      <display value="extended courtesy"/>
+    </concept>
+    <concept>
+      <code value="NRM"/>
+      <display value="normal courtesy"/>
+    </concept>
+    <concept>
+      <code value="PRF"/>
+      <display value="professional courtesy"/>
+    </concept>
+    <concept>
+      <code value="STF"/>
+      <display value="staff"/>
+      <definition value="Courtesies extended to the staff of the entity providing service."/>
+    </concept>
+    <concept>
+      <code value="VIP"/>
+      <display value="very important person"/>
+    </concept>
+  </define>
+</ValueSet>

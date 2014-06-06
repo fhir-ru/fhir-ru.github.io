@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Source of Comment</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>L
+            <a name="L"> </a>
+          </td>
+          <td>Ancillary (filler) department is source of comment</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>O
+            <a name="O"> </a>
+          </td>
+          <td>Other system is source of comment</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>P
+            <a name="P"> </a>
+          </td>
+          <td>Orderer (placer) is source of comment</td>
+          <td>from v2.1</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0105"/>
+  <name value="v2 Source of Comment"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0105 ( Source of Comment)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0105"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="L"/>
+      <display value="Ancillary (filler) department is source of comment"/>
+    </concept>
+    <concept>
+      <code value="O"/>
+      <display value="Other system is source of comment"/>
+    </concept>
+    <concept>
+      <code value="P"/>
+      <display value="Orderer (placer) is source of comment"/>
+    </concept>
+  </define>
+</ValueSet>

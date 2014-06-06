@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  
+                     Deprecation Comment: Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>hasPart
+            <a name="hasPart"> </a>
+          </td>
+          <td>has part</td>
+          <td>
+                        The target concept is a part or portion of the source concept.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>hasSubtype
+            <a name="hasSubtype"> </a>
+          </td>
+          <td>has subtype</td>
+          <td>
+                        Target concept is a subtype / subclass or the source (or the target concept implies the source
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>smallerThan
+            <a name="smallerThan"> </a>
+          </td>
+          <td>is smaller than</td>
+          <td>
+                        The source concept code is &quot;less than&quot; the target concept in a strictly ordinal sense.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/ConceptCodeRelationship"/>
+  <name value="v3 Code System ConceptCodeRelationship"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="  Deprecation Comment:
+Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/ConceptCodeRelationship"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="hasPart"/>
+      <display value="has part"/>
+      <definition value="The target concept is a part or portion of the source concept."/>
+    </concept>
+    <concept>
+      <code value="hasSubtype"/>
+      <display value="has subtype"/>
+      <definition value="Target concept is a subtype / subclass or the source (or the target concept implies the source"/>
+    </concept>
+    <concept>
+      <code value="smallerThan"/>
+      <display value="is smaller than"/>
+      <definition value="The source concept code is &quot;less than&quot; the target concept in a strictly ordinal sense."/>
+    </concept>
+  </define>
+</ValueSet>

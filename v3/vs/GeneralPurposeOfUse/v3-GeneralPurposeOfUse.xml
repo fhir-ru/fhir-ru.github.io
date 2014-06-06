@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>GeneralPurposeOfUse</h2>
+      <p> Supports communication of purpose of use at a general level. (OID = 2.16.840.1.113883.1.11.20449)</p>
+      <p>This value set includes codes defined in other code systems, using the following rules:</p>
+      <ul>
+        <li>Include these codes as defined in 
+          <a href="../../../v3/ActReason/index.html">http://hl7.org/fhir/v3/ActReason</a>
+          <table>
+            <tr>
+              <td>
+                <b>Code</b>
+              </td>
+              <td>
+                <b>Display</b>
+              </td>
+              <td>
+                <b>Definition</b>
+              </td>
+            </tr>
+            <tr>
+              <td>COVERAGE</td>
+              <td>coverage under policy or program</td>
+              <td>To perform one or more operations on information for conducting activities related to coverage under a program or policy.</td>
+            </tr>
+            <tr>
+              <td>ETREAT</td>
+              <td>Emergency Treatment</td>
+              <td>To perform one or more operations on information for provision of immediately needed health care for an emergent condition.</td>
+            </tr>
+            <tr>
+              <td>HMARKT</td>
+              <td>healthcare marketing</td>
+              <td>To perform one or more operations on information for marketing services and products related to health care.</td>
+            </tr>
+            <tr>
+              <td>HOPERAT</td>
+              <td>healthcare operations</td>
+              <td>To perform one or more operations on information used for conducting administrative and contractual activities related to the provision of health care.</td>
+            </tr>
+            <tr>
+              <td>HPAYMT</td>
+              <td>healthcare payment</td>
+              <td>To perform one or more operations on information for conducting financial or contractual activities related to payment for provision of health care.</td>
+            </tr>
+            <tr>
+              <td>HRESCH</td>
+              <td>healthcare research</td>
+              <td>To perform one or more operations on information for conducting scientific investigations to obtain health care knowledge.</td>
+            </tr>
+            <tr>
+              <td>PATRQT</td>
+              <td>patient requested</td>
+              <td>To perform one or more operations on information in response to a patient&#39;s request.</td>
+            </tr>
+            <tr>
+              <td>PUBHLTH</td>
+              <td>public health</td>
+              <td>To perform one or more operations on information for conducting public health activities, such as the reporting of notifiable conditions.</td>
+            </tr>
+            <tr>
+              <td>TREAT</td>
+              <td>treatment</td>
+              <td>To perform one or more operations on information for provision of health care.</td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/GeneralPurposeOfUse"/>
+  <version value="2013-12-07"/>
+  <name value="GeneralPurposeOfUse"/>
+  <publisher value="HL7 v3"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://www.hl7.org"/>
+  </telecom>
+  <description value=" Supports communication of purpose of use at a general level. (OID = 2.16.840.1.113883.1.11.20449)"/>
+  <status value="active"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/v3/ActReason"/>
+      <code value="COVERAGE"/>
+      <code value="ETREAT"/>
+      <code value="HMARKT"/>
+      <code value="HOPERAT"/>
+      <code value="HPAYMT"/>
+      <code value="HRESCH"/>
+      <code value="PATRQT"/>
+      <code value="PUBHLTH"/>
+      <code value="TREAT"/>
+    </include>
+  </compose>
+</ValueSet>

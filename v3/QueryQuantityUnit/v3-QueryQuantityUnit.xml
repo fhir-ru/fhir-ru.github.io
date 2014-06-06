@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  Values in this domain specify the units of a query quantity limited request.
+        <br/>
+
+                  
+                     Deprecation Comment: Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used.  This is a holdover.  It is not referenced.  It is superseded by QueryRequestLimit. 
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>CH
+            <a name="CH"> </a>
+          </td>
+          <td>Characters</td>
+          <td>
+                        Used where size of input buffer has limitations.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>LI
+            <a name="LI"> </a>
+          </td>
+          <td>Lines</td>
+          <td>
+                        Used where lines of respone has limitations.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>PG
+            <a name="PG"> </a>
+          </td>
+          <td>Pages</td>
+          <td>
+                        Used where pages of response has limitations.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>RD
+            <a name="RD"> </a>
+          </td>
+          <td>Records</td>
+          <td>
+                        Used where number of records or instances of items in the query response result set has limitations.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/QueryQuantityUnit"/>
+  <name value="v3 Code System QueryQuantityUnit"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" Values in this domain specify the units of a query quantity limited request.  Deprecation Comment:
+Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used.  This is a holdover.  It is not referenced.  It is superseded by QueryRequestLimit."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/QueryQuantityUnit"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="CH"/>
+      <display value="Characters"/>
+      <definition value="Used where size of input buffer has limitations."/>
+    </concept>
+    <concept>
+      <code value="LI"/>
+      <display value="Lines"/>
+      <definition value="Used where lines of respone has limitations."/>
+    </concept>
+    <concept>
+      <code value="PG"/>
+      <display value="Pages"/>
+      <definition value="Used where pages of response has limitations."/>
+    </concept>
+    <concept>
+      <code value="RD"/>
+      <display value="Records"/>
+      <definition value="Used where number of records or instances of items in the query response result set has limitations."/>
+    </concept>
+  </define>
+</ValueSet>

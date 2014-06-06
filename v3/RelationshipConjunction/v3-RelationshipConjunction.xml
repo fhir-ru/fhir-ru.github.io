@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>AND
+            <a name="AND"> </a>
+          </td>
+          <td>and</td>
+          <td>
+                        This condition must be true.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>OR
+            <a name="OR"> </a>
+          </td>
+          <td>or</td>
+          <td>
+                        At least one of the condition among all OR conditions must be true.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>XOR
+            <a name="XOR"> </a>
+          </td>
+          <td>exclusive or</td>
+          <td>
+                        One and only one of the XOR conditions must be true.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/RelationshipConjunction"/>
+  <name value="v3 Code System RelationshipConjunction"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="? not found"/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/RelationshipConjunction"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="AND"/>
+      <display value="and"/>
+      <definition value="This condition must be true."/>
+    </concept>
+    <concept>
+      <code value="OR"/>
+      <display value="or"/>
+      <definition value="At least one of the condition among all OR conditions must be true."/>
+    </concept>
+    <concept>
+      <code value="XOR"/>
+      <display value="exclusive or"/>
+      <definition value="One and only one of the XOR conditions must be true."/>
+    </concept>
+  </define>
+</ValueSet>

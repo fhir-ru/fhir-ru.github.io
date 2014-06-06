@@ -1,0 +1,1529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Vaccines Administered (code = CVX) (parenteral, unless oral is noted)</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>01
+            <a name="01"> </a>
+          </td>
+          <td>DTP</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>02
+            <a name="02"> </a>
+          </td>
+          <td>OPV</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>03
+            <a name="03"> </a>
+          </td>
+          <td>MMR</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>04
+            <a name="04"> </a>
+          </td>
+          <td>M/R</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>05
+            <a name="05"> </a>
+          </td>
+          <td>measles</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>06
+            <a name="06"> </a>
+          </td>
+          <td>rubella</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>07
+            <a name="07"> </a>
+          </td>
+          <td>mumps</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>08
+            <a name="08"> </a>
+          </td>
+          <td>Hep B, adolescent or pediatric</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>09
+            <a name="09"> </a>
+          </td>
+          <td>Td (adult)</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>10
+            <a name="10"> </a>
+          </td>
+          <td>IPV</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>100
+            <a name="100"> </a>
+          </td>
+          <td>pneumococcal conjugate</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>101
+            <a name="101"> </a>
+          </td>
+          <td>typhoid, ViCPs</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>102
+            <a name="102"> </a>
+          </td>
+          <td>DTP-Hib-Hep B</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>103
+            <a name="103"> </a>
+          </td>
+          <td>meningococcal C conjugate</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>104
+            <a name="104"> </a>
+          </td>
+          <td>Hep A-Hep B</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>105
+            <a name="105"> </a>
+          </td>
+          <td>vaccinia (smallpox) diluted</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>106
+            <a name="106"> </a>
+          </td>
+          <td>DTaP, 5 pertussis antigens6</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>107
+            <a name="107"> </a>
+          </td>
+          <td>DTaP, NOS</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>108
+            <a name="108"> </a>
+          </td>
+          <td>meningococcal, NOS</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>109
+            <a name="109"> </a>
+          </td>
+          <td>pneumococcal, NOS</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>11
+            <a name="11"> </a>
+          </td>
+          <td>pertussis</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>110
+            <a name="110"> </a>
+          </td>
+          <td>DTaP-Hep B-IPV</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>111
+            <a name="111"> </a>
+          </td>
+          <td>influenza, live, intranasal</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>112
+            <a name="112"> </a>
+          </td>
+          <td>tetanus toxoid, NOS</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>113
+            <a name="113"> </a>
+          </td>
+          <td>Td (adult)</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>114
+            <a name="114"> </a>
+          </td>
+          <td>meningococcal A,C,Y,W-135 diphtheria conjugate</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>115
+            <a name="115"> </a>
+          </td>
+          <td>Tdap</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>116
+            <a name="116"> </a>
+          </td>
+          <td>rotavirus, pentavalent</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>117
+            <a name="117"> </a>
+          </td>
+          <td>VZIG (IND)</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>118
+            <a name="118"> </a>
+          </td>
+          <td>HPV, bivalent</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>119
+            <a name="119"> </a>
+          </td>
+          <td>rotavirus, monovalent</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>12
+            <a name="12"> </a>
+          </td>
+          <td>diphtheria antitoxin</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>120
+            <a name="120"> </a>
+          </td>
+          <td>DTaP-Hib-IPV</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>121
+            <a name="121"> </a>
+          </td>
+          <td>zoster</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>122
+            <a name="122"> </a>
+          </td>
+          <td>rotavirus, NOS1</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>13
+            <a name="13"> </a>
+          </td>
+          <td>TIG</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>14
+            <a name="14"> </a>
+          </td>
+          <td>IG, NOS</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>15
+            <a name="15"> </a>
+          </td>
+          <td>influenza, split (incl. purified surface antigen)</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>16
+            <a name="16"> </a>
+          </td>
+          <td>influenza, whole</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>17
+            <a name="17"> </a>
+          </td>
+          <td>Hib, NOS</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>18
+            <a name="18"> </a>
+          </td>
+          <td>rabies, intramuscular injection</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>19
+            <a name="19"> </a>
+          </td>
+          <td>BCG</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>20
+            <a name="20"> </a>
+          </td>
+          <td>DTaP</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>21
+            <a name="21"> </a>
+          </td>
+          <td>varicella</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>22
+            <a name="22"> </a>
+          </td>
+          <td>DTP-Hib</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>23
+            <a name="23"> </a>
+          </td>
+          <td>plague</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>24
+            <a name="24"> </a>
+          </td>
+          <td>anthrax</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>25
+            <a name="25"> </a>
+          </td>
+          <td>typhoid, oral</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>26
+            <a name="26"> </a>
+          </td>
+          <td>cholera</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>27
+            <a name="27"> </a>
+          </td>
+          <td>botulinum antitoxin</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>28
+            <a name="28"> </a>
+          </td>
+          <td>DT (pediatric)</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>29
+            <a name="29"> </a>
+          </td>
+          <td>CMVIG</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>30
+            <a name="30"> </a>
+          </td>
+          <td>HBIG</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>31
+            <a name="31"> </a>
+          </td>
+          <td>Hep A, pediatric, NOS</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>32
+            <a name="32"> </a>
+          </td>
+          <td>meningococcal</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>33
+            <a name="33"> </a>
+          </td>
+          <td>pneumococcal</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>34
+            <a name="34"> </a>
+          </td>
+          <td>RIG</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>35
+            <a name="35"> </a>
+          </td>
+          <td>tetanus toxoid</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>36
+            <a name="36"> </a>
+          </td>
+          <td>VZIG</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>37
+            <a name="37"> </a>
+          </td>
+          <td>yellow fever</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>38
+            <a name="38"> </a>
+          </td>
+          <td>rubella/mumps</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>39
+            <a name="39"> </a>
+          </td>
+          <td>Japanese encephalitis</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>40
+            <a name="40"> </a>
+          </td>
+          <td>rabies, intradermal injection</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>41
+            <a name="41"> </a>
+          </td>
+          <td>typhoid, parenteral</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>42
+            <a name="42"> </a>
+          </td>
+          <td>Hep B, adolescent/high risk infant2</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>43
+            <a name="43"> </a>
+          </td>
+          <td>Hep B, adult4</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>44
+            <a name="44"> </a>
+          </td>
+          <td>Hep B, dialysis</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>45
+            <a name="45"> </a>
+          </td>
+          <td>Hep B, NOS</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>46
+            <a name="46"> </a>
+          </td>
+          <td>Hib (PRP-D)</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>47
+            <a name="47"> </a>
+          </td>
+          <td>Hib (HbOC)</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>48
+            <a name="48"> </a>
+          </td>
+          <td>Hib (PRP-T)</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>49
+            <a name="49"> </a>
+          </td>
+          <td>Hib (PRP-OMP)</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>50
+            <a name="50"> </a>
+          </td>
+          <td>DTaP-Hib</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>51
+            <a name="51"> </a>
+          </td>
+          <td>Hib-Hep B</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>52
+            <a name="52"> </a>
+          </td>
+          <td>Hep A, adult</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>53
+            <a name="53"> </a>
+          </td>
+          <td>typhoid, parenteral, AKD (U.S. military)</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>54
+            <a name="54"> </a>
+          </td>
+          <td>adenovirus, type 4</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>55
+            <a name="55"> </a>
+          </td>
+          <td>adenovirus, type 7</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>56
+            <a name="56"> </a>
+          </td>
+          <td>dengue fever</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>57
+            <a name="57"> </a>
+          </td>
+          <td>hantavirus</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>58
+            <a name="58"> </a>
+          </td>
+          <td>Hep C</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>59
+            <a name="59"> </a>
+          </td>
+          <td>Hep E</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>60
+            <a name="60"> </a>
+          </td>
+          <td>herpes simplex 2</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>61
+            <a name="61"> </a>
+          </td>
+          <td>HIV</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>62
+            <a name="62"> </a>
+          </td>
+          <td>HPV, quadrivalent</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>63
+            <a name="63"> </a>
+          </td>
+          <td>Junin virus</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>64
+            <a name="64"> </a>
+          </td>
+          <td>leishmaniasis</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>65
+            <a name="65"> </a>
+          </td>
+          <td>leprosy</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>66
+            <a name="66"> </a>
+          </td>
+          <td>Lyme disease</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>67
+            <a name="67"> </a>
+          </td>
+          <td>malaria</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>68
+            <a name="68"> </a>
+          </td>
+          <td>melanoma</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>69
+            <a name="69"> </a>
+          </td>
+          <td>parainfluenza-3</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>70
+            <a name="70"> </a>
+          </td>
+          <td>Q fever</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>71
+            <a name="71"> </a>
+          </td>
+          <td>RSV-IGIV</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>72
+            <a name="72"> </a>
+          </td>
+          <td>rheumatic fever</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>73
+            <a name="73"> </a>
+          </td>
+          <td>Rift Valley fever</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>74
+            <a name="74"> </a>
+          </td>
+          <td>rotavirus, tetravalent</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>75
+            <a name="75"> </a>
+          </td>
+          <td>vaccinia (smallpox)</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>76
+            <a name="76"> </a>
+          </td>
+          <td>Staphylococcus bacterio lysate</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>77
+            <a name="77"> </a>
+          </td>
+          <td>tick-borne encephalitis</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>78
+            <a name="78"> </a>
+          </td>
+          <td>tularemia vaccine</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>79
+            <a name="79"> </a>
+          </td>
+          <td>vaccinia immune globulin</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>80
+            <a name="80"> </a>
+          </td>
+          <td>VEE, live</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>81
+            <a name="81"> </a>
+          </td>
+          <td>VEE, inactivated</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>82
+            <a name="82"> </a>
+          </td>
+          <td>adenovirus, NOS1</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>83
+            <a name="83"> </a>
+          </td>
+          <td>Hep A, ped/adol, 2 dose</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>84
+            <a name="84"> </a>
+          </td>
+          <td>Hep A, ped/adol, 3 dose</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>85
+            <a name="85"> </a>
+          </td>
+          <td>Hep A, NOS</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>86
+            <a name="86"> </a>
+          </td>
+          <td>IG</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>87
+            <a name="87"> </a>
+          </td>
+          <td>IGIV</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>88
+            <a name="88"> </a>
+          </td>
+          <td>influenza, NOS</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>89
+            <a name="89"> </a>
+          </td>
+          <td>polio, NOS</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>90
+            <a name="90"> </a>
+          </td>
+          <td>rabies, NOS</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>91
+            <a name="91"> </a>
+          </td>
+          <td>typhoid, NOS</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>92
+            <a name="92"> </a>
+          </td>
+          <td>VEE, NOS</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>93
+            <a name="93"> </a>
+          </td>
+          <td>RSV-MAb</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>94
+            <a name="94"> </a>
+          </td>
+          <td>MMRV</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>95
+            <a name="95"> </a>
+          </td>
+          <td>TST-OT tine test</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>96
+            <a name="96"> </a>
+          </td>
+          <td>TST-PPD intradermal</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>97
+            <a name="97"> </a>
+          </td>
+          <td>TST-PPD tine test</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>98
+            <a name="98"> </a>
+          </td>
+          <td>TST, NOS</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>99
+            <a name="99"> </a>
+          </td>
+          <td>RESERVED - do not use3</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>998
+            <a name="998"> </a>
+          </td>
+          <td>no vaccine administered5</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>999
+            <a name="999"> </a>
+          </td>
+          <td>unknown</td>
+          <td>added v2.4</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0292"/>
+  <name value="v2 Vaccines Administered (code = CVX) (parenteral, unless oral is noted)"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0292 ( Vaccines Administered (code = CVX) (parenteral, unless oral is noted))"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0292"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="01"/>
+      <display value="DTP"/>
+    </concept>
+    <concept>
+      <code value="02"/>
+      <display value="OPV"/>
+    </concept>
+    <concept>
+      <code value="03"/>
+      <display value="MMR"/>
+    </concept>
+    <concept>
+      <code value="04"/>
+      <display value="M/R"/>
+    </concept>
+    <concept>
+      <code value="05"/>
+      <display value="measles"/>
+    </concept>
+    <concept>
+      <code value="06"/>
+      <display value="rubella"/>
+    </concept>
+    <concept>
+      <code value="07"/>
+      <display value="mumps"/>
+    </concept>
+    <concept>
+      <code value="08"/>
+      <display value="Hep B, adolescent or pediatric"/>
+    </concept>
+    <concept>
+      <code value="09"/>
+      <display value="Td (adult)"/>
+    </concept>
+    <concept>
+      <code value="10"/>
+      <display value="IPV"/>
+    </concept>
+    <concept>
+      <code value="100"/>
+      <display value="pneumococcal conjugate"/>
+    </concept>
+    <concept>
+      <code value="101"/>
+      <display value="typhoid, ViCPs"/>
+    </concept>
+    <concept>
+      <code value="102"/>
+      <display value="DTP-Hib-Hep B"/>
+    </concept>
+    <concept>
+      <code value="103"/>
+      <display value="meningococcal C conjugate"/>
+    </concept>
+    <concept>
+      <code value="104"/>
+      <display value="Hep A-Hep B"/>
+    </concept>
+    <concept>
+      <code value="105"/>
+      <display value="vaccinia (smallpox) diluted"/>
+    </concept>
+    <concept>
+      <code value="106"/>
+      <display value="DTaP, 5 pertussis antigens6"/>
+    </concept>
+    <concept>
+      <code value="107"/>
+      <display value="DTaP, NOS"/>
+    </concept>
+    <concept>
+      <code value="108"/>
+      <display value="meningococcal, NOS"/>
+    </concept>
+    <concept>
+      <code value="109"/>
+      <display value="pneumococcal, NOS"/>
+    </concept>
+    <concept>
+      <code value="11"/>
+      <display value="pertussis"/>
+    </concept>
+    <concept>
+      <code value="110"/>
+      <display value="DTaP-Hep B-IPV"/>
+    </concept>
+    <concept>
+      <code value="111"/>
+      <display value="influenza, live, intranasal"/>
+    </concept>
+    <concept>
+      <code value="112"/>
+      <display value="tetanus toxoid, NOS"/>
+    </concept>
+    <concept>
+      <code value="113"/>
+      <display value="Td (adult)"/>
+    </concept>
+    <concept>
+      <code value="114"/>
+      <display value="meningococcal A,C,Y,W-135 diphtheria conjugate"/>
+    </concept>
+    <concept>
+      <code value="115"/>
+      <display value="Tdap"/>
+    </concept>
+    <concept>
+      <code value="116"/>
+      <display value="rotavirus, pentavalent"/>
+    </concept>
+    <concept>
+      <code value="117"/>
+      <display value="VZIG (IND)"/>
+    </concept>
+    <concept>
+      <code value="118"/>
+      <display value="HPV, bivalent"/>
+    </concept>
+    <concept>
+      <code value="119"/>
+      <display value="rotavirus, monovalent"/>
+    </concept>
+    <concept>
+      <code value="12"/>
+      <display value="diphtheria antitoxin"/>
+    </concept>
+    <concept>
+      <code value="120"/>
+      <display value="DTaP-Hib-IPV"/>
+    </concept>
+    <concept>
+      <code value="121"/>
+      <display value="zoster"/>
+    </concept>
+    <concept>
+      <code value="122"/>
+      <display value="rotavirus, NOS1"/>
+    </concept>
+    <concept>
+      <code value="13"/>
+      <display value="TIG"/>
+    </concept>
+    <concept>
+      <code value="14"/>
+      <display value="IG, NOS"/>
+    </concept>
+    <concept>
+      <code value="15"/>
+      <display value="influenza, split (incl. purified surface antigen)"/>
+    </concept>
+    <concept>
+      <code value="16"/>
+      <display value="influenza, whole"/>
+    </concept>
+    <concept>
+      <code value="17"/>
+      <display value="Hib, NOS"/>
+    </concept>
+    <concept>
+      <code value="18"/>
+      <display value="rabies, intramuscular injection"/>
+    </concept>
+    <concept>
+      <code value="19"/>
+      <display value="BCG"/>
+    </concept>
+    <concept>
+      <code value="20"/>
+      <display value="DTaP"/>
+    </concept>
+    <concept>
+      <code value="21"/>
+      <display value="varicella"/>
+    </concept>
+    <concept>
+      <code value="22"/>
+      <display value="DTP-Hib"/>
+    </concept>
+    <concept>
+      <code value="23"/>
+      <display value="plague"/>
+    </concept>
+    <concept>
+      <code value="24"/>
+      <display value="anthrax"/>
+    </concept>
+    <concept>
+      <code value="25"/>
+      <display value="typhoid, oral"/>
+    </concept>
+    <concept>
+      <code value="26"/>
+      <display value="cholera"/>
+    </concept>
+    <concept>
+      <code value="27"/>
+      <display value="botulinum antitoxin"/>
+    </concept>
+    <concept>
+      <code value="28"/>
+      <display value="DT (pediatric)"/>
+    </concept>
+    <concept>
+      <code value="29"/>
+      <display value="CMVIG"/>
+    </concept>
+    <concept>
+      <code value="30"/>
+      <display value="HBIG"/>
+    </concept>
+    <concept>
+      <code value="31"/>
+      <display value="Hep A, pediatric, NOS"/>
+    </concept>
+    <concept>
+      <code value="32"/>
+      <display value="meningococcal"/>
+    </concept>
+    <concept>
+      <code value="33"/>
+      <display value="pneumococcal"/>
+    </concept>
+    <concept>
+      <code value="34"/>
+      <display value="RIG"/>
+    </concept>
+    <concept>
+      <code value="35"/>
+      <display value="tetanus toxoid"/>
+    </concept>
+    <concept>
+      <code value="36"/>
+      <display value="VZIG"/>
+    </concept>
+    <concept>
+      <code value="37"/>
+      <display value="yellow fever"/>
+    </concept>
+    <concept>
+      <code value="38"/>
+      <display value="rubella/mumps"/>
+    </concept>
+    <concept>
+      <code value="39"/>
+      <display value="Japanese encephalitis"/>
+    </concept>
+    <concept>
+      <code value="40"/>
+      <display value="rabies, intradermal injection"/>
+    </concept>
+    <concept>
+      <code value="41"/>
+      <display value="typhoid, parenteral"/>
+    </concept>
+    <concept>
+      <code value="42"/>
+      <display value="Hep B, adolescent/high risk infant2"/>
+    </concept>
+    <concept>
+      <code value="43"/>
+      <display value="Hep B, adult4"/>
+    </concept>
+    <concept>
+      <code value="44"/>
+      <display value="Hep B, dialysis"/>
+    </concept>
+    <concept>
+      <code value="45"/>
+      <display value="Hep B, NOS"/>
+    </concept>
+    <concept>
+      <code value="46"/>
+      <display value="Hib (PRP-D)"/>
+    </concept>
+    <concept>
+      <code value="47"/>
+      <display value="Hib (HbOC)"/>
+    </concept>
+    <concept>
+      <code value="48"/>
+      <display value="Hib (PRP-T)"/>
+    </concept>
+    <concept>
+      <code value="49"/>
+      <display value="Hib (PRP-OMP)"/>
+    </concept>
+    <concept>
+      <code value="50"/>
+      <display value="DTaP-Hib"/>
+    </concept>
+    <concept>
+      <code value="51"/>
+      <display value="Hib-Hep B"/>
+    </concept>
+    <concept>
+      <code value="52"/>
+      <display value="Hep A, adult"/>
+    </concept>
+    <concept>
+      <code value="53"/>
+      <display value="typhoid, parenteral, AKD (U.S. military)"/>
+    </concept>
+    <concept>
+      <code value="54"/>
+      <display value="adenovirus, type 4"/>
+    </concept>
+    <concept>
+      <code value="55"/>
+      <display value="adenovirus, type 7"/>
+    </concept>
+    <concept>
+      <code value="56"/>
+      <display value="dengue fever"/>
+    </concept>
+    <concept>
+      <code value="57"/>
+      <display value="hantavirus"/>
+    </concept>
+    <concept>
+      <code value="58"/>
+      <display value="Hep C"/>
+    </concept>
+    <concept>
+      <code value="59"/>
+      <display value="Hep E"/>
+    </concept>
+    <concept>
+      <code value="60"/>
+      <display value="herpes simplex 2"/>
+    </concept>
+    <concept>
+      <code value="61"/>
+      <display value="HIV"/>
+    </concept>
+    <concept>
+      <code value="62"/>
+      <display value="HPV, quadrivalent"/>
+    </concept>
+    <concept>
+      <code value="63"/>
+      <display value="Junin virus"/>
+    </concept>
+    <concept>
+      <code value="64"/>
+      <display value="leishmaniasis"/>
+    </concept>
+    <concept>
+      <code value="65"/>
+      <display value="leprosy"/>
+    </concept>
+    <concept>
+      <code value="66"/>
+      <display value="Lyme disease"/>
+    </concept>
+    <concept>
+      <code value="67"/>
+      <display value="malaria"/>
+    </concept>
+    <concept>
+      <code value="68"/>
+      <display value="melanoma"/>
+    </concept>
+    <concept>
+      <code value="69"/>
+      <display value="parainfluenza-3"/>
+    </concept>
+    <concept>
+      <code value="70"/>
+      <display value="Q fever"/>
+    </concept>
+    <concept>
+      <code value="71"/>
+      <display value="RSV-IGIV"/>
+    </concept>
+    <concept>
+      <code value="72"/>
+      <display value="rheumatic fever"/>
+    </concept>
+    <concept>
+      <code value="73"/>
+      <display value="Rift Valley fever"/>
+    </concept>
+    <concept>
+      <code value="74"/>
+      <display value="rotavirus, tetravalent"/>
+    </concept>
+    <concept>
+      <code value="75"/>
+      <display value="vaccinia (smallpox)"/>
+    </concept>
+    <concept>
+      <code value="76"/>
+      <display value="Staphylococcus bacterio lysate"/>
+    </concept>
+    <concept>
+      <code value="77"/>
+      <display value="tick-borne encephalitis"/>
+    </concept>
+    <concept>
+      <code value="78"/>
+      <display value="tularemia vaccine"/>
+    </concept>
+    <concept>
+      <code value="79"/>
+      <display value="vaccinia immune globulin"/>
+    </concept>
+    <concept>
+      <code value="80"/>
+      <display value="VEE, live"/>
+    </concept>
+    <concept>
+      <code value="81"/>
+      <display value="VEE, inactivated"/>
+    </concept>
+    <concept>
+      <code value="82"/>
+      <display value="adenovirus, NOS1"/>
+    </concept>
+    <concept>
+      <code value="83"/>
+      <display value="Hep A, ped/adol, 2 dose"/>
+    </concept>
+    <concept>
+      <code value="84"/>
+      <display value="Hep A, ped/adol, 3 dose"/>
+    </concept>
+    <concept>
+      <code value="85"/>
+      <display value="Hep A, NOS"/>
+    </concept>
+    <concept>
+      <code value="86"/>
+      <display value="IG"/>
+    </concept>
+    <concept>
+      <code value="87"/>
+      <display value="IGIV"/>
+    </concept>
+    <concept>
+      <code value="88"/>
+      <display value="influenza, NOS"/>
+    </concept>
+    <concept>
+      <code value="89"/>
+      <display value="polio, NOS"/>
+    </concept>
+    <concept>
+      <code value="90"/>
+      <display value="rabies, NOS"/>
+    </concept>
+    <concept>
+      <code value="91"/>
+      <display value="typhoid, NOS"/>
+    </concept>
+    <concept>
+      <code value="92"/>
+      <display value="VEE, NOS"/>
+    </concept>
+    <concept>
+      <code value="93"/>
+      <display value="RSV-MAb"/>
+    </concept>
+    <concept>
+      <code value="94"/>
+      <display value="MMRV"/>
+    </concept>
+    <concept>
+      <code value="95"/>
+      <display value="TST-OT tine test"/>
+    </concept>
+    <concept>
+      <code value="96"/>
+      <display value="TST-PPD intradermal"/>
+    </concept>
+    <concept>
+      <code value="97"/>
+      <display value="TST-PPD tine test"/>
+    </concept>
+    <concept>
+      <code value="98"/>
+      <display value="TST, NOS"/>
+    </concept>
+    <concept>
+      <code value="99"/>
+      <display value="RESERVED - do not use3"/>
+    </concept>
+    <concept>
+      <code value="998"/>
+      <display value="no vaccine administered5"/>
+    </concept>
+    <concept>
+      <code value="999"/>
+      <display value="unknown"/>
+    </concept>
+  </define>
+</ValueSet>

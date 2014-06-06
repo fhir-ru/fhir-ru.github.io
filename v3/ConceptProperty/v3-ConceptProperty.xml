@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  
+                     Deprecation Comment: Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>
+            <span style="color: grey">
+              <i>(_ValueSetPropertyId)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_ValueSetPropertyId"> </a>
+          </td>
+          <td>
+                        Property identifiers for a value sets
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  appliesTo
+            <a name="appliesTo"> </a>
+          </td>
+          <td>applies to</td>
+          <td>
+                        Entity to which a given value set or concept code applies
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  howApplies
+            <a name="howApplies"> </a>
+          </td>
+          <td>how applies</td>
+          <td>
+                        Description of how set or code applies
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  openIssue
+            <a name="openIssue"> </a>
+          </td>
+          <td>open issue</td>
+          <td>
+                        Outstanding issue that still needs resolution
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>conceptStatusQualifier
+            <a name="conceptStatusQualifier"> </a>
+          </td>
+          <td>concept status qualifier</td>
+          <td>
+                        
+                           Description: Qualifier value for concept status.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>inverseRelationship
+            <a name="inverseRelationship"> </a>
+          </td>
+          <td>inverted relationship name</td>
+          <td>
+                        Name that should be used when the relationship is used in the reverse (target to source) direction.  Example: The inverse relationship of hasPart is isPartOf
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>OID
+            <a name="OID"> </a>
+          </td>
+          <td>ISO Object Identifier</td>
+          <td>
+                        Object identifier assigned to a concept
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>specializedByDomain
+            <a name="specializedByDomain"> </a>
+          </td>
+          <td>specialized by domain</td>
+          <td>
+                        
+                           Description:specialized by domain
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/ConceptProperty"/>
+  <name value="v3 Code System ConceptProperty"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="  Deprecation Comment:
+Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/ConceptProperty"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="_ValueSetPropertyId"/>
+      <abstract value="true"/>
+      <display value="ValueSetPropertyId"/>
+      <definition value="Property identifiers for a value sets"/>
+      <concept>
+        <code value="appliesTo"/>
+        <display value="applies to"/>
+        <definition value="Entity to which a given value set or concept code applies"/>
+      </concept>
+      <concept>
+        <code value="howApplies"/>
+        <display value="how applies"/>
+        <definition value="Description of how set or code applies"/>
+      </concept>
+      <concept>
+        <code value="openIssue"/>
+        <display value="open issue"/>
+        <definition value="Outstanding issue that still needs resolution"/>
+      </concept>
+    </concept>
+    <concept>
+      <code value="conceptStatusQualifier"/>
+      <display value="concept status qualifier"/>
+      <definition value="Description: Qualifier value for concept status."/>
+    </concept>
+    <concept>
+      <code value="inverseRelationship"/>
+      <display value="inverted relationship name"/>
+      <definition value="Name that should be used when the relationship is used in the reverse (target to source) direction.  Example: The inverse relationship of hasPart is isPartOf"/>
+    </concept>
+    <concept>
+      <code value="OID"/>
+      <display value="ISO Object Identifier"/>
+      <definition value="Object identifier assigned to a concept"/>
+    </concept>
+    <concept>
+      <code value="specializedByDomain"/>
+      <display value="specialized by domain"/>
+      <definition value="Description:specialized by domain"/>
+    </concept>
+  </define>
+</ValueSet>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  The row types for the tabular representation of an R-MIM.
+        <br/>
+
+                  
+                     Deprecation Comment: Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>assoc
+            <a name="assoc"> </a>
+          </td>
+          <td>Association row</td>
+          <td>
+                        Identifies an association leading from the class that is most directly above this row
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>attr
+            <a name="attr"> </a>
+          </td>
+          <td>Attribute row</td>
+          <td>
+                        Identifies an attribute of the &quot;class&quot; that is most directly above this row
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>class
+            <a name="class"> </a>
+          </td>
+          <td>Class row</td>
+          <td>
+                        Identifies a &quot;class&quot; in the Refined Message Information Model
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>rmim
+            <a name="rmim"> </a>
+          </td>
+          <td>RMIM identifier</td>
+          <td>
+                        Always the first row of the table, identifies the particular Refined Message Information Model in the nomenclature of the HL7 Repository
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>stc
+            <a name="stc"> </a>
+          </td>
+          <td>Subtype constraint</td>
+          <td>
+                        This row corresponds to a subcomponent of the row above; it would not normally be included in an Refined Message Information Model, but it is included in order to be able to state a constraint on the subtype. This is explained in 10.2.2.4.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/MdfRmimRowType"/>
+  <name value="v3 Code System MdfRmimRowType"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" The row types for the tabular representation of an R-MIM.  Deprecation Comment:
+Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/MdfRmimRowType"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="assoc"/>
+      <display value="Association row"/>
+      <definition value="Identifies an association leading from the class that is most directly above this row"/>
+    </concept>
+    <concept>
+      <code value="attr"/>
+      <display value="Attribute row"/>
+      <definition value="Identifies an attribute of the &quot;class&quot; that is most directly above this row"/>
+    </concept>
+    <concept>
+      <code value="class"/>
+      <display value="Class row"/>
+      <definition value="Identifies a &quot;class&quot; in the Refined Message Information Model"/>
+    </concept>
+    <concept>
+      <code value="rmim"/>
+      <display value="RMIM identifier"/>
+      <definition value="Always the first row of the table, identifies the particular Refined Message Information Model in the nomenclature of the HL7 Repository"/>
+    </concept>
+    <concept>
+      <code value="stc"/>
+      <display value="Subtype constraint"/>
+      <definition value="This row corresponds to a subcomponent of the row above; it would not normally be included in an Refined Message Information Model, but it is included in order to be able to state a constraint on the subtype. This is explained in 10.2.2.4."/>
+    </concept>
+  </define>
+</ValueSet>

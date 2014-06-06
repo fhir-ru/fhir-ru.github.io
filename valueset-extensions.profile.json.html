@@ -1,0 +1,775 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Valueset-extensions.profile.xml - FHIR v0.2.1</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="infrastructure.html">Infrastructure</a></li>        <li><a href="valueset.html">ValueSet</a></li>        <li><a href="valueset-extensions.html">valueset-extensions</a></li>        <li><b>Profile Instance</b></li>        <!-- valueset-extensions.profile.xml.html / profile-instance:res:ValueSet -->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<h1>Valueset-extensions.profile.xml</h1>
+
+<div class="example">
+<p>Profile for Defines common extensions used with or related to the ValueSet resource</p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;Profile&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;pre&gt; &lt;span style=\&quot;float: right\&quot;&gt;&lt;a title=\&quot;Documentation for this format\&quot; href=\&quot;formats.html\&quot;&gt;&lt;img alt=\&quot;doco\&quot; src=\&quot;help.png\&quot;/&gt;&lt;/a&gt;&lt;/span&gt;\r\n&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;span style=\&quot;color: Darkviolet\&quot;&gt;Extensions&lt;/span&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;&lt;span title=\&quot;Comparison value for ordinal codes.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;ordinalValue\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Resource = ValueSet.compose.include.code&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#ordinalValue&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;Comparison value for ordinal codes.\&quot;&gt;&lt;b&gt;valueInteger&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#integer\&quot;&gt;integer&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;Comparison value for ordinal codes&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;Appearance order for user selection.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;conceptOrder\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Resource = ValueSet.compose.include.code&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#conceptOrder&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;Appearance order for user selection.\&quot;&gt;&lt;b&gt;valueInteger&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#integer\&quot;&gt;integer&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;Appearance order for user selection&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;Display value for the code.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;display\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..*&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Resource = ValueSet.compose.include.code&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#display&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;Display value for the code.\&quot;&gt;&lt;b&gt;valueString&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#string\&quot;&gt;string&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;Display value for the code&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;Code system name.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;systemName\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Resource = ValueSet.compose.include&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#systemName&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;Code system name.\&quot;&gt;&lt;b&gt;valueString&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#string\&quot;&gt;string&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;Code system name&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;Where to find code system.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;systemRef\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Resource = ValueSet.compose.include&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#systemRef&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;Where to find code system.\&quot;&gt;&lt;b&gt;valueUri&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#uri\&quot;&gt;uri&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;Where to find code system&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;Human readable names for the valueset.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;otherName\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..*&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Resource = ValueSet&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#otherName&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &lt;span title=\&quot;Human readable names for the valueset.\&quot;&gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;Extensions: #name, #name-language, #preferred&lt;/span&gt; &lt;span style=\&quot; color: Gray\&quot;&gt;--&amp;gt; &lt;/span&gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;This name is intended to be human readable, short and as specific as possible and to convey the purpose of the value set.  It is considered to be the name of the value set.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;name\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;1..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Extension = http://hl7.org/fhir/extensions/ValueSet#otherName&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#name&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;This name is intended to be human readable, short and as specific as possible and to convey the purpose of the value set.  It is considered to be the name of the value set.\&quot;&gt;&lt;b&gt;valueString&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#string\&quot;&gt;string&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;Human readable, short and specific&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;This indicates the language system (e.g. US English) in which the name is expressed.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;name-language\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Extension = http://hl7.org/fhir/extensions/ValueSet#otherName&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#name-language&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;This indicates the language system (e.g. US English) in which the name is expressed.\&quot;&gt;&lt;b&gt;valueCode&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#code\&quot;&gt;code&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;IETF language tag (BCP-13)&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;Flag that this Name in this Name Language is the preferred human-readable signifier in this language.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;preferred\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Extension = http://hl7.org/fhir/extensions/ValueSet#otherName&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#preferred&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;Flag that this Name in this Name Language is the preferred human-readable signifier in this language.\&quot;&gt;&lt;b&gt;valueBoolean&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#boolean\&quot;&gt;boolean&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;Which name is preferred for this language&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;: This text is intended to act as a citation to work done elsewhere that is not part of the current stewarding process where the referenced source is in some way a basis of the current value set definition.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;sourceReference\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Resource = ValueSet&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#sourceReference&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;: This text is intended to act as a citation to work done elsewhere that is not part of the current stewarding process where the referenced source is in some way a basis of the current value set definition.\&quot;&gt;&lt;b&gt;valueUri&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#uri\&quot;&gt;uri&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;An external source useful in understanding the basis for the value set&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;Word or words used in an information retrieval system to indicate the content of the value set.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;keyWord\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..*&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Resource = ValueSet&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#keyWord&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;Word or words used in an information retrieval system to indicate the content of the value set.\&quot;&gt;&lt;b&gt;valueString&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#string\&quot;&gt;string&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;can be used to help find the value set&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;The optional and repeating Use set of elements hold information about consumers of the value set and the implementations, projects or standards that the author has utilized the value set in.  Value sets that share the same Use information can be grouped together by that information for implementation purposes.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;usage\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..*&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Resource = ValueSet&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#usage&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &lt;span title=\&quot;The optional and repeating Use set of elements hold information about consumers of the value set and the implementations, projects or standards that the author has utilized the value set in.  Value sets that share the same Use information can be grouped together by that information for implementation purposes.\&quot;&gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;Extensions: #usage-user, #usage-use&lt;/span&gt; &lt;span style=\&quot; color: Gray\&quot;&gt;--&amp;gt; &lt;/span&gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;This is most likely to be an organization but can be an individual. It would not be a program, that information should be recorded in the Usage.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;usage-user\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;1..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Extension = http://hl7.org/fhir/extensions/ValueSet#usage&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#usage-user&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;This is most likely to be an organization but can be an individual. It would not be a program, that information should be recorded in the Usage.\&quot;&gt;&lt;b&gt;valueString&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#string\&quot;&gt;string&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;A consumer of or client for the value set&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;A descriptive name of the project or standard in which the value set is used.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;usage-use\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;1..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Extension = http://hl7.org/fhir/extensions/ValueSet#usage&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#usage-use&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;A descriptive name of the project or standard in which the value set is used.\&quot;&gt;&lt;b&gt;valueString&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#string\&quot;&gt;string&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;Implementation or project or standard that uses the value set&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;Workflow Status is used to represent details of the value set development process while the value set has an Activity Status of Preliminary. The development of a value set often follows a formal workflow process from initiation to completion, and this element carries the state variable for this state machine. The assumption is that when first created a value set would have a workflow state of Draft. Additional workflow states may be used.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;workflowStatus\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Resource = ValueSet&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#workflowStatus&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;Workflow Status is used to represent details of the value set development process while the value set has an Activity Status of Preliminary. The development of a value set often follows a formal workflow process from initiation to completion, and this element carries the state variable for this state machine. The assumption is that when first created a value set would have a workflow state of Draft. Additional workflow states may be used.\&quot;&gt;&lt;b&gt;valueString&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#string\&quot;&gt;string&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;Indicates the state of development of the value set&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;This is the first date-time when the value set version becomes active, so this value is present on Inactive value set versions as well. The start Date_time is expected to be as of 0001 UTC of the Effective Date.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;effectiveDate\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Resource = ValueSet&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#effectiveDate&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;This is the first date-time when the value set version becomes active, so this value is present on Inactive value set versions as well. The start Date_time is expected to be as of 0001 UTC of the Effective Date.\&quot;&gt;&lt;b&gt;valueDate&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#date\&quot;&gt;date&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;When the value set version becomes Active and is available for use&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;The date when the value set version is no longer expected to be used to create new content. This is the first date-time when the value set version becomes Inactive, so this value MUST present on all Inactive value set versions. The start Date_time is expected to be as of 0001 UTC of the Expiration Date.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;expirationDate\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Resource = ValueSet&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#expirationDate&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;The date when the value set version is no longer expected to be used to create new content. This is the first date-time when the value set version becomes Inactive, so this value MUST present on all Inactive value set versions. The start Date_time is expected to be as of 0001 UTC of the Expiration Date.\&quot;&gt;&lt;b&gt;valueDate&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#date\&quot;&gt;date&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;When the value set version should no longer be used&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;User or Org actually involved in creating the value set content.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;author\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..*&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Resource = ValueSet&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#author&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;User or Org actually involved in creating the value set content.\&quot;&gt;&lt;b&gt;valueString&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#string\&quot;&gt;string&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;User or Org actually involved in creating the value set content&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;Each comment is a time-stamped entry of arbitrary length that is not editable except by anyone in the author group.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;comment\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..*&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Resource = ValueSet&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#comment&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &lt;span title=\&quot;Each comment is a time-stamped entry of arbitrary length that is not editable except by anyone in the author group.\&quot;&gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;Extensions: #comment-content, #comment-timestamp&lt;/span&gt; &lt;span style=\&quot; color: Gray\&quot;&gt;--&amp;gt; &lt;/span&gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;Remarks or other text.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;comment-content\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;1..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Extension = http://hl7.org/fhir/extensions/ValueSet#comment&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#comment-content&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;Remarks or other text.\&quot;&gt;&lt;b&gt;valueString&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#string\&quot;&gt;string&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;Remarks or other text&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;When the comment was created.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;comment-timestamp\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;1..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Extension = http://hl7.org/fhir/extensions/ValueSet#comment&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#comment-timestamp&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;When the comment was created.\&quot;&gt;&lt;b&gt;valueInstant&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#instant\&quot;&gt;instant&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;When the comment was created&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;Reference to a trusted expansion.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;trusted-expansion\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..*&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Resource = ValueSet&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#trusted-expansion&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;Reference to a trusted expansion.\&quot;&gt;&lt;b&gt;valueUri&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#uri\&quot;&gt;uri&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;Reference to a trusted expansion&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;Information on changes made to the Value Set Definition over time, and also has a contained audit trail of all such changes.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;history\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..*&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Resource = ValueSet&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#history&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &lt;span title=\&quot;Information on changes made to the Value Set Definition over time, and also has a contained audit trail of all such changes.\&quot;&gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;Extensions: #history-name, #revision&lt;/span&gt; &lt;span style=\&quot; color: Gray\&quot;&gt;--&amp;gt; &lt;/span&gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;The name of this set of history entries.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;history-name\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Extension = http://hl7.org/fhir/extensions/ValueSet#history&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#history-name&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;The name of this set of history entries.\&quot;&gt;&lt;b&gt;valueString&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#string\&quot;&gt;string&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;The name of this set of history entries&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;Audit of all changes for a history entry.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;revision\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..*&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Extension = http://hl7.org/fhir/extensions/ValueSet#history&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#revision&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &lt;span title=\&quot;Audit of all changes for a history entry.\&quot;&gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;Extensions: #revision-date, #revision-id, #revision-author, #revision-notes&lt;/span&gt; &lt;span style=\&quot; color: Gray\&quot;&gt;--&amp;gt; &lt;/span&gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;Date the change was made.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;revision-date\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;1..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Extension = http://hl7.org/fhir/extensions/ValueSet#revision&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#revision-date&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;Date the change was made.\&quot;&gt;&lt;b&gt;valueDatetime&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#datetime\&quot;&gt;datetime&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;Date the change was made&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;Version marker after the change was made.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;revision-id\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;1..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Extension = http://hl7.org/fhir/extensions/ValueSet#revision&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#revision-id&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;Version marker after the change was made.\&quot;&gt;&lt;b&gt;valueString&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#string\&quot;&gt;string&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;Version marker after the change was made&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;Who made the change.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;revision-author\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;1..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Extension = http://hl7.org/fhir/extensions/ValueSet#revision&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#revision-author&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;Who made the change.\&quot;&gt;&lt;b&gt;valueString&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#string\&quot;&gt;string&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;Who made the change&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;Information about the change.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;revision-notes\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Extension = http://hl7.org/fhir/extensions/ValueSet#revision&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#revision-notes&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;Information about the change.\&quot;&gt;&lt;b&gt;valueString&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#string\&quot;&gt;string&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;Information about the change&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&lt;/pre&gt;&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: &quot;http://hl7.org/fhir/profile/ValueSet HL7 Extensions&quot;,
+  &quot;name&quot;: &quot;ValueSet HL7 Extensions&quot;,
+  &quot;publisher&quot;: &quot;HL7&quot;,
+  &quot;description&quot;: &quot;Defines common extensions used with or related to the ValueSet resource&quot;,
+  &quot;status&quot;: &quot;draft&quot;,
+  &quot;extensionDefn&quot;: [
+    {
+      &quot;code&quot;: &quot;ordinalValue&quot;,
+      &quot;display&quot;: &quot;Comparison value for ordinal codes&quot;,
+      &quot;contextType&quot;: &quot;resource&quot;,
+      &quot;context&quot;: [
+        &quot;ValueSet.compose.include.code&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;Comparison value for ordinal codes&quot;,
+        &quot;formal&quot;: &quot;Comparison value for ordinal codes.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;integer&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    },
+    {
+      &quot;code&quot;: &quot;conceptOrder&quot;,
+      &quot;display&quot;: &quot;Appearance order for user selection&quot;,
+      &quot;contextType&quot;: &quot;resource&quot;,
+      &quot;context&quot;: [
+        &quot;ValueSet.compose.include.code&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;Appearance order for user selection&quot;,
+        &quot;formal&quot;: &quot;Appearance order for user selection.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;integer&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    },
+    {
+      &quot;code&quot;: &quot;display&quot;,
+      &quot;display&quot;: &quot;Display value for the code&quot;,
+      &quot;contextType&quot;: &quot;resource&quot;,
+      &quot;context&quot;: [
+        &quot;ValueSet.compose.include.code&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;Display value for the code&quot;,
+        &quot;formal&quot;: &quot;Display value for the code.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    },
+    {
+      &quot;code&quot;: &quot;systemName&quot;,
+      &quot;display&quot;: &quot;Code system name&quot;,
+      &quot;contextType&quot;: &quot;resource&quot;,
+      &quot;context&quot;: [
+        &quot;ValueSet.compose.include&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;Code system name&quot;,
+        &quot;formal&quot;: &quot;Code system name.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    },
+    {
+      &quot;code&quot;: &quot;systemRef&quot;,
+      &quot;display&quot;: &quot;Where to find code system&quot;,
+      &quot;contextType&quot;: &quot;resource&quot;,
+      &quot;context&quot;: [
+        &quot;ValueSet.compose.include&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;Where to find code system&quot;,
+        &quot;formal&quot;: &quot;Where to find code system.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;uri&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    },
+    {
+      &quot;code&quot;: &quot;otherName&quot;,
+      &quot;display&quot;: &quot;Alternative names&quot;,
+      &quot;contextType&quot;: &quot;resource&quot;,
+      &quot;context&quot;: [
+        &quot;ValueSet&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;Alternative names&quot;,
+        &quot;formal&quot;: &quot;Human readable names for the valueset.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    },
+    {
+      &quot;code&quot;: &quot;name&quot;,
+      &quot;display&quot;: &quot;Human readable, short and specific&quot;,
+      &quot;contextType&quot;: &quot;extension&quot;,
+      &quot;context&quot;: [
+        &quot;http://hl7.org/fhir/extensions/ValueSet#otherName&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;Human readable, short and specific&quot;,
+        &quot;formal&quot;: &quot;This name is intended to be human readable, short and as specific as possible and to convey the purpose of the value set.  It is considered to be the name of the value set.&quot;,
+        &quot;comments&quot;: &quot;This need not be unique. However some use cases require uniqueness within a namespace and therefore best practice would be to make the name unique.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    },
+    {
+      &quot;code&quot;: &quot;name-language&quot;,
+      &quot;display&quot;: &quot;IETF language tag (BCP-13)&quot;,
+      &quot;contextType&quot;: &quot;extension&quot;,
+      &quot;context&quot;: [
+        &quot;http://hl7.org/fhir/extensions/ValueSet#otherName&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;IETF language tag (BCP-13)&quot;,
+        &quot;formal&quot;: &quot;This indicates the language system (e.g. US English) in which the name is expressed.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    },
+    {
+      &quot;code&quot;: &quot;preferred&quot;,
+      &quot;display&quot;: &quot;Which name is preferred for this language&quot;,
+      &quot;contextType&quot;: &quot;extension&quot;,
+      &quot;context&quot;: [
+        &quot;http://hl7.org/fhir/extensions/ValueSet#otherName&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;Which name is preferred for this language&quot;,
+        &quot;formal&quot;: &quot;Flag that this Name in this Name Language is the preferred human-readable signifier in this language.&quot;,
+        &quot;comments&quot;: &quot;There may be multiple human readable names in a given language, and this flag indicates which of them is preferred for the given language.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;boolean&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    },
+    {
+      &quot;code&quot;: &quot;sourceReference&quot;,
+      &quot;display&quot;: &quot;An external source useful in understanding the basis for the value set&quot;,
+      &quot;contextType&quot;: &quot;resource&quot;,
+      &quot;context&quot;: [
+        &quot;ValueSet&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;An external source useful in understanding the basis for the value set&quot;,
+        &quot;formal&quot;: &quot;: This text is intended to act as a citation to work done elsewhere that is not part of the current stewarding process where the referenced source is in some way a basis of the current value set definition.&quot;,
+        &quot;comments&quot;: &quot;This is not intended to be a direct link to another value set. It is only intended to support a link or textual description that indicates related material for the value set.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;uri&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    },
+    {
+      &quot;code&quot;: &quot;keyWord&quot;,
+      &quot;display&quot;: &quot;can be used to help find the value set&quot;,
+      &quot;contextType&quot;: &quot;resource&quot;,
+      &quot;context&quot;: [
+        &quot;ValueSet&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;can be used to help find the value set&quot;,
+        &quot;formal&quot;: &quot;Word or words used in an information retrieval system to indicate the content of the value set.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    },
+    {
+      &quot;code&quot;: &quot;usage&quot;,
+      &quot;display&quot;: &quot;Consumers of the value set and the implementations, projects or standards that the author has utilized the value set in&quot;,
+      &quot;contextType&quot;: &quot;resource&quot;,
+      &quot;context&quot;: [
+        &quot;ValueSet&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;Consumers of the value set and the implementations, projects or standards that the author has utilized the value set in&quot;,
+        &quot;formal&quot;: &quot;The optional and repeating Use set of elements hold information about consumers of the value set and the implementations, projects or standards that the author has utilized the value set in.  Value sets that share the same Use information can be grouped together by that information for implementation purposes.&quot;,
+        &quot;comments&quot;: &quot;This is likely to be a “point in time” view and should not be considered an authoritative listing of all uses of the value set.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    },
+    {
+      &quot;code&quot;: &quot;usage-user&quot;,
+      &quot;display&quot;: &quot;A consumer of or client for the value set&quot;,
+      &quot;contextType&quot;: &quot;extension&quot;,
+      &quot;context&quot;: [
+        &quot;http://hl7.org/fhir/extensions/ValueSet#usage&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;A consumer of or client for the value set&quot;,
+        &quot;formal&quot;: &quot;This is most likely to be an organization but can be an individual. It would not be a program, that information should be recorded in the Usage.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    },
+    {
+      &quot;code&quot;: &quot;usage-use&quot;,
+      &quot;display&quot;: &quot;Implementation or project or standard that uses the value set&quot;,
+      &quot;contextType&quot;: &quot;extension&quot;,
+      &quot;context&quot;: [
+        &quot;http://hl7.org/fhir/extensions/ValueSet#usage&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;Implementation or project or standard that uses the value set&quot;,
+        &quot;formal&quot;: &quot;A descriptive name of the project or standard in which the value set is used.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    },
+    {
+      &quot;code&quot;: &quot;workflowStatus&quot;,
+      &quot;display&quot;: &quot;Indicates the state of development of the value set&quot;,
+      &quot;contextType&quot;: &quot;resource&quot;,
+      &quot;context&quot;: [
+        &quot;ValueSet&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;Indicates the state of development of the value set&quot;,
+        &quot;formal&quot;: &quot;Workflow Status is used to represent details of the value set development process while the value set has an Activity Status of Preliminary. The development of a value set often follows a formal workflow process from initiation to completion, and this element carries the state variable for this state machine. The assumption is that when first created a value set would have a workflow state of Draft. Additional workflow states may be used.&quot;,
+        &quot;comments&quot;: &quot;The values that this element may assume include phrases that capture various stages in review and approval. In addition to the minimum of “Draft”,  these include “Proposed”, “Approved”, “Ready to Publish”.  There may be additional states defined by different developers. This is an optional element because the use of Activity Status “Preliminary” may be sufficient for some implementations.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    },
+    {
+      &quot;code&quot;: &quot;effectiveDate&quot;,
+      &quot;display&quot;: &quot;When the value set version becomes Active and is available for use&quot;,
+      &quot;contextType&quot;: &quot;resource&quot;,
+      &quot;context&quot;: [
+        &quot;ValueSet&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;When the value set version becomes Active and is available for use&quot;,
+        &quot;formal&quot;: &quot;This is the first date-time when the value set version becomes active, so this value is present on Inactive value set versions as well. The start Date_time is expected to be as of 0001 UTC of the Effective Date.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;date&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    },
+    {
+      &quot;code&quot;: &quot;expirationDate&quot;,
+      &quot;display&quot;: &quot;When the value set version should no longer be used&quot;,
+      &quot;contextType&quot;: &quot;resource&quot;,
+      &quot;context&quot;: [
+        &quot;ValueSet&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;When the value set version should no longer be used&quot;,
+        &quot;formal&quot;: &quot;The date when the value set version is no longer expected to be used to create new content. This is the first date-time when the value set version becomes Inactive, so this value MUST present on all Inactive value set versions. The start Date_time is expected to be as of 0001 UTC of the Expiration Date.&quot;,
+        &quot;comments&quot;: &quot;Upon reaching the Expiration Date, the value set Activity Status should be consdiered as inactive. An Inactive value set version may no longer be used to create new content, but it may be used to evaluate content created prior to the Expiration Date.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;date&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    },
+    {
+      &quot;code&quot;: &quot;author&quot;,
+      &quot;display&quot;: &quot;User or Org actually involved in creating the value set content&quot;,
+      &quot;contextType&quot;: &quot;resource&quot;,
+      &quot;context&quot;: [
+        &quot;ValueSet&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;User or Org actually involved in creating the value set content&quot;,
+        &quot;formal&quot;: &quot;User or Org actually involved in creating the value set content.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    },
+    {
+      &quot;code&quot;: &quot;comment&quot;,
+      &quot;display&quot;: &quot;Human-specified notes and other documentation&quot;,
+      &quot;contextType&quot;: &quot;resource&quot;,
+      &quot;context&quot;: [
+        &quot;ValueSet&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;Human-specified notes and other documentation&quot;,
+        &quot;formal&quot;: &quot;Each comment is a time-stamped entry of arbitrary length that is not editable except by anyone in the author group.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    },
+    {
+      &quot;code&quot;: &quot;comment-content&quot;,
+      &quot;display&quot;: &quot;Remarks or other text&quot;,
+      &quot;contextType&quot;: &quot;extension&quot;,
+      &quot;context&quot;: [
+        &quot;http://hl7.org/fhir/extensions/ValueSet#comment&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;Remarks or other text&quot;,
+        &quot;formal&quot;: &quot;Remarks or other text.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    },
+    {
+      &quot;code&quot;: &quot;comment-timestamp&quot;,
+      &quot;display&quot;: &quot;When the comment was created&quot;,
+      &quot;contextType&quot;: &quot;extension&quot;,
+      &quot;context&quot;: [
+        &quot;http://hl7.org/fhir/extensions/ValueSet#comment&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;When the comment was created&quot;,
+        &quot;formal&quot;: &quot;When the comment was created.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;instant&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    },
+    {
+      &quot;code&quot;: &quot;trusted-expansion&quot;,
+      &quot;display&quot;: &quot;Reference to a trusted expansion&quot;,
+      &quot;contextType&quot;: &quot;resource&quot;,
+      &quot;context&quot;: [
+        &quot;ValueSet&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;Reference to a trusted expansion&quot;,
+        &quot;formal&quot;: &quot;Reference to a trusted expansion.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;uri&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    },
+    {
+      &quot;code&quot;: &quot;history&quot;,
+      &quot;display&quot;: &quot;Information on changes made to the Value Set Definition over time, and also has a contained audit trail of all such changes&quot;,
+      &quot;contextType&quot;: &quot;resource&quot;,
+      &quot;context&quot;: [
+        &quot;ValueSet&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;Information on changes made to the Value Set Definition over time, and also has a contained audit trail of all such changes&quot;,
+        &quot;formal&quot;: &quot;Information on changes made to the Value Set Definition over time, and also has a contained audit trail of all such changes.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    },
+    {
+      &quot;code&quot;: &quot;history-name&quot;,
+      &quot;display&quot;: &quot;The name of this set of history entries&quot;,
+      &quot;contextType&quot;: &quot;extension&quot;,
+      &quot;context&quot;: [
+        &quot;http://hl7.org/fhir/extensions/ValueSet#history&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;The name of this set of history entries&quot;,
+        &quot;formal&quot;: &quot;The name of this set of history entries.&quot;,
+        &quot;comments&quot;: &quot;Typically, a value set will have a set of history entries for each maor publication milestone.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    },
+    {
+      &quot;code&quot;: &quot;revision&quot;,
+      &quot;display&quot;: &quot;Audit of all changes for a history entry&quot;,
+      &quot;contextType&quot;: &quot;extension&quot;,
+      &quot;context&quot;: [
+        &quot;http://hl7.org/fhir/extensions/ValueSet#history&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;Audit of all changes for a history entry&quot;,
+        &quot;formal&quot;: &quot;Audit of all changes for a history entry.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    },
+    {
+      &quot;code&quot;: &quot;revision-date&quot;,
+      &quot;display&quot;: &quot;Date the change was made&quot;,
+      &quot;contextType&quot;: &quot;extension&quot;,
+      &quot;context&quot;: [
+        &quot;http://hl7.org/fhir/extensions/ValueSet#revision&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;Date the change was made&quot;,
+        &quot;formal&quot;: &quot;Date the change was made.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;datetime&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    },
+    {
+      &quot;code&quot;: &quot;revision-id&quot;,
+      &quot;display&quot;: &quot;Version marker after the change was made&quot;,
+      &quot;contextType&quot;: &quot;extension&quot;,
+      &quot;context&quot;: [
+        &quot;http://hl7.org/fhir/extensions/ValueSet#revision&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;Version marker after the change was made&quot;,
+        &quot;formal&quot;: &quot;Version marker after the change was made.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    },
+    {
+      &quot;code&quot;: &quot;revision-author&quot;,
+      &quot;display&quot;: &quot;Who made the change&quot;,
+      &quot;contextType&quot;: &quot;extension&quot;,
+      &quot;context&quot;: [
+        &quot;http://hl7.org/fhir/extensions/ValueSet#revision&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;Who made the change&quot;,
+        &quot;formal&quot;: &quot;Who made the change.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    },
+    {
+      &quot;code&quot;: &quot;revision-notes&quot;,
+      &quot;display&quot;: &quot;Information about the change&quot;,
+      &quot;contextType&quot;: &quot;extension&quot;,
+      &quot;context&quot;: [
+        &quot;http://hl7.org/fhir/extensions/ValueSet#revision&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;Information about the change&quot;,
+        &quot;formal&quot;: &quot;Information about the change.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    }
+  ]
+}
+</pre>
+</div>
+
+
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011 - 2014. FHIR DSTU (v0.2.1-????) generated on Fri, Jun 6, 2014 13:26+0000. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a href="dstu.html">What's a DSTU?</a> | <a href="history.html">Version History</a> | <a href="license.html">License</a> | <a href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

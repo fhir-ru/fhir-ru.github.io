@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Element-definition Extensions for use by FHIR Implementers - FHIR v0.2.1</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="implementation.html">Implementation</a></li>        <li><b>element-extensions</b></li>        <!-- element-extensions.html / profilelist.html -->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<div class="navtop"><ul class="navtop"><li class="spacerright" style="width: 500px"><span>&nbsp;</span></li></ul></div>
+
+<h1>Element-definition Extensions for use by FHIR Implementers</h1>
+<p>
+
+<div>
+<h2>Scope and Usage</h2>
+<p>
+This profile defines extensions defining additional constraints on data elements.
+</p>
+<p>
+Data elements can be defined in several places.  The extensions defined within this profile may apply
+to most or all of these:
+</p>
+<ul>
+  <li><a href="dataelement.html">DataElement</a> - defining the characteristics that must hold for an element to be an instance of a particular Data Element</li>
+  <li><a href="profile.html">Profile</a>.structure.element.definition - defining the characteristics of the data element when used according to the profile</li>
+  <li><a href="profile.html">Profile</a>.extensionDefn.definition - defining the characteristics of the extension, regardless of where it is used</li>
+  <li><a href="questionnaire.html">Questionnaire</a>.group.question - defining the characteristics of permitted answers</li>
+</ul>
+<p>
+<b>Note:</b> Implementations are not required to reject invalid data.  However, transmitting data that violates one of these extensions would be considered invalid against
+the resource that declared the extension.
+</p>
+
+<div>
+<h3>Length extensions</h3>
+<p>
+These extensions govern the length of most of the simple data types.  Some data types are excluded because their lengths are already fixed and cannot be
+further constrained.
+</p>
+<ul>
+<li><a name="minLength"/><b>minLength</b> - (0..1) Establishes a lower bound for the character length for the element</li>
+<li><a name="maxLength"/><b>minLength</b> - (0..1) Establishes an upper bound for the character length for the element</li>
+</ul>
+</div>
+
+<div>
+<h3>Format extensions</h3>
+<p>
+These extensions govern the appearance of string and string-like simple data types.
+</p>
+<ul>
+<li><a name="regex"/><b>regex</b> - (0..1) Expresses a "regular expression" that computably defines the permitted syntax for a string</li>
+<li><a name="entryFormat"/><b>entryFormat</b> - (0..1) Provides human-readable guidance for the desired syntax for a string</li>
+</ul>
+</div>
+
+<div>
+<h3>Numeric and range extensions</h3>
+<p>
+These extensions govern the allowed range of numeric and date or time data types.
+</p>
+<ul>
+<li><a name="minValue"/><b>minValue</b> - (0..1) Identifies the lowest value allowed for a numeric or date element</li>
+<li><a name="maxValue"/><b>maxValue</b> - (0..1) Identifies the highest value allowed for a numeric or date element</li>
+<li><a name="maxDecimalPlaces"/><b>maxDecimalPlaces</b> - (0..1) Identifies the number of decimal places allowed for decimal elements</li>
+</ul>
+</div>
+
+</div>
+
+
+</p>
+<p> 
+This profile was published on Sun, Apr 27, 2014 00:00+0000 as a draft by HL7 FHIR project 
+</p>
+<p>
+The id of this profile is element-extensions
+</p>
+<a name="profile"> </a>
+<h2>
+Content
+</h2>
+
+<table cellpadding="0" class="heirarchy" border="0" cellspacing="0"><tr class="heirarchy"><th class="heirarchy">Name</th><th class="heirarchy">Card.</th><th style="width: 100px" class="heirarchy">Type</th><th class="heirarchy">Description</th><th class="heirarchy">Constraints</th></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck1.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="icon_profile.png"/> Element-definition Extensions for use by FHIR Implementers</td><td class="heirarchy"/><td class="heirarchy">Profile</td><td class="heirarchy">A set of extensions that constrain data elements, whether used in CommonDataElements, Profiles or Questionnaires</td><td class="heirarchy"/></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck01.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_vjoin_end.png"/><img class="heirarchy" src="icon_extension.png"/> Extensions</td><td class="heirarchy"/><td class="heirarchy"/><td class="heirarchy">Extensions defined by this profile</td><td class="heirarchy">Namespace: http://hl7.org/fhir/Profile/element-constraints</td></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/>minLength</td><td class="heirarchy">0..1</td><td class="heirarchy">integer</td><td class="heirarchy">At least this many characters</td><td class="heirarchy">Use on resource: CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition</td></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/>maxLength</td><td class="heirarchy">0..1</td><td class="heirarchy">integer</td><td class="heirarchy">No more than this many characters</td><td class="heirarchy">Use on resource: CommonDataElement;Questionnaire.group.question</td></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/>regex</td><td class="heirarchy">0..1</td><td class="heirarchy">string</td><td class="heirarchy">Regular expression pattern</td><td class="heirarchy">Use on resource: CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition</td></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/>entryFormat</td><td class="heirarchy">0..1</td><td class="heirarchy">string</td><td class="heirarchy">User prompt for format</td><td class="heirarchy">Use on resource: CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition</td></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/>minValue</td><td class="heirarchy">0..1</td><td class="heirarchy">date|dateTime|decimal|integer</td><td class="heirarchy">Must be &gt;= this value</td><td class="heirarchy">Use on resource: CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition</td></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck010.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin.png"/>maxValue</td><td class="heirarchy">0..1</td><td class="heirarchy">date|dateTime|decimal|integer</td><td class="heirarchy">Must be &lt;= this value</td><td class="heirarchy">Use on resource: CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition</td></tr><tr class="heirarchy"><td style="white-space: nowrap" background="tbl_bck000.png" class="heirarchy"><img class="heirarchy" src="tbl_spacer.png"/><img class="heirarchy" src="tbl_blank.png"/><img class="heirarchy" src="tbl_vjoin_end.png"/>maxDecimalPlaces</td><td class="heirarchy">0..1</td><td class="heirarchy">integer</td><td class="heirarchy">Maximum digits after decimal</td><td class="heirarchy">Use on resource: CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition</td></tr></table>
+
+<pre class="spec"> <span style="float: right"><a title="Documentation for this format" href="formats.html"><img src="help.png" alt="doco"/></a></span>
+<span style=" color: Gray">&lt;!-- <span style="color: Darkviolet">Extensions</span> --&gt;</span>
+&lt;<span title="The minimum number of characters that must be present in the simple data type to be considered a &quot;valid&quot; instance."><b>extension</b></span>&gt;<a name="minLength"> </a>&lt;!--  <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Context: Resource = CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition</span> -->
+ &lt;<b>url</b> value="<span style="color: maroon">http://hl7.org/fhir/Profile/element-constraints#minLength</span>"/&gt;
+ &lt;<span title="The minimum number of characters that must be present in the simple data type to be considered a &quot;valid&quot; instance."><b>valueInteger</b></span> value="[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#integer">integer</a></span>]"/><span style=" color: Gray">&lt;!-- </span><span style="color: navy">At least this many characters</span><span style=" color: Gray"> --></span>
+&lt;/extension>
+
+&lt;<span title="The maximum number of characters that must be present in the simple data type to be considered a &quot;valid&quot; instance."><b>extension</b></span>&gt;<a name="maxLength"> </a>&lt;!--  <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Context: Resource = CommonDataElement;Questionnaire.group.question</span> -->
+ &lt;<b>url</b> value="<span style="color: maroon">http://hl7.org/fhir/Profile/element-constraints#maxLength</span>"/&gt;
+ &lt;<span title="The maximum number of characters that must be present in the simple data type to be considered a &quot;valid&quot; instance."><b>valueInteger</b></span> value="[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#integer">integer</a></span>]"/><span style=" color: Gray">&lt;!-- </span><span style="color: navy">No more than this many characters</span><span style=" color: Gray"> --></span>
+&lt;/extension>
+
+&lt;<span title="A regular expression that defines the syntax for the data element to be considered valid."><b>extension</b></span>&gt;<a name="regex"> </a>&lt;!--  <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Context: Resource = CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition</span> -->
+ &lt;<b>url</b> value="<span style="color: maroon">http://hl7.org/fhir/Profile/element-constraints#regex</span>"/&gt;
+ &lt;<span title="A regular expression that defines the syntax for the data element to be considered valid."><b>valueString</b></span> value="[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]"/><span style=" color: Gray">&lt;!-- </span><span style="color: navy">Regular expression pattern</span><span style=" color: Gray"> --></span>
+&lt;/extension>
+
+&lt;<span title="A syntax intended for display to the user to guide their input (i.e. a human readable version of a rgular expression).  For example &quot;nnn-nnn-nnn&quot;."><b>extension</b></span>&gt;<a name="entryFormat"> </a>&lt;!--  <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Context: Resource = CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition</span> -->
+ &lt;<b>url</b> value="<span style="color: maroon">http://hl7.org/fhir/Profile/element-constraints#entryFormat</span>"/&gt;
+ &lt;<span title="A syntax intended for display to the user to guide their input (i.e. a human readable version of a rgular expression).  For example &quot;nnn-nnn-nnn&quot;."><b>valueString</b></span> value="[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]"/><span style=" color: Gray">&lt;!-- </span><span style="color: navy">User prompt for format</span><span style=" color: Gray"> --></span>
+&lt;/extension>
+
+&lt;<span title="The inclusive lower bound on the range of allowed values for the data element."><b>extension</b></span>&gt;<a name="minValue"> </a>&lt;!--  <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Context: Resource = CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition</span> -->
+ &lt;<b>url</b> value="<span style="color: maroon">http://hl7.org/fhir/Profile/element-constraints#minValue</span>"/&gt;
+ &lt;<span title="The inclusive lower bound on the range of allowed values for the data element."><b>value[x]</b></span>&gt;[todo: type and short defn]&lt;/value[x]>
+&lt;/extension>
+
+&lt;<span title="The inclusive upper bound on the range of allowed values for the data element."><b>extension</b></span>&gt;<a name="maxValue"> </a>&lt;!--  <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Context: Resource = CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition</span> -->
+ &lt;<b>url</b> value="<span style="color: maroon">http://hl7.org/fhir/Profile/element-constraints#maxValue</span>"/&gt;
+ &lt;<span title="The inclusive upper bound on the range of allowed values for the data element."><b>value[x]</b></span>&gt;[todo: type and short defn]&lt;/value[x]>
+&lt;/extension>
+
+&lt;<span title="Identifies the maximum number of decimal places that may be specified for the data element."><b>extension</b></span>&gt;<a name="maxDecimalPlaces"> </a>&lt;!--  <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Context: Resource = CommonDataElement;Questionnaire.group.question;Profile.structure.element.definition</span> -->
+ &lt;<b>url</b> value="<span style="color: maroon">http://hl7.org/fhir/Profile/element-constraints#maxDecimalPlaces</span>"/&gt;
+ &lt;<span title="Identifies the maximum number of decimal places that may be specified for the data element."><b>valueInteger</b></span> value="[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#integer">integer</a></span>]"/><span style=" color: Gray">&lt;!-- </span><span style="color: navy">Maximum digits after decimal</span><span style=" color: Gray"> --></span>
+&lt;/extension>
+
+</pre>
+
+
+<p>
+This profile as <a href="element-extensions.profile.xml.html">XML</a> or <a href="element-extensions.profile.json.html">JSON</a>.
+</p>
+
+
+
+
+
+.
+
+<h2>Example</h2>
+
+<p><i>No Example Provided</i></p>
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011 - 2014. FHIR DSTU (v0.2.1-????) generated on Fri, Jun 6, 2014 13:29+0000. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a href="dstu.html">What's a DSTU?</a> | <a href="history.html">Version History</a> | <a href="license.html">License</a> | <a href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

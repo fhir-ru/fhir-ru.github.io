@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Report Timing</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>10D
+            <a name="10D"> </a>
+          </td>
+          <td>10 day report</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>15D
+            <a name="15D"> </a>
+          </td>
+          <td>15 day report</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>30D
+            <a name="30D"> </a>
+          </td>
+          <td>30 day report</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>3D
+            <a name="3D"> </a>
+          </td>
+          <td>3 day report</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>7D
+            <a name="7D"> </a>
+          </td>
+          <td>7 day report</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>AD
+            <a name="AD"> </a>
+          </td>
+          <td>Additional information</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>CO
+            <a name="CO"> </a>
+          </td>
+          <td>Correction</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>DE
+            <a name="DE"> </a>
+          </td>
+          <td>Device evaluation</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>PD
+            <a name="PD"> </a>
+          </td>
+          <td>Periodic</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>RQ
+            <a name="RQ"> </a>
+          </td>
+          <td>Requested information</td>
+          <td>added v2.3</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0234"/>
+  <name value="v2 Report Timing"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0234 ( Report Timing)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0234"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="10D"/>
+      <display value="10 day report"/>
+    </concept>
+    <concept>
+      <code value="15D"/>
+      <display value="15 day report"/>
+    </concept>
+    <concept>
+      <code value="30D"/>
+      <display value="30 day report"/>
+    </concept>
+    <concept>
+      <code value="3D"/>
+      <display value="3 day report"/>
+    </concept>
+    <concept>
+      <code value="7D"/>
+      <display value="7 day report"/>
+    </concept>
+    <concept>
+      <code value="AD"/>
+      <display value="Additional information"/>
+    </concept>
+    <concept>
+      <code value="CO"/>
+      <display value="Correction"/>
+    </concept>
+    <concept>
+      <code value="DE"/>
+      <display value="Device evaluation"/>
+    </concept>
+    <concept>
+      <code value="PD"/>
+      <display value="Periodic"/>
+    </concept>
+    <concept>
+      <code value="RQ"/>
+      <display value="Requested information"/>
+    </concept>
+  </define>
+</ValueSet>

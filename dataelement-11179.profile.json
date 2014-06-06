@@ -1,0 +1,116 @@
+{
+  "resourceType": "Profile",
+  "text": {
+    "status": "generated",
+    "div": "<div><pre> <span style=\"float: right\"><a title=\"Documentation for this format\" href=\"formats.html\"><img alt=\"doco\" src=\"help.png\"/></a></span>\r\n<span style=\" color: Gray\">&lt;!-- <span style=\"color: Darkviolet\">Extensions</span> --&gt;</span>\r\n&lt;<span title=\"The Data Element instance that defines the Concept_Element that defines the conceptual space realized by this Data_Element.\"><b>extension</b></span>&gt;<a name=\"meaning\"> </a>&lt;!--  <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">Context: Resource = DataElement</span> --&gt;\r\n &lt;<b>url</b> value=&quot;<span style=\"color: maroon\">http://hl7.org/fhir/Profile/dataelement-11179#meaning</span>&quot;/&gt;\r\n &lt;<span title=\"The Data Element instance that defines the Concept_Element that defines the conceptual space realized by this Data_Element.\"><b>valueResourceReference</b></span>&gt;<span style=\" color: Gray\">&lt;!-- </span> <span style=\"color: brown;\"><b>0..1</b></span>  <span style=\"color: darkgreen\"><a href=\"http://hl7.org/fhir/references.html#Resource\">Resource</a>(<a href=\"http://hl7.org/fhir/dataelement.html#DataElement\">DataElement</a>)</span> <span style=\"color: navy\">Concept element</span> <span style=\" color: Gray\">--&gt; </span>&lt;/valueResourceReference&gt;\r\n&lt;/extension&gt;\r\n\r\n&lt;<span title=\"A concept that represents a set of ideas, abstractions, or things in the real world that can be identified with explicit boundaries and meaning and whose properties and behavior follow the same rules. It may be either a single or a group of associated concepts, abstractions, or things.\"><b>extension</b></span>&gt;<a name=\"objectClass\"> </a>&lt;!--  <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">Context: Resource = DataElement</span> --&gt;\r\n &lt;<b>url</b> value=&quot;<span style=\"color: maroon\">http://hl7.org/fhir/Profile/dataelement-11179#objectClass</span>&quot;/&gt;\r\n &lt;<span title=\"A concept that represents a set of ideas, abstractions, or things in the real world that can be identified with explicit boundaries and meaning and whose properties and behavior follow the same rules. It may be either a single or a group of associated concepts, abstractions, or things.\"><b>valueCoding</b></span>&gt;<span style=\" color: Gray\">&lt;!-- </span> <span style=\"color: brown;\"><b>0..1</b></span>  <span style=\"color: darkgreen\"><a href=\"http://hl7.org/fhir/datatypes.html#Coding\">Coding</a></span> <span style=\"color: navy\">Object Class</span> <span style=\" color: Gray\">--&gt; </span>&lt;/valueCoding&gt;\r\n&lt;/extension&gt;\r\n\r\n&lt;<span title=\"A quality common to all members of an object class. A property may be any feature that humans naturally use to distinguish one individual object from another. It is the human perception of a single quality of an object class in the real world.  It is conceptual and thus has no particular associated means of representation by which the property can be communicated.\"><b>extension</b></span>&gt;<a name=\"property\"> </a>&lt;!--  <span style=\"color: brown\"><b>0..1</b></span> <span style=\"color: navy\">Context: Resource = DataElement</span> --&gt;\r\n &lt;<b>url</b> value=&quot;<span style=\"color: maroon\">http://hl7.org/fhir/Profile/dataelement-11179#property</span>&quot;/&gt;\r\n &lt;<span title=\"A quality common to all members of an object class. A property may be any feature that humans naturally use to distinguish one individual object from another. It is the human perception of a single quality of an object class in the real world.  It is conceptual and thus has no particular associated means of representation by which the property can be communicated.\"><b>valueCoding</b></span>&gt;<span style=\" color: Gray\">&lt;!-- </span> <span style=\"color: brown;\"><b>0..1</b></span>  <span style=\"color: darkgreen\"><a href=\"http://hl7.org/fhir/datatypes.html#Coding\">Coding</a></span> <span style=\"color: navy\">Object Class Property</span> <span style=\" color: Gray\">--&gt; </span>&lt;/valueCoding&gt;\r\n&lt;/extension&gt;\r\n\r\n</pre></div>"
+  },
+  "identifier": "http://hl7.org/fhir/profile/ISO 11179 Data Element Profile",
+  "name": "ISO 11179 Data Element Profile",
+  "publisher": "Health Level Seven",
+  "telecom": [
+    {
+      "system": "url",
+      "value": "http://hl7.org"
+    }
+  ],
+  "description": "A profile showing how to use DataElement to express 11179 Data_Element and Concept_Elements.  At present, the profile is a partially-complete place-holder",
+  "status": "draft",
+  "date": "2014-04-21",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2"
+    }
+  ],
+  "extensionDefn": [
+    {
+      "code": "meaning",
+      "display": "Concept element",
+      "contextType": "resource",
+      "context": [
+        "DataElement"
+      ],
+      "definition": {
+        "short": "Concept element",
+        "formal": "The Data Element instance that defines the Concept_Element that defines the conceptual space realized by this Data_Element.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Resource(DataElement)"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          },
+          {
+            "identity": "v2",
+            "map": "N/A"
+          }
+        ]
+      }
+    },
+    {
+      "code": "objectClass",
+      "display": "Object Class",
+      "contextType": "resource",
+      "context": [
+        "DataElement"
+      ],
+      "definition": {
+        "short": "Object Class",
+        "formal": "A concept that represents a set of ideas, abstractions, or things in the real world that can be identified with explicit boundaries and meaning and whose properties and behavior follow the same rules. It may be either a single or a group of associated concepts, abstractions, or things.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "binding": {
+          "name": "11179ObjectClass",
+          "isExtensible": true,
+          "description": "A concept that represents a set of ideas, abstractions, or things in the real world that can be identified with explicit boundaries and meaning and whose properties and behavior follow the same rules.  E.g. Person, Prescription, Encounter, etc."
+        }
+      }
+    },
+    {
+      "code": "property",
+      "display": "Object Class Property",
+      "contextType": "resource",
+      "context": [
+        "DataElement"
+      ],
+      "definition": {
+        "short": "Object Class Property",
+        "formal": "A quality common to all members of an object class. A property may be any feature that humans naturally use to distinguish one individual object from another. It is the human perception of a single quality of an object class in the real world.  It is conceptual and thus has no particular associated means of representation by which the property can be communicated.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "binding": {
+          "name": "11179ObjectClassProperty",
+          "isExtensible": true,
+          "description": "A quality common to all members of an object class. A property may be any feature that humans naturally use to distinguish one individual object from another. It is the human perception of a single quality of an object class in the real world.  E.g. name, identifier, gender, creationDate"
+        }
+      }
+    }
+  ]
+}

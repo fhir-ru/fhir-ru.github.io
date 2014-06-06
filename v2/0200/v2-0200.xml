@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Name Type</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>A
+            <a name="A"> </a>
+          </td>
+          <td>Assigned</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>B
+            <a name="B"> </a>
+          </td>
+          <td>Birth name</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>BAD
+            <a name="BAD"> </a>
+          </td>
+          <td>Bad Name</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>C
+            <a name="C"> </a>
+          </td>
+          <td>Adopted Name</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>D
+            <a name="D"> </a>
+          </td>
+          <td>Customary Name</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>I
+            <a name="I"> </a>
+          </td>
+          <td>Licensing Name</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>K
+            <a name="K"> </a>
+          </td>
+          <td>Business name</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>L
+            <a name="L"> </a>
+          </td>
+          <td>Official Registry Name</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>M
+            <a name="M"> </a>
+          </td>
+          <td>Maiden Name</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>MSK
+            <a name="MSK"> </a>
+          </td>
+          <td>Masked</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>N
+            <a name="N"> </a>
+          </td>
+          <td>Nickname</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>NAV
+            <a name="NAV"> </a>
+          </td>
+          <td>Temporarily Unavailable</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>NB
+            <a name="NB"> </a>
+          </td>
+          <td>Newborn Name</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>NOUSE
+            <a name="NOUSE"> </a>
+          </td>
+          <td>No Longer To Be Used</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>O
+            <a name="O"> </a>
+          </td>
+          <td>Other</td>
+          <td>added v2.3, removed after v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>P
+            <a name="P"> </a>
+          </td>
+          <td>Name of Partner/Spouse</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>R
+            <a name="R"> </a>
+          </td>
+          <td>Registered Name</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>REL
+            <a name="REL"> </a>
+          </td>
+          <td>Religious</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>S
+            <a name="S"> </a>
+          </td>
+          <td>Pseudonym</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>T
+            <a name="T"> </a>
+          </td>
+          <td>Indigenous/Tribal</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>TEMP
+            <a name="TEMP"> </a>
+          </td>
+          <td>Temporary Name</td>
+          <td>added v2.7</td>
+        </tr>
+ 
+        <tr>
+          <td>U
+            <a name="U"> </a>
+          </td>
+          <td>Unknown</td>
+          <td>added v2.3.1</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0200"/>
+  <name value="v2 Name Type"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0200 ( Name Type)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0200"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="A"/>
+      <display value="Assigned"/>
+    </concept>
+    <concept>
+      <code value="B"/>
+      <display value="Birth name"/>
+    </concept>
+    <concept>
+      <code value="BAD"/>
+      <display value="Bad Name"/>
+    </concept>
+    <concept>
+      <code value="C"/>
+      <display value="Adopted Name"/>
+    </concept>
+    <concept>
+      <code value="D"/>
+      <display value="Customary Name"/>
+    </concept>
+    <concept>
+      <code value="I"/>
+      <display value="Licensing Name"/>
+    </concept>
+    <concept>
+      <code value="K"/>
+      <display value="Business name"/>
+    </concept>
+    <concept>
+      <code value="L"/>
+      <display value="Official Registry Name"/>
+    </concept>
+    <concept>
+      <code value="M"/>
+      <display value="Maiden Name"/>
+    </concept>
+    <concept>
+      <code value="MSK"/>
+      <display value="Masked"/>
+    </concept>
+    <concept>
+      <code value="N"/>
+      <display value="Nickname"/>
+    </concept>
+    <concept>
+      <code value="NAV"/>
+      <display value="Temporarily Unavailable"/>
+    </concept>
+    <concept>
+      <code value="NB"/>
+      <display value="Newborn Name"/>
+    </concept>
+    <concept>
+      <code value="NOUSE"/>
+      <display value="No Longer To Be Used"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="O"/>
+      <display value="Other"/>
+    </concept>
+    <concept>
+      <code value="P"/>
+      <display value="Name of Partner/Spouse"/>
+    </concept>
+    <concept>
+      <code value="R"/>
+      <display value="Registered Name"/>
+    </concept>
+    <concept>
+      <code value="REL"/>
+      <display value="Religious"/>
+    </concept>
+    <concept>
+      <code value="S"/>
+      <display value="Pseudonym"/>
+    </concept>
+    <concept>
+      <code value="T"/>
+      <display value="Indigenous/Tribal"/>
+    </concept>
+    <concept>
+      <code value="TEMP"/>
+      <display value="Temporary Name"/>
+    </concept>
+    <concept>
+      <code value="U"/>
+      <display value="Unknown"/>
+    </concept>
+  </define>
+</ValueSet>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Version ID</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>2.0
+            <a name="2.460"> </a>
+          </td>
+          <td>Release 2.0</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>2.0D
+            <a name="2.460D"> </a>
+          </td>
+          <td>Demo 2.0</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>2.1
+            <a name="2.461"> </a>
+          </td>
+          <td>Release 2.1</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>2.2
+            <a name="2.462"> </a>
+          </td>
+          <td>Release 2.2</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>2.3
+            <a name="2.463"> </a>
+          </td>
+          <td>Release 2.3</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>2.3.1
+            <a name="2.463.461"> </a>
+          </td>
+          <td>Release 2.3.1</td>
+          <td>added v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>2.3.2
+            <a name="2.463.462"> </a>
+          </td>
+          <td>Release 2.3.2</td>
+          <td>added v2.3.1, removed after v2.3.1</td>
+        </tr>
+ 
+        <tr>
+          <td>2.4
+            <a name="2.464"> </a>
+          </td>
+          <td>Release 2.4</td>
+          <td>added v2.4</td>
+        </tr>
+ 
+        <tr>
+          <td>2.5
+            <a name="2.465"> </a>
+          </td>
+          <td>Release 2.5</td>
+          <td>added v2.5</td>
+        </tr>
+ 
+        <tr>
+          <td>2.5.1
+            <a name="2.465.461"> </a>
+          </td>
+          <td>Release 2.5.1</td>
+          <td>added v2.5.1</td>
+        </tr>
+ 
+        <tr>
+          <td>2.6
+            <a name="2.466"> </a>
+          </td>
+          <td>Release 2.6</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>2.7
+            <a name="2.467"> </a>
+          </td>
+          <td>Release 2.7</td>
+          <td>added v2.7</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0104"/>
+  <name value="v2 Version ID"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0104 ( Version ID)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0104"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="2.0"/>
+      <display value="Release 2.0"/>
+    </concept>
+    <concept>
+      <code value="2.0D"/>
+      <display value="Demo 2.0"/>
+    </concept>
+    <concept>
+      <code value="2.1"/>
+      <display value="Release 2.1"/>
+    </concept>
+    <concept>
+      <code value="2.2"/>
+      <display value="Release 2.2"/>
+    </concept>
+    <concept>
+      <code value="2.3"/>
+      <display value="Release 2.3"/>
+    </concept>
+    <concept>
+      <code value="2.3.1"/>
+      <display value="Release 2.3.1"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="2.3.2"/>
+      <display value="Release 2.3.2"/>
+    </concept>
+    <concept>
+      <code value="2.4"/>
+      <display value="Release 2.4"/>
+    </concept>
+    <concept>
+      <code value="2.5"/>
+      <display value="Release 2.5"/>
+    </concept>
+    <concept>
+      <code value="2.5.1"/>
+      <display value="Release 2.5.1"/>
+    </concept>
+    <concept>
+      <code value="2.6"/>
+      <display value="Release 2.6"/>
+    </concept>
+    <concept>
+      <code value="2.7"/>
+      <display value="Release 2.7"/>
+    </concept>
+  </define>
+</ValueSet>

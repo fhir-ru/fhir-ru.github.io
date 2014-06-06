@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  Codes representing the defined possible states of a Managed Participation, as defined by the Managed Participation class state machine.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>normal
+            <a name="normal"> </a>
+          </td>
+          <td>normal</td>
+          <td>
+                        The &#39;typical&#39; state. Excludes &quot;nullified&quot; which represents the termination state of a participation instance that was created in error.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  active
+            <a name="active"> </a>
+          </td>
+          <td>active</td>
+          <td>
+                        The state representing the fact that the Participation is in progress.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  cancelled
+            <a name="cancelled"> </a>
+          </td>
+          <td>cancelled</td>
+          <td>
+                        The terminal state resulting from cancellation of the Participation prior to activation.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  completed
+            <a name="completed"> </a>
+          </td>
+          <td>completed</td>
+          <td>
+                        The terminal state representing the successful completion of the Participation.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  pending
+            <a name="pending"> </a>
+          </td>
+          <td>pending</td>
+          <td>
+                        The state representing that fact that the Participation has not yet become active.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>nullified
+            <a name="nullified"> </a>
+          </td>
+          <td>nullified</td>
+          <td>
+                        The state representing the termination of a Participation instance that was created in error.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/ManagedParticipationStatus"/>
+  <name value="v3 Code System ManagedParticipationStatus"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" Codes representing the defined possible states of a Managed Participation, as defined by the Managed Participation class state machine."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/ManagedParticipationStatus"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="normal"/>
+      <display value="normal"/>
+      <definition value="The &#39;typical&#39; state. Excludes &quot;nullified&quot; which represents the termination state of a participation instance that was created in error."/>
+      <concept>
+        <code value="active"/>
+        <display value="active"/>
+        <definition value="The state representing the fact that the Participation is in progress."/>
+      </concept>
+      <concept>
+        <code value="cancelled"/>
+        <display value="cancelled"/>
+        <definition value="The terminal state resulting from cancellation of the Participation prior to activation."/>
+      </concept>
+      <concept>
+        <code value="completed"/>
+        <display value="completed"/>
+        <definition value="The terminal state representing the successful completion of the Participation."/>
+      </concept>
+      <concept>
+        <code value="pending"/>
+        <display value="pending"/>
+        <definition value="The state representing that fact that the Participation has not yet become active."/>
+      </concept>
+    </concept>
+    <concept>
+      <code value="nullified"/>
+      <display value="nullified"/>
+      <definition value="The state representing the termination of a Participation instance that was created in error."/>
+    </concept>
+  </define>
+</ValueSet>

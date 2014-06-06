@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  Identifies what sort of change is permitted or has occurred between the item that was ordered/requested and the one that was/will be provided.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>
+            <span style="color: grey">
+              <i>(_Conditional)</i>
+            </span>
+          </td>
+          <td>
+            <a name="_Conditional"> </a>
+          </td>
+          <td>
+                        Some conditions may be attached to an allowable substitution.  An allowable substitution is based on a match to any other attributes that may be specified.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  CONFIRM
+            <a name="CONFIRM"> </a>
+          </td>
+          <td>Confirm first</td>
+          <td>
+                        Confirmation with Contact Person prior to making any substitutions has or will occur.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>2</td>
+          <td>  NOTIFY
+            <a name="NOTIFY"> </a>
+          </td>
+          <td>Notify first</td>
+          <td>
+                        Notification to the Contact Person, prior to substitution and through normal institutional procedures, has or will be made.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>NOSUB
+            <a name="NOSUB"> </a>
+          </td>
+          <td>No substitution</td>
+          <td>
+                        Substitution is not permitted.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>UNCOND
+            <a name="UNCOND"> </a>
+          </td>
+          <td>Unconditional</td>
+          <td>
+                        No conditions are required.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/SubstitutionCondition"/>
+  <name value="v3 Code System SubstitutionCondition"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" Identifies what sort of change is permitted or has occurred between the item that was ordered/requested and the one that was/will be provided."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/SubstitutionCondition"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="_Conditional"/>
+      <abstract value="true"/>
+      <display value="Conditional"/>
+      <definition value="Some conditions may be attached to an allowable substitution.  An allowable substitution is based on a match to any other attributes that may be specified."/>
+      <concept>
+        <code value="CONFIRM"/>
+        <display value="Confirm first"/>
+        <definition value="Confirmation with Contact Person prior to making any substitutions has or will occur."/>
+      </concept>
+      <concept>
+        <code value="NOTIFY"/>
+        <display value="Notify first"/>
+        <definition value="Notification to the Contact Person, prior to substitution and through normal institutional procedures, has or will be made."/>
+      </concept>
+    </concept>
+    <concept>
+      <code value="NOSUB"/>
+      <display value="No substitution"/>
+      <definition value="Substitution is not permitted."/>
+    </concept>
+    <concept>
+      <code value="UNCOND"/>
+      <display value="Unconditional"/>
+      <definition value="No conditions are required."/>
+    </concept>
+  </define>
+</ValueSet>

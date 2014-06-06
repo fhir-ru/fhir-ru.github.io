@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  Indicates that the receiver has messages for the sender
+        <br/>
+
+                  
+                     OpenIssue: Description does not make sense relative to name of coding system.  Must be reviewed and improved.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>H
+            <a name="H"> </a>
+          </td>
+          <td>High</td>
+          <td>
+                        High priority messages are available
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>L
+            <a name="L"> </a>
+          </td>
+          <td>Low</td>
+          <td>
+                        Low priority messages are available
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>M
+            <a name="M"> </a>
+          </td>
+          <td>Medium</td>
+          <td>
+                        Medium priority messages are available
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/MessageWaitingPriority"/>
+  <name value="v3 Code System MessageWaitingPriority"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value=" Indicates that the receiver has messages for the sender  OpenIssue:
+Description does not make sense relative to name of coding system.  Must be reviewed and improved."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/MessageWaitingPriority"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="H"/>
+      <display value="High"/>
+      <definition value="High priority messages are available"/>
+    </concept>
+    <concept>
+      <code value="L"/>
+      <display value="Low"/>
+      <definition value="Low priority messages are available"/>
+    </concept>
+    <concept>
+      <code value="M"/>
+      <display value="Medium"/>
+      <definition value="Medium priority messages are available"/>
+    </concept>
+  </define>
+</ValueSet>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Document Storage Status</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>AA
+            <a name="AA"> </a>
+          </td>
+          <td>Active and archived</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>AC
+            <a name="AC"> </a>
+          </td>
+          <td>Active</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>AR
+            <a name="AR"> </a>
+          </td>
+          <td>Archived (not active)</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>PU
+            <a name="PU"> </a>
+          </td>
+          <td>Purged</td>
+          <td>added v2.3</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0275"/>
+  <name value="v2 Document Storage Status"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0275 ( Document Storage Status)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0275"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="AA"/>
+      <display value="Active and archived"/>
+    </concept>
+    <concept>
+      <code value="AC"/>
+      <display value="Active"/>
+    </concept>
+    <concept>
+      <code value="AR"/>
+      <display value="Archived (not active)"/>
+    </concept>
+    <concept>
+      <code value="PU"/>
+      <display value="Purged"/>
+    </concept>
+  </define>
+</ValueSet>

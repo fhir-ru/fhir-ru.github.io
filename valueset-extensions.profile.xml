@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Profile xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><pre> <span style="float: right"><a title="Documentation for this format" href="formats.html"><img alt="doco" src="help.png"/></a></span>
+<span style=" color: Gray">&lt;!-- <span style="color: Darkviolet">Extensions</span> --&gt;</span>
+&lt;<span title="Comparison value for ordinal codes."><b>extension</b></span>&gt;<a name="ordinalValue"> </a>&lt;!--  <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Context: Resource = ValueSet.compose.include.code</span> --&gt;
+ &lt;<b>url</b> value=&quot;<span style="color: maroon">http://hl7.org/fhir/extensions/ValueSet#ordinalValue</span>&quot;/&gt;
+ &lt;<span title="Comparison value for ordinal codes."><b>valueInteger</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#integer">integer</a></span>]&quot;/&gt;<span style=" color: Gray">&lt;!-- </span><span style="color: navy">Comparison value for ordinal codes</span><span style=" color: Gray"> --&gt;</span>
+&lt;/extension&gt;
+
+&lt;<span title="Appearance order for user selection."><b>extension</b></span>&gt;<a name="conceptOrder"> </a>&lt;!--  <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Context: Resource = ValueSet.compose.include.code</span> --&gt;
+ &lt;<b>url</b> value=&quot;<span style="color: maroon">http://hl7.org/fhir/extensions/ValueSet#conceptOrder</span>&quot;/&gt;
+ &lt;<span title="Appearance order for user selection."><b>valueInteger</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#integer">integer</a></span>]&quot;/&gt;<span style=" color: Gray">&lt;!-- </span><span style="color: navy">Appearance order for user selection</span><span style=" color: Gray"> --&gt;</span>
+&lt;/extension&gt;
+
+&lt;<span title="Display value for the code."><b>extension</b></span>&gt;<a name="display"> </a>&lt;!--  <span style="color: brown"><b>0..*</b></span> <span style="color: navy">Context: Resource = ValueSet.compose.include.code</span> --&gt;
+ &lt;<b>url</b> value=&quot;<span style="color: maroon">http://hl7.org/fhir/extensions/ValueSet#display</span>&quot;/&gt;
+ &lt;<span title="Display value for the code."><b>valueString</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]&quot;/&gt;<span style=" color: Gray">&lt;!-- </span><span style="color: navy">Display value for the code</span><span style=" color: Gray"> --&gt;</span>
+&lt;/extension&gt;
+
+&lt;<span title="Code system name."><b>extension</b></span>&gt;<a name="systemName"> </a>&lt;!--  <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Context: Resource = ValueSet.compose.include</span> --&gt;
+ &lt;<b>url</b> value=&quot;<span style="color: maroon">http://hl7.org/fhir/extensions/ValueSet#systemName</span>&quot;/&gt;
+ &lt;<span title="Code system name."><b>valueString</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]&quot;/&gt;<span style=" color: Gray">&lt;!-- </span><span style="color: navy">Code system name</span><span style=" color: Gray"> --&gt;</span>
+&lt;/extension&gt;
+
+&lt;<span title="Where to find code system."><b>extension</b></span>&gt;<a name="systemRef"> </a>&lt;!--  <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Context: Resource = ValueSet.compose.include</span> --&gt;
+ &lt;<b>url</b> value=&quot;<span style="color: maroon">http://hl7.org/fhir/extensions/ValueSet#systemRef</span>&quot;/&gt;
+ &lt;<span title="Where to find code system."><b>valueUri</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#uri">uri</a></span>]&quot;/&gt;<span style=" color: Gray">&lt;!-- </span><span style="color: navy">Where to find code system</span><span style=" color: Gray"> --&gt;</span>
+&lt;/extension&gt;
+
+&lt;<span title="Human readable names for the valueset."><b>extension</b></span>&gt;<a name="otherName"> </a>&lt;!--  <span style="color: brown"><b>0..*</b></span> <span style="color: navy">Context: Resource = ValueSet</span> --&gt;
+ &lt;<b>url</b> value=&quot;<span style="color: maroon">http://hl7.org/fhir/extensions/ValueSet#otherName</span>&quot;/&gt;
+ <span title="Human readable names for the valueset."><span style=" color: Gray">&lt;!-- </span><span style="color: navy">Extensions: #name, #name-language, #preferred</span> <span style=" color: Gray">--&gt; </span></span>
+&lt;/extension&gt;
+
+&lt;<span title="This name is intended to be human readable, short and as specific as possible and to convey the purpose of the value set.  It is considered to be the name of the value set."><b>extension</b></span>&gt;<a name="name"> </a>&lt;!--  <span style="color: brown"><b>1..1</b></span> <span style="color: navy">Context: Extension = http://hl7.org/fhir/extensions/ValueSet#otherName</span> --&gt;
+ &lt;<b>url</b> value=&quot;<span style="color: maroon">http://hl7.org/fhir/extensions/ValueSet#name</span>&quot;/&gt;
+ &lt;<span title="This name is intended to be human readable, short and as specific as possible and to convey the purpose of the value set.  It is considered to be the name of the value set."><b>valueString</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]&quot;/&gt;<span style=" color: Gray">&lt;!-- </span><span style="color: navy">Human readable, short and specific</span><span style=" color: Gray"> --&gt;</span>
+&lt;/extension&gt;
+
+&lt;<span title="This indicates the language system (e.g. US English) in which the name is expressed."><b>extension</b></span>&gt;<a name="name-language"> </a>&lt;!--  <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Context: Extension = http://hl7.org/fhir/extensions/ValueSet#otherName</span> --&gt;
+ &lt;<b>url</b> value=&quot;<span style="color: maroon">http://hl7.org/fhir/extensions/ValueSet#name-language</span>&quot;/&gt;
+ &lt;<span title="This indicates the language system (e.g. US English) in which the name is expressed."><b>valueCode</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#code">code</a></span>]&quot;/&gt;<span style=" color: Gray">&lt;!-- </span><span style="color: navy">IETF language tag (BCP-13)</span><span style=" color: Gray"> --&gt;</span>
+&lt;/extension&gt;
+
+&lt;<span title="Flag that this Name in this Name Language is the preferred human-readable signifier in this language."><b>extension</b></span>&gt;<a name="preferred"> </a>&lt;!--  <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Context: Extension = http://hl7.org/fhir/extensions/ValueSet#otherName</span> --&gt;
+ &lt;<b>url</b> value=&quot;<span style="color: maroon">http://hl7.org/fhir/extensions/ValueSet#preferred</span>&quot;/&gt;
+ &lt;<span title="Flag that this Name in this Name Language is the preferred human-readable signifier in this language."><b>valueBoolean</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#boolean">boolean</a></span>]&quot;/&gt;<span style=" color: Gray">&lt;!-- </span><span style="color: navy">Which name is preferred for this language</span><span style=" color: Gray"> --&gt;</span>
+&lt;/extension&gt;
+
+&lt;<span title=": This text is intended to act as a citation to work done elsewhere that is not part of the current stewarding process where the referenced source is in some way a basis of the current value set definition."><b>extension</b></span>&gt;<a name="sourceReference"> </a>&lt;!--  <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Context: Resource = ValueSet</span> --&gt;
+ &lt;<b>url</b> value=&quot;<span style="color: maroon">http://hl7.org/fhir/extensions/ValueSet#sourceReference</span>&quot;/&gt;
+ &lt;<span title=": This text is intended to act as a citation to work done elsewhere that is not part of the current stewarding process where the referenced source is in some way a basis of the current value set definition."><b>valueUri</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#uri">uri</a></span>]&quot;/&gt;<span style=" color: Gray">&lt;!-- </span><span style="color: navy">An external source useful in understanding the basis for the value set</span><span style=" color: Gray"> --&gt;</span>
+&lt;/extension&gt;
+
+&lt;<span title="Word or words used in an information retrieval system to indicate the content of the value set."><b>extension</b></span>&gt;<a name="keyWord"> </a>&lt;!--  <span style="color: brown"><b>0..*</b></span> <span style="color: navy">Context: Resource = ValueSet</span> --&gt;
+ &lt;<b>url</b> value=&quot;<span style="color: maroon">http://hl7.org/fhir/extensions/ValueSet#keyWord</span>&quot;/&gt;
+ &lt;<span title="Word or words used in an information retrieval system to indicate the content of the value set."><b>valueString</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]&quot;/&gt;<span style=" color: Gray">&lt;!-- </span><span style="color: navy">can be used to help find the value set</span><span style=" color: Gray"> --&gt;</span>
+&lt;/extension&gt;
+
+&lt;<span title="The optional and repeating Use set of elements hold information about consumers of the value set and the implementations, projects or standards that the author has utilized the value set in.  Value sets that share the same Use information can be grouped together by that information for implementation purposes."><b>extension</b></span>&gt;<a name="usage"> </a>&lt;!--  <span style="color: brown"><b>0..*</b></span> <span style="color: navy">Context: Resource = ValueSet</span> --&gt;
+ &lt;<b>url</b> value=&quot;<span style="color: maroon">http://hl7.org/fhir/extensions/ValueSet#usage</span>&quot;/&gt;
+ <span title="The optional and repeating Use set of elements hold information about consumers of the value set and the implementations, projects or standards that the author has utilized the value set in.  Value sets that share the same Use information can be grouped together by that information for implementation purposes."><span style=" color: Gray">&lt;!-- </span><span style="color: navy">Extensions: #usage-user, #usage-use</span> <span style=" color: Gray">--&gt; </span></span>
+&lt;/extension&gt;
+
+&lt;<span title="This is most likely to be an organization but can be an individual. It would not be a program, that information should be recorded in the Usage."><b>extension</b></span>&gt;<a name="usage-user"> </a>&lt;!--  <span style="color: brown"><b>1..1</b></span> <span style="color: navy">Context: Extension = http://hl7.org/fhir/extensions/ValueSet#usage</span> --&gt;
+ &lt;<b>url</b> value=&quot;<span style="color: maroon">http://hl7.org/fhir/extensions/ValueSet#usage-user</span>&quot;/&gt;
+ &lt;<span title="This is most likely to be an organization but can be an individual. It would not be a program, that information should be recorded in the Usage."><b>valueString</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]&quot;/&gt;<span style=" color: Gray">&lt;!-- </span><span style="color: navy">A consumer of or client for the value set</span><span style=" color: Gray"> --&gt;</span>
+&lt;/extension&gt;
+
+&lt;<span title="A descriptive name of the project or standard in which the value set is used."><b>extension</b></span>&gt;<a name="usage-use"> </a>&lt;!--  <span style="color: brown"><b>1..1</b></span> <span style="color: navy">Context: Extension = http://hl7.org/fhir/extensions/ValueSet#usage</span> --&gt;
+ &lt;<b>url</b> value=&quot;<span style="color: maroon">http://hl7.org/fhir/extensions/ValueSet#usage-use</span>&quot;/&gt;
+ &lt;<span title="A descriptive name of the project or standard in which the value set is used."><b>valueString</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]&quot;/&gt;<span style=" color: Gray">&lt;!-- </span><span style="color: navy">Implementation or project or standard that uses the value set</span><span style=" color: Gray"> --&gt;</span>
+&lt;/extension&gt;
+
+&lt;<span title="Workflow Status is used to represent details of the value set development process while the value set has an Activity Status of Preliminary. The development of a value set often follows a formal workflow process from initiation to completion, and this element carries the state variable for this state machine. The assumption is that when first created a value set would have a workflow state of Draft. Additional workflow states may be used."><b>extension</b></span>&gt;<a name="workflowStatus"> </a>&lt;!--  <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Context: Resource = ValueSet</span> --&gt;
+ &lt;<b>url</b> value=&quot;<span style="color: maroon">http://hl7.org/fhir/extensions/ValueSet#workflowStatus</span>&quot;/&gt;
+ &lt;<span title="Workflow Status is used to represent details of the value set development process while the value set has an Activity Status of Preliminary. The development of a value set often follows a formal workflow process from initiation to completion, and this element carries the state variable for this state machine. The assumption is that when first created a value set would have a workflow state of Draft. Additional workflow states may be used."><b>valueString</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]&quot;/&gt;<span style=" color: Gray">&lt;!-- </span><span style="color: navy">Indicates the state of development of the value set</span><span style=" color: Gray"> --&gt;</span>
+&lt;/extension&gt;
+
+&lt;<span title="This is the first date-time when the value set version becomes active, so this value is present on Inactive value set versions as well. The start Date_time is expected to be as of 0001 UTC of the Effective Date."><b>extension</b></span>&gt;<a name="effectiveDate"> </a>&lt;!--  <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Context: Resource = ValueSet</span> --&gt;
+ &lt;<b>url</b> value=&quot;<span style="color: maroon">http://hl7.org/fhir/extensions/ValueSet#effectiveDate</span>&quot;/&gt;
+ &lt;<span title="This is the first date-time when the value set version becomes active, so this value is present on Inactive value set versions as well. The start Date_time is expected to be as of 0001 UTC of the Effective Date."><b>valueDate</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#date">date</a></span>]&quot;/&gt;<span style=" color: Gray">&lt;!-- </span><span style="color: navy">When the value set version becomes Active and is available for use</span><span style=" color: Gray"> --&gt;</span>
+&lt;/extension&gt;
+
+&lt;<span title="The date when the value set version is no longer expected to be used to create new content. This is the first date-time when the value set version becomes Inactive, so this value MUST present on all Inactive value set versions. The start Date_time is expected to be as of 0001 UTC of the Expiration Date."><b>extension</b></span>&gt;<a name="expirationDate"> </a>&lt;!--  <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Context: Resource = ValueSet</span> --&gt;
+ &lt;<b>url</b> value=&quot;<span style="color: maroon">http://hl7.org/fhir/extensions/ValueSet#expirationDate</span>&quot;/&gt;
+ &lt;<span title="The date when the value set version is no longer expected to be used to create new content. This is the first date-time when the value set version becomes Inactive, so this value MUST present on all Inactive value set versions. The start Date_time is expected to be as of 0001 UTC of the Expiration Date."><b>valueDate</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#date">date</a></span>]&quot;/&gt;<span style=" color: Gray">&lt;!-- </span><span style="color: navy">When the value set version should no longer be used</span><span style=" color: Gray"> --&gt;</span>
+&lt;/extension&gt;
+
+&lt;<span title="User or Org actually involved in creating the value set content."><b>extension</b></span>&gt;<a name="author"> </a>&lt;!--  <span style="color: brown"><b>0..*</b></span> <span style="color: navy">Context: Resource = ValueSet</span> --&gt;
+ &lt;<b>url</b> value=&quot;<span style="color: maroon">http://hl7.org/fhir/extensions/ValueSet#author</span>&quot;/&gt;
+ &lt;<span title="User or Org actually involved in creating the value set content."><b>valueString</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]&quot;/&gt;<span style=" color: Gray">&lt;!-- </span><span style="color: navy">User or Org actually involved in creating the value set content</span><span style=" color: Gray"> --&gt;</span>
+&lt;/extension&gt;
+
+&lt;<span title="Each comment is a time-stamped entry of arbitrary length that is not editable except by anyone in the author group."><b>extension</b></span>&gt;<a name="comment"> </a>&lt;!--  <span style="color: brown"><b>0..*</b></span> <span style="color: navy">Context: Resource = ValueSet</span> --&gt;
+ &lt;<b>url</b> value=&quot;<span style="color: maroon">http://hl7.org/fhir/extensions/ValueSet#comment</span>&quot;/&gt;
+ <span title="Each comment is a time-stamped entry of arbitrary length that is not editable except by anyone in the author group."><span style=" color: Gray">&lt;!-- </span><span style="color: navy">Extensions: #comment-content, #comment-timestamp</span> <span style=" color: Gray">--&gt; </span></span>
+&lt;/extension&gt;
+
+&lt;<span title="Remarks or other text."><b>extension</b></span>&gt;<a name="comment-content"> </a>&lt;!--  <span style="color: brown"><b>1..1</b></span> <span style="color: navy">Context: Extension = http://hl7.org/fhir/extensions/ValueSet#comment</span> --&gt;
+ &lt;<b>url</b> value=&quot;<span style="color: maroon">http://hl7.org/fhir/extensions/ValueSet#comment-content</span>&quot;/&gt;
+ &lt;<span title="Remarks or other text."><b>valueString</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]&quot;/&gt;<span style=" color: Gray">&lt;!-- </span><span style="color: navy">Remarks or other text</span><span style=" color: Gray"> --&gt;</span>
+&lt;/extension&gt;
+
+&lt;<span title="When the comment was created."><b>extension</b></span>&gt;<a name="comment-timestamp"> </a>&lt;!--  <span style="color: brown"><b>1..1</b></span> <span style="color: navy">Context: Extension = http://hl7.org/fhir/extensions/ValueSet#comment</span> --&gt;
+ &lt;<b>url</b> value=&quot;<span style="color: maroon">http://hl7.org/fhir/extensions/ValueSet#comment-timestamp</span>&quot;/&gt;
+ &lt;<span title="When the comment was created."><b>valueInstant</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#instant">instant</a></span>]&quot;/&gt;<span style=" color: Gray">&lt;!-- </span><span style="color: navy">When the comment was created</span><span style=" color: Gray"> --&gt;</span>
+&lt;/extension&gt;
+
+&lt;<span title="Reference to a trusted expansion."><b>extension</b></span>&gt;<a name="trusted-expansion"> </a>&lt;!--  <span style="color: brown"><b>0..*</b></span> <span style="color: navy">Context: Resource = ValueSet</span> --&gt;
+ &lt;<b>url</b> value=&quot;<span style="color: maroon">http://hl7.org/fhir/extensions/ValueSet#trusted-expansion</span>&quot;/&gt;
+ &lt;<span title="Reference to a trusted expansion."><b>valueUri</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#uri">uri</a></span>]&quot;/&gt;<span style=" color: Gray">&lt;!-- </span><span style="color: navy">Reference to a trusted expansion</span><span style=" color: Gray"> --&gt;</span>
+&lt;/extension&gt;
+
+&lt;<span title="Information on changes made to the Value Set Definition over time, and also has a contained audit trail of all such changes."><b>extension</b></span>&gt;<a name="history"> </a>&lt;!--  <span style="color: brown"><b>0..*</b></span> <span style="color: navy">Context: Resource = ValueSet</span> --&gt;
+ &lt;<b>url</b> value=&quot;<span style="color: maroon">http://hl7.org/fhir/extensions/ValueSet#history</span>&quot;/&gt;
+ <span title="Information on changes made to the Value Set Definition over time, and also has a contained audit trail of all such changes."><span style=" color: Gray">&lt;!-- </span><span style="color: navy">Extensions: #history-name, #revision</span> <span style=" color: Gray">--&gt; </span></span>
+&lt;/extension&gt;
+
+&lt;<span title="The name of this set of history entries."><b>extension</b></span>&gt;<a name="history-name"> </a>&lt;!--  <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Context: Extension = http://hl7.org/fhir/extensions/ValueSet#history</span> --&gt;
+ &lt;<b>url</b> value=&quot;<span style="color: maroon">http://hl7.org/fhir/extensions/ValueSet#history-name</span>&quot;/&gt;
+ &lt;<span title="The name of this set of history entries."><b>valueString</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]&quot;/&gt;<span style=" color: Gray">&lt;!-- </span><span style="color: navy">The name of this set of history entries</span><span style=" color: Gray"> --&gt;</span>
+&lt;/extension&gt;
+
+&lt;<span title="Audit of all changes for a history entry."><b>extension</b></span>&gt;<a name="revision"> </a>&lt;!--  <span style="color: brown"><b>0..*</b></span> <span style="color: navy">Context: Extension = http://hl7.org/fhir/extensions/ValueSet#history</span> --&gt;
+ &lt;<b>url</b> value=&quot;<span style="color: maroon">http://hl7.org/fhir/extensions/ValueSet#revision</span>&quot;/&gt;
+ <span title="Audit of all changes for a history entry."><span style=" color: Gray">&lt;!-- </span><span style="color: navy">Extensions: #revision-date, #revision-id, #revision-author, #revision-notes</span> <span style=" color: Gray">--&gt; </span></span>
+&lt;/extension&gt;
+
+&lt;<span title="Date the change was made."><b>extension</b></span>&gt;<a name="revision-date"> </a>&lt;!--  <span style="color: brown"><b>1..1</b></span> <span style="color: navy">Context: Extension = http://hl7.org/fhir/extensions/ValueSet#revision</span> --&gt;
+ &lt;<b>url</b> value=&quot;<span style="color: maroon">http://hl7.org/fhir/extensions/ValueSet#revision-date</span>&quot;/&gt;
+ &lt;<span title="Date the change was made."><b>valueDatetime</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#datetime">datetime</a></span>]&quot;/&gt;<span style=" color: Gray">&lt;!-- </span><span style="color: navy">Date the change was made</span><span style=" color: Gray"> --&gt;</span>
+&lt;/extension&gt;
+
+&lt;<span title="Version marker after the change was made."><b>extension</b></span>&gt;<a name="revision-id"> </a>&lt;!--  <span style="color: brown"><b>1..1</b></span> <span style="color: navy">Context: Extension = http://hl7.org/fhir/extensions/ValueSet#revision</span> --&gt;
+ &lt;<b>url</b> value=&quot;<span style="color: maroon">http://hl7.org/fhir/extensions/ValueSet#revision-id</span>&quot;/&gt;
+ &lt;<span title="Version marker after the change was made."><b>valueString</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]&quot;/&gt;<span style=" color: Gray">&lt;!-- </span><span style="color: navy">Version marker after the change was made</span><span style=" color: Gray"> --&gt;</span>
+&lt;/extension&gt;
+
+&lt;<span title="Who made the change."><b>extension</b></span>&gt;<a name="revision-author"> </a>&lt;!--  <span style="color: brown"><b>1..1</b></span> <span style="color: navy">Context: Extension = http://hl7.org/fhir/extensions/ValueSet#revision</span> --&gt;
+ &lt;<b>url</b> value=&quot;<span style="color: maroon">http://hl7.org/fhir/extensions/ValueSet#revision-author</span>&quot;/&gt;
+ &lt;<span title="Who made the change."><b>valueString</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]&quot;/&gt;<span style=" color: Gray">&lt;!-- </span><span style="color: navy">Who made the change</span><span style=" color: Gray"> --&gt;</span>
+&lt;/extension&gt;
+
+&lt;<span title="Information about the change."><b>extension</b></span>&gt;<a name="revision-notes"> </a>&lt;!--  <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Context: Extension = http://hl7.org/fhir/extensions/ValueSet#revision</span> --&gt;
+ &lt;<b>url</b> value=&quot;<span style="color: maroon">http://hl7.org/fhir/extensions/ValueSet#revision-notes</span>&quot;/&gt;
+ &lt;<span title="Information about the change."><b>valueString</b></span> value=&quot;[<span style="color: darkgreen"><a href="http://hl7.org/fhir/datatypes.html#string">string</a></span>]&quot;/&gt;<span style=" color: Gray">&lt;!-- </span><span style="color: navy">Information about the change</span><span style=" color: Gray"> --&gt;</span>
+&lt;/extension&gt;
+
+</pre></div>
+  </text>
+  <identifier value="http://hl7.org/fhir/profile/ValueSet HL7 Extensions"/>
+  <name value="ValueSet HL7 Extensions"/>
+  <publisher value="HL7"/>
+  <description value="Defines common extensions used with or related to the ValueSet resource"/>
+  <status value="draft"/>
+  <extensionDefn>
+    <code value="ordinalValue"/>
+    <display value="Comparison value for ordinal codes"/>
+    <contextType value="resource"/>
+    <context value="ValueSet.compose.include.code"/>
+    <definition>
+      <short value="Comparison value for ordinal codes"/>
+      <formal value="Comparison value for ordinal codes."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="integer"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </definition>
+  </extensionDefn>
+  <extensionDefn>
+    <code value="conceptOrder"/>
+    <display value="Appearance order for user selection"/>
+    <contextType value="resource"/>
+    <context value="ValueSet.compose.include.code"/>
+    <definition>
+      <short value="Appearance order for user selection"/>
+      <formal value="Appearance order for user selection."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="integer"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </definition>
+  </extensionDefn>
+  <extensionDefn>
+    <code value="display"/>
+    <display value="Display value for the code"/>
+    <contextType value="resource"/>
+    <context value="ValueSet.compose.include.code"/>
+    <definition>
+      <short value="Display value for the code"/>
+      <formal value="Display value for the code."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </definition>
+  </extensionDefn>
+  <extensionDefn>
+    <code value="systemName"/>
+    <display value="Code system name"/>
+    <contextType value="resource"/>
+    <context value="ValueSet.compose.include"/>
+    <definition>
+      <short value="Code system name"/>
+      <formal value="Code system name."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </definition>
+  </extensionDefn>
+  <extensionDefn>
+    <code value="systemRef"/>
+    <display value="Where to find code system"/>
+    <contextType value="resource"/>
+    <context value="ValueSet.compose.include"/>
+    <definition>
+      <short value="Where to find code system"/>
+      <formal value="Where to find code system."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </definition>
+  </extensionDefn>
+  <extensionDefn>
+    <code value="otherName"/>
+    <display value="Alternative names"/>
+    <contextType value="resource"/>
+    <context value="ValueSet"/>
+    <definition>
+      <short value="Alternative names"/>
+      <formal value="Human readable names for the valueset."/>
+      <min value="0"/>
+      <max value="*"/>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </definition>
+  </extensionDefn>
+  <extensionDefn>
+    <code value="name"/>
+    <display value="Human readable, short and specific"/>
+    <contextType value="extension"/>
+    <context value="http://hl7.org/fhir/extensions/ValueSet#otherName"/>
+    <definition>
+      <short value="Human readable, short and specific"/>
+      <formal value="This name is intended to be human readable, short and as specific as possible and to convey the purpose of the value set.  It is considered to be the name of the value set."/>
+      <comments value="This need not be unique. However some use cases require uniqueness within a namespace and therefore best practice would be to make the name unique."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </definition>
+  </extensionDefn>
+  <extensionDefn>
+    <code value="name-language"/>
+    <display value="IETF language tag (BCP-13)"/>
+    <contextType value="extension"/>
+    <context value="http://hl7.org/fhir/extensions/ValueSet#otherName"/>
+    <definition>
+      <short value="IETF language tag (BCP-13)"/>
+      <formal value="This indicates the language system (e.g. US English) in which the name is expressed."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </definition>
+  </extensionDefn>
+  <extensionDefn>
+    <code value="preferred"/>
+    <display value="Which name is preferred for this language"/>
+    <contextType value="extension"/>
+    <context value="http://hl7.org/fhir/extensions/ValueSet#otherName"/>
+    <definition>
+      <short value="Which name is preferred for this language"/>
+      <formal value="Flag that this Name in this Name Language is the preferred human-readable signifier in this language."/>
+      <comments value="There may be multiple human readable names in a given language, and this flag indicates which of them is preferred for the given language."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </definition>
+  </extensionDefn>
+  <extensionDefn>
+    <code value="sourceReference"/>
+    <display value="An external source useful in understanding the basis for the value set"/>
+    <contextType value="resource"/>
+    <context value="ValueSet"/>
+    <definition>
+      <short value="An external source useful in understanding the basis for the value set"/>
+      <formal value=": This text is intended to act as a citation to work done elsewhere that is not part of the current stewarding process where the referenced source is in some way a basis of the current value set definition."/>
+      <comments value="This is not intended to be a direct link to another value set. It is only intended to support a link or textual description that indicates related material for the value set."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </definition>
+  </extensionDefn>
+  <extensionDefn>
+    <code value="keyWord"/>
+    <display value="can be used to help find the value set"/>
+    <contextType value="resource"/>
+    <context value="ValueSet"/>
+    <definition>
+      <short value="can be used to help find the value set"/>
+      <formal value="Word or words used in an information retrieval system to indicate the content of the value set."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </definition>
+  </extensionDefn>
+  <extensionDefn>
+    <code value="usage"/>
+    <display value="Consumers of the value set and the implementations, projects or standards that the author has utilized the value set in"/>
+    <contextType value="resource"/>
+    <context value="ValueSet"/>
+    <definition>
+      <short value="Consumers of the value set and the implementations, projects or standards that the author has utilized the value set in"/>
+      <formal value="The optional and repeating Use set of elements hold information about consumers of the value set and the implementations, projects or standards that the author has utilized the value set in.  Value sets that share the same Use information can be grouped together by that information for implementation purposes."/>
+      <comments value="This is likely to be a “point in time” view and should not be considered an authoritative listing of all uses of the value set."/>
+      <min value="0"/>
+      <max value="*"/>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </definition>
+  </extensionDefn>
+  <extensionDefn>
+    <code value="usage-user"/>
+    <display value="A consumer of or client for the value set"/>
+    <contextType value="extension"/>
+    <context value="http://hl7.org/fhir/extensions/ValueSet#usage"/>
+    <definition>
+      <short value="A consumer of or client for the value set"/>
+      <formal value="This is most likely to be an organization but can be an individual. It would not be a program, that information should be recorded in the Usage."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </definition>
+  </extensionDefn>
+  <extensionDefn>
+    <code value="usage-use"/>
+    <display value="Implementation or project or standard that uses the value set"/>
+    <contextType value="extension"/>
+    <context value="http://hl7.org/fhir/extensions/ValueSet#usage"/>
+    <definition>
+      <short value="Implementation or project or standard that uses the value set"/>
+      <formal value="A descriptive name of the project or standard in which the value set is used."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </definition>
+  </extensionDefn>
+  <extensionDefn>
+    <code value="workflowStatus"/>
+    <display value="Indicates the state of development of the value set"/>
+    <contextType value="resource"/>
+    <context value="ValueSet"/>
+    <definition>
+      <short value="Indicates the state of development of the value set"/>
+      <formal value="Workflow Status is used to represent details of the value set development process while the value set has an Activity Status of Preliminary. The development of a value set often follows a formal workflow process from initiation to completion, and this element carries the state variable for this state machine. The assumption is that when first created a value set would have a workflow state of Draft. Additional workflow states may be used."/>
+      <comments value="The values that this element may assume include phrases that capture various stages in review and approval. In addition to the minimum of “Draft”,  these include “Proposed”, “Approved”, “Ready to Publish”.  There may be additional states defined by different developers. This is an optional element because the use of Activity Status “Preliminary” may be sufficient for some implementations."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </definition>
+  </extensionDefn>
+  <extensionDefn>
+    <code value="effectiveDate"/>
+    <display value="When the value set version becomes Active and is available for use"/>
+    <contextType value="resource"/>
+    <context value="ValueSet"/>
+    <definition>
+      <short value="When the value set version becomes Active and is available for use"/>
+      <formal value="This is the first date-time when the value set version becomes active, so this value is present on Inactive value set versions as well. The start Date_time is expected to be as of 0001 UTC of the Effective Date."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </definition>
+  </extensionDefn>
+  <extensionDefn>
+    <code value="expirationDate"/>
+    <display value="When the value set version should no longer be used"/>
+    <contextType value="resource"/>
+    <context value="ValueSet"/>
+    <definition>
+      <short value="When the value set version should no longer be used"/>
+      <formal value="The date when the value set version is no longer expected to be used to create new content. This is the first date-time when the value set version becomes Inactive, so this value MUST present on all Inactive value set versions. The start Date_time is expected to be as of 0001 UTC of the Expiration Date."/>
+      <comments value="Upon reaching the Expiration Date, the value set Activity Status should be consdiered as inactive. An Inactive value set version may no longer be used to create new content, but it may be used to evaluate content created prior to the Expiration Date."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </definition>
+  </extensionDefn>
+  <extensionDefn>
+    <code value="author"/>
+    <display value="User or Org actually involved in creating the value set content"/>
+    <contextType value="resource"/>
+    <context value="ValueSet"/>
+    <definition>
+      <short value="User or Org actually involved in creating the value set content"/>
+      <formal value="User or Org actually involved in creating the value set content."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </definition>
+  </extensionDefn>
+  <extensionDefn>
+    <code value="comment"/>
+    <display value="Human-specified notes and other documentation"/>
+    <contextType value="resource"/>
+    <context value="ValueSet"/>
+    <definition>
+      <short value="Human-specified notes and other documentation"/>
+      <formal value="Each comment is a time-stamped entry of arbitrary length that is not editable except by anyone in the author group."/>
+      <min value="0"/>
+      <max value="*"/>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </definition>
+  </extensionDefn>
+  <extensionDefn>
+    <code value="comment-content"/>
+    <display value="Remarks or other text"/>
+    <contextType value="extension"/>
+    <context value="http://hl7.org/fhir/extensions/ValueSet#comment"/>
+    <definition>
+      <short value="Remarks or other text"/>
+      <formal value="Remarks or other text."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </definition>
+  </extensionDefn>
+  <extensionDefn>
+    <code value="comment-timestamp"/>
+    <display value="When the comment was created"/>
+    <contextType value="extension"/>
+    <context value="http://hl7.org/fhir/extensions/ValueSet#comment"/>
+    <definition>
+      <short value="When the comment was created"/>
+      <formal value="When the comment was created."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="instant"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </definition>
+  </extensionDefn>
+  <extensionDefn>
+    <code value="trusted-expansion"/>
+    <display value="Reference to a trusted expansion"/>
+    <contextType value="resource"/>
+    <context value="ValueSet"/>
+    <definition>
+      <short value="Reference to a trusted expansion"/>
+      <formal value="Reference to a trusted expansion."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </definition>
+  </extensionDefn>
+  <extensionDefn>
+    <code value="history"/>
+    <display value="Information on changes made to the Value Set Definition over time, and also has a contained audit trail of all such changes"/>
+    <contextType value="resource"/>
+    <context value="ValueSet"/>
+    <definition>
+      <short value="Information on changes made to the Value Set Definition over time, and also has a contained audit trail of all such changes"/>
+      <formal value="Information on changes made to the Value Set Definition over time, and also has a contained audit trail of all such changes."/>
+      <min value="0"/>
+      <max value="*"/>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </definition>
+  </extensionDefn>
+  <extensionDefn>
+    <code value="history-name"/>
+    <display value="The name of this set of history entries"/>
+    <contextType value="extension"/>
+    <context value="http://hl7.org/fhir/extensions/ValueSet#history"/>
+    <definition>
+      <short value="The name of this set of history entries"/>
+      <formal value="The name of this set of history entries."/>
+      <comments value="Typically, a value set will have a set of history entries for each maor publication milestone."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </definition>
+  </extensionDefn>
+  <extensionDefn>
+    <code value="revision"/>
+    <display value="Audit of all changes for a history entry"/>
+    <contextType value="extension"/>
+    <context value="http://hl7.org/fhir/extensions/ValueSet#history"/>
+    <definition>
+      <short value="Audit of all changes for a history entry"/>
+      <formal value="Audit of all changes for a history entry."/>
+      <min value="0"/>
+      <max value="*"/>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </definition>
+  </extensionDefn>
+  <extensionDefn>
+    <code value="revision-date"/>
+    <display value="Date the change was made"/>
+    <contextType value="extension"/>
+    <context value="http://hl7.org/fhir/extensions/ValueSet#revision"/>
+    <definition>
+      <short value="Date the change was made"/>
+      <formal value="Date the change was made."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="datetime"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </definition>
+  </extensionDefn>
+  <extensionDefn>
+    <code value="revision-id"/>
+    <display value="Version marker after the change was made"/>
+    <contextType value="extension"/>
+    <context value="http://hl7.org/fhir/extensions/ValueSet#revision"/>
+    <definition>
+      <short value="Version marker after the change was made"/>
+      <formal value="Version marker after the change was made."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </definition>
+  </extensionDefn>
+  <extensionDefn>
+    <code value="revision-author"/>
+    <display value="Who made the change"/>
+    <contextType value="extension"/>
+    <context value="http://hl7.org/fhir/extensions/ValueSet#revision"/>
+    <definition>
+      <short value="Who made the change"/>
+      <formal value="Who made the change."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </definition>
+  </extensionDefn>
+  <extensionDefn>
+    <code value="revision-notes"/>
+    <display value="Information about the change"/>
+    <contextType value="extension"/>
+    <context value="http://hl7.org/fhir/extensions/ValueSet#revision"/>
+    <definition>
+      <short value="Information about the change"/>
+      <formal value="Information about the change."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </definition>
+  </extensionDefn>
+</Profile>

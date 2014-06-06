@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Referral Disposition</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>AM
+            <a name="AM"> </a>
+          </td>
+          <td>Assume Management</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>RP
+            <a name="RP"> </a>
+          </td>
+          <td>Return Patient After Evaluation</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>SO
+            <a name="SO"> </a>
+          </td>
+          <td>Second Opinion</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>WR
+            <a name="WR"> </a>
+          </td>
+          <td>Send Written Report</td>
+          <td>added v2.3</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0282"/>
+  <name value="v2 Referral Disposition"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0282 ( Referral Disposition)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0282"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="AM"/>
+      <display value="Assume Management"/>
+    </concept>
+    <concept>
+      <code value="RP"/>
+      <display value="Return Patient After Evaluation"/>
+    </concept>
+    <concept>
+      <code value="SO"/>
+      <display value="Second Opinion"/>
+    </concept>
+    <concept>
+      <code value="WR"/>
+      <display value="Send Written Report"/>
+    </concept>
+  </define>
+</ValueSet>

@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Body Site</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>BE
+            <a name="BE"> </a>
+          </td>
+          <td>Bilateral Ears</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>BN
+            <a name="BN"> </a>
+          </td>
+          <td>Bilateral Nares</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>BU
+            <a name="BU"> </a>
+          </td>
+          <td>Buttock</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>CT
+            <a name="CT"> </a>
+          </td>
+          <td>Chest Tube</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>LA
+            <a name="LA"> </a>
+          </td>
+          <td>Left Arm</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>LAC
+            <a name="LAC"> </a>
+          </td>
+          <td>Left Anterior Chest</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>LACF
+            <a name="LACF"> </a>
+          </td>
+          <td>Left Antecubital Fossa</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>LD
+            <a name="LD"> </a>
+          </td>
+          <td>Left Deltoid</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>LE
+            <a name="LE"> </a>
+          </td>
+          <td>Left Ear</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>LEJ
+            <a name="LEJ"> </a>
+          </td>
+          <td>Left External Jugular</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>LF
+            <a name="LF"> </a>
+          </td>
+          <td>Left Foot</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>LG
+            <a name="LG"> </a>
+          </td>
+          <td>Left Gluteus Medius</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>LH
+            <a name="LH"> </a>
+          </td>
+          <td>Left Hand</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>LIJ
+            <a name="LIJ"> </a>
+          </td>
+          <td>Left Internal Jugular</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>LLAQ
+            <a name="LLAQ"> </a>
+          </td>
+          <td>Left Lower Abd Quadrant</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>LLFA
+            <a name="LLFA"> </a>
+          </td>
+          <td>Left Lower Forearm</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>LMFA
+            <a name="LMFA"> </a>
+          </td>
+          <td>Left Mid Forearm</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>LN
+            <a name="LN"> </a>
+          </td>
+          <td>Left Naris</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>LNB
+            <a name="LNB"> </a>
+          </td>
+          <td>Nebulized</td>
+          <td>added v2.3, removed after v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>LPC
+            <a name="LPC"> </a>
+          </td>
+          <td>Left Posterior Chest</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>LSC
+            <a name="LSC"> </a>
+          </td>
+          <td>Left Subclavian</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>LT
+            <a name="LT"> </a>
+          </td>
+          <td>Left Thigh</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>LUA
+            <a name="LUA"> </a>
+          </td>
+          <td>Left Upper Arm</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>LUAQ
+            <a name="LUAQ"> </a>
+          </td>
+          <td>Left Upper Abd Quadrant</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>LUFA
+            <a name="LUFA"> </a>
+          </td>
+          <td>Left Upper Forearm</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>LV
+            <a name="LV"> </a>
+          </td>
+          <td>Left Vastus Lateralis</td>
+          <td>added v2.3, removed after v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>LVG
+            <a name="LVG"> </a>
+          </td>
+          <td>Left Ventragluteal</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>LVL
+            <a name="LVL"> </a>
+          </td>
+          <td>Left Vastus Lateralis</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>NB
+            <a name="NB"> </a>
+          </td>
+          <td>Nebulized</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>OD
+            <a name="OD"> </a>
+          </td>
+          <td>Right Eye</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>OS
+            <a name="OS"> </a>
+          </td>
+          <td>Left Eye</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>OU
+            <a name="OU"> </a>
+          </td>
+          <td>Bilateral Eyes</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>PA
+            <a name="PA"> </a>
+          </td>
+          <td>Perianal</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>PERIN
+            <a name="PERIN"> </a>
+          </td>
+          <td>Perineal</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>RA
+            <a name="RA"> </a>
+          </td>
+          <td>Right Arm</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>RAC
+            <a name="RAC"> </a>
+          </td>
+          <td>Right Anterior Chest</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>RACF
+            <a name="RACF"> </a>
+          </td>
+          <td>Right Antecubital Fossa</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>RD
+            <a name="RD"> </a>
+          </td>
+          <td>Right Deltoid</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>RE
+            <a name="RE"> </a>
+          </td>
+          <td>Right Ear</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>REJ
+            <a name="REJ"> </a>
+          </td>
+          <td>Right External Jugular</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>RF
+            <a name="RF"> </a>
+          </td>
+          <td>Right Foot</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>RG
+            <a name="RG"> </a>
+          </td>
+          <td>Right Gluteus Medius</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>RH
+            <a name="RH"> </a>
+          </td>
+          <td>Right Hand</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>RIJ
+            <a name="RIJ"> </a>
+          </td>
+          <td>Right Internal Jugular</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>RLAQ
+            <a name="RLAQ"> </a>
+          </td>
+          <td>Rt Lower Abd Quadrant</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>RLFA
+            <a name="RLFA"> </a>
+          </td>
+          <td>Right Lower Forearm</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>RMFA
+            <a name="RMFA"> </a>
+          </td>
+          <td>Right Mid Forearm</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>RN
+            <a name="RN"> </a>
+          </td>
+          <td>Right Naris</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>RPC
+            <a name="RPC"> </a>
+          </td>
+          <td>Right Posterior Chest</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>RSC
+            <a name="RSC"> </a>
+          </td>
+          <td>Right Subclavian</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>RT
+            <a name="RT"> </a>
+          </td>
+          <td>Right Thigh</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>RUA
+            <a name="RUA"> </a>
+          </td>
+          <td>Right Upper Arm</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>RUAQ
+            <a name="RUAQ"> </a>
+          </td>
+          <td>Right Upper Abd Quadrant</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>RUFA
+            <a name="RUFA"> </a>
+          </td>
+          <td>Right Upper Forearm</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>RVG
+            <a name="RVG"> </a>
+          </td>
+          <td>Right Ventragluteal</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>RVL
+            <a name="RVL"> </a>
+          </td>
+          <td>Right Vastus Lateralis</td>
+          <td>added v2.2</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0163"/>
+  <name value="v2 Body Site"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0163 ( Body Site)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0163"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="BE"/>
+      <display value="Bilateral Ears"/>
+    </concept>
+    <concept>
+      <code value="BN"/>
+      <display value="Bilateral Nares"/>
+    </concept>
+    <concept>
+      <code value="BU"/>
+      <display value="Buttock"/>
+    </concept>
+    <concept>
+      <code value="CT"/>
+      <display value="Chest Tube"/>
+    </concept>
+    <concept>
+      <code value="LA"/>
+      <display value="Left Arm"/>
+    </concept>
+    <concept>
+      <code value="LAC"/>
+      <display value="Left Anterior Chest"/>
+    </concept>
+    <concept>
+      <code value="LACF"/>
+      <display value="Left Antecubital Fossa"/>
+    </concept>
+    <concept>
+      <code value="LD"/>
+      <display value="Left Deltoid"/>
+    </concept>
+    <concept>
+      <code value="LE"/>
+      <display value="Left Ear"/>
+    </concept>
+    <concept>
+      <code value="LEJ"/>
+      <display value="Left External Jugular"/>
+    </concept>
+    <concept>
+      <code value="LF"/>
+      <display value="Left Foot"/>
+    </concept>
+    <concept>
+      <code value="LG"/>
+      <display value="Left Gluteus Medius"/>
+    </concept>
+    <concept>
+      <code value="LH"/>
+      <display value="Left Hand"/>
+    </concept>
+    <concept>
+      <code value="LIJ"/>
+      <display value="Left Internal Jugular"/>
+    </concept>
+    <concept>
+      <code value="LLAQ"/>
+      <display value="Left Lower Abd Quadrant"/>
+    </concept>
+    <concept>
+      <code value="LLFA"/>
+      <display value="Left Lower Forearm"/>
+    </concept>
+    <concept>
+      <code value="LMFA"/>
+      <display value="Left Mid Forearm"/>
+    </concept>
+    <concept>
+      <code value="LN"/>
+      <display value="Left Naris"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="LNB"/>
+      <display value="Nebulized"/>
+    </concept>
+    <concept>
+      <code value="LPC"/>
+      <display value="Left Posterior Chest"/>
+    </concept>
+    <concept>
+      <code value="LSC"/>
+      <display value="Left Subclavian"/>
+    </concept>
+    <concept>
+      <code value="LT"/>
+      <display value="Left Thigh"/>
+    </concept>
+    <concept>
+      <code value="LUA"/>
+      <display value="Left Upper Arm"/>
+    </concept>
+    <concept>
+      <code value="LUAQ"/>
+      <display value="Left Upper Abd Quadrant"/>
+    </concept>
+    <concept>
+      <code value="LUFA"/>
+      <display value="Left Upper Forearm"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="LV"/>
+      <display value="Left Vastus Lateralis"/>
+    </concept>
+    <concept>
+      <code value="LVG"/>
+      <display value="Left Ventragluteal"/>
+    </concept>
+    <concept>
+      <code value="LVL"/>
+      <display value="Left Vastus Lateralis"/>
+    </concept>
+    <concept>
+      <code value="NB"/>
+      <display value="Nebulized"/>
+    </concept>
+    <concept>
+      <code value="OD"/>
+      <display value="Right Eye"/>
+    </concept>
+    <concept>
+      <code value="OS"/>
+      <display value="Left Eye"/>
+    </concept>
+    <concept>
+      <code value="OU"/>
+      <display value="Bilateral Eyes"/>
+    </concept>
+    <concept>
+      <code value="PA"/>
+      <display value="Perianal"/>
+    </concept>
+    <concept>
+      <code value="PERIN"/>
+      <display value="Perineal"/>
+    </concept>
+    <concept>
+      <code value="RA"/>
+      <display value="Right Arm"/>
+    </concept>
+    <concept>
+      <code value="RAC"/>
+      <display value="Right Anterior Chest"/>
+    </concept>
+    <concept>
+      <code value="RACF"/>
+      <display value="Right Antecubital Fossa"/>
+    </concept>
+    <concept>
+      <code value="RD"/>
+      <display value="Right Deltoid"/>
+    </concept>
+    <concept>
+      <code value="RE"/>
+      <display value="Right Ear"/>
+    </concept>
+    <concept>
+      <code value="REJ"/>
+      <display value="Right External Jugular"/>
+    </concept>
+    <concept>
+      <code value="RF"/>
+      <display value="Right Foot"/>
+    </concept>
+    <concept>
+      <code value="RG"/>
+      <display value="Right Gluteus Medius"/>
+    </concept>
+    <concept>
+      <code value="RH"/>
+      <display value="Right Hand"/>
+    </concept>
+    <concept>
+      <code value="RIJ"/>
+      <display value="Right Internal Jugular"/>
+    </concept>
+    <concept>
+      <code value="RLAQ"/>
+      <display value="Rt Lower Abd Quadrant"/>
+    </concept>
+    <concept>
+      <code value="RLFA"/>
+      <display value="Right Lower Forearm"/>
+    </concept>
+    <concept>
+      <code value="RMFA"/>
+      <display value="Right Mid Forearm"/>
+    </concept>
+    <concept>
+      <code value="RN"/>
+      <display value="Right Naris"/>
+    </concept>
+    <concept>
+      <code value="RPC"/>
+      <display value="Right Posterior Chest"/>
+    </concept>
+    <concept>
+      <code value="RSC"/>
+      <display value="Right Subclavian"/>
+    </concept>
+    <concept>
+      <code value="RT"/>
+      <display value="Right Thigh"/>
+    </concept>
+    <concept>
+      <code value="RUA"/>
+      <display value="Right Upper Arm"/>
+    </concept>
+    <concept>
+      <code value="RUAQ"/>
+      <display value="Right Upper Abd Quadrant"/>
+    </concept>
+    <concept>
+      <code value="RUFA"/>
+      <display value="Right Upper Forearm"/>
+    </concept>
+    <concept>
+      <code value="RVG"/>
+      <display value="Right Ventragluteal"/>
+    </concept>
+    <concept>
+      <code value="RVL"/>
+      <display value="Right Vastus Lateralis"/>
+    </concept>
+  </define>
+</ValueSet>

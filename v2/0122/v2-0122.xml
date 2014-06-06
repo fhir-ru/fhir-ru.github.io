@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Charge Type</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>CH
+            <a name="CH"> </a>
+          </td>
+          <td>Charge</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>CO
+            <a name="CO"> </a>
+          </td>
+          <td>Contract</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>CR
+            <a name="CR"> </a>
+          </td>
+          <td>Credit</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>DP
+            <a name="DP"> </a>
+          </td>
+          <td>Department</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>GR
+            <a name="GR"> </a>
+          </td>
+          <td>Grant</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>NC
+            <a name="NC"> </a>
+          </td>
+          <td>No Charge</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>PC
+            <a name="PC"> </a>
+          </td>
+          <td>Professional</td>
+          <td>from v2.1</td>
+        </tr>
+ 
+        <tr>
+          <td>RS
+            <a name="RS"> </a>
+          </td>
+          <td>Research</td>
+          <td>from v2.1</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0122"/>
+  <name value="v2 Charge Type"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0122 ( Charge Type)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0122"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="CH"/>
+      <display value="Charge"/>
+    </concept>
+    <concept>
+      <code value="CO"/>
+      <display value="Contract"/>
+    </concept>
+    <concept>
+      <code value="CR"/>
+      <display value="Credit"/>
+    </concept>
+    <concept>
+      <code value="DP"/>
+      <display value="Department"/>
+    </concept>
+    <concept>
+      <code value="GR"/>
+      <display value="Grant"/>
+    </concept>
+    <concept>
+      <code value="NC"/>
+      <display value="No Charge"/>
+    </concept>
+    <concept>
+      <code value="PC"/>
+      <display value="Professional"/>
+    </concept>
+    <concept>
+      <code value="RS"/>
+      <display value="Research"/>
+    </concept>
+  </define>
+</ValueSet>

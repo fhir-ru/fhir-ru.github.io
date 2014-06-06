@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>State/Province</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>...
+            <a name=".46.46.46"> </a>
+          </td>
+          <td>No suggested values defined</td>
+          <td>added v2.5.1, removed after v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>AB
+            <a name="AB"> </a>
+          </td>
+          <td>Alberta  (US and Canada)</td>
+          <td>added v2.5, removed after v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>MI
+            <a name="MI"> </a>
+          </td>
+          <td>Michigan  (US)</td>
+          <td>added v2.5, removed after v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>…
+            <a name=".8230"> </a>
+          </td>
+          <td>No suggested values defined</td>
+          <td>added v2.7</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0347"/>
+  <name value="v2 State/Province"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0347 ( State/Province)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0347"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="..."/>
+      <display value="No suggested values defined"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="AB"/>
+      <display value="Alberta  (US and Canada)"/>
+    </concept>
+    <concept>
+      <extension url="http://hl7.org/fhir/Profile/tools-extensions#deprecated">
+        <valueBoolean value="true"/>
+      </extension>
+      <code value="MI"/>
+      <display value="Michigan  (US)"/>
+    </concept>
+    <concept>
+      <code value="…"/>
+      <display value="No suggested values defined"/>
+    </concept>
+  </define>
+</ValueSet>

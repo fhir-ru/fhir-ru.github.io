@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Primary Observer&#39;s Qualification</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>C
+            <a name="C"> </a>
+          </td>
+          <td>Health care consumer/patient</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>H
+            <a name="H"> </a>
+          </td>
+          <td>Other health professional</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>L
+            <a name="L"> </a>
+          </td>
+          <td>Lawyer/attorney</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>M
+            <a name="M"> </a>
+          </td>
+          <td>Mid-level professional (nurse, nurse practitioner, physician&#39;s assistant)</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>O
+            <a name="O"> </a>
+          </td>
+          <td>Other non-health professional</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>P
+            <a name="P"> </a>
+          </td>
+          <td>Physician (osteopath, homeopath)</td>
+          <td>added v2.3</td>
+        </tr>
+ 
+        <tr>
+          <td>R
+            <a name="R"> </a>
+          </td>
+          <td>Pharmacist</td>
+          <td>added v2.3</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0242"/>
+  <name value="v2 Primary Observer&#39;s Qualification"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0242 ( Primary Observer&#39;s Qualification)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0242"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="C"/>
+      <display value="Health care consumer/patient"/>
+    </concept>
+    <concept>
+      <code value="H"/>
+      <display value="Other health professional"/>
+    </concept>
+    <concept>
+      <code value="L"/>
+      <display value="Lawyer/attorney"/>
+    </concept>
+    <concept>
+      <code value="M"/>
+      <display value="Mid-level professional (nurse, nurse practitioner, physician&#39;s assistant)"/>
+    </concept>
+    <concept>
+      <code value="O"/>
+      <display value="Other non-health professional"/>
+    </concept>
+    <concept>
+      <code value="P"/>
+      <display value="Physician (osteopath, homeopath)"/>
+    </concept>
+    <concept>
+      <code value="R"/>
+      <display value="Pharmacist"/>
+    </concept>
+  </define>
+</ValueSet>

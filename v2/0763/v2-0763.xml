@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>DRG Procedure Relevance</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>0
+            <a name="0"> </a>
+          </td>
+          <td>Neither operation relevant nor non-operation relevant procedure</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>1
+            <a name="1"> </a>
+          </td>
+          <td>Operation relevant procedure</td>
+          <td>added v2.6</td>
+        </tr>
+ 
+        <tr>
+          <td>2
+            <a name="2"> </a>
+          </td>
+          <td>Non-operation relevant procedure</td>
+          <td>added v2.6</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0763"/>
+  <name value="v2 DRG Procedure Relevance"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0763 ( DRG Procedure Relevance)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0763"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="0"/>
+      <display value="Neither operation relevant nor non-operation relevant procedure"/>
+    </concept>
+    <concept>
+      <code value="1"/>
+      <display value="Operation relevant procedure"/>
+    </concept>
+    <concept>
+      <code value="2"/>
+      <display value="Non-operation relevant procedure"/>
+    </concept>
+  </define>
+</ValueSet>

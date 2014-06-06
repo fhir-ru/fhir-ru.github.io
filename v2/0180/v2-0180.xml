@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Record-level Event Code</p>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Version</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>MAC
+            <a name="MAC"> </a>
+          </td>
+          <td>Reactivate deactivated record</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>MAD
+            <a name="MAD"> </a>
+          </td>
+          <td>Add record to master file</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>MDC
+            <a name="MDC"> </a>
+          </td>
+          <td>Deactivate: discontinue using record in master file, but do not delete from database</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>MDL
+            <a name="MDL"> </a>
+          </td>
+          <td>Delete record from master file</td>
+          <td>added v2.2</td>
+        </tr>
+ 
+        <tr>
+          <td>MUP
+            <a name="MUP"> </a>
+          </td>
+          <td>Update record for master file</td>
+          <td>added v2.2</td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v2/vs/0180"/>
+  <name value="v2 Record-level Event Code"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0180 ( Record-level Event Code)"/>
+  <status value="active"/>
+  <date value="2011-01-28"/>
+  <define>
+    <system value="http://hl7.org/fhir/v2/0180"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="MAC"/>
+      <display value="Reactivate deactivated record"/>
+    </concept>
+    <concept>
+      <code value="MAD"/>
+      <display value="Add record to master file"/>
+    </concept>
+    <concept>
+      <code value="MDC"/>
+      <display value="Deactivate: discontinue using record in master file, but do not delete from database"/>
+    </concept>
+    <concept>
+      <code value="MDL"/>
+      <display value="Delete record from master file"/>
+    </concept>
+    <concept>
+      <code value="MUP"/>
+      <display value="Update record for master file"/>
+    </concept>
+  </define>
+</ValueSet>

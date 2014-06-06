@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2013-12-07</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  
+                     Deprecation Comment: This code system was deprecated as of the November 2007 harmonization meeting. The content was folded into AddressUse (2.16.840.1.113883.5.1119), which replaces this code system.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>AS
+            <a name="AS"> </a>
+          </td>
+          <td>answering service</td>
+          <td>
+                        An automated answering machine used for less urgent cases and if the main purpose of contact is to leave a message or access an automated announcement.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>EC
+            <a name="EC"> </a>
+          </td>
+          <td>emergency contact</td>
+          <td>
+                        A contact specifically designated to be used for emergencies.  This is the first choice in emergencies, independent of any other use codes.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>MC
+            <a name="MC"> </a>
+          </td>
+          <td>mobile contact</td>
+          <td>
+                        A telecommunication device that moves and stays with its owner.  May have characteristics of all other use codes, suitable for urgent matters, not the first choice for routine business.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>PG
+            <a name="PG"> </a>
+          </td>
+          <td>pager</td>
+          <td>
+                        A paging device suitable to solicit a callback or to leave a very short message.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <identifier value="http://hl7.org/fhir/v3/vs/TelecommunicationAddressUse"/>
+  <name value="v3 Code System TelecommunicationAddressUse"/>
+  <publisher value="HL7, Inc"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="  Deprecation Comment:
+This code system was deprecated as of the November 2007 harmonization meeting. The content was folded into AddressUse (2.16.840.1.113883.5.1119), which replaces this code system."/>
+  <status value="active"/>
+  <date value="2013-12-07T00:00:00-00:00"/>
+  <define>
+    <system value="http://hl7.org/fhir/v3/TelecommunicationAddressUse"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="AS"/>
+      <display value="answering service"/>
+      <definition value="An automated answering machine used for less urgent cases and if the main purpose of contact is to leave a message or access an automated announcement."/>
+    </concept>
+    <concept>
+      <code value="EC"/>
+      <display value="emergency contact"/>
+      <definition value="A contact specifically designated to be used for emergencies.  This is the first choice in emergencies, independent of any other use codes."/>
+    </concept>
+    <concept>
+      <code value="MC"/>
+      <display value="mobile contact"/>
+      <definition value="A telecommunication device that moves and stays with its owner.  May have characteristics of all other use codes, suitable for urgent matters, not the first choice for routine business."/>
+    </concept>
+    <concept>
+      <code value="PG"/>
+      <display value="pager"/>
+      <definition value="A paging device suitable to solicit a callback or to leave a very short message."/>
+    </concept>
+  </define>
+</ValueSet>
