@@ -1,0 +1,246 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+      <title>Cda-intro - FHIR v4.0.1</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+  <link rel="Prev" href="http://hl7.org/fhir/cda-intro.html"/>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="./assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="./assets/css/project.css"/>
+  <link rel="stylesheet" href="fhir-pub.css"/>
+  <link rel="stylesheet" href="./assets/css/pygments-manni.css"/>
+	<link rel="stylesheet" href="jquery-ui.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif] -->
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+  </head>
+  <body>
+    	<div id="segment-header" class="segment">  <!-- segment-header -->	
+		<div class="container">  <!-- container -->
+			<a no-external="true" id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir" width="249" height="60"/> </a>
+			<div id="hl7-status">
+				<b>Release 4</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a no-external="true" id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" alt="visit the hl7 website" height="50"/>
+				</a> 
+			</div>       	
+			<div id="hl7-nav"><a no-external="true" id="hl7-logo" href="http://hl7.org/fhir/search.cfm"><img src="./assets/images/search.png" alt="Search FHIR"/></a></div> 
+      <div style="text-align: right; float: right;" id="hl7-status">				
+        <a onclick="window.open('https://hl7.org/fhir/R4'+window.location.pathname, '_blank');return false;" href="#">Открыть эту страницу в оригинале FHIR 4.0.1</a>        
+			</div>   
+		</div>
+		<div class="container">  <!-- container -->
+	</div></div>  <!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+ 	      		 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./modules.html">Getting Started</a></li>
+              <li><a href="./documentation.html">Documentation</a></li>
+              <li><a href="./resourcelist.html">Resources</a></li>
+              <li><a href="./profilelist.html">Profiles</a></li>
+              <li><a href="./extensibility-registry.html">Extensions</a></li>
+              <li><a href="./operationslist.html">Operations</a></li>
+              <li><a href="./terminologies-systems.html">Terminologies</a></li>
+						</ul>
+					</div>  <!-- /.nav-collapse -->
+				</div>  <!-- /.container -->
+			</nav>  <!-- /.navbar -->
+      		
+  <!-- /HEADER CONTENT -->				
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+		<div class="container">  <!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="implsupport-module.html"><img src="implsupport.png"/> Implementation Support</a></li>
+        <li><a href="comparison.html">Comparison</a></li>
+        <li><b>CDA on FHIR</b></li>          <!-- cda-intro.html / page / -->
+
+			</ul>	
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment">  <!-- segment-content -->
+	<div class="container">  <!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+  <!-- CONTENT CONTENT -->
+
+
+    <div class="col-12">  <!-- ReleaseHeader --><p id="publish-box"></p>  <!-- EndReleaseHeader -->
+
+      <a name="CDA"></a>
+      <h2 class="self-link-parent"><span class="sectioncount">7.17.4<a name="7.17.4"> </a></span> Clinical Document Architecture (CDA) on FHIR <a href="cda-intro.html#7.17.4" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h2>
+<table class="colsi"><tr><td id="wg"><a href="http://www.hl7.org/Special/committees/structure/index.cfm" _target="blank">Structured Documents <img src="external.png" style="text-align: baseline"/></a> Work Group</td><td id="fmm"><a href="versions.html#maturity">Maturity Level</a>: N/A</td><td id="ballot"><a href="versions.html#std-process">Standards Status</a>:  <!-- !ns! --><a href="versions.html#std-process">Informative</a></td></tr></table>
+      <h3 class="self-link-parent"><span class="sectioncount">7.17.4.1<a name="7.17.4.1"> </a></span>  Что такое CDA на FHIR?  <a href="cda-intro.html#7.17.4.1" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h3>
+      <p>
+        CDA на FHIR определяет, как реализовать CDA R2 с помощью ресурса FHIR <a href="composition.html"> Composition </a>. <br/>
+        Первоначальная архитектура клинических документов (CDA) HL7 определяла структуру и семантику «клинических документов». с целью обмена.
+        Клинический документ - это документация клинических наблюдений и услуг со следующими характеристиками:
+        <ul>
+          <li> Стойкость - клинический документ продолжает существовать в неизменном состоянии в течение периода времени, определенного местными и нормативными требованиями (ПРИМЕЧАНИЕ. Для клинического документа существует определенная область постоянства, независимо от стойкости любого XML-кодированного документа. Экземпляр документа АКД). </li>
+          <li> Управление - клинический документ поддерживается организацией, которой доверена его забота. </li>
+          <li> Возможность аутентификации - клинический документ - это совокупность информации, которая предназначена для юридической аутентификации. </li>
+          <li> Контекст - клинический документ устанавливает контекст для его содержания. </li>
+          <li> Полнота - аутентификация клинического документа применяется ко всему и не применяется к частям документа без полного контекста документа. </li>
+          <li> Удобочитаемость - клинический документ читается человеком. </li>
+        </ul>
+        Документ CDA на FHIR - это определенный и полный информационный объект, который может включать текст, изображения, звуки и другой мультимедийный контент.
+     </p>
+
+      <h3 class="self-link-parent"><span class="sectioncount">7.17.4.2<a name="7.17.4.2"> </a></span>  Объем CDA на FHIR  <a href="cda-intro.html#7.17.4.2" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h3>
+      <p>
+        Сфера CDA на FHIR - стандартизация клинических документов для обмена. <br/> <br/>
+        Формат данных клинических документов вне контекста обмена (например, формат данных, используемый для хранения клинических документов) в этой спецификации не рассматривается. <br/> <br/>
+        CDA на FHIR не определяет создание или управление документами, а только разметку их обмена. Хотя схему АКД можно напрямую использовать в среде разработки документов, такое использование не является основной целью спецификации АКД. <br/> <br/>
+        Управление документами критически взаимосвязано со спецификациями АКД, но спецификация сообщений управления документами выходит за рамки АКД.
+      </p>
+      <h3 class="self-link-parent"><span class="sectioncount">7.17.4.3<a name="7.17.4.3"> </a></span>  Цели и принципы дизайна  <a href="cda-intro.html#7.17.4.3" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h3>
+      <p> Цели CDA на FHIR:
+        <ul>
+          <li> Отдавайте приоритет оказанию помощи пациентам. </li>
+          <li> Обеспечьте рентабельное внедрение в максимально широком спектре систем. </li>
+          <li> Поддержка обмена удобочитаемыми документами между пользователями, в том числе с разным уровнем технической подготовки. </li>
+          <li> Обеспечение долговечности всей информации, закодированной в соответствии с этой архитектурой. </li>
+          <li> Включите широкий спектр приложений для обработки после обмена. </li>
+          <li> Будьте совместимы с широким спектром приложений для создания документов. </li>
+          <li> Продвигайте обмен, который не зависит от основного механизма передачи или хранения. </li>
+          <li> Достаточно быстро подготовьте дизайн. </li>
+          <li> Разрешить политикам контролировать свои собственные требования к информации без расширения этой спецификации. </li>
+        </ul>
+        Из рассмотрения вышеуказанных целей вытекают несколько принципов проектирования:
+        <ul>
+          <li> Эта архитектура должна быть совместима с XML и JSON. </li>
+          <li> Эта архитектура должна быть совместима с представлениями клинической информации, полученной от других комитетов HL7. </li>
+          <li> Технические барьеры для использования архитектуры должны быть сведены к минимуму. </li>
+          <li> Архитектура определяет представление экземпляров, необходимых для обмена. </li>
+          <li> Архитектура должна налагать минимальные ограничения или требования на структуру и контент документа, необходимые для обмена. </li>
+          <li> Архитектура должна быть масштабируемой для размещения мелкозернистой разметки, такой как структурированный текст и закодированные данные. </li>
+          <li> Спецификации документов, основанные на этой архитектуре, должны учитывать такие ограничения и требования, которые предоставляются соответствующими профессиональными, коммерческими и регулирующими органами. </li>
+          <li> Спецификации документов для создания и обработки документов, если они предназначены для обмена, должны соответствовать этой архитектуре обмена. </li>
+          <li> Документы CDA должны быть удобочитаемыми с использованием широко доступных и широко используемых браузеров с поддержкой XML и драйверов печати, а также общей таблицы стилей CDA, написанной на стандартном языке таблиц стилей. </li>
+          <li> Используйте открытые стандарты. </li>
+        </ul>
+
+      </p>
+      <a name="general"></a>
+
+      <h2 class="self-link-parent"><span class="sectioncount">7.17.4</span>  Общий CDA по концепциям FHIR  <a href="cda-intro.html#general" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h2>
+      <h3 class="self-link-parent"><span class="sectioncount">7.17.4.1<a name="7.17.4.1"> </a></span>  Основные компоненты CDA в документе FHIR  <a href="cda-intro.html#7.17.4.1" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h3>
+      <p>
+        Этот раздел служит введением высокого уровня в основные компоненты документа АКД, все из которых будут описаны снова и более подробно позже. Цель здесь - познакомить читателя с концепциями высокого уровня, чтобы облегчить понимание следующих разделов.
+
+        [РЕДАКТОРЫ: в CDA r2 есть множество подробностей о том, как упакован CDA - и пример. Подумайте, уместно ли здесь обсуждение: «Документ CDA заключен в элемент &lt; ClinicalDocument &gt; и содержит заголовок ...»]
+       </p>
+      <h3 class="self-link-parent"><span class="sectioncount">7.17.4.2<a name="7.17.4.2"> </a></span>  Удобочитаемость и отрисовка документов CDA  <a href="cda-intro.html#7.17.4.2" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h3>
+      <p>
+        Требование CDA к удобочитаемости человека гарантирует, что получатель документа CDA может алгоритмически отображать клиническое содержание заметки в стандартном веб-браузере.
+        <ul>
+          <li> Для получателя произвольного документа АКД должен существовать детерминированный способ визуализации заверенного содержимого. </li>
+          <li> Для удобочитаемости отправитель не должен передавать специальную таблицу стилей вместе с документом АКД. Должна быть предусмотрена возможность визуализации всех документов АКД с помощью единой таблицы стилей и инструментов отображения общего рынка. </li>
+          <li> Удобочитаемость применяется к аутентифицированному контенту. В документе может содержаться дополнительная информация, предназначенная в первую очередь для машинной обработки, которая не аутентифицирована и не требует отображения. </li>
+           <li> Когда структурированный контент выводится из повествования, должен быть механизм для описания процесса (например, автором, человеком-программистом, алгоритмом обработки естественного языка, конкретным программным обеспечением), с помощью которого обрабатываемые машиной части были получены из блока. повествования. </li>
+           <li> Когда повествование создается из структурированного контента, должен быть механизм, позволяющий идентифицировать процесс, с помощью которого повествование было создано из структурированных данных. </li>
+         </ul>
+         Эти принципы и требования привели к нынешнему подходу, при котором отображаемый материал помещается в Section.content.
+
+         [РЕДАКТОРЫ: В нынешнем дизайне неясно, где постоянно искать повествование.]
+       </p>
+
+
+
+    </div>
+
+    
+				</div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+        
+    </div>  <!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment">  <!-- segment-footer -->
+		<div class="container">  <!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        &reg;&copy; HL7.org 2011+. FHIR Release 4 (Technical Correction #1) (v4.0.1) generated on Thu, Jan 21, 2021 15:39+0000. <a style="color: #ffffff" href="qa.html">QA Page</a>
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #b8dcf9" href="http://hl7.org/fhir/search.cfm">Search <img src="external.png" style="text-align: baseline"/></a> | 
+               <a style="color: #b8dcf9" href="history.html">Version History</a> | 
+               <a style="color: #b8dcf9" href="toc.html">Table of Contents</a> | 
+               <a style="color: #b8dcf9" href="credits.html">Credits</a> | 
+               <a style="color: #b8dcf9" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Ffhir%2FSTU3%2Fcda-intro.html&amp;doc2=http%3A%2F%2Fbuild.fhir.org%2F%2Fcda-intro.html">Compare to R3 <img src="external.png" style="text-align: baseline"/></a> |                
+               <a rel="license" style="color: #b8dcf9" href="license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> | 
+               <a style="color: #b8dcf9" href="http://hl7.org/fhir-issues" target="_blank">Propose a change <img src="external.png" style="text-align: baseline"/></a>   
+        </span>
+        </p>
+			</div>  <!-- /inner-wrapper -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
+    
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+
+  </body>
+</html>

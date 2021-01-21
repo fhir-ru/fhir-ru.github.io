@@ -1,0 +1,222 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Change - FHIR v4.0.1</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+  <link rel="Prev" href="http://hl7.org/fhir/change.html"/>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="./assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="./assets/css/project.css"/>
+  <link rel="stylesheet" href="fhir-pub.css"/>
+  <link rel="stylesheet" href="./assets/css/pygments-manni.css"/>
+	<link rel="stylesheet" href="jquery-ui.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif] -->
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment">  <!-- segment-header -->	
+		<div class="container">  <!-- container -->
+			<a no-external="true" id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir" width="249" height="60"/> </a>
+			<div id="hl7-status">
+				<b>Release 4</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a no-external="true" id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" alt="visit the hl7 website" height="50"/>
+				</a> 
+			</div>       	
+			<div id="hl7-nav"><a no-external="true" id="hl7-logo" href="http://hl7.org/fhir/search.cfm"><img src="./assets/images/search.png" alt="Search FHIR"/></a></div> 
+      <div style="text-align: right; float: right;" id="hl7-status">				
+        <a onclick="window.open('https://hl7.org/fhir/R4'+window.location.pathname, '_blank');return false;" href="#">Открыть эту страницу в оригинале FHIR 4.0.1</a>        
+			</div>   
+		</div>
+		<div class="container">  <!-- container -->
+	</div></div>  <!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+ 	      		 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./modules.html">Getting Started</a></li>
+              <li><a href="./documentation.html">Documentation</a></li>
+              <li><a href="./resourcelist.html">Resources</a></li>
+              <li><a href="./profilelist.html">Profiles</a></li>
+              <li><a href="./extensibility-registry.html">Extensions</a></li>
+              <li><a href="./operationslist.html">Operations</a></li>
+              <li><a href="./terminologies-systems.html">Terminologies</a></li>
+						</ul>
+					</div>  <!-- /.nav-collapse -->
+				</div>  <!-- /.container -->
+			</nav>  <!-- /.navbar -->
+      		
+  <!-- /HEADER CONTENT -->				
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+		<div class="container">  <!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="foundation-module.html"><img src="foundation.png"/> Foundation</a></li>
+        <li><b>Coming Challenges</b></li>          <!-- change.html / page / -->
+
+			</ul>	
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment">  <!-- segment-content -->
+	<div class="container">  <!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+  <!-- CONTENT CONTENT -->
+
+
+<div class="col-12">  <!-- ReleaseHeader --><p id="publish-box"></p>  <!-- EndReleaseHeader -->
+
+<a name="root"></a>
+<h2 class="self-link-parent"><span class="sectioncount">2.23<a name="2.23"> </a></span> Приложение: Роль информатики в переходе от реактивного к проактивному здравоохранению <a href="change.html#2.23" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h2>
+<table class="colsi"><tr><td id="wg"><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm" _target="blank">FHIR Infrastructure <img src="external.png" style="text-align: baseline"/></a> Work Group</td><td id="fmm"><a href="versions.html#maturity">Maturity Level</a>: N/A</td><td id="ballot"><a href="versions.html#std-process">Standards Status</a>:  <!-- !ns! --><a href="versions.html#std-process">Informative</a></td></tr></table>
+
+<p>
+FHIR предлагает не просто стандарт, решающий существующие проблемы с совместимостью, а целую платформу на будущее. Возможность взаимодействия - это больше о людях; для того, чтобы преодолеть пик завышенных ожиданий и перейти к стадии продуктивности (плато на <a href="https://en.wikipedia.org/wiki/Hype_cycle">кривой зрелости технологии <img src="external.png" style="text-align: baseline"/></a>), необходимо иметь общее видение того, чего пытаются достичь. Здравоохранение находится сейчас в разгаре трансформации, обусловленной схождением в одной точке биологической и информационной револющий, а также экономическими императивами и социальными изменениями. Сила FHIR заключается в том, что он основан на реальном мире, который быстро меняется. Данное приложение предлагает высокоуровневое представление о текущем процессе разработки и помогает представить FHIR в более широком контексте.
+</p>
+
+<p>
+Как Джон Сноу использовал ответвление информатики и геопространственной анализ для выявления источника холеры в Лондоне и таким образом доказал микробную теорию и произвел революцию в медицине в 1854 году, так и это приложение информатики и связанных технологий будет инструментом следующего большого изменения в здравоохранении.
+</p>
+<p>
+В странах с продвинутой экономикой системы здравоохранения стоят перед всё возрастающим спросом стареющего населения и увеличивающимся охватом хронических заболеваний. Во многих этих странах также наблюдается нехватка квалифицированных работников. Сбор подтверждений указывает на ошибки, которых можно было бы избежать, являющиеся причиной серьезного вреда пациентам. В действительности оптимальный уход происходит только в половине случаев даже в самых эффективных системах здравоохранения (1). Небольших постепенных улучшений не достаточно для решения надвигающегося кризиса в устойчивом здравоохранении.
+</p>
+<p>
+Схождение в одной точке направлений областей здравоохранения, биологии, информатики и технологии вместе с соответствующими социальными изменениями и экономическим императивом является движущей парадигмой (2), которая может быть ответом. Информатика играет важную роль в большинстве аспектов этого. На рисунке ниже представлена сводка сходимости этих тенденций и вероятных результатов преодоления разрыва, которые будут двигать нас от реактивного здравоохранения к проактивному.
+</p>
+<img src="change.png" width="800" height="402"/>
+<p>
+С точки зрения нашего понимания физиологических направлений, информатика сейчас является главным инструментом молекулярной биологии. Например время, потраченное на вычисления, превышает химический анализ генной последовательности в 3 раза. 
+Информатика используется для сопоставления нейронных сетей и построения моделей биологических систем (3) с постоянно возрастающим уровнем точности и сложности, которые не могут быть выполнены без помощи машин. 
+Наше понимание так сильно изменилось в недалеком прошлом, что Американская академия наук в настоящее время утверждает, что пришло время для новой таксономии (4).
+</p>
+<p>
+Персонализация происходит как из-за социальных изменений, так и возросшего уровня биологических знаний и облегчается дешевыми мобильными компьютерами, датчиками и устройствами. Эти социальные силы и высокоэффективные технологии разрешают более широкое участие "неспециалистов" в процессах принятия решений, лечения, открытия и управления знаниями.
+</p>
+<p>
+Расширение знаний о том, как мы думаем (5), достижения в области информационных наук и повышение доступности вычислительной мощности означает, что наша способность приобретать знания и использовать их для прогнозирования отклонений резко возросла, и случилось это неожиданно, потому что взрыв информации не может иметь дело с иным. Эти новые возможности могут быть использованы для предоставления лучших рекомендаций и более эффективного предотвращения заболеваний путем обнаружения, мониторинга и лечения.
+</p>
+<p>
+Сама система здравоохранения также может извлечь выгоду из того, что можно назвать второй фазой использования информационных технологий, путем предоставления он-лайн помощи, реального интегрированного измерения качества и интеграции знаний в рабочий процесс. С открытостью и прозрачностью появляется перспектива соконкуренции (сотрудничество между конкурирующими компаниями в областях, представляющих взаимный интерес), а с интегрированными мерами результатов в качестве экономического рычага может быть использовано заключение контрактов, которые оплачиваются за успех ( pay-for-success contracting).
+</p>
+<p>
+ Масштабное изменение в способе предоставления здравоохранения и необходимо, и неминуемо. Вполне вероятно, что это будет вытекать из слияния знаний и машин биологических и информационных революций, облегчающих переход от реактивного лечения к проактивной (упреждающей, профилактической) персонализированной медицине. Только такими значительными изменениями может быть достигнут необходимый объем улучшений в эффективности и действенности здравоохранения.
+</p>
+<p>
+ Развитие цифровых технологий привело к нарушению других секторов, особенно средств массовой информации, розничной продажи и производства, и сектор здравоохранения вряд ли останется иммунным (6). Дискретизация биологии и здоровья позволит машинам помогать, приведет к демистификации заболеваний, демократизации здравоохранения и переходу от лечения болезни к стимулированию и поддержанию хорошего здоровья.
+</p>
+
+<p><b>Ссылки</b></p>
+<ol>
+ <li><u>CareTrack: оценка целесообразности оказания медицинской помощи в Австралии</u>. Runciman WB, Hunt TD,
+    Hannaford NA, Hibbert PD, Westbrook JI, Coiera EW, Day RO, Hindmarsh DM, McGlynn EA, Braithwaite J. 2,
+    16 July 2012, Med J Aust. 2012 Jul 16;197(2):100-5. PubMed PMID: 227, Vol. 197(2), pp. 100-5</li>
+
+ <li>Kuhn, Thomas S. <u>The Structure of Scientific Revolutions</u>. Chicago : University of Chicago Press, 1962</li>
+ <li>Hood, Leroy. <u>Institute of Systems Biology</u>. [Online] [Cited: 25 May 2013.] <a href="https://www.systemsbiology.org/leroy-hood">https://www.systemsbiology.org/leroy-hood <img src="external.png" style="text-align: baseline"/></a></li>
+ <li>Board on Life Sciences, <u>Committee on A Framework for Developing a New Taxonomy of Disease. Toward Precision
+ Medicine; Building a Knowledge Network for Biomedical Research and a New Taxonomy of Disease</u>. Washington, DC : The National Academic Press, 2011</li>
+ <li>Kahneman, Daniel. <u>Thinking, Fast and Slow</u>. New York : Farrar, Straus and Giroux, 2011</li>
+ <li>Topol, Eric. <u>The Creative Destruction of Medicine - How the Digital Revolution Will Create Better Health Care</u>. New York : Basic Books, 2012.</li>
+</ol>
+
+<hr/>
+<p>Эта страница поддерживается <a href="mailto:michael.legg@mlanda.com.au">Michael Legg</a></p>
+</div>
+
+
+				</div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+        
+    </div>  <!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment">  <!-- segment-footer -->
+		<div class="container">  <!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        &reg;&copy; HL7.org 2011+. FHIR Release 4 (Technical Correction #1) (v4.0.1) generated on Thu, Jan 21, 2021 15:39+0000. <a style="color: #ffffff" href="qa.html">QA Page</a>
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #b8dcf9" href="http://hl7.org/fhir/search.cfm">Search <img src="external.png" style="text-align: baseline"/></a> | 
+               <a style="color: #b8dcf9" href="history.html">Version History</a> | 
+               <a style="color: #b8dcf9" href="toc.html">Table of Contents</a> | 
+               <a style="color: #b8dcf9" href="credits.html">Credits</a> | 
+               <a style="color: #b8dcf9" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Ffhir%2FSTU3%2Fchange.html&amp;doc2=http%3A%2F%2Fbuild.fhir.org%2F%2Fchange.html">Compare to R3 <img src="external.png" style="text-align: baseline"/></a> |                
+               <a rel="license" style="color: #b8dcf9" href="license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> | 
+               <a style="color: #b8dcf9" href="http://hl7.org/fhir-issues" target="_blank">Propose a change <img src="external.png" style="text-align: baseline"/></a>   
+        </span>
+        </p>
+			</div>  <!-- /inner-wrapper -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
+    
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+
+
+
+</body>
+</html>

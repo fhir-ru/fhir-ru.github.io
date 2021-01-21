@@ -1,0 +1,416 @@
+﻿<!DOCTYPE HTML>
+  <!-- These elements SHALL always appear in this order. These basic elements shared by all resources come first
+in order to support consistent definitions for schema and UML derived code. --><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+      <title>Administration-module - FHIR v4.0.1</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+  <link rel="Prev" href="http://hl7.org/fhir/administration-module.html"/>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="./assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="./assets/css/project.css"/>
+  <link rel="stylesheet" href="fhir-pub.css"/>
+  <link rel="stylesheet" href="./assets/css/pygments-manni.css"/>
+	<link rel="stylesheet" href="jquery-ui.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif] -->
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+    	<div id="segment-header" class="segment">  <!-- segment-header -->	
+		<div class="container">  <!-- container -->
+			<a no-external="true" id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir" width="249" height="60"/> </a>
+			<div id="hl7-status">
+				<b>Release 4</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a no-external="true" id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" alt="visit the hl7 website" height="50"/>
+				</a> 
+			</div>       	
+			<div id="hl7-nav"><a no-external="true" id="hl7-logo" href="http://hl7.org/fhir/search.cfm"><img src="./assets/images/search.png" alt="Search FHIR"/></a></div> 
+      <div style="text-align: right; float: right;" id="hl7-status">				
+        <a onclick="window.open('https://hl7.org/fhir/R4'+window.location.pathname, '_blank');return false;" href="#">Открыть эту страницу в оригинале FHIR 4.0.1</a>        
+			</div>   
+		</div>
+		<div class="container">  <!-- container -->
+	</div></div>  <!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+ 	      		 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./modules.html">Getting Started</a></li>
+              <li><a href="./documentation.html">Documentation</a></li>
+              <li><a href="./resourcelist.html">Resources</a></li>
+              <li><a href="./profilelist.html">Profiles</a></li>
+              <li><a href="./extensibility-registry.html">Extensions</a></li>
+              <li><a href="./operationslist.html">Operations</a></li>
+              <li><a href="./terminologies-systems.html">Terminologies</a></li>
+						</ul>
+					</div>  <!-- /.nav-collapse -->
+				</div>  <!-- /.container -->
+			</nav>  <!-- /.navbar -->
+      		
+  <!-- /HEADER CONTENT -->				
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+		<div class="container">  <!-- container -->	
+			<ul class="breadcrumb">
+        <li><b><img src="administration.jpg"/> Administration</b></li>          <!-- administration-module.html / page / -->
+
+			</ul>	
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment">  <!-- segment-content -->
+	<div class="container">  <!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+  <!-- CONTENT CONTENT -->
+
+
+    <div class="col-12">  <!-- ReleaseHeader --><p id="publish-box"></p>  <!-- EndReleaseHeader -->
+        <table class="colsi"><tr><td id="wg">Рабочая группа <a href="http://www.hl7.org/Special/committees/pafm/index.cfm" _target="blank">Patient Administration <img src="external.png" style="text-align: baseline"/></a> </td><td id="ballot"><a href="versions.html#std-process">Статус нормативности</a>:  <!-- !ns! --><a href="versions.html#std-process">Информативный</a></td></tr></table>
+
+        <a name="root"></a>
+        <h2 class="self-link-parent"><span class="sectioncount">8.0<a name="8.0"> </a></span> Административный модуль <a href="administration-module.html#8.0" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h2>
+        <a name="intro"></a>
+        <h3 class="self-link-parent"><span class="sectioncount">8.0.1</span> Введение <a href="administration-module.html#intro" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h3>
+        <p>
+            Административный модуль охватывает базовые данные, которые затем связываются с
+             другими модулями клинического содержания, финансов/выставления счетов, рабочего процесса и т. д. <br/>
+             Он построен на модулях технологической платформы FHIR.
+         </p>
+         <p>
+             Прежде чем записывать какие-либо клинические данные, необходимо внести базовую информацию о пациенте, а затем описать основу взаимодействия (например, случай обслуживания/визит).
+        </p>
+
+        <a name="index"></a>
+        <h3 class="self-link-parent"><span class="sectioncount">8.0.2</span> Указатель ресурсов <a href="administration-module.html#index" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h3>
+        <table width="100%" style="table-layout: fixed">
+            <tr>
+                <td>
+                    <ul>
+                        <li><a href="patient.html">Patient</a></li>
+                        <li><a href="relatedperson.html">RelatedPerson</a></li>
+                        <li><a href="person.html">Person</a></li>
+                        <li><a href="group.html">Group</a></li>
+                        <li><a href="practitioner.html">Practitioner</a></li>
+                        <li><a href="practitionerrole.html">PractitionerRole</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><a href="organization.html">Organization</a></li>
+                        <li><a href="location.html">Location</a></li>
+                        <li><a href="healthcareservice.html">HealthcareService</a></li>
+                        <li><a href="endpoint.html">Endpoint</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="slot.html">Slot</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><a href="episodeofcare.html">EpisodeOfCare</a></li>
+                        <li><a href="encounter.html">Encounter</a></li>
+                        <li><a href="appointment.html">Appointment</a></li>
+                        <li><a href="appointmentresponse.html">AppointmentResponse</a></li>
+                        <li><a href="account.html">Account</a></li>
+                        <li><a href="flag.html">Flag</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><a href="device.html">Device</a></li>
+                        <li><a href="devicedefinition.html">DeviceDefinition</a></li>
+                        <li><a href="devicemetric.html">DeviceMetric</a></li>
+                        <li><a href="substance.html">Substance</a></li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <a name="patient-reg"></a>
+        <h4 class="self-link-parent"><span class="sectioncount">8.0.2.1</span> Реестры пациентов <a href="administration-module.html#patient-reg" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h4>
+        <p>
+            Ведение реестров людей, получающих медицинскую помощь - основа, на которую ссылается почти всё остальное.
+        </p>
+        <table class="bare">
+            <tr><td><b>Имя</b></td><td><b>Альтернативные имена</b></td><td><b>Описание</b></td></tr>
+            <tr bgcolor="#EFEFEF"><td><a href="patient.html">Patient</a></td><td>SubjectOfCare Client Resident</td><td>Demographics and other administrative information about an individual or animal receiving care or other health-related services.</td></tr>
+
+            <tr bgcolor="#FFFFFF"><td><a href="relatedperson.html">RelatedPerson</a></td><td></td><td>Information about a person that is involved in the care for a patient, but who is not the target of healthcare, nor has a formal responsibility in the care process.</td></tr>
+
+            <tr bgcolor="#EFEFEF"><td><a href="person.html">Person</a></td><td></td><td>Demographics and administrative information about a person independent of a specific health-related context.</td></tr>
+
+            <tr bgcolor="#FFFFFF"><td><a href="group.html">Group</a></td><td></td><td>Represents a defined collection of entities that may be discussed or acted upon collectively but which are not expected to act collectively, and are not formally or legally recognized; i.e. a collection of entities that isn't an Organization.</td></tr>
+
+        </table>
+        <div>
+            <img src="administration-module-person.png" alt="Изображение, показывающее взаимосвязь между ресурсами, описывающими людей" width="584px"/>
+        </div>
+<blockquote><p> <b>Implementation Note:</b> 
+                 При оценке результатов поиска со ссылками на другие ресурсы также следует учитывать возможность <a href="patient.html#links">связывания пациентов</a>.
+                 Например поиск диагнозов для пациента.<br/>
+                 В настоящее время спецификация не определяет, следует ли также переходить по ссылкам для включения диагнозов, которые ссылаются на связанных пациентов. В настоящее время мы ждём ваши отзывы по этому поводу.
+                 
+                 
+</p></blockquote>
+<blockquote><p> <b>Implementation Note:</b> 
+                 Ресурс Person может использоваться в качестве централизованного реестра людей, которые в конечном итоге могут быть задействованы в сфере здравоохранения, и может использоваться в качестве центрального базового демографического реестра. <br/>
+Однако поля/значения в Person дублируются в других ресурсах, и во многих случаях ресурс Person будет размещён во внешних системах.
+
+</p></blockquote>
+
+        <a name="clinical-reg"></a>
+        <h4 class="self-link-parent"><span class="sectioncount">8.0.2.2</span> Классификация клинических ресурсов <a href="administration-module.html#clinical-reg" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h4>
+        <p>
+            Большинство клинических мероприятий каким-либо образом сгруппированы. Долгосрочный уход обычно покрывается EpisodeOfCare, тогда как краткосрочный уход покрывается встречами. Учетная запись связывает отслеживание транзакций с пациентом (или другим ресурсом). Флаг используется только для выделения предупреждения или другого уведомления о пациенте (или другом ресурсе).
+        </p>
+        <table class="bare">
+            <tr><td><b>Имя</b></td><td><b>Альтернативные имена</b></td><td><b>Описание</b></td></tr>
+            <tr bgcolor="#EFEFEF"><td><a href="episodeofcare.html">EpisodeOfCare</a></td><td>Case Program Problem</td><td>An association between a patient and an organization / healthcare provider(s) during which time encounters may occur. The managing organization assumes a level of responsibility for the patient during this time.</td></tr>
+
+            <tr bgcolor="#FFFFFF"><td><a href="encounter.html">Encounter</a></td><td>Visit</td><td>An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.</td></tr>
+
+            <tr bgcolor="#EFEFEF"><td><a href="account.html">Account</a></td><td>Cost center</td><td>A financial tool for tracking value accrued for a particular purpose.  In the healthcare field, used to track charges for a patient, cost centers, etc.</td></tr>
+
+            <tr bgcolor="#FFFFFF"><td><a href="flag.html">Flag</a></td><td>Barriers to Care, Alert</td><td>Prospective warnings of potential issues when providing care to the patient.</td></tr>
+
+        </table>
+        <div>
+            <img src="administration-module-interactions.png" alt="Изображение, показывающее административное взаимодействие" width="600px"/>
+        </div>
+<blockquote><p> <b>Implementation Note:</b> 
+Ресурсы, выделенные пунктирной рамкой, описаны в других разделах спецификации: <code>Coverage</code> и <code>Claim</code> взяты из <a href="financial-module.html"> раздела о финансах </a>.
+</p></blockquote>
+
+        <a name="dir-reg"></a>
+        <h4 class="self-link-parent"><span class="sectioncount">8.0.2.3</span> Ресурсы, связанные с каталогами поставщиков услуг <a href="administration-module.html#dir-reg" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h4>
+        <p>
+            Ресурсы, связанные с каталогами поставщиков услуг, обычно хранятся в разделе администрирования приложений и могут быть синхронизированы с внешними системами.
+        </p>
+        <table class="bare">
+            <tr><td><b>Имя</b></td><td><b>Альтернативные имена</b></td><td><b>Описание</b></td></tr>
+            <tr bgcolor="#EFEFEF"><td><a href="organization.html">Organization</a></td><td></td><td>A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc.</td></tr>
+
+            <tr bgcolor="#FFFFFF"><td><a href="location.html">Location</a></td><td></td><td>Details and position information for a physical place where services are provided and resources and participants may be stored, found, contained, or accommodated.</td></tr>
+
+            <tr bgcolor="#EFEFEF"><td><a href="practitioner.html">Practitioner</a></td><td></td><td>A person who is directly or indirectly involved in the provisioning of healthcare.</td></tr>
+
+            <tr bgcolor="#FFFFFF"><td><a href="practitionerrole.html">PractitionerRole</a></td><td></td><td>A specific set of Roles/Locations/specialties/services that a practitioner may perform at an organization for a period of time.</td></tr>
+
+            <tr bgcolor="#EFEFEF"><td><a href="healthcareservice.html">HealthcareService</a></td><td></td><td>The details of a healthcare service available at a location.</td></tr>
+
+            <tr bgcolor="#FFFFFF"><td><a href="endpoint.html">Endpoint</a></td><td></td><td>The technical details of an endpoint that can be used for electronic services, such as for web services providing XDS.b or a REST endpoint for another FHIR server. This may include any security context information.</td></tr>
+
+        </table>
+        <div>
+            <img src="administration-module-prov-dir.png" alt="Изображение, показывающее ресурсы каталога поставщиков услуг" width="513px"/>
+        </div>
+        <p></p>
+
+        <a name="sched"></a>
+        <h4 class="self-link-parent"><span class="sectioncount">8.0.2.4</span> Планирование расписаний и назначение встреч <a href="administration-module.html#sched" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h4>
+        <p>
+            Ресурсы планирования расписаний и назначения встреч позволяют планировать встречи и выполнять другие клинические действия.
+        </p>
+        <table class="bare">
+            <tr><td><b>Имя</b></td><td><b>Альтернативные имена</b></td><td><b>Описание</b></td></tr>
+            <tr bgcolor="#EFEFEF"><td><a href="schedule.html">Schedule</a></td><td>Availability</td><td>A container for slots of time that may be available for booking appointments.</td></tr>
+
+            <tr bgcolor="#FFFFFF"><td><a href="slot.html">Slot</a></td><td></td><td>A slot of time on a schedule that may be available for booking appointments.</td></tr>
+
+            <tr bgcolor="#EFEFEF"><td><a href="appointment.html">Appointment</a></td><td></td><td>A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time. This may result in one or more Encounter(s).</td></tr>
+
+            <tr bgcolor="#FFFFFF"><td><a href="appointmentresponse.html">AppointmentResponse</a></td><td></td><td>A reply to an appointment request for a patient and/or practitioner(s), such as a confirmation or rejection.</td></tr>
+
+        </table>
+        <div>
+            <img src="administration-module-scheduling.png" alt="Изображение, показывающее планирование взаимодействий" width="600px"/>
+        </div>
+        <p></p>
+
+        <a name="dev-sub"></a>
+        <h4 class="self-link-parent"><span class="sectioncount">8.0.2.5</span> Устройства и вещества <a href="administration-module.html#dev-sub" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h4>
+        <p>
+            Прочие активы часто регистрируются в системе управления и поддерживаются как мастер-файлы.
+        </p>
+        <table class="bare">
+            <tr><td><b>Имя</b></td><td><b>Альтернативные имена</b></td><td><b>Описание</b></td></tr>
+            <tr bgcolor="#EFEFEF"><td><a href="device.html">Device</a></td><td></td><td>A type of a manufactured item that is used in the provision of healthcare without being substantially changed through that activity. The device may be a medical or non-medical device.</td></tr>
+
+            <tr bgcolor="#FFFFFF"><td><a href="devicedefinition.html">DeviceDefinition</a></td><td></td><td>The characteristics, operational status and capabilities of a medical-related component of a medical device.</td></tr>
+
+            <tr bgcolor="#EFEFEF"><td><a href="devicemetric.html">DeviceMetric</a></td><td></td><td>Describes a measurement, calculation or setting capability of a medical device.</td></tr>
+
+            <tr bgcolor="#FFFFFF"><td><a href="substance.html">Substance</a></td><td></td><td>A homogeneous material with a definite composition.</td></tr>
+
+        </table>
+
+
+        <a name="secpriv"></a>
+        <h3 class="self-link-parent"><span class="sectioncount">8.0.3</span> Безопасность и конфиденциальность <a href="administration-module.html#secpriv" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h3>
+        <p>
+            Конфиденциальность пациента обрабатывается с помощью меток безопасности и тегов в свойстве <a href="resource.html#Meta"> Meta </a> ресурса. Это стандартный способ, которым спецификация FHIR предоставляет эту вспомогательную информацию подсистеме, которая ее реализует (что не определено FHIR).
+        </p>
+        <p>
+            Один из наиболее распространенных вариантов использования - пометить пациента как <a href="security-labels.html"> знаменитость </a>.
+        </p>
+        <p>
+            Обратите внимание, что соображения конфиденциальности применяются к записям о персонах, практикующих и связанных лицах в дополнение к записям пациентов.
+        </p>
+        <p>
+            Хотя организация, местонахождение, устройство и другие записи, не идентифицирующие личность человека, как правило, подлежат менее строгим мерам безопасности, такие данные все же должны быть защищены, чтобы избежать проблем с безопасностью (например, кто-то злонамеренно меняет ингредиенты, связанные с лекарством, чтобы вызвать / не вызвать предупреждения)
+        </p>
+        <p>
+            Устройства можно связать с пациентами. В этом случае они должны быть защищены, как и любой другой элемент, связанный с пациентом.
+        </p>
+        <p>
+            Для получения более общих сведений см. модуль <a href="secpriv-module.html">Безопасность и конфиденциальность</a>.
+        </p>
+
+        <a name="uses"></a>
+        <h3 class="self-link-parent"><span class="sectioncount">8.0.4</span> Распространенные случаи использования <a href="administration-module.html#uses" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h3>
+        <p>
+            Административные ресурсы - это краеугольные ресурсы, которые используются клиническими и другими областями стандарта FHIR.
+        </p>
+        <ul>
+            <li>
+                <b> Управление мастер-записью Patient и Person </b> (например, MPI) <br/>
+                Ресурс <a href="patient.html"> Пациент </a> используется для описания демографической информации пациента и любых обновлений к ней.
+                Его можно использовать для передачи информации <a href="patient.html"> пациента </a> другим системам.
+                (например, другие регистры, клинические, вспомогательные и финансовые системы).
+                Некоторые системы различают Реестр пациентов (или Реестр клиентов) от Реестра лиц.
+                Ресурс <a href="person.html"> Person </a> является основой для системы реестра людей.
+                Вариант использования управления пациентами / людьми включает в себя сценарии создания, обновления, а также слияния / отключения и связывания / отмены связи.
+            </li>
+            <li>
+                <b> Управление основной записью поставщика и каталогом услуг </b> (например, реестр поставщиков, каталог услуг) <br/>
+                Ресурс <a href="practitioner.html"> Практик </a> - это базовый ресурс для включения реестра лиц, связанных с предоставлением медицинских услуг.
+                Другие ресурсы, такие как <a href="organization.html"> Организация </a>, <a href="location.html"> Местоположение </a>, <a href="healthcareservice.html"> HealthcareService </a>, создают полную картину того, где, как и кем
+                пациенту предлагаются услуги по уходу. Ресурсы могут использоваться для управления основной записью или в качестве ссылки в
+                клинические ресурсы для информирования об участниках и местах для различных клинических ресурсов.
+            </li>
+            <li>
+                <b> Управление другими административными записями </b> <br/>
+                Домен администрирования стандарта FHIR включает создание и обновление записей <a href="device.html"> устройства </a> и <a href="substance.html"> вещества </a>.
+                Ресурсы могут использоваться для управления основной записью или передачи ее информации в другие системы.
+            </li>
+            <li>
+                <b> Включение профилей пациентов, клинических отчетов и подключение клинических записей </b> <br/>
+                На административные ресурсы ссылаются почти все клинические ресурсы.
+                Системы запросов с использованием ссылок на ресурсы администрирования позволяют создавать профили и отчеты различной сложности.
+            </li>
+            <li>
+                <b> Включение клинической группировки и финансовой отчетности </b> <br/>
+                Другие варианты использования включены в дорожную карту ресурсов, разработанную группой администрирования пациентов.
+                В разделе дорожной карты перечислены планы и обновления текущей работы.
+            </li>
+        </ul>
+
+        <a name="roadmap"></a>
+        <h3 class="self-link-parent"><span class="sectioncount">8.0.5</span> Дорожная карта <a href="administration-module.html#roadmap" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h3>
+        <p>
+             Администрация пациентов в настоящее время прорабатывает ресурсы, которые поддерживают:
+         </p>
+         <ul>
+             <li> Встречи и планирование <i> (повышение зрелости встреч и дальнейшее развитие амбулаторного и амбулаторного планирования) </i> </li>
+             <li> Справочник поставщиков услуг <i> (в координации с группой Справочника поставщиков услуг Аргонавт) </i> </li>
+             <li> Взаимодействие с финансовым менеджментом <i> (учетная запись / покрытие, затем элемент начисления, который связывает администрирование с выставлением счетов) </i> </li>
+         </ul>
+         <p>
+             Многие административные ресурсы являются частью основных ресурсов, используемых большинством систем.
+             использовать в первую очередь и легли в основу первого опыта большинства людей с FHIR. <br/>
+             Однако это ограниченное воздействие еще предстоит доказать во всех контекстах, таких как ветеринария, общественное здравоохранение и клинические исследования.
+         </p>
+    </div>
+
+    
+				</div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+        
+    </div>  <!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment">  <!-- segment-footer -->
+		<div class="container">  <!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        &reg;&copy; HL7.org 2011+. FHIR Release 4 (Technical Correction #1) (v4.0.1) generated on Thu, Jan 21, 2021 15:39+0000. <a style="color: #ffffff" href="qa.html">QA Page</a>
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #b8dcf9" href="http://hl7.org/fhir/search.cfm">Search <img src="external.png" style="text-align: baseline"/></a> | 
+               <a style="color: #b8dcf9" href="history.html">Version History</a> | 
+               <a style="color: #b8dcf9" href="toc.html">Table of Contents</a> | 
+               <a style="color: #b8dcf9" href="credits.html">Credits</a> | 
+               <a style="color: #b8dcf9" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Ffhir%2FSTU3%2Fadministration-module.html&amp;doc2=http%3A%2F%2Fbuild.fhir.org%2F%2Fadministration-module.html">Compare to R3 <img src="external.png" style="text-align: baseline"/></a> |                
+               <a rel="license" style="color: #b8dcf9" href="license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> | 
+               <a style="color: #b8dcf9" href="http://hl7.org/fhir-issues" target="_blank">Propose a change <img src="external.png" style="text-align: baseline"/></a>   
+        </span>
+        </p>
+			</div>  <!-- /inner-wrapper -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
+    
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+</body>
+</html>

@@ -1,0 +1,257 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Clinicalreasoning-knowledge-artifact-distribution - FHIR v4.0.1</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+  <link rel="Prev" href="http://hl7.org/fhir/clinicalreasoning-knowledge-artifact-distribution.html"/>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="./assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="./assets/css/project.css"/>
+  <link rel="stylesheet" href="fhir-pub.css"/>
+  <link rel="stylesheet" href="./assets/css/pygments-manni.css"/>
+	<link rel="stylesheet" href="jquery-ui.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif] -->
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body> 
+	<div id="segment-header" class="segment">  <!-- segment-header -->	
+		<div class="container">  <!-- container -->
+			<a no-external="true" id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir" width="249" height="60"/> </a>
+			<div id="hl7-status">
+				<b>Release 4</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a no-external="true" id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" alt="visit the hl7 website" height="50"/>
+				</a> 
+			</div>       	
+			<div id="hl7-nav"><a no-external="true" id="hl7-logo" href="http://hl7.org/fhir/search.cfm"><img src="./assets/images/search.png" alt="Search FHIR"/></a></div> 
+      <div style="text-align: right; float: right;" id="hl7-status">				
+        <a onclick="window.open('https://hl7.org/fhir/R4'+window.location.pathname, '_blank');return false;" href="#">Открыть эту страницу в оригинале FHIR 4.0.1</a>        
+			</div>   
+		</div>
+		<div class="container">  <!-- container -->
+	</div></div>  <!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+ 	      		 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./modules.html">Getting Started</a></li>
+              <li><a href="./documentation.html">Documentation</a></li>
+              <li><a href="./resourcelist.html">Resources</a></li>
+              <li><a href="./profilelist.html">Profiles</a></li>
+              <li><a href="./extensibility-registry.html">Extensions</a></li>
+              <li><a href="./operationslist.html">Operations</a></li>
+              <li><a href="./terminologies-systems.html">Terminologies</a></li>
+						</ul>
+					</div>  <!-- /.nav-collapse -->
+				</div>  <!-- /.container -->
+			</nav>  <!-- /.navbar -->
+      		
+  <!-- /HEADER CONTENT -->				
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+		<div class="container">  <!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="clinicalreasoning-module.html"><img src="reasoning.png"/> Clinical Reasoning</a></li>
+        <li><b>Sharing Knowledge Artifacts</b></li>          <!-- clinicalreasoning-knowledge-artifact-distribution.html / page / -->
+
+			</ul>	
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment">  <!-- segment-content -->
+	<div class="container">  <!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+  <!-- CONTENT CONTENT -->
+
+
+<div class="col-12">  <!-- ReleaseHeader --><p id="publish-box"></p>  <!-- EndReleaseHeader -->
+
+<table class="cols"><tbody><tr><td id="wg">Work Group <a href="http://www.hl7.org/Special/committees/dss/index.cfm" _target="blank">Clinical Decision Support <img src="external.png" style="text-align: baseline"/></a></td><td id="fmm"><a href="versions.html#maturity">Maturity Level</a>: 2</td><td id="ballot"><a href="versions.html#std-process">Standards Status</a>:    <!-- !ns! --><a href="versions.html#std-process">Trial Use</a></td></tr></tbody></table>
+
+<a name="knowledge-artifact-distribution"> </a>
+<h3 class="self-link-parent"><span class="sectioncount">14.4<a name="14.4"> </a></span>  Обмен артефактами знаний  <a href="clinicalreasoning-knowledge-artifact-distribution.html#14.4" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h3>
+
+<p> Одним из основных вариантов использования модуля Clinical Reasoning Module является обеспечение обмена и распространения вычислимых артефактов клинических знаний: </p>
+
+<img src="Clinicalreasoning-knowledge-artifact-distribution.png" alt="Обмен артефактами знаний"/>
+
+<p> Вариант использования распространения включает в себя возможность распространения артефактов знаний в виде ресурсов через сервер FHIR. Для этой цели могут использоваться взаимодействия поиска и чтения, определенные инфраструктурой FHIR. <a href="library.html"> Библиотека </a>, <a href="activitydefinition.html"> ActivityDefinition </a>, <a href="plandefinition.html"> PlanDefinition </a>, <a href="questionnaire.html"> Questionnaire </a> и <a href="measure.html"> Measure </a> могут использоваться для представления артефактов знаний и, таким образом, определять несколько параметров поиска специально для включения поиск на основе различных атрибутов артефакта знаний. Тогда сервис FHIR, который поддерживает хотя бы поиск и извлечение этих ресурсов, является базовым репозиторием артефактов знаний. Более продвинутые возможности управления знаниями, такие как управление изменениями, семантическое индексирование и отслеживание зависимостей, могут быть предоставлены поверх этой базовой инфраструктуры. </p>
+
+<p> В частности, элементы <code> useContext </code> и <code> topic </code> предназначены для обеспечения как семантических, так и тематических функций индексации для использования в репозиториях знаний. Например, следующий фрагмент иллюстрирует использование элемента <code> useContext </code> для указания семантического контекста использования для примера набора приказов о самоубийстве: </p>
+
+<pre><code>  &lt;coverage&gt;
+    &lt;patientAgeGroup&gt;
+      &lt;coding&gt;
+        &lt;system value="http://snomed.info/sct"/&gt;
+        &lt;code value="133936004"/&gt;
+        &lt;display value="Adult"/&gt;
+      &lt;/coding&gt;
+    &lt;/patientAgeGroup&gt;
+    &lt;clinicalFocus&gt;
+      &lt;coding&gt;
+        &lt;system value="http://snomed.info/sct"/&gt;
+        &lt;code value="87512008"/&gt;
+        &lt;display value="Mild major depression"/&gt;
+      &lt;/coding&gt;
+    &lt;/clinicalFocus&gt;
+    &lt;clinicalFocus&gt;
+      &lt;coding&gt;
+        &lt;system value="http://snomed.info/sct"/&gt;
+        &lt;code value="394687007"/&gt;
+        &lt;display value="Low suicide risk"/&gt;
+      &lt;/coding&gt;
+    &lt;/clinicalFocus&gt;
+    &lt;targetUser&gt;
+      &lt;coding&gt;
+        &lt;system value="http://snomed.info/sct"/&gt;
+        &lt;code value="309343006"/&gt;
+        &lt;display value="Physician"/&gt;
+      &lt;/coding&gt;
+    &lt;/targetUser&gt;
+    &lt;clinicalVenue&gt;
+      &lt;coding&gt;
+        &lt;system value="http://snomed.info/sct"/&gt;
+        &lt;code value="440655000"/&gt;
+        &lt;display value="Outpatient environment"/&gt;
+      &lt;/coding&gt;
+    &lt;/clinicalVenue&gt;
+  &lt;/coverage&gt;
+</code></pre>
+
+<p> Элемент <code> useContext </code> может содержать любое количество характеристик, определяющих конкретный контекст использования артефакта. Обратите внимание, что базовый ресурс не передает предполагаемую семантику при наличии нескольких элементов useContext. Для этого определяется базовое расширение, <a href="extension-usagecontext-group.html"> usagecontext-group </a>. Применяются все контексты использования внутри группы, в то время как контексты использования групп указывают, что применима любая группа. </p>
+
+<p> Кроме того, элемент <code> useContext </code> предназначен для передачи <i> предписывающей </i> семантики о соответствующем контексте использования артефакта, а элемент <code> topic </code> предназначен для передачи <i> описательной </i> семантики, подходящей для индексации и поиска с использованием параметра поиска <code>topic</code>. </p>
+
+<p> Взаимодействие при поиске FHIR указывает, что результаты поиска возвращаются в пакете, а записи в этом пакете позволяют указать оценку в соответствии с результатом релевантности Службы поддержки принятия решений (DSS). Обратите внимание, что диапазон оценок DSS составляет от 1 до 100, а диапазон оценок FHIR - 0..1.</p>
+
+<p> Алгоритм определения релевантности в данном руководстве не прописан. При вычислении релевантности реализациям рекомендуется использовать метаданные, представленные в артефакте, чтобы помочь пользователям понять релевантность возвращенных артефактов их критериям поиска. </p>
+
+<p> Чтобы уменьшить размер возвращаемых результатов и обеспечить эффективный поиск и извлечение, возвращаемый пакет ДОЛЖЕН состоять только из ресурсов запрошенного типа. Зависимости возвращаемых ресурсов НЕ ДОЛЖНЫ включаться, если на это явно не ссылаются <a href="search.html#include"> включая </a> ресурсы, использующие <code> _include </code> и <code> _revinclude </code> параметры. </p>
+
+<p> Поддержка двух различных вариантов использования распространения может быть обеспечена с помощью базового взаимодействия GET: </p>
+
+<ul>
+<li> Сводка - с помощью параметра <code> _summary </code> возвращенные ресурсы представляют только основную информацию и метаданные о каждом подходящем артефакте. </li>
+<li> Полный - использование параметров поиска <code> _include </code> и <code> _revinclude </code> для включения связанных ресурсов в результат. </li>
+</ul>
+
+<p> В следующей таблице перечислены элементы критериев поиска, определенные стандартом службы поддержки принятия решений (DSS), а также их соответствующее представление в FHIR: </p>
+
+<table class="grid">
+<thead>
+<tr> <th> Критерии поиска DSS </th> <th> эквивалент FHIR </th> </tr>
+</thead>
+<tbody>
+<tr> <td> Максимальное количество результатов </td> <td> глобальный параметр поиска _count </td> </tr>
+<tr> <td> Минимальная оценка </td> <td> Параметр поиска KnowledgeArtifact.minScore </td> </tr>
+<tr> <td> Признак артефакта знаний </td> <td> Параметры поиска знаний (идентификатор, тема, заголовок, описание, версия) </td> </tr>
+<tr> <td> Статус артефакта знаний </td> <td> Параметр поиска KnowledgeArtifact.status </td> </tr>
+<tr> <td> Семантика результатов оценки </td> <td> Не реализовано </td> </tr>
+<tr> <td> Требования к данным </td> <td> Не реализованы </td> </tr>
+<tr> <td> Связь с конкретными артефактами знаний </td> <td> Не реализовано </td> </tr>
+</tbody>
+</table>
+
+<p> Поддержка критериев исключения, описанных в DSS, обеспечивается модификатором: not search параметра FHIR. </p>
+
+<p> Реализация, по крайней мере, FHIR-поиска и получения взаимодействий для ресурсов клинического обоснования (Library, ActivityDefinition, PlanDefinition и Measure) является базовой реализацией репозитория артефактов знаний. Например, следующий GET извлекает все меры, которые ссылаются на определенный набор значений: </p>
+
+<pre><code>GET [base]/ValueSet/zika-affected-areas?_revinclude=Library:depends-on&amp;_revinclude:recurse=Measure:depends-on</code></pre>
+
+<p> Более сложные функции управления, включая семантическое индексирование, управление изменениями и отслеживание зависимостей, могут быть предоставлены поверх этой базовой функции с использованием тех же структур ресурсов. </p>
+
+</div>
+
+				</div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+        
+    </div>  <!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment">  <!-- segment-footer -->
+		<div class="container">  <!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        &reg;&copy; HL7.org 2011+. FHIR Release 4 (Technical Correction #1) (v4.0.1) generated on Thu, Jan 21, 2021 15:39+0000. <a style="color: #ffffff" href="qa.html">QA Page</a>
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #b8dcf9" href="http://hl7.org/fhir/search.cfm">Search <img src="external.png" style="text-align: baseline"/></a> | 
+               <a style="color: #b8dcf9" href="history.html">Version History</a> | 
+               <a style="color: #b8dcf9" href="toc.html">Table of Contents</a> | 
+               <a style="color: #b8dcf9" href="credits.html">Credits</a> | 
+               <a style="color: #b8dcf9" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Ffhir%2FSTU3%2Fclinicalreasoning-knowledge-artifact-distribution.html&amp;doc2=http%3A%2F%2Fbuild.fhir.org%2F%2Fclinicalreasoning-knowledge-artifact-distribution.html">Compare to R3 <img src="external.png" style="text-align: baseline"/></a> |                
+               <a rel="license" style="color: #b8dcf9" href="license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> | 
+               <a style="color: #b8dcf9" href="http://hl7.org/fhir-issues" target="_blank">Propose a change <img src="external.png" style="text-align: baseline"/></a>   
+        </span>
+        </p>
+			</div>  <!-- /inner-wrapper -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
+    
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+</body>
+</html>

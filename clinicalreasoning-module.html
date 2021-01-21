@@ -1,0 +1,456 @@
+﻿<!DOCTYPE HTML>
+  <!-- These elements SHALL always appear in this order. These basic elements shared by all resources come first
+in order to support consistent definitions for schema and UML derived code. --><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Clinicalreasoning-module - FHIR v4.0.1</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+  <link rel="Prev" href="http://hl7.org/fhir/clinicalreasoning-module.html"/>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="./assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="./assets/css/project.css"/>
+  <link rel="stylesheet" href="fhir-pub.css"/>
+  <link rel="stylesheet" href="./assets/css/pygments-manni.css"/>
+	<link rel="stylesheet" href="jquery-ui.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif] -->
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment">  <!-- segment-header -->	
+		<div class="container">  <!-- container -->
+			<a no-external="true" id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir" width="249" height="60"/> </a>
+			<div id="hl7-status">
+				<b>Release 4</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a no-external="true" id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" alt="visit the hl7 website" height="50"/>
+				</a> 
+			</div>       	
+			<div id="hl7-nav"><a no-external="true" id="hl7-logo" href="http://hl7.org/fhir/search.cfm"><img src="./assets/images/search.png" alt="Search FHIR"/></a></div> 
+      <div style="text-align: right; float: right;" id="hl7-status">				
+        <a onclick="window.open('https://hl7.org/fhir/R4'+window.location.pathname, '_blank');return false;" href="#">Открыть эту страницу в оригинале FHIR 4.0.1</a>        
+			</div>   
+		</div>
+		<div class="container">  <!-- container -->
+	</div></div>  <!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+ 	      		 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./modules.html">Getting Started</a></li>
+              <li><a href="./documentation.html">Documentation</a></li>
+              <li><a href="./resourcelist.html">Resources</a></li>
+              <li><a href="./profilelist.html">Profiles</a></li>
+              <li><a href="./extensibility-registry.html">Extensions</a></li>
+              <li><a href="./operationslist.html">Operations</a></li>
+              <li><a href="./terminologies-systems.html">Terminologies</a></li>
+						</ul>
+					</div>  <!-- /.nav-collapse -->
+				</div>  <!-- /.container -->
+			</nav>  <!-- /.navbar -->
+      		
+  <!-- /HEADER CONTENT -->				
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+		<div class="container">  <!-- container -->	
+			<ul class="breadcrumb">
+        <li><b><img src="reasoning.png"/> Clinical Reasoning</b></li>          <!-- clinicalreasoning-module.html / page / -->
+
+			</ul>	
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment">  <!-- segment-content -->
+	<div class="container">  <!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+  <!-- CONTENT CONTENT -->
+
+
+<div class="col-12">  <!-- ReleaseHeader --><p id="publish-box"></p>  <!-- EndReleaseHeader -->
+<table class="colsi"><tr><td id="wg">Work Group <a href="http://www.hl7.org/Special/committees/dss/index.cfm" _target="blank">Clinical Decision Support <img src="external.png" style="text-align: baseline"/></a> &amp; <a href="http://www.hl7.org/Special/committees/cqi/index.cfm" _target="blank">Clinical Quality Information <img src="external.png" style="text-align: baseline"/></a> </td><td id="ballot"><a href="versions.html#std-process">Standards Status</a>:  <!-- !ns! --><a href="versions.html#std-process">Informative</a></td></tr></table>
+
+<a name="root"></a>
+<h2 class="self-link-parent"><span class="sectioncount">14.0<a name="14.0"> </a></span> Клиническое обоснование  <!-- Clinical Reasoning --> <a href="clinicalreasoning-module.html#14.0" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h2>
+
+<a name="intro"></a>
+<h3 class="self-link-parent"><span class="sectioncount">14.0.1</span> Introduction <a href="clinicalreasoning-module.html#intro" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h3>
+<p>Модуль клинического обоснования предоставляет ресурсы и операции для представления, распространения и вычисления таких клинических артефактов знаний, как правила поддержки принятия клинических решений, мер качества, показатели общественного здравоохранения, наборов заказов и клинических протоколов. Кроме того, данный модуль описывает, какие языки выражений могут использоваться в спецификации для обеспечения динамических возможностей.  <!-- The Clinical Reasoning module provides resources and operations to enable the representation, distribution, and evaluation of clinical knowledge artifacts such as clinical decision support rules, quality measures, public health indicators, order sets, and clinical protocols. In addition, the module describes how expression languages can be used throughout the specification to provide dynamic capabilities. --></p>
+
+<p>Клиническое обоснование включает в себя возможность представления и кодирования клинических знаний в очень широком смысле таким образом, чтобы их можно было интегрировать в медицинские системы. Такое кодирование может быть как простым, например управление тем, будет ли показана или нет определенная часть набора заказов на основе диагнозов пациента, так и сложным, например представлять собой описание ухода за пациентом с несколькими заболеваниями.</p>
+
+<a name="scope"></a>
+<h4 class="self-link-parent"><span class="sectioncount">14.0.1.1</span> Область действия <a href="clinicalreasoning-module.html#scope" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h4>
+<p>Модуль клинического обоснования направлен на реализацию двух основных случаев использования:</p>
+
+<ol>
+	<li><b>Sharing</b> - возможность представления артефактов клинических знаний, таких как правила поддержки принятия решений, наборы заказов, клинические протоколы, меры качества, и осуществлять это таким образом, чтобы все организации, вовлечённые в управление и оказание медицинской помощи, могли совместно использовать эти артефакты.</li>
+	<li><b>Evaluation</b> - возможность оценки артефактов клинических знаний в контексте определенного пациента или популяции, включая возможность запроса указания от системы поддержки принятия решений, влияния на клинический рабочий процесс и ретроспективную оценку медицинских метрик качества.</li>
+  <!-- <li><b>Sharing</b> - The ability to represent clinical knowledge artifacts such as decision support rules, order sets, clinical protocols, and quality measures, and to do so in a way that enables those artifacts to be shared across all organizations involved in care management and delivery.</li>
+	<li><b>Evaluation</b> - The ability to evaluate clinical knowledge artifacts in the context of a specific patient or population, including the ability to request decision support guidance, impact clinical workflow, and retrospectively assess clinical quality metrics.</li> -->
+</ol>
+
+<p> Чтобы включить эти варианты использования, модуль определяет несколько компонентов, каждый из которых может использоваться независимо или объединяться для обеспечения более сложных функций. Эти компоненты: </p>
+
+<ul>
+<li> <b> Expression Logic </b> - представление логики с использованием таких языков, как <a href="http://hl7.org/fhirpath"> FHIRPath  <img src="external.png" style="text-align: baseline"/></a> и <a href="http: //cql.hl7.org"> Язык клинического качества (CQL)  <img src="external.png" style="text-align: baseline"/></a>. </li>
+<li> <b> Определительные ресурсы </b> - ресурсы, которые не определены для какого-либо конкретного пациента, но используются для определения действий, которые должны быть выполнены как часть артефакта клинических знаний, такого как набор порядка или правило поддержки принятия решений. Эти ресурсы можно использовать напрямую или с профилями, чтобы обеспечить намеченную структуру для определенных типов ресурсов. </li>
+<li> <b> Артефакты знаний </b> - представление клинических знаний, таких как правила поддержки принятия решений и показатели клинического качества. </li>
+</ul>
+
+<p> Эти базовые компоненты могут затем использоваться для обеспечения широкого спектра вариантов использования поддержки принятия клинических решений и измерения качества, включая обмен знаниями, услуги поддержки принятия решений, а также оценку клинического качества и отчетность. В приведенных ниже темах более подробно обсуждается каждый из этих компонентов и способов использования: </p>
+
+<table class="grid">
+	<thead>
+		<tr><th>Topic</th><th>Description</th></tr>
+	</thead>
+	<tbody>
+		<tr><td><a href="#background">Overview and Background</a></td><td>If you are interested in the background and development of the FHIR Clinical Reasoning module, this topic covers where it came from and why it exists.
+      See also the general FHIR introductions for <a href="overview-clinical.html">clinicians</a>, <a href="overview-dev.html">developers</a> or <a href="overview-arch.html">architects</a></td></tr>
+		<tr><td><a href="clinicalreasoning-topics-using-expressions.html">Using Expressions</a></td><td>If you want to see how to add dynamic capabilities to FHIR resources using expressions, start here.</td></tr>
+		<tr><td><a href="clinicalreasoning-topics-definitional-resources.html">Definitional Resources</a></td><td>If you want to see how to describe definitional resources using the ActivityDefinition resource, start here.</td></tr>
+		<tr><td><a href="clinicalreasoning-knowledge-artifact-representation.html">Representing Knowledge Artifacts</a></td><td>If you want to represent knowledge artifacts such as Event-Condition-Action rules, Order Sets, or Clinical Protocols, start here.</td></tr>
+		<tr><td><a href="clinicalreasoning-knowledge-artifact-distribution.html">Sharing Knowledge Artifacts</a></td><td>If you want to share and distribute knowledge artifacts, start here.</td></tr>
+		<tr><td><a href="clinicalreasoning-cds-on-fhir.html">Clinical Decision Support Service</a></td><td>If you want to use the Clinical Reasoning module to provide or use Clinical Decision Support services, start here.</td></tr>
+		<tr><td><a href="clinicalreasoning-quality-reporting.html">Quality Reporting</a></td><td>If you want to define or report clinical quality measures, start here.</td></tr>
+	</tbody>
+</table>
+
+<a name="audience"></a>
+<h4 class="self-link-parent"><span class="sectioncount">14.0.1.2</span>  Аудитория  <a href="clinicalreasoning-module.html#audience" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h4>
+<p> С точки зрения автора знаний, этот модуль описывает подход к представлению артефактов знаний в FHIR. </p>
+
+<p> С точки зрения поставщика содержимого знаний этот модуль определяет функцию поиска для использования сервера FHIR в качестве хранилища артефактов знаний. </p>
+
+<p> С точки зрения поставщика услуг по оценке знаний, этот модуль определяет операции и профили для поддержки оценки показателей качества, а также определения и использования <a href="https://cds-hooks.hl7.org/"> CDS Хуки  <img src="external.png" style="text-align: baseline"/></a>. </p>
+
+<p> И, наконец, с точки зрения потребителя службы оценки знаний, этот модуль определяет ожидаемые доступные операции и поведение службы оценки знаний. </p>
+
+<a name="index"></a>
+<h3 class="self-link-parent"><span class="sectioncount">14.0.2</span> Index <a href="clinicalreasoning-module.html#index" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h3>
+
+<a name="index-resources"></a>
+<h4 class="self-link-parent"><span class="sectioncount">14.0.2.1</span> Resources <a href="clinicalreasoning-module.html#index-resources" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h4>
+
+<table class="grid">
+	<thead>
+		<tr><th>Resource</th><th>Description</th></tr>
+	</thead>
+	<tbody>
+		<tr><td><a href="activitydefinition.html">ActivityDefinition</a></td><td>A resource to represent definitional resources.</td></tr>
+		<tr><td><a href="metadatatypes.html#datarequirement.html">DataRequirement</a></td><td>A data type that represents a general data requirement for a knowledge asset such as a decision support rule or quality measure.</td></tr>
+		<tr><td><a href="guidanceresponse.html">GuidanceResponse</a></td><td>Represents the result from invoking a decision support service.</td></tr>
+		<tr><td><a href="library.html">Library</a></td><td>Provides a container for knowledge artifacts that includes logic libraries, model definitions, and asset collections.</td></tr>
+		<tr><td><a href="measure.html">Measure</a></td><td>Represents a clinical quality measure and provides evaluation through the $evaluate-measure operation.</td></tr>
+		<tr><td><a href="measurereport.html">MeasureReport</a></td><td>Represents the response to a specific measure evaluation request returned by the $evaluate-measure operation.</td></tr>
+		<tr><td><a href="plandefinition.html">PlanDefinition</a></td><td>Represents the description of a plan for accomplishing a particular goal. This resource is used to represent a broad variety of clinical knowledge artifacts including decision support rules, order sets, and protocols.</td></tr>
+		<tr><td><a href="requestgroup.html">RequestGroup</a></td><td>Represents a group of options for a particular subject that can be used to accomplish a particular goal. This resource is often, but not always, the result of applying a PlanDefinition to a particular patient.</td></tr>
+	</tbody>
+</table>
+
+<a name="index-extensions"></a>
+<h4 class="self-link-parent"><span class="sectioncount">14.0.2.2</span> Extensions <a href="clinicalreasoning-module.html#index-extensions" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h4>
+
+<table class="grid">
+	<thead>
+		<tr><th>Extension</th><th>Description</th></tr>
+	</thead>
+	<tbody>
+		<tr><td><a href="extension-cqf-cdshooksendpoint.html">cdsHooksEndpoint</a></td><td>An extension applied to a PlanDefinition to indicate that it provides the behavior for a CDS Hooks service endpoint.</td></tr>
+		<tr><td><a href="extension-cqf-expression.html">expression</a></td><td>A general purpose extension that supports the use of languages such as FHIRPath and Clinical Quality Language within FHIR.</td></tr>
+		<tr><td><a href="extension-cqf-library.html">library</a></td><td>A general purpose extension that supports the declaration of dependencies that can be accessed by expression logic.</td></tr>
+		<tr><td><a href="extension-cqf-measureinfo.html">measureInfo</a></td><td>An extension that can be applied to resources to indicate the measure criteria they satisfy. Used in evaluated resource bundles as part of reporting measure results for a patient to identify resources that contributed to the patient's membership in a particular population criteria.</td></tr>
+		<tr><td><a href="extension-cqf-qualityofevidence.html">qualityOfEvidence</a></td><td>An extension that can be applied to indicate the quality of evidence in support of a particular artifact or recommendation.</td></tr>
+		<tr><td><a href="extension-cqf-relativedatetime.html">relativeDateTime</a></td><td>An extension that can be applied to define a date/time value relative to another event.</td></tr>
+		<tr><td><a href="extension-cqf-strengthofrecommendation.html">strengthOfRecommendation</a></td><td>An extension that can be applied to indicate the strength of a recommendation.</td></tr>
+	</tbody>
+</table>
+
+<a name="index-profiles"></a>
+<h4 class="self-link-parent"><span class="sectioncount">14.0.2.3</span> Profiles <a href="clinicalreasoning-module.html#index-profiles" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h4>
+
+<table class="grid">
+	<thead>
+		<tr><th>Profile</th><th>Description</th></tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><a href="activitydefinition-shareable.html">Shareable ActivityDefinition</a></td>
+			<td>Enforces the minimum information set for the activity definition metadata required by HL7 and other organizations that share and publish activity definitions.</td>
+		</tr>
+		<tr>
+			<td><a href="cqf-questionnaire.html">CQF-Questionnaire</a></td>
+			<td>Defines extensions to the base Questionnaire that allow it to be used as a DocumentationTemplate with behavior specified via logic in CQL libraries.</td>
+		</tr>
+		<tr>
+			<td><a href="guidanceresponse-cdshooks.html">CDS Hooks GuidanceResponse</a></td>
+			<td>Defines a GuidanceResponse that represents the response container for a CDS Hooks response</td>
+		</tr>
+		<tr>
+			<td><a href="library-shareable.html">Shareable Library</a></td>
+			<td>Enforces the minimum information set for the library metadata required by HL7 and other organizations that share and publish libraries</td>
+		</tr>
+		<tr>
+			<td><a href="library-cql.html">CQL Library</a></td>
+			<td>Represents a CQL logic library</td>
+		</tr>
+		<tr>
+			<td><a href="measure-shareable.html">Shareable Measure</a></td>
+			<td>Enforces the minimum information set for the measure metadata required by HL7 and other organizations that share and publish measures</td>
+		</tr>
+		<tr>
+			<td><a href="plandefinition-shareable.html">Shareable PlanDefinition</a></td>
+			<td>Enforces the minimum information set for the plan definition metadata required by HL7 and other organizations that share and publish plan definitions</td>
+		</tr>
+		<tr>
+			<td><a href="plandefinition-computable.html">Computable PlanDefinition</a></td>
+			<td>Defines a computable PlanDefinition that specifies a single library and requires all expressions referenced from the PlanDefinition to be definitions in that single library</td>
+		</tr>
+		<tr>
+			<td><a href="plandefinition-cdshooks-service.html"></a>CDS Hooks PlanDefinition</td>
+			<td>Defines a PlanDefinition that implements the behavior for a CDS Hooks service</td>
+		</tr>
+		<tr>
+			<td><a href="requestgroup-cdshooks.html">CDS Hooks RequestGroup</a></td>
+			<td>Defines a RequestGroup that can represent a CDS Hooks response</td>
+		</tr>
+	</tbody>
+</table>
+
+<a name="index-services"></a>
+<h4 class="self-link-parent"><span class="sectioncount">14.0.2.4</span> Services <a href="clinicalreasoning-module.html#index-services" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h4>
+
+<table class="grid">
+  <thead>
+	  <tr><th>Service</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="capabilitystatement-knowledge-repository.html">Knowledge Repository</a></td>
+      <td>Defines minimum service capabilities for a knowledge repository.</td>
+    </tr>
+    <tr>
+      <td><a href="capabilitystatement-measure-processor.html">Measure Processor</a></td>
+      <td>Defines minimum service capabilities for a measure processor.</td>
+    </tr>
+  </tbody>
+</table>
+
+<a name="secpriv"></a>
+<h3 class="self-link-parent"><span class="sectioncount">14.0.3</span>  Безопасность и конфиденциальность  <a href="clinicalreasoning-module.html#secpriv" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h3>
+
+<p> Поскольку артефакты знаний, как правило, не зависят от пациента, многие ресурсы в модуле клинического обоснования не имеют проблем с безопасностью и конфиденциальностью пациентов, кроме обычной чувствительности, которая должна оплачиваться в любой среде электронной системы здравоохранения. Тем не менее, вариант использования для оценки, включая запрос / ответ руководства по поддержке принятия решений, а также оценка меры качества вызывают серьезные проблемы с безопасностью и конфиденциальностью пациентов. </p>
+
+<p> В случае использования оценки поддержки принятия клинических решений, как и в случае любой информации, относящейся к пациенту, следует позаботиться о том, чтобы запрос и ответ были должным образом защищены как в состоянии покоя, так и во время движения, а также чтобы весь доступ к информации о пациенте выполняется с помощью правильно аутентифицированного и авторизованного механизма. Это особенно верно в отношении артефактов поддержки принятия решений, когда логика принимается как часть определения артефакта. В этом сценарии механизм оценки должен гарантировать, что доступ к данным в рамках загруженной логики подчиняется тем же требованиям аутентификации и авторизации, что и любой другой доступ. </p>
+
+<p> Для служб инструкций, которые получают информацию о пациентах, убедитесь, что журналы и контрольные журналы не ставят под угрозу конфиденциальность и безопасность пациентов, регистрируя потенциально конфиденциальную информацию в незашифрованном виде. Кроме того, руководство и рекомендации, возвращаемые службой, должны гарантировать, что контент, содержащий информацию о пациентах, четко обозначен, чтобы клиенты-потребители могли принять соответствующие меры при интеграции и отображении полученных рекомендаций. </p>
+
+<p> Для оценки показателей качества индивидуальные отчеты и отчеты о пациентах могут содержать большой объем информации о пациентах. Как и в случае с ответами на рекомендации по поддержке принятия решений, необходимо позаботиться о том, чтобы информация о пациенте была доступна только должным образом аутентифицированным и уполномоченным агентам, и чтобы непреднамеренные нарушения были сведены к минимуму за счет соблюдения соответствующих протоколов регистрации и аудита. </p>
+
+<p> В частности, поскольку языки выражений, в зависимости от их мощности и объема, могут обеспечивать возможность доступа к большим объемам данных, а также возможность бесконечной рекурсии или зацикливания, следует позаботиться о том, чтобы реализации надлежащим образом защищали от Атаки типа «отказ в обслуживании», которые используют эти возможности для компрометации систем путем перегрузки емкости. </p>
+
+<p> Для получения более общих сведений см. <a href="secpriv-module.html"> модуль безопасности и конфиденциальности </a>. </p>
+
+<a name="uses"></a>
+<h3 class="self-link-parent"><span class="sectioncount">14.0.4</span> Common use Cases <a href="clinicalreasoning-module.html#uses" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h3>
+
+<table class="grid">
+	<thead>
+		<tr><th>Use Case</th><th>Description</th></tr>
+	</thead>
+	<tbody>
+		<tr><td><a href="clinicalreasoning-topics-using-expressions.html#dynamic-value-for-a-resource-element">Providing a dynamic value for a resource element</a></td><td>Using expressions to define the value for an element of a FHIR resource.</td></tr>
+		<tr><td><a href="clinicalreasoning-knowledge-artifact-representation.html#defining-a-cql-library">Defining a CQL library</a></td><td>Using the Library resource to incorporate a Clinical Quality Language library for use in FHIR resources.</td></tr>
+		<tr><td><a href="library-quick-model-definition.xml.html">Defining a Model Definition artifact</a></td><td>Using the Library resource to incorporate the definition of an information model for use with expressions in FHIR.</td></tr>
+		<tr><td><a href="clinicalreasoning-knowledge-artifact-representation.html#event-condition-action-rule">Defining an Event Condition Action rule</a></td><td>Using the PlanDefinition resource to represent an event-condition-action rule in FHIR.</td></tr>
+		<tr><td><a href="clinicalreasoning-topics-definitional-resources.html#referral-request-activity-definition">Defining a Referral Request activity</a></td><td>Using the ActivityDefinition resource to define a referral request activity that can be used as part of a knowledge artifact.</td></tr>
+		<tr><td><a href="clinicalreasoning-topics-definitional-resources.html#referral-request-activity-definition">Defining a Medication Request activity</a></td><td>Using the ActivityDefinition resource to define a medication request activity that can be used as part of a knowledge artifact.</td></tr>
+		<tr><td><a href="clinicalreasoning-knowledge-artifact-representation.html#order-set">Defining an Order Set</a></td><td>Using the PlanDefinition resource to represent an order set.</td></tr>
+		<tr><td><a href="clinicalreasoning-knowledge-artifact-representation.html#protocol">Defining a Protocol</a></td><td>Using the PlanDefinition resource to represent a protocol.</td></tr>
+		<tr><td><a href="clinicalreasoning-knowledge-artifact-representation.html#documentation-template">Defining a Questionnaire with dynamic content</a></td><td>Using the Questionnaire resource and expression extensions to add dynamic functionality to a FHIR Questionnaire.</td></tr>
+		<tr><td><a href="clinicalreasoning-cds-on-fhir.html#guidance-request">Obtaining guidance from a Decision Support Service</a></td><td>Using the $evaluate operation to request and process guidance from a decision support service.</td></tr>
+		<tr><td><a href="clinicalreasoning-quality-reporting.html#representing-quality-measures">Defining a Measure</a></td><td>Using the Measure resource to represent a clinical quality measure.</td></tr>
+		<tr><td><a href="clinicalreasoning-quality-reporting.html#invoking-measures">Evaluating a Measure</a></td><td>Using the $evaluate-measure operation to request calculation of a clinical quality measure.</td></tr>
+		<tr><td><a href="activitydefinition-operation-apply.html">Applying an ActivityDefinition</a></td><td>Using the $apply operation to realize the intent resource defined by an ActivityDefinition.</td></tr>
+		<tr><td><a href="plandefinition-operation-apply.html">Applying a PlanDefinition</a></td><td>Using the $apply operation to realize a plan definition for a specific context.</td></tr>
+		<tr><td><a href="clinicalreasoning-topics-supporting-documentation.html">Representing Quality of Evidence/Strength of Recommendation</a></td><td>Using the <code>qualityOfEvidence</code> and <code>strengthOfRecommendation</code> extensions to indicate ratings associated with evidence for a particular artifact or recommendation.</td></tr>
+	</tbody>
+</table>
+
+<a name="roadmap"></a>
+<h3 class="self-link-parent"><span class="sectioncount">14.0.5</span>  Дорожная карта развития  <a href="clinicalreasoning-module.html#roadmap" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h3>
+
+<p> Ресурсы, определенные для модуля Clinical Reasoning, являются результатом совместных усилий нескольких сообществ, работающих над общей целью гармонизированных стандартов и спецификаций для поддержки клинических решений и артефактов измерения качества. Текущее состояние модуля отражает изменения, внесенные как из предыдущих бюллетеней по материалам, относящимся к FHIR, так и по содержанию, полученному из нескольких других бюллетеней спецификаций в доменах CDS и CQM. Контент на этом этапе может поддерживать два основных варианта использования - совместного использования и оценки в обоих доменах и для самых разных артефактов. </p>
+
+<p> В частности, использование языка клинического качества (CQL) в качестве основополагающего механизма для представления логики клинического качества позволяет использовать общие определения для поддержки принятия решений и артефактов измерения качества. Например, мера скрининга на хламидиоз и связанные с ним артефакты поддержки принятия решений, направленные на улучшение показателя, могут совместно использовать общую библиотеку, которая описывает критерии для обнаружения, когда у пациента требуется скрининг на хламидиоз. Правило поддержки принятия решений применяет эти критерии, чтобы определить, когда и как повлиять на рабочий процесс, в то время как мера качества использует те же критерии, чтобы определить, была ли достигнута цель скрининга для пациента или популяции. Кроме того, ресурсы, определенные в этом модуле, используют общие шаблоны для описания структуры артефактов и связанных с ними метаданных, что обеспечивает согласованный подход к совместному использованию и распространению артефактов клинических знаний. </p>
+
+<p> За прошедший год пробного использования модуль Clinical Reasoning использовался как в области измерения качества, так и в области поддержки принятия решений для представления, обмена и оценки артефактов знаний. Это использование вызвало обратную связь, в результате которой было добавлено несколько новых профилей, а также руководство по использованию модуля Clincal Reasoning с крючками CDS и для качественной отчетности. Хотя эта обратная связь привела к некоторым существенным изменениям, их было сравнительно немного, и цели модуля на следующий год - продвинуться к более высоким уровням зрелости и продолжить поиск отзывов о реализации. </p>
+
+<p> Цели модуля на следующий год - обеспечить стабильную основу для реализации варианта использования совместного использования, а также унификацию со спецификацией CDS Hooks в поддержку оценочного варианта использования. Инициатива по созданию структуры клинического качества будет использовать эти ресурсы в качестве основы для проектов внедрения, ориентируясь на уровень FMM 3 или 4 для всех ресурсов модуля в течение года. </p>
+
+<a name="crm-feedback"></a>
+<blockquote class="stu-note"><p><b>Trial-Use Note:</b>
+We are actively seeking comments on all areas of the module, with particular focus on supporting the following scenarios:
+</p>
+<ul>
+	<li>FHIR-Based Knowledge Artifact Repository</li>
+	<li>FHIR-Based Clinical Decision Support Service</li>
+	<li>FHIR-Based Quality Measure Evaluation and Reporting</li>
+	<li>FHIR-Based Order Set Catalog/Ordering Services</li>
+	<li>The use of Measure and MeasureReport for public health indicator reporting</li>
+	<li>Enabling population level query</li>
+	<li>The use of FHIR Bulk Data as a mechanism to enable population-level quality reporting</li>
+	<li>The use of FHIR interactions in general as a mechanism for enabling knowledge artifact repository and distribution functionality.</li>
+</ul>
+<p>
+Feedback is welcome <a href="http://hl7.org/fhir-issues">here <img src="external.png" style="text-align: baseline"/></a>.
+</p></blockquote>
+
+<a name="background"></a>
+<h3 class="self-link-parent"><span class="sectioncount">14.0.6</span>  Основные положения  <a href="clinicalreasoning-module.html#background" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h3>
+
+<p> Модуль FHIR Clinical Reasoning спонсируется рабочими группами HL7 по поддержке принятия клинических решений (CDS) и информации о клиническом качестве (CQI) при участии и координации со стороны рабочих групп HL7 по инфраструктуре FHIR и сервис-ориентированной архитектуре. </p>
+
+<p> Руководство в этом модуле было подготовлено как универсальная спецификация области при поддержке <a href="https://oncprojectracking.healthit.gov/wiki/display/TechLabSC/CQF+Home"> Clinical Quality Framework (CQF) ) инициатива  <img src="external.png" style="text-align: baseline"/></a>, которая представляла собой государственно-частное партнерство, спонсируемое центрами Medicare &amp; Службы Medicaid (CMS) и Управление национального координатора медицинских информационных технологий (ONC) США для определения, разработки и гармонизации стандартов поддержки принятия клинических решений и электронного измерения качества клинических данных. Работа <a href="https://confluence.hl7.org/display/CQIWC/Clinical+Quality+Framework"> Clinical Quality Framework  <img src="external.png" style="text-align: baseline"/></a> перешла на информацию о клиническом качестве (CQI) HL7 и поддержку принятия клинических решений (CDS). ) Рабочие группы в 2016 году. </p>
+
+<p> Структура клинического качества направлена ​​на гармонизацию исторически разрозненных спецификаций, используемых сообществами по измерению клинического качества и поддержке принятия клинических решений. В частности, инициатива была сосредоточена на спецификациях, используемых для представления артефактов знаний в двух сообществах. Применяемая стратегия заключалась в том, чтобы разбить концептуальное содержание артефактов знаний на три основных компонента, определить общие стандарты для этих основных компонентов и повторно использовать эти общие стандарты как для поддержки принятия клинических решений, так и для измерения клинического качества: </p>
+
+<ul>
+	<li>Metadata - Descriptive information about the artifact and its content</li>
+	<li>Clinical Information - Information about a patient or population of concern within a given artifact</li>
+	<li>Logic - The clinical reasoning involved in an artifact</li>
+</ul>
+
+<img src="clinicalreasoning-components-diagram.jpg" alt="Clinical Quality Framework Conceptual Components"/>
+
+<p>The first component has resulted in the <a href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=391">Clinical Quality Common Metadata Conceptual Model <img src="external.png" style="text-align: baseline"/></a>, an informative document harmonizing metadata requirements between Quality Measurement and Decision Support artifacts.</p>
+
+<p>The second component has resulted in the QUICK <a href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=378">Conceptual and Logical <img src="external.png" style="text-align: baseline"/></a> Models, a harmonization of the <a href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=338">Virtual Medical Record (vMR) <img src="external.png" style="text-align: baseline"/></a> used in Decision Support and the <a href="https://ecqi.healthit.gov/qdm">Quality Data Model (QDM) <img src="external.png" style="text-align: baseline"/></a> used in Quality Measurement, and with its core requirements realized in FHIR as the Quality Improvement Core (QICore) <a href="http://hl7.org/fhir/us/qicore/index.html#contents">profiles <img src="external.png" style="text-align: baseline"/></a>. Ongoing work in this area is focusing on coordination with the Clinical Information Modeling Initiative (CIMI) and a methodology for producing FHIR profiles from CIMI models. Currently, the QICore FHIR profiles (which are in turn derived from the US-Core profiles) can be used to model clinical quality data, and to present a consistent model for use in authoring and evaluating clinical quality artifacts.</p>
+
+<p>Finally, the third component has resulted in the <a href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=400">Clinical Quality Language specification <img src="external.png" style="text-align: baseline"/></a>, a harmonization of the expressive capabilities of the <a href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=337">Clinical Decision Support Knowledge Artifact Specification (CDS KAS) <img src="external.png" style="text-align: baseline"/></a> (produced by the <a href="http://healthedecisions.org">Health eDecisions <img src="external.png" style="text-align: baseline"/></a> (HeD) Standards and Interoperability (S&amp;I) initiative), and the <a href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=97">Health Quality Measures Format (HQMF) <img src="external.png" style="text-align: baseline"/></a>.</p>
+
+<p> В рамках продолжающейся пилотной инициативы CQF эти разрабатываемые спецификации используются для поддержки обмена артефактами знаний, а также оценки артефактов знаний в рамках запроса/ответа поддержки принятия решений и оценки показателей. </p>
+
+<p> В этом модуле продолжается гармонизация спецификаций области качества, определяя подход к использованию сервера FHIR в качестве компонента системы знаний как в репозитариях знаний, так и в ролях службы оценки знаний. </p>
+
+<a name="related-specifications"> </a>
+<h3 class="self-link-parent"><span class="sectioncount">14.0.7</span>  Сопутствующие характеристики  <a href="clinicalreasoning-module.html#related-specifications" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h3>
+
+<p> Подход и представления в этом руководстве основаны на следующих спецификациях и предназначены для их соответствия: </p>
+
+<ul>
+	<li><a href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=337">HL7 Version 3 Standard: Clinical Decision Support Knowledge Artifact Specification, Release 1.3 <img src="external.png" style="text-align: baseline"/></a></li>
+	<li><a href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=97">HL7 Version 3 Standard: Representation of the Health Quality Measure Format (eMeasure) Normative, Release 1 <img src="external.png" style="text-align: baseline"/></a></li>
+	<li><a href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=12">HL7 Version 3 Standard: Decision Support Service, Release 2 <img src="external.png" style="text-align: baseline"/></a></li>
+	<li><a href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=334">HL7 Version 3 Implementation Guide: Decision Support Service, Release 1 <img src="external.png" style="text-align: baseline"/></a></li>
+</ul>
+
+<a name="copyright-information"></a>
+<h3 class="self-link-parent"><span class="sectioncount">14.0.8</span>  Информация об авторских правах  <a href="clinicalreasoning-module.html#copyright-information" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h3>
+
+<p> Этот материал включает клинические условия SNOMED &reg; (SNOMED CT &reg;), которые используются с разрешения Международной организации по разработке стандартов терминологии здравоохранения (IHTSDO). Все права защищены. SNOMED CT был первоначально создан Колледжем американских патологов. "SNOMED&reg;" и "SNOMED CT &reg;" являются зарегистрированными товарными знаками IHTSDO. </p>
+
+<p> Этот материал содержит контент из имен и кодов логических идентификаторов наблюдения (LOINC&reg;) (<a href="http://loinc.org"> http://loinc.org  <img src="external.png" style="text-align: baseline"/></a>). Таблица LOINC, коды LOINC и файлы панелей и форм LOINC являются собственностью и копией; 1995-2017, Regenstrief Institute, Inc. и Комитет LOINC и доступны бесплатно по лицензии на <a href="http://loinc.org/terms-of-use"> http://loinc.org/ условия использования  <img src="external.png" style="text-align: baseline"/></a>. </p>
+
+<p> Этот материал содержит контент из Единого кода единиц измерения (UCUM) (<a href="http://unitsofmeasure.org"> http://unitsofmeasure.org  <img src="external.png" style="text-align: baseline"/></a>). Спецификация UCUM защищена авторским правом и копией; 1999–2017, Regenstrief Institute, Inc. и доступно бесплатно по лицензии на <a href="http://unitsofmeasure.org/trac/wiki/TermsOfUse"> http://unitsofmeasure.org/trac/wiki/ Условия использования  <img src="external.png" style="text-align: baseline"/></a>. </p>
+
+<p> Этот материал содержит информацию о показателях качества, разработанную Национальным комитетом по обеспечению качества (NCQA). Авторские права на содержание меры принадлежат Национальному комитету по обеспечению качества, 2008-2017 гг., И используются в соответствии с условиями лицензии NCQA для некоммерческого использования. </p>
+
+<a name="acknowledgements"></a>
+<h3 class="self-link-parent"><span class="sectioncount">14.0.9</span>  Благодарности  <a href="clinicalreasoning-module.html#acknowledgements" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h3>
+
+<p> Рекомендации в этом модуле являются результатом совместного проекта рабочих групп HL7 по информации о качестве клинической информации и поддержки принятия клинических решений при совместном спонсорстве рабочих групп по инфраструктуре FHIR, спецификациям реализуемых технологий и сервис-ориентированной архитектуре. </p>
+
+</div>
+
+
+				</div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+        
+    </div>  <!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment">  <!-- segment-footer -->
+		<div class="container">  <!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        &reg;&copy; HL7.org 2011+. FHIR Release 4 (Technical Correction #1) (v4.0.1) generated on Thu, Jan 21, 2021 15:39+0000. <a style="color: #ffffff" href="qa.html">QA Page</a>
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #b8dcf9" href="http://hl7.org/fhir/search.cfm">Search <img src="external.png" style="text-align: baseline"/></a> | 
+               <a style="color: #b8dcf9" href="history.html">Version History</a> | 
+               <a style="color: #b8dcf9" href="toc.html">Table of Contents</a> | 
+               <a style="color: #b8dcf9" href="credits.html">Credits</a> | 
+               <a style="color: #b8dcf9" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Ffhir%2FSTU3%2Fclinicalreasoning-module.html&amp;doc2=http%3A%2F%2Fbuild.fhir.org%2F%2Fclinicalreasoning-module.html">Compare to R3 <img src="external.png" style="text-align: baseline"/></a> |                
+               <a rel="license" style="color: #b8dcf9" href="license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> | 
+               <a style="color: #b8dcf9" href="http://hl7.org/fhir-issues" target="_blank">Propose a change <img src="external.png" style="text-align: baseline"/></a>   
+        </span>
+        </p>
+			</div>  <!-- /inner-wrapper -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
+    
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+</body>
+</html>

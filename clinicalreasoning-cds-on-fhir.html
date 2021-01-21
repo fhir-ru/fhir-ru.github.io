@@ -1,0 +1,452 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Clinicalreasoning-cds-on-fhir - FHIR v4.0.1</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+  <link rel="Prev" href="http://hl7.org/fhir/clinicalreasoning-cds-on-fhir.html"/>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="./assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="./assets/css/project.css"/>
+  <link rel="stylesheet" href="fhir-pub.css"/>
+  <link rel="stylesheet" href="./assets/css/pygments-manni.css"/>
+	<link rel="stylesheet" href="jquery-ui.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif] -->
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment">  <!-- segment-header -->	
+		<div class="container">  <!-- container -->
+			<a no-external="true" id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir" width="249" height="60"/> </a>
+			<div id="hl7-status">
+				<b>Release 4</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a no-external="true" id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" alt="visit the hl7 website" height="50"/>
+				</a> 
+			</div>       	
+			<div id="hl7-nav"><a no-external="true" id="hl7-logo" href="http://hl7.org/fhir/search.cfm"><img src="./assets/images/search.png" alt="Search FHIR"/></a></div> 
+      <div style="text-align: right; float: right;" id="hl7-status">				
+        <a onclick="window.open('https://hl7.org/fhir/R4'+window.location.pathname, '_blank');return false;" href="#">Открыть эту страницу в оригинале FHIR 4.0.1</a>        
+			</div>   
+		</div>
+		<div class="container">  <!-- container -->
+	</div></div>  <!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+ 	      		 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./modules.html">Getting Started</a></li>
+              <li><a href="./documentation.html">Documentation</a></li>
+              <li><a href="./resourcelist.html">Resources</a></li>
+              <li><a href="./profilelist.html">Profiles</a></li>
+              <li><a href="./extensibility-registry.html">Extensions</a></li>
+              <li><a href="./operationslist.html">Operations</a></li>
+              <li><a href="./terminologies-systems.html">Terminologies</a></li>
+						</ul>
+					</div>  <!-- /.nav-collapse -->
+				</div>  <!-- /.container -->
+			</nav>  <!-- /.navbar -->
+      		
+  <!-- /HEADER CONTENT -->				
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+		<div class="container">  <!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="clinicalreasoning-module.html"><img src="reasoning.png"/> Clinical Reasoning</a></li>
+        <li><b>Clinical Decision Support</b></li>          <!-- clinicalreasoning-cds-on-fhir.html / page / -->
+
+			</ul>	
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment">  <!-- segment-content -->
+	<div class="container">  <!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+  <!-- CONTENT CONTENT -->
+
+
+<div class="col-12">  <!-- ReleaseHeader --><p id="publish-box"></p>  <!-- EndReleaseHeader -->
+
+<table class="cols"><tbody><tr><td id="wg">Work Group <a href="http://www.hl7.org/Special/committees/dss/index.cfm" _target="blank">Clinical Decision Support <img src="external.png" style="text-align: baseline"/></a></td><td id="fmm"><a href="versions.html#maturity">Maturity Level</a>: 2</td><td id="ballot"><a href="versions.html#std-process">Standards Status</a>:    <!-- !ns! --><a href="versions.html#std-process">Trial Use</a></td></tr></tbody></table>
+
+<a name="clinical-decision-support-services"> </a>
+<h3 class="self-link-parent"><span class="sectioncount">14.5<a name="14.5"> </a></span> Clinical Decision Support Services <a href="clinicalreasoning-cds-on-fhir.html#14.5" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h3>
+
+<p> В этом разделе модуля клинического обоснования обсуждается пример использования оценки для поддержки принятия клинических решений и то, как различные артефакты знаний могут быть интегрированы в клинический рабочий процесс. Тема посвящена двум основным сценариям: </p>
+
+<ol>
+<li> Использование CDS Hooks для оценки удаленной поддержки принятия клинических решений </li>
+<li> Использование ловушек CDS для выявления поведения поддержки принятия клинических решений </li>
+</ol>
+
+<p> Обратите внимание, что эта тема представляет собой очень высокоуровневый подход к использованию ловушек CDS для поддержки этих двух вариантов использования. Это не нормативное описание какого-либо содержимого CDS Hooks. Пожалуйста, обратитесь к самой спецификации <a href="https://cds-hooks.org"> CDS Hooks  <img src="external.png" style="text-align: baseline"/></a> для получения более подробной информации. На момент публикации спецификация CDS Hooks была проголосована, но все еще находится в процессе публикации. Поскольку ссылки на этой странице ссылаются на спецификацию хуков CDS, они все еще ссылаются на исходную спецификацию хуков CDS. Когда он будет опубликован, спецификация CDS Hooks будет находиться по адресу <a href="http://cds-hooks.hl7.org"> http://cds-hooks.hl7.org  <img src="external.png" style="text-align: baseline"/></a>. </p>
+
+<a name="consuming-decision-support"> </a>
+<h4 class="self-link-parent"><span class="sectioncount">14.5.1</span>  Поддержка принятия решений с помощью ловушек CDS  <a href="clinicalreasoning-cds-on-fhir.html#consuming-decision-support" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h4>
+
+<p> CDS Hooks - это спецификация с открытым исходным кодом, ориентированная на поддержку удаленных клинических решений с участием пользователей. CDS Hooks может использовать FHIR для представления информации и рекомендаций пациента, но это архитектурно независимая спецификация. Основные компоненты CDS Hooks: </p>
+
+<table>
+  <tr>
+    <td><b>Service</b></td> <td> Служба поддержки принятия решений, которая принимает запросы, содержащие информацию о пациентах, и предоставляет ответы </td>
+  </tr>
+  <tr>
+    <td><b>Hook</b></td> <td> Определенная точка в рабочем процессе клиентской системы с хорошо известной контекстной информацией, предоставляемой как часть запроса </td>
+  </tr>
+  <tr>
+    <td><b>EHR</b></td> <td> Электронная медицинская карта или другая клиническая информационная система, которая использует поддержку принятия решений в виде услуг </td>
+  </tr>
+  <tr>
+    <td><b>Card</b></td> <td> Рекомендации служб поддержки принятия решений возвращаются в виде карточек, представляющих дискретные рекомендации или предложения, которые представляются пользователю в EHR </td>
+  </tr>
+</table>
+
+<a name="configuration"> </a>
+<h5 class="self-link-parent"><span class="sectioncount">14.5.1.1</span>  Конфигурация  <a href="clinicalreasoning-cds-on-fhir.html#configuration" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h5>
+
+<p> Первым этапом использования службы CDS с использованием ловушек CDS является настройка интеграции из EHR. Служба CDS публикует набор конечных точек для рекламы доступных функций с помощью конечной точки <a href="http://cds-hooks.org/specification/1.0/#discovery"> <i> обнаружение </i>  <img src="external.png" style="text-align: baseline"/></a> . Для каждой конечной точки служба объявляет <i> ловушку </i>, во время которой она ожидает вызова, и, необязательно, любую информацию <i> предварительной выборки </i>, которая может быть предоставлена ​​службе. </p>
+
+<p> Каждый <a href="http://cds-hooks.org/hooks/"> <i> hook </i>  <img src="external.png" style="text-align: baseline"/></a> идентифицирует контекстную информацию, доступную в EHR. Например, хук <code> medication-identify </code> указывает пациента в контексте, а также назначаемые лекарства. Ожидается, что при вызове службы из этого перехвата EHR предоставит эту контекстную информацию как часть запроса. </p>
+
+<p> Кроме того, служба CDS может указывать дополнительную информацию, используя <a href="http://cds-hooks.org/specification/1.0/#prefetch-template"> <i> prefetch </i>  <img src="external.png" style="text-align: baseline"/></a> шаблоны. Каждый шаблон предварительной выборки представляет собой URL-адрес запроса FHIR, параметризованный данными, доступными в контексте, и описывающий информацию, необходимую службе CDS для выполнения своей обработки. Предоставляя эту информацию как часть запроса, EHR устраняет необходимость для службы CDS запрашивать дополнительную информацию. </p>
+
+<p> В следующем примере показан типичный ответ на обнаружение службы: </p>
+
+<pre><code>{
+  "services": [
+    {
+      "hook": "medication-prescribe",
+      "prefetch": {
+        "medication": "MedicationOrder?patient\u003d{{context.patientId}}\u0026status\u003dactive"
+      },
+      "title": "Opioid Morphine Milligram Equivalence (MME) Guidance Service",
+      "description": "CDS Service that finds the MME of an opioid medication and provides guidance to the prescriber if the MME exceeds the recommended range.",
+      "id": "cdc-opioid-guidance"
+    },
+    {
+      "hook": "patient-view",
+      "prefetch": {
+        "patient": "Patient/{{context.patientId}}"
+      },
+      "title": "Zika Virus Intervention",
+      "description": "Identifies possible Zika exposure and offers suggestions for suggested actions for pregnant patients",
+      "id": "zika-virus-intervention"
+    },
+}</code></pre>
+
+<a name="evaluation"> </a>
+<h5 class="self-link-parent"><span class="sectioncount">14.5.1.2</span>  Оценка  <a href="clinicalreasoning-cds-on-fhir.html#evaluation" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h5>
+
+<p> Второй этап - это фактический запрос / ответ службы CDS. После того, как интеграция была настроена с использованием вышеуказанной информации, EHR может делать запросы к службам поддержки принятия решений в соответствующее время на основе поддерживаемых им <i> ловушек </i>. Чтобы сделать запрос, EHR подготавливает объект <a href="http://cds-hooks.org/specification/1.0/#http-request_1"> <i> request </i>  <img src="external.png" style="text-align: baseline"/></a>, содержащий контекстный информация, необходимая для ловушки, а также любая дополнительная информация о предварительной выборке. </p>
+
+<p> Например, следующий запрос иллюстрирует вызов службы <code> cdc-opioid -idance </code>: </p>
+
+<pre><code>{
+  "hookInstance": "d1577c69-dfbe-44ad-ba6d-3e05e953b2ea",
+  "fhirServer": "https://example.org/fhir",
+  "hook": "medication-prescribe",
+  "context":
+    {
+      "medications": [
+        {
+          "resourceType": "MedicationOrder",
+          "id": "medrx001",
+          ... &lt;FHIR Resource - snipped for brevity&gt;
+        }
+      ],
+      "patientId": "Patient/Patient-12214",
+      "userId": "Practitioner/example"
+    },
+  "patient": "Patient/Patient-12214",
+  "prefetch": {
+    "medication": {
+      "resource": {
+        "resourceType": "Bundle",
+        "entry": [
+          {
+            "fullUrl": "https://example.org/fhir/open/MedicationOrder/medrx002",
+            "resource": {
+              "resourceType": "MedicationOrder",
+              "id": "medrx002",
+              ... &lt;FHIR Resource - snipped for brevity&gt;
+          }
+        ]
+      }
+    }
+  }
+}</code></pre>
+
+<p> Этот запрос идентифицирует: </p>
+
+<ul>
+<li> <b> hookInstance </b> - уникальный идентификатор для этого экземпляра вызова ловушки. </li>
+<li> <b> fhirServer </b> - базовый URL-адрес для сервера FHIR, который служба CDS может использовать для запроса любой дополнительной необходимой информации. </li>
+<li> <b> ловушка </b> - вызываемая ловушка, в данном случае <code> лекарство-прописать </code>. </li>
+<li> <b> пользователь </b> - идентификатор текущего пользователя, в данном случае Практик. </li>
+<li> <b> context </b> - контекстная информация, определенная с помощью <i> hook </i>, в данном случае предписывается <code> MedicationOrder </code>. </li>
+<li> <b> предварительная выборка </b> - информация предварительной выборки, определенная <i> службой </i>, в данном случае активными <code> MedicationOrder </code> для пациента </li>
+</ul>
+
+<p> Служба отвечает набором <a href="http://cds-hooks.org/specification/1.0/#card-attributes"> <i> карточек </i>  <img src="external.png" style="text-align: baseline"/></a> с описанием любых рекомендаций или предложения, которые следует представить пользователю: </p>
+
+<pre><code>{
+   "cards":[
+      {
+         "summary":"High risk for opioid overdose - taper now",
+         "detail":"Total morphine milligram equivalent (MME) is 110 mg/d. Taper to less than 50.",
+         "indicator":"warning",
+         "source": {
+           "label": "Centers for Comprehensive Disease Control (CDC)",
+           "url": "http://cdc.gov"
+         },
+         "suggestions":[
+            {
+               "label": "Total morphine milligram equivalent (MME) is 110 mg/d. Taper to less than 50.",
+               "actions":[
+                  {
+				     "type": "update",
+                     "description":"Total morphine milligram equivalent (MME) is 110 mg/d. Taper to less than 50.",
+                     "resource": { ... &lt;Updated FHIR Resource - snipped for brevity&gt; ... }
+                  }
+               ]
+            }
+         ],
+         "links":[
+            {
+               "label":"CDC guideline for prescribing opioids for chronic pain",
+               "type": "absolute",
+               "url":"https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm"
+            },
+            {
+               "label":"MME Conversion Tables",
+               "type": "absolute",
+               "url":"https://www.cdc.gov/drugoverdose/pdf/calculating_total_daily_dose-a.pdf"
+            }
+         ]
+      }
+   ]
+}</code></pre>
+
+<p> Каждая карточка содержит: </p>
+
+<ul>
+  <li> <b> сводка </b> - краткое описание результата. </li>
+  <li> <b> деталь </b> - более подробное описание информации для карты. </li>
+  <li> <b> индикатор </b> - срочность / важность карты, <code> информация </code>, <code> предупреждение </code> или <code> жесткая остановка </code> </li>
+  <li> <b> источник </b> - источник информации. </li>
+  <li> <b> предложения </b> - массив предложений, позволяющий службе предложить набор изменений в контексте текущего действия </li>
+  <li> <b> selectionBehavior </b> - поведение выбора среди возвращенных предложений для карточки. </li>
+  <li> <b> ссылки </b> - набор ссылок, позволяющий службе предоставлять ссылки на дополнительную информацию об ответе. </li>
+</ul>
+
+<p> На этом этапе EHR обрабатывает ответ и определяет наиболее подходящий механизм для отображения результатов конечному пользователю. Однако часто бывает так, что результаты взаимодействия по поддержке принятия решений необходимо сохранить для использования в будущем. Ресурсы <a href="guidanceresponse.html"> GuidanceResponse </a> и <a href="requestgroup.html"> RequestGroup </a> предоставляют общий механизм, поддерживающий этот вариант использования. </p>
+
+<p> Как правило, ответ на перехватчики CDS может быть записан как один ответ GuidanceResponse, представляющий общий ответ от службы CDS, и отдельная группа RequestGroup, содержащая карточки и предложения, как показано на следующих сопоставлениях на уровне объектов: </p>
+
+<table>
+  <tr><th> <b> Объект перехватчиков CDS </b> </th> <th> <b> Сопоставление ресурсов FHIR </b> </th> <th> <b> Описание </b> </th> </tr>
+  <tr><td>Response</td> <td> GuidanceResponse и RequestGroup </td> <td> Ответ ловушек CDS составляет 1 к 1 с GuidanceResponse и связанной RequestGroup </td> </tr>
+  <tr><td>Card</td><td>RequestGroup.action</td> <td> Каждая карта в ответе представлена ​​как действие верхнего уровня в RequestGroup. SelectionBehavior действия (т.е. среди предложений на карточке) определяется элементом selectionBehavior карточки. </td> </tr>
+  <tr><td>Suggestion</td><td>RequestGroup.action.action</td><td> Каждое предложение на карточке представлено как вложенное действие внутри действия для карточки. SelectionBehavior действия (то есть среди действий, описанных в предложении) - <code> all </code>, поскольку ловушки CDS указывают, что когда предложение принято, выполняются все действия по предложению. </td></tr>
+  <tr><td>Action</td><td>RequestGroup.action.action.action</td> <td> Каждое действие перехватчиков CDS на карточке представлено как вложенное действие внутри действия RequestGroup для предложения, и ресурс в действии перехватчиков CDS заполняет элемент ресурса действия RequestGroup. </td> </tr>
+</table>
+
+<p> В следующей таблице перечислены сопоставления на уровне элементов: </p>
+
+<table>
+  <tr><th> <b> Элемент перехватчиков CDS </b> </th> <th> <b> Сопоставление ресурсов FHIR </b> </th> </tr>
+  <tr><td>Request.hookInstance</td> <td> GuidanceResponse.requestId &amp; RequestGroup.identifier </td> </tr>
+  <tr> <td> URL-адрес запроса </td> <td> GuidanceResponse.moduleUri &amp; RequestGroup.instantiatesUri </td> </tr>
+  <tr> <td> Статус ответа </td> <td> GuidanceResponse.status </td> </tr>
+  <tr> <td> Запросить пациента </td> <td> GuidanceResponse.subject &amp; RequestGroup.subject </td> </tr>
+  <tr> <td> Время запроса </td> <td> GuidanceResponse.occurrenceDateTime &amp; RequestGroup.authoredOn </td> </tr>
+  <tr> <td> Запросить услугу </td> <td> GuidanceResponse.performer &amp; RequestGroup.author (как устройство) </td> </tr>
+  <tr><td>Response.card</td><td>RequestGroup.action</td> </tr>
+  <tr><td>Response.card.summary</td><td>RequestGroup.action.title</td> </tr>
+  <tr><td>Response.card.detail</td><td>RequestGroup.action.description</td> </tr>
+  <tr><td>Response.card.indicator</td> <td> RequestGroup.priority | RequestGroup.action.resource.priority, используя сопоставление, указанное <a href="conceptmap-cdshooks-indicator.html"> здесь </a> </td> </tr>
+  <tr><td>Response.card.source</td> <td> RequestGroup.action.relatedArtifact.where (type = 'documentation') </td> </tr>
+  <tr><td>Response.card.selectionBehavior</td><td>RequestGroup.action.selectionBehavior</td> </tr>
+  <tr><td>Response.card.suggestion</td><td>RequestGroup.action.action</td> </tr>
+  <tr><td>Response.card.suggestion.label</td><td>RequestGroup.action.action.title</td> </tr>
+  <tr><td>Response.card.suggestion.uuid</td><td>RequestGroup.action.action.id</td> </tr>
+  <tr><td>Response.card.suggestion.action</td><td>RequestGroup.action.action.action</td> </tr>
+  <tr><td>Response.card.suggestion.action.type</td><td>RequestGroup.action.action.action.type</td> </tr>
+  <tr><td>Response.card.suggestion.action.description</td><td>RequestGroup.action.action.action.description</td> </tr>
+  <tr><td>Response.card.suggestion.action.resource</td><td>RequestGroup.action.action.action.resource</td> </tr>
+</table>
+
+<p> Обратите внимание: все эти примеры предполагают использование службы FHIR DSTU2. </p>
+
+<p> Для поддержки этих сценариев в этом модуле определены <a href="guidanceresponse-cdshooks.html"> ответы на хуки CDS, GuidanceResponse </a> и <a href="requestgroup-cdshooks.html"> Группа запросов хуков CDS </a> профили. </p>
+
+<a name="surfacing-clinical-decision-support"> </a>
+<h4 class="self-link-parent"><span class="sectioncount">14.5.2</span>  Дополнительные рекомендации по поддержке принятия клинических решений с использованием ловушек CDS  <a href="clinicalreasoning-cds-on-fhir.html#surfacing-clinical-decision-support" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h4>
+
+<p> Помимо поддержки варианта использования удаленной поддержки принятия решений, ориентированного на пользователя, ловушки CDS могут использоваться для выявления поведения поддержки принятия клинических решений, представленного артефактами знаний в модуле Clinical Reasoning. В этом случае сервер FHIR, функционирующий как поставщик знаний, предоставляет сервисы перехватчиков CDS с помощью конечной точки обнаружения и предоставляет руководство с помощью конечной точки службы CDS. Для поддержки этого используется несколько сопоставлений функциональности Clinical Reasoning с сервисами CDS Hooks: </p>
+
+<ol>
+  <li> <b> Перехватчики </b> - перехватчики в CDS Перехватчики сопоставляются со структурой TriggerDefinition в FHIR. </li>
+  <li> <b> Службы </b>. Службы в перехватчиках CDS сопоставляются с ресурсом PlanDefinition в FHIR для обеспечения поведения оценки. </li>
+  <li> <b> Предварительная выборка </b> - шаблоны предварительной выборки в перехватчиках CDS сопоставляются со структурой DataRequirement в FHIR. </li>
+</ol>
+
+<a name="representing-hooks"> </a>
+<h5 class="self-link-parent"><span class="sectioncount">14.5.2.1</span>  Представление хуков в FHIR  <a href="clinicalreasoning-cds-on-fhir.html#representing-hooks" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h5>
+
+<p> <i> Hooks </i> в CDS Hooks - это заранее определенная точка в рабочем процессе клинической информационной системы, такой как EHR. Каждая ловушка определяет <i> context </i>, который представляет собой информацию, доступную как часть текущей активности в системе. Каждая ловушка представляет собой точку в рабочем процессе, которая может быть дополнена поддержкой принятия решений от внешней системы. Внутри ловушек CDS каждая ловушка определяет набор доступных значений контекста, а также то, может ли это значение контекста использоваться в качестве токена предварительной выборки. </p>
+
+<p> Например, обработчик <code> Patient-view </code> определяет <code> PatientId </code> и <code> expectId </code> как значения контекста и указывает, что они оба доступны для использования в качестве предварительной выборки. токены (то есть их можно использовать для параметризации шаблонов предварительной выборки). </p>
+
+<p> В FHIR концепция ловушки может быть представлена ​​с помощью комбинации TriggerDefinition и ParameterDefinition: </p>
+
+<table>
+  <tr><th> <b> Элемент перехватчиков CDS </b> </th> <th> <b> Отображение FHIR </b> </th> </tr>
+  <tr><td>Hook.name</td> <td> TriggerDefinition.where (type = 'named-event'). name </td> </tr>
+  <tr><td>Hook.context.field</td><td>ParameterDefinition.name</td> </tr>
+  <tr><td>Hook.context.priority</td> <td> ParameterDefinition.min &amp; ParameterDefinition.max </td> </tr>
+  <tr><td>Hook.context.description</td> <td> ParameterDefinition.documentation &amp; ParameterDefinition.type &amp; ParameterDefinition.profile </td> </tr>
+</table>
+
+<p> Обратите внимание, что использование TriggerDefinition для представления информации о ловушке требует, чтобы детали ловушки дублировались везде, где они используются. Другой подход - использовать ресурс EventDefinition для однократного захвата информации о ловушке, а затем повторно использовать ее по ссылке везде, где это необходимо. </p>
+
+<a name="presenting-services"> </a>
+<h5 class="self-link-parent"><span class="sectioncount">14.5.2.2</span>  Представление услуг в FHIR  <a href="clinicalreasoning-cds-on-fhir.html#presenting-services" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h5>
+
+<p> <i> Служба </i> в CDS Hooks - это служба поддержки принятия клинических решений, которую можно использовать для предоставления рекомендаций пользователям в заранее определенных точках рабочего процесса. Ресурс PlanDefinition можно использовать для описания поведения функций поддержки принятия решений, которые затем могут быть представлены через службу CDS Hooks. В простейшем случае существует взаимно однозначное соответствие между PlanDefinition и службой CDS: </p>
+
+<table>
+  <tr><th> <b> Элемент перехватчиков CDS </b> </th> <th> <b> Отображение FHIR </b> </th> </tr>
+  <tr><td>Service.id</td> <td> PlanDefinition.url (без базы) </td> </tr>
+  <tr><td>Service.title</td><td>PlanDefinition.title</td> </tr>
+  <tr><td>Service.description</td><td>PlanDefinition.description</td> </tr>
+  <tr><td>Service.hook</td><td>PlanDefinition.action.trigger</td> </tr>
+  <tr><td>Service.prefetch</td><td>PlanDefinition.data-requirement</td> </tr>
+</table>
+
+<p> Для поддержки этого представления этот модуль определяет профиль <a href="plandefinition-cdshooks-service.html"> CDS Hooks Service PlanDefinition </a>, который также поддерживает указание конечной точки CDS Hooks, на которой должно быть установлено определение PlanDefinition. разоблачены. </p>
+
+<p> Операция PlanDefinition / $ apply затем может использоваться для обеспечения поведения службы перехватчиков CDS, как описано в разделе «Обработка запросов перехватчиков CDS» ниже. </p>
+
+<h5 class="self-link-parent"><span class="sectioncount">14.5.2.3<a name="14.5.2.3"> </a></span>  Представление предварительной выборки в FHIR  <a href="clinicalreasoning-cds-on-fhir.html#14.5.2.3" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h5>
+
+<p> В дополнение к контекстной информации, определенной с помощью <i> hook </i>, службы в CDS Hooks могут запрашивать, чтобы дополнительная информация предоставлялась с каждым запросом в форме шаблонов <i> предварительной выборки </i>. Эти шаблоны представляют собой параметризованные URL-адреса запросов FHIR, которые могут быть выполнены EHR как часть запроса, что сокращает количество циклов обмена между службой CDS и сервером FHIR EHR. </p>
+
+<p> Концепция предварительной выборки данных представлена ​​в Clinical Reasoning как DataRequirement, который можно преобразовать во взаимодействие чтения или поиска на уровне экземпляра следующим образом: </p>
+
+<table>
+  <tr><th> <b> Элемент DataRequirement </b> </th> <th> <b> Сопоставление с URL-адресом FHIR </b> </th> </tr>
+  <tr><td>type</td> <td> [тип] {[id] | ? [параметры]} </td> </tr>
+  <tr><td>subject</td><td>subject={{patientId}}</td> </tr>
+  <tr><td>codeFilter</td><td>[path visible{=|:in}[code|valueSet ]</td> </tr>
+  <tr><td>dateFilter</td><td>[path visible{eq|lt|gt|ge|le}[valueDateTime|valuePeriod|valueDuration ]</td> </tr>
+  <tr><td>sort</td><td>_sort=[сортировка ]</td> </tr>
+  <tr><td>limit</td><td>_limit=[limitght</td> </tr>
+</table>
+
+<p> Эти данные предварительной выборки могут быть автоматически определены из требований к данным PlanDefinition и предоставлены как часть определения службы в ответ на обнаружение ловушек CDS. </p>
+<a name="processing-requests"> </a>
+<h5 class="self-link-parent"><span class="sectioncount">14.5.2.4</span>  Обработка запросов ловушек CDS  <a href="clinicalreasoning-cds-on-fhir.html#processing-requests" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="20" class="self-link" height="20"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></h5>
+
+<p> После того, как доступные ресурсы PlanDefinition объявлены через конечную точку обнаружения, конечную точку CDS Hooks можно использовать для выполнения фактической оценки, как показано на следующей диаграмме: </p>
+
+<img src="clinicreasoning-cdshooks-подход.png" alt="Выявление клинического поведения с помощью ловушек CDS"/>
+
+<p> Как показано на приведенной выше диаграмме, EHR вызывает запрос CDS Hooks в соответствующей точке рабочего процесса, предоставляя запрошенный контекст и данные. Служба CDS отвечает, выполняя операцию $ apply для указанного PlanDefinition и преобразуя полученный RequestGroup в ответ CDS Hooks. </p>
+
+<p> Поскольку PlanDefinitions может использоваться в широком диапазоне вариантов использования, этот модуль определяет <a href="library-cql.html"> библиотеку CQL </a> и <a href="plandefinition-computable.html"> Computable PlanDefinition </a>, чтобы описать особый случай использования PlanDefinition в качестве правила событие-условие-действие с условиями и другим динамическим поведением, указанным в библиотеке CQL. Эта схема обеспечивает общий и последовательный шаблон для описания поддержки принятия решений, который можно легко интегрировать с помощью спецификации CDS Hooks. </p>
+
+</div>
+
+				</div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+        
+    </div>  <!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment">  <!-- segment-footer -->
+		<div class="container">  <!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        &reg;&copy; HL7.org 2011+. FHIR Release 4 (Technical Correction #1) (v4.0.1) generated on Thu, Jan 21, 2021 15:39+0000. <a style="color: #ffffff" href="qa.html">QA Page</a>
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #b8dcf9" href="http://hl7.org/fhir/search.cfm">Search <img src="external.png" style="text-align: baseline"/></a> | 
+               <a style="color: #b8dcf9" href="history.html">Version History</a> | 
+               <a style="color: #b8dcf9" href="toc.html">Table of Contents</a> | 
+               <a style="color: #b8dcf9" href="credits.html">Credits</a> | 
+               <a style="color: #b8dcf9" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Ffhir%2FSTU3%2Fclinicalreasoning-cds-on-fhir.html&amp;doc2=http%3A%2F%2Fbuild.fhir.org%2F%2Fclinicalreasoning-cds-on-fhir.html">Compare to R3 <img src="external.png" style="text-align: baseline"/></a> |                
+               <a rel="license" style="color: #b8dcf9" href="license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> | 
+               <a style="color: #b8dcf9" href="http://hl7.org/fhir-issues" target="_blank">Propose a change <img src="external.png" style="text-align: baseline"/></a>   
+        </span>
+        </p>
+			</div>  <!-- /inner-wrapper -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
+    
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+</body>
+</html>
